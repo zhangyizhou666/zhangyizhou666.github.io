@@ -20,8 +20,7 @@ redirect_from:
 I'm an Computer Science undergraduate at International Christian University, Tokyo. Currently I'm spending a year as an exchange student at UC Davis, CA. After finish exchanging, I will focus on my graduation research on applying locally run llm on mobile devices and ai agent application for the student timetable.
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
+- Waiting for update...
 
 
 # 📖 Educations
