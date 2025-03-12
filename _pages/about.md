@@ -48,7 +48,6 @@ I'm committed to building technology that enhances everyday experiences while re
   - Features a temperature detection system that proactively raises wipers when temperatures approach freezing point
   - Incorporates solar power capabilities and remote activation options for enhanced user convenience
   - **Industry Impact**: Patent was officially cited by Xiaomi (Beijing Xiaomi Mobile Software Co., Ltd.) in their 2018 international patent application (WO2018196228A1) for windshield wiper control methods
-  - [View detailed patent information](/patent-details)
 
 - **Language Certifications**:
   - JLPT N1 (Japanese Language Proficiency Test, Highest Level)
