@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "ZHANG YIZHOU(Robin)"
-description              : "Computer Science Undergraduate Student at International Christian University, Tokyo. Currently exchange at UC Davis, CA."
-repository               : "zhangyizhou666.github.io"
+title                    : "Robin Zhang | Computer Science Portfolio"
+description              : "Computer Science student specializing in mobile AI applications and LLM technologies. Currently studying at ICU Tokyo and UC Davis."
+repository               : "zhangyizhou666/zhangyizhou666.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,15 +21,15 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "ZHANG YIZHOU"
+  name             : "Robin Zhang"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "International Christian University"
-  location         : "Tokyo, Japan"
+  bio              : "Computer Science @ ICU Tokyo | Exchange @ UC Davis"
+  location         : "Tokyo, Japan & Davis, CA"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
+  googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "c261768s@icu.ac.jp"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : # "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -37,18 +37,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "zhangyizhou666"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : # "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  linkedin         : "robin-zhang-9ba706188"
+  dblp             : # "https://dblp.org/pid/xx/xxxx.html"
+  orcid            : # "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : # "http://stackoverflow.com/users/123456/username"
   steam            :
   tumblr           :
   twitter          : 

@@ -6,14 +6,26 @@ main:
   - title: "News"
     url: "/#-news"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  - title: "Education"
+    url: "/#-education"
 
-  - title: "Educations"
-    url: "/#-educations"
-
-  - title: "Internships"
-    url: "/#-internships"
-
-    - title: "Linkedin"
-      url: "/https://www.linkedin.com/in/yizhou-robin-zhang-9ba706188/"
+  - title: "Experience"
+    url: "/#-experience"
+    
+  - title: "Certifications & Patents"
+    url: "/#-certifications--patents"
+    
+  - title: "Patent Details"
+    url: "/patent-details"
+    
+  - title: "Skills"
+    url: "/#-skills"
+    
+  - title: "Projects"
+    url: "/#-projects"
+    
+  - title: "Contact"
+    url: "/#-contact"
+    
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/robin-zhang-9ba706188/"
