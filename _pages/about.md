@@ -30,7 +30,7 @@ I'm committed to building technology that enhances everyday experiences while re
 
 # 🔥 News
 - *2024.09*: Started exchange program at UC Davis, California
-- *2025.06*: Starting research on locally-run LLMs for mobile applications under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
+- *2025.06*: Will start research on locally-run LLMs for mobile applications under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
 
 # 📖 Education
 - *2024.09 - Present*, Exchange Student, University of California, Davis, USA
@@ -56,12 +56,13 @@ I'm committed to building technology that enhances everyday experiences while re
 
 # 🛠️ Skills
 - **Programming Languages**: Python, Java, JavaScript, Kotlin, Swift
-- **AI/ML**: TensorFlow, PyTorch, Hugging Face Transformers(learning)
-- **Mobile Development**: React Native, Flutter(learning)
+- **AI/ML**: TensorFlow(learning), PyTorch(learning), Hugging Face Transformers(learning)
+- **Mobile Development**: React Native(learning), Flutter(learning)
 - **Languages**: 
   - Chinese (Native)
   - English (Fluent, IELTS 7.5, TOEIC 925)
   - Japanese (Fluent, JLPT N1)
+  - Korean (Beginner)
 
 # 🚀 Projects
 - **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *(Released)*
