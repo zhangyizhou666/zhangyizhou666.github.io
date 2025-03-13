@@ -28,20 +28,24 @@ My research interests center around:
 
 I'm committed to building technology that enhances everyday experiences while respecting user privacy through on-device AI solutions.
 
+<span class='anchor' id='-news'></span>
 # 🔥 News
 - *2024.09*: Started exchange program at UC Davis, California
 - *2025.06*: Will start research on locally-run LLMs for mobile applications under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
 
+<span class='anchor' id='-education'></span>
 # 📖 Education
 - *2024.09 - Present*, Exchange Student, University of California, Davis, USA
 - *2022.09 - Present*, B.S. in Computer Science, International Christian University, Tokyo, Japan
 - *2018.09 - 2020.06*, High School Diploma, King Edward's School, Bath, UK
 
+<span class='anchor' id='-experience'></span>
 # 💻 Experience
 - **Open to Internships and Research Opportunities**
   - Seeking roles in mobile development, AI/ML engineering, and LLM applications
   - Interested in both academic research collaborations and industry experience
 
+<span class='anchor' id='-certifications--patents'></span>
 # 🏆 Certifications & Patents
 - **Utility Patent**: [Multi-functional Frostproofing Windshield Wiper](https://patents.google.com/patent/CN205589185U/en) (CN205589185U, Issued Sep 21, 2016)
   - Developed an innovative automotive solution that automatically prevents windshield wipers from freezing in cold weather
@@ -54,6 +58,7 @@ I'm committed to building technology that enhances everyday experiences while re
   - IELTS 7.5 (International English Language Testing System)
   - TOEIC 925 (Test of English for International Communication)
 
+<span class='anchor' id='-skills'></span>
 # 🛠️ Skills
 - **Programming Languages**: Python, Java, JavaScript, Kotlin, Swift
 - **AI/ML**: TensorFlow(learning), PyTorch(learning), Hugging Face Transformers(learning)
@@ -64,6 +69,7 @@ I'm committed to building technology that enhances everyday experiences while re
   - Japanese (Fluent, JLPT N1)
   - Korean (Beginner)
 
+<span class='anchor' id='-projects'></span>
 # 🚀 Projects
 - **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *(Released)*
   - Chrome extension designed to help UC Davis students manage and optimize their class schedules
@@ -75,5 +81,6 @@ I'm committed to building technology that enhances everyday experiences while re
 - **AI-Enhanced Student Timetable** *(In Progress)*
   - Creating an intelligent scheduling assistant that optimizes study time and academic planning
 
+<span class='anchor' id='-contact'></span>
 # 📫 Contact
 Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
