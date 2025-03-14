@@ -60,9 +60,9 @@ I'm committed to building technology that enhances everyday experiences while re
 
 <span class='anchor' id='-skills'></span>
 # 🛠️ Skills
-- **Programming Languages**: Python, Java, JavaScript, Kotlin, Swift
-- **AI/ML**: TensorFlow(learning), PyTorch(learning), Hugging Face Transformers(learning)
-- **Mobile Development**: React Native(learning), Flutter(learning)
+- **Programming Languages**: Python, Java, JavaScript, C
+- **AI/ML**: Google BERT(learning), Hugging Face Transformers(learning)
+- **Mobile Development**: Kotlin, Swift, React Native(learning), Flutter(learning)
 - **Languages**: 
   - Chinese (Native)
   - English (Fluent, IELTS 7.5, TOEIC 925)
