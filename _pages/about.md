@@ -21,17 +21,16 @@ redirect_from:
 
 I'm a passionate Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on mobile AI applications and LLM technologies. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
 
-My research interests center around:
+My interests center around:
 - Developing locally-run Large Language Models (LLMs) for mobile devices
-- Creating AI agent applications for student productivity
-- Exploring the intersection of mobile computing and artificial intelligence
+- Creating agent applications for productivity
 
 I'm committed to building technology that enhances everyday experiences while respecting user privacy through on-device AI solutions.
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
 - *2024.09*: Started exchange program at UC Davis, California
-- *2025.06*: Will start research on locally-run LLMs for mobile applications under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
+- *2025.06*: Going to start working on improving on-device LLMs' performance by utilizing collaborative multi-model architectue under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
 
 <span class='anchor' id='-education'></span>
 # 📖 Education
@@ -78,7 +77,7 @@ I'm committed to building technology that enhances everyday experiences while re
 - **Mobile LLM Implementation** *(In Progress)*
   - Developing a lightweight LLM framework for on-device AI assistance without internet dependency
   
-- **AI-Enhanced Student Timetable** *(In Progress)*
+- **AI-Enhanced Timetable** *(In Progress)*
   - Creating an intelligent scheduling assistant that optimizes study time and academic planning
 
 <span class='anchor' id='-contact'></span>
