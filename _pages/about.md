@@ -28,13 +28,17 @@ My research interests center around:
 
 I'm committed to building technology that enhances everyday experiences while respecting user privacy through on-device AI solutions.
 
-<span class='anchor' id='-news'></span>
-# 🔥 News
-- *2024.09*: Started exchange program at UC Davis, California
-- *2025.06*: Will start research on Natural Language to System Command AI Agent under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
-  - Developing an on-device AI agent that translates natural language requests into router/system commands
-  - Focus on fine-tuning local models for network testing, troubleshooting, and router configuration tasks
-  - Building multi-agent architecture to orchestrate existing network tools and utilities
+<span class='anchor' id='-projects'></span>
+# 🚀 Projects
+- **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *(Released)*
+  - Chrome extension designed to help UC Davis students manage and optimize their class schedules
+  - Features include course planning, schedule visualization, and conflict detection
+  - **User Impact**: 160+ active users with Reddit promotional post reaching 20,000+ views
+  
+- **Natural Language Network Command Agent** *(Research - 2025)*
+  - AI agent that converts natural language instructions into router and system commands
+  - Features fine-tuned local models for network administration, testing, and troubleshooting
+  - Multi-agent architecture orchestrating existing network tools for automated network management
 
 <span class='anchor' id='-education'></span>
 # 📖 Education
@@ -72,16 +76,13 @@ I'm committed to building technology that enhances everyday experiences while re
   - Japanese (Fluent, JLPT N1)
   - Korean (Beginner)
 
-<span class='anchor' id='-projects'></span>
-# 🚀 Projects
-- **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *(Released)*
-  - Chrome extension designed to help UC Davis students manage and optimize their class schedules
-  - Features include course planning, schedule visualization, and conflict detection
-  
-- **Natural Language Network Command Agent** *(Research - 2025)*
-  - AI agent that converts natural language instructions into router and system commands
-  - Features fine-tuned local models for network administration, testing, and troubleshooting
-  - Multi-agent architecture orchestrating existing network tools for automated network management
+<span class='anchor' id='-news'></span>
+# 🔥 News
+- *2024.09*: Started exchange program at UC Davis, California
+- *2025.06*: Will start research on Natural Language to System Command AI Agent under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
+  - Developing an on-device AI agent that translates natural language requests into router/system commands
+  - Focus on fine-tuning local models for network testing, troubleshooting, and router configuration tasks
+  - Building multi-agent architecture to orchestrate existing network tools and utilities
 
 <span class='anchor' id='-contact'></span>
 # 📫 Contact
@@ -101,12 +102,16 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 
 私は、オンデバイスAIソリューションを通じてユーザーのプライバシーを尊重しながら、日常体験を向上させる技術の構築に取り組んでいます。
 
-## 🔥 ニュース
-- *2024.09*: カリフォルニア大学デイビス校での交換留学プログラム開始
-- *2025.06*: **[石橋教授](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**の指導の下、自然言語からシステムコマンドへのAIエージェント研究を開始予定
-  - ルーター/システムコマンドに自然言語リクエストを翻訳するオンデバイスAIエージェントの開発
-  - ネットワークテスト、トラブルシューティング、ルーター設定タスクのためのローカルモデルファインチューニングに重点
-  - 既存のネットワークツールとユーティリティを編成するマルチエージェントアーキテクチャの構築
+## 🚀 プロジェクト
+- **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *（リリース済み）*
+  - カリフォルニア大学デイビス校の学生がクラススケジュールを管理・最適化するのを支援するChromeエクステンション
+  - コース計画、スケジュール視覚化、衝突検出機能を含む
+  - **ユーザーへの影響**: 160人以上のアクティブユーザー、Reddit宣伝投稿が20,000回以上の閲覧数を達成
+  
+- **自然言語ネットワークコマンドエージェント** *（研究 - 2025年）*
+  - 自然言語の指示をルーターとシステムコマンドに変換するAIエージェント
+  - ネットワーク管理、テスト、トラブルシューティングのためのファインチューニングされたローカルモデルを搭載
+  - 自動ネットワーク管理のために既存のネットワークツールを編成するマルチエージェントアーキテクチャ
 
 ## 📖 学歴
 - *2024.09 - 現在*, 交換留学生, カリフォルニア大学デイビス校, アメリカ
@@ -140,21 +145,12 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
   - 日本語（流暢、JLPT N1）
   - 韓国語（初級）
 
-## 🚀 プロジェクト
-- **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *（リリース済み）*
-  - カリフォルニア大学デイビス校の学生がクラススケジュールを管理・最適化するのを支援するChromeエクステンション
-  - コース計画、スケジュール視覚化、衝突検出機能を含む
-  
-- **自然言語ネットワークコマンドエージェント** *（研究 - 2025年）*
-  - 自然言語の指示をルーターとシステムコマンドに変換するAIエージェント
-  - ネットワーク管理、テスト、トラブルシューティングのためのファインチューニングされたローカルモデルを搭載
-  - 自動ネットワーク管理のために既存のネットワークツールを編成するマルチエージェントアーキテクチャ
-
-- **モバイルLLM実装** *（進行中）*
-  - インターネット依存なしのオンデバイスAIアシスタンス用軽量LLMフレームワークの開発
-  
-- **AI強化タイムテーブル** *（進行中）*
-  - 学習時間と学術計画を最適化するインテリジェントスケジューリングアシスタントの作成
+## 🔥 ニュース
+- *2024.09*: カリフォルニア大学デイビス校での交換留学プログラム開始
+- *2025.06*: **[石橋教授](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**の指導の下、自然言語からシステムコマンドへのAIエージェント研究を開始予定
+  - ルーター/システムコマンドに自然言語リクエストを翻訳するオンデバイスAIエージェントの開発
+  - ネットワークテスト、トラブルシューティング、ルーター設定タスクのためのローカルモデルファインチューニングに重点
+  - 既存のネットワークツールとユーティリティを編成するマルチエージェントアーキテクチャの構築
 
 ## 📫 連絡先
 AI、モバイル開発、学術機会に関するコラボレーションやディスカッションについては、お気軽にお声がけください！
