@@ -24,5 +24,8 @@ main:
   - title: "Contact"
     url: "/#-contact"
     
+  - title: "🇯🇵 日本語履歴書"
+    url: "/#-japanese-resume"
+    
   - title: "LinkedIn"
     url: "https://www.linkedin.com/in/robin-zhang-9ba706188/"
