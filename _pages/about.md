@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋 Hello, I'm Robin Zhang
 
-I'm a passionate Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on mobile AI applications and LLM technologies. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
+I'm a passionate Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to daily applications and LLM Fine Tuning. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
 
 My research interests center around:
 - Developing locally-run Large Language Models (LLMs) for mobile devices
@@ -64,7 +64,7 @@ I'm committed to building technology that enhances everyday experiences while re
 <span class='anchor' id='-skills'></span>
 # 🛠️ Skills
 - **Programming Languages**: Python, Java, JavaScript, C
-- **AI/ML**: Google BERT(learning), Hugging Face Transformers(learning)
+- **AI/ML**: Vector Database, LoRA, RAG, ReAct, LangGraph
 - **Mobile Development**: Kotlin, Swift, React Native(learning), Flutter(learning)
 - **Languages**: 
   - Chinese (Native)
