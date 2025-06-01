@@ -21,16 +21,20 @@ redirect_from:
 
 I'm a passionate Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on mobile AI applications and LLM technologies. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
 
-My interests center around:
+My research interests center around:
 - Developing locally-run Large Language Models (LLMs) for mobile devices
-- Creating agent applications for productivity
+- Creating AI agent applications for network administration and system automation
+- Fine-tuning models for natural language to system command translation
 
 I'm committed to building technology that enhances everyday experiences while respecting user privacy through on-device AI solutions.
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
 - *2024.09*: Started exchange program at UC Davis, California
-- *2025.06*: Going to start working on improving on-device LLMs' performance by utilizing collaborative multi-model architectue under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
+- *2025.06*: Will start research on Natural Language to System Command AI Agent under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
+  - Developing an on-device AI agent that translates natural language requests into router/system commands
+  - Focus on fine-tuning local models for network testing, troubleshooting, and router configuration tasks
+  - Building multi-agent architecture to orchestrate existing network tools and utilities
 
 <span class='anchor' id='-education'></span>
 # 📖 Education
@@ -74,6 +78,11 @@ I'm committed to building technology that enhances everyday experiences while re
   - Chrome extension designed to help UC Davis students manage and optimize their class schedules
   - Features include course planning, schedule visualization, and conflict detection
   
+- **Natural Language Network Command Agent** *(Research - 2025)*
+  - AI agent that converts natural language instructions into router and system commands
+  - Features fine-tuned local models for network administration, testing, and troubleshooting
+  - Multi-agent architecture orchestrating existing network tools for automated network management
+
 - **Mobile LLM Implementation** *(In Progress)*
   - Developing a lightweight LLM framework for on-device AI assistance without internet dependency
   
