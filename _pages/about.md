@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# 👋 Hello, I'm Robin Zhang
+# 👋 Hello, I'm Robin (ZHANG Yizhou)
 
 I'm a passionate Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to daily applications and LLM Fine Tuning. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
 
@@ -90,7 +90,7 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 <span class='anchor' id='-japanese-resume'></span>
 # 🇯🇵 日本語履歴書
 
-## 👋 こんにちは、Zhang Robinです
+## 👋 こんにちは、ロビン（ジャン・イジュ）です
 
 私は東京の**国際基督教大学（ICU）**でコンピュータサイエンスを専攻している学生で、エージェンティックAIアーキテクチャの日常応用とLLMファインチューニングに焦点を当てています。現在は**カリフォルニア大学デイビス校**で交換留学生として視野を広げています。
 
