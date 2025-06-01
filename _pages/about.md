@@ -15,6 +15,10 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
+<div style="text-align: right; margin-bottom: 20px;">
+  <a href="/ja/" style="background-color: #f0f0f0; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-size: 14px;">🇯🇵 日本語</a>
+</div>
+
 <span class='anchor' id='about-me'></span>
 
 # 👋 Hello, I'm Robin Zhang
