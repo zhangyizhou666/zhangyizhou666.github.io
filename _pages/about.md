@@ -83,12 +83,6 @@ I'm committed to building technology that enhances everyday experiences while re
   - Features fine-tuned local models for network administration, testing, and troubleshooting
   - Multi-agent architecture orchestrating existing network tools for automated network management
 
-- **Mobile LLM Implementation** *(In Progress)*
-  - Developing a lightweight LLM framework for on-device AI assistance without internet dependency
-  
-- **AI-Enhanced Timetable** *(In Progress)*
-  - Creating an intelligent scheduling assistant that optimizes study time and academic planning
-
 <span class='anchor' id='-contact'></span>
 # 📫 Contact
 Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
