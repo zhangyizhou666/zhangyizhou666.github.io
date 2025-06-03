@@ -88,6 +88,10 @@ I'm committed to building technology that enhances everyday experiences while re
 # 📫 Contact
 Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
 
+**Download My CV:**
+- [📄 履歴書 (Japanese CV)](/files/履歴書_ZHANG_Yizhou.pdf)
+- [📄 Resume (English CV)](/files/CV_ZHANG_Yizhou_EN.pdf) *(Coming Soon)*
+
 <span class='anchor' id='-japanese-resume'></span>
 # 🇯🇵 日本語履歴書
 
@@ -154,3 +158,7 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 
 ## 📫 連絡先
 AI、モバイル開発、学術機会に関するコラボレーションやディスカッションについては、お気軽にお声がけください！
+
+**履歴書のダウンロード:**
+- [📄 履歴書 (日本語版)](/files/履歴書_ZHANG_Yizhou.pdf)
+- [📄 Resume (英語版)](/files/CV_ZHANG_Yizhou_EN.pdf) *(準備中)*

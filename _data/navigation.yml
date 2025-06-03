@@ -27,5 +27,11 @@ main:
   - title: "🇯🇵 日本語履歴書"
     url: "/#-japanese-resume"
     
+  - title: "📄 Download CV"
+    url: "/files/履歴書_ZHANG_Yizhou.pdf"
+    
+  - title: "📄 CV (English)"
+    url: "/files/CV_ZHANG_Yizhou_EN.pdf"
+    
   - title: "LinkedIn"
     url: "https://www.linkedin.com/in/robin-zhang-9ba706188/"
