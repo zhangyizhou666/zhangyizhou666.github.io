@@ -93,7 +93,7 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 - [📄 Resume (English CV)](/files/CV_ZHANG_Yizhou_EN.pdf) *(Coming Soon)*
 
 <span class='anchor' id='-japanese-resume'></span>
-# 🇯🇵 日本語履歴書
+# 🇯🇵 日本語履歴
 
 ## 👋 こんにちは、ロビン（ジャン・イジュ）です
 
