@@ -33,7 +33,10 @@ I'm committed to building technology that enhances everyday experiences while re
 - **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *(Released)*
   - Chrome extension designed to help UC Davis students manage and optimize their class schedules
   - Features include course planning, schedule visualization, and conflict detection
-  - **User Impact**: 160+ active users with Reddit promotional post reaching 20,000+ views
+  - **User Impact**: 160+ active users with Reddit promotional posts reaching 22,900+ views
+    - [Automatic Schedule Building Feature](https://www.reddit.com/r/UCDavis/comments/1j3hvuc/i_made_a_chrome_extension_to_automatically/) (7.6k views)
+    - [Color Grouping & Organization](https://www.reddit.com/r/UCDavis/comments/1jaj6mh/chrome_extension_that_colorgroups/) (5.6k views)
+    - [RateMyProfessor Integration](https://www.reddit.com/r/UCDavis/comments/1jpqr60/you_can_now_see_ratemyprofessor_ratings_on/) (9.8k views)
   
 - **Natural Language Network Command Agent** *(Research - 2025)*
   - AI agent that converts natural language instructions into router and system commands
@@ -110,7 +113,10 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 - **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *（リリース済み）*
   - カリフォルニア大学デイビス校の学生がクラススケジュールを管理・最適化するのを支援するChromeエクステンション
   - コース計画、スケジュール視覚化、衝突検出機能を含む
-  - **ユーザーへの影響**: 160人以上のアクティブユーザー、Reddit宣伝投稿が20,000回以上の閲覧数を達成
+  - **ユーザーへの影響**: 160人以上のアクティブユーザー、Reddit宣伝投稿が22,900回以上の閲覧数を達成
+    - [自動スケジュール構築機能](https://www.reddit.com/r/UCDavis/comments/1j3hvuc/i_made_a_chrome_extension_to_automatically/) (7.6k回閲覧)
+    - [カラーグループ化・整理機能](https://www.reddit.com/r/UCDavis/comments/1jaj6mh/chrome_extension_that_colorgroups/) (5.6k回閲覧)
+    - [RateMyProfessor統合機能](https://www.reddit.com/r/UCDavis/comments/1jpqr60/you_can_now_see_ratemyprofessor_ratings_on/) (9.8k回閲覧)
   
 - **自然言語ネットワークコマンドエージェント** *（研究 - 2025年）*
   - 自然言語の指示をルーターとシステムコマンドに変換するAIエージェント
