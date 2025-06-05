@@ -34,6 +34,11 @@ I'm committed to building technology that enhances everyday experiences while re
   - Chrome extension designed to help UC Davis students manage and optimize their class schedules
   - Features include course planning, schedule visualization, and conflict detection
   - **[🎥 Video Demo & Introduction](https://www.youtube.com/watch?v=4-czek4zTTQ)**
+  
+  <p align="center">
+    <img src="/images/Aggie-Schedule-Mate-Homepage-optimized.png" alt="Aggie Schedule Mate Chrome Web Store Page" width="700">
+  </p>
+  
   - **User Impact**: 160+ active users with Reddit promotional posts reaching 22,900+ views
     - [Automatic Schedule Building Feature](https://www.reddit.com/r/UCDavis/comments/1j3hvuc/i_made_a_chrome_extension_to_automatically/) (7.6k views)
     - [Color Grouping & Organization](https://www.reddit.com/r/UCDavis/comments/1jaj6mh/chrome_extension_that_colorgroups/) (5.6k views)
@@ -48,7 +53,7 @@ I'm committed to building technology that enhances everyday experiences while re
 # 📖 Education
 - *2024.09 - Present*, Exchange Student, University of California, Davis, USA
 - *2022.09 - Present*, B.S. in Computer Science, International Christian University, Tokyo, Japan
-- *2018.09 - 2020.06*, High School Diploma, King Edward's School, Bath, UK
+- *2020.06*, High School Diploma, King Edward's School, Bath, UK
 
 <span class='anchor' id='-experience'></span>
 # 💻 Experience
@@ -115,6 +120,11 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
   - カリフォルニア大学デイビス校の学生がクラススケジュールを管理・最適化するのを支援するChromeエクステンション
   - コース計画、スケジュール視覚化、衝突検出機能を含む
   - **[🎥 ビデオデモ・紹介](https://www.youtube.com/watch?v=4-czek4zTTQ)**
+  
+  <p align="center">
+    <img src="/images/Aggie-Schedule-Mate-Homepage-optimized.png" alt="Aggie Schedule Mate Chrome ウェブストアページ" width="700">
+  </p>
+  
   - **ユーザーへの影響**: 160人以上のアクティブユーザー、Reddit宣伝投稿が22,900回以上の閲覧数を達成
     - [自動スケジュール構築機能](https://www.reddit.com/r/UCDavis/comments/1j3hvuc/i_made_a_chrome_extension_to_automatically/) (7.6k回閲覧)
     - [カラーグループ化・整理機能](https://www.reddit.com/r/UCDavis/comments/1jaj6mh/chrome_extension_that_colorgroups/) (5.6k回閲覧)
