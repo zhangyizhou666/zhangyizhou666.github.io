@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋 Hello, I'm Robin (ZHANG Yizhou)
 
-I'm a passionate Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to daily applications and LLM Fine Tuning. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
+I'm a Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to daily applications and LLM Fine Tuning. Currently, I'm broadening my horizons as an exchange student at **University of California, Davis**.
 
 My research interests center around:
 - Developing locally-run Large Language Models (LLMs) for mobile devices
@@ -98,8 +98,9 @@ I'm committed to building technology that enhances everyday experiences while re
 Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
 
 **Download My CV:**
-- [📄 履歴書 (Japanese CV)](/files/履歴書_ZHANG_Yizhou.pdf)
-- [📄 Resume (English CV)](/files/CV_ZHANG_Yizhou_EN.pdf) *(Coming Soon)*
+- [📄 履歴書](/files/履歴書_ZHANG_Yizhou.pdf)
+- [📄 CV(EN)](/files/CV_en.pdf)
+- [📄 CV(JP)](/files/CV_jp.pdf_)
 
 <span class='anchor' id='-japanese-resume'></span>
 # 🇯🇵 日本語履歴
@@ -178,5 +179,6 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 AI、モバイル開発、学術機会に関するコラボレーションやディスカッションについては、お気軽にお声がけください！
 
 **履歴書のダウンロード:**
-- [📄 履歴書 (日本語版)](/files/履歴書_ZHANG_Yizhou.pdf)
-- [📄 Resume (英語版)](/files/CV_ZHANG_Yizhou_EN.pdf) *(準備中)*
+- [📄 履歴書](/files/履歴書_ZHANG_Yizhou.pdf)
+- [📄 CV(EN)](/files/CV_en.pdf)
+- [📄 CV(JP)](/files/CV_jp.pdf_)

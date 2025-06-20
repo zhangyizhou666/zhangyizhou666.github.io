@@ -25,8 +25,9 @@ author:
   avatar           : "images/android-chrome-512x512.png"
   bio              : "Computer Science @ ICU Tokyo | Exchange @ UC Davis"
   location         : "Tokyo, Japan & Davis, CA"
-  cv_japanese      : "/files/履歴書_ZHANG_Yizhou.pdf"
-  cv_english       : "/files/CV_ZHANG_Yizhou_EN.pdf"
+  rirekisho        : "/files/履歴書_ZHANG_Yizhou.pdf"
+  cv_japanese      : "/files/CV_jp.pdf"
+  cv_english       : "/files/CV_en.pdf"
   employer         :
   pubmed           : 
   googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"

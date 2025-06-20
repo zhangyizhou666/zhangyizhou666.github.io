@@ -30,8 +30,11 @@ main:
   - title: "LinkedIn"
     url: "https://www.linkedin.com/in/robin-zhang-9ba706188/"
     
-  - title: "📄 履歴書（日本語）"
+  - title: "📄 履歴書"
     url: "/files/履歴書_ZHANG_Yizhou.pdf"
     
   - title: "📄 CV (English)"
-    url: "/files/CV_ZHANG_Yizhou_EN.pdf"
+    url: "/files/CV_en.pdf"
+    
+  - title: "📄 CV (Japanese)"
+    url: "/files/CV_jp.pdf"
