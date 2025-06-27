@@ -76,9 +76,9 @@ I'm committed to building technology that enhances everyday experiences while re
 
 <span class='anchor' id='-skills'></span>
 # 🛠️ Skills
-- **Programming Languages**: Python, Java, JavaScript, C
-- **AI/ML**: Vector Database, LoRA, RAG, ReAct, LangGraph
-- **Mobile Development**: Kotlin, Swift, React Native(learning), Flutter(learning)
+- **Programming Languages**: Python, JavaScript, HTML
+- **AI/ML(Learning)**: Vector Database, LoRA, RAG, ReAct, LangGraph
+- **Mobile Development(Learning)**: Kotlin, Swift, React Native, Flutter
 - **Languages**: 
   - Chinese (Native)
   - English (Fluent, IELTS 7.5, TOEIC 925)
@@ -159,9 +159,9 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
   - TOEIC 925（国際コミュニケーション英語能力テスト）
 
 ## 🛠️ スキル
-- **プログラミング言語**: Python, Java, JavaScript, C
-- **AI/ML**: Vector Database, LoRA, RAG, ReAct, LangGraph
-- **モバイル開発**: Kotlin, Swift, React Native（学習中）, Flutter（学習中）
+- **プログラミング言語**: Python, JavaScript, HTML
+- **AI/ML（学習中）**: Vector Database, LoRA, RAG, ReAct, LangGraph
+- **モバイル開発（学習中）**: Kotlin, Swift, React Native, Flutter
 - **言語**: 
   - 中国語（母語）
   - 英語（流暢、IELTS 7.5、TOEIC 925）
