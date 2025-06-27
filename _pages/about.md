@@ -100,7 +100,7 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 **Download My CV:**
 - [📄 履歴書](/files/履歴書_ZHANG_Yizhou.pdf)
 - [📄 CV(EN)](/files/CV_en.pdf)
-- [📄 CV(JP)](/files/CV_jp.pdf_)
+- [📄 CV(JP)](/files/CV_jp.pdf)
 
 <span class='anchor' id='-japanese-resume'></span>
 # 🇯🇵 日本語履歴
@@ -181,4 +181,4 @@ AI、モバイル開発、学術機会に関するコラボレーションやデ
 **履歴書のダウンロード:**
 - [📄 履歴書](/files/履歴書_ZHANG_Yizhou.pdf)
 - [📄 CV(EN)](/files/CV_en.pdf)
-- [📄 CV(JP)](/files/CV_jp.pdf_)
+- [📄 CV(JP)](/files/CV_jp.pdf)
