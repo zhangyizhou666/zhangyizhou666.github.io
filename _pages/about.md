@@ -88,8 +88,10 @@ I'm committed to building technology that enhances everyday experiences while re
 
 <span class='anchor' id='-contact'></span>
 # 📫 Contact
-zhangyizhou666@gmail.com
-c261768s@icu.ac.jp
+
+**Email:**
+- zhangyizhou666@gmail.com
+- c261768s@icu.ac.jp
 Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
 
 **Download My CV:**
@@ -165,8 +167,10 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
 
 
 ## 📫 連絡先
-zhangyizhou666@gmail.com
-c261768s@icu.ac.jp
+
+**メール：**
+- zhangyizhou666@gmail.com
+- c261768s@icu.ac.jp
 AI、モバイル開発、学術機会に関するコラボレーションやディスカッションについては、お気軽にお声がけください！
 
 **履歴書のダウンロード:**
