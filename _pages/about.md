@@ -85,16 +85,11 @@ I'm committed to building technology that enhances everyday experiences while re
   - Japanese (Fluent, JLPT N1)
   - Korean (Beginner)
 
-<span class='anchor' id='-news'></span>
-# 🔥 News
-- *2024.09*: Started exchange program at UC Davis, California
-- *2025.06*: Will start research on Natural Language to System Command AI Agent under professor **[Ishibashi](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**
-  - Developing an on-device AI agent that translates natural language requests into router/system commands
-  - Focus on fine-tuning local models for network testing, troubleshooting, and router configuration tasks
-  - Building multi-agent architecture to orchestrate existing network tools and utilities
 
 <span class='anchor' id='-contact'></span>
 # 📫 Contact
+zhangyizhou666@gmail.com
+c261768s@icu.ac.jp
 Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
 
 **Download My CV:**
@@ -168,14 +163,10 @@ Feel free to reach out for collaborations or discussions about AI, mobile develo
   - 日本語（流暢、JLPT N1）
   - 韓国語（初級）
 
-## 🔥 ニュース
-- *2024.09*: カリフォルニア大学デイビス校での交換留学プログラム開始
-- *2025.06*: **[石橋教授](https://researchers.icu.ac.jp/icuhp/KgApp?resId=S000106&Language=2)**の指導の下、自然言語からシステムコマンドへのAIエージェント研究を開始予定
-  - ルーター/システムコマンドに自然言語リクエストを翻訳するオンデバイスAIエージェントの開発
-  - ネットワークテスト、トラブルシューティング、ルーター設定タスクのためのローカルモデルファインチューニングに重点
-  - 既存のネットワークツールとユーティリティを編成するマルチエージェントアーキテクチャの構築
 
 ## 📫 連絡先
+zhangyizhou666@gmail.com
+c261768s@icu.ac.jp
 AI、モバイル開発、学術機会に関するコラボレーションやディスカッションについては、お気軽にお声がけください！
 
 **履歴書のダウンロード:**

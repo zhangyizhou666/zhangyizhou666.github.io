@@ -18,9 +18,6 @@ main:
   - title: "Skills"
     url: "/#-skills"
     
-  - title: "News"
-    url: "/#-news"
-    
   - title: "Contact"
     url: "/#-contact"
     
