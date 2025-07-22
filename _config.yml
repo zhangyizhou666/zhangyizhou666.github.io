@@ -25,9 +25,9 @@ author:
   avatar           : "images/android-chrome-512x512.png"
   bio              : "RA @ Sony Computer Science Laboratory | Computer Science @ ICU Tokyo | Exchanged @ UC Davis"
   location         : "Tokyo, Japan"
-  rirekisho        : "/files/履歴書_ZHANG_Yizhou.pdf"
-  cv_japanese      : "/files/CV_jp.pdf"
   cv_english       : "/files/CV_en.pdf"
+  cv_japanese      : "/files/CV_jp.pdf"
+  rirekisho        : "/files/履歴書_ZHANG_Yizhou.pdf"
   employer         :
   pubmed           : 
   googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"

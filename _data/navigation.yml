@@ -29,11 +29,13 @@ main:
   - title: "LinkedIn"
     url: "https://www.linkedin.com/in/yizhou-zhang-9ba706188/"
     
-  - title: "📄 履歴書"
-    url: "/files/履歴書_ZHANG_Yizhou.pdf"
+  
     
   - title: "📄 CV (English)"
     url: "/files/CV_en.pdf"
     
   - title: "📄 CV (Japanese)"
     url: "/files/CV_jp.pdf"
+
+　- title: "📄 履歴書"
+    url: "/files/履歴書_ZHANG_Yizhou.pdf"
