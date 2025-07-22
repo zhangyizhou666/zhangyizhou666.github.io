@@ -27,6 +27,11 @@ My research interests center around:
 - Fine-tuning small base models for better performance on specific tasks
 
 I'm committed to building on-device AI solutions that runs at a low cost and respects user privacy.
+
+<span class='anchor' id='-experience'></span>
+# 💻 Experience
+- **Research Assistant, Sony Computer Science Laboratory, August 2025 - Present**
+
 <span class='anchor' id='-projects'></span>
 # 🚀 Projects
 - **[Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee)** *(Released)*
@@ -54,10 +59,6 @@ I'm committed to building on-device AI solutions that runs at a low cost and res
 - *2022.09 - Present*, B.S. in Computer Science, International Christian University, Tokyo, Japan
 - *2020.06*, High School Diploma, King Edward's School, Bath, UK
 
-<span class='anchor' id='-experience'></span>
-# 💻 Experience
-- **Research Assistant, Sony Computer Science Laboratory, August 2025 - Present**
-  
 <span class='anchor' id='-certifications--patents'></span>
 # 🏆 Certifications & Patents
 - **Utility Patent**: [Multi-functional Frostproofing Windshield Wiper](https://patents.google.com/patent/CN205589185U/en) (CN205589185U, Issued Sep 21, 2016)
