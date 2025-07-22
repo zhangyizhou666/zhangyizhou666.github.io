@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# 👋 Hello, I'm Robin (ZHANG Yizhou)
+# 👋 Hello, I'm Yizhou(Robin)
 
 I'm a Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to Small Language Models by applying LLM Fine Tuning. Currently, I'm working as a Research Assistant at **Sony Computer Science Laboratory**.
 
