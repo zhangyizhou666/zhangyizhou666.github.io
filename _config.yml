@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yizhou Zhang | Computer Science Portfolio"
-description              : "Computer Science student researching on Agentic AI Architecture and LLM Fine Tuning. Currently studying at ICU Tokyo and have exchanged at UC Davis."
+description              : "Computer Science student researching on Agentic AI Architecture and LLM Fine Tuning. Currently studying at ICU Tokyo and have exchanged for 1 year at UC Davis."
 repository               : "zhangyizhou666/zhangyizhou666.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yizhou Zhang"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Computer Science @ ICU Tokyo | Exchanged @ UC Davis"
+  bio              : "RA @ Sony Computer Science Laboratory | Computer Science @ ICU Tokyo | Exchanged @ UC Davis"
   location         : "Tokyo, Japan & Davis, CA"
   rirekisho        : "/files/履歴書_ZHANG_Yizhou.pdf"
   cv_japanese      : "/files/CV_jp.pdf"
