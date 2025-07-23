@@ -48,6 +48,10 @@ I'm committed to building on-device AI solutions that runs at a low cost and res
     - [Color Grouping & Organization](https://www.reddit.com/r/UCDavis/comments/1jaj6mh/chrome_extension_that_colorgroups/) (5.6k views)
     - [RateMyProfessor Integration](https://www.reddit.com/r/UCDavis/comments/1jpqr60/you_can_now_see_ratemyprofessor_ratings_on/) (9.8k views)
   
+  - **📝 Project Reflection**: [What My UC Davis Chrome Extension Taught Me About Simplicity](https://www.linkedin.com/posts/yizhou-zhang-9ba706188_last-quarter-i-built-a-chrome-extension-to-activity-7322020886205579264-N1ly?utm_source=share&utm_medium=member_desktop&rcm=ACoAACw-Qh4BbjUIR6nSoHf9eNF1Lk-s0GF7Upc)
+    - A reflection on feature creep, user trust, and the power of doing one thing exceptionally well
+    - Lessons learned from building and iterating on a Chrome extension for UC Davis students
+  
 - **Natural Language Network Command Agent** *(Research - 2025)*
   - AI agent that converts natural language instructions into router and system commands
   - Features fine-tuned local models for network administration, testing, and troubleshooting
