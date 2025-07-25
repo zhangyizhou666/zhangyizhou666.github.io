@@ -39,7 +39,7 @@ I'm committed to building on-device AI solutions that runs at a low cost and res
   - Features include schdule exportation, schedule visualization, and conflict detection
   - **[🎥 Video Demo & Introduction](https://www.youtube.com/watch?v=4-czek4zTTQ)**
   
-  <p align="center">
+  <p style="text-align: center;">
     <img src="/images/Aggie-Schedule-Mate-Homepage-optimized.png" alt="Aggie Schedule Mate Chrome Web Store Page" width="700">
   </p>
   
