@@ -28,6 +28,13 @@ My research interests center around:
 
 I'm committed to building on-device AI solutions that runs at a low cost and respects user privacy.
 
+> For a deeper understanding of Small Language Models (SLMs) and their role in agentic AI, see the NVIDIA research paper:  
+> **“Small Language Models are the Future of Agentic AI”**  
+> [Read the paper](https://research.nvidia.com/labs/lpr/slm-agents/)  
+>  
+> _“SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems, and are therefore the future of agentic AI.”_  
+> — [NVIDIA Research, 2025](https://research.nvidia.com/labs/lpr/slm-agents/)
+
 <span class='anchor' id='-experience'></span>
 # 💻 Experience
 - **Research Assistant, Sony Computer Science Laboratory, August 2025 - Present**
