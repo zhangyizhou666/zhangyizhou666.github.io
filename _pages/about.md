@@ -104,8 +104,8 @@ I'm committed to building on-device AI solutions that runs at a low cost and res
 - Feel free to reach out for collaborations or discussions about AI, mobile development, or academic opportunities!
 
 **Download My CV:**
-- [📄 履歴書](/files/履歴書_ZHANG_Yizhou.pdf)
 - [📄 CV(EN)](/files/CV_en.pdf)
 - [📄 CV(JP)](/files/CV_jp.pdf)
+- [📄 履歴書](/files/履歴書_ZHANG_Yizhou.pdf)
 
 
