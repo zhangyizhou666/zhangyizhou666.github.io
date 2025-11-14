@@ -5,13 +5,14 @@ main:
 
   - title: "Experience"
     url: "/#-experience"
-
-  - title: "Selected Projects & Research"
-    url: "/#-projects"
  
 
   - title: "Education"
     url: "/#-education"
+
+
+  - title: "Selected Projects & Research"
+    url: "/#-projects"
 
 
   - title: "Skills"
