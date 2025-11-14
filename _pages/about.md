@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋 Hello, I'm Yizhou(Robin)
 
-I'm a Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to Small Language Models by applying LLM Fine Tuning. Currently, I'm working as a Research Assistant at **Sony Computer Science Laboratory**.
+I'm a Computer Science undergraduate at **International Christian University (ICU)** in Tokyo, with a focus on applying Agentic AI Architecture to Small Language Models by applying LLM Fine Tuning. Currently, I'm working as a Business Analyst at **Bytedance / Tiktok Japan**. I have previously worked at **Sony** as a Research Assistant.
 
 My research interests center around:
 - Developing locally-run LLM applications for edge devices
@@ -37,7 +37,8 @@ I'm committed to building on-device AI solutions that runs at a low cost and res
 
 <span class='anchor' id='-experience'></span>
 # 💻 Experience
-- **Research Assistant, Sony Computer Science Laboratory, August 2025 - Present**
+- **Business Analyst, Bytedance / Tiktok Japan, Nov 2025 - Present**
+- **Research Assistant, Sony Computer Science Laboratory, Aug 2025 - Present**
 
 <span class='anchor' id='-projects'></span>
 # 🚀 Projects
