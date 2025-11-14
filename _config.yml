@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yizhou Zhang | Computer Science Portfolio"
-description              : "Computer Science student researching on Small Language Model based Agentic AI Architecture. Currently studying at ICU Tokyo and have exchanged for 1 year at UC Davis."
+title                    : "Yizhou Zhang | Information Science & LLM Agents"
+description              : "Trilingual Information Science student (EN/JP/ZH) with experience in data analytics, LLM agents, and shipping real products used by 600+ students."
 repository               : "zhangyizhou666/zhangyizhou666.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yizhou Zhang"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "RA @ Sony Computer Science Laboratory | Computer Science @ ICU Tokyo | Exchanged @ UC Davis"
+  bio              : "Business Analyst Intern @ ByteDance/TikTok Japan · Research Assistant @ Sony CSL · Information Science @ ICU Tokyo (exchange @ UC Davis)"
   location         : "Tokyo, Japan"
   cv_english       : "/files/CV_en.pdf"
   cv_japanese      : "/files/CV_jp.pdf"
