@@ -56,7 +56,7 @@ I enjoy building practical tools that help real users – from timetable automat
 
 # 🚀 Selected Projects & Research
 
-**“Aggie Schedule Mate” Chrome Extension — Creator & Product Lead**  
+**“[Aggie Schedule Mate](https://www.youtube.com/watch?v=4-czek4zTTQ)” Chrome Extension — Creator & Product Lead**  
 *UC Davis, CA · Sep 2024 – Jun 2025*
 
 - Built a timetable-automation Chrome extension adopted by **600+** UC Davis students, saving an estimated **35 minutes per semester per user**.
