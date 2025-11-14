@@ -64,7 +64,7 @@ I enjoy building practical tools that help real users – from timetable automat
 - Promoted the product via Reddit posts reaching **20k+ views**, iterating UI/UX based on user feedback.
 
 <p style="text-align: center;">
-  <img src="/images/Aggie-Schedule-Mate-Homepage-optimized1.png" alt="Aggie Schedule Mate Chrome Web Store Page" width="700">
+  <img src="/images/Aggie-Schedule-Mate-Homepage-optimized1.png" alt="Aggie Schedule Mate Chrome Web Store Page" width="350">
 </p>
 
 - **🎥 Video Demo & Introduction**: [YouTube](https://www.youtube.com/watch?v=4-czek4zTTQ)  
