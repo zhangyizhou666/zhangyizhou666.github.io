@@ -31,8 +31,8 @@ I enjoy building practical tools that help real users – from timetable automat
 **ByteDance / TikTok Japan — Business Analyst Intern, Global Business Solutions**  
 *Tokyo, Japan · Nov 2025 – Present*
 
-- Clean and reconcile weekly advertiser performance sheets (account / advertiser ID, pixel events, funnels) to support sales and account managers.
-- Analyze campaign performance (view content, add to cart, purchase events) using Excel/Sheets and SQL-like queries to identify optimization opportunities.
+- Clean and reconcile weekly advertiser performance sheets to support sales and account managers.
+- Analyze campaign performance using Excel/Sheets and SQL-like queries to identify optimization opportunities.
 - Build and iterate internal dashboards and comments for client status, helping the team prioritize pitches, troubleshooting, and upsell opportunities.
 
 **Sony Computer Science Laboratories (Sony CSL) — Research Assistant (LLM & Finance)**  
