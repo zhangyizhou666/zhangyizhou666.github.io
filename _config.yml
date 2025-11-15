@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yizhou Zhang | Information Science & LLM Agents"
+title                    : "Yizhou Zhang | personal website"
 description              : "Trilingual Information Science student (EN/JP/ZH) with experience in data analytics, LLM agents, and shipping real products used by 600+ students."
 repository               : "zhangyizhou666/zhangyizhou666.github.io"
 google_scholar_stats_use_cdn : true
