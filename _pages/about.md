@@ -19,10 +19,9 @@ redirect_from:
 
 # 👋 Hello, I'm Yizhou (Robin)
 
-I'm a trilingual **Information Science** undergraduate at **International Christian University (ICU)** in Tokyo (exchange year at **UC Davis**), focusing on **LLM agents**, **data analytics**, and **shipping real products**.  
-Right now I'm a **Business Analyst Intern at ByteDance / TikTok Japan** and a former **Research Assistant at Sony Computer Science Laboratories (Sony CSL)**.
+I'm a trilingual **Information Science** undergraduate at **International Christian University (ICU)** in Tokyo (exchange year at **UC Davis**).
 
-I enjoy building practical tools that help real users – from timetable automation for 600+ students to internal analytics dashboards and LLM-powered assistants.
+I turn **messy workflows** into **simple, reliable tools** — using **data, automation, and LLMs**.
 
 <span class='anchor' id='-experience'></span>
 
@@ -32,9 +31,8 @@ I enjoy building practical tools that help real users – from timetable automat
 **ByteDance / TikTok Japan — Business Analyst Intern, Global Business Solutions**  
 *Tokyo, Japan · Nov 2025 – Present*
 
-- Clean and reconcile weekly advertiser performance sheets to support sales and account managers.
-- Analyze campaign performance using Excel/Sheets and SQL-like queries to identify optimization opportunities.
-- Build and iterate internal dashboards and comments for client status, helping the team prioritize pitches, troubleshooting, and upsell opportunities.
+- 6 months long term internship under Tiktok GBS.
+- Supporting client solution teams through data analytics to diagnose **advertiser performance issues**, drive **optimization**, and enable data-driven **sales proposals**.
 </div>
 
 <div class="experience-item" markdown="1">
@@ -53,7 +51,7 @@ I enjoy building practical tools that help real users – from timetable automat
 **International Christian University (ICU)** — B.S. in Information Science  
 *Tokyo, Japan · Apr 2022 – Jun 2026 (expected)*
 
-- GPA: 3.66 / 4.0  
+- GPA: 3.6 / 4.0  
 - Exchange Year: University of California, Davis (2024–2025)  
 - Selected coursework: Algorithms & Data Structures, AI & LLM Basics, Network Security, Data Science
 </div>
@@ -63,7 +61,7 @@ I enjoy building practical tools that help real users – from timetable automat
 # 🚀 Selected Projects & Research
 
 <div class="project-card" markdown="1">
-### [Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee) — Creator & Product Lead
+### [Aggie Schedule Mate](https://chromewebstore.google.com/detail/aggie-schedule-mate/ddlinokodanicjgdkomccaadblcdipee) — Creator & Product Lead (600+ users)
 <span class="project-meta">Chrome Extension · UC Davis, CA · Sep 2024 – Jun 2025</span>
 
 - Built a timetable-automation Chrome extension adopted by **600+** UC Davis students, saving an estimated **35 minutes per semester per user**.
@@ -87,31 +85,22 @@ I enjoy building practical tools that help real users – from timetable automat
 - Planning to use an open-source LLM with retrieval-augmented generation and iteratively refine retrieval and prompting based on evaluation and technical constraints.
 </div>
 
-<div class="project-card" markdown="1">
-### ICU Programming Circle
-<span class="project-meta">Co-founder & Marketing Lead · Tokyo, Japan · Apr 2023 – Present</span>
-
-- Co-founded ICU’s programming circle and supported the university’s first **ICPC regional appearance**.
-- Grew membership from **2 to 25** within two semesters through campus-wide marketing, posters, and Instagram content.
-</div>
-
 <span class='anchor' id='-skills'></span>
 
 # 🛠️ Skills
 
-<div class="skill-category">Programming & Data</div>
+<div class="skill-category">Developing & Data</div>
 <span class="skill-tag">Python</span>
 <span class="skill-tag">JavaScript / TypeScript</span>
 <span class="skill-tag">HTML / CSS</span>
 <span class="skill-tag">SQL</span>
 <span class="skill-tag">Git</span>
-<span class="skill-tag">Jupyter / Colab</span>
-<span class="skill-tag">Pandas</span>
+<span class="skill-tag">Numpy / Pandas</span>
 <span class="skill-tag">Data Visualization</span>
 
 <div class="skill-category">LLM & AI</div>
 <span class="skill-tag">Prompt Engineering</span>
-<span class="skill-tag">ReAct Agents</span>
+<span class="skill-tag">Agents</span>
 <span class="skill-tag">LangGraph</span>
 <span class="skill-tag">Vector Databases</span>
 <span class="skill-tag">LoRA Fine-tuning</span>
@@ -130,9 +119,9 @@ I enjoy building practical tools that help real users – from timetable automat
 <div class="project-card" markdown="1" style="border: none; padding: 0; box-shadow: none;">
 
 **Languages**  
+- Fluent Japanese
+- Fluent English
 - Native Mandarin Chinese  
-- Fluent Japanese (**JLPT N1**)  
-- Fluent English (**IELTS 7.5**)  
 
 **Certifications**  
 - JLPT N1, The Japan Foundation (Jul 2024)  
@@ -143,13 +132,7 @@ I enjoy building practical tools that help real users – from timetable automat
 
 <span class='anchor' id='-contact'></span>
 
-# 📫 Contact
-
-**Email**  
-- zhangyizhou666@gmail.com  
-- c261768s@icu.ac.jp  
-
-Feel free to reach out for collaborations or discussions about AI agents, data analytics, or academic opportunities!
+# 📫 CV
 
 **Download My CV**  
 - [📄 CV (English)](/files/CV_en.pdf)
