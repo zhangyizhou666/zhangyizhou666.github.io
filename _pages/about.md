@@ -21,7 +21,7 @@ redirect_from:
 
 I'm a trilingual **Information Science** undergraduate at **International Christian University (ICU)** in Tokyo (exchange year at **UC Davis**).
 
-I turn **messy workflows** into **simple, reliable tools** — using **data, automation, and LLMs**.
+I enjoy turning **messy workflows** into **simple, reliable tools** — using **data, automation, and LLMs**.
 
 <span class='anchor' id='-experience'></span>
 
