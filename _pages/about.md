@@ -135,4 +135,4 @@ I enjoy turning **messy workflows** into **simple, reliable tools** — using **
 # 📫 CV
 
 **Download My CV**  
-- [📄 CV (English)](/files/CV_en.pdf)
+- [CV (English)](/files/CV_en.pdf)
