@@ -2,31 +2,39 @@
 main:
   - title: "Experience"
     url: "/#-experience"
+    i18n: "experience"
  
 
   - title: "Education"
     url: "/#-education"
+    i18n: "education"
 
 
   - title: "Projects"
     url: "/#-projects"
+    i18n: "projects"
 
 
   - title: "Skills"
     url: "/#-skills"
+    i18n: "skills"
     
 
   - title: "Languages"
     url: "/#-certifications--patents"
+    i18n: "languages"
     
     
   - title: "Contact"
     url: "/#-contact"
+    i18n: "contact"
     
 
   - title: "LinkedIn"
-    url: "https://www.linkedin.com/in/yizhou-zhang-9ba706188/"
+    url: "https://www.linkedin.com/in/robin-zhang-9ba706188/"
+    i18n: "linkedin"
     
     
   - title: "CV"
     url: "/files/cv_yizhou.pdf"
+    i18n: "cv"
