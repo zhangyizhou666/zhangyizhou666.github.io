@@ -183,11 +183,11 @@ redirect_from:
       <h3>LLM & AI</h3>
       <div class="skill-list">
         <span class="skill-tag">Prompt Engineering</span>
-        <span class="skill-tag">Agents</span>
-        <span class="skill-tag">LangGraph</span>
-        <span class="skill-tag">Vector Databases</span>
-        <span class="skill-tag">LoRA Fine-tuning</span>
         <span class="skill-tag">RAG</span>
+        <span class="skill-tag">Agents</span>
+        <span class="skill-tag">PostgreSQL (pgvector)</span>
+        <span class="skill-tag">Embeddings & Retrieval</span>
+        <span class="skill-tag">LoRA Fine-tuning</span>
       </div>
     </div>
     <div class="skill-group">
