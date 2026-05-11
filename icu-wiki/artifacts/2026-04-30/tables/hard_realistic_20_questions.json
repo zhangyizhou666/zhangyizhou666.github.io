@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hr_001",
+    "category": "language",
+    "is_answerable": true,
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?"
+  },
+  {
+    "id": "hr_002",
+    "category": "registration",
+    "is_answerable": false,
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?"
+  },
+  {
+    "id": "hr_003",
+    "category": "registration",
+    "is_answerable": false,
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?"
+  },
+  {
+    "id": "hr_004",
+    "category": "major",
+    "is_answerable": false,
+    "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?"
+  },
+  {
+    "id": "hr_005",
+    "category": "graduation",
+    "is_answerable": false,
+    "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?"
+  },
+  {
+    "id": "hr_006",
+    "category": "student_status",
+    "is_answerable": true,
+    "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?"
+  },
+  {
+    "id": "hr_007",
+    "category": "housing",
+    "is_answerable": true,
+    "question": "I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?"
+  },
+  {
+    "id": "hr_008",
+    "category": "student_support",
+    "is_answerable": true,
+    "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?"
+  },
+  {
+    "id": "hr_009",
+    "category": "student_support",
+    "is_answerable": true,
+    "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?"
+  },
+  {
+    "id": "hr_010",
+    "category": "it",
+    "is_answerable": true,
+    "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?"
+  },
+  {
+    "id": "hr_011",
+    "category": "language",
+    "is_answerable": true,
+    "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？"
+  },
+  {
+    "id": "hr_012",
+    "category": "campus_life",
+    "is_answerable": true,
+    "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?"
+  },
+  {
+    "id": "hr_013",
+    "category": "housing",
+    "is_answerable": false,
+    "question": "Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?"
+  },
+  {
+    "id": "hr_014",
+    "category": "campus_life",
+    "is_answerable": false,
+    "question": "What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?"
+  },
+  {
+    "id": "hr_015",
+    "category": "office",
+    "is_answerable": false,
+    "question": "Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?"
+  },
+  {
+    "id": "hr_016",
+    "category": "graduation",
+    "is_answerable": true,
+    "question": "I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?"
+  },
+  {
+    "id": "hr_017",
+    "category": "calendar",
+    "is_answerable": true,
+    "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?"
+  },
+  {
+    "id": "hr_018",
+    "category": "credits",
+    "is_answerable": false,
+    "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?"
+  },
+  {
+    "id": "hr_019",
+    "category": "office",
+    "is_answerable": true,
+    "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？"
+  },
+  {
+    "id": "hr_020",
+    "category": "policy",
+    "is_answerable": false,
+    "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?"
+  }
+]

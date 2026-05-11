@@ -1,0 +1,668 @@
+[
+  {
+    "label": "Qwen3.5 0.8B (non-thinking)",
+    "mode": "non_thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the placement into the Japanese Language Program (JLP) is determined by the results of a **placement test** administered by the ICU, with the final course level subject to change during the first class sessions based on in-class assessment. To check the official information for placement, you should refer to the **ICU website** (specifically the JLP program page or the International Christian University admissions FAQ) or contact the **JLP Office** at **jlp@icu.ac.jp** (Office Hours: Monday–Friday, 9:00–11:45 and 12:45–16:00). * **Evidence:** [2]",
+        "reasoning_text": "",
+        "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+        "gold_source_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002",
+          "DOC-001633::structural_fallback_v1::P0007",
+          "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+          "DOC-000749::structural_fallback_v1::P0000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "You can still register or change your courses, but you must follow specific procedures to avoid penalty. **1. Can you register?** Yes, you may register or change your courses, but you must complete the **Late Registration procedure** if you missed the normal Registration Period. **2. What to pay attention to?** * **Late Registration Fee:** You must pay the Late Registration Fee of **3,000 yen**. * **Ticket:** You need to buy a ticket (shoshi) for 3,000 yen on the second floor of the Administration Building. * **Interview:** You must attend the interview with your advisor between **December 5 (Fri) 9:00 and December 12 (Fri) 10:00** (Online input). * **Important Dates:** The Office is closed on **April 11 (Sat) and 18 (Sat)** for the Late Registration period. * **Verification:** After payment, you must click the **\"SAVE\"** button to complete the procedure. The registration change is not accepted after the designated period unless you complete the regular Registration Procedures on Registration Day. **Citation:** [1] Late Registration Procedure for students who missed the Registration Period. [2] Late Registration Procedure for students who missed the Registration Period. [3] Late Registration Procedure for students who missed the Registration Period. [4] Late Registration Procedure for students who missed the Registration Period.",
+        "reasoning_text": "",
+        "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+        "gold_source_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007",
+          "DOC-000110::structural_fallback_v1::P0001",
+          "DOC-000751::structural_fallback_v1::P0001",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Before withdrawing from a course in an ICU setting, you must verify the following: 1. **Registration Change Period**: You cannot withdraw after the Registration Change period has ended. The Registration Change period has already over, so no registration change is approved. [1] 2. **Late Registration Procedure**: If you missed the Registration Period, you must complete registration through the Late Registration procedure. You must pay the Late Registration Fee (3,000 yen) before proceeding to the registration interview with your advisor. [3] 3. **Course Eligibility and Requirements**: You must have Pre-Registered for the course and made a decision to take it before the term starts. Absence due to additional registration will not be a valid excuse. [4] 4. **Course Specifics**: For sport-related courses, there may be introductory and intermediate courses. You may be required to take the introductory course before registering for the intermediate course. [4] 5. **Health and Physical Education Courses**: Health and Physical Education Courses are recommended, but you must complete the regular registration procedures on Registration day. [2] 6. **Final Confirmation**: After registration and registration change, please confirm that the courses you wish to add and/or cancel is reflected correctly via the Registration Website \"Registration Results\". [2] **Conclusion**: Before making the decision to withdraw, check the Registration Change period, ensure you have completed the Late Registration procedure with the correct fee, verify your Pre-Registration status, and confirm the final course selection on the Registration Website.",
+        "reasoning_text": "",
+        "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+        "gold_source_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001",
+          "DOC-000111::structural_fallback_v1::P0003",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the primary method for confirming whether courses or credits will count toward ICU requirements is through the **Graduation Requirement Checklist** and the **ICU Admissions Center** process. **Evidence:** [3] FD Newsletter Vol. 29 states that graduates should consult the \"Graduation Requirement Checklist on icuMAP\" to confirm the credits required for each category. It also recommends consulting IBS advisors for scheduling and job-hunting support, indicating that admissions officers actively review and tailor course plans to ensure graduation compliance. [3] **Evidence:** [1] and [4] confirm that coursework completed as a Kenkyusei or in an unaccredited school may not count toward ICU's residency requirement if specific conditions are met. Specifically, if a Kenkyusei wishes to become a Regular/Transfer Student, the coursework must be submitted to the ICU Admissions Center for screening, and the coursework completed as a Kenkyusei will **not be applied toward ICU's residency requirement** [1]. Additionally, for international applicants, the required documents include a list of courses progressing or to be taken in the final semester/year to verify graduation compliance, and the original or certified true copies of such a diploma must be submitted upon admission to confirm eligibility [4]. **Conclusion:** You should look to the **ICU Admissions Center** for the official screening of coursework and the submission of the **Graduation Requirement Checklist** to confirm credits. If your coursework is from an accredited institution, it will count toward your ICU residency requirement. If it is from an unaccredited school or a Kenkyusei, it may not count depending on the specific transfer status and application details [1].",
+        "reasoning_text": "",
+        "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+        "gold_source_ids": [
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000",
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "DOC-001586::structural_fallback_v1::P0001",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the information regarding senior thesis deadlines and checklists: **1. Official Schedule and Registration Check** * **Schedule:** You should check the **STH391:Senior Thesis schedule** found on icuMAP. This schedule is available by clicking on a faculty's name under \"Faculty Information (office hour)\" > [Subjects] (selecting \"AY\" and \"Term\"). * **Registration:** You must register for your courses in the specific term (Spring, Autumn, or Summer) corresponding to your application. You cannot register for courses in the same period as your STH391 without time conflicts. * **Confirmation:** Always confirm your senior thesis advisor on the \"Advisor's Info\" of icuMAP. **2. Expected Deadlines** * **Submission Deadline:** Senior thesis electronic data (PDF) must be submitted online between **January 9 (Tuesday)** and **February 1 (Thursday), 2024**. * **Late Submission:** No thesis will be accepted after **16:00** on the deadline date under any circumstances. **3. Graduation Requirements Checklist** * You are responsible for checking your own graduation requirements. * You must refer to the **\"Graduation Requirements Checklist\"** of icuMAP. * You should register the necessary courses based on your academic planning. **Note:** Evidence indicates that while the STH391 schedule is provided, the \"Graduation Requirements Checklist\" remains the definitive source for confirming all graduation requirements.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::structural_fallback_v1::P0002",
+          "DOC-000106::structural_fallback_v1::P0001",
+          "DOC-000098::structural_fallback_v1::P0003",
+          "DOC-000104::structural_fallback_v1::P0003",
+          "DOC-000092::structural_fallback_v1::P0008"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 2B (non-thinking)",
+    "mode": "non_thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, your placement level is determined by two main factors: 1. **Placement Test:** You must take the JLP placement test to be assigned a course [1]. 2. **In-Class Assessment:** If your placement test results are insufficient, your proficiency will be evaluated in the first class sessions, and the level may be subject to change [2]. **Where to check official information:** * **ICU Website:** For details on the JLP program and course offerings, refer to the ICU website at `https://www.icu.ac.jp/academics/undergraduate/jlp/` [2]. * **JLP Website:** For additional details, visit the JLP website at `https://sites.google.com/info.icu.ac.jp/jlp/` [2]. * **JLP Office:** For contact information, visit the JLP Office located in ERB II, Room 104. Office hours are Monday–Friday, 9:00–11:45 and 12:45–16:00 [2]. * **ICU Admissions:** For specific details regarding placement tests and course categories (e.g., for non-degree students), check the ICU admissions FAQ at `https://www.icu.ac.jp/en/admissions/undergraduate/faq` [3]. **Important Note:** * The placement test is mandatory for all graduate students and returnees [1]. * Credits from JLP courses cannot be applied towards graduation requirements [1]. * The placement test does not affect your GPA [1]. * Students who have previously completed a JLP course must register for the assigned course [1]. * The specific course levels and their corresponding \"levels\" are detailed in a table found in the 2009 self-study report [4].",
+        "reasoning_text": "",
+        "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+        "gold_source_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002",
+          "DOC-001633::structural_fallback_v1::P0007",
+          "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+          "DOC-000749::structural_fallback_v1::P0000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "You can still register or change courses, but you must follow specific procedures and pay fees. **Procedure:** 1. **Register Online:** Complete the registration through the online input system [1]. 2. **Interview:** Schedule an interview with your advisor during the designated period [1]. 3. **Pay Fees:** Pay the Late Registration Fee of 3,000 yen for late registration [1]. 4. **Buy Ticket:** Purchase a ticket (shoshi) for 3,000 yen on the second floor of the Administration Building before the interview [1]. 5. **Confirm Changes:** Ensure the \"SAVE\" button is clicked after making changes to complete the procedure [2], [3]. **Important Notes:** * The procedure is identical to the regular registration process, but you must pay the fee [1]. * After the registration period, changes are not accepted [2]. * You must complete the regular registration procedures even if you only want to register courses assigned by lottery or for a Senior Thesis [2]. * The office will be closed on April 11 (Sat) and April 18 (Sat) [4].",
+        "reasoning_text": "",
+        "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+        "gold_source_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007",
+          "DOC-000110::structural_fallback_v1::P0001",
+          "DOC-000751::structural_fallback_v1::P0001",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the following rules and deadlines must be checked before withdrawing from a course: * **Registration Change Period:** Changes cannot be made after this period ends. If you miss this deadline, you must apply for a leave of absence or withdraw via the **Late Registration procedure** (e.g., September 5–12, 2025) [3]. * **No Retroactive Credit:** No grades or credits will be awarded retroactively if a student is not officially registered during the specified period [1]. * **Consequences of Absence:** Remaining absent without completing necessary procedures results in a **Failure (F) grade** [1]. * **Pre-Registration Requirement:** For sports courses, absence due to additional registration is not a valid excuse if the course was not pre-registered before the term started [4]. * **Verification:** After making changes, you must confirm the reflected courses via the **Registration Website** \"Registration Results\" [2].",
+        "reasoning_text": "",
+        "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+        "gold_source_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001",
+          "DOC-000111::structural_fallback_v1::P0003",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "To confirm whether courses or credits will count toward your ICU requirements while planning for study abroad, you should consult the **Graduation Requirement Checklist** on **icuMAP**. According to evidence [3], the **APS (Admissions and Planning Services)** staff review this checklist with students to confirm the credits required for each category of Graduation Requirement and create a realistic course plan tailored to your individual needs. If you are unsure about specific credits, you should contact the **IBS advisors** or visit the **Career Support Office** for job-hunting advice, as they can also assist with course planning [3]. *Note: If your country/region's educational system is not listed in the provided documents, you must submit the Eligibility Check Form to the ICU Admissions Center at least one month before the application period starts to confirm your eligibility and additional requirements [2].*",
+        "reasoning_text": "",
+        "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+        "gold_source_ids": [
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000",
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "DOC-001586::structural_fallback_v1::P0001",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here are the steps to find the official schedule and expected deadlines: ### 1. Finding the Official Schedule * **Spring Term:** You can check the STH391:Senior Thesis schedule by visiting **icuMAP > [Links] Faculty Information (office hour) > (click faculty's name) > [Subjects] (select \"AY\" and \"Term\")**. * **Autumn Term:** You can check the STH391:Senior Thesis schedule of each faculty on **icuMAP** following the same navigation path. * **Note:** You must confirm your senior thesis advisor on the \"Advisor's Info\" of icuMAP, as the advisor serves as the new academic advisor [2]. ### 2. Expected Deadlines & Requirements * **Submission Window:** The electronic data (PDF) of the senior thesis must be submitted online between **January 9 (Tuesday) and February 1 (Thursday), 2024**. No thesis will be accepted after 16:00 on the deadline date [1]. * **Candidacy Requirement:** You cannot start your research unless your **Senior Thesis Research Candidacy is approved**. Even if your advisor changes, approval is not guaranteed [2]. * **Registration Restrictions:** You will not be able to register for other courses in the same period as your senior thesis (e.g., STH391) during the allotted period. You must avoid time conflicts when registering [3]. * **Graduation Checklist:** It is the student's responsibility to check the **Graduation Requirements Checklist** of icuMAP to ensure all graduation requirements are satisfied before changing registration or submitting the thesis [1].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::structural_fallback_v1::P0002",
+          "DOC-000106::structural_fallback_v1::P0001",
+          "DOC-000098::structural_fallback_v1::P0003",
+          "DOC-000104::structural_fallback_v1::P0003",
+          "DOC-000092::structural_fallback_v1::P0008"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 4B (non-thinking)",
+    "mode": "non_thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "At ICU, your placement into a Japanese Language Program (JLP) course is determined by taking a **placement test** after enrollment. * **Placement Process**: Students must take the JLP placement test to be assigned to the appropriate course based on their Japanese proficiency levels [1]. * **In-Class Assessment**: Additional evaluation of proficiency may occur during the first class sessions, which can subjectively change the course level [2]. * **Exceptions**: Students with sufficient Japanese proficiency may be exempt from JLP entirely [4]. * **Special Tracks**: Returnee students whose Japanese is a heritage language may be placed in a \"Special Japanese Track\" [3]. **Where to check official information**: * **ICU Website**: https://www.icu.ac.jp/academics/undergraduate/jlp/ [2] * **JLP Website**: https://sites.google.com/info.icu.ac.jp/jlp/ [2] * **Contact**: JLP Office (ERB II Rm.104) or email jlp@icu.ac.jp [2]",
+        "reasoning_text": "",
+        "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+        "gold_source_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002",
+          "DOC-001633::structural_fallback_v1::P0007",
+          "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+          "DOC-000749::structural_fallback_v1::P0000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Yes, you can still register, but you must follow the **Late Registration** procedure. * **Procedure**: You must complete registration via the Late Registration process, which involves online input, an interview with your advisor, and online approval. * **Fee**: You must pay a **Late Registration Fee of 3,000 yen**. This requires purchasing a ticket (*shoshi*) at the second floor of the Administration Building before the interview, followed by payment at the Educational Affairs Group office. * **Timeline**: * **Online input & Interview**: December 5 (Fri) 9:00 – December 12 (Fri) 10:00 (for Winter Term) or April 11 (Sat) 9:00 – April 20 (Mon) 10:00 (for Spring Term). * **Advisor Approval**: December 5–12 (Fri) 11:00 or April 11–20 (Mon) 11:00. * **Important Notes**: * You cannot request special accommodations for absence during the first week of the term [1][4]. * After the Late Registration period ends, registration is not acceptable for any reason [1][2][3]. * If you missed the designated period entirely, you may need to take a leave of absence or withdraw from the university [2][3]. * When making changes, ensure you click the **\"SAVE\"** button to complete the procedure [2][3]. *Note: Specific dates vary by term (Winter/Spring). Please verify the current term's dates in the official handbook.*",
+        "reasoning_text": "",
+        "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+        "gold_source_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007",
+          "DOC-000110::structural_fallback_v1::P0001",
+          "DOC-000751::structural_fallback_v1::P0001",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here are the key rules and deadlines regarding withdrawing from a course or changing your registration: * **Registration Change Deadline:** The \"Registration Change period\" has a fixed end date. No registration changes (including dropping a course) are approved after this period finishes [1]. * **Consequences of Missing Deadlines:** * If you miss the deadline and do not officially withdraw, you cannot add or cancel courses retroactively [1]. * Remaining absent from class without going through the necessary dropping procedures results in a **Failure (F)** grade [1]. * **Late Registration:** If you miss the initial period, you must go through the \"Late Registration procedure\" (which includes an advisor interview and a fee of 3,000 yen) between September 5 and September 12 [3]. * **Withdrawal vs. Leave of Absence:** \"Registration Withdrawal\" is a specific process to withdraw **all** course registration for an ongoing term. It is not possible to withdraw only specific courses arbitrarily after the period ends [1]. * **Action Required:** You must click the \"SAVE\" button to complete any registration change; otherwise, the procedure is not finalized [2]. *Note: The provided evidence does not specify the exact calendar date for the \"Registration Change period\" or the specific deadline for the \"Late Registration procedure,\" though it lists the interview window for late registration as September 5–12 [3].*",
+        "reasoning_text": "",
+        "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+        "gold_source_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001",
+          "DOC-000111::structural_fallback_v1::P0003",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "To confirm whether courses or credits will count toward your ICU requirements while studying abroad, you should consult the **APS (Academic Planning Support)** staff. They can review your **Graduation Requirement Checklist on icuMAP** to confirm the specific credits needed for each category and create a tailored course plan [3]. *Note: The provided evidence does not specify which country or institution your study abroad program is at, so the general advice from the APS is the primary source for your specific case.*",
+        "reasoning_text": "",
+        "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+        "gold_source_ids": [
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000",
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "DOC-001586::structural_fallback_v1::P0001",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the information regarding senior thesis deadlines and schedules: **Official Schedule & Deadlines** * **Submission Deadline:** Electronic data (PDF) of the senior thesis must be submitted online between **January 9 and February 1, 2024**. No submissions are accepted after 16:00 on the deadline date [1]. * **Course Registration Schedule:** Specific periods for the STH391 Senior Thesis course depend on when research starts (e.g., April or September) and the assigned advisor. Students cannot register for other courses during this period [2][3][4]. * **Advisor Application:** Applications for Senior Thesis Advisors or Certification of Candidacy are required for students planning to begin research in Spring/Autumn 2025 [4]. **Where to Find the Schedule** * **icuMAP:** The primary source for schedules and advisors. * Check the \"Senior Thesis schedule\" for STH391 [2]. * Locate the advisor via \"Advisor's Info\" or \"Faculty Information\" on icuMAP, then view their subjects by selecting \"AY\" and \"Term\" [3][4]. * **Graduation Requirements Checklist:** Students must verify their own graduation requirements and course cancellations against this checklist before making changes [1][4]. * **Senior Thesis Guidelines:** Referenced for submission details [1]. **Key Deadlines to Expect** * **Research Candidacy Approval:** Must be secured before starting research; changing advisors does not automatically grant approval [2]. * **Course Registration:** Must align with the STH391 period to avoid time conflicts [2][3][4]. * **Final Submission:** The specific January–February window mentioned in the evidence [1]. *Note: The evidence provided contains specific dates for 2024 and mentions planning for 2025, but does not provide a comprehensive, up-to-date calendar for all future terms beyond the specific examples given.*",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::structural_fallback_v1::P0002",
+          "DOC-000106::structural_fallback_v1::P0001",
+          "DOC-000098::structural_fallback_v1::P0003",
+          "DOC-000104::structural_fallback_v1::P0003",
+          "DOC-000092::structural_fallback_v1::P0008"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 0.8B (thinking)",
+    "mode": "thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "The level is decided based on the placement test results and academic assessment, with the placement being subject to change based on in-class assessments. [1] [2] [3] [4] Where to check official information: * ICU website: https://www.icu.ac.jp/academics/undergraduate/jlp/ (See [2]) * JLP website: https://sites.google.com/info.icu.ac.jp/jlp/ (See [2]) * ICU website: https://www.icu.ac.jp/en/admissions/undergraduate/faq (See [3]) [1] [2] [3] [4]",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU question using only the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Input: A set of four evidence snippets (labeled [1], [2], [3], [4]) related to ICU's JLP (Japanese Language Program) courses.\n    *   Question: How is the level decided, and where should I check official information?\n\n2.  **Analyze the Evidence:**\n    *   [1]: Discusses eligibility and enrollment requirements for JLP courses (Placement test, Academic Advisor Approval, Active Participation). Mentions grades are recorded.\n    *   [2]: Discusses evaluation of Japanese proficiency, course level placement changes based on in-class assessment, and official website links.\n    *   [3]: Discusses placement test for JLP, placement into courses based on proficiency, mentions non-degree students can take JLP, and links to ICU website and JLP website.\n    *   [4]: Discusses a self-study report from 2009, mentions levels correspond to tables, mentions 9th year students take placement tests and get 45 credits. Mentions exemption for students with sufficient proficiency.\n\n3.  **Evaluate the Question vs. Evidence:**\n    *   Question: \"How is the level decided, and where should I check the official information?\"\n    *   Evidence [1]: Mentions eligibility, placement test, academic advisor approval, active participation\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+        "gold_source_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002",
+          "DOC-001633::structural_fallback_v1::P0007",
+          "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+          "DOC-000749::structural_fallback_v1::P0000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "You can register or change your courses, but you must complete the registration procedure by paying the Late Registration Fee (3,000 yen) and completing online input and interview with your advisor before the deadline. You must also be careful to click the \"SAVE\" button to complete the procedure. [1] Title: AY2025 Winter Term Registration – Course Registration Procedures [2] Title: ehandbook - November 28, 2023 Important Information from Educational Affairs Group Evidence: Students who will proceed the Late Registration need to pay the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the se [2] [3] Title: ehandbook - August 25, 2023 Important Information from Educational Affairs Group Evidence: the registration change period. After the registration change period, the registration is not acceptable for any reason. Those who do not complete the registration during the designated period must take a leave of absence or withdraw from the university. ○ Even if students want to register only the course(s) assigned by lottery and/or Senior Thesis, they are still required to complete the regular registration procedures on Registration day. ○ When you make the registration change, please be sure to click the \"SAVE\" button to complete the procedure. Even though you input the data, process is not completed unless this button is clicked. ○After t [3] [4] Title: AY2026 Spring Term Registration – Course Registration Procedures Evidence: should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor April 11 (Sat) 9:00 ~ April 20 (Mon) 10:00 Online approval by advisor April 11 (Sat) 9:00 ~ April 20 (Mon) 11:00 ※ On April11(Sat) and 18 (Sat), the office will be closed. 2. Note Students who will proceed the Late [4] *Note: The provided evidence contains conflicting or incomplete information regarding specific procedures for late registration,",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Question: \"I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?\"\n    *   Evidence provided: 4 snippets (labeled [1], [2], [3], [4] in the prompt, though the text is a bit garbled in the prompt's representation, I need to extract the relevant info).\n    *   Constraint Check: \"Do not restate the evidence or the instructions in the final answer.\" This is a strict constraint. I cannot copy the evidence verbatim in the output. I must synthesize the information from the evidence snippets to answer the question, while adhering to the constraint that I don't *copy* the text. Wait, the instruction says \"Do not restate the evidence or the instructions in the final answer.\" This means I can't write \"Evidence: [1]\" or \"Source: [1]\". I need to provide the answer directly, citing the evidence as [1], [2], etc. in the reasoning, but the final answer text must be clean.\n    *   Wait, looking closely at the prompt: \"Answer the ICU question using only the evidence. Keep the final answer concise and cite evidence using [1], [2], etc.\"\n    *   Constraint\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+        "gold_source_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007",
+          "DOC-000110::structural_fallback_v1::P0001",
+          "DOC-000751::structural_fallback_v1::P0001",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "To withdraw from a course after seeing your workload, you should verify the following deadlines and rules before making the decision: 1. **Registration Change Period:** You must check the deadline for registration changes to ensure the course change is approved before making a decision [1]. 2. **Late Registration Procedures:** If you miss the Registration Period, you must complete registration through the Late Registration procedure, as you cannot ask for special accommodations just because your absence took place during the first week of the term [3]. 3. **Registration Deadline:** If you cannot continue your study for an ongoing term due to an absence, you must take a leave of absence or withdraw from the university [2]. 4. **Course Eligibility:** You must have Pre-Registered for that course and have made a decision to take it before the term starts [4].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU (Intensive Care Unit) institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or instructions in the final answer.\n    *   Question: If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?\n    *   Evidence Provided: Four snippets (1-4) from ICU ehandbook pages.\n\n2.  **Analyze the Question:**\n    *   Core issue: Student wants to withdraw from a course *after* seeing workload, specifically asking about rules/deadlines to check before making the decision.\n    *   Context: ICU course registration, withdrawal, deadlines.\n\n3.  **Evaluate Evidence:**\n    *   [1]: Mentions registration change period. States \"NO registration change is approved after the Registration Change period is finished. No grade or credit will be given retroactively... If a student remains absent... he/she will receive a failure(F) grade.\"\n    *   [2]: Mentions \"not complete the registration during the designated period must take a leave of absence or withdraw from the university.\" Mentions \"even if students want to register only the course(s) assigned by lottery... they are still required to complete the regular registration procedures.\" Mentions \"When you make the registration change... click the 'SAVE' button... process is not completed unless this button is clicked.\" Mentions \"After the registration and the registration change, please confirm that\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+        "gold_source_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001",
+          "DOC-000111::structural_fallback_v1::P0003",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "[1] According to Evidence [1], Kenkyusei courses do not count toward ICU requirements as coursework does not count toward a degree. [2] According to Evidence [2], Transfer applicants are exempted from submitting documents if they already have a bachelor's degree, and other applicants must submit documents. [3] Evidence [3] suggests consulting IBS advisors or the Career Support Office for scheduling and job-hunting information. [4] Evidence [4] states that the School Report and course progressions must be submitted to confirm admission. To confirm whether courses or credits will count toward ICU requirements, one should look at Evidence [1] regarding Kenkyusei eligibility (workup does not count) and Evidence [2] regarding transfer status.",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Answer an ICU institutional question using only the provided evidence.\n    *   **Constraint 1:** Keep the final answer concise.\n    *   **Constraint 2:** Cite evidence using [1], [2], etc.\n    *   **Constraint 3:** If evidence is incomplete, state what is missing.\n    *   **Constraint 4:** Do not restate the evidence or the instructions in the final answer.\n    *   **Question:** \"I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?\"\n    *   **Evidence:** Four provided sections (1, 2, 3, 4).\n\n2.  **Analyze the Evidence:**\n    *   **[1] Title: Eligibility Criteria｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY**:\n        *   Mentions Kenkyusei (International Christian University, Japan) requirements.\n        *   Says coursework does not count toward a degree.\n        *   Says transcripts are provided upon request.\n        *   Says Kenkyusei will not apply towards residency requirement.\n        *   Says Kenkyusei cannot live in dormitory, etc.\n    *   **[2] Title: Admissions Requirements by Country/Region｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY**:\n        *   Focuses on Transfer applicants and general requirements.\n        *   States that for Transfer applicants (who already have a bachelor's degree), they are exempted from submitting documents.\n        *   States that for other applicants, they must submit these documents.\n        *   Mentions searching for country/region/educational system.\n        *   Mentions School Report and\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+        "gold_source_ids": [
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000",
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "DOC-001586::structural_fallback_v1::P0001",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "You can find the official schedule on the \"Senior Thesis\" page of your icuMAP account. You can check the schedule at icuMAP > [Links] Faculty Information (office hour) > (cl [link]). The schedule will be updated for each faculty member. You can also check the \"Graduation Requirements Checklist\" of icuMAP to ensure you have met the requirements before starting your senior thesis research.",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer the ICU institutional question using *only* the evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or instructions in the final answer.\n    *   Input: A set of evidence snippets (4 entries) related to ICU Senior Thesis deadlines.\n    *   Question: \"I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?\"\n\n2.  **Analyze the Evidence:**\n    *   [1] (Nov 28, 2023): Mentions review takes 3 days, registration cannot be changed during this period.\n    *   [2] (Mar 29, 2024): Mentions checking \"Advisor's Info\" of icuMAP, confirms advisor is new academic advisor, STH391 is for April 2025. Mentions STH391 period for spring term (April 2024? 2025 text is confusing, but snippet says \"April 2024\" and \"August 2025\" in snippet text).\n    *   [3] (Aug 26, 2025): Mentions STH391 for September 2025, warns against time conflict.\n    *   [4] (Aug 28, 2024): Mentions graduation requirements checklist, STH391 schedule for each\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::structural_fallback_v1::P0002",
+          "DOC-000106::structural_fallback_v1::P0001",
+          "DOC-000098::structural_fallback_v1::P0003",
+          "DOC-000104::structural_fallback_v1::P0003",
+          "DOC-000092::structural_fallback_v1::P0008"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 2B (thinking)",
+    "mode": "thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "Placement levels are determined by taking a placement test to assess Japanese proficiency [3]. This test is used to place students into the most appropriate courses [3]. Course level placement may also be subject to change based on in-class assessments [2]. For detailed information, refer to the ICU website at https://www.icu.ac.jp/academics/undergraduate/jlp/ [2]. If specific information is needed, contact the JLP Office at ERB II Rm.104 [2]. Missing: Specific details regarding the \"Special Japanese Track\" for heritage language students [3]. Citation: [2], [3]",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using only the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using brackets like [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, state what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Input Question: A new student plans to take JLP but doesn't know which level they will be placed into. How is the level decided, and where should they check official information?\n    *   Input Evidence: Four snippets of text provided by the user (labeled [1] to [4]).\n\n2.  **Analyze the Evidence:**\n    *   [1]: Notes for graduate school students... Eligibility and Enrollment Requirements. Mentions \"Placement Test : You must take the JLP placement test...\". Mentions \"Academic Advisor Approval\". Mentions \"Full class participation...\". Mentions \"Grades for the JLP courses will be recorded in\". Does not explicitly state *where* to check official info for placement or the specific mechanism, other than general eligibility.\n    *   [2]: Notes for graduate school students... \"Additional evaluation of Japanese proficiency will also be conducted during the first class sessions. Course level placement may be subject to change based on this in-class assessment.\" Mentions \"Further Information... please refer to the ICU website and the JLP website: https://www.icu.ac.jp/academics/undergraduate/jlp/ https://sites.google.com/info.icu.ac.jp/jlp/\". Provides contact info for JLP Office.\n    *   [3]: Frequently Asked Questions｜ICU\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+        "gold_source_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002",
+          "DOC-001633::structural_fallback_v1::P0007",
+          "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+          "DOC-000749::structural_fallback_v1::P0000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "Yes, you can register or change courses through the Late Registration procedure. Students must complete registration during the designated period, after which registration is not acceptable for any reason [2]. If you miss the normal day, you must complete the Late Registration procedure with an advisor interview and pay the Late Registration Fee (3,000 yen) [1]. You must click the \"SAVE\" button to complete the procedure [2][3]. Missing: The specific dates for Late Registration vary by term (December 5-12 for Winter, April 11-20 for Spring) and advisor availability, which may be missing for the specific academic year the student is currently attending [1][4].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer the ICU (Institutional Care Unit? No, looks like a specific university's ICU context, likely a Japanese university given the \"yen\" currency and \"e-handbook\") question.\n    *   Constraint 1: Answer using *only* the evidence.\n    *   Constraint 2: Keep the final answer concise.\n    *   Constraint 3: Cite evidence using [1], [2], etc.\n    *   Constraint 4: If evidence is incomplete, state what is missing.\n    *   Constraint 5: Do not restate the evidence or the instructions in the final answer.\n    *   Input Question: \"I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?\"\n    *   Input Evidence: Four text snippets labeled [1] to [4].\n\n2.  **Analyze the Evidence:**\n    *   [1] AY2025 Winter Term Registration: States students who missed the Registration Period must complete registration through the Late Registration procedure. Mentions a specific deadline (Dec 5-12), advisor interview, and Late Registration Fee (3,000 yen). Mentions online input.\n    *   [2] ehandbook (Nov 2023): States registration change period is required. After the period, registration is not acceptable. If not done, leave of absence or withdraw. Mentions clicking \"SAVE\" button.\n    *   [3] ehandbook (Aug 2023): Same as [2] regarding late registration period. Mentions clicking \"SAVE\" button.\n    *   [4] AY2026 Spring Term\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+        "gold_source_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007",
+          "DOC-000110::structural_fallback_v1::P0001",
+          "DOC-000751::structural_fallback_v1::P0001",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "You should check the **Registration Change period** deadline, as no registration change is approved after the period is finished [1], [2]. If you do not complete the registration during the designated period, you must take a leave of absence or withdraw from the university [2]. Additionally, you must complete the required registration procedures on **Registration day** to avoid a failure grade [2]. Please ensure the \"SAVE\" button is clicked to complete the procedure [2]. For specific course restrictions, refer to the course description [4]. **Missing Information:** The evidence does not specify a deadline for the **Registration Change period** (only that it has already passed or the period is over) or the exact definition of the deadline for **late registration** beyond the date provided in [3]. **Citations:** [1], [2], [3], [4]",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question based *only* on the provided evidence.\n    *   Constraint 1: Use only the evidence.\n    *   Constraint 2: Keep the final answer concise.\n    *   Constraint 3: Cite evidence using brackets like [1], [2], etc.\n    *   Constraint 4: If evidence is incomplete, state what is missing.\n    *   Constraint 5: Do not restate the evidence or the instructions in the final answer.\n    *   Question: If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?\n\n2.  **Analyze the Evidence:**\n    *   [1] ehandbook - FAQ: Discusses \"Registration Change period\". States NO registration change is approved after the period is finished. Mentions no retroactive grades for uncanceled courses. Mentions failure (F) grade for absence without dropping course.\n    *   [2] ehandbook - August 28, 2024 Important Information: Discusses \"Registration Change period\". States if not completed during designated period, must take leave or withdraw. Mentions \"Registration day\" procedures. Mentions \"SAVE\" button.\n    *   [3] AY2025 Autumn Term Registration – Course Registration Procedures: Discusses \"Late Registration\". Mentions missing the Registration Period must complete registration through Late Registration procedure. Mentions attendance requirements (attend all courses from first week). Mentions special accommodations for absence not allowed if absence was in first week.\n    *   [4] ehandbook - July 20, 2023 Important Information: Discusses \"Registration restriction of English Language General (ELG)\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+        "gold_source_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001",
+          "DOC-000111::structural_fallback_v1::P0003",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "You should consult the **Graduation Requirement Checklist** on **icuMAP** to verify your graduation requirements, or contact the **APS (Admissions Planning Services)** staff for advice on course planning and scheduling [3]. For specific confirmation regarding credits and residency requirements, you should also check the **Graduation Requirement Checklist on icuMAP** [3]. Note: This evidence suggests APS staff review the Graduation Requirement Checklist on icuMAP, but does not explicitly state where to confirm credits count toward requirements beyond the Graduation Requirement Checklist on icuMAP [3]. **Missing Information:** The provided evidence does not explicitly state where to look for credits count confirmation, only mentions the Graduation Requirement Checklist on icuMAP [3]. **Missing Information:** The provided evidence does not explicitly state where to look for credits count confirmation, only mentions the Graduation Requirement Checklist on icuMAP [3]. **Correction:** The evidence states: \"For such concerns, APS staff review the Graduation Requirement Checklist on icuMAP with t\" (Evidence [3]). Therefore, the answer is based on Evidence [3]. **Revised Final Answer:** You should consult the **Graduation Requirement Checklist on icuMAP** to confirm graduation requirements and course planning [3]. **Missing Information:** The provided evidence does not explicitly state where to look for credits count confirmation, only mentions the Graduation Requirement Checklist on icuMAP [3]. **Missing Information:** The provided evidence does not explicitly state where to look for credits count confirmation, only mentions the Graduation Requirement Checklist on icuMAP [3]. **Correction:** The evidence states: \"For such concerns, APS staff review the Graduation Requirement Checklist on icuMAP with t\" (Evidence [3]). Therefore, the answer is based on Evidence [3]. **Missing Information:** The provided evidence does not explicitly state where to look for credits count confirmation, only mentions the Graduation Requirement Checklist on icuMAP [3]. **Correction:** The evidence states: \"For such concerns, APS staff review the Graduation Requirement Checklist on icuMAP with t\" (Evidence [3]). Therefore, the answer is based on Evidence [3]. **Missing Information:** The provided evidence does not explicitly state where to look for credits count confirmation, only mentions the Graduation Requirement Checklist on icuMAP [3]. **Correction:** The evidence states: \"For such concerns, APS staff review the Graduation Requirement Checklist on icuMAP with t\" (Evidence [",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, state what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Input Question: \"I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?\"\n\n2.  **Analyze the Evidence:**\n    *   [1] Title: Eligibility Criteria｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Content: Discusses Kenkyusei (Research Students) status. States coursework completed as a Kenkyusei will not be applied towards ICU's residency requirement. Mentions Kenkyusei cannot live in dorms, receive commuter passes, etc. No specific mention of checking credits for standard undergrad study abroad planning.\n    *   [2] Title: Admissions Requirements by Country/Region｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Content: Mentions submitting documents to verify completion of secondary education. For transfer applicants exempted from submitting documents if already have a bachelor's degree. Mentions \"Search for your country/region/educational system from the list below.\" No mention of confirming credits for study abroad planning specifically.\n    *   [3] Title: FD Newsletter Vol. 29. Content: Mentions APS (Admissions Planning Services) advises students on course planning before studying abroad. Mentions consulting IBS advisors. Mentions Graduation Requirement Checklist on icuMAP. Mentions Career Support\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+        "gold_source_ids": [
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000",
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "DOC-001586::structural_fallback_v1::P0001",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "You can find the official schedule for Senior Thesis Research (STH391) by checking the schedule of each faculty on icuMAP [3]. Regarding deadlines, you must confirm that your Senior Thesis Research Candidacy is approved before starting research [2]. Additionally, ensure you register for the STH391 period in the spring or autumn term to avoid time conflicts [2], [3]. You should also check your Graduation Requirements Checklist by yourself to ensure you satisfy graduation requirements [1], [4]. Missing Information: The specific dates for the \"Senior Thesis Research Candidacy\" approval and the exact \"Graduation Requirements Checklist\" links are not fully detailed in the provided text snippets.",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer the ICU institutional question using only the provided evidence.\n    *   Constraint 1: Use grounded citations only ([1], [2], etc.).\n    *   Constraint 2: Keep the final answer concise.\n    *   Constraint 3: If evidence is incomplete, state what is missing.\n    *   Constraint 4: Do not restate the evidence or instructions in the final answer.\n    *   Question: Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?\n    *   Input Evidence: Four snippets from an \"ehandbook\" (likely a student handbook) from different dates (Nov 2023, March 2024, August 2025, August 2024).\n\n2.  **Analyze the Evidence:**\n    *   [1] November 28, 2023: Mentions registration change, graduation requirements, submission of a Senior Thesis. It mentions \"Graduation Requirements Checklist\" but doesn't explicitly list the link or specific deadlines for the thesis itself, just the consequence of changing registration. It mentions \"Senior Thesis Research Candidacy\" approval is needed.\n    *   [2] March 29, 2024: Mentions \"Senior Thesis Research Candidacy\", \"Senior Thesis Advisor\" (icuMAP), \"STH391 Senior Thesis\". It mentions those starting in April 2024 will be allotted a period for STH391 when they register for courses in the spring term. It mentions checking \"Graduation Requirements Checklist\" but the specific link isn't explicitly detailed in the snippet provided, though it implies checking requirements.\n    *   [3] August 2\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::structural_fallback_v1::P0002",
+          "DOC-000106::structural_fallback_v1::P0001",
+          "DOC-000098::structural_fallback_v1::P0003",
+          "DOC-000104::structural_fallback_v1::P0003",
+          "DOC-000092::structural_fallback_v1::P0008"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 4B (thinking)",
+    "mode": "thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "The level is decided based on the results of a placement test taken upon enrollment [1]. Additionally, course level placement may be subject to change based on an in-class assessment of Japanese proficiency conducted during the first class sessions [2]. For details on the program and course offerings, you should check the ICU website and the JLP website [2].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer the ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Question: How is the level decided, and where should I check the official information?\n\n2.  **Analyze the Evidence:**\n    *   [1] Notes for graduate school students...\n        *   Mentions \"Placement Test : You must take the JLP placement test and register for the assigned course.\"\n        *   Mentions \"Academic Advisor Approval\".\n        *   Doesn't explicitly detail *where* to check official info beyond implying registration process.\n    *   [2] Notes for graduate school students... (continuation)\n        *   \"Course level placement may be subject to change based on this in-class assessment.\"\n        *   \"Additional evaluation of Japanese proficiency will also be conducted during the first class sessions.\"\n        *   \"For details on the JLP program and course offerings, please refer to the ICU website and the JLP website: https://www.icu.ac.jp/academics/undergraduate/jlp/ https://sites.google.com/info.icu.ac.jp/jlp/\"\n    *   [3] Frequently Asked Questions...\n        *   \"The test is to place them into the most appropriate courses by their levels of Japanese proficiency.\"\n        *   \"Many returnee students... are placed in the 'Special Japanese Track'...\"\n        *   Contact info for JLP\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+        "gold_source_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000935::structural_fallback_v1::P0000",
+          "DOC-000935::structural_fallback_v1::P0002",
+          "DOC-001633::structural_fallback_v1::P0007",
+          "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+          "DOC-000749::structural_fallback_v1::P0000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "If you missed the normal registration day, you must proceed through the Late Registration procedure, which includes online input, an interview with your advisor, and online approval [1]. You are required to pay a Late Registration Fee (3,000 yen) and buy a ticket (shoshi) before the interview [1]. You cannot request special accommodations for absence during the first week of the term [1]. Additionally, when making a registration change, ensure you click the \"SAVE\" button to complete the procedure [2][3]. Evidence missing: Specific dates for the registration change period and Late Registration procedure for the current term are not provided in the evidence [1][4].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or instructions in the final answer.\n    *   Question: I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?\n    *   Context: ICU (International Christian University) registration procedures.\n\n2.  **Analyze the Evidence:**\n    *   [1] AY2025 Winter Term Registration:\n        *   Late Registration required if missed Registration Period.\n        *   Procedure: Online input, interview with advisor (Dec 5-12), Online approval (Dec 5-12).\n        *   Fee: Late Registration Fee (3,000 yen).\n        *   Ticket (shoshi) for 3,000 yen needed before interview.\n        *   Note: \"You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term.\" (Implies sickness might not automatically grant exemption, but Late Registration procedure is the path).\n    *   [2] ehandbook - Nov 28, 2023:\n        *   Registration day absence: Not possible to register on that day? Wait, text says \"on on registration day is not possible, students should complete the registration during the registration change period.\" (Likely typo in evidence, but implies\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+        "gold_source_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000730::structural_fallback_v1::P0001",
+          "DOC-000108::structural_fallback_v1::P0007",
+          "DOC-000110::structural_fallback_v1::P0001",
+          "DOC-000751::structural_fallback_v1::P0001",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "You must check if the Registration Change period has passed, as no changes are approved after it ends [1]. If the period is over, you cannot officially drop the course without receiving an F grade if absent [1]. If you miss the designated registration period, you must complete the Late Registration procedure between September 5 and September 12, which requires payment [3]. Ensure you click the \"SAVE\" button to finalize any changes [2].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or instructions in the final answer.\n    *   Question: \"If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?\"\n\n2.  **Analyze the Evidence:**\n    *   [1] ehandbook - FAQ:\n        *   Registration Change period is over? NO registration change approved after Registration Change period finished.\n        *   No grade/credit retroactively if not officially registered during specified period.\n        *   If student remains absent without dropping procedures -> F grade.\n    *   [2] ehandbook - August 28, 2024 Important Information:\n        *   Not complete registration during designated period -> leave of absence or withdraw.\n        *   Must click \"SAVE\" to complete registration change.\n        *   Confirm courses added/canceled are reflected.\n    *   [3] AY2025 Autumn Term Registration – Course Registration Procedures:\n        *   Should attend all courses from first week.\n        *   No special accommodations for absence during first week.\n        *   Late Registration procedure exists (Period: Sept 5-12), requires payment.\n    *   [4] ehandbook - July 20, 2023 Important Information:\n        *   Exercise courses: Pre-registration required before term starts\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+        "gold_source_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000097::structural_fallback_v1::P0002",
+          "DOC-000104::structural_fallback_v1::P0001",
+          "DOC-000736::structural_fallback_v1::P0001",
+          "DOC-000111::structural_fallback_v1::P0003",
+          "DOC-000811::structural_fallback_v1::P0001"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": true,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "To confirm whether courses will count toward ICU requirements, consult IBS advisors for scheduling and review the Graduation Requirement Checklist on icuMAP [3]. For study abroad planning, refer to previous session recordings and materials provided by APS [3]. Evidence is missing specific guidance on whether study abroad credits count toward major requirements for regular students versus Kenkyusei [1].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Grounded citations only ([1], [2], etc.).\n    *   Constraint 2: Keep the final answer concise.\n    *   Constraint 3: Do not restate the evidence or instructions in the final answer.\n    *   Constraint 4: If evidence is incomplete, say what is missing.\n    *   Question: \"I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?\"\n\n2.  **Analyze the Evidence:**\n    *   [1] Discusses \"Kenkyusei\" (research students) eligibility. It states coursework does *not* count toward a degree for Kenkyusei. It mentions transferring students must follow a screening process and coursework completed as Kenkyusei will not be applied towards ICU's residency requirement. This is specific to Kenkyusei status, not general study abroad or major planning for regular students.\n    *   [2] Discusses Admissions Requirements by Country/Region. Mentions submitting documents verifying completion of secondary education. For Transfer applicants, documents are exempted if they have a bachelor's degree. Mentions submitting a list of courses progressing or to be taken in the final semester/year to verify course requirements for admission.\n    *   [3] FD Newsletter Vol. 29. Mentions APS (Admissions/Student Services?) presents advice for course planning before studying abroad. Directs students to watch recordings/materials from previous sessions. Recommends consulting **IBS advisors** for scheduling. Mentions APS staff review the Graduation Requirement Checklist on **icuMAP** for graduation requirement concerns\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+        "gold_source_ids": [
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001590::structural_fallback_v1::P0005",
+          "DOC-001586::structural_fallback_v1::P0000",
+          "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+          "DOC-001586::structural_fallback_v1::P0001",
+          "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers_thinking",
+        "answer_text": "To find the official schedule, check the STH391:Senior Thesis schedule of each faculty on icuMAP under Faculty Information > Subjects [3], [4]. Thesis-related deadlines include Senior Thesis Research Candidacy approval before starting research [2], STH391 registration allotment based on start term (April/September) [2], [3], and avoiding time conflicts with other courses during the thesis period [3], [4]. You must also verify graduation requirements and registration changes independently [1].",
+        "reasoning_text": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Cite evidence using [1], [2], etc.\n    *   Constraint 2: Keep the final answer concise.\n    *   Constraint 3: If evidence is incomplete, state what is missing.\n    *   Constraint 4: Do not restate the instructions or evidence in the final answer.\n    *   Question: \"I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?\"\n\n2.  **Analyze the Evidence:**\n    *   [1] (Nov 28, 2023): Mentions registration change, graduation requirements checklist, senior thesis submission (snippet cut off \"4. Submission of a Senior Thesis A\"). No specific deadline links or dates provided for finding schedules.\n    *   [2] (March 29, 2024): Mentions Senior Thesis Research Candidacy approval needed before starting. Mentions STH391 Senior Thesis allotment for those starting April 2024. No specific link for official schedule.\n    *   [3] (August 26, 2025): Mentions STH391 for those starting September 2025. States: \"You can check STH391:Senior Thesis schedule of each faculty on icuMAP; icuMAP > [Links] Faculty Information (office hour) > (cl\". (Snippet cut off).\n    *   [4] (August 28, 2024): Repeats info from [3] regarding checking STH391 schedule on icu\n\nConsidering the limited time, I will answer directly now.",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::structural_fallback_v1::P0002",
+          "DOC-000106::structural_fallback_v1::P0001",
+          "DOC-000098::structural_fallback_v1::P0003",
+          "DOC-000104::structural_fallback_v1::P0003",
+          "DOC-000092::structural_fallback_v1::P0008"
+        ]
+      }
+    ]
+  }
+]

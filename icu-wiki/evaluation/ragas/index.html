@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAGAS Method — ICU Wiki Research</title>
+    <meta name="description" content="Detailed RAGAS evaluation method used by ICU Wiki." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        
+      </nav>
+    </header>
+    <main>
+    <section class="page-title compact-title">
+      <p class="eyebrow">Evaluation method</p>
+      <h1>How we use RAGAS</h1>
+      <p>This page explains what RAGAS scores in our ICU Wiki experiments, which model performs each evaluation step, and which minimal project metadata is added for reference-based scoring.</p>
+    </section>
+
+    <section class="section no-top">
+      <div class="note-grid">
+        <article><span>Important distinction</span><strong>Judge model ≠ tested model</strong><p>Qwen or Gemma generates the answer. The RAGAS judge model evaluates that answer afterward.</p></article>
+        <article><span>Current judge</span><strong>GPT-5 mini</strong><p>The hard-20 benchmark uses <code>openai/gpt-5-mini</code> as the LLM evaluator through OpenRouter.</p></article>
+        <article><span>Current embedding</span><strong>Qwen embedding</strong><p>The evaluator-side embedding model is <code>Qwen/Qwen3-Embedding-0.6B</code>.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Roles</p>
+        <h2>Which model does what?</h2>
+      </div>
+      <p>RAGAS evaluation has several roles. In our current setup, the same model name can appear in more than one role, but the roles are conceptually separate.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Role</th><th>Current project value</th><th>What it does</th><th>Used by</th></tr></thead><tbody><tr><td>Model under evaluation</td><td><code>Qwen3.5 0.8B / 2B / 4B</code>, Gemma runs</td><td>Generates the answer we want to evaluate.</td><td>All metrics.</td></tr><tr><td>Retrieved evidence</td><td>Fixed Top-5 hybrid retrieval results</td><td>Provides the context that the answer is supposed to use.</td><td><code>faithfulness</code>, gold-answer generation, manual inspection.</td></tr><tr><td>RAGAS judge LLM</td><td><code>openai/gpt-5-mini</code> for the hard-20 run</td><td>Performs LLM-judged steps such as claim extraction, support checking, and factual comparison.</td><td><code>faithfulness</code>, <code>answer_relevancy</code>, <code>answer_correctness</code>.</td></tr><tr><td>Evaluator embedding model</td><td><code>Qwen/Qwen3-Embedding-0.6B</code></td><td>Converts questions or answers into vectors for semantic similarity calculations.</td><td><code>answer_relevancy</code>, <code>semantic_similarity</code>, and the similarity part of <code>answer_correctness</code>.</td></tr><tr><td>Gold-answer teacher</td><td><code>openai/gpt-5-mini</code></td><td>Creates <code>gold_answer</code> and <code>is_answerable</code> from fixed retrieved evidence before scoring.</td><td>Reference-based RAGAS metrics.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Claim checking</p>
+        <h2>How faithfulness is judged</h2>
+      </div>
+      <div>
+        <p>For faithfulness, RAGAS does not simply compare two answer embeddings. It first uses the judge LLM to break the generated answer into factual statements. Then the judge checks whether each statement is supported by the retrieved context.</p>
+        <p>In our hard-20 run, that LLM-judged part is handled by <code>openai/gpt-5-mini</code>. The retrieved Top-5 evidence is the evidence base used for the support check.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Pipeline</p>
+        <h2>From answer to faithfulness score</h2>
+      </div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Step</th><th>What happens</th><th>Why it matters</th></tr></thead><tbody><tr><td>1. Answer statement extraction</td><td>RAGAS asks the judge LLM to decompose the generated answer into smaller factual statements or claims.</td><td>A long answer can contain both supported and unsupported claims. Claim-level scoring avoids treating the whole answer as one block.</td></tr><tr><td>2. Context support judgment</td><td>For each claim, the judge LLM receives the retrieved context and decides whether the claim is supported by that context.</td><td>This is where hallucinated or unsupported details should be penalized.</td></tr><tr><td>3. Claim aggregation</td><td>The supported-claim count is divided by the total number of claims.</td><td>The final faithfulness score becomes a proportion, so partially grounded answers can receive intermediate scores.</td></tr><tr><td>4. Separate relevance and similarity checks</td><td>Other metrics check different questions: whether the answer addresses the user question and whether it is close to the gold answer.</td><td>This is why a model can be faithful but still incomplete, or semantically similar but not well cited.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Metric logic</p>
+        <h2>Metric formulas</h2>
+      </div>
+      <p>These formulas are intentionally simplified so the evaluation logic is explainable in a thesis presentation. The exact prompts and class names are handled by the installed RAGAS version.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Metric</th><th>Formula</th><th>What the variables mean</th><th>Main evaluator</th></tr></thead><tbody><tr><td><code>faithfulness</code></td><td><div class="formula-block"><div><var>S</var> = {<var>s</var><sub>1</sub>, ..., <var>s</var><sub>n</sub>}</div><div><var>I</var>(<var>s</var><sub>i</sub>) = 1 if claim <var>s</var><sub>i</sub> is supported by retrieved context, else 0</div><div><strong>faithfulness</strong> = (1 / <var>n</var>) &Sigma;<sub>i=1</sub><sup>n</sup> <var>I</var>(<var>s</var><sub>i</sub>)</div></div></td><td><var>S</var> is the set of generated-answer claims. The score is the fraction of generated claims supported by retrieved evidence.</td><td>Judge LLM for claim extraction and support checking.</td></tr><tr><td><code>answer_relevancy</code></td><td><div class="formula-block"><div>Generate reverse questions <var>q</var><sub>1</sub>, ..., <var>q</var><sub>N</sub> from answer <var>a</var></div><div><strong>answer_relevancy</strong> = (1 / <var>N</var>) &Sigma;<sub>i=1</sub><sup>N</sup> cos(<var>E</var>(<var>q</var>), <var>E</var>(<var>q</var><sub>i</sub>))</div><div>cos(<var>x</var>, <var>y</var>) = (<var>x</var> &middot; <var>y</var>) / (||<var>x</var>|| ||<var>y</var>||)</div></div></td><td><var>q</var> is the original user question. <var>q</var><sub>i</sub> are question-like probes generated from the model answer.</td><td>Judge LLM creates probes; embedding model computes cosine similarity.</td></tr><tr><td><code>semantic_similarity</code> / <code>answer_similarity</code></td><td><div class="formula-block"><div><strong>semantic_similarity</strong> = cos(<var>E</var>(<var>a</var>), <var>E</var>(<var>g</var>))</div><div>cos(<var>x</var>, <var>y</var>) = (<var>x</var> &middot; <var>y</var>) / (||<var>x</var>|| ||<var>y</var>||)</div></div></td><td><var>a</var> is the generated answer. <var>g</var> is the gold/reference answer.</td><td>Embedding model.</td></tr><tr><td><code>answer_correctness</code></td><td><div class="formula-block"><div><var>precision</var> = <var>TP</var> / (<var>TP</var> + <var>FP</var>)</div><div><var>recall</var> = <var>TP</var> / (<var>TP</var> + <var>FN</var>)</div><div><var>F1</var> = 2 &middot; <var>precision</var> &middot; <var>recall</var> / (<var>precision</var> + <var>recall</var>)</div><div><strong>answer_correctness</strong> &asymp; <var>w</var><sub>factual</sub> &middot; <var>F1</var> + <var>w</var><sub>semantic</sub> &middot; <var>semantic_similarity</var></div></div></td><td><var>TP</var>: generated claims present in the gold answer. <var>FP</var>: generated claims not present in gold. <var>FN</var>: gold claims missing from generated answer. RAGAS legacy defaults use weights 0.75 factual / 0.25 semantic.</td><td>Judge LLM for factual comparison; embedding model for semantic part.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Evaluator roles</p>
+        <h2>Where did we use GPT-5 Mini for?</h2>
+      </div>
+      <div>
+        <p><code>GPT-5 mini</code> is used as the evaluator LLM, not as the answer-generation model being tested.</p>
+        <p>It is used for LLM-judged steps: extracting claims, checking whether claims are supported by retrieved evidence, creating reverse questions for answer relevancy, comparing generated answers against gold answers, and generating the gold reference data.</p>
+        <p>The embedding-based parts are handled separately by <code>Qwen/Qwen3-Embedding-0.6B</code>. This includes semantic similarity, cosine-similarity calculations in answer relevancy, and the semantic-similarity component used inside answer correctness.</p>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Reference data</p>
+        <h2>What gold answers are for</h2>
+      </div>
+      <div>
+        <p>The no-gold evaluation pass can score faithfulness and answer relevancy because those only need the question, model answer, and retrieved contexts.</p>
+        <p>To score answer correctness and semantic similarity, we need a reference answer. For that, <code>GPT-5 mini</code> generated <code>gold_answer</code> and <code>is_answerable</code> from the same fixed Top-5 evidence.</p>
+        <p>This gold-answer generation is our benchmark preparation step. It is related to RAGAS because RAGAS consumes the reference answer, but <code>is_answerable</code> is our addition.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Custom fields</p>
+        <h2>What we add beyond RAGAS</h2>
+      </div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Field / label</th><th>Origin</th><th>Calculation logic</th><th>How to interpret it</th></tr></thead><tbody><tr><td><code>is_answerable</code></td><td>Our teacher-generated gold metadata</td><td><code>GPT-5 mini</code> receives the question and fixed Top-5 retrieved evidence. It returns whether the evidence is sufficient to produce a grounded gold answer.</td><td>This is not a RAGAS metric. It is used to interpret whether the fixed retrieved evidence can support a reference answer, but it can contain teacher-label errors.</td></tr><tr><td><code>gold_answer</code></td><td>Our teacher-generated gold metadata</td><td><code>GPT-5 mini</code> writes a concise reference answer using only retrieved evidence. If evidence is insufficient, it writes an insufficient-evidence answer.</td><td>Used by RAGAS metrics that need a reference answer, especially correctness and semantic similarity.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Answerability example</p>
+        <h2>How <code>is_answerable</code> is created</h2>
+      </div>
+      <p>The label is produced before RAGAS scoring. We pass the question and fixed Top-5 retrieved evidence to <code>GPT-5 mini</code>. The model must decide whether the evidence is sufficient to write a grounded reference answer.</p>
+      
+    <div class="example-grid">
+      <article>
+        <h3>Prompt rule given to GPT-5 mini</h3>
+        <p>This is the benchmark-preparation prompt that creates the answerability label. It tells GPT-5 mini to use only the fixed Top-5 retrieved evidence.</p>
+        <pre class="code-excerpt"><code>code/eval/generate_gold_answers.py:67-83
+
+def build_prompt(entry: dict[str, Any], *, max_chars: int) -&gt; str:
+    return (
+        &quot;You are creating gold reference data for an ICU Wiki RAG evaluation.\n&quot;
+        &quot;Use ONLY the retrieved evidence below. Do not use outside knowledge.\n&quot;
+        &quot;Choose gold_source_ids only from the exact source_id values shown below.\n&quot;
+        &quot;If the evidence is insufficient, set is_answerable to false.\n&quot;
+        &quot;Keep gold_answer concise, normally under 160 words.\n&quot;
+        ...
+    )</code></pre>
+      </article>
+      <article>
+        <h3>Saved label for <code>hr_005</code></h3>
+        <p>This label is a saved data artifact, not a RAGAS-native score. GPT-5 mini judged the retrieved evidence insufficient, so the reference answer became an insufficient-evidence answer.</p>
+        <pre class="code-excerpt"><code>data/eval/runs/20260501_qwen_embed_hard20_thinking_comparison/questions_with_gold.jsonl:5
+
+{
+  &quot;id&quot;: &quot;hr_005&quot;,
+  &quot;question&quot;: &quot;I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?&quot;,
+  &quot;category&quot;: &quot;graduation&quot;,
+  &quot;is_answerable&quot;: false,
+  &quot;gold_answer&quot;: &quot;The retrieved evidence is insufficient to answer this question.&quot;,
+  &quot;gold_source_ids&quot;: [],
+  &quot;gold_source_ranks&quot;: [],
+  &quot;gold_generation_model&quot;: &quot;openai/gpt-5-mini&quot;,
+  &quot;gold_validation_errors&quot;: []
+}</code></pre>
+      </article>
+    </div>
+    
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Implementation</p>
+        <h2>Where this lives in the repository</h2>
+      </div>
+      <p><code>code/eval/ragas_config.py</code> selects the judge model, embedding model, and RAGAS metric objects.</p>
+      <p><code>code/eval/run_ragas_metrics.py</code> builds the RAGAS dataset rows and calls <code>ragas.evaluate(...)</code>.</p>
+      <p><code>code/eval/generate_gold_answers.py</code> creates teacher-generated references and answerability labels before the with-gold scoring pass.</p>
+      <p><a class="text-link" href="/icu-wiki/evaluation/">Return to the evaluation overview</a></p>
+    </section>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-12.</span>
+    </footer>
+  </body>
+</html>

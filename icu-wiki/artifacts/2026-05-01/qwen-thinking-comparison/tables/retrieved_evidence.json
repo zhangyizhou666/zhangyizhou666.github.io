@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "category": "language",
+    "is_answerable": true,
+    "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+    "gold_source_ids": [
+      "DOC-000935::structural_fallback_v1::P0000",
+      "DOC-000935::structural_fallback_v1::P0002"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000935::structural_fallback_v1::P0000",
+        "title": "Notes for graduate school students who wish to take the JLP courses",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.0315136476426799,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Notes for graduate school students who wish to take the JLP courses February 2026 Ikumi Ozawa, JLP Director Ⅰ. Eligibility and Enrollment Requirements Graduate school students at ICU may enroll in JLP courses under the following conditions: ・Placement Test : You must take the JLP placement test and register for the assigned course. ・Academic Advisor Approval: Please obtain approval from your academic advisor before registering for a JLP course. ・Active Participation : Full class participation, completion of assignments, and taking exams are required. Auditing is not allowed in JLP. Please note: ・ Grades for the JLP courses will be recorded in your transcript but will not be included in your GPA. ・JLP course credits cannot be applied towards your graduation requirements . Ⅱ. Course Registration Process: ・Returning JLP Students: If you have previously completed a JLP course, register for the next level course without taking the placement test. ・First-time JLP Students: If this is your first time taking a JLP course, you must take the placement test – even if you have no prior experience studying Japanese. Ⅲ. Placement Test Information: ・Purpose : To evaluate your Japanese language proficiency and determine the appropriate course level. ・Test Schedule: ・For Spring Term enrollment : Take the test in March. ・For Autumn or Winter Term enrollment : Take the test in August."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000935::structural_fallback_v1::P0002",
+        "title": "Notes for graduate school students who wish to take the JLP courses",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.028693528693528692,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "w if instructed. ・ Additional evaluation of Japanese proficiency will also be conducted during the first class sessions. Course level placement may be subject to change based on this in-class assessment. Further Information For details on the JLP program and course offerings, please refer to the ICU website and the JLP website: https://www.icu.ac.jp/academics/undergraduate/jlp/ https://sites.google.com/info.icu.ac.jp/jlp/ Contact JLP Office (ERB II Rm.104) Email: jlp@icu.ac.jp Office Hours: Monday–Friday, 9:00–11:45 and 12:45–16:00"
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001633::structural_fallback_v1::P0007",
+        "title": "Frequently Asked Questions｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/faq",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "e a placement test for the Japanese Language Program (JLP). The test is to place them into the most appropriate courses by their levels of Japanese proficiency. Many returnee students who regard Japanese as their first or heritage language are placed in the \"Special Japanese Track\" (see Japanese Language Program ) to improve the skills they are lacking. CLOSE Q20. I am supposed to be a non-degree student. Can I take the Japanese language courses: Japanese Language Program? The Japanese Language Program is also open to non-degree students at ICU: One-Year-Regular Students and Kenkyusei (Special Students). Please check the respective student categories. CLOSE Academics Q21. Are AP credits transferable? At the time of application, we recognize AP as advanced-level courses but we do not give any university credits for them. CLOSE Q22. For Transfer Students: Can I find out how many credits can be transferred before enrollment? Credits may be granted recognition only after students are officially enrolled at ICU. Click here for more details. CLOSE Aid Q23. Are any scholarships or financial aids available before enrollment? Yes. Click here for details. CLOSE Q24. Can applicants to ICU qualify for FAFSA loans? Unfortunately, not at this point. Please contact FAFSA directly regarding any related issues. CLOSE Housing on Campus Q25."
+      },
+      {
+        "rank": 4,
+        "passage_id": "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0067",
+        "title": "自己点検・評価報告書（2009年）",
+        "url": "https://www.icu.ac.jp/about/docs/self-study-report2009.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "68\nJLP 開講科目\n＊「レベル」は下表に対応している。\n9 月入学生は、入学後にプレースメントテストを受け、その結果により最高で45 単位のJLP 科目が課\nされる。ただし、日本語能力が十分にあると認められる者は、JLP が免除となる。\n1996 年にJLP 教員がまとめた冊子には、JLP における初級から上級までの学習目標として、次表に\nあるものが掲げられている。\n初級から上級JLP 科目の学習目標"
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000749::structural_fallback_v1::P0000",
+        "title": "【IBS】Advising sessions are starting!",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Hello, this is IBS! 28Sept students, congratulations on your matriculation🍂\nIBS, the official peer advisers of the ICU, will start advising sessions for new students.\n“How do I take JLP classes?” ”There are so many courses that I don't know what to take.”, “I'm worried about whether I'm registering properly.” etc.\nIf you have anything to talk about, feel free to drop by and consult us🙌\nFor those with absolutely no idea what is happening, we made the video to prepare for autumn term registration, \"IBS radio”! If you would like to consult but don't know where to start, you might want to start by taking a look\nHERE\n!\nIn addition,\n28 April students and above can also join our advising sessions\n!\nPlease ask about anything such as autumn term registration and balance with other programs✨\n【About Advising】\n＊Online Advising： Reservations can be made up to 24 hours before the preferred dates & time. Reservation Form is here！→\nhttps://linktr.ee/ibs_icubrothersandsisters\n＊Face-to-Face Advising： At Othmer Library 1F！Please feel free to drop by us\nwithout reservations:)\nPlease see the attached image to check the dates & time✨\n【What is IBS？】\n⭐The official peer advisers of ICU\n⭐Advising from “student’s points of view”\n⭐We can support various concerns such as …\n・How many credits to take each term\n・How to balance various programs with your desired course of study\n・How to balance extracurricular activities"
+      }
+    ]
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "category": "registration",
+    "is_answerable": true,
+    "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+    "gold_source_ids": [
+      "DOC-000730::structural_fallback_v1::P0001",
+      "DOC-000108::structural_fallback_v1::P0007"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000730::structural_fallback_v1::P0001",
+        "title": "AY2025 Winter Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.031544957774465976,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor December 5 (Fri) 9:00 ~ December 12 (Fri) 10:00 Online approval by advisor December 5 (Fri) 9:00 ~ December 12 (Fri) 11:00 2. Note Students who will proceed the Late Registration need to pay the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the second floor of Administration Building and pay the fee at the Educational Affairs Group office. For the procedure details, please check the ehandbook (Course Registration > 6. Course Registration). Procedures after the Fee payment are the same as the usual registration explained above. If you need to go through the Late Registration for legitimate reasons, please make sure to contact your advisor in advance to avoid missing the deadline for the procedure. The Pre-Registration lottery results remain valid for the Late Registration. 【Registration Change Period】 Students who completed the registration procedures could add or cancel their registered courses, if they need to, during the Registration Change Period."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000108::structural_fallback_v1::P0007",
+        "title": "ehandbook - November 28, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.03131881575727918,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "on on registration day is not possible, students should complete the registration during the registration change period. After the registration change period, the registration is not acceptable for any reason. Those who do not complete the registration during the designated period must take a leave of absence or withdraw from the university. ○Even if students want to register only the course(s) assigned by lottery and/or Senior Thesis, they are still required to complete the regular registration procedures on Registration day. ○When you make the registration change, please be sure to click the \"SAVE\" button to complete the procedure. Even though you input the data, process is not completed unless this button is clicked. After the registration change period, the registration change is not acceptable for any reason. ○After the registration / the registration change, please confirm that the courses you wish to take are reflected correctly via Registration Website \"Registration Results\". Please pay careful attention when you register the courses and make any changes. F. Teacher Certification Program (See Japanese.) G. Curatorial Training Program (See Japanese.) H."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000110::structural_fallback_v1::P0001",
+        "title": "ehandbook - August 25, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/august-25-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.03036576949620428,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "the registration change period. After the registration change period, the registration is not acceptable for any reason. Those who do not complete the registration during the designated period must take a leave of absence or withdraw from the university. ○ Even if students want to register only the course(s) assigned by lottery and/or Senior Thesis, they are still required to complete the regular registration procedures on Registration day. ○When you make the registration change, please be sure to click the \"SAVE\" button to complete the procedure. Even though you input the data, process is not completed unless this button is clicked. ○After the registration and the registration change, please confirm that the courses you wish to add and/or cancel is reflected correctly via Registration Website \"Registration Results\". As the registration change is not possible after the registration change period for any reason, please pay careful attention when you make any changes. B. Health and Physical Education Courses We recommend you to take exercise course \"PE Exercise I\" in the 1st term, \"PE Exercise II\" in the 2nd term, and \"PE Exercise III\" in the 3rd term of your Freshman year."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000751::structural_fallback_v1::P0001",
+        "title": "AY2026 Spring Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.030330882352941176,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor April 11 (Sat) 9:00 ~ April 20 (Mon) 10:00 Online approval by advisor April 11 (Sat) 9:00 ~ April 20 (Mon) 11:00 ※ On April11(Sat) and 18 (Sat), the office will be closed. 2. Note Students who will proceed the Late Registration need to pay the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the second floor of Administration Building and pay the fee at the Educational Affairs Group office. (*Please note that the office will be closed on Saturdays during the Late Registration Period, so you will not be able to pay late registration fees or obtain approval by your advisor ). For the procedure details, please check the ehandbook (Course Registration > 6. Course Registration). Procedures after the Fee payment are the same as the usual registration explained above."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000811::structural_fallback_v1::P0001",
+        "title": "AY2025 Spring Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.03021353930031804,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor April 10 (Thu) 9:00 ~ April 17 (Thu) 10:00 Online approval by advisor April 10 (Thu) 9:00 ~ April 17 (Thu) 11:00 2. Note Students who will proceed the Late Registration need to make payment of the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the second floor of Administration Building and pay the fee at the Educational Affairs Group office. For the procedure details, please check the ehandbook (Course Registration > 6. Course Registration). Procedures after the Fee payment are the same as the usual registration explained above. If you need to go through the Late Registration for legitimate reasons, please make sure to contact your advisor in advance to avoid missing the deadline for the procedure. The Pre-Registration lottery results remain valid for the Late Registration."
+      }
+    ]
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "category": "registration",
+    "is_answerable": true,
+    "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+    "gold_source_ids": [
+      "DOC-000097::structural_fallback_v1::P0002",
+      "DOC-000104::structural_fallback_v1::P0001",
+      "DOC-000736::structural_fallback_v1::P0001"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000097::structural_fallback_v1::P0002",
+        "title": "ehandbook - FAQ",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/faq/faq",
+        "language": "en",
+        "retrieval_score": 0.0315136476426799,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "n the Registration Change period has already over, is there a way to still make more course addition or cancel possible? A: NO registration change is approved after the Registration Change period is finished. No grade or credit will be given retroactively for a course for which a student is not officially registered during the specified period, even if the student completes all the requirements for it. Also, if a student remains absent from class without going through the necessary procedures for dropping the course, he/she will receive a failure(F) grade for the course. If a student cannot continue his/her study for an ongoing term due to the illness or unavoidable reason recognized by the University, permission for Registration Withdrawal may be given by the CLA Dean / GS Dean. Registration Withdrawal is to withdraw ALL course registration for an ongoing term. It is not possible to withdraw the course registration partly. For details, see 7. Registration Withdrawal. Q: Can I attend classes before making the Registration Change? A: Yes you can. But be sure to make the Registration Change by the deadline."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000104::structural_fallback_v1::P0001",
+        "title": "ehandbook - August 28, 2024 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/august-28-2024-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.028594771241830064,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "not complete the registration during the designated period must take a leave of absence or withdraw from the university. ○ Even if students want to register only the course(s) assigned by lottery and/or Senior Thesis, they are still required to complete the regular registration procedures on Registration day. ○When you make the registration change, please be sure to click the \"SAVE\" button to complete the procedure. Even though you input the data, process is not completed unless this button is clicked. ○After the registration and the registration change, please confirm that the courses you wish to add and/or cancel is reflected correctly via Registration Website \"Registration Results\". As the registration change is not possible after the registration change period for any reason, please pay careful attention when you make any changes. B. Health and Physical Education Courses We recommend you to take exercise course \"PE Exercise I\" in the 1st term, \"PE Exercise II\" in the 2nd term, and \"PE Exercise III\" in the 3rd term of your Freshman year. If you don't take these courses in your freshman year, take these courses according to your plan."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000736::structural_fallback_v1::P0001",
+        "title": "AY2025 Autumn Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.027912386121341344,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor September 5 (Fri) 9:00 ~ September 12 (Fri) 10:00 Online approval by advisor September 5 (Fri) 9:00 ~ September 12 (Fri) 11:00 2. Note Students who will proceed the Late Registration need to make payment of the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the second floor of Administration Building and pay the fee at the Educational Affairs Group office. For the procedure details, please check the ehandbook (Course Registration > 6. Course Registration). Procedures after the Fee payment are the same as the usual registration explained above. If you need to go through the Late Registration for legitimate reasons, please make sure to contact your advisor in advance to avoid missing the deadline for the procedure. The Pre-Registration lottery results remain valid for the Late Registration."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000111::structural_fallback_v1::P0003",
+        "title": "ehandbook - July 20, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/july-20-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.02694394213381555,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "ercise courses, you must have Pre-Registered for that course and have made a decision to take it before the term starts. Thus absence from class due to additional registration will not be a valid excuse. 2) Depending on the sport, there will be introductory and intermediate courses. You may be required to take the introductory course before registering for the intermediate course. For details please refer to ehandbook. 5. Registration restriction of English Language General (ELG) courses For the English Language General (ELG) courses, eligible students to take the courses are specified in the course description. If you are not eligible to take the course, you will not be able to register for it even if you are chosen to take the course as a result of the Pre-Registration. Please make sure to check the course description. C. Major Declaration and Change of Majors If you are applicable for Major Declaration, or Change of Majors, make sure to confirm and complete the following procedures via Registration Website. 1. Regular students whose 6th term is AY2023 Spring term （Mainly applicable to students who entered in September 2021) →You must complete the Major Declaration."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000811::structural_fallback_v1::P0001",
+        "title": "AY2025 Spring Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.02690501986276634,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor April 10 (Thu) 9:00 ~ April 17 (Thu) 10:00 Online approval by advisor April 10 (Thu) 9:00 ~ April 17 (Thu) 11:00 2. Note Students who will proceed the Late Registration need to make payment of the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the second floor of Administration Building and pay the fee at the Educational Affairs Group office. For the procedure details, please check the ehandbook (Course Registration > 6. Course Registration). Procedures after the Fee payment are the same as the usual registration explained above. If you need to go through the Late Registration for legitimate reasons, please make sure to contact your advisor in advance to avoid missing the deadline for the procedure. The Pre-Registration lottery results remain valid for the Late Registration."
+      }
+    ]
+  },
+  {
+    "id": "hr_004",
+    "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+    "category": "major",
+    "is_answerable": true,
+    "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+    "gold_source_ids": [
+      "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+      "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+      "DOC-001590::structural_fallback_v1::P0005",
+      "DOC-001586::structural_fallback_v1::P0000"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001590::structural_fallback_v1::P0005",
+        "title": "Eligibility Criteria｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/categories",
+        "language": "en",
+        "retrieval_score": 0.028949545078577336,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "ted only when education and research at ICU are not adversely affected as a result. Kenkyusei may attend classes, but coursework does not count toward a degree. ICU will provide transcripts of the completed coursework to other institutions upon the student's request. If a Kenkyusei wishes to become a Regular/Transfer Student, the Kenkyusei must submit an application and follow the same screening process as other Regular/Transfer Student applicants. If admitted, the coursework completed as a Kenkyusei will not be applied towards ICU's residency requirement. A Kenkyusei is not allowed to live in the dormitory, receive a school commuter pass, or have Student Discount Certificates for JR ( Gakuwari ). CLOSE !! NOTES: If any of the following apply to you, contact the Admissions Center I have been home-schooled. I have been attending unaccredited schools. I am 23 years old (or older) and a high school graduate. I left my university/college more than five years ago. ⇒ Either or both additional/alternative documents and an interview may be required depending on your situation. To confirm your eligibility and requirements, fill out the Eligibility Check Form and send it to the Admissions Center at least one month before the application period starts."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-001586::structural_fallback_v1::P0000",
+        "title": "Admissions Requirements by Country/Region｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/edcert",
+        "language": "en",
+        "retrieval_score": 0.027272727272727275,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Admissions Requirements By Country/Region/Educational System To ensure your application eligibility, it is necessary that you submit a set of documents that verifies your (prospective) completion of secondary education and thus prove your qualification, which is generally required for university entrance in your country/region/educational system. * For Transfer applicants : You will be exempted from submitting these documents if you already have a bachelor's degree and wish to enter ICU as an undergraduate transfer student. Otherwise, you should submit these documents. Search for your country/region/educational system from the list below. If your country/region/educational system is not listed, submit the Eligibility Check Form to the ICU Admissions Center to confirm your eligibility and additional requirements at least one month before the application period starts. If you have not graduated yet and thus cannot submit the required documents listed below at the time of application... Submission of these documents is deferred until you graduate from high (upper secondary) school. On the other hand, you should submit the rest of the necessary documents for your application by the designated deadline. This includes the School Report (a format required by ICU) , on which the name of the expected diploma or certificate must be specified."
+      },
+      {
+        "rank": 3,
+        "passage_id": "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+        "title": "FD Newsletter Vol. 29",
+        "url": "https://office.icu.ac.jp/ctl/docs/vol29_en.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "30\nAPS presents advice to help students with course planning before studying abroad, directing\nstudents to watch recordings and materials from previous sessions based on which they can\nthen ask for further resources and advice. For scheduling, APS recommends consulting IBS\nadvisors, and for job-hunting, students are encouraged to visit the Career Support Office or\nto check the handbook “Career Guide” online.\n(2) Graduation Requirements\n“Could you please help me go over my graduation requirements? Will my current course plan\nallow me to graduate on time?”\nFor such concerns, APS staff review the Graduation Requirement Checklist on icuMAP with\nthe student to confirm the credits required for each category of Graduation Requirement.\nThey work with each student to create a realistic course plan that is tailored to their\nindividual needs and situation, including the number of terms it will take them to graduate\nand their senior thesis research candidacy.\n(3) Future/Career Plans\n“I’m interested in a five-year graduate program. I’m not sure whether I should look for a job or\ncontinue onto graduate school.”\nAPS advises students to consult their academic advisor and professors, as well as senior\nstudents, about their options for graduate school. It also directs them to resources provided\nby the Career Support Office, such as the OBOG search functions of its website and the\nabovementioned online Career Guide handbook.\nb. Feedback from students\nAfter each consultation, APS emails the student a feedback questionnaire along with a\nnotification of the advising record uploaded on icuMAP. Figure 2 presents the results of the\n39 questionnaires received by APS in 2023.\nFigure 2: Results of the APS feedback questionnaire for AY 2023 (n = 39)."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001586::structural_fallback_v1::P0001",
+        "title": "Admissions Requirements by Country/Region｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/edcert",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "he designated deadline. This includes the School Report (a format required by ICU) , on which the name of the expected diploma or certificate must be specified. Additionally, a list of courses progressing or to be taken in the final semester/year is needed to verify that you will meet the course requirements. Once admitted, you must submit the original or certified true copies of such a diploma or completion certificate to confirm your admission to ICU. Otherwise, your admission will be rescinded. *NOTE: The following requirements may change without prior notice in the event of educational reform in the country/region/educational system. Australia Senior Secondary Certificates of Education* and Australian Tertiary Admissions Rank (ATAR). *Details of the required documents differ by state/territory. Check the website below. https://www.acaca.edu.au/index.php/senior-secondary-certificates/ Canada Senior/High School Final Transcript that shows the completion of the required curriculum and/or final examination for entering a four-year university in Canada. Below are course requirements by province: British Columbia : Five Grade-12 academic courses, including English Studies 12 (or English 12 or English 12 First Peoples)."
+      },
+      {
+        "rank": 5,
+        "passage_id": "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+        "title": "Study Abroad Program Brochure",
+        "url": "https://www.icu.ac.jp/about/docs/studyabroad_guide2025.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "ICU国際交流室 ICUの多彩な留学プログラム 留学中に取得した単位は帰国後審査のうえ、40単位を上限にICUの単位として編入されます。 Credits earned at partner institutions, a maximum of 40 credits, are recognized as part of the credit unit requirements for graduation from ICU. 留学プログラムについてさらに詳しく知りたい方は ウェブサイトへ Visit our website for more details CHECK 主に1年間、ICUに在籍したまま、海外大学で専門の学びを深めます。帰国後 単位編入により４年間で卒業することが可能です。 交換留学プログラムでは、ICUに学費を支払い留学先の授業料は免除されます。海外 留学プログラムでは、留学先の授業料は自己負担となりICUの学費は免除されます。 ※ACUCA学生交流プログラム、Middlebury C. V. Starrは交換留学に含まれます。 ※海外留学プログラムには協定校での留学およびCIEE/IESプログラムでの留学があります。 Mainly for one year, students remain enrolled at ICU while they take subject courses at 1 host university overseas. Due to the credit transfer after returning to Japan, it is possible to graduate in four years. In the Exchange Program, students pay tuition to ICU and are exempt from paying tuition at the host institution. In the Study Abroad Program, students pay tuition at the host institution and are exempt from paying tuition at ICU. ※ACUCA SMS and Middlebury C.V. Starr are part of Exchange Program. ※Study Abroad Program includes study abroad at partner institutions and through the CIEE/IES program. Exchange / Study Abroad Programs 交換／海外留学プログラム 韓国の延世大学校Underwood International College(UIC)とICUが実施 する秋学期1学期間の留学プログラムです。ICU、UIC双方から約10名ずつ 学生が集まり、前半をICUで、後半はUICで、テーマに基づいた講義やフィール ドトリップに参加します。 This is a one-term study abroad program for autumn term conducted by Yonsei University Underwood International College (UIC) in Korea and ICU. 10 students from both ICU and UIC spend the ﬁrst half of the program at ICU and the second half at UIC to attend lectures and participate in ﬁeld trips based on a theme."
+      }
+    ]
+  },
+  {
+    "id": "hr_005",
+    "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+    "category": "graduation",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000108::structural_fallback_v1::P0002",
+        "title": "ehandbook - November 28, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.031009615384615385,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "so be sure to confirm that you have satisfied requirements. The review will take a few days （about three business days）. Please note that during this period, you will not be able to change your registration. 3. Registration Change Please take utmost care when you change your registration. Cancelling registration for a course might endanger satisfaction of graduation requirements. You should check the Graduation Requirements Checklist by yourself before you cancel any courses. Please note that you will be responsible for registration change that results in serious consequences for your graduation requirement. 4. Submission of a Senior Thesis An electronic data (PDF) of senior thesis should be submitted online between January 9 (Tuesday) and February 1 (Thursday), 2024. (Please refer to ' Senior Thesis Guidelines ' ) No thesis will be accepted after 16:00 on the deadline date, under any circumstances. If students cannot meet the deadline, it will be impossible to graduate as expected. To avoid such a situation, students should try to submit the thesis well before the deadline. Contact: Educational Affairs Group: ea-group@icu.ac.jp 5."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000106::structural_fallback_v1::P0001",
+        "title": "ehandbook - March 29,2024 Important Information from Educational Affairs Group (Spring)",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/march-292024-important-information-from-educational-affairs-group-spring",
+        "language": "en",
+        "retrieval_score": 0.030303030303030304,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "check the result. You can't start your senior thesis research unless your Senior Thesis Research Candidacy is approved. Even if your advisor is changed to the senior thesis advisor that you apply for, it doesn't necessarily mean that your Senior Thesis Research Candidacy is approved. 2. Senior Thesis Advisor Please confirm your senior thesis advisor on “Advisor’s Info” of icuMAP. The senior thesis advisor also serves as the new academic advisor. 3. STH391 Senior Thesis Those who will be starting Senior Thesis Research from April 202 4 will be allotted a certain period for senior thesis STH391 when they register for courses in the spring term according to each senior thesis advisor. You will not be able to register for other courses in the same period as your senior thesis STH391. Please be careful to avoid time conflicts when you register. You can check the STH391:Senior Thesis schedule of each faculty on icuMAP; icuMAP > [Links] Faculty Information (office hour) > (click faculty's name) > [Subjects] (select \"AY\" and \"Term\"） 4. Graduation Requirements Checklist It is the student's responsibility to check their own graduation requirements."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000098::structural_fallback_v1::P0003",
+        "title": "ehandbook - August 26, 2025 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/august-26-2025-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.028594771241830064,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "your senior thesis advisor on “Advisor” of icuMAP. The senior thesis advisor also serves as the new academic advisor. 3. STH391 Senior Thesis Those who will be starting Senior Thesis Research from September 202 5 will be allotted a certain period for senior thesis STH391 when they register for courses in the autumn term according to each senior thesis advisor. You will not be able to register for other courses in the same period as your senior thesis STH391. Please be careful to avoid time conflict when you register. You can check STH391:Senior Thesis schedule of each faculty on icuMAP; icuMAP > [Links] Faculty Information (office hour) > (click faculty's name) > [Subjects] (select \"AY\" and \"Term\"） 4. Graduation Requirements Checklist It is the student's responsibility to check own graduation requirements by his/herself. Please refer to the “Graduation Requirements Checklist” of icuMAP, and register the necessary courses based on your academic planning. D."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000104::structural_fallback_v1::P0003",
+        "title": "ehandbook - August 28, 2024 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/august-28-2024-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.028531243721117136,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "her courses in the same period as your senior thesis STH391. Please be careful to avoid time conflict when you register. You can check STH391:Senior Thesis schedule of each faculty on icuMAP; icuMAP > [Links] Faculty Information (office hour) > (click faculty's name) > [Subjects] (select \"AY\" and \"Term\"） 4. Graduation Requirements Checklist It is the student's responsibility to check own graduation requirements by his/herself. Please refer to the “Graduation Requirements Checklist” of icuMAP, and register the necessary courses based on your academic planning. D. To Students Starting the Senior Thesis Research in April/September 2025 (mainly ID26 students) Application for Senior Thesis Advisor/Application for Certification of Senior Thesis Research Candidacy For those who plan to begin the Senior Thesis Research in Spring/Autumn Term 2025, it is necessary to complete the application for Senior Thesis Advisor/Application for Certification of Senior Thesis Research Candidacy through Registration Website and be admitted. The details will be announced at the end of September. Also, we will hold an explanation session from 12:50, September 27 by webinar. Please attend the webinar. 1."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000092::structural_fallback_v1::P0008",
+        "title": "ehandbook - Academic Certificates",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/application-certificates/id-card-certificates-applications/academic-certificates",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "y for Senior Thesis (Bachelor Candidacy for those who entered in or before AY2007) and are registered for Senior Thesis. In addition, Certificate of Prospective Graduation for three or more terms in the future cannot be issued. Certificate of Prospective Graduation (for postgraduate students) Certificate of Prospective Graduation for master's students is to be issued only to students who are qualified for Candidacy for the Degree of Master of Arts, and Certificate of Prospective Graduation for doctoral students is to be issued only to students who already submit Doctoral Dissertation and Form D-7, D-8. To Graduating Seniors Students who expect to graduate or complete their term of study will not be able to use the certificate issuing machine within 3 days of graduation day. If you need your transcript and certificate of graduation on the day of the Commencement Ceremony, please check the ICU Portal for application procedures and deadlines in advance. The format of Chosa-sho (Reference for Graduate School Entrance Examination) The format of Chosa-sho varies depending on the school, so inquire at the Educational Affairs Group concerning the required procedures."
+      }
+    ]
+  },
+  {
+    "id": "hr_006",
+    "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",
+    "category": "student_status",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001496::structural_fallback_v1::P0005",
+        "title": "ICU Health Care Office for Students - 感染症が疑われた時の流れIf you have an infectious disease",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/infection/flow",
+        "language": "mixed",
+        "retrieval_score": 0.03028233151183971,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "class teachaers →A s for the class teachers, please inform each of them by yourself. You can look up their contact information from icuMAP>Faculty information . ＊ Faculty may ask you to give them a doctor's certificate or some kind of proof for the sick leave. Please consult with your faculty if you can use hospital receipts, or prescription record books, etc., as proof. The same goes for missing classes for reasons other than infectious diseases, such as diseases or injury. ＊The Healthcare Office does not issue certificates/ slips relating to absences, early departures, or late arrivals. Should a member of teaching staff instruct you to obtain documentation / slip from the Healthcare Office, please consult them again and provide this page's link. ⑥ Follow the doctor's instructions and take rest at home. Do not come to extracurricular activities, part time job, etc. ⑦ You have completed the required absence period. ⑧ You can come back to School. Proof of Recovery If you require a certificate but do not have an appropriate form, please use the recovery certificate below. For details regarding certificate handling and fees, please contact each medical institution directly. Due to the COVID-19 pandemic and other circumstances, some medical institutions may not be accepting requests for certificates."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000085::structural_fallback_v1::P0007",
+        "title": "ehandbook - Ryugaku, Leave of Absence, Reenrolment, Withdrawal, Readmission, Status Extension, Status Change, Dismissal",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/application-certificates/ryugaku-leave-of-absence-reenrolment-withdrawal-readmission-status-extension-status-change-dismissal",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "delay. Students should request that the institution abroad send one copy of the official English transcript to the EAG. (Unofficial transcripts stamped “student copy”, “issued to student”, etc., will not be accepted.) [ Upon return ] Students who have finished their period of Ryugaku must submit the “ Report of Return from Ryugaku ” to the EAG before Registration day. Failure to submit this form will result in your inability to participate in course registration. After completing the item mentioned above, students requesting transfer credits should submit a catalog or bulletin and syllabi of the courses taken at the institution abroad to the EAG. Please note that different standards are applied depending on a student's division. C. Exchange Program/Study Abroad Program Information Session Materials ***Also, to be applied to Accredited Privately Financed ( Ryugaku )*** Briefing materials for exchange students"
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001375::structural_fallback_v1::P0010",
+        "title": "ICU Health Care Office for Students - キャンパスでの健康管理",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/aboutus/oncampus",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "lfare) and receive it before you leave home. P lease check the website of Ministry of Health, Labour and Welfare , and take the appropriate measure by yourself. Especially for those who take psychiatric medicines (narcotics, psychotropics, and other drugs), there is the website of Narcotics Control Department where you can obtain information about the necessary procedure. 問い合わせフォーム INQUIRY FORM よくある質問 FAQｓ アーツ・サイエンス館(T館) 1階 149号室 月〜金曜日 9:30〜17:30（授業期間外：月～金曜日 9:30～16:30） Arts ＆ Sciences Hall (T-kan) 1F, room 149 Office Hours: Weekdays 9:30 am - 5:30 pm (During the period when the courses are not offered: Weekdays 9:30 am - 4:30 pm) ☎ 0422-33-3119 （内線ex. 3119 ） ✉ healthcare@icu.ac.jp"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001381::structural_fallback_v1::P0002",
+        "title": "ICU Health Care Office for Students - 留学 Study Abroad",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/studyabroad",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "embers キャンパスでの健康管理 校医に相談する University Physician's hour 感染症 Infectious disease 感染症が疑われた時の流れIf you have an infectious disease 出席停止となる感染症 suspension of attendance. COVID-19新型コロナウイルス感染症 インフルエンザ Influenza 感染性胃腸炎 Infectious gastroenteritis 救急 病気 Emergency&Sickness キャンパスでの救急対応/Emergency responce on Campu/ 医療機関情報 Medical Institution Information Things to know before your hospital visit 緊急避妊/Morning-after pill 熱中症 Heat stroke 健康診断証明書 Health certificate 健康診断 Health exams 学内の健康診断 Health exam at ICU 健康診断の結果に所見があった方へ 各自で健康診断を受ける Take a health exam on your own 自治体の健康診断を受ける 留学 Study Abroad 予防接種 Vaccinations 教育実習・介護等体験のための予防接種 海外旅行・出張のための予防接種 健康支援情報 Health Information 心の健康 Mental Health 性の健康 Sexsual health 「ヘルプマーク The Help Mark」のコピー AED&車イス AED&Wheelchairs 依存症の相談 Addiction support 生活応援情報 Everyday life information 留学 Study Abroad Information Page 留学前準備（HCOから案内） Pre-Departure Information 証明書発行のステップ Steps for Certificate Issuance 【 薬剤証明書】発行のステップ Steps for 【Medication Certificates】Issuance 学生によく「足りない」ワクチン Vaccines that are often \"Missing\" in Students 結核検査攻略法 How to tackle TB Screening トラベルクリニックリスト The List of Travel Clinics 留学 よくある質問 FAQs about study abroad 海外渡航に役立つ リンク集 Useful links for Oversea Travel 帰国 後の胸部レントゲン Post-Return Chest X-ray *交換留学からの帰国者対象 *For ICU exchange program or Accredited privately financed Ryugaku ヘルスケアオフィスから案内する 留学前準備 Pre-departure Preparation Information from HCO 全員向け 海外留学健康の手引き （公益社団法人全国大学保健管理協会 国際連携委員会 編集） ＊海外留学する学生の安全と健康を支援を目的に作成。"
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000085::structural_fallback_v1::P0002",
+        "title": "ehandbook - Ryugaku, Leave of Absence, Reenrolment, Withdrawal, Readmission, Status Extension, Status Change, Dismissal",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/application-certificates/ryugaku-leave-of-absence-reenrolment-withdrawal-readmission-status-extension-status-change-dismissal",
+        "language": "en",
+        "retrieval_score": 0.015873015873015872,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "notify the International Educational Exchange Group (IEEG) of their date of departure and prospective address abroad. 4. While abroad: Students who change their address while abroad should notify the IEEG of the new address without delay. Students should request that the appropriate office at the host institution send one copy of the official English transcript of the courses taken and grades earned to the IEEG. (Unofficial transcripts stamped “student copy”, “issued to student”, etc., will not be accepted.) 5. Upon return: Students who have finished their period of Ryugaku must submit the “Report of Return from Ryugaku ” and “Kikokutodoke (completion form)” to the IEEG before Registration Day. After completing the items mentioned above, students requesting transfer credits should submit a catalog or bulletin and syllabi of the courses taken at the host institution to the EAG. B. Accredit ed Privately Financed Ryugaku (Study Abroad) ［Application Requirements] All of the following requirements must be met. ・Undergraduate students must have completed or be expected to complete at least three terms at the university by the time of application."
+      }
+    ]
+  },
+  {
+    "id": "hr_007",
+    "question": "I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?",
+    "category": "housing",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000262::structural_fallback_v1::P0000",
+        "title": "Housing Office",
+        "url": "http://office.icu.ac.jp/ho/en",
+        "language": "en",
+        "retrieval_score": 0.03200204813108039,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "JP\n/EN\nDormitory Screening Results for April 2026 (For April First-Year Students/ Current ICU Students)\nCommon Rules and General Matters\nOutline & Dormitory Fees\nRegulations and Bylaws\nFAQ\nEmergency Contact Information (For Dormitory Residents' Guarantors)\nDormitory Screening Results for April 2026 (For April First-Year Students/ Current ICU Students) TOP\nCommon Rules and General Matters TOP\nOutline & Dormitory Fees TOP\nTOP\nRegulations and Bylaws TOP\nFAQ TOP\nEmergency Contact Information (For Dormitory Residents' Guarantors) TOP\nDormitory Screening Results for April 2026 (For April First-Year Students/ Current ICU Students)\nCommon Rules and General Matters\nOutline & Dormitory Fees\nRegulations and Bylaws\nFAQ\nEmergency Contact Information (For Dormitory Residents' Guarantors)\nJapanese\nInformation about Dormitory Application\nThe screening results for April 2026 dormitory admission were published on March 6. An ID and password are required to check the results.\nEmails have been sent to all applicants, so please refer to those for further details.\nInformation regarding dormitory applications for September 2026 is scheduled to be posted on this page around mid-May.\nHousing Office, International Christian University\n【Office Hour】 9:30-11:45/12:45-16:30 (Monday - Friday)\n【Location】 Dialogue House 1F\n【E-mail】 housing-office@icu.ac.jp\nPowered by ICU (link is external)\nPrivacy Policy\n|\nSitemap"
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-001571::structural_fallback_v1::P0003",
+        "title": "Researchers Information System｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/research/ris",
+        "language": "en",
+        "retrieval_score": 0.027650648360030512,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "roducing Dorm Life On-Campus Dormitory Application and Details Housing Office Website Off-campus Housing ICU Service Co., Ltd. Website Homestay Nextage Co. Ltd. Homestay in JAPAN Website for ICU Students Activities Extra-curricular Activities Career Path Paths after Graduation Career Support To Hiring Managers Student Support Counseling, Human Rights Consultation and Health Services Counseling Center Information on Museum Discounts Learning Accessibility Services Students, Faculty, Alumni A Short Movie Introducing Dorm Life Life at ICU ADMISSIONS & AID ADMISSIONS & AID INTRODUCTION INTRODUCTION Undergraduate Admissions News Welcome Apply FAQ Contact Admissions Facts and Figures College of Liberal Arts Guidebook Graduate School Admissions News Applying Reasonable Accommodations in Admissions FAQ Open Campus and Information Session Graduate School Guidebook Tuition & Aid Financial Aid (Undergraduate) Tuition and Fees (Undergraduate) Financial Aid (Graduate School) Tuition and Fees (Graduate School) For Applicants Affected by Large-Scale Disaster Housing Visiting ICU Open Campus, Visiting Campus, and Events VR Campus Tour ICU-Senior High School Collaboration Project Brochures Admissions, Event, News Applicants Students (ICU Portal) Alumni Guarantors Visitors Employment NEWS Giving ACCESS 日本語 日本語 ENGLISH 한국어 簡体中文 繁体中文 HOME Research Researchers Information System Researchers Information System Information on ICU's faculty can be found on the university's \"Researchers Information System.\" Researchers Information System RESEARCH FRONTIER Frontier Researchers / Research Institutes & Center Researchers Information System Publications and Articles by Faculty Research & Research Institutes RESEARCH PROJECTS Research Projects Activities & Support Research Activities and Support ABOUT ACADEMICS RESEARCH CAMPUS LIFE & CAREER ADMISSIONS & AID Prospective Students Students Alumni Guarantors Visitors Giving Employment Opportunities Directions to ICU Brochures Contact About This Site Privacy Policy ICU High School ICU Hachiro Yuasa Memorial Museum ICU Sacred Music Center ICU Alumni Association ICU Chapel Japan ICU Foundation Library ICU Service CO., Ltd."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000823::structural_fallback_v1::P0002",
+        "title": "【APPLY BY4/10】2026 Summer ★International Summer Program in Japan (ISPJ) ( (JPS203)) Application now open",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.027106227106227107,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "broad. ・Dormitory fees will be charged. You will be informed by the Housing Office once your participation is confirmed. (however, the amount of the dormitory fee is different for current dormitory participants. The Housing Office will inform current dormitory students once they have been selected). ・Although dormitory stay is not mandatory, we welcome students who are willing to socialize with us outside of class hours. At the same time, we are also looking for Residential Assistants (RAs) to assist with dormitory life, so please consider this (to be announced on the ICU portal in late April). Program First Day Orientation and Welcome Party ISPJ participants are required to attend the orientation and welcome party on the first day of the program in collaboration with the overseas participants. Date: Monday, July 6 (2-3 period& lunch time) Place: To be determined For inquiries, please contact Center for Global Education (in International Office: Room 125, Main Bldg.) ispj@icu.ac.jp Follow us on Instagram"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001598::structural_fallback_v1::P0001",
+        "title": "FAQ｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/gs/faq",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "lty specializing in areas close to your research topic, and check which programs they belong to: Research guidance from faculty is important in Graduate School. Please refer to the information on faculty whose field of specialization is related to your research plan or desired field of study. You can also contact faculty members directly to discuss your research plan. Check Curriculum and Syllabi to see the description of the courses offered in each program: ICU Graduate School's highly interdisciplinary programs give students the flexibility to study a wide range of topics. However, students are required to take a certain number of courses from the program to which they belong (see Degree Requirements ). Applicants should check what courses are offered in each program. Check title of the degree conferred : The name of the Master's degree to be conferred differs depending on the program and area of concentration. Applicants should check which programs offer their desired degree titles. Please make use of opportunities such as a campus open day and Admissions Information Sessions to discuss your options at ICU. I am interested in applying for the Doctoral Course. How should I go about contacting a potential academic supervisor? Please use the list of faculty and the ICU Researchers Information System to search for an appropriate supervisor."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001787::structural_fallback_v1::P0004",
+        "title": "zh |",
+        "url": "https://www.icu.ac.jp/zh-ch",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "学一起生活。成长的环境、性格和想法乃至语言、文化、宗教都各异的学生们在宿舍中共同学习和生活，有时还举办宿舍节等文娱活动，渡过充实愉快的大学时光。 宿舍费：313,500日元-603,500日元（第一年度费用合计。全年住宿10个月的住宿费、水电费、互联网使用费。不包括餐费） 有关学生宿舍的信息（日、英），请阅览下述网页。 日 语： https://www.icu.ac.jp/campuslife/dormitories/ 英 语： https://www.icu.ac.jp/en/campuslife/dormitories/ Copyright © ICU International Christian University - All Rights Reserved Page top"
+      }
+    ]
+  },
+  {
+    "id": "hr_008",
+    "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",
+    "category": "student_support",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001423::structural_fallback_v1::P0005",
+        "title": "ICU Health Care Office for Students - 心の健康 Mental Health",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/healthinfo/mentalhealth",
+        "language": "mixed",
+        "retrieval_score": 0.02813852813852814,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "te for calming the mind Online Sunctuary for Mental Health When unsettling news or reports leave you feeling uneasy, why not try some methods to calm your mind? *The information on this website is available in English (Most of the contact points listed do not offer English language support). 友だちや進路の相談 Counseling about friends and career paths 友だちや進路の相談 ICU カウンセリングセンター 東京都若者総合相談センター「若ナビα」 （若者とその保護者等） Counseling about friends and career paths ICU Counseling Center Tokyo Youth Comprehensive Consultation Center \"WAKA-Navi α\" （ For youth and their parents/guardians） 大切な方を亡くして、気持ちや思いを分かち合いたい Share your feelings and thoughts about the loss of a loved one 大切な方を亡くして、気持ちや思いを分かち合いたい ICU カウンセリングセンター NPO法人 生と死を考える会 身近な人を亡くした若者のつどい 一般社団法エッグツリーハウス（たまごカフェ） NPO法人 全国自死遺族総合支援センター ここナビ （東京都こころといのちのほっとナビ） ”身近な人・大切な人を亡くした”のところから、地域を選択できます。 Share your feelings and thoughts about the loss of a loved one ICU Couseling Center TELL (Counseling regarding grief and loss) 問い合わせフォーム INQUIRY FORM よくある質問 FAQｓ アーツ・サイエンス館(T館) 1階 149号室 月〜金曜日 9:30〜17:30（授業期間外：月～金曜日 9:30～16:30） Arts ＆ Sciences Hall (T-kan) 1F, room 149 Office Hours: Weekdays 9:30 am - 5:30 pm (During the period when the courses are not offered: Weekdays 9:30 am - 4:30 pm) ☎ 0422-33-3119 （内線ex. 3119 ） ✉ healthcare@icu.ac.jp"
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000749::structural_fallback_v1::P0000",
+        "title": "【IBS】Advising sessions are starting!",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Hello, this is IBS! 28Sept students, congratulations on your matriculation🍂\nIBS, the official peer advisers of the ICU, will start advising sessions for new students.\n“How do I take JLP classes?” ”There are so many courses that I don't know what to take.”, “I'm worried about whether I'm registering properly.” etc.\nIf you have anything to talk about, feel free to drop by and consult us🙌\nFor those with absolutely no idea what is happening, we made the video to prepare for autumn term registration, \"IBS radio”! If you would like to consult but don't know where to start, you might want to start by taking a look\nHERE\n!\nIn addition,\n28 April students and above can also join our advising sessions\n!\nPlease ask about anything such as autumn term registration and balance with other programs✨\n【About Advising】\n＊Online Advising： Reservations can be made up to 24 hours before the preferred dates & time. Reservation Form is here！→\nhttps://linktr.ee/ibs_icubrothersandsisters\n＊Face-to-Face Advising： At Othmer Library 1F！Please feel free to drop by us\nwithout reservations:)\nPlease see the attached image to check the dates & time✨\n【What is IBS？】\n⭐The official peer advisers of ICU\n⭐Advising from “student’s points of view”\n⭐We can support various concerns such as …\n・How many credits to take each term\n・How to balance various programs with your desired course of study\n・How to balance extracurricular activities"
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001319::structural_fallback_v1::P0000",
+        "title": "ICU カウンセリングセンター - よくあるご質問",
+        "url": "https://sites.google.com/info.icu.ac.jp/icucounselingcenter-japanese/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E3%81%94%E8%B3%AA%E5%95%8F",
+        "language": "ja",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation English ICU カウンセリングセンター ホーム 活動内容 カウンセリング相談申し込み方法 精神科顧問医相談申し込み方法 海外から来日する留学生へ ジェンダーセクシャリティに関する相談 スタッフ紹介 よくあるご質問 連絡先・開室時間 ICU カウンセリングセンター よくあるご質問 Q1: どのような人がカウンセリングセンターを利用できますか？ A1: ICU生であれば、誰でも利用できます。また、学生に関することであれば、本人でなくても友人、ルームメイト、恋人、ご家族、教職員の皆さんからの相談を受け付けています。 Q2: どんなことを相談できますか？ A2: 大学生活への適応、対人関係、進路、心身の健康についての相談、あるいは自己理解を深める機会としてご利用いただけます。相談内容によっては、学内の他の部署や学外の医療機関などを紹介しています。 Q3: 深刻な悩みや重い症状でないと相談できませんか？ A3: いいえ。大学生活全般に関する相談を受け付けていますので、どのような相談内容でもかまいません。自分のことを振り返る機会に利用する学生もいますし、友人や家族に話しにくい問題を整理するために通う学生もいます。問題が複雑になる前に相談してくださると、色々な可能性について一緒に話し合うことができます。 Q4: どんなスタッフがいますか？ A4: 臨床心理士や学生相談に経験豊富なカウンセラー、精神科の顧問医が相談にのっています。 Q5: カウンセリングはどのように行われるのですか？ 期間や時間は？ A5: 主に個人面接をしていますが、カップル、グループ（友人同士など）、親子などでの相談にも応じています。内容によって、1回で終了する場合、継続して相談する場合があります。継続する場合の予約は、週1回、隔週、月1回など、状況に応じて対応しています。面接時間は１回40分程度です。 Q6: 予約は必要ですか？ A6: 予約が優先されますので email (icu-counseling@icu.ac.jp) にて予約を入れてください。緊急の場合はご相談ください。 Q7: カウンセリングは費用がかかりますか？ A7: いいえ。学生サービスとして無料で相談できます。 Q8: 個人情報はどのように扱われますか？ A8: 大学の規則等に従い、利用学生に不利益がないように慎重に取り扱います。 ただし、危険が見込まれる場合などは守秘の例外として、カウンセリングセンターの利用状況などを関係者と共有し連携することがあります。 詳しくは、 こちら の個人情報の取り扱いポリシーをご覧ください。 Q9: 英語でも相談できますか？ A9: はい。日本語と英語で相談に応じています。 Q10: カウンセリングセンターの閉室時間帯に相談したい場合はどうしたらよいですか？ A10: 次のようなホットラインや相談窓口がありますので、参考にしてみてください。"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000861::structural_fallback_v1::P0000",
+        "title": "🌸IBS Advising Sessions Talk to us!🌸",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Hello, this is IBS🌸\nCongratulations to all new students! Your matriculation ceremony is coming up tomorrow (Apr 2), and we all welcome you guys to ICU🏫\nUniversity life is about to begin, and it is normal to feel a bit anxious or overwhelmed at first. That is why we want you guys to know about us: IBS (ICU Brothers & Sisters)!\nIBS is an university official student organization that provides peer advising. During orientation week, we’ll be offering advising sessions to help you resolve any questions or concerns that you may have about course registration, student life, or anything about ICU. Please feel free to stop by and talk to us!\nWe will be holding advising sessions at the following times!\nDate & Time\n・April 6th (Mon) 3:15 - 4:30pm\n・April 7th (Tue) 11:00am - 2:00pm\n・April 8th (Wed) 10:00am - 12:30pm, 1:30 - 4:00pm\n・April 9th (Thu) 11:00am - 3:00pm\n・April 10th (Fri) 10:00am - 12:30pm, 1:30 - 3:00pm\n※The cutoff time is 30 minutes before closing.\n※Q-Support will be available to advise on natural science majors on April 8th and 9th.\nPlace: Othmer Library1F\nAs part of the new student orientation, we will give a presentation on academic planning on the morning of April 6th (Mon), too. We all look forward to seeing you!\nIBS Instagram:\nhttps://www.instagram.com/ibs_icubrothersandsisters\n[Office] Center for Teaching and Learning (ctl@icu.ac.jp)"
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001423::structural_fallback_v1::P0003",
+        "title": "ICU Health Care Office for Students - 心の健康 Mental Health",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/healthinfo/mentalhealth",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "さい。 *You can find a place to consult based on the topic. Please check each website for consultation methods (face-to-face, telephone, chat, social media, etc.). ICUカウンセリングセンター ICU Counseling Center こころの相談全般 General mental health counseling 友だちや進路の相談 Counseling about friends and career paths 大切な方を亡くして 気持ちや思いを分かち合いたい Share your feelings and thoughts about the loss of a loved one 性の健康に関する相談 Sexsual health Consultation 依存症の 相談 Addiction Support こころの相談全般 General mental health counseling こころの相談全般 ICU カウンセリングセンター こころの相談ダイヤル（三鷹市） 三鷹市民（在勤、在学、在活動のかたを含む。 ）であれば 性別にかかわらず どなたでも相談できます。専門の相談機関に所属するカウンセラーが担当。 国際ビフレンダーズ 東京自殺防止センター 匿名で電話できます。 まもろうよ こころ (厚生労働省） 窓口や相談方法に合わせて紹介しています。 とうきょう若者ヘルスサポート（わかさぽ） 看護師等が10代のからだやこころの悩みにお答えします。 いま、悩んでいることを相談できます。 『よりそいホットライン』 ( 一般社団法人 社会的包摂サポートセンター ) 仕事、生活、心、家庭、お金、病気、性自認（セクシャルマイノリティ）の悩みなど電話やチャットで相談できます。 24時間無料通話で、外国語対応も可能です。（英語、中国語、韓国語、タイ語、タガログ語、スペイン語、ポルトガル語、ベトナム語、ネパール語、インドネシア語） SNSなどによる相談先の紹介 （厚生労働省サイトより） ＃いのちSOS （毎日24時間 受付中） 今が苦しいとき、専門の支援員と相談ができます。 ここナビ （東京都こころといのちのほっとナビ） LINEで相談 も可 ：相談ほっとLINE＠東京 多摩府中保健所武蔵野三鷹地域センター（精神保健相談） 病気かどうかの見立てや医療中断への対応などについて、保健師や専門医が個別 相談を行います。予約制。精神的な不安、悩み、思春期・ アルコール依存・老人保健相談など。 東京都立多摩総合精神保健福祉センター 多摩地域（23区・島しょ以外）在住で、こころの問題について悩んでいる方の 相談を受けています。 東京都立精神保健福祉センター（23区） こころの悩み、精神疾患や障害に関するさまざまな相談を受けています。 『こころもメンテしよう』 ～若者を支えるメンタルヘルスサイト～ (厚生労働省) 体がだるい、眠れない、イライラする、、、。 心の健康が気になるときに。"
+      }
+    ]
+  },
+  {
+    "id": "hr_009",
+    "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",
+    "category": "student_support",
+    "is_answerable": true,
+    "gold_answer": "Start by consulting your course instructor and contacting Learning Accessibility Services (学修アクセシビリティ支援室 / LAS). Look for the LAS “For Students / How to Request Academic Accommodations” page, which explains meeting with LAS staff and the required documents (e.g., medical certificate, Request for Academic Accommodations form signed by your advisor) and the process for arranging exam accommodations [1][4].",
+    "gold_source_ids": [
+      "COURSE-2026-Spring-12115-QELE502::structural_fallback_v1::P0012",
+      "DOC-000272::structural_fallback_v1::P0000",
+      "DOC-000443::structural_fallback_v1::P0000"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "COURSE-2026-Spring-12115-QELE502::structural_fallback_v1::P0012",
+        "title": "English Linguistics",
+        "url": "https://campus.icu.ac.jp/icumap/ehb/PreviewSyllabus.aspx?year=2026&term=1&regno=12115",
+        "language": "E",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Schedule / スケジュール\n5/TH,6/TH,7/TH\nURL\n* Access to the following two fields will be limited to those who have an ICU Net ID.\n* 以下の情報はICU Net IDがあるユーザにしか公開されません。\nReasonable Accommodations / 合理的配慮について\nICU provides reasonable accommodations in accordance with the \"\nBasic Policy for Supporting Students with Disabilities\n”.\nIf you have a disability or chronic illness and need some kind of reasonable accommodations for your course, please consult with your course instructor and the\nLearning Accessibility Services\n.\nICUでは「\n障がいのある学生支援の基本方針\n」に基づき合理的配慮を提供しています。\n障がいや慢性疾患があり、受講にあたって合理的配慮が必要な場合は、科目担当教員と\n学修アクセシビリティ支援室\nに相談してください。\nIf you need special arrangements during the term, please make an official request through LAS (Learning Accessibility Support).\n学期を通して特別な配慮が必要な学生は、学内のLAS (Learning Accessibility Support)を通して届け出てください。\nContact Information (Phone, E-mail, and/or Office Hour, etc.)\np000074s@icu.ac.jp\nInternal Information (information to be shared within the ICU community)\n【\nICU Policy on Academic Integrity\n/\n学問的倫理基準に関する本学の方針 (レポートや論文執筆における留意事項)\n】"
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000443::structural_fallback_v1::P0000",
+        "title": "学生向け | CTL",
+        "url": "https://office.icu.ac.jp/ctl/snss/for_students.html",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Home\n学修アクセシビリティ支援室\n学生向け\n学生向け\n学修支援を利用するには\n学修アクセシビリティ支援室にてニーズの確認をした後所定の手続きを経てさまざまな配慮を受けることができます。\n支援開始までの流れは以下になります。\n1. 学修アクセシビリティ支援室のスタッフとニーズの確認\n2. 必要書類の提出\n・医師の診断書、またはカウンセラーなど専門家の所見\n・障害学生支援申請（アドヴァイザーのサインが必要となります）\n・これまでに受けた支援等を説明する文書など（任意）\n3. 支援室スタッフと配慮内容について協議\n4. 配慮依頼の内容を学修アクセシビリティ支援室から担当教員に通知\n＊合理的配慮を新規申請する場合は、支援申請手続きを各学期のWeek 4の最終日までに済ませてください。\n*継続利用の方は\nこちら\nを毎学期はじめにご確認ください。（学内限定）\n合理的配慮の内容\n以下に挙げられているのは一般的な合理的配慮の例です。他にもニーズを考慮し必要に応じた支援を行っています。詳細は学修アクセシビリティ支援室までご相談ください。\n試験および課題などへの配慮の依頼\n学生と教員の間に立って、必要な配慮の依頼や調整を行います。試験への配慮は試験時間の延長や別室受験などです。\nノートテイク支援\nその場で話されている授業内容や教員・学生の発言などをパソコン、または手書きで文字通訳します。\n教材の加工\n視覚障害などで授業で使用する教科書・資料をそのまま利用することが困難な場合、学生が利用できるよう加工（点訳、文字サイズの拡大やレイアウト修正、テキストデータ化、対面朗読など）して提供します。\n代筆、タイピング支援\n筆記やパソコンでの文字入力が困難な場合、代筆やパソコンのタイピングを学生サポーターが代わりに行います。\n移動支援・ガイドヘルプ\n学内での移動が困難な場合や授業の出席に支障が出る場合、必要に応じて学生サポーターを配置します。\n教室配慮\n遠くの教室への移動が困難な場合や、教室の設備やスペースなどで問題がある場合、教室を変更したり、必要な処置を行えるよう可能な調整をします。\n支援機器の貸し出し\n学生生活上のニーズに応じて、読み上げ対応のパソコン、補聴援助システム、ICレコーダー、車イス（手動、電動）や支援ソフトウェアなどを貸し出しています。\n学修アクセシビリティ支援室の利用\n支援ソフトウェアがインストールしてあるパソコンや点字プリンタ、拡大読書器、立体コピー機などを利用できます。支援室は勉強や休憩スペースとしても使用できます。\n＊上記の支援例の他にもニーズを考慮し必要に応じた支援を行っています。大学生活で困ったこと、質問などありましたらまずは学修アクセシビリティ支援室までご相談ください。\n学修アクセシビリティ支援室にある設備\n点字プリンター\n立体コピー機\n拡大読書器\n点字PDA\n電子メモパッド\n点字ディスプレイ\n自走式手動車イス\n電動車イス（Whill Model F）\n＊CTC未来財団の助成を受け、導入しました。\n補聴援助システム（マイク：ロジャーセレクト、受信機：ロジャーネックループ）\n＊CTC未来財団の助成を受け、導入しました。\n立体プリンター\n音声ソフト:\nPC-Talker, JAWS, Net reader\n音声認識:\nAmi voice、UDトーク\nサポーター制度・活動について\n学修アクセシビリティ支援室では、障害のある学生の学修支援に協力してもらう学生サポーターを随時募集しています。学生サポーターは授業資料の加工、ノートテイク他、さまざまな場面でICUでの障害学生学修支援活動を行っています。 サポートの仕事は有償アルバイトで、ICUの規定に準じたアルバイト代が支払われます。\nサポーター登録\n学生サポーター登録を希望する方は、学修アクセシビリティ支援室で登録手続きを行ってください。\nRelated Contents\n学修アクセシビリティ支援\n学修アクセシビリティ支援室とは\n教職員向け"
+      },
+      {
+        "rank": 3,
+        "passage_id": "COURSE-2026-Autumn-21157-BUS101::structural_fallback_v1::P0016",
+        "title": "Accounting",
+        "url": "https://campus.icu.ac.jp/icumap/ehb/PreviewSyllabus.aspx?year=2026&term=2&regno=21157",
+        "language": "J",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Schedule / スケジュール\n5/F,6/F,7/F\nURL\n* Access to the following two fields will be limited to those who have an ICU Net ID.\n* 以下の情報はICU Net IDがあるユーザにしか公開されません。\nReasonable Accommodations / 合理的配慮について\nICU provides reasonable accommodations in accordance with the \"\nBasic Policy for Supporting Students with Disabilities\n”.\nIf you have a disability or chronic illness and need some kind of reasonable accommodations for your course, please consult with your course instructor and the\nLearning Accessibility Services\n.\nICUでは「\n障がいのある学生支援の基本方針\n」に基づき合理的配慮を提供しています。\n障がいや慢性疾患があり、受講にあたって合理的配慮が必要な場合は、科目担当教員と\n学修アクセシビリティ支援室\nに相談してください。\nStudents requiring reasonable accommodations should inform the instructor during the first lecture.\n合理的配慮が必要な場合は必ず初回の講義で申し出ること。\nContact Information (Phone, E-mail, and/or Office Hour, etc.)\np003720n@icu.ac.jp\nInternal Information (information to be shared within the ICU community)\n【\nICU Policy on Academic Integrity\n/\n学問的倫理基準に関する本学の方針 (レポートや論文執筆における留意事項)\n】"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000272::structural_fallback_v1::P0000",
+        "title": "For Students | CTL English",
+        "url": "https://office.icu.ac.jp/ctl/en/snss/for_students.html",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Home Learning Accessibility Services For Students For Students How to Request Academic Accommodations Students first meet with a Learning Accessibility Services (LAS) staff member to discuss their needs. After submitting the necessary documents, students can receive a variety of accommodations. Steps for applying for and receiving academic accommodations: 1. Meet with LAS staff member to discuss your needs 2. Submit the necessary documents ・A medical certificate from your doctor or a letter from your counselor or other specialist ・ Request for Academic Accommodations Form (This form must be signed by your advisor.) ・A document describing the support, etc., that you have received previously (where appropriate) 3. Develop an accommodation plan with a member of the LAS staff 4. The LAS office delivers your accommodation requests to your professors ＊Student newly requiring Academic Accommodations should complete the application procedure by the last day of Week 4 of each term. *Continued users should check here at the beginning of each term. (ICU students only) Types of Academic Accommodations The following are examples of some common reasonable accommodations; however, the list is not exhaustive and we offer other necessary support taking into account the needs of each student. Please contact the LAS office for more information specific to your needs."
+      },
+      {
+        "rank": 5,
+        "passage_id": "COURSE-2026-Winter-31199-IRL388::structural_fallback_v1::P0013",
+        "title": "Advanced Studies in International Relations",
+        "url": "https://campus.icu.ac.jp/icumap/ehb/PreviewSyllabus.aspx?year=2026&term=3&regno=31199",
+        "language": "E",
+        "retrieval_score": 0.015873015873015872,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Schedule / スケジュール\n5/M,5/TH\nURL\n* Access to the following two fields will be limited to those who have an ICU Net ID.\n* 以下の情報はICU Net IDがあるユーザにしか公開されません。\nReasonable Accommodations / 合理的配慮について\nICU provides reasonable accommodations in accordance with the \"\nBasic Policy for Supporting Students with Disabilities\n”.\nIf you have a disability or chronic illness and need some kind of reasonable accommodations for your course, please consult with your course instructor and the\nLearning Accessibility Services\n.\nICUでは「\n障がいのある学生支援の基本方針\n」に基づき合理的配慮を提供しています。\n障がいや慢性疾患があり、受講にあたって合理的配慮が必要な場合は、科目担当教員と\n学修アクセシビリティ支援室\nに相談してください。\nStudents with special needs should contact the instructor.\nContact Information (Phone, E-mail, and/or Office Hour, etc.)\nsalton@icu.ac.jp\nInternal Information (information to be shared within the ICU community)\n【\nICU Policy on Academic Integrity\n/\n学問的倫理基準に関する本学の方針 (レポートや論文執筆における留意事項)\n】"
+      }
+    ]
+  },
+  {
+    "id": "hr_010",
+    "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?",
+    "category": "it",
+    "is_answerable": true,
+    "gold_answer": "Your ICU accounts (ICU Net ID, ICU Portal, Mail/Google Workspace, etc.) will expire on March 31, 2026—even if you are moving from the undergraduate to ICU graduate program. Email forwarding stops, and you will lose access to @icu.ac.jp Google, announcements (e.g., joining ceremony), graduate-school info, and files created at the university, so back up Gmail and Google Drive before the deadline. Graduating students (including those entering ICU grad school) may apply for a graduate/alumni email (e.g., c123456x@alm.icu.ac.jp) that provides Gmail and Calendar but not Google Drive; apply by Feb 10, 2026 (or contact the Alumni Office after the deadline) [1].",
+    "gold_source_ids": [
+      "DOC-000726::structural_fallback_v1::P0000",
+      "DOC-001520::structural_fallback_v1::P0000"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001520::structural_fallback_v1::P0000",
+        "title": "IT Center For ALL Users - To Students Graduating",
+        "url": "https://sites.google.com/a/icu.ac.jp/itc-for-students/home/to-students-graduating-e",
+        "language": "mixed",
+        "retrieval_score": 0.03252247488101534,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation IT Center For ALL Users IT Center For ALL Users 卒業・修了予定の皆さんへ To Students Graduating ICUで使用するアカウント・システム Account and system used in ICU Wi-Fi On-campus WiFi Map How to change ICU Net ID password Download MS Office How to use Zoom IT Center For ALL Users To Students Graduating in March 2026 Accounts Your account (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) will expire on March 31, 2026. If you still need to exchange emails after graduation, We recommend that you use an email address that you can use after graduation, not a @icu.ac.jp email address. Email forwarding also stops. Please backup your necessary files (Gmail and Google Drive's Files) before graduation. When your account is deleted: You can't log in to Google (@icu.ac.jp) You can't see the announcement of Joining ceremony You can't see the information of Graduate school Files created when you were at university disappear The above will also be applied to the following students. Undergraduate students who are going to ICU graduate school Master's Course students who are going to Doctoral Course E-mail Address for Graduates For those who wish, New e-mail address will be issued for the graduates. ex) c123456x@alm.icu.ac.jp This service uses Gmail which Google Workspace offers. You can use Gmail and Google Calendar. Google Drive can not be used."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000726::structural_fallback_v1::P0000",
+        "title": "To Students Graduating in March 2026",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.032266458495966696,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Accounts\nYour account (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) will expire on March 31, 2026. If you still need to exchange emails after graduation, We recommend that you use an email address that you can use after graduation, not a @icu.ac.jp email address. Email forwarding also stops.\nPlease backup your necessary files (Gmail and Google Drive's Files) before graduation. When your account is deleted:\nYou can't log in to Google (@icu.ac.jp)\nYou can't see the announcement of Joining ceremony\nYou can't see the information of Graduate school\nFiles created when you were at university disappear\nThe above will also be applied to the following students.\nUndergraduate students who are going to ICU graduate school\nMaster's Course students who are going to Doctoral Course\nLearn How to Migrate Here\n;\nhttps://sites.google.com/a/icu.ac.jp/itc-for-students/home/to-students-graduating-e\nE-mail Address for Graduates\nFor those who wish, New e-mail address will be issued for the graduates.\nex)\nc123456x@alm.icu.ac.jp\nThis service uses Gmail which Google Workspace offers.\nYou can use Gmail and Google Calendar. Google Drive can not be used.\nApplication Form\n(Due:February 10, 2026.)\n＊Applications after the deadline should be sent to Alumni Association Office (\nicualumni.office@icu.ac.jp\n)."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001596::structural_fallback_v1::P0000",
+        "title": "Paths after Graduation｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/campuslife/career",
+        "language": "en",
+        "retrieval_score": 0.029571646010002173,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Paths after Graduation Diverse paths open up with a liberal arts education. Each year around 70% of the graduating students go on to find employment while 20% tend to pursue further education. As for those going on to postgraduation, there are students who make use of programs that enable them to obtain the bachelor's and master's degrees in a shorter period than usual such as ICU 5-year Program. Paths after graduation AY2024 (as of May 1, 2025) Undergraduate: 642 graduates Graduate School: 94 graduates AY2023 Undergraduate: 610 graduates Graduate School: 80 graduates CLOSE AY2022 Undergraduate: 640 graduates Graduate School: 69 graduates CLOSE AY2021 Undergraduate: 651 graduates Graduate School: 65 graduates CLOSE *Path after Graduation of International Students: AY2024 AY2023 AY2022 AY2021 Employment Wide range of employment paths reflects high expectations for globally-active ICU graduates The employment rate (number of graduates securing employment divided by number of those seeking employment) is over 90% every year. ICU graduates have the ability to make comprehensive judgements, to think creatively, and to deploy advanced language skills. Capable of addressing the needs of a borderless and rapidly-changing society, ICU graduates have found employment in a wide range of industries, particularly with global companies."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001570::structural_fallback_v1::P0013",
+        "title": "Graduate School Overview｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/academics/gs/about",
+        "language": "en",
+        "retrieval_score": 0.02817460317460317,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "riences. Paths after Graduation Visit the ICU Career Support Office for more details. ACADEMICS STUDYING AT ICU Explore in the Liberal Arts WHAT'S LIBERAL ARTS? Reading a History of Liberal Arts Liberal Arts Dialogue-Oriented Classes Trimesters UNDERGRADUATE ・BASIC Policies Your Four Years at ICU Majors General Education Courses Physical Education ・GLOBAL Japanese-English Bilingual Education Study Abroad English for Liberal Arts Program (ELA) Japanese Language Program (JLP) World Languages Reading a History of Liberal Arts ・EXPANDING 5-year Program Service-Learning Certification Programs University/Community Partners of ICU Program for Mathematics, Data Science and AI Education in Liberal Arts ・SUPPORT Faculty (Undergraduate) Academic Support Library ・SYSTEM Courses and Syllabi GPA Graduation Requirements GRADUATE SCHOOL ・BASIC Policies Graduate School Overview Master's Course Doctoral Course ・EXPANDING Program for International Students Certification Programs University/Community Partners of ICU Faculty (Graduate School) ・SYSTEM Library Courses and Syllabi ABOUT ACADEMICS RESEARCH CAMPUS LIFE & CAREER ADMISSIONS & AID Prospective Students Students Alumni Guarantors Visitors Giving Employment Opportunities Directions to ICU Brochures Contact About This Site Privacy Policy ICU High School ICU Hachiro Yuasa Memorial Museum ICU Sacred Music Center ICU Alumni Association ICU Chapel Japan ICU Foundation Library ICU Service CO., Ltd."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001484::structural_fallback_v1::P0000",
+        "title": "IT Center For ALL Users - 卒業・修了予定の皆さんへ",
+        "url": "https://sites.google.com/a/icu.ac.jp/itc-for-students/home/to-students-graduating-j",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation IT Center For ALL Users IT Center For ALL Users 卒業・修了予定の皆さんへ To Students Graduating ICUで使用するアカウント・システム Account and system used in ICU Wi-Fi On-campus WiFi Map How to change ICU Net ID password Download MS Office How to use Zoom IT Center For ALL Users 2026 年 3 月卒業・修了予定の皆さんへ アカウントについて 大学の各種アカウント・サービス（ICU Net ID、ICU Portal、メールアドレス、Google Workspace など）の使用期限は 2026 年 3 月 31 日となっています。期限をすぎると既存のアカウントは削除されますのでご注意ください。別のメールアドレスへの転送もされません。また、卒業後にもやりとりが必要なメールは、大学アカウントではなく、卒業後も利用できるアカウントのご利用をお勧めします。 アカウントの削除後に、次のようなことで慌てないよう、期日までに必要なファイル（メールや Google ドライブのファイルなど）のバックアップをとるようにしてください。 大学 Google にログインできない 入社式のお知らせが見られない 進学先の情報が見られない 大学在籍時に作ったファイルが消えてしまう ＊学部から ICU の大学院に進学したり、 大学院前期課程から後期課程に進学する方へ ユーザ名が変更となるため、卒業生の方と同様に期日までにバックアップやメールの変更作業を実施ください。 卒業生用メールアドレスについて 卒業・修了予定で、希望をする方には卒業生用メールアドレスを発行します。 例）c123456x@alm.icu.ac.jp 卒業生用メールアドレスは Google Workspace の提供する Gmail を利用しています。 卒業生用メールアドレスは Gmail と Google カレンダーが利用可能です。 Google ドライブは利用ができません。 申請締め切り後、一週間ほどで発行されます。今の ICU メール（c****** x@icu.ac.jp） にアカウント情報を送ります。 申請はこちら （ 締め切り：2026 年 2 月 10 日） ＊締め切り後の申請は同窓会事務局へ( icualumni.office@icu.ac.jp )お願いします。 Google からのメールデータ移行手順 ①移行先が @gmail.com の場合 既存メールアドレスから個人のGmailメールアドレスにメールデータをインポートする際は以下をご参照下さい。"
+      }
+    ]
+  },
+  {
+    "id": "hr_011",
+    "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？",
+    "category": "language",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0066",
+        "title": "自己点検・評価報告書（2009年）",
+        "url": "https://www.icu.ac.jp/about/docs/self-study-report2009.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "67\nC. 語学教育科目---日本語教育プログラム（Japanese Language Programs、以下\nJLP）\n【現状説明】\n〈目的〉\n○ 学部・学科等の教育課程における基礎教育、倫理性を培う教育の位置づけ\n本学には、日本語以外の言語（主に英語）を教育言語とする制度のもとで中等教育を受けた者を対\n象とした9 月入学の制度があり、これらのうち本学で学ぶにあたり日本語能力が不十分な学生のため\nに、日本語教育プログラム（Japanese Language Programs, JLP）が設置されている。対象は、4 年本科\n生および1 年本科生（OYR）、より具体的には、海外からの帰国生、国内のインターナショナル・スクー\nルからの入学者、海外からの短期・長期の留学生等である。本プログラムの基本的な目的は、このよう\nな学生の日本語の話し言葉および書き言葉の理解・産出能力を十分に高め、日本で支障なく日本語\nを用いて研究活動・大学生活を営めるようにするところにある。また、JLP は本学におけるリベラルアー\nツ教育の一環としての初年次教育の一部として位置づけられており、日本語運用能力を高めるだけで\nなく、教養学部で学んでいく上で不可欠となる学問的な思考方法やスキル（クリティカル・シンキング\n等）を涵養する教育を提供している。\n〈プログラムの構成〉\n○ 基礎教育と教養教育の実施・運営のための責任体制の確立とその実践状況\n○ 学生が後期中等教育から高等教育へ円滑に移行するために必要な導入教育の実施状況\n○ 各授業科目の特徴・内容や履修形態との関係における、その各々の授業科目の単位計算方法の\n妥当性\n○ 外国語科目の編成における学部・学科等の理念・目的の実現への配慮と「国際化等の進展に適切\nに対応するため、外国語能力の育成」のための措置の適切性\nJLP のシラバスは、1 つの分野に偏重することなく多様なトピックを取り入れ、日本語の4 技能（読む・\n書く・聞く・話す）の総合的な能力向上を目指している。カリキュラムの方針・内容は、JLP 主任を中心\nにJLP 担当教員によって構成されるJLP 会議において、審議・運営される。一方、同プログラムのカリ\nキュラムおよび教員人事等は、ELP、世界の言語等の語学教育プログラムとともに、語学教育委員会\n(p.62 参照)において総合的に検討される。\n本学では、9 月入学生に対して一定以上の日本語力を有していることを入学の条件にしないという方\n針を、献学以来50 年以上続けており、このことから、次ページの表「初級から上級JLP 科目の学習目\n標」にあるように、あらゆるレベルに対応できる日本語教育を行っている。"
+      },
+      {
+        "rank": 2,
+        "passage_id": "PDF-d0324ad9f2eb5d6c26::structural_fallback_v1::P0025",
+        "title": "PDF版入学案内[46M]を見る",
+        "url": "https://www.icu.ac.jp/about/images/ICU2026_booklet_web.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "The Japanese Language Program provides the foundation upon which students can fulﬁll their potential in the current dynamic and diversiﬁed world. 日本語教育プログラム（JL P）では、初めて日本語を学ぶ学生から日本語ネイティブに近い学生まで、 さらに、家庭では日本語を用い、学校教育は海外や国内のインターナショナルスクール等で受けた学生 など、多様な学生が日本語を学んでいます。JLPでは、一人ひとりに合った適切な日本語教育を提供し、 学生たちの日本語力を高めると共に、知的営みの基盤を築いていきます。 JLP Japanese Language Program ナキャン 沙良 教養学部2年 神奈川県／Zama American High School出身 履修対象者 JLP Director's Voice 社会の一員としての日本語力と多様な文化・価値観への 相対的な視点を養ってほしい JLPは1953年に日本語を外国語として学ぶ学生向けにスタートした、日本の大学では初めて単位認定され た日本語教育です。その後、日本語を第一言語・継承語として学ぶ学生のための日本語特別教育Special Japaneseを開始し、以来日本語を外国語として学ぶ学生、第一言語・継承語として学ぶ学生向けの2種類の コースを提供しています。 大きな特徴としては、初めて日本語を学ぶ学生、日本語ネイティブに近い学生、日英両語共が第一言語で ない学生など、教育背景やニーズが大きく異なる学生が学ぶプログラムだということがあります。そのため、 学生一人ひとりに適した丁寧な指導が可能になるよう、少人数教育を行っています。また、教員と学生1対1 の個別指導の時間（チュートリアル）があり、会話や発音の練習、課題やテストのフィードバック、レポートの 作成などについて個別に話し合い、次のステップを目指します。 授業では、日本語の学習以外にも、客観的、相対的、多角的な視点を持ち学術的活動ができるよう、各レベル のコースで個人の興味・関心に基づいたテーマでのプロジェクトを課しています。授業や個別指導を通して、 プロジェクトを進め、コースの最後には、全員が大きな成果を発表します。こうした一連の指導を通して、大学 生活で必要な日本語力はもちろんのこと、卒業・修了後も日本内外で社会の一員として能力を発揮し、貢献 するための土台となる思考力やコミュニケーション能力の養成を目指しています。 これからICU で学ぼうとしている皆さんには、国籍・居住地の違いにとどまらない多様な背景の人が集う ICUのキャンパスでの学びを謳歌してほしいと願っています。そのためのサポートをJLPは惜しみません。 小澤伊久美 日本語教育プログラム 主任 OZAWA, Ikumi Director, Japanese Language Program JLP は日本語を学びながら 日本を知り、自分を知る 濃厚なプログラム *If students complete the courses shown in this chart, they are deemed to have reached the equivalent level for CEFR 2. 1: 4-Year Regular and Transfer Students placed in the “ Japanese Track ” are required to complete up to “J7-A: Japanese & J7-B: Japanese”. 2: The CEFR (Common European Framework of Reference for Languages) organizes language proficiency in six levels, A1 to C2. For more information, please refer to the following."
+      },
+      {
+        "rank": 3,
+        "passage_id": "PDF-49a3e05f4c1ecc7e15::structural_fallback_v1::P0068",
+        "title": "自己点検・評価報告書（2009年）",
+        "url": "https://www.icu.ac.jp/about/docs/self-study-report2009.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.015873015873015872,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "69\nさらに、第１言語が日本語であっても、主な教育言語が英語等であったために、日本語能力に欠け\nる学生（主に、帰国生・インターナショナル・スクールからの入学者）を対象とする日本語特別教育プロ\nグラムも存在する。これらの入学者に対してもプレースメントテストが行われ、その結果、学生は5 つの\nカテゴリーに分けられる。すなわち、JLP 免除の学生、通常のJLP コースを履修する学生、および、日\n本語特別教育の以下の3 つのレベルに配置される学生である。\nプログラムA：日本語の読み書き能力において、ほぼ小学生の中高学年からの復習が必要な学生\nプログラムB：日本語の読み書き能力において、ほぼ中学入学レベルからの復習が必要な学生\nプログラムC：ほぼ高校入学レベルの日本語能力の学生\n〈授業形態〉\n○ 授業形態と授業方法の適切性、妥当性とその教育指導上の有効性\n授業形態は、語学科目ゆえに演習型であり、学生・教師、学生同士のインターアクションを重視し、\nペアーワーク、グループワーク等を駆使したコミュニカティヴな教育方法で授業を行っている。文法、\n発音等の正確さを重視しながらも、意味あるコンテキスト（ある設定された場面と目的のもとで）で自然\n（authentic）な日本語表現を使ったり理解したりするクラス活動に重きを置く。少人数教育を堅持するた\nめ、各クラスのサイズは原則として15 名以内におさえ、それを超える場合は2 つ以上のセクションに分\nける。\nJLP 受講生数は、1970 年代以降、次表のように推移してきた。JLP 受講生は9 月入学のため、下表\nは各年代の学期（9 月~11 月）の受講生数平均を示している（ただし、70 年代から1996 年入学の日本\n語特別教育プログラム受講生は、全員その3 学期目に受講したので、入学年の秋学期ではなく、その\n翌年の春学期の受講生数をもとに計算している）。JLP は1953 年の献学当初から存在し、日本語特別\n教育プログラムは、1964 年より開始されたが、ここには1970 年代以降の記録のみを示す。\nJLP 秋学期平均受講生数の推移（人）\n（SJ は日本語特別教育プログラム受講生を指し、非SJ はそれ以外の通常のJLP 受講生を指す。）\n＊それぞれ平均値のため、合計が非SJ とSJ の和と異なる場合がある。\n上表から明らかなように、JLP 受講生は1990 年代にピークを迎え、現在は多少減少している。しかし、\n本学において計画されている英語開講科目の増加により、英語話者の学生が学びやすくなることから、\n通常のJLP 受講生も今後増加が見込まれる。また、近い将来50 名～100 名の1 年本科生増加の可\n能性もあり、以上からJLP 受講生の大幅な増加が予想される。"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001611::structural_fallback_v1::P0000",
+        "title": "Japanese Language Program (JLP)｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/academics/undergraduate/jlp/index.html",
+        "language": "en",
+        "retrieval_score": 0.015625,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Japanese Language Program (JLP) The Right Course for Each and Every One of You Master Japanese Language and Broaden your World From its founding days, Japanese Language Program (JLP) have been providing Japanese language courses to ICU students as part of the College of Liberal Arts. There are around 300 students from about 40 different countries enrolled in JLP courses every year, including degree-seeking regular four-year students, one-year exchange students, and graduate students. It is an opportunity for both international students and Japanese students to become proficient in Japanese. JLP aims to facilitate students to gain functional communication competence in Japanese. The goal of JLP is to equip students with proficiency in the Japanese language that will enable them to pursue academic studies in ICU. JLP hopes to provide the foundation upon which students can fulfill their potentials in the current dynamic and diversified world. JLP Structure Contact Japanese Language Program (staff and faculty offices) are located on the first floor of the Educational and Research Building 2 (ERB-2). Email: jlp@icu.ac.jp Website: https://www.icu.ac.jp/en/academics/undergraduate/jlp/ Website: https://sites.google.com/info.icu.ac.jp/jlp Students' Voices We asked students who have taken Japanese Language Program (JLP) what they thought about it."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001267::structural_fallback_v1::P0000",
+        "title": "Notes for graduate school students who wish to take the JLP courses",
+        "url": "",
+        "language": "ja",
+        "retrieval_score": 0.015384615384615385,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "This page is only available in English."
+      }
+    ]
+  },
+  {
+    "id": "hr_012",
+    "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",
+    "category": "campus_life",
+    "is_answerable": true,
+    "gold_answer": "Check the university calendar for Christianity Week (it’s a public event in the university calendar) and the Religious Center website (the Chapel Hour schedule is posted there) [1][2].",
+    "gold_source_ids": [
+      "DOC-001547::structural_fallback_v1::P0009",
+      "DOC-001488::structural_fallback_v1::P0000",
+      "DOC-001547::structural_fallback_v1::P0008",
+      "DOC-001551::structural_fallback_v1::P0003"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001547::structural_fallback_v1::P0008",
+        "title": "Disclosure｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/about/info",
+        "language": "en",
+        "retrieval_score": 0.03131881575727918,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "tive means of communicating ideas and intentions other than through language; in doing these things, each individual discovers their own means of expression. 2. Christian Commitment (C) Through the lens of Christianity and with the aim of offering support to students as they mature, ICU offers programs that realize the philosophy on which it was founded. ICU's Religious Center organizes the following activities. Students are not required to participate in these programs, but by offering a place where students can come into contact with Christianity as part of their regular campus life ICU hopes to transmit in a meaningful way the Christian philosophy that lies at its foundation. a. Chapel Hour, Candlelight Service Chapel Hour is held every Wednesday during lunchtime. So that not only students but also faculty and staff can participate, no classes or meetings may be scheduled during this time. Themes for the services are widely ought by the Religious Affairs Committee from both students and faculty. Services are sometimes held as times for contemplation with music provided by student groups or the university organist. Services may also be timed to suit other events in the university calendar, such as services to greet incoming students, to wish farewell to graduates, or to offer contemplative organ music during Christmastime."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-001551::structural_fallback_v1::P0003",
+        "title": "Commitments and History｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/about/commitments",
+        "language": "en",
+        "retrieval_score": 0.030158730158730156,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": ", including ample opportunities to study at universities overseas through our educational exchange programs. ICU sees itself as a bridge both to and from Japan. ICU and Christianity The University seeks to provide a means for moral and religious development by offering various opportunities for inquiry, discussion, instruction and worship, organized by the Religious Center, the Faculty Religious Affairs Committee and student groups. Participation in these activities is optional. Chapel Hour A Chapel Hour is conducted for students, faculty and staff every Tuesday during the lunch period, with university ministers, faculty and staff members, students and guests from outside the campus as speakers. Christianity Week In May a full week of daily programs, including addresses by outstanding speakers and group discussions in faculty homes and elsewhere, are held under the title of Christianity Week. The Religious Center also sponsors work camps and a variety of other activities and projects in Japan and other parts of Asia. Religious Center Website The Christian Ideals of ICU Learn more about the Christian clause of our university. The Christian Ideals of ICU（Digital book） ICU Church The ICU Church, an ecumenical fellowship independent from the university, acts as the heart of the community's religious life."
+      },
+      {
+        "rank": 3,
+        "passage_id": "PDF-1e027f360ece17e0a5::structural_fallback_v1::P0013",
+        "title": "Self-Study/Evaluation Report 2023",
+        "url": "https://www.icu.ac.jp/en/about/images/Self_StudyEvaluationReport_2023.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.030017921146953404,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "phy and organization of ICU, while the University Minister gives an orientation on Christianity and distributes a Bible. University chapel services, Christianity Week The university chapel service is held once a week during Chapel Hour to listen to messages from the University Ministers, faculty and staff, or students of the college and Graduate School, as well as guests from outside the university, and is a time for prayers. It offers a precious opportunity for all university members to meet. During Christianity Week (C-Week), held in May every year, a committee led by the students holds various events related to Christianity for the entire university under a special timetable. They include early-hour services and open houses, in which the President and other faculty members who live on campus invite undergraduate and graduate students to their homes, offering opportunities for faculty, staff, and students to have dialogues. ICU Archives On the occasion of the 60th anniversary of ICU’s founding, the Historical Materials Room was opened on the first floor of the university library as part of the commemorative projects. In September 2020, the Historical Materials Room was renamed the ICU Archives, and the collection was expanded to include administrative documents in"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001547::structural_fallback_v1::P0009",
+        "title": "Disclosure｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/about/info",
+        "language": "en",
+        "retrieval_score": 0.028790389395194696,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "the university calendar, such as services to greet incoming students, to wish farewell to graduates, or to offer contemplative organ music during Christmastime. Matriculation and commencement ceremonies are also held as chapel services, which naturally are also deeply connected to the Christian faith. In December, ICU holds its Christmas \"Candlelight Service\" in which all members of the ICU community are welcome to join. The service is held with diverse participation of the student body, including performances by specially formed student choir and orchestra (under the guidance of faculty from the Music Department), multilingual readings by students from overseas, performances by students in the Religious Center's organ course, and sacred music performed by student volunteers. b. Christianity Week A public event within the university calendar, Christianity Week takes place in the latter half of May each year and aims to foster concerted contemplation about the Christian faith. Various events are held during the week, including lectures by various speakers from both within and outside ICU. At this time, all classes are shortened so that students, faculty and staff may participate in events that interest them. c. Work Camp In this program, students travel to villages in northern Thailand to build churches."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001488::structural_fallback_v1::P0000",
+        "title": "宗務センター Religious Center - CHAPEL HOUR",
+        "url": "https://sites.google.com/icu.ac.jp/relcenter/chapel-hour",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "大学礼拝（チャペルアワー）Chapel Hour\n学期中\n毎週\n火\n曜\n午後1時\n2\n0分～1時\n5\n0分\n大学礼拝堂にて\nTues\ndays duri\nng the term from\n1:\n2\n0 p.m. to 1:\n5\n0 p.m.\n, University Chapel\nオンライン参加はこちらから\nClick here to join online\n毎週\n火曜\n日の昼休みには大学礼拝堂（チャペル）で大学礼拝（チャペルアワー）がもたれます。これは\n、\n教職員と学生がともに神の前に祈り\n、\nICUの存立の基盤を再確認する時です。大学牧師や教員、学生が、キリスト教信仰をめぐるそれぞれの理解や経験を、メッセージを通して分かち合っています。ふだん教室では見ることのできない先生方の横顔を知るよい機会でもあります。ぜひ毎週お集まりください。\n初めての方も、\nどなたでもご参加\nください\n。\nお待ちしています！\nThe Tuesday Chapel Hour is a rare weekday opportunity for the ICU community to gather for informal Christian worship. For years, university ministers,\nfaculty and staff\n,\nand\nstudents have given inspirational and thought provoking messages revealing particular interests and understandings of the Christian faith.\nThe University Chapel Hour is open to everyone.\nWe hope you will be able to join us!"
+      }
+    ]
+  },
+  {
+    "id": "hr_013",
+    "question": "Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?",
+    "category": "housing",
+    "is_answerable": false,
+    "gold_answer": "Cannot determine which dormitory will have the cheapest rent next academic year because the retrieved documents do not provide dormitory-specific rent amounts or any announced future fee changes [5].",
+    "gold_source_ids": [
+      "DOC-000262::structural_fallback_v1::P0000",
+      "DOC-000823::structural_fallback_v1::P0002"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000823::structural_fallback_v1::P0002",
+        "title": "【APPLY BY4/10】2026 Summer ★International Summer Program in Japan (ISPJ) ( (JPS203)) Application now open",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.03076923076923077,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "broad. ・Dormitory fees will be charged. You will be informed by the Housing Office once your participation is confirmed. (however, the amount of the dormitory fee is different for current dormitory participants. The Housing Office will inform current dormitory students once they have been selected). ・Although dormitory stay is not mandatory, we welcome students who are willing to socialize with us outside of class hours. At the same time, we are also looking for Residential Assistants (RAs) to assist with dormitory life, so please consider this (to be announced on the ICU portal in late April). Program First Day Orientation and Welcome Party ISPJ participants are required to attend the orientation and welcome party on the first day of the program in collaboration with the overseas participants. Date: Monday, July 6 (2-3 period& lunch time) Place: To be determined For inquiries, please contact Center for Global Education (in International Office: Room 125, Main Bldg.) ispj@icu.ac.jp Follow us on Instagram"
+      },
+      {
+        "rank": 2,
+        "passage_id": "PDF-b9f8d347dc34f87983::structural_fallback_v1::P0045",
+        "title": "Business Report",
+        "url": "https://www.icu.ac.jp/en/about/images/AY2022BusinessReport.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.02976190476190476,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "jointly on a regular weekly basis to discuss the matters necessary for dormitory operation and students’ dormitory life. The number of students occupying the dormitories was 119 in April, 110 in September, and 82 in January, almost reaching the capacity of 126 students across the five dormitories. We have developed measures to prevent COVID-19 infection in the dormitories, and have ensured that the residents are informed of the measures, particularly the responses to be taken by parents and guardians in the event of students developing fever, infection, and getting vaccination. Fortunately, we have not identified many cases of infection in the dormitories, and were able to avoid dormitory closure. Since AY2021, the dormitory fee has been under phased revisions. In order to reduce the burden on dormitory residents and their guarantors, and to maintain the learning environment, the dormitories have been kept open during online classes, with a special weekend residence system also in place. During the period of online classes, approximately 30 students attended their online classes from the dormitories. With the help of the cafeteria, we were able to provide dinner during the period of online classes. The number of students who have used the special weekend residence system (for a fee), which was fully implemented from AY2022, ranges from several students to half of the capacity in the respective dormitories, and we have received requests to keep the system in place due to the students’ individual circumstances. This year’s dormitory orientation and individual"
+      },
+      {
+        "rank": 3,
+        "passage_id": "PDF-dc610eebc31c38838f::structural_fallback_v1::P0053",
+        "title": "Business Report",
+        "url": "https://www.icu.ac.jp/en/about/images/jigyo_houkoku2024_e.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.02668564312399929,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "School dormitory management structure The outsourcing structure of school dormitories that was initiated in AY2017 and the new Dormitory Committee structure comprising six teachers is functioning smoothly. Regular meetings of the committee are held jointly every week, and necessary discussions concerning school dormitory management and dormitory life of dormitory students are conducted. The five school dormitories, which combined can house up to 126 students, had some spare capacity, with 101 students residing in April, 93 students residing in September, and 56 students residing in January, so we considered and decided to relax the standards for being eligible for dormitory accommodation (commuting time) in preparation for AY2025. The number of students in each dormitory using the special weekend residence system, which has been fully implemented since AY2022 and allows students to stay in the dormitories during weekends for a fee, ranged from a few to around half the number of dormitory students, and individual circumstances continue to demand that the system be kept in place. Measures for improvement in response to the case that occurred in the latter half of AY2023 such as the holding every week of study meetings consisting of the Dormitory Committee, dormitory parents, and those in charge from the contracting company for management operations, exchange of views by the Dormitory Committee and those in charge from the contracting company for management operations on the work of dormitory parents, and the continued conducting of dormitory student questionnaires have been firmly established. Collaboration with Parents Association and Alumni Association Εἰρήνη, a communication from the school to parents and guardians, is issued three times a year."
+      },
+      {
+        "rank": 4,
+        "passage_id": "PDF-838035c1224a8315db::structural_fallback_v1::P0009",
+        "title": "See \"Housing,\" Guide to Living in Japan",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/pdfs/guide_living_en.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "t a Place You will enter into a contract when renting a house or an apartment. This contract is called a lease contract. The term of the contract is generally two years. The following documents and fees are required for the contract. Documents required for the contract Fees required for the contract 1. Resident Card 2. Certificate of earnings 3. Joint Surety (Guarantor) or covenant 4. Personal Seal Registration, etc. 1. First and next month’s rent 2. Shikikin (security deposit) 3. Reikin (key money) 4. Chuukai Tesuu-ryo (Agent fee), etc. If you add all the fees involved in renting a place, the total will be equivalent to 5 to 6 months’ rent. (3) What to Keep in Mind When Renting (a) Bathtubs If the place does not have a bath, you can take a bath at a public bathing facility called a sento, for a nominal charge. (b) Renovations and Remodeling Keep in mind that you cannot renovate or remodel the place or let someone other than your family move in with you without obtaining the permission from the landlord. Needless to say, you are not allowed to sublease the whole or any part of the place."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000262::structural_fallback_v1::P0000",
+        "title": "Housing Office",
+        "url": "http://office.icu.ac.jp/ho/en",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "JP\n/EN\nDormitory Screening Results for April 2026 (For April First-Year Students/ Current ICU Students)\nCommon Rules and General Matters\nOutline & Dormitory Fees\nRegulations and Bylaws\nFAQ\nEmergency Contact Information (For Dormitory Residents' Guarantors)\nDormitory Screening Results for April 2026 (For April First-Year Students/ Current ICU Students) TOP\nCommon Rules and General Matters TOP\nOutline & Dormitory Fees TOP\nTOP\nRegulations and Bylaws TOP\nFAQ TOP\nEmergency Contact Information (For Dormitory Residents' Guarantors) TOP\nDormitory Screening Results for April 2026 (For April First-Year Students/ Current ICU Students)\nCommon Rules and General Matters\nOutline & Dormitory Fees\nRegulations and Bylaws\nFAQ\nEmergency Contact Information (For Dormitory Residents' Guarantors)\nJapanese\nInformation about Dormitory Application\nThe screening results for April 2026 dormitory admission were published on March 6. An ID and password are required to check the results.\nEmails have been sent to all applicants, so please refer to those for further details.\nInformation regarding dormitory applications for September 2026 is scheduled to be posted on this page around mid-May.\nHousing Office, International Christian University\n【Office Hour】 9:30-11:45/12:45-16:30 (Monday - Friday)\n【Location】 Dialogue House 1F\n【E-mail】 housing-office@icu.ac.jp\nPowered by ICU (link is external)\nPrivacy Policy\n|\nSitemap"
+      }
+    ]
+  },
+  {
+    "id": "hr_014",
+    "question": "What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?",
+    "category": "campus_life",
+    "is_answerable": false,
+    "gold_answer": "I cannot answer. The retrieved sources do not list today’s lunch menu; the cafeteria site says the weekly menu is available via the “食堂マイページ” but the actual menu items are not included here [4]. The Health Care Office also notes the cafeteria cannot prepare meals tailored to individual needs or allergies, so a personalized “healthiest” recommendation cannot be made from the provided documents [1].",
+    "gold_source_ids": [
+      "DOC-001487::structural_fallback_v1::P0000",
+      "DOC-001375::structural_fallback_v1::P0007",
+      "PDF-634be4613adb7580e2::structural_fallback_v1::P0003"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001375::structural_fallback_v1::P0007",
+        "title": "ICU Health Care Office for Students - キャンパスでの健康管理",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/aboutus/oncampus",
+        "language": "mixed",
+        "retrieval_score": 0.027650648360030512,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "life, there is a self-reporting form available (e.g., you may need to rest in advance, etc.). Those who wish to self-report are requested to complete the form. Self-Reporting Form https://forms.office.com/r/zqaWQrWkzV -For those with pre-existing medical conditions or severe allergies that could cause them to lose consciousness Severe allergies, diabetes, epilepsy, etc : If you have a pre-existing condition that could cause you to lose consciousness or suffer from severe allergies, we recommend taking the following precautions. P lease carry a help mark/help card with you. Set up the “Medical ID” (emergency information feature) on your smartphone This information will help emergency responders and doctors provide prompt treatment if you collapse while out and about or on campus. For those with food allergies: The university cafeteria is unable to prepare meals tailored to individual needs (such as meals completely free of specific allergens or meals tailored to specific medical conditions). Therefore, if necessary, please bring your own lunch. Emergency Procedure Flowchart 【 When you are absent from class due to illness or injury】 Please contact the instructor in charge of each class. Each instructor will decide how to handle absences (including cases of illness or influenza). You can find the contact information for instructors at icuMAP > Faculty Information ."
+      },
+      {
+        "rank": 2,
+        "passage_id": "PDF-634be4613adb7580e2::structural_fallback_v1::P0003",
+        "title": "Ginkgo House",
+        "url": "https://www.icu.ac.jp/campuslife/images/icho_E_2023.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "I will do my best to tell you all how great Ginkgo House is. First, let me tell you about the location of the dormitory. Ginkgo House is located right in front of ICU's cafeteria. When you realize, \"oh shoot I have nothing to eat for lunch today! “You can"
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001402::structural_fallback_v1::P0004",
+        "title": "ICU Health Care Office for Students - 生活応援情報 Everyday life information",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/healthinfo/life",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "martphone! PCやスマートフォンとうまく付き合う方法！_EN.pdf 睡眠 睡眠.pptx Sleep Sleep(1).pptx 食事 食生活資料 食生活資料.pptx レシピ集 レシピ集.pptx pakutan movie 2023 for MPEG.mp4 食事は健康の源！未来はあなたの選択肢次第！ ～「ちゃんとごはん」で健康に～（手話有） 出典：東京都多摩府中保健所 pakutan 2024 for MPEG（手話有）.mp4 Diet Diet advice Diet Advice.pptx Recipe Recipes.pptx pakutan movie 2023 for MPEG.mp4 【Japanese version only】 (Japanese sign language available) Diet is the source of health! Your future is up to you! ～\"Eat properly\" and be healthy～ Source: Tokyo Metropolitan Tama Fuchu Health Center pakutan 2024 for MPEG（手話有）.mp4 問い合わせフォーム INQUIRY FORM よくある質問 FAQｓ アーツ・サイエンス館(T館) 1階 149号室 月〜金曜日 9:30〜17:30（授業期間外：月～金曜日 9:30～16:30） Arts ＆ Sciences Hall (T-kan) 1F, room 149 Office Hours: Weekdays 9:30 am - 5:30 pm (During the period when the courses are not offered: Weekdays 9:30 am - 4:30 pm) ☎ 0422-33-3119 （内線ex. 3119 ） ✉ healthcare@icu.ac.jp"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001487::structural_fallback_v1::P0000",
+        "title": "大学食堂・売店の最新情報",
+        "url": "https://sites.google.com/icu.ac.jp/dininghall",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation 大学食堂・売店の最新情報 大学の福利施設について University welfare facilities Information NEW INFORMATION 大学食堂運営業者からのお知らせ From The University Cafeteria ◆営業時間 / Operation Hours (during the term) 大学食堂 / University Cafeteria Mon.-Sat., National Holidays (when classes are held) : 11:00 a.m. -3:00 p.m. 2025年度営業スケジュール / Annual Business Calendar NEW 202 6 年度営業スケジュール / Annual Business Calendar 座席配置図 / Seating Arrangement Map カフェイリオン / Café Ilion Mon.-Fri. , National Holidays (when classes are held) : 11:00 a.m. -8:00 p.m. ※Freshly made doughnuts are available from 3:00 p.m. ◆Menus 「 食堂マイページ 」より大学食堂の１週間のメニューがご覧になれます。 You can view the weekly menu and other information from \" 食堂マイページ \". ファミリマートからのお知らせ From Family Mart ◆営業時間 / Operation Hours ＜During the term＞ Mon.-Fri. , National Holidays (when classes are held) : 8:00 a.m. -8:00 p.m. ＜Out of the term＞ Sat . , Date of the Ceremony, etc. 8:00 a.m. -5:00 p.m. ※ Exceptions apply 2025年度営業スケジュール / Annual Business Calendar NEW 2026年度営業スケジュール / Annual Business Calendar ◆News 行事やおもてなしにピッタリなご予約膳の取り扱いを始めました。１食分から対応可能ですので、ぜひご利用ください。メニューやご予約方法などは こちら からご確認ください。 We are offering reservation bento that are perfect for events and hospitality for guests! They are available for as little as one meal. Please click here for the menu and reservation procedures."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001482::structural_fallback_v1::P0003",
+        "title": "ICU Health Care Office for Students - 感染症 Infectious disease",
+        "url": "https://sites.google.com/icu.ac.jp/hcoforstudents/infection",
+        "language": "mixed",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "gastroenteritis 風邪かな？と思ったら… If you catch a cold... 風邪かな？と思ったら・・・ If you catch a cold... 風邪かな？と思ったら・・・ 風邪の時の食事 インフルエンザかな？と思ったら（政府広報オンライン） If you catch a cold... Recommended Foods When You Have a Cold Common cold (NHS inform) What to eat (Patient info) foods and drinks ( health.com ) 問い合わせフォーム INQUIRY FORM よくある質問 FAQｓ アーツ・サイエンス館(T館) 1階 149号室 月〜金曜日 9:30〜17:30（授業期間外：月～金曜日 9:30～16:30） Arts ＆ Sciences Hall (T-kan) 1F, room 149 Office Hours: Weekdays 9:30 am - 5:30 pm (During the period when the courses are not offered: Weekdays 9:30 am - 4:30 pm) ☎ 0422-33-3119 （内線ex. 3119 ） ✉ healthcare@icu.ac.jp"
+      }
+    ]
+  },
+  {
+    "id": "hr_015",
+    "question": "Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?",
+    "category": "office",
+    "is_answerable": false,
+    "gold_answer": "There is no evidence here to determine whether Professor Ishibashi will approve your individual course plan next week. The retrieved documents only note that advisors must approve course registration and that you should bring your desired timetable when visiting an advisor [3].",
+    "gold_source_ids": [
+      "DOC-000079::structural_fallback_v1::P0000",
+      "COURSE-2026-Autumn-21219-ISC321::structural_fallback_v1::P0011"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "COURSE-2026-Autumn-21219-ISC321::structural_fallback_v1::P0011",
+        "title": "Logic Programming",
+        "url": "https://campus.icu.ac.jp/icumap/ehb/PreviewSyllabus.aspx?year=2026&term=2&regno=21219",
+        "language": "E",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Expected Study Time Outside the Class Sessions / 授業時間外学習\n300.31415 minutes per week. Roughly.\nMediums for Feedback on Assignments to Students / 課題に対するフィードバック方法\n口頭で行う、Moodleで行う、提出物にコメントをつけて返却する\nVerbally, moodlely, and copious comments.\nImplementation of Active Learning / アクティブ・ラーニングの実施\nYes\nYes, you will be asked to ask and told to tell.\nShort presentations will not be absolutely mandatory, but will count a lot if valiantly attempted."
+      },
+      {
+        "rank": 2,
+        "passage_id": "PDF-423b05c4867b4b98fa::structural_fallback_v1::P0000",
+        "title": "Letter of Consent of a Faculty to be Research Advisor on Acceptance (for Doctoral Course applicants)",
+        "url": "https://www.icu.ac.jp/en/admissions/gs/images/LetterofAcceptancetobeAdvisor_DR.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "FUERA AKER ERT —Y + 4 my ATER Ee\nInternational Christian University Graduate School of Arts and Sciences Doctoral Course\nLetter of Consent of a Faculty to be Research Advisor on Acceptance\nCOPBIL, EVR BKR EK EEL BEC HT OR, HEMT SOL, THM\nに 先立ち 、 本 学 大 学院 博士 後期 課程 指導 教員 と 事前 に 連絡 を と り 、 可 能 で あれ ば 、 面 談 の\n上 、 研 究 内 容 ・ 論 文 作成 に 関係 する 事項 に つい て 相談 する こと 。 入 学 が 認め られ た 場合 に\n志願 者 の 研究 指導 教授 と な り 志 望 分 野 で の 研究 指導 が で きる こと を 教員 に 確認 し 、 以 下 の\nに コメ ント と 内 諾 署名 を 得る こと 。\nThis form must be completed on applying to ICU Graduate School Doctoral Course. Before making\napplication, applicants should make a contact with a desired doctoral research advisor of our school\nin advance and, if possible, arrange an appointment to discuss desired research subject and\ndissertation writing. After obtaining consent of a faculty member to supervise in one’s desired field\nand to be one’s research advisor in the event of acceptance, applicants should ask the faculty to write\ncomments and sign in the section below.\n大 学院 博士 後期 課程 担当 教員 記入 欄\nMust Be Completed by Faculty Member in Charge of Doctoral Course\n志願 者 氏名 (ロー マ 字 ) :\nApplicant’s name ive Family name 名 Given name Middle name\n上 記 の 志願 者 の 入学 が 認め られ た 場合 、 研 究 指導 教授 と し て 志望 分 野 で の 研究 指導 を 行う こと を 承諾 し ます 。\nTagree to supervise the desired field of and to be a research advisor of the applicant above in the event of acceptance.\n教員 氏名\nPrint Name ==\n内 諾 年 月 日 HABA\nDate of Consent: Signature of Faculty\n研究 指導 に 関す る コメ ント 等 Comments for applicant’s research, ete. (必須 項目 Required)"
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000079::structural_fallback_v1::P0000",
+        "title": "ehandbook - Spring Term in Next Academic Year",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/university-calendar/schedule-for-course-registration-spring-term/spring-term-in-next-academic-year",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Schedule for Course Registration AY202 5 Spring Term ｜ Autumn Term ｜ Winter Term AY202 6 Spring Term AY202 6 Spring Term (Tentative: Subject to change)\nBe sure to confirm your course registration! Please be sure to access Registration Website and confirm your course registration and approval by your advisor on the next day of Registration Day / after Late registration. It is also necessary for you to confirm the result whenever you add/drop courses. Registration confirmation is the responsibility of individual students. No registration / registration change after the specified period will be accepted regardless of reasons.\nRegistration Website can be accessed on and off campus. However, the university assumes no responsibility for troubles caused by off campus access. Make sure to access well in advance and at your own risk.\nA. Pre-Registration (*1) In principle, students are to participate in pre-registration for taking PE exercise course and have acquired a seat before the class begins. Therefore, absence from the course due to additional registration during registration change period will not be considered a valid excuse.\nB. Registration *When you visit your advisor, please bring your desired timetable for this term. *Course registration will not be complete until advisors approve your course registration online. *Those who could not complete the registration on Registration Day should complete the necessary procedure during Late Registration period.\nC. Major Declaration / Change of Majors"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000942::structural_fallback_v1::P0000",
+        "title": "【June 3rd for first year students】Academic Skills Workshop \"Learn from mistakes! - Honest reviews and experiences x tips for course planning\"",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "＼A must-see event for first-year students!／\nAcademic Skills Workshop\nLearn from mistakes! - Honest reviews and experiences x tips for course planning\nNow that you (first-year students) are almost done with the spring term, you may be wondering which courses to take in the autumn and winter terms. How did\nsenpai\nchoose their courses?\nWe will hold an event to answer these questions and concerns!\nIBS senpai’s will show you their actual timetables, sharing their real experiences, such as “what they are glad they did” and “what they honestly regret doing”.\nThey may also share interesting episodes from their student life, part-time jobs, and club activities!\nThe basics of taking courses will also be explained during the event.\n📅Date: Tuesday, June 3, 14:00-15:00 (Convocation Hour)\n🏫Place: Room 171, Building T (tentative)\n🎯Target: Mainly first-year students (those who entered in April 2025 and September 2024)\n👤Language: Japanese (English is acceptable for questions and answers.)\n📌Send us your questions with pre-registration from the link below!\n🔗\nhttps://forms.gle/EAk6SaYCgNJB9vaP8\nWe hope this information session will make you feel more confident about the upcoming terms. An event that may change your mindset for Academic Planning.\nWhy don't you come and join us to eliminate any worries you may have about academic planning?\nOrganized by the Center for Teaching and Learning\nInquiry: ctl@icu.ac.jp"
+      },
+      {
+        "rank": 5,
+        "passage_id": "PDF-0bb4eaf8fc73fc7ccd::structural_fallback_v1::P0021",
+        "title": "Activities Plan",
+        "url": "https://www.icu.ac.jp/en/about/docs/AY2023_Activities_Plan_E.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.015873015873015872,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "9 (1) We will work to expand the system for employing young researchers who have earned a Ph.D. from the ICU Graduate School as assistant professors by special appointment. 3. Enhancing the reputation of ICU’s academic presence (1) Support for applications for external research funds and implementation of research ethics education We will continue to provide appropriate information and assistance for applications for the Grants-in-Aid for Scientific Research (Kakenhi). Timely support will also be extended for applications for other external research funds. In addition, we will provide graduate students at an early timing with information regarding the Research Fellowships for Young Scientists program of the Japan Society for the Promotion of Science and regarding ICU’s doctoral and postdoctoral researchers program, and assist with their applications. We will strengthen our initiatives regarding research ethics education, especially compliance education. (2) Communication of the importance of natural sciences in the liberal arts by the Othmer Distinguished Professor of Science We will widely communicate the importance of natural sciences in liberal arts looking forward toward the next generation and learning across the boundaries of the arts and sciences inside and outside the university. We will plan lectures by the Othmer Distinguished Professor of Science and dialogs with faculty in other fields and graduates and publish these on our website and through other PR media. (3) Reinforcing publication of the academic achievements of individual faculty members and the entire university We will update the academic papers and research results of faculty on the renewed university website in a timely manner, and make an appeal to ICU’s academic achievements."
+      }
+    ]
+  },
+  {
+    "id": "hr_016",
+    "question": "I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?",
+    "category": "graduation",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000108::structural_fallback_v1::P0001",
+        "title": "ehandbook - November 28, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.028693528693528692,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "screen. If you plan to graduate at the end of this term, choose YES. If you plan to postpone your graduation, choose NO. Students who do not go through this procedure will not be recognized as a graduating student.（If you make the wrong choice on this screen, notify the Educational Affairs Group immediately. ） We need to inform you immediately if a serious problem arises regarding graduation requirements, so make sure your contacts are updated through icuMAP. <How to confirm your application for graduation> After starting the registration change period (after December 7), click More info[+] in icuMAP, and confirm it in the Applied for Graduation section. If you choose \"Yes\": \"G\" will be displayed. If you choose \"No\": \"C\" will be displayed. 2. Graduation Requirements Review The Educational Affairs Group will review whether students who have chosen YES on the Intention to Graduate screen satisfy graduation requirements based on the courses they have registered for as of this term. The result will be posted on the Registration Website, so be sure to confirm that you have satisfied requirements. The review will take a few days （about three business days）."
+      },
+      {
+        "rank": 2,
+        "passage_id": "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+        "title": "FD Newsletter Vol. 29",
+        "url": "https://office.icu.ac.jp/ctl/docs/vol29_en.pdf",
+        "language": "mixed",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "30\nAPS presents advice to help students with course planning before studying abroad, directing\nstudents to watch recordings and materials from previous sessions based on which they can\nthen ask for further resources and advice. For scheduling, APS recommends consulting IBS\nadvisors, and for job-hunting, students are encouraged to visit the Career Support Office or\nto check the handbook “Career Guide” online.\n(2) Graduation Requirements\n“Could you please help me go over my graduation requirements? Will my current course plan\nallow me to graduate on time?”\nFor such concerns, APS staff review the Graduation Requirement Checklist on icuMAP with\nthe student to confirm the credits required for each category of Graduation Requirement.\nThey work with each student to create a realistic course plan that is tailored to their\nindividual needs and situation, including the number of terms it will take them to graduate\nand their senior thesis research candidacy.\n(3) Future/Career Plans\n“I’m interested in a five-year graduate program. I’m not sure whether I should look for a job or\ncontinue onto graduate school.”\nAPS advises students to consult their academic advisor and professors, as well as senior\nstudents, about their options for graduate school. It also directs them to resources provided\nby the Career Support Office, such as the OBOG search functions of its website and the\nabovementioned online Career Guide handbook.\nb. Feedback from students\nAfter each consultation, APS emails the student a feedback questionnaire along with a\nnotification of the advising record uploaded on icuMAP. Figure 2 presents the results of the\n39 questionnaires received by APS in 2023.\nFigure 2: Results of the APS feedback questionnaire for AY 2023 (n = 39)."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001623::structural_fallback_v1::P0000",
+        "title": "Graduation Requirements｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/academics/undergraduate/requirements",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Graduation Requirements\nTo obtain a Bachelor of Arts degree, ICU students must earn at least 130 credits. They are expected to select their courses in an independent and systematic manner.\nFor students matriculated (first enrolled) in the 2025 academic year and thereafter\n＜Note＞\nCredit requirements in Languages and Specialized Courses vary according to the student's language proficiency.\nGraduation Requirements for students enrolling in or before September 2024 are different. For more details, please check the ehandbook (for current students).\nCheck out the page below to get more information of the educational experience from enrollment to graduation.\nThe Educational Experience: From Enrollment to Graduation"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000108::structural_fallback_v1::P0002",
+        "title": "ehandbook - November 28, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "so be sure to confirm that you have satisfied requirements. The review will take a few days （about three business days）. Please note that during this period, you will not be able to change your registration. 3. Registration Change Please take utmost care when you change your registration. Cancelling registration for a course might endanger satisfaction of graduation requirements. You should check the Graduation Requirements Checklist by yourself before you cancel any courses. Please note that you will be responsible for registration change that results in serious consequences for your graduation requirement. 4. Submission of a Senior Thesis An electronic data (PDF) of senior thesis should be submitted online between January 9 (Tuesday) and February 1 (Thursday), 2024. (Please refer to ' Senior Thesis Guidelines ' ) No thesis will be accepted after 16:00 on the deadline date, under any circumstances. If students cannot meet the deadline, it will be impossible to graduate as expected. To avoid such a situation, students should try to submit the thesis well before the deadline. Contact: Educational Affairs Group: ea-group@icu.ac.jp 5."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-001586::structural_fallback_v1::P0001",
+        "title": "Admissions Requirements by Country/Region｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/edcert",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "he designated deadline. This includes the School Report (a format required by ICU) , on which the name of the expected diploma or certificate must be specified. Additionally, a list of courses progressing or to be taken in the final semester/year is needed to verify that you will meet the course requirements. Once admitted, you must submit the original or certified true copies of such a diploma or completion certificate to confirm your admission to ICU. Otherwise, your admission will be rescinded. *NOTE: The following requirements may change without prior notice in the event of educational reform in the country/region/educational system. Australia Senior Secondary Certificates of Education* and Australian Tertiary Admissions Rank (ATAR). *Details of the required documents differ by state/territory. Check the website below. https://www.acaca.edu.au/index.php/senior-secondary-certificates/ Canada Senior/High School Final Transcript that shows the completion of the required curriculum and/or final examination for entering a four-year university in Canada. Below are course requirements by province: British Columbia : Five Grade-12 academic courses, including English Studies 12 (or English 12 or English 12 First Peoples)."
+      }
+    ]
+  },
+  {
+    "id": "hr_017",
+    "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",
+    "category": "calendar",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000751::structural_fallback_v1::P0000",
+        "title": "AY2026 Spring Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.03177805800756621,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "To all students, AY2026 Spring Term Course Registration will be proceeded as follows. *To newly enrolled students from AY2026 Autumn Term: Please check “Campus Pathfinder ” in Moodle instead of this announcement. 【Registration】 1. Schedule Online input April 9 (Thu) 9:00 ~ April 10 (Fri) 14:30 Interview with advisor April 9 (Thu) 10:00 ~ 16:00, April 10 (Fri) 9:00 ~ 15:30 Online approval by advisor April 9 (Thu) 10:00 ~ April 10 (Fri) 16:30 2. Advising and Registration Approval Interviews with advisors will be conducted face-to-face for all students, including One-Year-Regular, Kenkyusei, and graduate students. Check on icuMAP in advance to see who your advisor is. You should receive a message from your advisor including the details of their advising method (place, time set, etc.) sometime after April 6. If you do not hear anything from your advisor by the evening of April 6., please send an email to your advisor to confirm the interview method/schedule. Please be sure to use your ICU email address when contacting your advisor. 3. Note on Registration and Attendance Each class begins from the first week of the term with important lecture contents and/or instructions for assignments. Therefore you should attend all your courses from the first week even if you are not yet sure which courses you will take eventually."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-000811::structural_fallback_v1::P0000",
+        "title": "AY2025 Spring Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.031754032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "To all students, AY2025 Spring Term Course Registration will be proceeded as follows. *To AY2025 newly enrolled students: Please check “ Campus Pathfinder ” in Moodle instead of this announcement. 【Registration】 For AY2025 Spring Term, two days are set aside for registration and advising interview with your advisor. 1. Schedule Online input April 8 (Tue) 9:00 ~ April 9 (Wed) 14:30 Interview with advisor April 8 (Tue) 10:00 ~ 16:00, April 9 (Wed) 9:00 ~ 15:30 Online approval by advisor April 8 (Tue) 10:00 ~ April 9 (Wed) 16:30 2. Advising and Registration Approval Interviews with advisors will be conducted face-to-face for all students, including One-Year-Regular, Kenkyusei, and graduate students. Check on icuMAP in advance to see who your advisor is. You should receive a message from your advisor including the details of their advising method (place, time set, etc.) sometime after April 1. If you do not hear anything from your advisor by the evening of April 4, please send an email to your advisor to confirm the interview method/schedule. 3. Note on Registration and Attendance Each class begins from the first week of the term with important lecture contents and/or instructions for assignments. Therefore you should attend all your courses from the first week even if you are not yet sure which courses you will take eventually."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000751::structural_fallback_v1::P0001",
+        "title": "AY2026 Spring Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.03128054740957967,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term. 【Late Registration】 Students who missed the Registration Period above must complete registration through the Late Registration procedure. 1. Period Online input, interview with advisor April 11 (Sat) 9:00 ~ April 20 (Mon) 10:00 Online approval by advisor April 11 (Sat) 9:00 ~ April 20 (Mon) 11:00 ※ On April11(Sat) and 18 (Sat), the office will be closed. 2. Note Students who will proceed the Late Registration need to pay the Late Registration Fee (3,000yen). Before you go to registration interview with your advisor, you need to buy a ticket (shoshi) for 3,000 yen on the second floor of Administration Building and pay the fee at the Educational Affairs Group office. (*Please note that the office will be closed on Saturdays during the Late Registration Period, so you will not be able to pay late registration fees or obtain approval by your advisor ). For the procedure details, please check the ehandbook (Course Registration > 6. Course Registration). Procedures after the Fee payment are the same as the usual registration explained above."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000730::structural_fallback_v1::P0000",
+        "title": "AY2025 Winter Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.03057889822595705,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "To all students, AY2025 Winter Term Course Registration will be proceeded as follows. 【Registration】 1. Schedule Online input December 3 (Wed) 9:00 ~ December 4 (Thu) 14:30 Interview with advisor December 3 (Wed) 10:00 ~ 16:00, December 4 (Thu) 9:00 ~ 15:30 Online approval by advisor December 3 (Wed) 10:00 ~ December 4 (Thu) 16:30 2. Advising and Registration Approval Interviews with advisors will be conducted face-to-face for all students, including One-Year-Regular, Kenkyusei , and graduate students. Check on icuMAP in advance to see who your advisor is. You should receive a message from your advisor including the details of their advising method (place, time set, etc.) by December 2. If you do not hear anything from your advisor by the evening of December 2, please send an email to your advisor to confirm the interview method/schedule. Please be sure to use your ICU email address when contacting your advisor. 3. Note on Registration and Attendance Each class begins from the first week of the term with important lecture contents and/or instructions for assignments. Therefore, you should attend all your courses from the first week even if you are not yet sure which courses you will take eventually. You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000736::structural_fallback_v1::P0000",
+        "title": "AY2025 Autumn Term Registration – Course Registration Procedures",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.03055037313432836,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "To all students, AY2025 Autumn Term Course Registration will be proceeded as follows. *To newly enrolled students from AY2025 Autumn Term: Please check “ Campus Pathfinder ” in Moodle instead of this announcement. 【Registration】 1. Schedule Online input September 3 (Wed) 9:00 ~ September 4 (Thu) 14:30 Interview with advisor September 3 (Wed) 10:00 ~ 16:00, September 4 (Thu) 9:00 ~ 15:30 Online approval by advisor September 3 (Wed) 10:00 ~ September 4 (Thu) 16:30 2. Advising and Registration Approval Interviews with advisors will be conducted face-to-face for all students, including One-Year-Regular, Kenkyusei, and graduate students. Check on icuMAP in advance to see who your advisor is. You should receive a message from your advisor including the details of their advising method (place, time set, etc.) sometime after September 1. If you do not hear anything from your advisor by the evening of September 1., please send an email to your advisor to confirm the interview method/schedule. Please be sure to use your ICU email address when contacting your advisor. 3. Note on Registration and Attendance Each class begins from the first week of the term with important lecture contents and/or instructions for assignments. Therefore you should attend all your courses from the first week even if you are not yet sure which courses you will take eventually."
+      }
+    ]
+  },
+  {
+    "id": "hr_018",
+    "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?",
+    "category": "credits",
+    "is_answerable": true,
+    "gold_answer": "No. Transfer credits are only granted after you complete the required credit-transfer procedures after entering ICU, and “how many and which credits are transferrable will not be confirmed until then,” so the system cannot tell you exactly how many additional credits you personally need to graduate early until the post-enrollment transfer process is completed [1][2].",
+    "gold_source_ids": [
+      "DOC-001643::structural_fallback_v1::P0000",
+      "DOC-001654::structural_fallback_v1::P0029"
+    ],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001643::structural_fallback_v1::P0000",
+        "title": "Information on Transfer of Credits (for Transfer Student)｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/credittransfer",
+        "language": "en",
+        "retrieval_score": 0.032018442622950824,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Information on Transfer of Credits For Transfer Student: We would like to provide information about credit transfer to give you some idea which of the courses you took at your previous institution may or may not be granted credits at ICU. 1. Courses Eligible for Transfer of Credits Students who have completed courses at other universities before entering ICU may transfer those credits if the courses are considered equivalent to courses offered at ICU, and are approved as being applicable towards ICU graduation requirements, and if the grades received were 70 points or higher out of 100. *NOTE: Credit transfers will be granted only after students complete the required procedures after entering ICU. How many and which credits are transferrable will not be confirmed until then. 2. Maximum Number of Credits that can be transferred Students who spent more than 1 year at other universities may transfer up to 60 credits, subject to the following category limits: up to 12 credits of General Education Courses, 1 credit of Health and Physical Education Lecture Courses, 1 credit of Health and Physical Education Exercise Courses, 9 credits of Foundation Courses, and 41 credits of Elective Courses may be transferred. 3."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-001654::structural_fallback_v1::P0029",
+        "title": "Application Documents｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/documents",
+        "language": "en",
+        "retrieval_score": 0.032018442622950824,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "ity's grading system is not explained in the transcript: Submit an official document or a letter issued by the university/college explaining its grading system. If attended more than one college/university: Submit a transcript from each institution you attended. Transfer credits will be granted only when students complete the credit transfer procedure after entering ICU. More details can be found on the linked webpage below: Information on Transfer of Credits H. Certificate of Enrollment/Graduation For OYR applicants: Ask an official at your current college/university to complete the following form (Certificate of Enrollment). For Kenkyusei applicants: Request your (former) college/university to complete the following form (Certificate of Enrollment) to certify your (prospective) graduation. If you have other official documents (such as a diploma, official transcript, etc.) that verifies the graduation date, you can substitute it. Certificate of Enrollment (.docx) Certificate of Enrollment (.pages) ! NOTE: The items listed above G. to H. must be stamped or signed by a school official. Documents without school stamps or signatures, such as student copies, are unacceptable as we cannot tell if it is genuinely an authorized official document."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-001654::structural_fallback_v1::P0019",
+        "title": "Application Documents｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/engdoc/documents",
+        "language": "en",
+        "retrieval_score": 0.03125763125763126,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "examination results (if any). If the transcripts do not indicate the school's grading scale, submit an additional document prepared by the school explaining it. If the college/university's grading system is not explained in the transcript: Submit an official document or a letter issued by the university/college explaining its grading system. If attended more than one college/university: Submit a transcript from each institution you attended. Transfer credits will be granted only when students complete the credit transfer procedure after entering ICU. More details can be found on the linked webpage below: Information on Transfer of Credits J. Certificate of Enrollment Ask an official at your current college/university to complete the following form (Certificate of Enrollment). This form certifies that you are either enrolled at the institution as a bachelor degree-seeking student (not as a non-degree-seeking student) or expected to obtain an associate degree by the time of enrollment at ICU. Certificate of Enrollment (.docx) Certificate of Enrollment (.pages) !NOTE: The items listed above H. to J. must be stamped or signed by a school official. Documents without school stamps or signatures, such as student copies, are unacceptable as we cannot tell if it is genuinely an authorized official document."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001415::structural_fallback_v1::P0000",
+        "title": "Graduate School - Credit Transfer",
+        "url": "https://sites.google.com/a/icu.ac.jp/gsg/home/ctransfer",
+        "language": "mixed",
+        "retrieval_score": 0.030798389007344232,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation Graduate School Credit Transfer with Other Universities / 単位互換 Aim and Regulations ･ Request Form for Transfer of Credits / 目的と規程・申請用紙 Japanese Follows English Aim and Regulations See GS Bulletin via the following link below for the list of partner graduate schools that have concluded educational exchange agreements with ICU and the aim of this partnership. GS Bulletin \"Agreements on Educational Exchange and Credit Transfer with Other Universities\" ◆ The credits obtained can be transferred and counted as the Master's course requirement (up to 15 credits including those earned in CLA 300-level courses (CLA 300-level courses' maximum is 10 credits) (If you transferred the credits acquired at other graduate school before enrollment at ICU, the maximum credits to be transferred is 20.) ◆ Grades are not transferred and those do not affect GPA at ICU. Notes ◆ T he application procedures, deadlines, and required documents differ depending on each school. Moreover, course schedules are also different from ICU's. Please check the school's information where you would like to take the course(s) against your course plan in the ICU. ◆ After receiving the grades for the courses you have taken, please refer to the Credit Transfer page to complete the credit transfer application process."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000063::structural_fallback_v1::P0000",
+        "title": "ehandbook - Credits acquired through reciprocal credits system",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/guide-to-academic-matters/transferring-credits-from-other-universities/credits-acquired-through-reciprocal-credits-system",
+        "language": "en",
+        "retrieval_score": 0.029877369007803793,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Credits acquired through reciprocal credits system Courses Eligible for Transfer of Credit Courses taken through Reciprocal Credits System are eligible for transfer of credit. Limit on Number of Credits Students may be able to transfer up to 40 credits as a part of ICU’s graduation requirements (Electives), if the courses taken are approved. The grades for the courses must be D (60 points) or higher. ( Note: The total transfer credits may not exceed 60 credits for students who have studied at other universities and entered ICU as Freshmen and transfered credits from other universities.) Procedure Students should submit the prescribed application form together with all required supporting documentation to the Educational Affairs Group. The number of credits that may be transferred is determined after the course evaluation and the approval of the the Associate Dean of the College of Liberal Arts. Notes Students who take courses for transfer of credit in their last year of study (year in which they graduate) may not be able to transfer the credits due to the amount of time required for the application procedure. Students who are admitted to study at another university by application will not be exempted from or given special consideration in the various procedures and class activities at ICU, due to the fact that they are taking classes at another university."
+      }
+    ]
+  },
+  {
+    "id": "hr_019",
+    "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+    "category": "office",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-000166::structural_fallback_v1::P0000",
+        "title": "ehandbook - 履修登録",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/ホーム_japanese/履修案内/科目登録/履修登録",
+        "language": "ja",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "10. 科目の聴講 » 登録日程 履修登録 (1) 要綱 学生は毎学期のはじめに、履修する授業科目（少なくとも1科目）を必ず登録しなければなりません。登録する科目が予備登録で当選した科目、または予め指定されるELA科目や卒業研究のみの場合でも、履修登録日に登録の手続きが必要です。履修登録の手続きは、それぞれ定められた期間内にのみおこなうことができます。期間外の手続きは一切出来ません。 履修登録では、 Registration Website で、その学期に履修する科目を入力します。登録当日にアドヴァイザーと面談し、アドヴァイザーからオンラインによる承認を受けて、はじめて登録が完了します。登録または登録変更を行った後は、必ずRegistration Websiteの\"Registration Results\"で登録結果を確認してください。またアドヴァイザー承認が下りているか、必ず自身で確認してください。 履修登録および登録の確認は学生本人の責任であり、怠ったために生じた問題について大学は一切責任を負いません。 (2) 履修登録の手順 (a)オンラインによる履修登録 履修登録日程、登録の流れや入力操作については、 ( 6 ) 参考リンクの各項目をよく読むこと。 ただし一部の科目は、（b）申請書による履修登録の説明に則って登録を申請してください。 (b)申請書による履修登録 以下の履修を希望する場合は、所定の申請書を教務グループに提出し申請をおこなわなければなりません。いずれの場合も、用紙は教務グループ窓口にて登録日の1週間前から配布します。 提出期間は登録日～登録変更期間最終日10:00です。 a. 制限受講単位数17単位 * を超える履修 Cumulative GPA（ICUで履修したすべての科目の成績平均点数）が3.40以上の場合、申請が可能です。ただし、1年次ELA（フレッシュマンコンポーネント）を履修中の1年生は申請できません。希望する学生は、申請書にアドヴァイザーの署名を得たうえで提出してください。(*) 2024年度以前に入学した在学生には2年間の猶予期間があるため、制限受講単位数は18単位のままです。 注意： ・再履修（リピート、リテイク）、大学院科目、聴講の単位は、受講単位数の制限に含まれます。 ・授業期間外に行われる集中講義は、受講単位数の制限に含みません。 b. 学部生、OYR、研究生の大学院科目の履修 大学院が開講する科目のうちコース番号が400/500番台の科目について、申請が可能です。ただし、学部1、2年生は申請できません。 学部生で自分のメジャー（マイナー）にコリストされていない科目を履修したい場合、またはOYR・研究生は、申請書にアドヴァイザーと科目の担当教員の署名を得たうえで提出してください。"
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-001036::structural_fallback_v1::P0000",
+        "title": "教務グループからの重要なお知らせ（2026年度春学期登録版）",
+        "url": "",
+        "language": "ja",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "学生の皆さん\n「\n教務グループからの重要なお知らせ（2026年度春学期登録版）\n」をehandbookに掲載しました。\n必ず確認してください。\n教務グループ"
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000166::structural_fallback_v1::P0002",
+        "title": "ehandbook - 履修登録",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/ホーム_japanese/履修案内/科目登録/履修登録",
+        "language": "ja",
+        "retrieval_score": 0.015873015873015872,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "ーからのオンライン承認が受けられず、履修登録が完了できません。面談前に本部棟2階の販売機で証紙を購入のうえ、教務グループ窓口に来て支払いを行うこと。 なお、以下に該当する場合、教務グループに申し出ることで登録延滞料の支払いは免除となります。 ・忌引き（2 親等以内の近親者および配偶者） ・大学院入試（就職活動での日程重複は免除とならない） ・本人の疾病等（診断書もしくは領収書などで医療機関を受診したことがわかるものが必要） ・海外での研究活動で帰国が困難な場合（大学院生のみに適用。大学院事務グループへの事前連絡が必須） (b)Late Registrationでも、予備登録の当選結果は有効です。 (c)定められた期間内に登録手続きを行うために、あらかじめアドヴァイザーと面談のアポイントメントをとっておくこと。 ( 5 ) 登録科目削除 登録科目削除期間は2024年度冬学期をもって廃止となりました。 ( 6 ) 参考リンク ・ 各学期の登録日程 ・ 履修登録の操作手順"
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-001025::structural_fallback_v1::P0000",
+        "title": "教務グループからの重要なお知らせ（2026年度春学期予備登録版）",
+        "url": "",
+        "language": "ja",
+        "retrieval_score": 0.015625,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "学生の皆さん\n「教務グループからの重要なお知らせ（2026年度春学期予備登録版）」をehandbookに掲載しました。\n必ず確認してください。\nehandbook > お知らせ更新情報 >\n教務グループからの重要なお知らせ（2026年度春学期予備登録版）\n教務グループ"
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000162::structural_fallback_v1::P0000",
+        "title": "ehandbook - 科目登録の要領",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/ホーム_japanese/履修案内/科目登録/科目登録の要領",
+        "language": "ja",
+        "retrieval_score": 0.015384615384615385,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "3. 科目登録と履修の計画 (1)登録の前に (a)スケジュールの確認 予備登録や履修登録の日程を確認し、手続きをいつまでにおこなうべきか必ず把握してください。 また、各学期の予備登録ならびに履修登録日の1週間前に、「教務グループからの重要なお知らせ」をehandbookに掲載します。 履修登録、卒業研究、メジャーに関する手続きなどについての説明がありますので、こちらも登録前に確認すること。 (b)履修計画の検討 a. 履修が指定される科目について 以下の科目は履修が指定されているため、Registration Websiteではあらかじめ登録されています。指定されている科目と開講時間帯が重複する科目の登録はできないので、履修計画を立てるときは注意してください。 ・1年次ELA（フレッシュマン・コンポーネント） 指定される科目および履修学期はストリームによって異なります。 詳しくは『 4. リベラルアーツ英語プログラム（English for Liberal Arts Program）登録について 』を参照してください。 ・2年次ELA（ソフォモア・コンポーネント） 指定される科目および履修学期はストリームによって異なります。また、ストリームによっては予備登録が必要です。 詳しくは『 4. リベラルアーツ英語プログラム（English for Liberal Arts Program）登録について 』を参照してください。 ・卒業研究 卒業研究開始資格をもつ学生は、次の科目の履修が指定されます。 STH391 SENIOR THESIS b. 参考 計画をたてるときは以下の情報源を活用してください。 ・ コース・オファリングス ・ehandbook ・一般教育ハンドブック ・世界の言語ハンドブック (2)登録実施 登録は Registration Website でおこないます。詳細は「5.予備登録」「6.履修登録」を参照してください。 (3)参考リンク ・ 各学期の登録日程 ・ Registration Website画面説明"
+      }
+    ]
+  },
+  {
+    "id": "hr_020",
+    "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",
+    "category": "policy",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "retrieval_backend": "local-index-hybrid-rrf",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "retrieved_passages": [
+      {
+        "rank": 1,
+        "passage_id": "DOC-001436::structural_fallback_v1::P0000",
+        "title": "ICU Portal Manuals",
+        "url": "https://sites.google.com/info.icu.ac.jp/icuportalmanuals/%E3%83%9B%E3%83%BC%E3%83%A0",
+        "language": "mixed",
+        "retrieval_score": 0.032018442622950824,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation ICU Portal Manuals ICU Portal Manuals お知らせ / Notice 学生・教職員の皆さんへ ・ICU Portalのお知らせは1日1回確認するようにしましょう。 ・お知らせを検索したい場合はお知らせのリンクボックスにある「ALL」/「MORE」のボタンから検索してください。 ・メール配信は、「公示」や「重要なお知らせ」等で、投稿者が配信を指定した場合に通知が配信されます。 ・スマートフォンアプリのプッシュ配信は、投稿者が配信を指定した場合に通知が配信されます。 ・スマートフォンアプリのプッシュ配信の通知が多すぎると感じる方は、ICU Portalアプリからの通知をオフにすることもできます。 iPhone Android 教職員の皆さんへ ・お知らせ投稿のメールの配信は「公示」や「重要なお知らせ」に対して可能で、これらのカテゴリを使用できるユーザは限定されています。 ・他に、メール配信先を「学生」に絞って、全学イベントや全学調査、授業料、奨学金関連のお知らせを送る場合があり、ICU Portal委員会の許可を得て配信するものです。 ・許可を得ていないユーザはメール配信を行わないようご注意ください。 To students, faculty and staff - Please check the ICU Portal announcements once a day. - To search for announcements, click the “ALL” or “MORE” button in the announcement link box. - Emails may be sent from the ICU Portal regarding “Official Announcements” and “Important Announcements.” - The smartphone app push notification feature will notify you of all announcements if the poster has specified that notifications should be sent. - The email notification feature will notify you of Official Announcements and Important Announcements if the poster has specified that notifications should be sent. - If you feel that you are receiving too many push notifications from the smartphone app, you can turn off notifications from the ICU Portal app."
+      },
+      {
+        "rank": 2,
+        "passage_id": "DOC-001409::structural_fallback_v1::P0000",
+        "title": "ICU Portal Manuals",
+        "url": "https://sites.google.com/info.icu.ac.jp/icuportalmanuals",
+        "language": "mixed",
+        "retrieval_score": 0.03200204813108039,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense",
+          "lexical"
+        ],
+        "body_text": "Search this site Embedded Files Skip to main content Skip to navigation ICU Portal Manuals ICU Portal Manuals お知らせ / Notice 学生・教職員の皆さんへ ・ICU Portalのお知らせは1日1回確認するようにしましょう。 ・お知らせを検索したい場合はお知らせのリンクボックスにある「ALL」/「MORE」のボタンから検索してください。 ・メール配信は、「公示」や「重要なお知らせ」等で、投稿者が配信を指定した場合に通知が配信されます。 ・スマートフォンアプリのプッシュ配信は、投稿者が配信を指定した場合に通知が配信されます。 ・スマートフォンアプリのプッシュ配信の通知が多すぎると感じる方は、ICU Portalアプリからの通知をオフにすることもできます。 iPhone Android 教職員の皆さんへ ・お知らせ投稿のメールの配信は「公示」や「重要なお知らせ」に対して可能で、これらのカテゴリを使用できるユーザは限定されています。 ・他に、メール配信先を「学生」に絞って、全学イベントや全学調査、授業料、奨学金関連のお知らせを送る場合があり、ICU Portal委員会の許可を得て配信するものです。 ・許可を得ていないユーザはメール配信を行わないようご注意ください。 To students, faculty and staff - Please check the ICU Portal announcements once a day. - To search for announcements, click the “ALL” or “MORE” button in the announcement link box. - Emails may be sent from the ICU Portal regarding “Official Announcements” and “Important Announcements.” - The smartphone app push notification feature will notify you of all announcements if the poster has specified that notifications should be sent. - The email notification feature will notify you of Official Announcements and Important Announcements if the poster has specified that notifications should be sent. - If you feel that you are receiving too many push notifications from the smartphone app, you can turn off notifications from the ICU Portal app."
+      },
+      {
+        "rank": 3,
+        "passage_id": "DOC-000108::structural_fallback_v1::P0003",
+        "title": "ehandbook - November 28, 2023 Important Information from Educational Affairs Group",
+        "url": "https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group",
+        "language": "en",
+        "retrieval_score": 0.01639344262295082,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "ents should try to submit the thesis well before the deadline. Contact: Educational Affairs Group: ea-group@icu.ac.jp 5. Announcement of students who are eligible for graduation The Final List of March Graduates, 2024 will be announced via the Registration Website on Friday, March 18 at 9:30 a.m. B. Unpaid Fees and Overdue Books Concerning 2024 March Graduating CLA/GS Students Re: Unpaid Fees, Overdue Books and Other Items Deadline for payment of fees, book returns and other items such as those listed below is: March 7 (Thursday), 2024 1. Tuition, dormitory fee, counseling center charges 2. Overdue library books and periodicals* 3. Fines incurred on overdue books* 4. PC/ WiFi router borrowed from the IT center 5. Other items which a student requires to pay or return If you remain in debt for any of the above, you will not be permitted to graduate in March 2024. * The library does not send you a list of books on loan or a bill for overdue. Check your record by yourself. *For inquiries about unpaid fees, overdue books, and PC/WiFi router, please contact below."
+      },
+      {
+        "rank": 4,
+        "passage_id": "DOC-000726::structural_fallback_v1::P0000",
+        "title": "To Students Graduating in March 2026",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.016129032258064516,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "lexical"
+        ],
+        "body_text": "Accounts\nYour account (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) will expire on March 31, 2026. If you still need to exchange emails after graduation, We recommend that you use an email address that you can use after graduation, not a @icu.ac.jp email address. Email forwarding also stops.\nPlease backup your necessary files (Gmail and Google Drive's Files) before graduation. When your account is deleted:\nYou can't log in to Google (@icu.ac.jp)\nYou can't see the announcement of Joining ceremony\nYou can't see the information of Graduate school\nFiles created when you were at university disappear\nThe above will also be applied to the following students.\nUndergraduate students who are going to ICU graduate school\nMaster's Course students who are going to Doctoral Course\nLearn How to Migrate Here\n;\nhttps://sites.google.com/a/icu.ac.jp/itc-for-students/home/to-students-graduating-e\nE-mail Address for Graduates\nFor those who wish, New e-mail address will be issued for the graduates.\nex)\nc123456x@alm.icu.ac.jp\nThis service uses Gmail which Google Workspace offers.\nYou can use Gmail and Google Calendar. Google Drive can not be used.\nApplication Form\n(Due:February 10, 2026.)\n＊Applications after the deadline should be sent to Alumni Association Office (\nicualumni.office@icu.ac.jp\n)."
+      },
+      {
+        "rank": 5,
+        "passage_id": "DOC-000830::structural_fallback_v1::P0000",
+        "title": "A survey result on the use of ICU Portal is available",
+        "url": "",
+        "language": "en",
+        "retrieval_score": 0.015873015873015872,
+        "dense_score": null,
+        "lexical_score": null,
+        "retrieval_channels": [
+          "dense"
+        ],
+        "body_text": "Dear ICU Portal Users\nThe results of the survey conducted from November 20, 2024 to December 20, 2024 on the use of the ICU Portal isare now available. We would like to thank all of you for your cooperation.\nhttps://sites.google.com/info.icu.ac.jp/questionnaire/\nWe will continue to improve the operation of the Portal based on your valuable feedback.\n--\nICU Portal Committee\nportal-admin@icu.ac.jp"
+      }
+    ]
+  }
+]

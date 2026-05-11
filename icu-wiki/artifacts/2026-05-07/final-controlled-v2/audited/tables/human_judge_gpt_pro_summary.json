@@ -1,0 +1,171 @@
+{
+  "source": "data/eval/runs/final_controlled_v2_20260507T114145Z/audited_gold_v2/scores/human_judge_gpt_pro/gpt_pro_human_judge_scores.jsonl",
+  "rows": 140,
+  "conditions": [
+    {
+      "condition_id": "C01",
+      "mode": "non_thinking",
+      "model": "Qwen_Qwen3.5-0.8B",
+      "rows": 20,
+      "answer_acceptance_mean": 0.7,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 2,
+      "readability_mean": 1.35,
+      "readability_min": 0,
+      "readability_max": 2,
+      "citation_usefulness_mean": 0.55,
+      "citation_usefulness_min": 0,
+      "citation_usefulness_max": 1,
+      "over_answering_risk_mean": 1.4,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 2,
+      "primary_failure_tags": {
+        "unsupported_claim": 3,
+        "missing_key_condition": 6,
+        "verbose_low_quality": 2,
+        "over_answering": 7,
+        "citation_mismatch": 2
+      }
+    },
+    {
+      "condition_id": "C02",
+      "mode": "non_thinking",
+      "model": "Qwen_Qwen3.5-2B",
+      "rows": 20,
+      "answer_acceptance_mean": 1.15,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 2,
+      "readability_mean": 1.55,
+      "readability_min": 1,
+      "readability_max": 2,
+      "citation_usefulness_mean": 1.3,
+      "citation_usefulness_min": 0,
+      "citation_usefulness_max": 2,
+      "over_answering_risk_mean": 0.8,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 2,
+      "primary_failure_tags": {
+        "missing_key_condition": 6,
+        "over_answering": 4,
+        "citation_mismatch": 3,
+        "none": 3,
+        "verbose_low_quality": 1,
+        "unsupported_claim": 3
+      }
+    },
+    {
+      "condition_id": "C03",
+      "mode": "non_thinking",
+      "model": "Qwen_Qwen3.5-4B",
+      "rows": 20,
+      "answer_acceptance_mean": 1.65,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 2,
+      "readability_mean": 1.75,
+      "readability_min": 1,
+      "readability_max": 2,
+      "citation_usefulness_mean": 1.8,
+      "citation_usefulness_min": 1,
+      "citation_usefulness_max": 2,
+      "over_answering_risk_mean": 0.45,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 2,
+      "primary_failure_tags": {
+        "over_answering": 5,
+        "verbose_low_quality": 1,
+        "none": 12,
+        "missing_key_condition": 1,
+        "unsupported_claim": 1
+      }
+    },
+    {
+      "condition_id": "C04",
+      "mode": "non_thinking",
+      "model": "google_gemma-4-E2B-it",
+      "rows": 20,
+      "answer_acceptance_mean": 1.6,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 2,
+      "readability_mean": 1.0,
+      "readability_min": 1,
+      "readability_max": 1,
+      "citation_usefulness_mean": 1.8,
+      "citation_usefulness_min": 0,
+      "citation_usefulness_max": 2,
+      "over_answering_risk_mean": 0.2,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 2,
+      "primary_failure_tags": {
+        "language_or_format_failure": 13,
+        "missing_key_condition": 5,
+        "over_answering": 2
+      }
+    },
+    {
+      "condition_id": "C05",
+      "mode": "non_thinking",
+      "model": "google_gemma-4-E4B-it",
+      "rows": 20,
+      "answer_acceptance_mean": 1.5,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 2,
+      "readability_mean": 0.9,
+      "readability_min": 0,
+      "readability_max": 1,
+      "citation_usefulness_mean": 1.6,
+      "citation_usefulness_min": 0,
+      "citation_usefulness_max": 2,
+      "over_answering_risk_mean": 0.2,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 1,
+      "primary_failure_tags": {
+        "language_or_format_failure": 13,
+        "over_answering": 2,
+        "missing_key_condition": 4,
+        "citation_mismatch": 1
+      }
+    },
+    {
+      "condition_id": "C06",
+      "mode": "thinking",
+      "model": "Qwen_Qwen3.5-0.8B",
+      "rows": 20,
+      "answer_acceptance_mean": 0.0,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 0,
+      "readability_mean": 0.0,
+      "readability_min": 0,
+      "readability_max": 0,
+      "citation_usefulness_mean": 0.0,
+      "citation_usefulness_min": 0,
+      "citation_usefulness_max": 0,
+      "over_answering_risk_mean": 0.0,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 0,
+      "primary_failure_tags": {
+        "language_or_format_failure": 20
+      }
+    },
+    {
+      "condition_id": "C07",
+      "mode": "thinking",
+      "model": "Qwen_Qwen3.5-4B",
+      "rows": 20,
+      "answer_acceptance_mean": 0.0,
+      "answer_acceptance_min": 0,
+      "answer_acceptance_max": 0,
+      "readability_mean": 0.0,
+      "readability_min": 0,
+      "readability_max": 0,
+      "citation_usefulness_mean": 0.0,
+      "citation_usefulness_min": 0,
+      "citation_usefulness_max": 0,
+      "over_answering_risk_mean": 0.0,
+      "over_answering_risk_min": 0,
+      "over_answering_risk_max": 0,
+      "primary_failure_tags": {
+        "language_or_format_failure": 20
+      }
+    }
+  ]
+}

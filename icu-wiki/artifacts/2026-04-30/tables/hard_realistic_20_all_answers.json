@@ -1,0 +1,1496 @@
+[
+  {
+    "label": "Qwen3.5 0.8B (Apr 30 hard-20)",
+    "mode": "non_thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the placement into the Japanese Language Program (JLP) is determined by the student's level of Japanese proficiency, as measured by a placement test. * **Placement Test:** All students admitted through the English Language Based Admissions must take a placement test to be placed into the most appropriate courses by their proficiency levels [1]. * **Special Track:** Students who regard Japanese as their first or heritage language are placed in the \"Special Japanese Track\" to improve skills they are lacking [1]. * **Non-Degree Students:** The JLP is also open to non-degree students, specifically one-year exchange students and Kenkyusei (Special Students) [4]. * **Official Source:** The official information is available on the ICU website under the \"Frequently Asked Questions\" section for admissions and the \"Major Information Site\" for general student details [1], [2]. **Note:** Evidence [2] describes the curriculum structure of the Information Science major and does not contain information regarding the JLP placement process.",
+        "reasoning_text": "",
+        "gold_answer": "Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].",
+        "gold_source_ids": [
+          "DOC-001633::P014",
+          "DOC-001611::P000",
+          "DOC-001393::P004"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001633::P014",
+          "DOC-001393::P004",
+          "DOC-001611::P000",
+          "DOC-001633::P015",
+          "DOC-001612::P000"
+        ],
+        "faithfulness": 0.6153846153846154,
+        "answer_relevancy": 0.781320622700725,
+        "answer_correctness": 0.6112242038624331,
+        "semantic_similarity": 0.7782301487830661
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "You can register or change your courses, but the procedure is strict and requires specific attention. **1. Registration Day vs. Change Period** You cannot register on the normal Registration Day if you are sick. Instead, you must complete the registration during the designated **Registration Change Period**. After this period ends, registration is no longer acceptable for any reason. **2. Requirements for Late Registration** If you miss the Registration Day, you must apply for **Late Registration** during the Change Period. * **Fee:** You must pay a Late Registration fee of **3,000 yen**. * **Advisor Interview:** Before applying for Late Registration, you must visit the Educational Affairs Group to make the payment, as advisors cannot approve online registration until payment is made. **3. Consequences of Missing the Deadline** If you fail to complete the registration procedure by the deadline: * The system will see the registration as **non-registered**. * You will be required to apply for a **leave of absence** or **withdrawal from the university**. **Summary** * **Action:** Complete registration during the Change Period. * **Payment:** Pay the 3,000 yen Late Registration fee. * **Warning:** Do not register on the Registration Day if you are sick; you must wait for the Change Period.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000039::P007",
+          "DOC-000108::P013",
+          "DOC-000039::P008",
+          "DOC-000108::P012",
+          "DOC-000098::P002"
+        ],
+        "faithfulness": 0.8571428571428571,
+        "answer_relevancy": 0.8911511864095869,
+        "answer_correctness": 0.12888203176666949,
+        "semantic_similarity": 0.18219479373334466
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here are the key rules and deadlines to check before withdrawing from a course: * **Registration Change Period:** You must complete the registration change procedure during the designated period. If you do not, you must take a leave of absence or withdraw from the university. [2] * **Deadline for Late Registration:** If it is not possible to register on the day of the course, you should complete the Late Registration during the registration change period. After the registration change period ends, no registrations will be accepted for any reason. [4] * **Submission of Senior Thesis:** If you are considering a Senior Thesis, you must submit an electronic data (PDF) between **January 9 (Tuesday) and February 1 (Thursday), 2024**. No thesis will be accepted after 16:00 on the deadline date under any circumstances. [1] * **Registration Withdrawal Application:** If you wish to withdraw from the course, you must submit an application to the Educational Affairs Group together with documents explaining the reasonable reasons (such as a medical certificate). The application must be submitted by a month prior to the last day of the classes. [3] *Note: Evidence [1] and [4] reinforce the importance of checking graduation requirements and the specific timeline for thesis submission, while [2] and [3] provide the procedural steps for registration changes and withdrawals.*",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::P004",
+          "DOC-000108::P013",
+          "DOC-000040::P000",
+          "DOC-000098::P002",
+          "DOC-000097::P013"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8990002455234134,
+        "answer_correctness": 0.02617078651419593,
+        "semantic_similarity": 0.10468314605678372
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "To confirm whether courses or credits will count toward your ICU requirements, you must verify the specific requirements of your study abroad destination. [1] The Health Checkup is often required for study abroad destinations, and if you are unsure, please contact the university where you will be studying abroad. [2] You should submit the rest of the necessary documents for your application by the designated deadline, including the School Report and a list of courses progressing or to be taken in the final semester/year. Once admitted, you must submit the original or certified true copies of such a diploma or completion certificate to confirm your admission to ICU. [3] Currently, more than 450 ICU students study abroad a year and earn credits through its various overseas study programs with different locations and terms. [4] Foreign language courses may be transferred as Electives, with a maximum of 21 credits per one foreign language. (Note: The total transfer credits may not exceed 60 credits when added together with transferred credits from ICU's Exchange Program, RYUGAKU, credit auditors, and study abroad (Summer Abroad Programs).)",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001381::P010",
+          "DOC-001586::P002",
+          "DOC-001609::P000",
+          "DOC-000060::P002",
+          "DOC-000061::P001"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8267323691359826,
+        "answer_correctness": 0.06089115371647339,
+        "semantic_similarity": 0.24356461486589356
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "You can find the official schedule and expected deadlines on the **ICU Academic Portal** (specifically the \"Senior Thesis\" section of the eHANDBOOK). According to the evidence: * **Submission Deadline:** Senior thesis submissions must be submitted before the prescribed deadline, which is **4:00 p.m. on the deadline date** under any circumstances [1]. * **Expected Deadlines:** * **Application Deadline:** The application for Senior Thesis Advisor and Candidacy for Senior Thesis Research is due **October 20, 2025** [4]. * **Registration Deadline:** Results of the application are announced on the Registration Website on **December 3, 2025** [3]. * **Graduation Deadline:** If you cannot meet the submission deadline, you will not be able to graduate as expected [1]. To avoid missing these dates, you should try to submit your senior thesis before the deadline [1].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000033::P000",
+          "DOC-000033::P001",
+          "DOC-000026::P002",
+          "DOC-000026::P001",
+          "DOC-000030::P000"
+        ],
+        "faithfulness": 0.8888888888888888,
+        "answer_relevancy": 0.7968406870024558,
+        "answer_correctness": 0.036302567651798276,
+        "semantic_similarity": 0.1452102706071931
+      },
+      {
+        "id": "hr_006",
+        "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",
+        "category": "student_status",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Before planning your courses again, you must verify the following: 1. **Major Declaration Status**: If you have taken leave of absence, you must complete the **Major Declaration** procedure. Students who have taken leave of absence before major declaration will not be allowed to register for courses until their essay and major declaration are submitted. [4] 2. **Physician's Certificate**: If your leave of absence is due to a medical condition, you must submit a physician's certificate attesting that the condition will not affect your study at ICU after your return. Failure to submit this form will result in your inability to participate in course registration. [1] 3. **Healthcare Office Documentation**: The Healthcare Office does not issue certificates or slips for absences, early departures, or late arrivals. If you need documentation for reasons other than infectious diseases (e.g., injury or illness), you must consult the Healthcare Office to obtain proof. [2] 4. **Institutional Information**: If you are unsure which department to visit for medical help or if you need to check clinic hours, please consult the Health Care Office. [3] Please contact the **Educational Affairs Group** for further details regarding the specific procedures.",
+        "reasoning_text": "",
+        "gold_answer": "Check reenrollment and course-registration requirements with the Educational Affairs Group: if your leave was for medical reasons you must submit a physician’s certificate to the Educational Affairs Group (may be shared with the Health Care Office); failure to submit will prevent course registration [DOC-000086::P011]. Also confirm Major Declaration procedures/schedule changes with the Educational Affairs Group if you took leave before declaring your major [DOC-000024::P004].",
+        "gold_source_ids": [
+          "DOC-000086::P011",
+          "DOC-000024::P004",
+          "DOC-001496::P009"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000086::P011",
+          "DOC-001496::P009",
+          "DOC-001455::P005",
+          "DOC-000024::P004",
+          "DOC-000097::P016"
+        ],
+        "faithfulness": 0.7,
+        "answer_relevancy": 0.804391697666917,
+        "answer_correctness": 0.5725363965081304,
+        "semantic_similarity": 0.7901455860325214
+      },
+      {
+        "id": "hr_007",
+        "question": "I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?",
+        "category": "housing",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, you should check the **Housing Office** website at **https://office.icu.ac.jp/ho/en** for the most current screening results and fees. * **Evidence [1]** confirms that the screening results for April 2026 dormitory admission were published on March 6, and that emails have been sent to all applicants for further details. * **Evidence [2]** describes the dormitories as communal living spaces located on campus where students foster respect for human rights and learn to share responsibilities, noting that all dormitories are set in natural surroundings. * **Evidence [3]** provides the specific location of the Housing Office (Dialogue House 1F) and the contact email (housing-office@icu.ac.jp). *Note: Evidence [4] lists specific dormitory names (e.g., Momi House, Zelkova House) but does not contain the fee details or the specific screening results you are looking for.*",
+        "reasoning_text": "",
+        "gold_answer": "Check ICU’s Housing (Dormitories) pages for dormitory overviews and the “Outline & Dormitory Fees” information, and consult the Housing Office website/contact for detailed fees, regulations, application results, and inquiries (housing-office@icu.ac.jp; Dialogue House 1F; office hours listed) [1][2][3].",
+        "gold_source_ids": [
+          "DOC-001604::P000",
+          "DOC-000262::P001",
+          "DOC-000262::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000262::P000",
+          "DOC-001604::P000",
+          "DOC-000262::P001",
+          "DOC-001604::P007",
+          "DOC-001598::P003"
+        ],
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.6570845569940915,
+        "answer_correctness": 0.4353658468901237,
+        "semantic_similarity": 0.741463387560495
+      },
+      {
+        "id": "hr_008",
+        "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",
+        "category": "student_support",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, you can find official counseling and student support information at the **ICU Health Care Office for Students** (心の健康 Mental Health) website. * **Consultation Methods:** You can find a place to consult based on the topic by checking each website for consultation methods (face-to-face, telephone, chat, social media, etc.). * **Counseling Services:** The office offers general mental health counseling, counseling about friends and career paths, sharing feelings and thoughts about the loss of a loved one, and sex-specific consultation. * **Contact:** You can reach the counseling center by calling the hotline in **Shiga City** (三鷹市) or anonymously by calling the **International Suicide Prevention Center** (国際ビフレンダーズ 東京自殺防止センター). *Note: Evidence [2] confirms that the counseling center provides psychological support to help students find better solutions to difficulties and challenges encountered during university life.*",
+        "reasoning_text": "",
+        "gold_answer": "You can find official information on counseling and student support on the ICU Health Care Office for Students “Mental Health” page (lists counseling services, ICU Counseling Center, hotlines, and anonymous options) and on the ICU “Counseling, Human Rights Consultation and Health Services” / Counseling Center page (describes counseling services and staff) [1][2].",
+        "gold_source_ids": [
+          "DOC-001423::P004",
+          "DOC-001616::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001423::P004",
+          "DOC-001616::P000",
+          "DOC-001652::P003",
+          "DOC-001571::P005",
+          "DOC-001611::P022"
+        ],
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.878797772441633,
+        "answer_correctness": 0.4568258493245463,
+        "semantic_similarity": 0.7684798678864206
+      },
+      {
+        "id": "hr_009",
+        "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",
+        "category": "student_support",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "You should start by meeting with a **Learning Accessibility Services (LAS) staff member** to discuss your needs. This is the first step in the process for students requiring academic accommodations. According to the evidence, students first meet with a LAS staff member to discuss their needs [1]. After submitting necessary documents, they can receive accommodations. The required documents include a medical certificate, a letter from a counselor or specialist, and a document describing the support you have received previously [1]. For students who need to undergo a health exam on their own, you can do so at any healthcare facility offering such exams [2]. If you missed the health exam on campus, please have a Health Certificate (Health exams certificate) and other relevant items such as blood pressure, hearing, eye sight, and chest X-ray [2]. If you have an infectious disease, you may be suspended from campus attendance [3]. If you need to undergo a health exam on your own, you can do so at any healthcare facility offering such exams [2]. To find the official support page, you should look for the **ICU Health Care Office for Students** page, which provides information on health exams and academic accommodations [2].",
+        "reasoning_text": "",
+        "gold_answer": "Start by meeting with Learning Accessibility Services (LAS) staff to discuss your needs and develop an accommodation plan. Submit required documents (e.g., a medical certificate or counselor letter, the Request for Academic Accommodations Form signed by your advisor, and any documentation of prior support). Look for the CTL “For Students” page on Learning Accessibility Services / How to Request Academic Accommodations for official instructions and procedures [1].",
+        "gold_source_ids": [
+          "DOC-000272::P000",
+          "DOC-000272::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000272::P001",
+          "DOC-001472::P005",
+          "DOC-001472::P003",
+          "DOC-000272::P000",
+          "DOC-001375::P012"
+        ],
+        "faithfulness": 0.8571428571428571,
+        "answer_relevancy": 0.7091262579718721,
+        "answer_correctness": 0.532713528368954,
+        "semantic_similarity": 0.8265062873888596
+      },
+      {
+        "id": "hr_010",
+        "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?",
+        "category": "it",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "You are graduating from the International Christian University (ICU) Graduate School, which is a 5-year program designed to accelerate your degree completion. **Regarding your IT account:** Your account will expire on **March 31, 2026**. If you need to use your account after graduation, you should use an email address that is valid after graduation. You should also backup your necessary files (such as Gmail and Google Drive) before graduation. **Regarding your financial aid:** You are eligible for financial support prior to and after matriculation. There are no repayment obligations, and awardees are exempted from paying one-third of the annual tuition and facilities fee due in their first year at ICU Graduate School. **Regarding your graduation documents:** If you have opened the envelope where your transcript and/or certificate of graduation were enclosed by mistake, you should request the university/graduate school to issue another transcript and/or certificate in a sealed envelope and send them to you or directly to ICU graduate school group. A copy of the senior thesis is required as one of the application documents, but the university I graduated from did not require us to write a thesis. If you were not required to complete a thesis for your undergraduate degree, you can submit a written report from a class or an academic paper instead.",
+        "reasoning_text": "",
+        "gold_answer": "Your ICU student accounts (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) will expire on March 31, 2026. Email forwarding will stop, so if you need to keep exchanging email after graduation, use a non-@icu.ac.jp address. Backup any needed Gmail and Google Drive files before graduation. If you are graduating from undergraduate school and matriculating into ICU Graduate School, a new student account will be issued after matriculation day.[1][2]",
+        "gold_source_ids": [
+          "DOC-001520::P000",
+          "DOC-001520::P005",
+          "DOC-001596::P001",
+          "DOC-001598::P027"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001596::P001",
+          "DOC-001598::P027",
+          "DOC-001520::P000",
+          "DOC-001595::P002",
+          "DOC-001520::P005"
+        ],
+        "faithfulness": 0.9230769230769231,
+        "answer_relevancy": 0.8510748972890245,
+        "answer_correctness": 0.429631055818255,
+        "semantic_similarity": 0.7711558022203884
+      },
+      {
+        "id": "hr_011",
+        "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "はい、公式情報を確認するための方法と、JLP のレベル分けや履修方法について、以下の情報に基づいて回答します。 [1] ICU 公式サイト（日本語教育プログラム） [2] ICU 入学後必修語学プログラム変更に関する Q&A [3] ICU 日本語教育プログラム（JLP）の概要ページ [4] ICU 日本語教育プログラム（JLP）の概要ページ **回答** JLP のレベル分けや履修方法については、以下の情報から確認できます。 * **レベル分けと履修方法** ICU は「日英バイリンガリズム」を実現するため、JLP を提供しています。学生は「外国語としての日本語」または「第 1 言語/継承語としての日本語」のいずれかで学びます。 * **履修方法**：学生は、プレースメントテストの結果に基づき、＜外国語としての日本語＞を学ぶトラックと＜第 1 言語/継承語としての日本語＞を学ぶトラックのいずれかで学びます。 * **コース変更**：入学後に必修語学プログラムの変更はできません。ただし、必修ではない方の語学科目を選択科目として履修できる科目があります。 * **受験資格**： * Stream 1, 2 の学生は、JLP のプレースメントテストも受験することができます。 * 総合型選抜<4月/9月入学>EJU（日本留学試験）利用で合格した方については、ELA のStream に関係なく、JLP のプレースメントテストを受けることができます。 * 英語力によって必修語学プログラムに JLP を選択できる場合があります。詳細は入学試験要項で確認してください。 * **公式情報の確認方法** 公式情報を確認するには、以下のリンクから入手できます。 * [1] https://www.icu.ac.jp/academics/undergraduate/jlp * [2] https://www.icu.ac.jp/admissions/undergraduate/faq * [3] https://www.icu.ac.jp",
+        "reasoning_text": "",
+        "gold_answer": "ICUの日本語教育プログラム（JLP）公式ページとシラバスで確認できます。JLPはプレースメントテストの結果に基づきトラック（外国語としての日本語／第1言語としての日本語）でレベル分けされており、開講コースは学期ごとにシラバスで確認するよう案内されています。英語ページにもプログラム概要があります[1][2].",
+        "gold_source_ids": [
+          "DOC-001756::P000",
+          "DOC-001612::P000",
+          "DOC-001735::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001756::P000",
+          "DOC-001735::P001",
+          "DOC-001612::P000",
+          "DOC-001611::P000",
+          "DOC-001700::P000"
+        ],
+        "faithfulness": 0.7894736842105263,
+        "answer_relevancy": 0.7104146474848514,
+        "answer_correctness": 0.5736032480455171,
+        "semantic_similarity": 0.8544129921820683
+      },
+      {
+        "id": "hr_012",
+        "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",
+        "category": "campus_life",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the schedule for Chapel Hour and Christianity Week is as follows: * **Chapel Hour:** * **Schedule:** Held every Tuesday during the lunch period (1:20 PM to 1:50 PM). * **Location:** University Chapel. * **Participants:** Students, faculty, staff, and guests from outside the campus. * **Note:** The evidence states that the class schedule on Saturday of Christianity Week is the same as the regular class schedule. * **Christianity Week:** * **Schedule:** The evidence indicates that the class schedule on Saturday of Christianity Week is identical to the regular class schedule. * **Note:** The evidence also notes that the class schedule on Mondays and Thursdays is set on the 4th period, or Wednesdays and Fridays. **Recommendation:** To check the specific schedule for your semester, you should consult the **ICU Handbook** (Class Schedule) at https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/university-calendar/class-schedule.",
+        "reasoning_text": "",
+        "gold_answer": "Check the university eHandbook Class Schedule (University calendar) for class-schedule details and adjustments related to Chapel Hour and Christianity Week, and the Religious Center’s Chapel Hour page for weekly Chapel Hour times and participation info [1][2].",
+        "gold_source_ids": [
+          "DOC-000081::P000",
+          "DOC-001488::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000081::P000",
+          "DOC-001488::P000",
+          "DOC-001547::P015",
+          "DOC-001551::P006",
+          "DOC-001488::P001"
+        ],
+        "faithfulness": 0.8888888888888888,
+        "answer_relevancy": 0.801902867676678,
+        "answer_correctness": 0.43627112721411826,
+        "semantic_similarity": 0.6541754179473822
+      },
+      {
+        "id": "hr_013",
+        "question": "Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?",
+        "category": "housing",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the cheapest dormitory will be the one with the lowest listed rent. [1] The evidence states that the difference between dormitories and off-campus boarding is \"not just the cheaper dorm fees (rent).\" This implies that rent is a significant component of the total cost, and the specific dorm with the lowest rent is the most cost-effective option. [2] The evidence does not provide specific rent figures for any dormitory, only general information about the registration process and the university's responsibility for off-campus access. Without specific rent amounts for the dormitories, it is impossible to determine which one is the cheapest. **Conclusion:** The answer cannot be determined from the given evidence.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence does not provide specific dormitory rent amounts or any announced (or unannounced) future fee changes, so it is not possible to determine which dormitory will have the cheapest rent next academic year [1][2][3].",
+        "gold_source_ids": [
+          "DOC-000262::P000",
+          "DOC-001552::P015",
+          "DOC-000095::P000",
+          "DOC-000079::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001552::P015",
+          "DOC-000079::P001",
+          "DOC-000095::P000",
+          "DOC-000079::P000",
+          "DOC-000262::P000"
+        ],
+        "faithfulness": 0.4444444444444444,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.48758479420903217,
+        "semantic_similarity": 0.7503391768361285
+      },
+      {
+        "id": "hr_014",
+        "question": "What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?",
+        "category": "campus_life",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the answer regarding the ICU cafeteria menu and the healthiest option: **Today's Lunch Menu** The University Cafeteria operates from **11:00 a.m. to 3:00 p.m.** on weekdays (Mon–Sat) and **11:00 a.m. to 8:00 p.m.** on weekends (Mon–Fri). The weekly menu is available on the \"University Cafeteria\" page. **Healthiest Option** The evidence does not explicitly state which specific food item is the healthiest. However, it provides general dietary advice: * **Diet is the source of health!** (Source: Diet Advice.pptx) * **Eat a healthy diet!** (Source: Diet Advice.pptx) * **Diet is the source of health!** (Source: Diet Advice.pptx) **Conclusion** While the cafeteria serves a variety of meals, the evidence emphasizes that **diet is the source of health** and that the future is up to the student. Therefore, the healthiest option is to follow the university's general dietary advice (e.g., eating a healthy diet) rather than relying on specific menu items.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001375::P014",
+          "DOC-001624::P005",
+          "DOC-001487::P000",
+          "DOC-001402::P007",
+          "DOC-000322::P000"
+        ],
+        "faithfulness": 0.7272727272727273,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.15069741822441357,
+        "semantic_similarity": 0.22778967289765428
+      },
+      {
+        "id": "hr_015",
+        "question": "Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?",
+        "category": "office",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, **Professor Ishibashi will not approve your individual course plan.** The evidence indicates that the faculty responsible for course registration and approval is the **SL Advisor** (SLアドヴァイザー), not the professor directly. The submission process requires the following steps: 1. Consult with the SL Advisor first. 2. Submit a \"SL Activity Plan\" (SL活動計画書) with a signature. 3. Use a \"Letter to SL Advisor\" (SL Advisorへの依頼状) to request approval. The evidence does not mention Professor Ishibashi's specific role in approving individual course plans, nor does it provide a direct link to his approval process. Therefore, the information is insufficient to determine his approval status. **Answer:** No, Professor Ishibashi will not approve your individual course plan. The approval process is handled by the SL Advisor, not the professor directly.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved documents do not mention Professor Ishibashi or state whether he would approve your individual course plan. They only describe general advisor approval procedures for SL activities and course registration [1][3].",
+        "gold_source_ids": [
+          "DOC-001344::P007",
+          "DOC-000076::P002",
+          "DOC-000130::P004"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001344::P007",
+          "DOC-000130::P004",
+          "DOC-000076::P002",
+          "DOC-000374::P000",
+          "DOC-000079::P000"
+        ],
+        "faithfulness": 0.45454545454545453,
+        "answer_relevancy": 0.9613220938249696,
+        "answer_correctness": 0.6050320274470001,
+        "semantic_similarity": 0.8411807413669479
+      },
+      {
+        "id": "hr_016",
+        "question": "I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?",
+        "category": "graduation",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "No, the rumor is not true. The current graduation credit requirement is **130 credits** for the Bachelor of Arts degree. This requirement is based on the **Graduation Requirements Checklist** found in the ehandbook, which states that students must earn at least 130 credits to obtain the degree. While the number of class hours varies by course (ranging from 15 to 45 hours per course), the total credit threshold remains fixed at 130. Regarding your plan: * **Do not plan based on the rumor.** The current requirement is 130 credits. * **Check the ehandbook.** The official list of required courses is available in the \"Graduation Requirements Checklist\" within the ehandbook. * **Verify the 2025 deadline.** For students matriculated in or before September 2024, the requirements are different from those for the 2025 academic year. Please consult the specific ehandbook for the current enrollment year to ensure you meet the exact credit load for your specific program.",
+        "reasoning_text": "",
+        "gold_answer": "ICU’s official Graduation Requirements page states a Bachelor of Arts requires at least 130 credits and notes this applies to students matriculated in the 2025 academic year and thereafter; requirements for students enrolling in or before September 2024 are different. If you will matriculate in 2025 or later, plan based on 130 credits; if you’re in an earlier cohort, follow your cohort’s requirements and check the ehandbook for details [1].",
+        "gold_source_ids": [
+          "DOC-001623::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001623::P000",
+          "DOC-001586::P002",
+          "DOC-000108::P004",
+          "DOC-000044::P002",
+          "DOC-001597::P001"
+        ],
+        "faithfulness": 0.46153846153846156,
+        "answer_relevancy": 0.7598760995551054,
+        "answer_correctness": 0.49584930712386877,
+        "semantic_similarity": 0.7833972284954749
+      },
+      {
+        "id": "hr_017",
+        "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",
+        "category": "calendar",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the information you need for Spring 2026: **Registration Period** * **Date:** The registration period is **the next day of Registration Day** (or after Late Registration). * **Timing:** You must access the Registration Website and confirm your registration and approval by your advisor on that specific day. * **Note:** Registration confirmation is the responsibility of individual students. No registration or registration change after the specified period will be accepted regardless of reasons. **Advisor Interview Timing** * **Timing:** You must visit your advisor and bring your desired timetable for the term. * **Process:** Course registration will not be complete until advisors approve your registration online. * **Late Registration:** If you could not complete the registration on Registration Day, you must complete the necessary procedure during the Late Registration period. **Important Pre-Registration Rule** * **PE Exercise Course:** Students are to participate in pre-registration for PE exercise courses and have won a seat before the class begins. Therefore, absence due to additional registration during the change period is not considered a valid excuse. **Accessing the Website** * The university assumes no responsibility for troubles caused by off-campus access. * The website can be accessed on and off campus. * **Warning:** Make sure to access well in advance and at your own risk. **Summary of Action Items** 1. Check the **Spring Term in Next Academic Year** page for the specific registration date. 2. Visit the **Registration Website** on the day of Registration Day (or late registration) to confirm your approval. 3. Visit your advisor's office to bring your timetable and confirm online registration. 4. If you miss Registration Day, use the Late Registration period to complete the procedure.",
+        "reasoning_text": "",
+        "gold_answer": "Check the eHandbook “Schedule for Course Registration — Spring Term” for the registration period and the eHandbook “Course Registration” page for advisor interview timing: the advisor interview/online approval takes place on Registration Day (and after Late Registration as applicable) [1][5].",
+        "gold_source_ids": [
+          "DOC-000076::P000",
+          "DOC-000039::P000",
+          "DOC-000079::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000076::P000",
+          "DOC-000079::P000",
+          "DOC-000079::P002",
+          "DOC-000076::P001",
+          "DOC-000039::P000"
+        ],
+        "faithfulness": 0.95,
+        "answer_relevancy": 0.7620283320657472,
+        "answer_correctness": 0.49484181842675734,
+        "semantic_similarity": 0.7793672737070291
+      },
+      {
+        "id": "hr_018",
+        "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?",
+        "category": "credits",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the system cannot tell you exactly how many more credits you need to graduate early because the specific number depends on the total number of credits you have already transferred and the total number of credits required for graduation. [1] Maximum Number of Credits that can be Transferred Students who spent more than 1 year at other universities or have obtained an associate degree may transfer up to 60 credits. [4] Limit on Number of Credits Students may be able to transfer up to 40 credits as a part of ICU's graduation requirements (Electives), if the courses taken are approved.",
+        "reasoning_text": "",
+        "gold_answer": "No. Transfer credits are only granted after you complete ICU’s post-entry credit-transfer procedures, so the institution/system cannot determine your exact remaining credits now; the policy also only states maximum transferable amounts (e.g., up to 60 credits) rather than an individual calculation [1][2].",
+        "gold_source_ids": [
+          "DOC-001643::P000",
+          "DOC-000059::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000059::P000",
+          "DOC-001643::P000",
+          "DOC-001654::P061",
+          "DOC-000063::P000",
+          "DOC-001654::P039"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.330403266611098,
+        "semantic_similarity": 0.8216130664443919
+      },
+      {
+        "id": "hr_019",
+        "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+        "category": "office",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "履修登録の手続きは、以下の公式ページで確認できます。 [1] https://sites.google.com/icu.ac.jp/icu-ehandbook/%E3%83%9B%E3%83%BC%E3%83%A0_japanese/%E5%B1%A5%E4%BF%AE%E6%A1%88%E5%86%85/%E7%A7%91%E7%9B%AE%E7%99%BB%E9%8C%B2/ [2] https://sites.google.com/icu.ac.jp/icu-ehandbook/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E6%9B%B4%E6%96%B0%E6%83%85%E5%A0%B1/2023-11-28-2023%E5%B9%B4%E5%BA%A6%E7%AC%AC3%E5%AD%A6%E6%9C%9F-%E6%95%99%E5%8B%99%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%8B%E3%82%89%E3%81%AE%E9%87%8D%E8%A6%81%E3%81%AA%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E5%86%AC%E5%AD%A6%E6%9C%9F%E7%99%BB%E9%8C%B2%E7%89%88 [3] https://sites.google.com/icu.ac.jp/icu-ehandbook/%E3%83%9B%E3%83%BC%E3%83%A0_japanese",
+        "reasoning_text": "",
+        "gold_answer": "教務グループ（本部棟1階）の連絡先・公式ページは次のとおりです。住所：〒181-8585 東京都三鷹市大沢3-10-2 国際基督教大学 学務部教務グループ。電話：0422-33-3054。メール：gakuseki@icu.ac.jp。[1] 履修登録に関する公式案内はehandbookの「履修登録」ページや教務グループからの重要なお知らせ（履修登録・Registration Websiteに関する案内）をご確認ください。[3][2]",
+        "gold_source_ids": [
+          "DOC-000117::P002",
+          "DOC-000166::P001",
+          "DOC-000128::P005"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000117::P002",
+          "DOC-000128::P005",
+          "DOC-000166::P001",
+          "DOC-000129::P000",
+          "DOC-000132::P000"
+        ],
+        "faithfulness": 0.25,
+        "answer_relevancy": 0.609786957599278,
+        "answer_correctness": 0.2694653295943146,
+        "semantic_similarity": 0.5324067729227129
+      },
+      {
+        "id": "hr_020",
+        "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",
+        "category": "policy",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the **ICU Portal** is the authoritative source for official announcements. **What to trust:** The ICU Portal is the primary source for all official announcements and important notices. Evidence [1], [2], [3], and [4] confirm that: * Only specific users (faculty, staff, and students) can send emails to the ICU Portal regarding \"Official Announcements\" and \"Important Announcements.\" * Push notifications are only sent if the poster specifies they should be sent. * Emails sent without permission are not allowed. **What to do next:** 1. **Check the ICU Portal:** If the chatbot answer differs from the portal announcement, you should check the ICU Portal first. 2. **Verify the source:** If the chatbot answer is different, verify it against the ICU Portal. 3. **Turn off notifications (if needed):** If you feel you are receiving too many push notifications, you can turn them off from the ICU Portal app.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001409::P001",
+          "DOC-001436::P001",
+          "DOC-001409::P002",
+          "DOC-001436::P002",
+          "DOC-001436::P000"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.7165284598448458,
+        "answer_correctness": 0.08923970887686114,
+        "semantic_similarity": 0.35695883550744456
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 2B (Apr 30 hard-20)",
+    "mode": "non_thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the placement level for the Japanese Language Program (JLP) is determined by a placement test that assesses your proficiency in Japanese. * **Placement Test:** All students admitted through the English Language Based Admissions must take a placement test to place them into the most appropriate courses by their levels of Japanese proficiency [1]. * **Official Information:** For detailed information on the JLP, including eligibility for non-degree students and specific tracks, you should check the official ICU website under the \"Frequently Asked Questions\" section regarding the JLP [3]. * **Note on Language:** While the JLP is primarily for those entering through Japanese-based admissions, some elective courses are available to those accepted via English-based admissions [1].",
+        "reasoning_text": "",
+        "gold_answer": "Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].",
+        "gold_source_ids": [
+          "DOC-001633::P014",
+          "DOC-001611::P000",
+          "DOC-001393::P004"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001633::P014",
+          "DOC-001393::P004",
+          "DOC-001611::P000",
+          "DOC-001633::P015",
+          "DOC-001612::P000"
+        ],
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.8286888788848452,
+        "answer_correctness": 0.6427896240060271,
+        "semantic_similarity": 0.8568727817383943
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "You can still register or change your courses, but you must do so during the designated **Late Registration/Registration Change Period** rather than on the original Registration Day. Key points to pay attention to: - **Deadline**: You must complete the registration change before the deadline; otherwise, the registration is considered non-registered and you must apply for a leave of absence or withdraw [1], [4]. - **Procedure**: You must visit the Educational Affairs Group to make the payment (Late Registration Fee of 3,000 yen) before the advisor can approve the registration [3]. - **Confirmation**: Even if you input data, the procedure is not completed until you click the **\"SAVE\"** button [2]. - **Pre-Registration**: If you are registering for courses assigned by lottery or Senior Thesis, you are still required to complete the regular registration procedures on the Registration Day, including an advisor interview and online approval [2], [4]. Please note that the schedule of assigned courses (e.g., ELA, Senior Thesis) cannot be changed [1].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000039::P007",
+          "DOC-000108::P013",
+          "DOC-000039::P008",
+          "DOC-000108::P012",
+          "DOC-000098::P002"
+        ],
+        "faithfulness": 0.8461538461538461,
+        "answer_relevancy": 0.803196308060386,
+        "answer_correctness": 0.04493404862270951,
+        "semantic_similarity": 0.17973619449083805
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "To withdraw from a course after seeing your workload, you must adhere to the following rules and deadlines based on the provided evidence: * **Withdrawal Timing**: You must complete the withdrawal during the designated **registration change period**. Withdrawal is not possible after this period ends [2]. * **Application Deadline**: You must submit your application for **Registration Withdrawal** at least **one month prior** to the last day of the classes [3]. * **Consequences**: If you do not complete the withdrawal during the designated period, you must take a leave of absence or withdraw from the university [2]. * **Critical Warning**: Cancelling registration for a course might endanger your satisfaction of graduation requirements. You are responsible for ensuring your withdrawal does not result in serious consequences for your graduation requirements [1]. * **Process Requirement**: When making the registration change, you must click the **\"SAVE\"** button to complete the procedure. Even if you input the data, the process is not completed unless this button is clicked [2]. **Note**: If you cannot complete the withdrawal during the designated period, you must complete a **Late Registration** during the registration change period [4].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::P004",
+          "DOC-000108::P013",
+          "DOC-000040::P000",
+          "DOC-000098::P002",
+          "DOC-000097::P013"
+        ],
+        "faithfulness": 0.6,
+        "answer_relevancy": 0.9310508230627884,
+        "answer_correctness": 0.03014145313916218,
+        "semantic_similarity": 0.12056581255664872
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "To confirm whether courses or credits will count toward your ICU requirements while studying abroad, you should follow these steps based on the provided evidence: 1. **Check the Destination's Official Website**: The primary source for verifying course equivalency is the website of your specific study abroad destination [1]. 2. **Contact the Destination's Health Office**: If you are unsure about specific requirements, you must contact the university where you will be studying abroad [1]. 3. **Verify Course Progress**: Submit a list of courses you are progressing or plan to take in the final semester/year to verify that you will meet the course requirements [2]. 4. **Submit Original Certificates**: Once admitted, you must submit the original or certified true copies of the diploma or completion certificate to confirm your admission to ICU [2]. 5. **Follow ICU's Transfer Policy**: If you are transferring credits from other universities, you must complete the prescribed application form and submit it to the Educational Affairs Group by the end of your first term at ICU [4]. *Note: Requirements may change without prior notice due to educational reform in the country/region/educational system [2].*",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001381::P010",
+          "DOC-001586::P002",
+          "DOC-001609::P000",
+          "DOC-000060::P002",
+          "DOC-000061::P001"
+        ],
+        "faithfulness": 0.7272727272727273,
+        "answer_relevancy": 0.9189130330134639,
+        "answer_correctness": 0.06521362301148653,
+        "semantic_similarity": 0.26085449204594613
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the information regarding senior thesis deadlines: **Official Schedule** The official schedule is available on the ICU Portal via the \"Senior Thesis\" section of the ehandbook [1]. **Expected Deadlines** * **Submission Deadline:** The submission deadline is **4:00 p.m.** on the designated date [1]. * **Consequence:** No thesis will be accepted after this time, and graduation may become impossible if the deadline is missed [1]. * **Application Timeline:** * **Candidacy Application:** The application period for Senior Thesis Advisor and Candidacy is **October 2, 2025 – October 20, 2025** [4]. * **Results Announcement:** Application results are announced on **December 3, 2025** [3], [4]. * **Note:** Specific submission deadlines are updated on the ICU Portal and may vary by expected graduate year and month [1].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000033::P000",
+          "DOC-000033::P001",
+          "DOC-000026::P002",
+          "DOC-000026::P001",
+          "DOC-000030::P000"
+        ],
+        "faithfulness": 0.875,
+        "answer_relevancy": 0.7155616441755168,
+        "answer_correctness": 0.0381631922286056,
+        "semantic_similarity": 0.1526527689144224
+      },
+      {
+        "id": "hr_006",
+        "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",
+        "category": "student_status",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "If you take a leave of absence and return to the ICU, you must submit a physician's certificate attesting that your medical condition will not affect your studies upon return [1]. This certificate must be submitted to the Educational Affairs Group [1]. Additionally, if you have an infectious disease, you may need to provide proof such as hospital receipts or prescription records to faculty [2]. For general medical institution information, please consult the Healthcare Office for details on hospital visits and appointment processes [3]. Finally, ensure that your major declaration is completed before the end of the term, as leave of absence affects the schedule and requires contacting the Educational Affairs Group for specific procedures [4].",
+        "reasoning_text": "",
+        "gold_answer": "Check reenrollment and course-registration requirements with the Educational Affairs Group: if your leave was for medical reasons you must submit a physician’s certificate to the Educational Affairs Group (may be shared with the Health Care Office); failure to submit will prevent course registration [DOC-000086::P011]. Also confirm Major Declaration procedures/schedule changes with the Educational Affairs Group if you took leave before declaring your major [DOC-000024::P004].",
+        "gold_source_ids": [
+          "DOC-000086::P011",
+          "DOC-000024::P004",
+          "DOC-001496::P009"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000086::P011",
+          "DOC-001496::P009",
+          "DOC-001455::P005",
+          "DOC-000024::P004",
+          "DOC-000097::P016"
+        ],
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.5861963070723734,
+        "answer_correctness": 0.42590266553275136,
+        "semantic_similarity": 0.756242241078374
+      },
+      {
+        "id": "hr_007",
+        "question": "I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?",
+        "category": "housing",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "To check housing and cost-related information, you should consult the **Housing Office** website at [1] and [3], which provides screening results, regulations, and application details. For specific dormitory options and fee structures, refer to the **Housing** section on the ICU website at [2]. **Citations:** [1] https://office.icu.ac.jp/ho/en [2] https://www.icu.ac.jp/en/campuslife/dormitories [3] https://office.icu.ac.jp/ho/en",
+        "reasoning_text": "",
+        "gold_answer": "Check ICU’s Housing (Dormitories) pages for dormitory overviews and the “Outline & Dormitory Fees” information, and consult the Housing Office website/contact for detailed fees, regulations, application results, and inquiries (housing-office@icu.ac.jp; Dialogue House 1F; office hours listed) [1][2][3].",
+        "gold_source_ids": [
+          "DOC-001604::P000",
+          "DOC-000262::P001",
+          "DOC-000262::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000262::P000",
+          "DOC-001604::P000",
+          "DOC-000262::P001",
+          "DOC-001604::P007",
+          "DOC-001598::P003"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.4971785924076947,
+        "semantic_similarity": 0.897805278721688
+      },
+      {
+        "id": "hr_008",
+        "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",
+        "category": "student_support",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "You can find official information about counseling and student support at ICU through the following resources: * **ICU Counseling Center**: Provides psychological support for students, including individual and group counseling, workshops, and services for specific topics like career paths, loss, and sexual health. [2] * **ICU Health Care Office for Students**: Offers a dedicated Mental Health page where you can find consultation services based on specific topics, including face-to-face, telephone, chat, and social media options. [1] * **Open Campus Event**: An online event where prospective and current students can meet directly to discuss campus life and concerns. [3] If you need more specific details, please check the \"FAQ\" sections on the respective websites listed in the evidence.",
+        "reasoning_text": "",
+        "gold_answer": "You can find official information on counseling and student support on the ICU Health Care Office for Students “Mental Health” page (lists counseling services, ICU Counseling Center, hotlines, and anonymous options) and on the ICU “Counseling, Human Rights Consultation and Health Services” / Counseling Center page (describes counseling services and staff) [1][2].",
+        "gold_source_ids": [
+          "DOC-001423::P004",
+          "DOC-001616::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001423::P004",
+          "DOC-001616::P000",
+          "DOC-001652::P003",
+          "DOC-001571::P005",
+          "DOC-001611::P022"
+        ],
+        "faithfulness": 0.46153846153846156,
+        "answer_relevancy": 0.9099444106337704,
+        "answer_correctness": 0.4607401246120214,
+        "semantic_similarity": 0.8829604984480857
+      },
+      {
+        "id": "hr_009",
+        "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",
+        "category": "student_support",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "To request exam accommodations, you should start by meeting with a **Learning Accessibility Services (LAS) staff member** to discuss your needs [4]. You must provide the following documents: * A medical certificate from your doctor or a letter from your counselor or other specialist [4]. * A request for Academic Accommodations Form (which must be signed by your advisor) [4]. * A document describing the support you have received previously (where appropriate) [4]. **Important Note:** * **Health Exams:** If you need to take a health exam on your own, you can do so at any healthcare facility offering such exams. However, health exams are **not covered by insurance**, and the cost will vary depending on the facility [2]. * **Deadlines:** Students newly requiring academic accommodations should complete the application procedure by the last day of Week 4 of each term [4]. * **Support Plan:** After submitting necessary documents, you can develop an accommodation plan with a member of the LAS staff [4]. For more details on common reasonable accommodations, please refer to the LAS office [4].",
+        "reasoning_text": "",
+        "gold_answer": "Start by meeting with Learning Accessibility Services (LAS) staff to discuss your needs and develop an accommodation plan. Submit required documents (e.g., a medical certificate or counselor letter, the Request for Academic Accommodations Form signed by your advisor, and any documentation of prior support). Look for the CTL “For Students” page on Learning Accessibility Services / How to Request Academic Accommodations for official instructions and procedures [1].",
+        "gold_source_ids": [
+          "DOC-000272::P000",
+          "DOC-000272::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000272::P001",
+          "DOC-001472::P005",
+          "DOC-001472::P003",
+          "DOC-000272::P000",
+          "DOC-001375::P012"
+        ],
+        "faithfulness": 0.9285714285714286,
+        "answer_relevancy": 0.7722098537403349,
+        "answer_correctness": 0.6410308442022902,
+        "semantic_similarity": 0.7994174944562198
+      },
+      {
+        "id": "hr_010",
+        "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?",
+        "category": "it",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the information regarding your IT account and services after graduation: * **Account Expiration:** Your ICU Net ID, ICU Portal, Mail, and Google Workspace accounts will expire on **March 31, 2026** [3]. * **Email Address:** You should **not** use the `@icu.ac.jp` email address after graduation. Instead, you must use an email address you can access post-graduation [3]. * **Email Forwarding:** Email forwarding will stop after graduation [3]. * **File Backup:** You are required to backup your necessary files (specifically Gmail and Google Drive's Files) before graduation [3]. * **Transcript Verification:** If you opened the graduation transcript envelope by mistake, you must request a new sealed transcript from the university or ICU graduate school group [2]. * **Thesis Requirement:** If your undergraduate degree did not require a thesis, you can submit a written report from a class or an academic paper instead [2]. * **Financial Aid:** There are no repayment obligations for graduate school students, and you are exempted from paying one-third of the annual tuition and facilities fee in your first year [4]. **Note:** The specific application requirements and documents for tuition reduction are to be confirmed through the internal portal after matriculation [4].",
+        "reasoning_text": "",
+        "gold_answer": "Your ICU student accounts (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) will expire on March 31, 2026. Email forwarding will stop, so if you need to keep exchanging email after graduation, use a non-@icu.ac.jp address. Backup any needed Gmail and Google Drive files before graduation. If you are graduating from undergraduate school and matriculating into ICU Graduate School, a new student account will be issued after matriculation day.[1][2]",
+        "gold_source_ids": [
+          "DOC-001520::P000",
+          "DOC-001520::P005",
+          "DOC-001596::P001",
+          "DOC-001598::P027"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001596::P001",
+          "DOC-001598::P027",
+          "DOC-001520::P000",
+          "DOC-001595::P002",
+          "DOC-001520::P005"
+        ],
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.8190755465367283,
+        "answer_correctness": 0.7184137882269266,
+        "semantic_similarity": 0.8046896356663267
+      },
+      {
+        "id": "hr_011",
+        "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "ICU の公式情報については、以下のソースで確認できます。 * **コース詳細と開講状況**: シラバスを確認してください。[1] * **JLP の詳細**: 英語ページを参照してください。[1] * **JLP 履修対象生**: 入学試験要項で確認してください。[2] * **JLP 履修対象生**: 英語ページを参照してください。[3] * **JLP 履修対象生**: 英語ページを参照してください。[4] ※ 日本語プログラム（JLP）のレベル分けや具体的な履修方法については、各コースの学期ごとのシラバスで詳細を確認する必要があります。[1]",
+        "reasoning_text": "",
+        "gold_answer": "ICUの日本語教育プログラム（JLP）公式ページとシラバスで確認できます。JLPはプレースメントテストの結果に基づきトラック（外国語としての日本語／第1言語としての日本語）でレベル分けされており、開講コースは学期ごとにシラバスで確認するよう案内されています。英語ページにもプログラム概要があります[1][2].",
+        "gold_source_ids": [
+          "DOC-001756::P000",
+          "DOC-001612::P000",
+          "DOC-001735::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001756::P000",
+          "DOC-001735::P001",
+          "DOC-001612::P000",
+          "DOC-001611::P000",
+          "DOC-001700::P000"
+        ],
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7260793212469361,
+        "semantic_similarity": 0.7866702261642151
+      },
+      {
+        "id": "hr_012",
+        "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",
+        "category": "campus_life",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the events are **campus-life events** organized by the ICU Religious Center, not purely academic. * **Chapel Hour** is held every Tuesday during the lunch period (1:20–1:50 p.m.) in the University Chapel [1], [2]. It is described as a rare weekday opportunity for the ICU community to gather for informal Christian worship [2]. * **Christianity Week** is a separate event where the class schedule on Saturday is the same as the regular class schedule [1]. * **Candlelight Service** is held every Wednesday during lunchtime, with no classes or meetings scheduled [3]. To check the specific schedule for these events, you should consult the **Class Schedule** on the ICU website [1].",
+        "reasoning_text": "",
+        "gold_answer": "Check the university eHandbook Class Schedule (University calendar) for class-schedule details and adjustments related to Chapel Hour and Christianity Week, and the Religious Center’s Chapel Hour page for weekly Chapel Hour times and participation info [1][2].",
+        "gold_source_ids": [
+          "DOC-000081::P000",
+          "DOC-001488::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000081::P000",
+          "DOC-001488::P000",
+          "DOC-001547::P015",
+          "DOC-001551::P006",
+          "DOC-001488::P001"
+        ],
+        "faithfulness": 0.375,
+        "answer_relevancy": 0.7701112165531139,
+        "answer_correctness": 0.25643289032407723,
+        "semantic_similarity": 0.5971601327248803
+      },
+      {
+        "id": "hr_013",
+        "question": "Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?",
+        "category": "housing",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, there is no information regarding the specific dormitory options, their associated rent costs, or any future fee changes for the next academic year. [1] Therefore, it is impossible to determine which dormitory will have the cheapest rent.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence does not provide specific dormitory rent amounts or any announced (or unannounced) future fee changes, so it is not possible to determine which dormitory will have the cheapest rent next academic year [1][2][3].",
+        "gold_source_ids": [
+          "DOC-000262::P000",
+          "DOC-001552::P015",
+          "DOC-000095::P000",
+          "DOC-000079::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001552::P015",
+          "DOC-000079::P001",
+          "DOC-000095::P000",
+          "DOC-000079::P000",
+          "DOC-000262::P000"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8548805215409109,
+        "semantic_similarity": 0.8480935147350724
+      },
+      {
+        "id": "hr_014",
+        "question": "What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?",
+        "category": "campus_life",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the ICU cafeteria operates from **11:00 a.m. to 3:00 p.m.** on weekdays and national holidays [3]. Regarding the healthiest option, the evidence explicitly states that the university cafeteria is **unable to prepare meals tailored to individual needs** or accommodate food allergies [1]. Consequently, the only viable option for a personal health choice is to **bring your own lunch** [1]. **Conclusion:** * **Operating Hours:** 11:00 a.m. – 3:00 p.m. * **Healthiest Option:** Bring your own lunch (as the cafeteria cannot accommodate allergies or specific medical conditions).",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001375::P014",
+          "DOC-001624::P005",
+          "DOC-001487::P000",
+          "DOC-001402::P007",
+          "DOC-000322::P000"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.6873093354883995,
+        "answer_correctness": 0.029842705237805925,
+        "semantic_similarity": 0.1193708209512237
+      },
+      {
+        "id": "hr_015",
+        "question": "Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?",
+        "category": "office",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, it is not possible to determine whether Professor Ishibashi will approve your individual course plan. The available evidence indicates that course registration is not complete until advisors approve your registration online [3]. However, the specific identity of the advisor (e.g., Professor Ishibashi) and the process for their approval are not detailed in the text. The evidence only mentions that students should consult with faculty members regarding their \"SL Activity Plan\" [1] and that academic planning support is available through APS or IBS [4]. Therefore, without specific information on Professor Ishibashi's availability or the specific approval workflow for individual course plans, the outcome cannot be confirmed.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved documents do not mention Professor Ishibashi or state whether he would approve your individual course plan. They only describe general advisor approval procedures for SL activities and course registration [1][3].",
+        "gold_source_ids": [
+          "DOC-001344::P007",
+          "DOC-000076::P002",
+          "DOC-000130::P004"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001344::P007",
+          "DOC-000130::P004",
+          "DOC-000076::P002",
+          "DOC-000374::P000",
+          "DOC-000079::P000"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.5393221484554216,
+        "semantic_similarity": 0.772673209206302
+      },
+      {
+        "id": "hr_016",
+        "question": "I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?",
+        "category": "graduation",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, there is no confirmed information regarding a change to the graduation credit requirement for the upcoming academic year. The current requirement is to earn at least 130 credits [1]. However, the evidence explicitly states that \"Credit requirements in Languages and Specialized Courses vary according to the student's language proficiency\" and that \"Graduation Requirements for students enrolling in or before September 2024 are different\" [1]. Additionally, the admissions document notes that \"The following requirements may change without prior notice in the event of educational reform\" [2]. Therefore, you should not plan based on a specific new number yet, as the exact requirements may vary by language proficiency and could change due to educational reform.",
+        "reasoning_text": "",
+        "gold_answer": "ICU’s official Graduation Requirements page states a Bachelor of Arts requires at least 130 credits and notes this applies to students matriculated in the 2025 academic year and thereafter; requirements for students enrolling in or before September 2024 are different. If you will matriculate in 2025 or later, plan based on 130 credits; if you’re in an earlier cohort, follow your cohort’s requirements and check the ehandbook for details [1].",
+        "gold_source_ids": [
+          "DOC-001623::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001623::P000",
+          "DOC-001586::P002",
+          "DOC-000108::P004",
+          "DOC-000044::P002",
+          "DOC-001597::P001"
+        ],
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.25036370208582936,
+        "semantic_similarity": 0.5728833797718889
+      },
+      {
+        "id": "hr_017",
+        "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",
+        "category": "calendar",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the specific registration period and advisor interview timing for Spring 2026 are not explicitly defined in the text. The available evidence [1], [2], and [4] only covers the **Spring Term for the AY2025-2026 academic year** (labeled as \"Spring Term\" in the title and content, with dates like AY2025 and AY2026). It states that course registration must be completed by the next day of registration day or after late registration, and that advisors must approve registration online [1]. However, it does not provide a separate schedule or specific interview timing for the upcoming Spring 2026 term. **Conclusion:** You cannot determine the registration period or advisor interview timing for Spring 2026 from the current evidence, as the document only covers the AY2025-2026 Spring Term.",
+        "reasoning_text": "",
+        "gold_answer": "Check the eHandbook “Schedule for Course Registration — Spring Term” for the registration period and the eHandbook “Course Registration” page for advisor interview timing: the advisor interview/online approval takes place on Registration Day (and after Late Registration as applicable) [1][5].",
+        "gold_source_ids": [
+          "DOC-000076::P000",
+          "DOC-000039::P000",
+          "DOC-000079::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000076::P000",
+          "DOC-000079::P000",
+          "DOC-000079::P002",
+          "DOC-000076::P001",
+          "DOC-000039::P000"
+        ],
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.35546926034979875,
+        "semantic_similarity": 0.7552103747325285
+      },
+      {
+        "id": "hr_018",
+        "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?",
+        "category": "credits",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the system cannot tell you exactly how many more credits you need to graduate early. The evidence indicates that: 1. **Transfer Credits are Limited:** Students can transfer up to 60 credits total if they spent more than 1 year at other universities or have an associate degree [1]. 2. **Reciprocal Credits are Limited:** Students may transfer up to 40 credits as electives, but the total transfer credits may not exceed 60 credits for freshmen [4]. 3. **Procedure is Required:** Credit transfers are granted only after students complete the required procedures after entering ICU [2]. 4. **Grading Scale Varies:** The system does not indicate the school's grading scale, and students must submit an additional document explaining it if the transcript does not show it [3]. Therefore, without knowing your specific course grades, the number of credits you have already transferred, and the specific courses you are taking, the system cannot calculate your remaining credit requirement.",
+        "reasoning_text": "",
+        "gold_answer": "No. Transfer credits are only granted after you complete ICU’s post-entry credit-transfer procedures, so the institution/system cannot determine your exact remaining credits now; the policy also only states maximum transferable amounts (e.g., up to 60 credits) rather than an individual calculation [1][2].",
+        "gold_source_ids": [
+          "DOC-001643::P000",
+          "DOC-000059::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000059::P000",
+          "DOC-001643::P000",
+          "DOC-001654::P061",
+          "DOC-000063::P000",
+          "DOC-001654::P039"
+        ],
+        "faithfulness": 0.625,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.5381012291758193,
+        "semantic_similarity": 0.7677895320878925
+      },
+      {
+        "id": "hr_019",
+        "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+        "category": "office",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "履修登録の教育事務グループ連絡先と公式ページは以下の通りです。 * **公式ページ**: [1] ehandbook - よくある質問 * **教務グループ窓口**: 本部棟1階 * **連絡先**: Tel: 0422-33-3054 * **公式ページ**: [2] ehandbook - 2023.11.28 2023年度第3学期 教務グループからの重要なお知らせ * **公式ページ**: [3] ehandbook - 履修登録 * **公式ページ**: [4] ehandbook - 2023.11.3 2023年度第3学期 教務グループからの重要なお知らせ（冬学期予備登録版） ※履修登録の申請方法や制限については、[3] ehandbook - 履修登録で詳細が記載されています。",
+        "reasoning_text": "",
+        "gold_answer": "教務グループ（本部棟1階）の連絡先・公式ページは次のとおりです。住所：〒181-8585 東京都三鷹市大沢3-10-2 国際基督教大学 学務部教務グループ。電話：0422-33-3054。メール：gakuseki@icu.ac.jp。[1] 履修登録に関する公式案内はehandbookの「履修登録」ページや教務グループからの重要なお知らせ（履修登録・Registration Websiteに関する案内）をご確認ください。[3][2]",
+        "gold_source_ids": [
+          "DOC-000117::P002",
+          "DOC-000166::P001",
+          "DOC-000128::P005"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000117::P002",
+          "DOC-000128::P005",
+          "DOC-000166::P001",
+          "DOC-000129::P000",
+          "DOC-000132::P000"
+        ],
+        "faithfulness": 0.375,
+        "answer_relevancy": 0.938767481145562,
+        "answer_correctness": 0.5757821765639544,
+        "semantic_similarity": 0.7031287062558172
+      },
+      {
+        "id": "hr_020",
+        "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",
+        "category": "policy",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the ICU Portal announcement is the authoritative source for deadlines and official updates. **Recommendation:** Trust the **ICU Portal announcement** over the chatbot answer. The chatbot answer appears to be a general summary, whereas the portal provides the specific, actionable details regarding deadlines and notification permissions. **Next Steps:** 1. **Check the ICU Portal:** Visit the official portal to verify the specific deadline and any relevant instructions. 2. **Verify Notification Settings:** If you are receiving excessive notifications, use the \"iPhone Android\" section in the portal manual to turn off notifications from the ICU Portal app. 3. **Review Permissions:** Note that emails are only sent to faculty and staff with permission; students receive emails only for specific university-wide events, surveys, tuition fees, or scholarship notices. **Citations:** [1], [2], [3], [4]",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001409::P001",
+          "DOC-001436::P001",
+          "DOC-001409::P002",
+          "DOC-001436::P002",
+          "DOC-001436::P000"
+        ],
+        "faithfulness": 0.36363636363636365,
+        "answer_relevancy": 0.8265408126696251,
+        "answer_correctness": 0.09881834998583336,
+        "semantic_similarity": 0.39527339994333344
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 4B (Apr 30 hard-20)",
+    "mode": "non_thinking",
+    "samples": [
+      {
+        "id": "hr_001",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the Japanese Language Program (JLP) level is determined by a **placement test** that assesses a student's Japanese proficiency to assign them to the most appropriate course level [1]. **Official Information Source:** You should check the **Frequently Asked Questions (FAQ)** page on the ICU admissions website for specific details regarding the placement process [1]. **Key Details:** * **Requirement:** All students admitted through English Language Based Admissions must take this test [1]. * **Purpose:** The test places students into courses matching their current proficiency levels [1]. * **Special Cases:** Returnee students (those with Japanese as a first or heritage language) may be placed in a \"Special Japanese Track\" to address specific skill gaps [1].",
+        "reasoning_text": "",
+        "gold_answer": "Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].",
+        "gold_source_ids": [
+          "DOC-001633::P014",
+          "DOC-001611::P000",
+          "DOC-001393::P004"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001633::P014",
+          "DOC-001393::P004",
+          "DOC-001611::P000",
+          "DOC-001633::P015",
+          "DOC-001612::P000"
+        ],
+        "faithfulness": 0.7,
+        "answer_relevancy": 0.7397525656532806,
+        "answer_correctness": 0.8062514514319128,
+        "semantic_similarity": 0.8916724723943183
+      },
+      {
+        "id": "hr_002",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "category": "registration",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Yes, you can still register or change your courses, but you must do so during the **Late Registration/Registration Change Period**. * **Procedure**: Complete the registration or change via the ICU Portal. Ensure you click the **\"SAVE\"** button to finalize the process [2]. * **Fee**: You must pay a **Late Registration Fee of 3,000 yen**. Before your advisor interview, visit the Educational Affairs Group to make this payment, as advisors cannot approve online registration until the fee is paid [3]. * **Deadlines**: Registration is only accepted during the designated Late Registration period. Missing this deadline results in being considered non-registered, requiring a leave of absence or withdrawal [2]. * **Important Note**: Even if you only need to register for lottery-assigned or Senior Thesis courses, you must still complete the full regular registration procedure (including advisor interviews) on the Registration Day or during the change period [2].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000039::P007",
+          "DOC-000108::P013",
+          "DOC-000039::P008",
+          "DOC-000108::P012",
+          "DOC-000098::P002"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7784586462586123,
+        "answer_correctness": 0.04577174291544371,
+        "semantic_similarity": 0.18308697166177484
+      },
+      {
+        "id": "hr_003",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "category": "registration",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here are the rules and deadlines regarding course withdrawal at ICU: * **Scope of Withdrawal**: Registration withdrawal applies to **all** courses for the ongoing term; partial withdrawal is not possible [3]. * **Deadline**: The application must be submitted to the Educational Affairs Group **one month prior** to the last day of classes [3]. * **Required Documentation**: You must submit documents explaining reasonable reasons (e.g., a medical certificate) along with the application [3]. * **Approval Authority**: Permission is granted by the CLA Dean or GS Dean if the university recognizes the reason as illness or unavoidable [3]. * **Important Warning**: Canceling a course might endanger graduation requirements; you should check the Graduation Requirements Checklist before canceling [1]. *Note: The provided evidence does not specify a deadline for withdrawing solely due to \"workload\" as a standalone reason, though it allows withdrawal for \"unavoidable reasons\" with proper documentation [3].*",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000108::P004",
+          "DOC-000108::P013",
+          "DOC-000040::P000",
+          "DOC-000098::P002",
+          "DOC-000097::P013"
+        ],
+        "faithfulness": 0.9090909090909091,
+        "answer_relevancy": 0.7131600341559047,
+        "answer_correctness": 0.15291201303737886,
+        "semantic_similarity": 0.18307662357808688
+      },
+      {
+        "id": "hr_004",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "category": "major",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "To confirm whether courses or credits from a study abroad program will count toward your ICU requirements, you should check the specific requirements on the website of your study abroad destination and contact the university where you will be studying abroad if you are unsure [1]. Additionally, you must submit a list of courses progressing or to be taken in the final semester/year to verify that you will meet the course requirements upon admission [2]. For students transferring credits from other universities, foreign language courses may be transferred as Electives (up to 21 credits), and the total transfer credits may not exceed 60 credits when combined with other transfer sources [4].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001381::P010",
+          "DOC-001586::P002",
+          "DOC-001609::P000",
+          "DOC-000060::P002",
+          "DOC-000061::P001"
+        ],
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.8316436912584109,
+        "answer_correctness": 0.05856463723428269,
+        "semantic_similarity": 0.23425854893713077
+      },
+      {
+        "id": "hr_005",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "category": "graduation",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is the information regarding senior thesis deadlines and schedules at ICU: **Official Schedule and Resources** * **Portal:** Detailed instructions and the specific deadline are updated on the **ICU Portal**. * **Guidelines:** Refer to the **Senior Thesis Guidelines** on the eHANDBOOK for compilation stipulations. Ensure you check the guidelines for your specific expected graduate year and month [1][2]. * **Application Period:** For students starting research in April/September 2026, the application for a Senior Thesis Advisor and Certification of Research Candidacy is open from **10:00 on October 2 to 16:00 on October 20, 2025** [4]. * **Results:** Application results are announced on the Registration Website by **December 3, 2025** [3][4]. **Key Deadlines to Check** * **Submission Deadline:** Submit a PDF of your senior thesis to the designated place before the prescribed deadline. No submissions are accepted after **4:00 p.m.** on the deadline date under any circumstances [1]. * **Consequence:** Failure to meet the submission deadline makes it impossible to graduate as expected [1]. * **Registration Deadline:** The application for Senior Thesis Advisor and Research Candidacy must be completed within the October 2025 window mentioned above [4].",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-000033::P000",
+          "DOC-000033::P001",
+          "DOC-000026::P002",
+          "DOC-000026::P001",
+          "DOC-000030::P000"
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5924341328835758,
+        "answer_correctness": 0.03585354343533434,
+        "semantic_similarity": 0.14341417374133736
+      },
+      {
+        "id": "hr_006",
+        "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",
+        "category": "student_status",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Before planning your courses after returning from a leave of absence, you should check the following: * **Medical Certificate**: If your leave was due to a medical condition, you must submit a physician's certificate stating the condition will not affect your studies upon return to the **Educational Affairs Group**. Failure to do so will prevent course registration [1]. * **Major Declaration**: If you have not yet declared your major, you must complete the declaration steps according to your registered terms. The schedule for these procedures may change if you took a leave of absence; contact the **Educational Affairs Group** for specific details [4]. * **Faculty Coordination**: If your absence was due to illness or injury, consult your faculty regarding acceptable proof (e.g., hospital receipts or prescription records) and ensure they are aware of your return status [2]. *Note: Reenrollment procedures are generally not required starting with the AY2024 Autumn term, but the above conditions apply [1].*",
+        "reasoning_text": "",
+        "gold_answer": "Check reenrollment and course-registration requirements with the Educational Affairs Group: if your leave was for medical reasons you must submit a physician’s certificate to the Educational Affairs Group (may be shared with the Health Care Office); failure to submit will prevent course registration [DOC-000086::P011]. Also confirm Major Declaration procedures/schedule changes with the Educational Affairs Group if you took leave before declaring your major [DOC-000024::P004].",
+        "gold_source_ids": [
+          "DOC-000086::P011",
+          "DOC-000024::P004",
+          "DOC-001496::P009"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000086::P011",
+          "DOC-001496::P009",
+          "DOC-001455::P005",
+          "DOC-000024::P004",
+          "DOC-000097::P016"
+        ],
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.8060889334553543,
+        "answer_correctness": 0.6259429053287675,
+        "semantic_similarity": 0.8371049546484035
+      },
+      {
+        "id": "hr_007",
+        "question": "I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?",
+        "category": "housing",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "To check housing options and cost-related information, you should visit the **Housing Office website** ([1], [3]) or the dedicated **Housing page** ([2], [4]). * **Housing Options:** The Housing page lists on-campus dormitories (e.g., Momi House, Maple House, Global House) and provides links for off-campus housing ([2], [4]). * **Fees and Rules:** The Housing Office website contains specific sections for \"Outline & Dormitory Fees,\" \"Regulations and Bylaws,\" and \"FAQ\" regarding costs ([1], [3]). * **Application Status:** You can check screening results and application schedules for future terms (e.g., April 2026, September 2026) on the Housing Office site ([1], [3]).",
+        "reasoning_text": "",
+        "gold_answer": "Check ICU’s Housing (Dormitories) pages for dormitory overviews and the “Outline & Dormitory Fees” information, and consult the Housing Office website/contact for detailed fees, regulations, application results, and inquiries (housing-office@icu.ac.jp; Dialogue House 1F; office hours listed) [1][2][3].",
+        "gold_source_ids": [
+          "DOC-001604::P000",
+          "DOC-000262::P001",
+          "DOC-000262::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000262::P000",
+          "DOC-001604::P000",
+          "DOC-000262::P001",
+          "DOC-001604::P007",
+          "DOC-001598::P003"
+        ],
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.699000250755554,
+        "answer_correctness": 0.6000638717074003,
+        "semantic_similarity": 0.7335888201629341
+      },
+      {
+        "id": "hr_008",
+        "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",
+        "category": "student_support",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "For official information on counseling and student support at ICU, please visit the **ICU Health Care Office for Students** website. * **General Mental Health Counseling**: The **ICU Counseling Center** provides psychological support for issues such as adjustment to university life, interpersonal relationships, self-understanding, career paths, and mental/physical health. Services include individual counseling, group counseling, and workshops [2]. * **Consultation Methods**: You can find specific consultation services by topic (e.g., loss, addiction, sexual health) on the Japanese site, where you can check methods like face-to-face meetings, telephone, chat, or social media [1]. * **Anonymous Support**: The **International Bifriends** and **Tokyo Suicide Prevention Center** offer anonymous telephone consultations [1]. * **Student Interaction**: The **Online Liberal Arts Lounge** allows prospective students to speak directly with current ICU students via Zoom regarding campus life [3]. You can access these resources at: * English: https://www.icu.ac.jp/en/campuslife/health [2] * Japanese: https://sites.google.com/icu.ac.jp/hcoforstudents/healthinfo/mentalhealth [1]",
+        "reasoning_text": "",
+        "gold_answer": "You can find official information on counseling and student support on the ICU Health Care Office for Students “Mental Health” page (lists counseling services, ICU Counseling Center, hotlines, and anonymous options) and on the ICU “Counseling, Human Rights Consultation and Health Services” / Counseling Center page (describes counseling services and staff) [1][2].",
+        "gold_source_ids": [
+          "DOC-001423::P004",
+          "DOC-001616::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001423::P004",
+          "DOC-001616::P000",
+          "DOC-001652::P003",
+          "DOC-001571::P005",
+          "DOC-001611::P022"
+        ],
+        "faithfulness": 0.8666666666666667,
+        "answer_relevancy": 0.86335665470055,
+        "answer_correctness": 0.3563989373523288,
+        "semantic_similarity": 0.8801412039547698
+      },
+      {
+        "id": "hr_009",
+        "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",
+        "category": "student_support",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "To request exam accommodations due to a disability or health condition, you should start by meeting with a **Learning Accessibility Services (LAS)** staff member to discuss your needs [4]. The official support page to look for is the **\"For Students\"** section under **Accessibility Services** on the CTL English website [1][4]. **Key Steps:** 1. **Meet with LAS staff** to discuss your specific needs [4]. 2. **Submit necessary documents**, including a medical certificate, a signed request form, and any previous support documentation [4]. 3. **Develop an accommodation plan** with LAS staff, who will then deliver your requests to professors [1]. *Note: New students must complete the application by the last day of Week 4 of each term, while continued users should check the page at the beginning of each term [1].*",
+        "reasoning_text": "",
+        "gold_answer": "Start by meeting with Learning Accessibility Services (LAS) staff to discuss your needs and develop an accommodation plan. Submit required documents (e.g., a medical certificate or counselor letter, the Request for Academic Accommodations Form signed by your advisor, and any documentation of prior support). Look for the CTL “For Students” page on Learning Accessibility Services / How to Request Academic Accommodations for official instructions and procedures [1].",
+        "gold_source_ids": [
+          "DOC-000272::P000",
+          "DOC-000272::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000272::P001",
+          "DOC-001472::P005",
+          "DOC-001472::P003",
+          "DOC-000272::P000",
+          "DOC-001375::P012"
+        ],
+        "faithfulness": 0.8888888888888888,
+        "answer_relevancy": 0.8327311454248281,
+        "answer_correctness": 0.6980901141025414,
+        "semantic_similarity": 0.792360456410166
+      },
+      {
+        "id": "hr_010",
+        "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?",
+        "category": "it",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, here is what you should know about your IT account and services after graduating from ICU: * **Account Expiration:** Your ICU Net ID, ICU Portal, Mail, and Google Workspace accounts will expire on **March 31, 2026** [3]. * **Email Usage:** You are recommended to use a personal email address after graduation rather than your `@icu.ac.jp` address. Email forwarding services will stop [3]. * **Data Backup:** You should back up necessary files from Gmail and Google Drive before graduation [3]. * **System Access:** The IT Center provides resources for students graduating in March 2026, including guidance on account expiration and file management [3]. *Note: The provided evidence does not contain specific instructions regarding IT account transfers or new service setups for graduate students continuing their studies, only the expiration of the undergraduate account.*",
+        "reasoning_text": "",
+        "gold_answer": "Your ICU student accounts (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) will expire on March 31, 2026. Email forwarding will stop, so if you need to keep exchanging email after graduation, use a non-@icu.ac.jp address. Backup any needed Gmail and Google Drive files before graduation. If you are graduating from undergraduate school and matriculating into ICU Graduate School, a new student account will be issued after matriculation day.[1][2]",
+        "gold_source_ids": [
+          "DOC-001520::P000",
+          "DOC-001520::P005",
+          "DOC-001596::P001",
+          "DOC-001598::P027"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001596::P001",
+          "DOC-001598::P027",
+          "DOC-001520::P000",
+          "DOC-001595::P002",
+          "DOC-001520::P005"
+        ],
+        "faithfulness": 0.6363636363636364,
+        "answer_relevancy": 0.7873406226087666,
+        "answer_correctness": 0.7576677352673835,
+        "semantic_similarity": 0.8488527592513522
+      },
+      {
+        "id": "hr_011",
+        "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？",
+        "category": "language",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "JLP（日本語教育プログラム）のレベル分けや履修方法に関する公式情報は、以下のページで確認できます。 **1. 履修方法とレベル分け（プレースメントテスト）** * **対象者:** 4年本科生、交換留学生、大学院生など。 * **レベル判定:** プレースメントテストの結果に基づき、以下のいずれかのトラックに振り分けられます。 * 「外国語としての日本語」を学ぶトラック * 「第1言語/継承語としての日本語」を学ぶトラック * **詳細:** シラバス（開講科目）は各学期異なりますので、公式サイトで確認してください [1]。 * **併願・選択:** 総合型選抜（EJU利用など）で合格した場合、ELAのStreamに関係なくJLPのプレースメントテストを受験できます [2]。 **2. 公式情報確認先** * **日本語ページ:** [日本語教育プログラム｜国際基督教大学（ICU）](https://www.icu.ac.jp/academics/undergraduate/jlp) [1] * **英語ページ:** [Japanese Language Program (JLP)｜ICU](https://www.icu.ac.jp/en/academics/undergraduate/jlp) [3]",
+        "reasoning_text": "",
+        "gold_answer": "ICUの日本語教育プログラム（JLP）公式ページとシラバスで確認できます。JLPはプレースメントテストの結果に基づきトラック（外国語としての日本語／第1言語としての日本語）でレベル分けされており、開講コースは学期ごとにシラバスで確認するよう案内されています。英語ページにもプログラム概要があります[1][2].",
+        "gold_source_ids": [
+          "DOC-001756::P000",
+          "DOC-001612::P000",
+          "DOC-001735::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001756::P000",
+          "DOC-001735::P001",
+          "DOC-001612::P000",
+          "DOC-001611::P000",
+          "DOC-001700::P000"
+        ],
+        "faithfulness": 0.8181818181818182,
+        "answer_relevancy": 0.6261504080894145,
+        "answer_correctness": 0.8972476270757083,
+        "semantic_similarity": 0.8889905083028328
+      },
+      {
+        "id": "hr_012",
+        "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",
+        "category": "campus_life",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, **Chapel Hour** and **Christianity Week** are **campus-life events** organized by the Religious Center, not academic classes. * **Chapel Hour**: Held weekly (evidence varies between Tuesday and Wednesday in different sources) during lunch breaks. It is an optional gathering for worship and discussion where faculty, staff, and students share messages. It is explicitly **not** a class, and no classes are scheduled during this time [2][3][4]. * **Christianity Week**: Described as a period where the university seeks to transmit its Christian philosophy through various activities. The class schedule during this week remains the same as the regular schedule, indicating it is a thematic campus event rather than an academic course [1]. **Where to check the schedule:** * For **Chapel Hour**: Check the **Religious Center** website or the **Class Schedule** handbook, which notes the specific times (e.g., Tuesdays 1:20–1:50 PM) [1][2]. * For **Christianity Week**: Refer to the **University Calendar** or the **Class Schedule** handbook, which details the week's specific dates and confirms the class schedule remains unchanged [1].",
+        "reasoning_text": "",
+        "gold_answer": "Check the university eHandbook Class Schedule (University calendar) for class-schedule details and adjustments related to Chapel Hour and Christianity Week, and the Religious Center’s Chapel Hour page for weekly Chapel Hour times and participation info [1][2].",
+        "gold_source_ids": [
+          "DOC-000081::P000",
+          "DOC-001488::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000081::P000",
+          "DOC-001488::P000",
+          "DOC-001547::P015",
+          "DOC-001551::P006",
+          "DOC-001488::P001"
+        ],
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9308206046509452,
+        "answer_correctness": 0.45620140775830653,
+        "semantic_similarity": 0.6709594771870724
+      },
+      {
+        "id": "hr_013",
+        "question": "Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?",
+        "category": "housing",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, it is not possible to determine which dormitory will have the cheapest rent next academic year, nor can any future fee changes be predicted. * **Dormitory Costs:** The evidence states that ICU dormitories are generally cheaper than off-campus boarding but does not provide a price comparison between specific dormitory options [1]. * **Future Fee Changes:** The documents reference fees for the Academic Year 2025 but contain no information regarding future fee changes or announcements for subsequent years [3]. * **Missing Data:** The provided text focuses on course registration procedures and general campus life rather than specific financial details for different housing units [2], [4]. Therefore, the evidence is incomplete to answer your question.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence does not provide specific dormitory rent amounts or any announced (or unannounced) future fee changes, so it is not possible to determine which dormitory will have the cheapest rent next academic year [1][2][3].",
+        "gold_source_ids": [
+          "DOC-000262::P000",
+          "DOC-001552::P015",
+          "DOC-000095::P000",
+          "DOC-000079::P001"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001552::P015",
+          "DOC-000079::P001",
+          "DOC-000095::P000",
+          "DOC-000079::P000",
+          "DOC-000262::P000"
+        ],
+        "faithfulness": 0.8888888888888888,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7516722465397475,
+        "semantic_similarity": 0.7566889861589905
+      },
+      {
+        "id": "hr_014",
+        "question": "What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?",
+        "category": "campus_life",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, I cannot answer your question. * **Today's Lunch Menu:** The evidence does not list today's specific menu. It only states that weekly menus can be viewed via the \"食堂マイページ\" (Cafeteria My Page) on the university website [3]. * **Healthiest Option:** The evidence does not provide nutritional information, menu details, or personalized dietary advice to determine the healthiest option for you. It explicitly states that the cafeteria \"is unable to prepare meals tailored to individual needs\" and advises those with food allergies or specific medical conditions to bring their own lunch [1]. Therefore, the evidence is incomplete for answering your specific request.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001375::P014",
+          "DOC-001624::P005",
+          "DOC-001487::P000",
+          "DOC-001402::P007",
+          "DOC-000322::P000"
+        ],
+        "faithfulness": 0.7142857142857143,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.5812520231436341,
+        "semantic_similarity": 0.32500809257453644
+      },
+      {
+        "id": "hr_015",
+        "question": "Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?",
+        "category": "office",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, there is no information regarding Professor Ishibashi's specific approval status or likelihood for your individual course plan. The evidence indicates the following general procedures: * You must consult with an **SL Advisor** (a faculty member) regarding your \"SL Activity Plan\" and obtain their signature for approval before submitting a formal request letter [1]. * Course registration is not considered complete until an **advisor approves your course registration online** [3]. * Academic planning support is available through APS staff or IBS student advisors, but specific faculty approval is not guaranteed by simply asking next week [4]. **Conclusion:** The evidence does not contain information about Professor Ishibashi's availability or approval policy. You must consult an SL Advisor or an academic advisor to determine the next steps for your specific plan.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved documents do not mention Professor Ishibashi or state whether he would approve your individual course plan. They only describe general advisor approval procedures for SL activities and course registration [1][3].",
+        "gold_source_ids": [
+          "DOC-001344::P007",
+          "DOC-000076::P002",
+          "DOC-000130::P004"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001344::P007",
+          "DOC-000130::P004",
+          "DOC-000076::P002",
+          "DOC-000374::P000",
+          "DOC-000079::P000"
+        ],
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8119210531379832,
+        "semantic_similarity": 0.8476842125519327
+      },
+      {
+        "id": "hr_016",
+        "question": "I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?",
+        "category": "graduation",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, there is no confirmation that ICU will change the graduation credit requirement next year. * **Current Requirement:** To obtain a Bachelor of Arts degree, students must earn at least **130 credits** [1]. * **Potential for Change:** The university notes that requirements \"may change without prior notice in the event of educational reform,\" but no specific announcement regarding a change next year was found in the provided documents [2]. * **Actionable Advice:** Because the evidence does not confirm a change, you should **not** plan based on a new number yet. Instead, you should verify the current status by checking the official ehandbook for current students, as graduation requirements for those enrolling before September 2024 differ from those starting in 2025 [1].",
+        "reasoning_text": "",
+        "gold_answer": "ICU’s official Graduation Requirements page states a Bachelor of Arts requires at least 130 credits and notes this applies to students matriculated in the 2025 academic year and thereafter; requirements for students enrolling in or before September 2024 are different. If you will matriculate in 2025 or later, plan based on 130 credits; if you’re in an earlier cohort, follow your cohort’s requirements and check the ehandbook for details [1].",
+        "gold_source_ids": [
+          "DOC-001623::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-001623::P000",
+          "DOC-001586::P002",
+          "DOC-000108::P004",
+          "DOC-000044::P002",
+          "DOC-001597::P001"
+        ],
+        "faithfulness": 0.7142857142857143,
+        "answer_relevancy": 0.8934466075904328,
+        "answer_correctness": 0.5554989654413534,
+        "semantic_similarity": 0.837380477150029
+      },
+      {
+        "id": "hr_017",
+        "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",
+        "category": "calendar",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, specific dates for the Spring 2026 registration period and advisor interview timing are not available. The documents only reference the \"Spring Term in Next Academic Year\" as \"Tentative: Subject to change\" and do not list specific calendar dates for AY2026 [2]. To find the official dates, you should check the **Schedule for Course Registration Spring Term** page on the ICU ehandbook, specifically looking for the section titled \"Spring Term in Next Academic Year\" [1][2]. Key procedural details found in the evidence include: * **Advisor Interview/Timing:** You must visit your advisor on the day of registration or during the Late Registration period to bring your desired timetable [3][4]. * **Approval:** Course registration is not complete until your advisor approves it online [3][4]. * **Website:** Access the Registration Website on or off campus, though the university is not responsible for off-campus access issues [1][4].",
+        "reasoning_text": "",
+        "gold_answer": "Check the eHandbook “Schedule for Course Registration — Spring Term” for the registration period and the eHandbook “Course Registration” page for advisor interview timing: the advisor interview/online approval takes place on Registration Day (and after Late Registration as applicable) [1][5].",
+        "gold_source_ids": [
+          "DOC-000076::P000",
+          "DOC-000039::P000",
+          "DOC-000079::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000076::P000",
+          "DOC-000079::P000",
+          "DOC-000079::P002",
+          "DOC-000076::P001",
+          "DOC-000039::P000"
+        ],
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.5171366747069965,
+        "semantic_similarity": 0.7828324131137006
+      },
+      {
+        "id": "hr_018",
+        "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?",
+        "category": "credits",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, the system **cannot** tell you exactly how many more credits you need to graduate early. The available information indicates the following: * **Credit Transfer is Post-Entry:** Credits are only granted after you complete the transfer procedures **after entering ICU** [2], [3]. * **Equivalence Determination:** The number of credits accepted depends on whether your previous courses are considered equivalent to ICU courses and approved for graduation requirements [1], [2]. * **Grade Requirements:** Accepted courses must generally have a grade of C (70/100) or higher [1], [2], though reciprocal credits may allow D (60/100) [4]. * **Maximum Limits:** There are caps on transferable credits (e.g., up to 60 credits for students with >1 year study or an associate degree) [1], [4]. Because the final count depends on the specific evaluation of your transcript by ICU's Educational Affairs Group regarding course equivalence and grade thresholds, an exact remaining credit count cannot be determined prior to this evaluation.",
+        "reasoning_text": "",
+        "gold_answer": "No. Transfer credits are only granted after you complete ICU’s post-entry credit-transfer procedures, so the institution/system cannot determine your exact remaining credits now; the policy also only states maximum transferable amounts (e.g., up to 60 credits) rather than an individual calculation [1][2].",
+        "gold_source_ids": [
+          "DOC-001643::P000",
+          "DOC-000059::P000"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000059::P000",
+          "DOC-001643::P000",
+          "DOC-001654::P061",
+          "DOC-000063::P000",
+          "DOC-001654::P039"
+        ],
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.6855589142609555,
+        "semantic_similarity": 0.8672356570438222
+      },
+      {
+        "id": "hr_019",
+        "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+        "category": "office",
+        "is_answerable": true,
+        "answer_mode": "local_transformers",
+        "answer_text": "履修登録に関する連絡先と公式ページは以下の通りです。 **1. 教務グループ（窓口・住所・電話）** * **窓口**: 本部棟 1 階 [1] * **住所**: 〒181-8585 東京都三鷹市大沢 3-10-2 国際基督教大学 学務部教務グループ [1] * **電話**: 0422-33-3054 [1] * **メール**: gakuseki@icu.ac.jp（用紙請求用）[1] **2. 関連する公式ページ** * **e-handbook（よくある質問・履修登録詳細）**: https://sites.google.com/icu.ac.jp/icu-ehandbook/ [1][3] * **Course Offerings（定員確認・予備登録対象科目）**: e-handbook 内の「Course Offerings」項目 [4] * **Registration Website（登録・変更・予備登録操作）**: e-handbook 内の「Registration Website」項目 [2][4] **補足情報** * 用紙配布は登録日の 1 週間前から教務グループ窓口で行われます [3]。 * 登録変更は登録変更期間終了後にはできません [2]。 * 予備登録は 11 月 10 日（金）9:00〜11 月 14 日（火）15:30 の期間中に Registration Website から行います [4]。",
+        "reasoning_text": "",
+        "gold_answer": "教務グループ（本部棟1階）の連絡先・公式ページは次のとおりです。住所：〒181-8585 東京都三鷹市大沢3-10-2 国際基督教大学 学務部教務グループ。電話：0422-33-3054。メール：gakuseki@icu.ac.jp。[1] 履修登録に関する公式案内はehandbookの「履修登録」ページや教務グループからの重要なお知らせ（履修登録・Registration Websiteに関する案内）をご確認ください。[3][2]",
+        "gold_source_ids": [
+          "DOC-000117::P002",
+          "DOC-000166::P001",
+          "DOC-000128::P005"
+        ],
+        "retrieved_passage_ids": [
+          "DOC-000117::P002",
+          "DOC-000128::P005",
+          "DOC-000166::P001",
+          "DOC-000129::P000",
+          "DOC-000132::P000"
+        ],
+        "faithfulness": 0.7,
+        "answer_relevancy": 0.9311596697331442,
+        "answer_correctness": 0.5691808480711464,
+        "semantic_similarity": 0.776723392284586
+      },
+      {
+        "id": "hr_020",
+        "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",
+        "category": "policy",
+        "is_answerable": false,
+        "answer_mode": "local_transformers",
+        "answer_text": "Based on the provided evidence, there is no information regarding a specific deadline, nor is there a comparison between a chatbot answer and the ICU Portal announcement. The evidence only states that you should check the ICU Portal announcements once a day [1], [2]. If you encounter conflicting information about a deadline: 1. **Trust the ICU Portal announcements** as the primary source for official notices [1], [2]. 2. **Next steps**: Check the \"ALL\" or \"MORE\" button in the announcement link box on the ICU Portal to search for the specific announcement [1], [2]. If the information is not found there, the evidence does not provide further instructions on how to resolve the discrepancy.",
+        "reasoning_text": "",
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "gold_source_ids": [],
+        "retrieved_passage_ids": [
+          "DOC-001409::P001",
+          "DOC-001436::P001",
+          "DOC-001409::P002",
+          "DOC-001436::P002",
+          "DOC-001436::P000"
+        ],
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.912834291334813,
+        "answer_correctness": 0.27943203384961657,
+        "semantic_similarity": 0.3677281353984662
+      }
+    ]
+  }
+]

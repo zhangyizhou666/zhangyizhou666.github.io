@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evaluation Logic — ICU Wiki Research</title>
+    <meta name="description" content="Final-round evaluation structure for ICU Wiki." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        
+      </nav>
+    </header>
+    <main>
+    <section class="page-title compact-title">
+      <p class="eyebrow">Evaluation</p>
+      <h1>Final-round evaluation structure</h1>
+      <p>The final thesis evaluation will freeze the deployed retrieval system, rerun a small controlled model matrix, and report both RAGAS diagnostics and human-facing review metrics.</p>
+    </section>
+
+    <section class="section no-top">
+      <div class="note-grid">
+        <article><span>Frozen system</span><strong>Render BGE-M3 index</strong><p>The final run should match the deployed PostgreSQL/pgvector retrieval system, not the older local Qwen embedding index.</p></article>
+        <article><span>Controlled comparison</span><strong>Same evidence and prompt</strong><p>Every model receives the same cached Top-5 evidence and the same final answer instruction.</p></article>
+        <article><span>Main claim boundary</span><strong>Fixed-context generation</strong><p>The model sweep compares grounded answer synthesis from fixed evidence. Retrieval quality is diagnosed separately.</p></article>
+      </div>
+      <p><a class="text-link" href="/icu-wiki/evaluation/ragas/">Open the detailed RAGAS method page</a></p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Final matrix</p>
+        <h2>What we will rerun</h2>
+      </div>
+      <p>The final round should stay small. We freeze corpus, passage policy, retrieval cache, prompt, Top-K, evidence length, judge model, and scoring code before comparing model size and thinking mode.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Cell</th><th>Model</th><th>Mode</th><th>Purpose</th></tr></thead><tbody><tr><td>1</td><td><code>Qwen3.5 0.8B</code></td><td>non-thinking</td><td>Lowest-cost baseline.</td></tr><tr><td>2</td><td><code>Qwen3.5 2B</code></td><td>non-thinking</td><td>Middle-size baseline.</td></tr><tr><td>3</td><td><code>Qwen3.5 4B</code></td><td>non-thinking</td><td>Larger small-model baseline.</td></tr><tr><td>4</td><td><code>Qwen3.5 0.8B</code></td><td>thinking</td><td>Controlled small-model thinking comparison.</td></tr><tr><td>5</td><td><code>Qwen3.5 4B</code></td><td>thinking</td><td>Controlled larger-model thinking comparison.</td></tr><tr><td>6</td><td><code>Gemma 4 E2B</code></td><td>non-thinking</td><td>Gemma small-model comparison.</td></tr><tr><td>7</td><td><code>Gemma 4 E4B</code></td><td>non-thinking</td><td>Gemma 4B-class comparison.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Protocol</p>
+        <h2>Run order</h2>
+      </div>
+      <p>This is the order we should follow before writing final claims. It prevents the experiment from mixing corpus changes, retrieval changes, prompt changes, and model changes in the same result table.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Step</th><th>Output artifact</th><th>Reason</th></tr></thead><tbody><tr><td>1. Freeze retrieval</td><td><code>retrieval_cache.jsonl</code></td><td>Every model receives the same Top-5 evidence.</td></tr><tr><td>2. Audit benchmark</td><td><code>questions_with_gold.jsonl</code></td><td>Answerability and reference answers must match the frozen evidence.</td></tr><tr><td>3. Run model matrix</td><td><code>model_outputs/*.jsonl</code></td><td>Only model size and thinking mode should change.</td></tr><tr><td>4. Score automatically</td><td><code>scores/*.jsonl</code></td><td>RAGAS gives comparable diagnostic metrics.</td></tr><tr><td>5. Review manually</td><td><code>human_review.csv</code></td><td>Human-facing quality and risk are scored directly.</td></tr><tr><td>6. Tag failures</td><td><code>failure_tags.jsonl</code></td><td>Failures are attributed to retrieval, evidence, generation, citation, or format.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">RAGAS-native</p>
+        <h2>Metrics we ask RAGAS to compute</h2>
+      </div>
+      <p>These metrics are produced by the RAGAS framework. They remain diagnostic signals, not the full definition of user-facing answer quality.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Metric</th><th>Origin</th><th>Main inputs</th><th>Calculation logic in plain language</th></tr></thead><tbody><tr><td><code>faithfulness</code></td><td>RAGAS</td><td>question, generated answer, retrieved contexts</td><td>The evaluator decomposes the generated answer into factual claims and checks whether each claim is supported by the retrieved contexts. Higher means the answer is more grounded in evidence.</td></tr><tr><td><code>answer_relevancy</code></td><td>RAGAS</td><td>question, generated answer</td><td>The evaluator checks whether the answer actually responds to the user question. RAGAS commonly does this by generating question-like probes from the answer and comparing them with the original question.</td></tr><tr><td><code>answer_correctness</code></td><td>RAGAS</td><td>question, generated answer, gold/reference answer</td><td>The evaluator compares the generated answer against the reference answer. It is intended to capture factual overlap and factual disagreement, not only wording similarity.</td></tr><tr><td><code>semantic_similarity</code> / <code>answer_similarity</code></td><td>RAGAS</td><td>generated answer, gold/reference answer, embedding model</td><td>The evaluator embeds the generated answer and reference answer, then computes semantic closeness in embedding space. This is wording-insensitive but can miss factual details.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Human review</p>
+        <h2>Human-facing rubric</h2>
+      </div>
+      <p>The thesis should use these metrics beside RAGAS because the same RAGAS score can hide differences in readability, usefulness, citation support, and unsafe over-answering.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Metric</th><th>Scale</th><th>Higher means</th><th>Why it is needed</th></tr></thead><tbody><tr><td><code>answer_acceptance</code></td><td>0 / 1 / 2</td><td>The answer is safer and more useful to show to a student.</td><td>This is the north-star review signal for student-facing quality.</td></tr><tr><td><code>readability</code></td><td>0 / 1 / 2</td><td>The answer is clearer, more concise, and easier to follow.</td><td>RAGAS can miss verbosity, repetition, awkward language, or mixed-language drift.</td></tr><tr><td><code>citation_usefulness</code></td><td>0 / 1 / 2</td><td>The citations support the key claims clearly.</td><td>A cited answer is only useful if the citation actually points to supporting evidence.</td></tr><tr><td><code>over_answering_risk</code></td><td>0 / 1 / 2</td><td>Lower is better.</td><td>This captures cases where the evidence is insufficient but the model still gives a specific answer.</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Reference data</p>
+        <h2>Gold answers and answerability</h2>
+      </div>
+      <div>
+        <p>After the final retrieval cache is frozen, the gold answers and answerability labels must be regenerated or audited against that exact Top-5 evidence.</p>
+        <p><code>gold_answer</code> is consumed by reference-based RAGAS metrics. <code>is_answerable</code> is project metadata for interpreting evidence sufficiency; it is not a native RAGAS metric.</p>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Status</p>
+        <h2>How to treat earlier results</h2>
+      </div>
+      <div>
+        <p>The May 1 thinking/non-thinking run and earlier Gemma/Qwen runs are pilot evidence. They explain why we need a controlled final round, but they should not be used as the final headline result.</p>
+        <p>Final claims should come from the frozen retrieval cache, controlled prompt, small Qwen matrix, RAGAS scores, human-facing rubric, latency, output length, and failure tags.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Code references</p>
+        <h2>Where this is implemented</h2>
+      </div>
+      <p><code>code/eval/ragas_config.py</code>: resolves RAGAS metric objects and evaluator models.</p>
+      <p><code>code/eval/run_ragas_metrics.py</code>: runs RAGAS and writes detailed scores plus summary JSON.</p>
+      <p><code>code/eval/generate_gold_answers.py</code>: generates <code>is_answerable</code> and <code>gold_answer</code>.</p>
+    </section>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-12.</span>
+    </footer>
+  </body>
+</html>

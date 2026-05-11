@@ -1,0 +1,420 @@
+[
+  {
+    "id": "h2_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "category": "language",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "Your JLP level is decided by the placement test. Additional Japanese proficiency evaluation may also be conducted during the first class sessions, so your course level placement may change based on that in-class assessment. For official program and course information, check the ICU JLP page and the JLP website listed in the retrieved notice; the notice also gives the JLP Office contact information.",
+    "gold_source_ids": [
+      "PDF-efa8228506c28aee5f::structural_fallback_v1::P0001",
+      "DOC-000935::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      1,
+      2
+    ],
+    "teacher_notes": "The evidence directly explains placement basis, possible in-class reassessment, and official JLP information sources.",
+    "gold_notes": "The evidence directly explains placement basis, possible in-class reassessment, and official JLP information sources.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "category": "registration",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "Yes, if you missed Registration Day, you must use Late Registration, which is accepted only during the Late Registration/Registration Change Period. The late-registration procedure is the same as Registration Day except that a 3,000 yen late fee is required; before the advisor interview you must pay at the Educational Affairs Group because the advisor cannot approve online registration until payment is made. If you miss the deadline you are treated as non-registered, and no registration changes are approved after the Registration Change Period ends.",
+    "gold_source_ids": [
+      "DOC-000039::structural_fallback_v1::P0004",
+      "DOC-000097::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      2,
+      4
+    ],
+    "teacher_notes": "The evidence directly covers late registration availability, payment procedure, deadline consequences, and no changes after the change period.",
+    "gold_notes": "The evidence directly covers late registration availability, payment procedure, deadline consequences, and no changes after the change period.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "category": "registration",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "Before trying to withdraw because of workload, check that ICU's retrieved Registration Withdrawal rule is for withdrawing all course registrations for the ongoing term; partial withdrawal from just one course is not possible. Permission may be given only when a student cannot continue due to illness or another unavoidable reason recognized by the University, and the application must be submitted to Educational Affairs Group with supporting documents, such as a medical certificate, by one month before the last day of classes. If approved, all registered courses for the term receive W and are not included in GPA; if you simply stop attending without the necessary procedures, the FAQ says you may receive an F.",
+    "gold_source_ids": [
+      "DOC-000040::structural_fallback_v1::P0000",
+      "DOC-000097::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      1,
+      4
+    ],
+    "teacher_notes": "The evidence directly states the scope, approval basis, documents, deadline, W notation, and risk of an F if procedures are not followed.",
+    "gold_notes": "The evidence directly states the scope, approval basis, documents, deadline, W notation, and risk of an F if procedures are not followed.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_004",
+    "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+    "category": "major",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "The evidence gives general credit-transfer directions, but it is not enough to determine whether a specific study-abroad course will satisfy your personal major requirements. For credits from a host institution, check ICU's Credit Transfer information after receiving grades and complete the credit-transfer application; the study-abroad brochure also says to transfer credits after returning to ICU. Some partner-university courses may count toward ICU graduation requirements only through a review process, so use the official credit-transfer and partner-course pages for confirmation.",
+    "gold_source_ids": [
+      "DOC-001415::structural_fallback_v1::P0001",
+      "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0011",
+      "DOC-001627::structural_fallback_v1::P0008"
+    ],
+    "gold_source_ranks": [
+      1,
+      2,
+      4
+    ],
+    "teacher_notes": "The evidence supports general credit-transfer and review-process guidance, but not an individualized major-requirement determination.",
+    "gold_notes": "The evidence supports general credit-transfer and review-process guidance, but not an individualized major-requirement determination.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_005",
+    "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+    "category": "graduation",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "The retrieved evidence identifies the official Senior Thesis course as STH391 in the syllabus/course records and describes it as required in the senior year, prepared under an advisor over one year. The evidence does not include the official thesis deadline schedule or exact submission dates, so those deadlines cannot be answered from this retrieval alone. The thesis-related milestones visible in the evidence include choosing a major-related topic, selecting methodology, collecting or assembling data/texts, analyzing them, writing the thesis, and presenting the research.",
+    "gold_source_ids": [
+      "COURSE-2026-Spring-11001-STH391::structural_fallback_v1::P0000",
+      "COURSE-2026-Autumn-21001-STH391::structural_fallback_v1::P0001",
+      "COURSE-2026-Spring-11001-STH391::structural_fallback_v1::P0005"
+    ],
+    "gold_source_ranks": [
+      1,
+      2,
+      3
+    ],
+    "teacher_notes": "The evidence supports identifying STH391 and its thesis work, but it lacks the official deadline schedule.",
+    "gold_notes": "The evidence supports identifying STH391 and its thesis work, but it lacks the official deadline schedule.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_006",
+    "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",
+    "category": "student_status",
+    "answerability_label": "insufficient_evidence",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer the leave-of-absence return procedure. It contains unrelated course records and course-level accommodation/contact information, but no official rule or office information about returning from leave and planning courses.",
+    "gold_source_ids": [],
+    "gold_source_ranks": [],
+    "teacher_notes": "No retrieved passage directly addresses returning from leave of absence or the relevant procedure/office.",
+    "gold_notes": "No retrieved passage directly addresses returning from leave of absence or the relevant procedure/office.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_007",
+    "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",
+    "category": "student_support",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "The evidence points you to ICU's Campus Life/Student Support pages, where Student Support includes Counseling, Human Rights Consultation and Health Services, the Counseling Center, and Learning Accessibility Services. However, the retrieved passages do not provide privacy or confidentiality rules for counseling, so those details cannot be answered from this evidence alone; check the official Counseling Center or student-support page for that information.",
+    "gold_source_ids": [
+      "DOC-001576::structural_fallback_v1::P0000",
+      "DOC-001736::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      2,
+      3
+    ],
+    "teacher_notes": "The evidence identifies official student-support/counseling pages but does not answer the privacy concern.",
+    "gold_notes": "The evidence identifies official student-support/counseling pages but does not answer the privacy concern.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_008",
+    "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",
+    "category": "student_support",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "Start with Learning Accessibility Services (LAS): students first meet with an LAS staff member to discuss their needs, then submit necessary documents such as a medical certificate or counselor/specialist letter, a Request for Academic Accommodations Form signed by the advisor, and prior support documents where appropriate. LAS helps develop an accommodation plan and delivers accommodation requests to professors; examples include extended exam time and a separate exam room. New students requiring academic accommodations should complete the procedure by the last day of Week 4 of each term, and the official pages to look for are Learning Accessibility Services / For Students and the LAS leaflet.",
+    "gold_source_ids": [
+      "PDF-17b531f94fe26152f7::structural_fallback_v1::P0001",
+      "DOC-000272::structural_fallback_v1::P0000",
+      "DOC-000292::structural_fallback_v1::P0001"
+    ],
+    "gold_source_ranks": [
+      1,
+      3,
+      4
+    ],
+    "teacher_notes": "The evidence directly gives LAS procedures, exam-accommodation examples, timing, and official LAS pages.",
+    "gold_notes": "The evidence directly gives LAS procedures, exam-accommodation examples, timing, and official LAS pages.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_009",
+    "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?",
+    "category": "it",
+    "answerability_label": "insufficient_evidence",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer IT account or service changes after graduating from undergraduate school and continuing to ICU graduate school. It contains career/path, contact, and graduate student support pages but no IT-account policy or service-transition information.",
+    "gold_source_ids": [],
+    "gold_source_ranks": [],
+    "teacher_notes": "No retrieved passage directly discusses ICU IT accounts or services after undergraduate graduation.",
+    "gold_notes": "No retrieved passage directly discusses ICU IT accounts or services after undergraduate graduation.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_010",
+    "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？",
+    "category": "language",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "JLPの公式情報は、ICUの「日本語教育プログラム」ページと、そこに案内されているシラバス・JLP詳細ページで確認できます。レベル分けはプレースメントテストの結果に基づき、学生は＜外国語としての日本語＞または＜第1言語／継承語としての日本語＞のトラックで学びます。開講コースは学期ごとに異なるためシラバスで確認し、大学院生の場合は春学期希望者は3月、秋・冬学期希望者は8月のプレースメントテストが必要で、JLP単位は修士・博士の修了要件には算入されません。",
+    "gold_source_ids": [
+      "DOC-001756::structural_fallback_v1::P0000",
+      "PDF-68a76f397546e21529::structural_fallback_v1::P0043"
+    ],
+    "gold_source_ranks": [
+      1,
+      5
+    ],
+    "teacher_notes": "The evidence directly explains JLP placement, tracks, official pages, syllabus checking, and graduate-student placement-test notes.",
+    "gold_notes": "The evidence directly explains JLP placement, tracks, official pages, syllabus checking, and graduate-student placement-test notes.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_011",
+    "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",
+    "category": "campus_life",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "For Chapel Hour, check the Religious Center's Chapel Hour page; it states that Chapel Hour is held during the term on Tuesdays from 1:20 p.m. to 1:50 p.m. in the University Chapel and is open to everyone. For how Chapel Hour or Christianity Week fits into the academic timetable, check the ehandbook Class Schedule; it notes Chapel Hour on Tuesdays and that the Saturday of Christianity Week follows the regular class schedule. The retrieved evidence says Christianity Week is held in May under a special timetable, but it does not include the detailed Christianity Week event schedule.",
+    "gold_source_ids": [
+      "DOC-001488::structural_fallback_v1::P0000",
+      "DOC-000081::structural_fallback_v1::P0000",
+      "PDF-1e027f360ece17e0a5::structural_fallback_v1::P0013"
+    ],
+    "gold_source_ranks": [
+      1,
+      4,
+      2
+    ],
+    "teacher_notes": "The evidence gives Chapel Hour timing and class-schedule references, but not the full Christianity Week event schedule.",
+    "gold_notes": "The evidence gives Chapel Hour timing and class-schedule references, but not the full Christianity Week event schedule.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_012",
+    "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",
+    "category": "calendar",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "For Spring 2026, check the official AY2026 Spring Term Registration – Course Registration Procedures page. It gives the regular registration schedule: online input April 9 (Thu) 9:00 to April 10 (Fri) 14:30; advisor interviews April 9 10:00–16:00 and April 10 9:00–15:30; advisor online approval April 9 10:00 to April 10 16:30. The same page also gives Late Registration dates and says procedure details are in the ehandbook under Course Registration > 6. Course Registration; newly enrolled students from AY2026 Autumn Term should check Campus Pathfinder in Moodle instead of that announcement.",
+    "gold_source_ids": [
+      "DOC-000751::structural_fallback_v1::P0000",
+      "DOC-000751::structural_fallback_v1::P0001"
+    ],
+    "gold_source_ranks": [
+      1,
+      2
+    ],
+    "teacher_notes": "The evidence directly provides the Spring 2026 registration, advisor interview, approval, and late-registration reference information.",
+    "gold_notes": "The evidence directly provides the Spring 2026 registration, advisor interview, approval, and late-registration reference information.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_013",
+    "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?",
+    "category": "credits",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "The retrieved evidence cannot calculate exactly how many more credits you personally need or whether you can graduate early. It only gives general credit-transfer rules: transfer credits are granted only after required procedures after entering ICU, and how many and which credits are transferable will not be confirmed until then. The number of credits is determined after course evaluation and approval by the Dean of the College of Liberal Arts, with category limits such as up to 60 credits for transfer students who spent more than one year at other universities.",
+    "gold_source_ids": [
+      "DOC-001643::structural_fallback_v1::P0000",
+      "DOC-000059::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      2,
+      3
+    ],
+    "teacher_notes": "The evidence supports general transfer-credit confirmation rules, but not the student's personal remaining-credit or early-graduation calculation.",
+    "gold_notes": "The evidence supports general transfer-credit confirmation rules, but not the student's personal remaining-credit or early-graduation calculation.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_014",
+    "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+    "category": "office",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "履修登録に関する公式ページとしては、ehandbookの「履修登録」と、その参考リンクにある「各学期の登録日程」「履修登録の操作手順」を確認できます。登録変更後の最新状況はRegistration WebsiteのRegistration Resultで確認するとされています。Retrieved evidenceには教育事務グループの電話番号やメールアドレスは載っていないため、連絡先そのものはこの証拠だけでは回答できませんが、Late Registrationの支払いや登録延滞料免除の申し出は教務グループ窓口に関係すると示されています。",
+    "gold_source_ids": [
+      "DOC-000166::structural_fallback_v1::P0002",
+      "DOC-000166::structural_fallback_v1::P0001"
+    ],
+    "gold_source_ranks": [
+      1,
+      5
+    ],
+    "teacher_notes": "The evidence identifies relevant ehandbook pages and registration-result checks, but it does not provide a phone number or email contact.",
+    "gold_notes": "The evidence identifies relevant ehandbook pages and registration-result checks, but it does not provide a phone number or email contact.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_015",
+    "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",
+    "category": "policy",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "The retrieved evidence does not explicitly state a rule comparing chatbot answers with ICU Portal announcements. It does show that ICU Portal announcements should be checked once a day and that Official Announcements and Important Announcements may be distributed by email or push notification, with the Portal providing ALL/MORE search for announcements. If there is a deadline conflict, use the ICU Portal announcement to verify the current official deadline and search the Portal notice; the evidence does not identify a specific office to contact for that deadline.",
+    "gold_source_ids": [
+      "DOC-001409::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      5
+    ],
+    "teacher_notes": "The evidence supports checking Portal notices but lacks an explicit chatbot-versus-Portal policy or deadline-specific contact.",
+    "gold_notes": "The evidence supports checking Portal notices but lacks an explicit chatbot-versus-Portal policy or deadline-specific contact.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_016",
+    "question": "I want to take Logic Programming in Autumn 2026. Who teaches it, when is it scheduled, and where should I check the official course information?",
+    "category": "course",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "Logic Programming is ISC321, registration no. 21219, offered in Autumn 2026. It is taught by REISEWITZ, TAMMO M. and scheduled for 5/TU and 6/TU; the course record lists language E, 2 credits, and face-to-face mode. Check the official ICU course/syllabus entry for ISC321/registration no. 21219 for details.",
+    "gold_source_ids": [
+      "COURSE-2026-Autumn-21219-ISC321::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      1
+    ],
+    "teacher_notes": "The evidence directly provides instructor, schedule, course number, registration number, and course-record details.",
+    "gold_notes": "The evidence directly provides instructor, schedule, course number, registration number, and course-record details.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_017",
+    "question": "I remember there is a class called Statistical Information Literacy. How is the grade evaluated, and what kind of work does the syllabus seem to require?",
+    "category": "course",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "The retrieved evidence shows two 2026 offerings with different grading policies. Autumn 2026 evaluates active participation (15%), application workshops (35%), and an end-of-term data analysis project (50%); Spring 2026 evaluates exam (20%), report (40%), daily quiz (20%), and class participation (20%). The syllabus work includes learning basic data analysis for social sciences, statistics, sampling and data processing methods, using computers/statistical software, theoretical study, empirical analysis, and guided computer-based data analysis.",
+    "gold_source_ids": [
+      "COURSE-2026-Autumn-20314-GES039::structural_fallback_v1::P0009",
+      "COURSE-2026-Spring-10316-GES039::structural_fallback_v1::P0009",
+      "COURSE-2026-Autumn-20314-GES039::structural_fallback_v1::P0004",
+      "COURSE-2026-Autumn-20314-GES039::structural_fallback_v1::P0006",
+      "COURSE-2026-Spring-10316-GES039::structural_fallback_v1::P0001"
+    ],
+    "gold_source_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "teacher_notes": "The evidence directly gives grading policies for both offerings and describes the required statistical/data-analysis work.",
+    "gold_notes": "The evidence directly gives grading policies for both offerings and describes the required statistical/data-analysis work.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_018",
+    "question": "MIURA先生って、どの日本語の授業を担当していますか？レベルも少し知りたいです。",
+    "category": "course",
+    "answerability_label": "partially_answerable",
+    "is_answerable": true,
+    "gold_answer": "検索結果でMIURA先生が担当する日本語科目として直接確認できるのは、MIURA, Ayano先生の「Special Japanese Kanji 1 / 日本語特別教育 漢字1」（JLP071、2026年度冬学期、4/M、1単位）です。レベルについては、科目名の「Kanji 1 / 漢字1」以上の詳しい説明は提示された証拠にはありません。なお、MIURA, Ayumi先生は「Middle English / 中英語」を担当しており、日本語科目ではありません。",
+    "gold_source_ids": [
+      "COURSE-2026-Winter-30210-JLP071::structural_fallback_v1::P0000",
+      "COURSE-2026-Spring-12117-QELE507::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      4,
+      1
+    ],
+    "teacher_notes": "The evidence identifies one Japanese course taught by MIURA Ayano and one non-Japanese MIURA course, but does not provide detailed level information beyond the course title.",
+    "gold_notes": "The evidence identifies one Japanese course taught by MIURA Ayano and one non-Japanese MIURA course, but does not provide detailed level information beyond the course title.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_019",
+    "question": "履修登録サイトで科目を選択したのに登録が完了したか不安です。どの操作や確認をすればよいですか？",
+    "category": "registration",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "科目を選択しただけでは、履修登録は完了したとはみなされません。オンラインで科目を入力した後、履修登録日の定められた時間までにアドヴァイザーと面談し、アドヴァイザーからオンライン承認を得る必要があります。予備登録で当選した科目も、後日の履修登録が必要なので、各学期の登録日程と履修登録の操作手順を公式ページで確認してください。",
+    "gold_source_ids": [
+      "DOC-000161::structural_fallback_v1::P0000",
+      "DOC-000166::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      4,
+      2
+    ],
+    "teacher_notes": "The evidence directly explains that online input alone is not complete and identifies the schedule/procedure pages to check.",
+    "gold_notes": "The evidence directly explains that online input alone is not complete and identifies the schedule/procedure pages to check.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  },
+  {
+    "id": "h2_020",
+    "question": "I need to buy textbooks for Spring 2026 courses. Where should I check the official textbook purchase information, and what details should I not expect the chatbot to know?",
+    "category": "course_materials",
+    "answerability_label": "fully_answerable",
+    "is_answerable": true,
+    "gold_answer": "For Spring AY2026 textbooks, check the official Spring AY2026 Textbook Purchase notice, especially the Online Textbook Purchase Guide and List of Textbooks linked there. The notice says textbooks are on sale April 6–April 20, purchase is through the 2D code or URL in the guidance document, and pickup dates/times/locations are in that guidance document. Do not expect the chatbot answer alone to know or replace those specific pickup details or the official textbook list; use the guidance document/list and contact the OnSMaRT desk at the listed email if needed.",
+    "gold_source_ids": [
+      "DOC-000841::structural_fallback_v1::P0000",
+      "DOC-001135::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      2,
+      4
+    ],
+    "teacher_notes": "The evidence directly gives the textbook-purchase notice, links, sale period, pickup-detail source, and contact.",
+    "gold_notes": "The evidence directly gives the textbook-purchase notice, links, sale period, pickup-detail source, and contact.",
+    "gold_generation_model": "gpt-pro-external-manual",
+    "gold_generation_retrieval_backend": "postgres-hybrid-local-embedding",
+    "gold_validation_errors": []
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "label": "Qwen3.5 0.8B thinking mode",
+    "slug": "Qwen_Qwen3.5-0.8B-thinking",
+    "source_file": "data/eval/model_outputs_hard_realistic_20_thinking/Qwen_Qwen3.5-0.8B.jsonl",
+    "samples": [
+      {
+        "id": "hr_001",
+        "category": "language",
+        "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+        "is_answerable": true,
+        "gold_answer": "Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].",
+        "answer_text": "[1] The level is determined by the placement test which places students into the most appropriate courses by their levels of Japanese proficiency. [2] The official information can be found at https://www.icu.ac.jp/en/admissions/undergraduate/faq (Evidence [1]).",
+        "answer_model": "Qwen/Qwen3.5-0.8B",
+        "answer_provider": "transformers",
+        "answer_mode": "local_transformers_thinking",
+        "thinking_enabled": true,
+        "answer_latency_seconds": 16.016,
+        "reasoning_excerpt": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Answer an ICU institutional question using *only* the provided evidence.\n    *   **Constraint 1:** Keep the final answer concise.\n    *   **Constraint 2:** Cite evidence using [1], [2], etc.\n    *   **Constraint 3:** If evidence is incomplete, say what is missing.\n    *   **Constraint 4:** Do not restate the evidence or the instructions in the final answer.\n    *   **Question:** A new student plans to take JLP (Japanese Language Program), but doesn't know the level. How is the level decided, and where should I check official information?\n    *   **Input:** 4 pieces of evidence (Evidence: [1], [2], [3], [4]).\n    *   **Constraint Check:** The user provided 4 evidence blocks, but I need to evaluate the content of each to determine the answer.\n\n2.  **Evaluate the Evidence:**\n    *   **Evidence [1]:** Mentions JLP placement te",
+        "retrieval_backend": "local-hybrid-rrf",
+        "retrieved_passage_ids": [
+          "DOC-001633::P014",
+          "DOC-001393::P004",
+          "DOC-001611::P000",
+          "DOC-001633::P015",
+          "DOC-001612::P000"
+        ]
+      },
+      {
+        "id": "hr_002",
+        "category": "registration",
+        "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+        "is_answerable": false,
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "answer_text": "[1] Late Registration will be accepted during Late Registration/Registration Change Period only. [2] You must complete the registration during the registration change period. [3] Late Registration is for those students who could not register on the Registration Day. [4] Course registration procedure must be completed by a certain deadline. The evidence indicates that if you miss the registration day, you cannot register or change your courses outside the designated period. You must complete the registration during the registration change period. After the registration change period, the registration is not acceptable for any reason. Those who do not complete the registration during the designated period must take a leave of absence or withdraw from the university. Therefore, you can register or change your courses during the registration change period. However, if registration is not possible on the registration day, you must apply for a leave of absence or withdraw from the university. Answered based on [1], [2], [3], and [4].",
+        "answer_model": "Qwen/Qwen3.5-0.8B",
+        "answer_provider": "transformers",
+        "answer_mode": "local_transformers_thinking",
+        "thinking_enabled": true,
+        "answer_latency_seconds": 19.787,
+        "reasoning_excerpt": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only the evidence*.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If the evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Input Question: \"I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?\"\n    *   Input Evidence: 4 evidence items (from the provided text).\n    *   Output Constraint: I need to check the evidence to see if it addresses the question.\n\n2.  **Analyze the Evidence:**\n    *   [1] Discusses course registration, PE courses, pre-registration lottery, late registration fees (3,000 yen), ",
+        "retrieval_backend": "local-hybrid-rrf",
+        "retrieved_passage_ids": [
+          "DOC-000039::P007",
+          "DOC-000108::P013",
+          "DOC-000039::P008",
+          "DOC-000108::P012",
+          "DOC-000098::P002"
+        ]
+      },
+      {
+        "id": "hr_003",
+        "category": "registration",
+        "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+        "is_answerable": false,
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "answer_text": "Evidence [1] states that students should check the Graduation Requirements Checklist before cancelling registration to ensure graduation requirements are met [1]. Evidence [2] explicitly states that after registration change, students must complete the registration during the designated period [2] to avoid late registration penalties. Evidence [3] clarifies that registration withdrawal applies to the entire ongoing term and requires documentation of illness or unavoidable reasons [3]. To determine the specific rules for withdrawal, the user should check Evidence [1] regarding graduation requirements and Evidence [2] regarding the registration change period to ensure they meet deadlines before making the decision [3].",
+        "answer_model": "Qwen/Qwen3.5-0.8B",
+        "answer_provider": "transformers",
+        "answer_mode": "local_transformers_thinking",
+        "thinking_enabled": true,
+        "answer_latency_seconds": 17.407,
+        "reasoning_excerpt": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If the evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Question: If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?\n    *   Evidence Provided: 4 pieces of evidence (titles, sources, content snippets).\n\n2.  **Analyze the Evidence:**\n    *   **Evidence [1] (Handbook - November 28, 2023):** Mentions \"Registration Change\" and \"Senior Thesis\". It mentions checking graduation requirements checklist before cancelling. It mentions the deadline for Senior Thesis s",
+        "retrieval_backend": "local-hybrid-rrf",
+        "retrieved_passage_ids": [
+          "DOC-000108::P004",
+          "DOC-000108::P013",
+          "DOC-000040::P000",
+          "DOC-000098::P002",
+          "DOC-000097::P013"
+        ]
+      },
+      {
+        "id": "hr_004",
+        "category": "major",
+        "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+        "is_answerable": false,
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "answer_text": "You should check the requirements on the website of your study abroad destination [1] to confirm whether courses or credits will count toward your ICU requirements. Additionally, if you are unsure, please contact the university where you will be studying abroad [1]. For specific course requirements, you must submit the original or certified true copies of such a diploma or completion certificate to confirm your admission [2].",
+        "answer_model": "Qwen/Qwen3.5-0.8B",
+        "answer_provider": "transformers",
+        "answer_mode": "local_transformers_thinking",
+        "thinking_enabled": true,
+        "answer_latency_seconds": 15.928,
+        "reasoning_excerpt": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using *only* the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, say what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Question: \"I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?\"\n\n2.  **Analyze the Evidence:**\n    *   [1] Title: ICU Health Care Office for Students - 留学 Study Abroad. Language: mixed. Content mentions health checkups, vaccinations, tuberculosis screenings are often required. If unsure, contact the university. In the US, completion of required vaccinations may ",
+        "retrieval_backend": "local-hybrid-rrf",
+        "retrieved_passage_ids": [
+          "DOC-001381::P010",
+          "DOC-001586::P002",
+          "DOC-001609::P000",
+          "DOC-000060::P002",
+          "DOC-000061::P001"
+        ]
+      },
+      {
+        "id": "hr_005",
+        "category": "graduation",
+        "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+        "is_answerable": false,
+        "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+        "answer_text": "You can find the official schedule at the ICU Portal ([1]). You should expect to check the submission deadline for the senior thesis, which is before 4:00 p.m. on the deadline date under any circumstances ([1]). Additionally, the deadline is critical because if you cannot meet the deadline, you will not be able to graduate as expected ([1]). The specific submission deadline is listed in the Senior Thesis Guidelines ([2]).",
+        "answer_model": "Qwen/Qwen3.5-0.8B",
+        "answer_provider": "transformers",
+        "answer_mode": "local_transformers_thinking",
+        "thinking_enabled": true,
+        "answer_latency_seconds": 16.117,
+        "reasoning_excerpt": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Answer an ICU institutional question using only the provided evidence.\n    *   Constraint 1: Keep the final answer concise.\n    *   Constraint 2: Cite evidence using [1], [2], etc.\n    *   Constraint 3: If evidence is incomplete, state what is missing.\n    *   Constraint 4: Do not restate the evidence or the instructions in the final answer.\n    *   Input: A set of evidence snippets (titles, sources, dates, instructions) related to \"Senior Thesis\" at ICU (ICU.ac.jp).\n    *   Question: Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?\n\n2.  **Analyze the Evidence:**\n    *   [1] Title: ehandbook - Senior Thesis. Source: ICU Portal (ICU.ac.jp).\n    *   [2] Title: ehandbook - Senior Thesis. Source: ICU Portal (ICU.ac.jp).\n    *   [3] Title: ehandbook - Candidacy for Senior T",
+        "retrieval_backend": "local-hybrid-rrf",
+        "retrieved_passage_ids": [
+          "DOC-000033::P000",
+          "DOC-000033::P001",
+          "DOC-000026::P002",
+          "DOC-000026::P001",
+          "DOC-000030::P000"
+        ]
+      }
+    ]
+  }
+]

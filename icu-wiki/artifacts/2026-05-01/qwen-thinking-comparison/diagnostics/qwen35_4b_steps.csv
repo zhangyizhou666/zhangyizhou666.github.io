@@ -1,0 +1,333 @@
+id,trajectory_group,reasoning_step_index,answer_correctness,faithfulness,answer_relevancy,semantic_similarity,cluster,reasoning_step_text
+hr_001,high_correctness,0,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,6,Thinking Process:
+hr_001,high_correctness,1,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,1,Analyze the Request:**
+hr_001,high_correctness,2,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,0,Task: Answer the ICU institutional question using *only* the provided evidence.
+hr_001,high_correctness,3,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,2,Constraint 1: Keep the final answer concise.
+hr_001,high_correctness,4,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_001,high_correctness,5,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_001,high_correctness,6,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,2,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_001,high_correctness,7,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"Question: How is the level decided, and where should I check the official information?"
+hr_001,high_correctness,8,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,7,Analyze the Evidence:**
+hr_001,high_correctness,9,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,[1] Notes for graduate school students...
+hr_001,high_correctness,10,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"Mentions ""Placement Test : You must take the JLP placement test and register for the assigned course."""
+hr_001,high_correctness,11,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"Mentions ""Academic Advisor Approval""."
+hr_001,high_correctness,12,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,Doesn't explicitly detail *where* to check official info beyond implying registration process.
+hr_001,high_correctness,13,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,[2] Notes for graduate school students... (continuation)
+hr_001,high_correctness,14,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"""Course level placement may be subject to change based on this in-class assessment."""
+hr_001,high_correctness,15,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"""Additional evaluation of Japanese proficiency will also be conducted during the first class sessions."""
+hr_001,high_correctness,16,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"""For details on the JLP program and course offerings, please refer to the ICU website and the JLP website: https://www.icu.ac.jp/academics/undergraduate/jlp/ https://sites.google.com/info.icu.ac.jp/jlp/"""
+hr_001,high_correctness,17,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,[3] Frequently Asked Questions...
+hr_001,high_correctness,18,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"""The test is to place them into the most appropriate courses by their levels of Japanese proficiency."""
+hr_001,high_correctness,19,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,"""Many returnee students... are placed in the 'Special Japanese Track'..."""
+hr_001,high_correctness,20,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,4,Contact info for JLP
+hr_001,high_correctness,21,0.6624777859633311,0.8333333333333334,0.6261955839302773,0.774911143853324,5,"Considering the limited time, I will answer directly now."
+hr_002,high_correctness,0,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,6,Thinking Process:
+hr_002,high_correctness,1,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,1,Analyze the Request:**
+hr_002,high_correctness,2,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_002,high_correctness,3,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,2,Constraint 1: Keep the final answer concise.
+hr_002,high_correctness,4,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_002,high_correctness,5,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_002,high_correctness,6,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_002,high_correctness,7,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"Question: I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?"
+hr_002,high_correctness,8,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,0,Context: ICU (International Christian University) registration procedures.
+hr_002,high_correctness,9,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,7,Analyze the Evidence:**
+hr_002,high_correctness,10,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,[1] AY2025 Winter Term Registration:
+hr_002,high_correctness,11,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,Late Registration required if missed Registration Period.
+hr_002,high_correctness,12,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"Procedure: Online input, interview with advisor (Dec 5-12), Online approval (Dec 5-12)."
+hr_002,high_correctness,13,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"Fee: Late Registration Fee (3,000 yen)."
+hr_002,high_correctness,14,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"Ticket (shoshi) for 3,000 yen needed before interview."
+hr_002,high_correctness,15,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"Note: ""You cannot ask for special accommodations for your absence just because your absence took place during the first week of the term."" (Implies sickness might not automatically grant exemption, but Late Registration procedure is the path)."
+hr_002,high_correctness,16,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"[2] ehandbook - Nov 28, 2023:"
+hr_002,high_correctness,17,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,4,"Registration day absence: Not possible to register on that day? Wait, text says ""on on registration day is not possible, students should complete the registration during the registration change period."" (Likely typo in evidence, but implies"
+hr_002,high_correctness,18,0.6965204763419148,0.9,0.746027396566797,0.87699099627675,5,"Considering the limited time, I will answer directly now."
+hr_003,high_correctness,0,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,6,Thinking Process:
+hr_003,high_correctness,1,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,1,Analyze the Request:**
+hr_003,high_correctness,2,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_003,high_correctness,3,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,2,Constraint 1: Keep the final answer concise.
+hr_003,high_correctness,4,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_003,high_correctness,5,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_003,high_correctness,6,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_003,high_correctness,7,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,"Question: ""If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?"""
+hr_003,high_correctness,8,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,7,Analyze the Evidence:**
+hr_003,high_correctness,9,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,[1] ehandbook - FAQ:
+hr_003,high_correctness,10,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,Registration Change period is over? NO registration change approved after Registration Change period finished.
+hr_003,high_correctness,11,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,No grade/credit retroactively if not officially registered during specified period.
+hr_003,high_correctness,12,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,If student remains absent without dropping procedures -> F grade.
+hr_003,high_correctness,13,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,"[2] ehandbook - August 28, 2024 Important Information:"
+hr_003,high_correctness,14,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,Not complete registration during designated period -> leave of absence or withdraw.
+hr_003,high_correctness,15,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,"Must click ""SAVE"" to complete registration change."
+hr_003,high_correctness,16,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,Confirm courses added/canceled are reflected.
+hr_003,high_correctness,17,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,[3] AY2025 Autumn Term Registration – Course Registration Procedures:
+hr_003,high_correctness,18,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,Should attend all courses from first week.
+hr_003,high_correctness,19,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,No special accommodations for absence during first week.
+hr_003,high_correctness,20,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,"Late Registration procedure exists (Period: Sept 5-12), requires payment."
+hr_003,high_correctness,21,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,"[4] ehandbook - July 20, 2023 Important Information:"
+hr_003,high_correctness,22,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,4,Exercise courses: Pre-registration required before term starts
+hr_003,high_correctness,23,0.6501284018669741,1.0,0.6202265214355932,0.8862278931821821,5,"Considering the limited time, I will answer directly now."
+hr_004,medium_correctness,0,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,6,Thinking Process:
+hr_004,medium_correctness,1,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,1,Analyze the Request:**
+hr_004,medium_correctness,2,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_004,medium_correctness,3,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,3,"Constraint 1: Grounded citations only ([1], [2], etc.)."
+hr_004,medium_correctness,4,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,2,Constraint 2: Keep the final answer concise.
+hr_004,medium_correctness,5,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,2,Constraint 3: Do not restate the evidence or instructions in the final answer.
+hr_004,medium_correctness,6,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,3,"Constraint 4: If evidence is incomplete, say what is missing."
+hr_004,medium_correctness,7,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,4,"Question: ""I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?"""
+hr_004,medium_correctness,8,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,7,Analyze the Evidence:**
+hr_004,medium_correctness,9,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,4,"[1] Discusses ""Kenkyusei"" (research students) eligibility. It states coursework does *not* count toward a degree for Kenkyusei. It mentions transferring students must follow a screening process and coursework completed as Kenkyusei will not be applied towards ICU's residency requirement. This is specific to Kenkyusei status, not general study abroad or major planning for regular students."
+hr_004,medium_correctness,10,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,4,"[2] Discusses Admissions Requirements by Country/Region. Mentions submitting documents verifying completion of secondary education. For Transfer applicants, documents are exempted if they have a bachelor's degree. Mentions submitting a list of courses progressing or to be taken in the final semester/year to verify course requirements for admission."
+hr_004,medium_correctness,11,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,4,[3] FD Newsletter Vol. 29. Mentions APS (Admissions/Student Services?) presents advice for course planning before studying abroad. Directs students to watch recordings/materials from previous sessions. Recommends consulting **IBS advisors** for scheduling. Mentions APS staff review the Graduation Requirement Checklist on **icuMAP** for graduation requirement concerns
+hr_004,medium_correctness,12,0.4386142628434284,0.8333333333333334,0.0,0.8313801282967908,5,"Considering the limited time, I will answer directly now."
+hr_005,low_correctness,0,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,6,Thinking Process:
+hr_005,low_correctness,1,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,1,Analyze the Request:**
+hr_005,low_correctness,2,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_005,low_correctness,3,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,3,"Constraint 1: Cite evidence using [1], [2], etc."
+hr_005,low_correctness,4,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,2,Constraint 2: Keep the final answer concise.
+hr_005,low_correctness,5,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,3,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_005,low_correctness,6,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,2,Constraint 4: Do not restate the instructions or evidence in the final answer.
+hr_005,low_correctness,7,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,4,"Question: ""I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?"""
+hr_005,low_correctness,8,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,7,Analyze the Evidence:**
+hr_005,low_correctness,9,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,4,"[1] (Nov 28, 2023): Mentions registration change, graduation requirements checklist, senior thesis submission (snippet cut off ""4. Submission of a Senior Thesis A""). No specific deadline links or dates provided for finding schedules."
+hr_005,low_correctness,10,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,4,"[2] (March 29, 2024): Mentions Senior Thesis Research Candidacy approval needed before starting. Mentions STH391 Senior Thesis allotment for those starting April 2024. No specific link for official schedule."
+hr_005,low_correctness,11,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,4,"[3] (August 26, 2025): Mentions STH391 for those starting September 2025. States: ""You can check STH391:Senior Thesis schedule of each faculty on icuMAP; icuMAP > [Links] Faculty Information (office hour) > (cl"". (Snippet cut off)."
+hr_005,low_correctness,12,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,0,"[4] (August 28, 2024): Repeats info from [3] regarding checking STH391 schedule on icu"
+hr_005,low_correctness,13,0.06700724403110277,1.0,0.7835593956307538,0.26802897612441107,5,"Considering the limited time, I will answer directly now."
+hr_006,low_correctness,0,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,6,Thinking Process:
+hr_006,low_correctness,1,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,1,Analyze the Request:**
+hr_006,low_correctness,2,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_006,low_correctness,3,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,2,Constraint 1: Keep the final answer concise.
+hr_006,low_correctness,4,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_006,low_correctness,5,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,3,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_006,low_correctness,6,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_006,low_correctness,7,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,"Question: If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?"
+hr_006,low_correctness,8,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,7,Analyze the Evidence:**
+hr_006,low_correctness,9,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,0,[1] Title: ICU Health Care Office for Students - 感染症が疑われた時の流れ (Infectious disease flow).
+hr_006,low_correctness,10,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,"Content: Discusses informing class teachers, faculty contact info, faculty asking for doctor's certificate/proof for sick leave. Healthcare Office does not issue certificates for absences."
+hr_006,low_correctness,11,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,"Relevance: Mentions sick leave/absences and faculty contact, but focuses on infectious disease and proof requirements for leave."
+hr_006,low_correctness,12,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,"[2] Title: ehandbook - Ryugaku, Leave of Absence, Reenrolment, Withdrawal, Readmission, Status Extension, Status Change, Dismissal."
+hr_006,low_correctness,13,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,"Content: Specifically mentions ""Ryugaku, Leave of Absence, Reenrolment""."
+hr_006,low_correctness,14,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,"Key Info: Upon return, students must submit the ""Report of Return from Ryugaku"" to the EAG (Exchange Abroad Group? or similar office) before Registration day. Failure results in inability to register. If requesting transfer credits, submit catalog/bulletin/syllabi of courses taken abroad."
+hr_006,low_correctness,15,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,4,Relevance
+hr_006,low_correctness,16,0.08854465547628125,0.8,0.6193972552381037,0.354178621905125,5,"Considering the limited time, I will answer directly now."
+hr_007,medium_correctness,0,0.34894760549331666,0.75,0.0,0.3957904219732667,6,Thinking Process:
+hr_007,medium_correctness,1,0.34894760549331666,0.75,0.0,0.3957904219732667,1,Analyze the Request:**
+hr_007,medium_correctness,2,0.34894760549331666,0.75,0.0,0.3957904219732667,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_007,medium_correctness,3,0.34894760549331666,0.75,0.0,0.3957904219732667,2,Constraint 1: Keep the final answer concise.
+hr_007,medium_correctness,4,0.34894760549331666,0.75,0.0,0.3957904219732667,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_007,medium_correctness,5,0.34894760549331666,0.75,0.0,0.3957904219732667,3,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_007,medium_correctness,6,0.34894760549331666,0.75,0.0,0.3957904219732667,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_007,medium_correctness,7,0.34894760549331666,0.75,0.0,0.3957904219732667,4,"Question: ""I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?"""
+hr_007,medium_correctness,8,0.34894760549331666,0.75,0.0,0.3957904219732667,7,Analyze the Evidence:**
+hr_007,medium_correctness,9,0.34894760549331666,0.75,0.0,0.3957904219732667,4,"[1] Title: Housing Office. Source: http://office.icu.ac.jp/ho/en. Evidence lists links/topics like ""Dormitory Screening Results"", ""Common Rules"", ""Outline & Dormitory Fees"", ""Regulations and Bylaws"", ""FAQ"", ""Emergency Contact Information"". This suggests the Housing Office website is the primary source for dormitory fees and rules."
+hr_007,medium_correctness,10,0.34894760549331666,0.75,0.0,0.3957904219732667,4,"[2] Title: Researchers Information System. Evidence mentions ""Dormitory Application and Details"", ""Housing Office Website"", ""Off-campus Housing"", ""ICU Service Co., Ltd. Website"", ""Homestay"". This provides a list of housing options (on-campus, off-campus, homestay) and points to the Housing Office website."
+hr_007,medium_correctness,11,0.34894760549331666,0.75,0.0,0.3957904219732667,4,"[3] Title: 【APPLY BY4/10】2026 Summer ★International Summer Program in Japan (ISPJ). Evidence mentions ""Dormitory fees will be charged"" and ""You will be informed by the Housing Office once your participation is confirmed"". This confirms fees exist but doesn't give a general budgeting source other than the Housing Office."
+hr_007,medium_correctness,12,0.34894760549331666,0.75,0.0,0.3957904219732667,5,"Considering the limited time, I will answer directly now."
+hr_008,low_correctness,0,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,6,Thinking Process:
+hr_008,low_correctness,1,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,1,Analyze the Request:**
+hr_008,low_correctness,2,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,0,Task: Answer the ICU question using only the provided evidence.
+hr_008,low_correctness,3,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,3,"Constraint 1: Grounded citations only (use [1], [2], etc.)."
+hr_008,low_correctness,4,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,2,Constraint 2: Keep the final answer concise.
+hr_008,low_correctness,5,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,2,Constraint 3: Do not restate the evidence or instructions in the final answer.
+hr_008,low_correctness,6,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,3,"Constraint 4: If evidence is incomplete, say what is missing."
+hr_008,low_correctness,7,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,0,"Question: ""I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?"""
+hr_008,low_correctness,8,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,7,Analyze the Evidence:**
+hr_008,low_correctness,9,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,0,"[1] ""ICU Health Care Office for Students - 心の健康 Mental Health"":"
+hr_008,low_correctness,10,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,0,"Mentions ""ICU Counseling Center"" (ICU カウンセリングセンター)."
+hr_008,low_correctness,11,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,Mentions contact points (mostly no English support).
+hr_008,low_correctness,12,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,"Mentions ""友だちや進路の相談"" (Counseling about friends and career paths)."
+hr_008,low_correctness,13,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,"Mentions ""大切な方を亡くして..."" (Loss of a loved one)."
+hr_008,low_correctness,14,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,"Mentions ""東京都若者総合相談センター「若ナビα」"" (Tokyo Youth Comprehensive Consultation Center)."
+hr_008,low_correctness,15,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,0,Source: https://sites.google.com/icu.ac.jp/hcoforstudents/healthinfo/mentalhealth
+hr_008,low_correctness,16,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,"[2] ""【IBS】Advising sessions are starting!"":"
+hr_008,low_correctness,17,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,0,IBS is official peer advisers.
+hr_008,low_correctness,18,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,Start of advising sessions for new students.
+hr_008,low_correctness,19,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,"Topics: JLP classes, course selection, registration."
+hr_008,low_correctness,20,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,4,"Not specifically about mental health counseling or privacy, but peer advising."
+hr_008,low_correctness,21,0.06571656900525079,1.0,0.7760479339483554,0.26286627602100315,5,"Considering the limited time, I will answer directly now."
+hr_009,high_correctness,0,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,6,Thinking Process:
+hr_009,high_correctness,1,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,1,Analyze the Request:**
+hr_009,high_correctness,2,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_009,high_correctness,3,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,3,"Constraint 1: Ground citations only (e.g., [1], [2])."
+hr_009,high_correctness,4,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,2,Constraint 2: Keep the final answer concise.
+hr_009,high_correctness,5,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,3,"Constraint 3: Cite evidence using [1], [2], etc."
+hr_009,high_correctness,6,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,3,"Constraint 4: If evidence is incomplete, say what is missing."
+hr_009,high_correctness,7,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,2,Constraint 5: Do not restate the evidence or the instructions in the final answer.
+hr_009,high_correctness,8,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,4,"Question: ""If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?"""
+hr_009,high_correctness,9,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,7,Analyze the Evidence:**
+hr_009,high_correctness,10,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,4,"[1] English Linguistics Syllabus: Mentions ""Learning Accessibility Services"" and ""course instructor"". Says consult with them. Mentions ""Basic Policy for Supporting Students with Disabilities""."
+hr_009,high_correctness,11,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,4,"[2] Student Guide (CTL): Details the process. Step 1: Meet with Learning Accessibility Services (LAS) staff. Step 2: Submit documents (medical cert, advisor signature, etc.). Mentions ""exam accommodations"" (e.g., extended time, separate room)."
+hr_009,high_correctness,12,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,4,"[3] Accounting Syllabus: Similar to [1]. Mentions ""Learning Accessibility Services"" and ""course instructor""."
+hr_009,high_correctness,13,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,4,[4] For Students | CTL English: Details the process in English. Step 1: Meet with LAS staff. Step 2: Submit documents.
+hr_009,high_correctness,14,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,7,Synthesize the Answer:**
+hr_009,high_correctness,15,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,4,"Where to start?* Consult with the course instructor and the Learning Accessibility Services (LAS) [1], [3]. For exam accommodations specifically,"
+hr_009,high_correctness,16,0.5737401980203916,0.75,0.7289373064166106,0.794960792081566,5,"Considering the limited time, I will answer directly now."
+hr_010,high_correctness,0,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,6,Thinking Process:
+hr_010,high_correctness,1,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,1,Analyze the Request:**
+hr_010,high_correctness,2,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,0,Task: Answer an ICU institutional question using only the provided evidence.
+hr_010,high_correctness,3,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,3,Constraints:
+hr_010,high_correctness,4,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,3,"Grounded citations only ([1], [2], etc.)."
+hr_010,high_correctness,5,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,2,Keep the final answer concise.
+hr_010,high_correctness,6,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,2,Do not restate evidence or instructions.
+hr_010,high_correctness,7,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,3,"If evidence is incomplete, say what is missing."
+hr_010,high_correctness,8,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,"Question: ""I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?"""
+hr_010,high_correctness,9,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,7,Analyze the Evidence:**
+hr_010,high_correctness,10,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,"[1] ""IT Center For ALL Users - To Students Graduating"": Mentions accounts (ICU Net ID, ICU Portal, Mail, Google Workspace, etc.) expire on March 31, 2026. Recommends using a personal email for post-graduation email exchange. Mentions email forwarding."
+hr_010,high_correctness,11,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,"[2] ""To Students Graduating in March 2026"": Reiterates accounts expire March 31, 2026. Recommends personal email for post-graduation. States email forwarding stops. Advises backing up files (Gmail/Google Drive). Lists consequences of account deletion (can't log in to Google, miss announcements, lose graduate school files)."
+hr_010,high_correctness,12,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,"[3] ""Paths after Graduation｜ICU"": Mentions 20% pursue further education. Mentions 5-year Program. No specific IT details."
+hr_010,high_correctness,13,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,"[4] ""Graduate School Overview｜ICU"": Mentions Graduate School Overview. No specific IT details."
+hr_010,high_correctness,14,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,7,Synthesize the Answer:**
+hr_010,high_correctness,15,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,The user is graduating undergrad but continuing grad school.
+hr_010,high_correctness,16,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,4,Key IT info: Account expiration
+hr_010,high_correctness,17,0.6649122095271283,1.0,0.7820413688745156,0.9453631238227986,5,"Considering the limited time, I will answer directly now."
+hr_011,low_correctness,0,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,6,Thinking Process:
+hr_011,low_correctness,1,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,1,Analyze the Request:**
+hr_011,low_correctness,2,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_011,low_correctness,3,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,3,"Constraint 1: Cite evidence using [1], [2], etc."
+hr_011,low_correctness,4,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,2,Constraint 2: Keep the final answer concise.
+hr_011,low_correctness,5,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,2,Constraint 3: Do not restate the evidence or instructions.
+hr_011,low_correctness,6,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,3,"Constraint 4: If evidence is incomplete, state what is missing."
+hr_011,low_correctness,7,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,4,Question: Where can I check official information regarding the JLP level classification and enrollment methods? (日本語プログラムを履修したいのですが、JLP のレベル分けや履修方法について、どこで公式情報を確認できますか？)
+hr_011,low_correctness,8,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,7,Analyze the Evidence:**
+hr_011,low_correctness,9,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,4,"[1] Self-study report (2009): Describes the purpose, target audience (returnees, international school students, etc.), and general structure of JLP. Mentions placement tests for Special Japanese Education (Special Japanese) but doesn't explicitly link a specific URL for *current* official info on levels/enrollment methods. It's an internal report."
+hr_011,low_correctness,10,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,4,"[2] 2026 Admission Booklet (PDF): Mentions JLP provides foundation, offers courses for foreign language learners and native speakers. Mentions 2 types of courses (Foreign language learners, Native/Heritage speakers). Mentions ""JLP Director's Voice"". No specific link for level classification/enrollment methods provided in the snippet, though it's an admission booklet."
+hr_011,low_correctness,11,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,4,"[3] Self-study report (2009) - Duplicate/Fragment of [1] regarding levels: Describes placement tests (JLP exemption, Normal JLP course, Special Japanese). Lists 3 levels for Special Japanese (Program A, B, C)"
+hr_011,low_correctness,12,0.07365874487166539,0.2857142857142857,0.7595821590015717,0.29463497948666156,5,"Considering the limited time, I will answer directly now."
+hr_012,medium_correctness,0,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,6,Thinking Process:
+hr_012,medium_correctness,1,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,1,Analyze the Request:**
+hr_012,medium_correctness,2,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,0,Task: Answer an ICU institutional question using only the provided evidence.
+hr_012,medium_correctness,3,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,2,Constraint 1: Keep the final answer concise.
+hr_012,medium_correctness,4,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_012,medium_correctness,5,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,3,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_012,medium_correctness,6,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_012,medium_correctness,7,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,4,"Question: ""I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?"""
+hr_012,medium_correctness,8,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,7,Analyze the Evidence:**
+hr_012,medium_correctness,9,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,0,"[1] Title: Disclosure｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Content mentions Religious Center organizes activities, students not required to participate, aims to transmit Christian philosophy as part of regular campus life. No specific schedule link or event classification (academic vs. campus-life) explicitly stated in the snippet provided, though it mentions ""regular campus life""."
+hr_012,medium_correctness,10,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,0,"[2] Title: Commitments and History｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Content mentions Religious Center, Faculty Religious Affairs Committee, student groups organize activities. Describes Chapel Hour: conducted every Tuesday during lunch period. Describes Christianity Week (C-Week): held in May every year, held by student committee, various events for entire university members."
+hr_012,medium_correctness,11,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,4,"[3] Title: Self-Study/Evaluation Report 2023. Content mentions University Minister orientation, Bible distribution, University chapel services (once a week during Chapel Hour). Describes Christianity Week (C-Week) in May, events related to Christianity for entire university members."
+hr_012,medium_correctness,12,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,0,[4] Title: Disclosure｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Content
+hr_012,medium_correctness,13,0.35231991000039453,0.75,0.8333638347814628,0.8092796400015781,5,"Considering the limited time, I will answer directly now."
+hr_013,high_correctness,0,0.6804220069767142,0.875,0.0,0.7216880279068567,6,Thinking Process:
+hr_013,high_correctness,1,0.6804220069767142,0.875,0.0,0.7216880279068567,1,Analyze the Request:**
+hr_013,high_correctness,2,0.6804220069767142,0.875,0.0,0.7216880279068567,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_013,high_correctness,3,0.6804220069767142,0.875,0.0,0.7216880279068567,2,Constraint 1: Keep the final answer concise.
+hr_013,high_correctness,4,0.6804220069767142,0.875,0.0,0.7216880279068567,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_013,high_correctness,5,0.6804220069767142,0.875,0.0,0.7216880279068567,3,"Constraint 3: If the evidence is incomplete, say what is missing."
+hr_013,high_correctness,6,0.6804220069767142,0.875,0.0,0.7216880279068567,2,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_013,high_correctness,7,0.6804220069767142,0.875,0.0,0.7216880279068567,4,"Question: Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?"
+hr_013,high_correctness,8,0.6804220069767142,0.875,0.0,0.7216880279068567,7,Analyze the Evidence:**
+hr_013,high_correctness,9,0.6804220069767142,0.875,0.0,0.7216880279068567,4,[1] Title: 【APPLY BY4/10】2026 Summer ★International Summer Program in Japan (ISPJ) ...
+hr_013,high_correctness,10,0.6804220069767142,0.875,0.0,0.7216880279068567,4,Content: Mentions dormitory fees will be charged. Amount is different for current dormitory participants. Housing Office will inform current dormitory students once selected. Dormitory stay is not mandatory.
+hr_013,high_correctness,11,0.6804220069767142,0.875,0.0,0.7216880279068567,4,Relevance: Mentions fees exist but does not specify which dormitory is cheapest or any future fee changes not announced.
+hr_013,high_correctness,12,0.6804220069767142,0.875,0.0,0.7216880279068567,4,[2] Title: Business Report (AY2022)
+hr_013,high_correctness,13,0.6804220069767142,0.875,0.0,0.7216880279068567,4,"Content: Discusses dormitory operation, student numbers (119 in April, 110 in Sept, 82 in Jan), capacity (126 students across five dormitories). Mentions COVID-19 measures."
+hr_013,high_correctness,14,0.6804220069767142,0.875,0.0,0.7216880279068567,4,"Relevance: Mentions number of dormitories (five) and capacity, but no rent information."
+hr_013,high_correctness,15,0.6804220069767142,0.875,0.0,0.7216880279068567,4,[3] Title: Business Report (2024)
+hr_013,high_correctness,16,0.6804220069767142,0.875,0.0,0.7216880279068567,4,"Content: Discusses dormitory management structure, outsourcing since AY2017,"
+hr_013,high_correctness,17,0.6804220069767142,0.875,0.0,0.7216880279068567,5,"Considering the limited time, I will answer directly now."
+hr_014,high_correctness,0,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,6,Thinking Process:
+hr_014,high_correctness,1,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,1,Analyze the Request:**
+hr_014,high_correctness,2,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,0,Task: Answer the ICU institutional question using only the evidence provided.
+hr_014,high_correctness,3,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,2,Constraint 1: Keep the final answer concise.
+hr_014,high_correctness,4,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_014,high_correctness,5,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,3,"Constraint 3: If the evidence is incomplete, say what is missing."
+hr_014,high_correctness,6,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,2,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_014,high_correctness,7,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,0,"Question: ""What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?"""
+hr_014,high_correctness,8,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,7,Analyze the Evidence:**
+hr_014,high_correctness,9,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,0,"[1] Title: ICU Health Care Office for Students - キャンパスでの健康管理 (On-campus health management). Discusses self-reporting forms, medical conditions, allergies, epilepsy, diabetes, help marks, Medical ID. No menu info."
+hr_014,high_correctness,10,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,4,"[2] Title: Ginkgo House. Discusses dormitory location relative to cafeteria. Mentions ""When you realize, 'oh shoot I have nothing to eat for lunch today! 'You can"". No menu info."
+hr_014,high_correctness,11,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,0,"[3] Title: ICU Health Care Office for Students - 生活応援情報 Everyday life information. Lists resources like sleep, diet, recipes, health videos from Tokyo Metropolitan Tama Fuchu Health Center. Mentions ""Diet is the source of health!"" but does not provide a specific menu or personal health advice based on the user's condition."
+hr_014,high_correctness,12,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,4,"[4] Title: 大学食堂・売店の最新情報 (University Cafeteria & Shop Latest Information). Lists operation hours (Mon.-Sat. 11:00 a.m. -3:00 p.m.). Mentions ""Menus 「 食堂マイページ 」より大学"
+hr_014,high_correctness,13,0.5629286119885516,0.75,0.7709961042818523,0.7517144479542064,5,"Considering the limited time, I will answer directly now."
+hr_015,high_correctness,0,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,6,Thinking Process:
+hr_015,high_correctness,1,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,1,Analyze the Request:**
+hr_015,high_correctness,2,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_015,high_correctness,3,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,2,Constraint 1: Keep the final answer concise.
+hr_015,high_correctness,4,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_015,high_correctness,5,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_015,high_correctness,6,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_015,high_correctness,7,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,4,"Question: ""Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?"""
+hr_015,high_correctness,8,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,7,Analyze the Evidence:**
+hr_015,high_correctness,9,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,4,"[1] Title: Logic Programming. Source: ICU Campus. Content: Course syllabus details (study time, feedback, active learning). No mention of Professor Ishibashi, course plan approval process, or specific timelines for advisor approval."
+hr_015,high_correctness,10,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,4,"[2] Title: Letter of Consent of a Faculty to be Research Advisor on Acceptance. Source: ICU Admissions. Content: Regarding doctoral course applicants, contacting a research advisor before application, getting consent/endorsement. No mention of Professor Ishibashi, general course plan approval, or specific timelines."
+hr_015,high_correctness,11,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,4,"[3] Title: ehandbook - Spring Term in Next Academic Year. Source: ICU ehandbook. Content: General course registration schedule, confirmation of registration, responsibility lies with students. Mentions confirming course registration and approval by advisor on the next day of Registration Day / after Late registration. *This is the most relevant piece regarding advisor approval timing, but it doesn't mention Professor Ishibashi specifically.*"
+hr_015,high_correctness,12,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,4,[4] Title: 【June 3rd for first year students】Academic Skills Workshop. Source: No public URL. Content: Event about
+hr_015,high_correctness,13,0.7698586587502075,0.8333333333333334,0.8249452865466035,0.6794346350008298,5,"Considering the limited time, I will answer directly now."
+hr_016,low_correctness,0,0.3324354453788284,0.6,0.0,0.3297417815153135,6,Thinking Process:
+hr_016,low_correctness,1,0.3324354453788284,0.6,0.0,0.3297417815153135,1,Analyze the Request:**
+hr_016,low_correctness,2,0.3324354453788284,0.6,0.0,0.3297417815153135,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_016,low_correctness,3,0.3324354453788284,0.6,0.0,0.3297417815153135,2,Constraint 1: Keep the final answer concise.
+hr_016,low_correctness,4,0.3324354453788284,0.6,0.0,0.3297417815153135,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_016,low_correctness,5,0.3324354453788284,0.6,0.0,0.3297417815153135,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_016,low_correctness,6,0.3324354453788284,0.6,0.0,0.3297417815153135,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_016,low_correctness,7,0.3324354453788284,0.6,0.0,0.3297417815153135,4,"Question: ""I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?"""
+hr_016,low_correctness,8,0.3324354453788284,0.6,0.0,0.3297417815153135,7,Analyze the Evidence:**
+hr_016,low_correctness,9,0.3324354453788284,0.6,0.0,0.3297417815153135,4,"[1] ehandbook - November 28, 2023 Important Information from Educational Affairs Group: Discusses graduation application process, contacting Educational Affairs Group, icuMAP, registration change period (after December 7), confirming graduation requirements. No mention of future credit requirement changes."
+hr_016,low_correctness,10,0.3324354453788284,0.6,0.0,0.3297417815153135,4,"[2] FD Newsletter Vol. 29: Discusses APS advice, course planning, graduation requirement checklist on icuMAP. No mention of future credit requirement changes."
+hr_016,low_correctness,11,0.3324354453788284,0.6,0.0,0.3297417815153135,4,"[3] Graduation Requirements｜ICU: States current requirement is at least 130 credits for Bachelor of Arts. Notes that requirements differ for students matriculated in 2025 academic year and thereafter vs. before September 2024. Mentions to check ehandbook for current students. No specific mention of a *rumored* change ""next year"" or a specific new number announced recently, other than the distinction between 2025+ and 2024- cohorts."
+hr_016,low_correctness,12,0.3324354453788284,0.6,0.0,0.3297417815153135,4,"[4] ehandbook - November 28, 2"
+hr_016,low_correctness,13,0.3324354453788284,0.6,0.0,0.3297417815153135,5,"Considering the limited time, I will answer directly now."
+hr_017,low_correctness,0,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,6,Thinking Process:
+hr_017,low_correctness,1,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,1,Analyze the Request:**
+hr_017,low_correctness,2,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,0,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_017,low_correctness,3,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,2,Constraint 1: Keep the final answer concise.
+hr_017,low_correctness,4,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_017,low_correctness,5,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,3,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_017,low_correctness,6,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_017,low_correctness,7,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,"Question: For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?"
+hr_017,low_correctness,8,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,7,Analyze the Evidence:**
+hr_017,low_correctness,9,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,[1] Title: AY2026 Spring Term Registration – Course Registration Procedures. Contains specific dates for AY2026 Spring Term.
+hr_017,low_correctness,10,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,Registration Period: April 9 (Thu) 9:00 ~ April 10 (Fri) 14:30.
+hr_017,low_correctness,11,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,"Interview with advisor: April 9 (Thu) 10:00 ~ 16:00, April 10 (Fri) 9:00 ~ 15:30."
+hr_017,low_correctness,12,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,Source: No public URL.
+hr_017,low_correctness,13,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,"Note: Mentions newly enrolled students from AY2026 Autumn Term should check ""Campus Pathfinder"" in Moodle instead."
+hr_017,low_correctness,14,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,"[2] Title: AY2025 Spring Term Registration – Course Registration Procedures. (Irrelevant for Spring 2026, but shows structure)."
+hr_017,low_correctness,15,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,4,"[3] Title: AY2026 Spring Term Registration – Course Registration Procedures. (Duplicate title of [1], but contains Late Registration info)."
+hr_017,low_correctness,16,0.06818519643789786,1.0,0.8927794946092072,0.27274078575159144,5,"Considering the limited time, I will answer directly now."
+hr_018,medium_correctness,0,0.46166704039644746,1.0,0.0,0.8466681615857898,6,Thinking Process:
+hr_018,medium_correctness,1,0.46166704039644746,1.0,0.0,0.8466681615857898,1,Analyze the Request:**
+hr_018,medium_correctness,2,0.46166704039644746,1.0,0.0,0.8466681615857898,0,Task: Answer an ICU (International Christian University) institutional question using *only* the provided evidence.
+hr_018,medium_correctness,3,0.46166704039644746,1.0,0.0,0.8466681615857898,2,Constraint 1: Keep the final answer concise.
+hr_018,medium_correctness,4,0.46166704039644746,1.0,0.0,0.8466681615857898,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_018,medium_correctness,5,0.46166704039644746,1.0,0.0,0.8466681615857898,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_018,medium_correctness,6,0.46166704039644746,1.0,0.0,0.8466681615857898,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_018,medium_correctness,7,0.46166704039644746,1.0,0.0,0.8466681615857898,4,"Question: ""I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?"""
+hr_018,medium_correctness,8,0.46166704039644746,1.0,0.0,0.8466681615857898,7,Analyze the Evidence:**
+hr_018,medium_correctness,9,0.46166704039644746,1.0,0.0,0.8466681615857898,4,"[1] ""Information on Transfer of Credits (for Transfer Student)｜ICU"": Mentions courses eligible for transfer (equivalent, approved towards graduation, grades >= 70). States credit transfers are granted only *after* entering ICU."
+hr_018,medium_correctness,10,0.46166704039644746,1.0,0.0,0.8466681615857898,4,"[2] ""Application Documents｜ICU"": Mentions submitting transcripts. States ""Transfer credits will be granted only when students complete the credit transfer procedure after entering ICU."""
+hr_018,medium_correctness,11,0.46166704039644746,1.0,0.0,0.8466681615857898,4,"[3] ""Application Documents｜ICU"": Similar to [2], repeats grading system requirements and credit transfer timing."
+hr_018,medium_correctness,12,0.46166704039644746,1.0,0.0,0.8466681615857898,4,"[4] ""Graduate School - Credit Transfer"": Discusses Graduate School credit transfer (Master's course requirement, up to 15 credits). Mentions partner schools and exchange agreements."
+hr_018,medium_correctness,13,0.46166704039644746,1.0,0.0,0.8466681615857898,7,Evaluate the Question against Evidence:**
+hr_018,medium_correctness,14,0.46166704039644746,1.0,0.0,0.8466681615857898,4,Question asks: Can the system tell me exactly how many more credits I personally need to graduate early?
+hr_018,medium_correctness,15,0.46166704039644746,1.0,0.0,0.8466681615857898,4,Evidence [1]: States that credit transfer happens *after* entering ICU and depends on course equivalence and grades. It does not mention a system that calculates remaining credits
+hr_018,medium_correctness,16,0.46166704039644746,1.0,0.0,0.8466681615857898,5,"Considering the limited time, I will answer directly now."
+hr_019,low_correctness,0,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,6,Thinking Process:
+hr_019,low_correctness,1,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,1,Analyze the Request:**
+hr_019,low_correctness,2,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,0,Task: Answer the ICU institutional question using only the provided evidence.
+hr_019,low_correctness,3,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,2,Constraint 1: Keep the final answer concise.
+hr_019,low_correctness,4,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,3,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_019,low_correctness,5,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,3,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_019,low_correctness,6,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,2,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_019,low_correctness,7,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,"Question: ""履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？"" (I want to confirm about enrollment registration with the Academic Affairs Group. Where can I check the contact information and relevant official pages?)"
+hr_019,low_correctness,8,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,"Note: The question asks about ""教育事務グループ"" (Education Affairs Group), but the evidence refers to ""教務グループ"" (Academic Affairs Group). I need to check if they are treated as the same or if the evidence provides info for the correct group."
+hr_019,low_correctness,9,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,7,Analyze the Evidence:**
+hr_019,low_correctness,10,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,[1] ehandbook - 履修登録 (Enrollment Registration).
+hr_019,low_correctness,11,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,Source: https://sites.google.com/icu.ac.jp/icu-ehandbook/ホーム_japanese/履修案内/科目登録/履修登録
+hr_019,low_correctness,12,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,"Content: Describes the registration process (Registration Website, advisor meeting, etc.). Mentions ""教務グループ"" (Academic Affairs Group) in the context of submitting applications via paper forms or contacting them."
+hr_019,low_correctness,13,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,"Key info: Official page is the ehandbook link provided. Contact info for Academic Affairs Group is mentioned implicitly (""教務グループ窓口"" in [3])."
+hr_019,low_correctness,14,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,4,[2] 教務グループからの重要なお知らせ（2
+hr_019,low_correctness,15,0.07599673501368737,0.875,0.6197337055633441,0.30398694005474947,5,"Considering the limited time, I will answer directly now."
+hr_020,low_correctness,0,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,6,Thinking Process:
+hr_020,low_correctness,1,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,1,Analyze the Request:**
+hr_020,low_correctness,2,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,0,Task: Answer an ICU institutional question based *only* on the provided evidence.
+hr_020,low_correctness,3,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,3,"Constraint 1: Use grounded citations only (e.g., [1], [2])."
+hr_020,low_correctness,4,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,2,Constraint 2: Keep the final answer concise.
+hr_020,low_correctness,5,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,2,Constraint 3: Do not restate the evidence or instructions.
+hr_020,low_correctness,6,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,3,"Constraint 4: If evidence is incomplete, state what is missing."
+hr_020,low_correctness,7,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,0,"Question: If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?"
+hr_020,low_correctness,8,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,7,Analyze the Evidence:**
+hr_020,low_correctness,9,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,0,"[1] & [2]: ICU Portal Manuals. Content focuses on checking the portal daily, searching notices via ""ALL""/""MORE"", email distribution categories (""公示"", ""重要なお知らせ""), push notifications, and permissions for email distribution. It mentions checking the portal daily. It does not explicitly address conflict resolution between chatbot and portal announcements."
+hr_020,low_correctness,10,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,4,"[3]: ehandbook - November 28, 2023. Mentions thesis submission deadlines, graduation list announcement dates, and unpaid fees deadlines. It provides contact info (ea-group@icu.ac.jp)."
+hr_020,low_correctness,11,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,4,[4]: To Students Graduating in March 2026. Mentions account expiration dates and backup recommendations.
+hr_020,low_correctness,12,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,7,Evaluate Evidence against Question:**
+hr_020,low_correctness,13,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,0,"The question asks about trust hierarchy when there is a discrepancy between a ""chatbot answer"" and an ""ICU Portal announcement"" regarding a deadline."
+hr_020,low_correctness,14,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,0,"Evidence [1] and [2] (ICU Portal Manuals) state that students should check the ICU Portal announcements daily. They mention checking the ""ALL""/""MORE"" link box"
+hr_020,low_correctness,15,0.10033271502430033,0.5,0.8199346902013336,0.4013308600972013,5,"Considering the limited time, I will answer directly now."

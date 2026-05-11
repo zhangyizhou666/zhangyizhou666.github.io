@@ -1,0 +1,4 @@
+label,slug,family,size_b,row_count,faithfulness,faithfulness_missing,answer_relevancy,answer_relevancy_missing,answer_correctness,answer_correctness_missing,semantic_similarity,semantic_similarity_missing,generated_rows,empty_answers,avg_latency_seconds,judge_model,embedding_model
+Qwen3.5 0.8B (HF),Qwen_Qwen3.5-0.8B,Qwen3.5,0.8,20,0.6009151667046406,1,0.6433692520606485,0,0.26784982902877963,1,0.5451900715550402,0,20,0,8.04185,openai/gpt-5-mini,Qwen/Qwen3-Embedding-0.6B
+Qwen3.5 2B (HF),Qwen_Qwen3.5-2B,Qwen3.5,2.0,20,0.7341504964763479,0,0.6165428496422918,0,0.3834832081111142,0,0.5594419517668753,0,20,0,7.040049999999999,openai/gpt-5-mini,Qwen/Qwen3-Embedding-0.6B
+Qwen3.5 4B (HF),Qwen_Qwen3.5-4B,Qwen3.5,4.0,20,0.8225944888444889,0,0.6409104912412467,0,0.41973337425206425,0,0.5629416579649473,0,20,0,9.186350000000001,openai/gpt-5-mini,Qwen/Qwen3-Embedding-0.6B

@@ -1,0 +1,37 @@
+{
+  "description": "Per-answer final-layer hidden-state trajectories for Qwen3.5 0.8B, 2B, and 4B on ICUBench-Hard-v2. PCA is fitted separately for each answer trajectory, so coordinates are local to the selected answer.",
+  "source_run": "data/diagnostics/runs/20260508_qwen_hidden_repetition_topology",
+  "case_count": 60,
+  "summary": [
+    {
+      "model": "Qwen/Qwen3.5-0.8B",
+      "rows": 20,
+      "mean_tokens": 181.3,
+      "has_repetition_count": 12,
+      "mean_repeated_4gram_per_100_tokens": 4.461685926188581,
+      "mean_entropy": 1.3617986717138433,
+      "mean_top_probability": 0.6305311915055933,
+      "mean_final_layer_diameter": 59.05968112945557
+    },
+    {
+      "model": "Qwen/Qwen3.5-2B",
+      "rows": 20,
+      "mean_tokens": 242.05,
+      "has_repetition_count": 19,
+      "mean_repeated_4gram_per_100_tokens": 7.063408253105439,
+      "mean_entropy": 0.9740926944846263,
+      "mean_top_probability": 0.7141167078480918,
+      "mean_final_layer_diameter": 82.42452392578124
+    },
+    {
+      "model": "Qwen/Qwen3.5-4B",
+      "rows": 20,
+      "mean_tokens": 254.85,
+      "has_repetition_count": 20,
+      "mean_repeated_4gram_per_100_tokens": 5.5058576522257825,
+      "mean_entropy": 0.6961397690664457,
+      "mean_top_probability": 0.7748711383644703,
+      "mean_final_layer_diameter": 88.99026641845703
+    }
+  ]
+}

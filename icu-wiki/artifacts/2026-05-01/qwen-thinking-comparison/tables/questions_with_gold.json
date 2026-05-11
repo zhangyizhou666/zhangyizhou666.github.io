@@ -1,0 +1,262 @@
+[
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "category": "language",
+    "is_answerable": true,
+    "gold_answer": "Your JLP level is decided by a placement test that evaluates your Japanese proficiency (first-time JLP students must take it; returning students register for the next level) and may be adjusted after additional evaluation during the first class sessions. Placement-test timing: March for Spring enrollment, August for Autumn/Winter. For official information, check the ICU JLP pages and the JLP website, or contact the JLP Office (jlp@icu.ac.jp; ERB II Rm.104, Mon–Fri 9:00–11:45 & 12:45–16:00). [1][2]",
+    "gold_source_ids": [
+      "DOC-000935::structural_fallback_v1::P0000",
+      "DOC-000935::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "category": "registration",
+    "is_answerable": true,
+    "gold_answer": "Yes. If you missed the regular Registration Day you must use the Late Registration procedure (online input + advisor interview/approval) and pay the Late Registration fee (3,000 yen) — buy a ticket on the 2nd floor of the Administration Building and pay at the Educational Affairs Group before the interview; contact your advisor in advance to meet deadlines [DOC-000730::structural_fallback_v1::P0001]. If you already completed registration but need to add/cancel courses, do so during the Registration Change Period and be sure to click the “SAVE” button to complete the change; after the change period no changes are accepted [DOC-000108::structural_fallback_v1::P0007].",
+    "gold_source_ids": [
+      "DOC-000730::structural_fallback_v1::P0001",
+      "DOC-000108::structural_fallback_v1::P0007"
+    ],
+    "gold_source_ranks": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "category": "registration",
+    "is_answerable": true,
+    "gold_answer": "Check the Registration Change deadline — no registration changes are approved after the Registration Change period ends and no retroactive credit will be given; failing to drop a course (i.e., remaining absent without completing the drop) can result in an F [1]. Be sure to complete the Registration Change properly by clicking the “SAVE” button and confirming your Registration Results [2]. If you miss the regular period, verify Late Registration procedures, deadlines, advisor approval, and the late‑registration fee (e.g., ¥3,000) [3]. Also note that a Registration Withdrawal (which withdraws ALL courses) requires dean permission for illness/unavoidable reasons [1].",
+    "gold_source_ids": [
+      "DOC-000097::structural_fallback_v1::P0002",
+      "DOC-000104::structural_fallback_v1::P0001",
+      "DOC-000736::structural_fallback_v1::P0001"
+    ],
+    "gold_source_ranks": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hr_004",
+    "question": "I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?",
+    "category": "major",
+    "is_answerable": true,
+    "gold_answer": "Check the Graduation Requirement Checklist on icuMAP and discuss your course plan with APS (and consult IBS advisors) — APS reviews students’ graduation requirements and confirms which credits/courses count toward each requirement [1]. Note that study-abroad credits are reviewed after you return and, for partner institutions, up to 40 credits may be transferred and applied to ICU requirements [2].",
+    "gold_source_ids": [
+      "PDF-59e302e2a90f4dbe9f::structural_fallback_v1::P0047",
+      "PDF-a2e6a01599ea3260e6::structural_fallback_v1::P0007",
+      "DOC-001590::structural_fallback_v1::P0005",
+      "DOC-001586::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      3,
+      5,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hr_005",
+    "question": "I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",
+    "category": "graduation",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_006",
+    "question": "If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",
+    "category": "student_status",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_007",
+    "question": "I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?",
+    "category": "housing",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_008",
+    "question": "I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",
+    "category": "student_support",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_009",
+    "question": "If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",
+    "category": "student_support",
+    "is_answerable": true,
+    "gold_answer": "Start by consulting your course instructor and contacting Learning Accessibility Services (学修アクセシビリティ支援室 / LAS). Look for the LAS “For Students / How to Request Academic Accommodations” page, which explains meeting with LAS staff and the required documents (e.g., medical certificate, Request for Academic Accommodations form signed by your advisor) and the process for arranging exam accommodations [1][4].",
+    "gold_source_ids": [
+      "COURSE-2026-Spring-12115-QELE502::structural_fallback_v1::P0012",
+      "DOC-000272::structural_fallback_v1::P0000",
+      "DOC-000443::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      1,
+      4,
+      2
+    ]
+  },
+  {
+    "id": "hr_010",
+    "question": "I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?",
+    "category": "it",
+    "is_answerable": true,
+    "gold_answer": "Your ICU accounts (ICU Net ID, ICU Portal, Mail/Google Workspace, etc.) will expire on March 31, 2026—even if you are moving from the undergraduate to ICU graduate program. Email forwarding stops, and you will lose access to @icu.ac.jp Google, announcements (e.g., joining ceremony), graduate-school info, and files created at the university, so back up Gmail and Google Drive before the deadline. Graduating students (including those entering ICU grad school) may apply for a graduate/alumni email (e.g., c123456x@alm.icu.ac.jp) that provides Gmail and Calendar but not Google Drive; apply by Feb 10, 2026 (or contact the Alumni Office after the deadline) [1].",
+    "gold_source_ids": [
+      "DOC-000726::structural_fallback_v1::P0000",
+      "DOC-001520::structural_fallback_v1::P0000"
+    ],
+    "gold_source_ranks": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "hr_011",
+    "question": "日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？",
+    "category": "language",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_012",
+    "question": "I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",
+    "category": "campus_life",
+    "is_answerable": true,
+    "gold_answer": "Check the university calendar for Christianity Week (it’s a public event in the university calendar) and the Religious Center website (the Chapel Hour schedule is posted there) [1][2].",
+    "gold_source_ids": [
+      "DOC-001547::structural_fallback_v1::P0009",
+      "DOC-001488::structural_fallback_v1::P0000",
+      "DOC-001547::structural_fallback_v1::P0008",
+      "DOC-001551::structural_fallback_v1::P0003"
+    ],
+    "gold_source_ranks": [
+      4,
+      5,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hr_013",
+    "question": "Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?",
+    "category": "housing",
+    "is_answerable": false,
+    "gold_answer": "Cannot determine which dormitory will have the cheapest rent next academic year because the retrieved documents do not provide dormitory-specific rent amounts or any announced future fee changes [5].",
+    "gold_source_ids": [
+      "DOC-000262::structural_fallback_v1::P0000",
+      "DOC-000823::structural_fallback_v1::P0002"
+    ],
+    "gold_source_ranks": [
+      5,
+      1
+    ]
+  },
+  {
+    "id": "hr_014",
+    "question": "What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?",
+    "category": "campus_life",
+    "is_answerable": false,
+    "gold_answer": "I cannot answer. The retrieved sources do not list today’s lunch menu; the cafeteria site says the weekly menu is available via the “食堂マイページ” but the actual menu items are not included here [4]. The Health Care Office also notes the cafeteria cannot prepare meals tailored to individual needs or allergies, so a personalized “healthiest” recommendation cannot be made from the provided documents [1].",
+    "gold_source_ids": [
+      "DOC-001487::structural_fallback_v1::P0000",
+      "DOC-001375::structural_fallback_v1::P0007",
+      "PDF-634be4613adb7580e2::structural_fallback_v1::P0003"
+    ],
+    "gold_source_ranks": [
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hr_015",
+    "question": "Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?",
+    "category": "office",
+    "is_answerable": false,
+    "gold_answer": "There is no evidence here to determine whether Professor Ishibashi will approve your individual course plan next week. The retrieved documents only note that advisors must approve course registration and that you should bring your desired timetable when visiting an advisor [3].",
+    "gold_source_ids": [
+      "DOC-000079::structural_fallback_v1::P0000",
+      "COURSE-2026-Autumn-21219-ISC321::structural_fallback_v1::P0011"
+    ],
+    "gold_source_ranks": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "hr_016",
+    "question": "I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?",
+    "category": "graduation",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_017",
+    "question": "For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",
+    "category": "calendar",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_018",
+    "question": "I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?",
+    "category": "credits",
+    "is_answerable": true,
+    "gold_answer": "No. Transfer credits are only granted after you complete the required credit-transfer procedures after entering ICU, and “how many and which credits are transferrable will not be confirmed until then,” so the system cannot tell you exactly how many additional credits you personally need to graduate early until the post-enrollment transfer process is completed [1][2].",
+    "gold_source_ids": [
+      "DOC-001643::structural_fallback_v1::P0000",
+      "DOC-001654::structural_fallback_v1::P0029"
+    ],
+    "gold_source_ranks": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hr_019",
+    "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+    "category": "office",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  },
+  {
+    "id": "hr_020",
+    "question": "If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",
+    "category": "policy",
+    "is_answerable": false,
+    "gold_answer": "The retrieved evidence is insufficient to answer this question.",
+    "gold_source_ids": [],
+    "gold_source_ranks": []
+  }
+]

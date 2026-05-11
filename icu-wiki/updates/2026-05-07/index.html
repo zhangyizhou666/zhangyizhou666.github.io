@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weekly Update — ICU Wiki Research</title>
+    <meta name="description" content="Final controlled evaluation updated with GPT Pro gold answers and GPT Pro human-facing evaluation scores." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        
+      </nav>
+    </header>
+    <main>
+    <article class="post">
+      <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
+      <header>
+        <p class="eyebrow">2026-05-07</p>
+        <h1>Weekly Update</h1>
+        <p>Final controlled evaluation updated with GPT Pro gold answers and GPT Pro human-facing evaluation scores.</p>
+        <div class="tags"><span>final run</span><span>evaluation</span><span>answerability</span><span>gpt pro gold</span></div>
+      </header>
+      <div class="post-body"><h2>Summary</h2>
+<p>This update reports the active final controlled evaluation data after replacing the older Qwen-35B gold/evaluation layer with GPT Pro generated gold answers and GPT Pro human-facing evaluation.</p>
+<ul><li>Run ID: <code>final_controlled_v2_20260507T114145Z</code>.</li><li>Runtime: local GPU evaluation environment with local PostgreSQL and pgvector.</li><li>Corpus: <code>structural_fallback_v1</code>, 30,216 passages.</li><li>Retrieval embedding: local <code>BAAI/bge-m3</code>.</li><li>Retrieval stack: lexical search, Japanese search-text support, entity-aware retrieval, dense pgvector search, and RRF merge.</li><li>Benchmark: <code>ICUBench-Hard-20 v2</code>.</li><li>Gold reference source: GPT Pro, generated from the frozen Top-5 retrieved evidence.</li><li>Human-facing evaluation source: GPT Pro, using the same four-value rubric packet.</li><li>RAGAS scores: retained as reference diagnostics from the earlier pass; they were not rerun with GPT Pro gold answers.</li><li>Tested generation models were run locally.</li></ul>
+<p>The active gold labels now use a three-way answerability scheme: fully answerable, partially answerable, and insufficient evidence.</p>
+<h2>Model Matrix</h2>
+<p>The final controlled run included seven model/mode cells.</p>
+<ul><li>Qwen3.5 0.8B non-thinking.</li><li>Qwen3.5 2B non-thinking.</li><li>Qwen3.5 4B non-thinking.</li><li>Qwen3.5 0.8B thinking.</li><li>Qwen3.5 4B thinking.</li><li>Gemma 4 E2B non-thinking.</li><li>Gemma 4 E4B non-thinking.</li></ul>
+<p>All tested models used the same grounded evidence prompt style. Thinking mode changed only the chat-template thinking control where supported.</p>
+<h2>GPT Pro Gold Answers</h2>
+<p>The GPT Pro gold answers are now the active reference answers for this final-round data package.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/plots/gpt_pro_answerability_distribution.png" alt="GPT Pro answerability distribution" /></p>
+<ul><li>Fully answerable: 10 questions.</li><li>Partially answerable: 8 questions.</li><li>Insufficient evidence: 2 questions.</li></ul>
+<p>Data files:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/gpt_pro_gold_answers.json">GPT Pro gold answers JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/gpt_pro_gold_answers.csv">GPT Pro gold answers CSV</a></li></ul>
+<h2>Reference Automatic Scores</h2>
+<p>The RAGAS plot below is retained as a reference diagnostic from the previous scoring pass. It is useful for comparison, but the current final-round interpretation should prioritize the GPT Pro gold answers and GPT Pro human-facing judge scores below.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/plots/audited_ragas_metrics.png" alt="Audited final controlled RAGAS metrics" /></p>
+<p>The Qwen thinking runs still have invalid or weak final-answer extraction behavior, so those scores should be treated as a harness issue rather than evidence that thinking is intrinsically worse.</p>
+<h2>Human-Facing Judge Scores</h2>
+<p>The human-facing judge metrics were answer acceptance, readability, citation usefulness, and over-answering risk. These are now based on the GPT Pro evaluation packet.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/plots/audited_human_judge_metrics.png" alt="Audited final controlled human-facing metrics" /></p>
+<p>The clearest trend is that Qwen3.5 4B non-thinking has the strongest overall human-facing profile among the Qwen runs, while Gemma 4 outputs receive strong citation scores but weaker readability due to format/language issues. The thinking-mode runs fail as final student-facing answers in this setup because the saved final answers are incomplete or not usable.</p>
+<h2>Score Distribution and Stability</h2>
+<p>The following plots check stability across the 20 questions, not just model-level averages. They use a normalized human-facing composite score:</p>
+<p><code>(answer acceptance + readability + citation usefulness + (2 - over-answering risk)) / 8</code></p>
+<p>The score ranges from <code>0</code> to <code>1</code>, where higher is better. The two thinking-mode runs are excluded here because their saved final answers were not usable in this run.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_score_distribution_boxplot.png" alt="Human-facing score distribution box plot" /></p>
+<p>The box plot shows whether a model is stable across questions. A narrow box means the model behaves more consistently; a wide box means stronger question-by-question variation.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_score_heatmap.png" alt="Human-facing score heatmap" /></p>
+<p>The heatmap shows which individual questions cause failures. This is useful because two models can have similar averages while failing on different question types.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_score_mean_ci90.png" alt="Mean score with 90 percent bootstrap confidence interval" /></p>
+<p>The confidence interval is computed with bootstrap resampling over the 20 questions. It does not assume a normal distribution.</p>
+<p>The next plots keep the same 5 May 7 non-thinking model cells and show the empirical distribution more directly. They do not use the May 11 agentic runtime data.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_score_bucket_distribution.png" alt="Human-facing score bucket distribution" /></p>
+<p>The bucket chart counts how many answers fall below <code>0.50</code>, between <code>0.50</code> and <code>0.74</code>, or at least <code>0.75</code> on the normalized composite score. This is more appropriate than fitting a normal curve to ordinal judge scores.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_score_pass_rate.png" alt="Human-facing raw pass/fail and rolling pass rate" /></p>
+<p>Here a student-facing pass means <code>answer_acceptance = 2</code>, <code>readability &gt;= 1</code>, <code>citation_usefulness &gt;= 1</code>, and <code>over_answering_risk &lt;= 1</code>. The rolling window is 5 questions.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_failure_tags.png" alt="Human-facing failure tags" /></p>
+<p>The failure-tag chart shows what kinds of errors each model makes, instead of only reporting a score.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/human_score_delta_vs_qwen4b.png" alt="Paired score deltas against Qwen3.5 4B" /></p>
+<p>The paired-delta plot compares every non-thinking model against Qwen3.5 4B question by question. This is useful because model averages can look close even when they fail on different questions.</p>
+<p>Data files:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/score_stability_summary.csv">Score stability summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/score_stability_rows.csv">Score stability rows CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/score_stability_summary.json">Score stability summary JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/score_stability/score_stability_rows.json">Score stability rows JSON</a></li></ul>
+<p>Detailed score files:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/human_judge_gpt_pro_summary.csv">GPT Pro human judge summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/human_judge_gpt_pro_summary.json">GPT Pro human judge summary JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/human_judge_gpt_pro_detailed.jsonl">GPT Pro human judge detailed JSONL</a></li><li><a href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/gpt_pro_human_judge_scores.jsonl">GPT Pro human judge scores JSONL</a></li></ul>
+<h2>Latency</h2>
+<p>Mean retrieval latency was <code>0.317s</code>, with maximum retrieval latency <code>2.436s</code>. Generation latency varied more by model and mode.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/plots/audited_generation_latency.png" alt="Audited final controlled generation latency" /></p>
+<p>Thinking mode was much slower in this run: Qwen3.5 0.8B thinking averaged about <code>21.878s</code>, and Qwen3.5 4B thinking averaged about <code>30.259s</code>. This latency cost matters for the cost-aware system argument.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/plots/audited_answer_length.png" alt="Audited answer length" /></p>
+<p>Answer length is useful here because long outputs can look superficially helpful while still receiving poor student-facing scores. This is one reason the thesis treats latency, verbosity, and human-facing review as separate layers.</p>
+<h2>Interpretation</h2>
+<p>This run is now usable as the final controlled baseline, with one caveat: the GPT Pro gold references are research references created from frozen retrieved evidence, not official ICU answers.</p>
+<p>The system itself worked end to end: local retrieval, local answer models, GPT Pro gold generation, GPT Pro human-facing judging, plots, and downloadable artifacts all completed. The main finding is not that one metric cleanly selects a winner. The main finding is that automatic metrics, human-facing scores, latency, and output length reveal different failure modes.</p>
+<p>For thesis writing, the safest claim is that this is a fixed-context generation evaluation over a frozen retrieval cache. It evaluates whether each local model can synthesize a student-facing answer from the same retrieved evidence, not whether each model performs retrieval independently.</p>
+<h2>Next Steps</h2>
+<ul><li>Use the GPT Pro gold/evaluation tables as the active final baseline result.</li><li>Treat thinking-mode scores cautiously until final-answer extraction is made consistent.</li><li>Select 5-8 representative failure cases for the thesis.</li><li>Use this run as evidence for why evaluation-first workflow and manual audit are necessary.</li></ul>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive comparison</p>
+        <h2>Answer Comparator</h2>
+      </div>
+      <p>Select one shared question and any two outputs. The selector includes all seven model/mode outputs plus <strong>GPT Pro Gold Reference</strong>, so the current reference answer can be compared directly against any model answer.</p>
+      
+    <div class="compare-panel" id="may07-answer-compare" data-source="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/tables/all_answers.json">
+      <div class="compare-controls">
+        <label>
+          <span>Question</span>
+          <select data-role="question"></select>
+        </label>
+        <label>
+          <span>Left output</span>
+          <select data-role="left"></select>
+        </label>
+        <label>
+          <span>Right output</span>
+          <select data-role="right"></select>
+        </label>
+      </div>
+      <div class="compare-question" data-role="questionText"></div>
+      <div class="compare-metrics" data-role="metrics"></div>
+      <div class="compare-grid" data-role="answers"></div>
+    </div>
+    <script>
+    (async () => {
+      const root = document.getElementById("may07-answer-compare");
+      if (!root) return;
+
+      const questionSelect = root.querySelector('[data-role="question"]');
+      const leftSelect = root.querySelector('[data-role="left"]');
+      const rightSelect = root.querySelector('[data-role="right"]');
+      const questionTarget = root.querySelector('[data-role="questionText"]');
+      const metricTarget = root.querySelector('[data-role="metrics"]');
+      const answerTarget = root.querySelector('[data-role="answers"]');
+      const response = await fetch(root.dataset.source);
+      const groups = await response.json();
+      if (!groups.length) return;
+      const questions = groups[0].samples.map((sample) => ({
+        id: sample.id,
+        label: `${sample.id} · ${sample.category || "uncategorized"}`,
+        question: sample.question,
+      }));
+      const metricDefs = [
+        ["faithfulness", "Faithfulness"],
+        ["answer_relevancy", "Answer relevancy"],
+        ["answer_correctness", "Correctness"],
+        ["semantic_similarity", "Semantic similarity"],
+        ["answer_acceptance", "Acceptance"],
+        ["readability", "Readability"],
+        ["citation_usefulness", "Citation usefulness"],
+        ["over_answering_risk", "Over-answering risk"],
+      ];
+      const availableMetricDefs = metricDefs.filter(([key]) =>
+        groups.some((group) => group.samples.some((sample) =>
+          sample[key] !== undefined && sample[key] !== null && sample[key] !== ""
+        ))
+      );
+
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[char]));
+      const metric = (value) => Number.isFinite(Number(value)) ? Number(value).toFixed(3) : "n/a";
+      const answerFor = (groupIndex, questionId) => groups[groupIndex].samples.find((sample) => sample.id === questionId) || {};
+      const optionHtml = (items, labeler) => items.map((item, index) => `<option value="${index}">${escapeHtml(labeler(item, index))}</option>`).join("");
+
+      questionSelect.innerHTML = optionHtml(questions, (item) => item.label);
+      leftSelect.innerHTML = optionHtml(groups, (item) => item.label);
+      rightSelect.innerHTML = optionHtml(groups, (item) => item.label);
+      leftSelect.value = "0";
+      const referenceIndex = groups.findIndex((group) => group.is_reference);
+      if (referenceIndex >= 0) {
+        rightSelect.value = referenceIndex.toString();
+      } else {
+        rightSelect.value = groups.findIndex((group) => group.mode === "thinking" && group.label.includes("0.8B")).toString();
+        if (rightSelect.value === "-1") rightSelect.value = Math.min(1, groups.length - 1).toString();
+      }
+
+      function renderMetricRows(left, right) {
+        return availableMetricDefs.map(([key, label]) => {
+          const leftValue = Number(left[key]);
+          const rightValue = Number(right[key]);
+          const delta = Number.isFinite(leftValue) && Number.isFinite(rightValue) ? rightValue - leftValue : null;
+          const deltaText = delta === null ? "n/a" : `${delta >= 0 ? "+" : ""}${delta.toFixed(3)}`;
+          return `
+            <tr>
+              <th>${escapeHtml(label)}</th>
+              <td>${metric(left[key])}</td>
+              <td>${metric(right[key])}</td>
+              <td>${escapeHtml(deltaText)}</td>
+            </tr>
+          `;
+        }).join("");
+      }
+
+      function renderAnswerCard(group, sample) {
+        const reasoning = String(sample.reasoning_text || "").trim();
+        const answerLabel = group.is_reference || sample.is_reference ? "Reference answer" : "Generated answer";
+        return `
+          <article class="compare-answer-card">
+            <div class="answer-meta">
+              <code>${escapeHtml(sample.id)}</code>
+              <span>${escapeHtml(sample.category || "uncategorized")}</span>
+              <span>${escapeHtml(sample.answerability_label || (sample.is_answerable ? "answerable" : "insufficient evidence"))}</span>
+              <span>${escapeHtml(sample.answer_mode || group.mode || "")}</span>
+              ${sample.primary_failure_tag ? `<span>${escapeHtml(sample.primary_failure_tag)}</span>` : ""}
+            </div>
+            <h3>${escapeHtml(group.label)}</h3>
+            <div class="answer-reference model-answer">
+              <strong>${answerLabel}</strong>
+              <p>${escapeHtml(sample.answer_text || "").replace(/\n/g, "<br>")}</p>
+            </div>
+            ${sample.teacher_notes ? `
+              <div class="answer-reference">
+                <strong>Reference notes</strong>
+                <p>${escapeHtml(sample.teacher_notes).replace(/\n/g, "<br>")}</p>
+              </div>
+            ` : ""}
+            ${reasoning ? `
+              <details class="compare-reasoning">
+                <summary>Thinking text</summary>
+                <p>${escapeHtml(reasoning).replace(/\n/g, "<br>")}</p>
+              </details>
+            ` : ""}
+          </article>
+        `;
+      }
+
+      function render() {
+        const question = questions[Number(questionSelect.value)] || questions[0];
+        const leftIndex = Number(leftSelect.value);
+        const rightIndex = Number(rightSelect.value);
+        const left = answerFor(leftIndex, question.id);
+        const right = answerFor(rightIndex, question.id);
+        questionTarget.innerHTML = `
+          <code>${escapeHtml(question.id)}</code>
+          <strong>${escapeHtml(question.question)}</strong>
+          <p>Gold answer: ${escapeHtml(left.gold_answer || right.gold_answer || "").replace(/\n/g, "<br>")}</p>
+        `;
+        metricTarget.innerHTML = `
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Metric</th><th>Left</th><th>Right</th><th>Right − left</th></tr></thead>
+              <tbody>${renderMetricRows(left, right)}</tbody>
+            </table>
+          </div>
+        `;
+        answerTarget.innerHTML = renderAnswerCard(groups[leftIndex], left) + renderAnswerCard(groups[rightIndex], right);
+      }
+
+      [questionSelect, leftSelect, rightSelect].forEach((select) => select.addEventListener("change", render));
+      render();
+    })();
+    </script>
+    
+      <p><a class="text-link" href="/icu-wiki/answers/may07-final/">Open all May 7 final-round answers and GPT Pro gold references</a></p>
+    </section>
+    
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Metric-space projection</p>
+        <h2>Non-thinking model clusters from RAGAS and human-facing metrics</h2>
+      </div>
+      <p>Each non-thinking model cell is represented by eight quality metrics: <code>faithfulness</code>, <code>answer_relevancy</code>, <code>answer_correctness</code>, <code>semantic_similarity</code>, <code>answer_acceptance</code>, <code>readability</code>, <code>citation_usefulness</code>, <code>over_answering_safety</code>. The thinking-mode cells are excluded from this projection because their saved final answers were not usable in this run. The vectors are standardized, projected to three PCA dimensions, and clustered with KMeans. The selected K is <code>2</code>, chosen by silhouette score over K=2..4.</p>
+      <div class="metric-pca-shell" data-source="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/metrics_embedding/model_metric_pca_clusters.json">
+        <div class="metric-pca-plot" id="may07-metric-pca-plot" aria-label="Interactive 3D PCA plot of non-thinking model metric vectors"></div>
+        <p class="metric-pca-caption">Included mode: <code>non-thinking</code>. PC1 explains 70.7% of variance, PC2 explains 15.6%, and PC3 explains 13.0%. Silhouette scores: <code>{&quot;2&quot;: 0.28169603819630173, &quot;3&quot;: 0.1302312373311409, &quot;4&quot;: 0.08644097273510983}</code>.</p>
+      </div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Cell</th><th>Model</th><th>Mode</th><th>Cluster</th><th>PC1</th><th>PC2</th><th>PC3</th><th>Nearest cell</th></tr></thead><tbody><tr><td><code>C01</code></td><td>Qwen_Qwen3.5-0.8B</td><td>non-thinking</td><td>C1</td><td>-4.119</td><td>-0.559</td><td>0.304</td><td>C02</td></tr><tr><td><code>C02</code></td><td>Qwen_Qwen3.5-2B</td><td>non-thinking</td><td>C1</td><td>-1.130</td><td>0.507</td><td>-0.248</td><td>C03</td></tr><tr><td><code>C03</code></td><td>Qwen_Qwen3.5-4B</td><td>non-thinking</td><td>C2</td><td>0.998</td><td>1.525</td><td>-1.096</td><td>C02</td></tr><tr><td><code>C04</code></td><td>google_gemma-4-E2B-it</td><td>non-thinking</td><td>C2</td><td>2.070</td><td>0.324</td><td>1.807</td><td>C03</td></tr><tr><td><code>C05</code></td><td>google_gemma-4-E4B-it</td><td>non-thinking</td><td>C2</td><td>2.182</td><td>-1.797</td><td>-0.768</td><td>C04</td></tr></tbody></table></div>
+      <p><a class="text-link" href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/metrics_embedding/model_metric_pca_clusters.csv">Download metric PCA CSV</a> · <a class="text-link" href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/metrics_embedding/model_metric_pca_clusters.json">Download metric PCA JSON</a></p>
+    </section>
+    <script>
+    (async function renderMetricPca() {
+      const root = document.querySelector(".metric-pca-shell");
+      const plot = document.getElementById("may07-metric-pca-plot");
+      if (!root || !plot || !window.Plotly) return;
+      const response = await fetch(root.dataset.source);
+      const payload = await response.json();
+      const rows = payload.rows || [];
+      const colors = ["#1d4ed8", "#0f766e", "#b45309", "#7c3aed"];
+      const clusters = [...new Set(rows.map((row) => row.cluster))].sort();
+      const traces = clusters.map((cluster, index) => {
+        const clusterRows = rows.filter((row) => row.cluster === cluster);
+        return {
+          type: "scatter3d",
+          mode: "markers+text",
+          name: cluster,
+          x: clusterRows.map((row) => row.pca_1),
+          y: clusterRows.map((row) => row.pca_2),
+          z: clusterRows.map((row) => row.pca_3),
+          text: clusterRows.map((row) => row.condition_id),
+          textposition: "top center",
+          customdata: clusterRows.map((row) => [
+            row.model,
+            String(row.mode || "").replace("_", "-"),
+            row.nearest_label,
+            Number(row.nearest_distance || 0).toFixed(3),
+            Number(row.answer_acceptance || 0).toFixed(2),
+            Number(row.readability || 0).toFixed(2),
+            Number(row.citation_usefulness || 0).toFixed(2),
+          ]),
+          marker: {
+            size: 7,
+            color: colors[index % colors.length],
+            line: { color: "#0f172a", width: 0.8 },
+            opacity: 0.92,
+          },
+          hovertemplate:
+            "<b>%{text}</b><br>" +
+            "Model: %{customdata[0]}<br>" +
+            "Mode: %{customdata[1]}<br>" +
+            "Cluster: " + cluster + "<br>" +
+            "Nearest: %{customdata[2]} (%{customdata[3]})<br>" +
+            "Acceptance: %{customdata[4]}<br>" +
+            "Readability: %{customdata[5]}<br>" +
+            "Citation: %{customdata[6]}<br>" +
+            "<extra></extra>",
+        };
+      });
+      const explained = payload.pca_explained_variance_ratio || [0, 0, 0];
+      const layout = {
+        margin: { l: 0, r: 0, t: 20, b: 0 },
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
+        legend: { orientation: "h", y: 1.04 },
+        scene: {
+          xaxis: { title: `PC1 (${(Number(explained[0] || 0) * 100).toFixed(1)}%)` },
+          yaxis: { title: `PC2 (${(Number(explained[1] || 0) * 100).toFixed(1)}%)` },
+          zaxis: { title: `PC3 (${(Number(explained[2] || 0) * 100).toFixed(1)}%)` },
+        },
+      };
+      Plotly.newPlot(plot, traces, layout, { responsive: true, displaylogo: false });
+    })();
+    </script>
+    
+    
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Hidden-state diagnostic</p>
+        <h2>Interactive repetition topology</h2>
+      </div>
+      <p>This block visualizes final-layer hidden-state trajectories for the Qwen3.5 0.8B, 2B, and 4B diagnostic run. Each selected answer is projected to three dimensions with PCA fitted only on that answer's token states, so the plot is for inspecting the shape of one trajectory rather than comparing absolute PC coordinates across models.</p>
+      <div class="topology-shell" data-source="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/hidden_topology/hidden_repetition_topology.json">
+        <div class="topology-toolbar">
+          <label>
+            <span>Case</span>
+            <select data-role="case"></select>
+          </label>
+          <p data-role="status">Loading hidden-state trajectory data...</p>
+        </div>
+        <div class="topology-layout">
+          <div class="topology-plot" id="may07-hidden-topology-plot" aria-label="Interactive 3D hidden-state trajectory plot"></div>
+          <aside class="topology-details" data-role="details"></aside>
+        </div>
+      </div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th><th>Cases</th><th>Mean tokens</th><th>Repetition cases</th><th>Mean 4-gram repeats / 100 tokens</th><th>Mean entropy</th><th>Mean top probability</th><th>Mean final-layer diameter</th></tr></thead><tbody><tr><td>Qwen3.5-0.8B</td><td>20</td><td>181.300</td><td>12</td><td>4.462</td><td>1.362</td><td>0.631</td><td>59.060</td></tr><tr><td>Qwen3.5-2B</td><td>20</td><td>242.050</td><td>19</td><td>7.063</td><td>0.974</td><td>0.714</td><td>82.425</td></tr><tr><td>Qwen3.5-4B</td><td>20</td><td>254.850</td><td>20</td><td>5.506</td><td>0.696</td><td>0.775</td><td>88.990</td></tr></tbody></table></div>
+      <p><a class="text-link" href="/icu-wiki/artifacts/2026-05-07/final-controlled-v2/audited/hidden_topology/hidden_repetition_topology_summary.json">Download summary JSON</a></p>
+    </section>
+    <script>
+    (async function renderHiddenTopology() {
+      const root = document.querySelector(".topology-shell");
+      const plot = document.getElementById("may07-hidden-topology-plot");
+      if (!root || !plot || !window.Plotly) return;
+      const select = root.querySelector('[data-role="case"]');
+      const status = root.querySelector('[data-role="status"]');
+      const details = root.querySelector('[data-role="details"]');
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[char]));
+      const fmt = (value, digits = 3) => Number.isFinite(Number(value)) ? Number(value).toFixed(digits) : "n/a";
+      const response = await fetch(root.dataset.source);
+      const payload = await response.json();
+      const cases = payload.cases || [];
+      if (!cases.length) {
+        status.textContent = "No hidden-state trajectory data found.";
+        return;
+      }
+
+      const preferredIndex = Math.max(0, cases.findIndex((item) => item.case_id.includes("Qwen_Qwen3.5-0.8B::h2_014")));
+      select.innerHTML = cases.map((item, index) => `
+        <option value="${index}">${escapeHtml(item.label)} · rep4=${item.repeated_4gram_count} · tokens=${item.token_count}</option>
+      `).join("");
+      select.value = String(preferredIndex);
+
+      function render() {
+        const item = cases[Number(select.value)] || cases[0];
+        const points = item.points || [];
+        const x = points.map((point) => point.x);
+        const y = points.map((point) => point.y);
+        const z = points.map((point) => point.z);
+        const labels = points.map((point) => point.i);
+        const hoverData = points.map((point) => [
+          point.token,
+          point.window,
+          point.is_repetition_onset ? "yes" : "no",
+        ]);
+        const traces = [
+          {
+            type: "scatter3d",
+            mode: "lines+markers",
+            name: "token trajectory",
+          x,
+          y,
+          z,
+          text: labels,
+          customdata: hoverData,
+            line: { color: "#64748b", width: 3 },
+            marker: {
+              size: 4,
+              color: labels,
+              colorscale: "Viridis",
+              showscale: true,
+              colorbar: { title: "token" },
+              opacity: 0.86,
+            },
+          hovertemplate:
+              "<b>token %{text}</b><br>" +
+              "Token: %{customdata[0]}<br>" +
+              "Local text: %{customdata[1]}<br>" +
+              "Repetition onset: %{customdata[2]}<br>" +
+              "PC1=%{x:.3f}<br>PC2=%{y:.3f}<br>PC3=%{z:.3f}" +
+              "<extra></extra>",
+          },
+        ];
+        const onset = Number(item.repetition_onset_token);
+        if (Number.isFinite(onset) && points[onset]) {
+          traces.push({
+            type: "scatter3d",
+            mode: "markers+text",
+            name: "repetition onset",
+            x: [points[onset].x],
+            y: [points[onset].y],
+            z: [points[onset].z],
+            text: [`onset ${onset}`],
+            textposition: "top center",
+            marker: { size: 8, color: "#dc2626", symbol: "diamond" },
+            hovertemplate: "<b>repetition onset</b><br>token " + onset + "<extra></extra>",
+          });
+        }
+        const explained = item.pca_explained_variance_ratio || [0, 0, 0];
+        Plotly.react(plot, traces, {
+          margin: { l: 0, r: 0, t: 20, b: 0 },
+          paper_bgcolor: "rgba(0,0,0,0)",
+          plot_bgcolor: "rgba(0,0,0,0)",
+          legend: { orientation: "h", y: 1.04 },
+          scene: {
+            xaxis: { title: `PC1 (${(Number(explained[0] || 0) * 100).toFixed(1)}%)` },
+            yaxis: { title: `PC2 (${(Number(explained[1] || 0) * 100).toFixed(1)}%)` },
+            zaxis: { title: `PC3 (${(Number(explained[2] || 0) * 100).toFixed(1)}%)` },
+          },
+        }, { responsive: true, displaylogo: false });
+        status.textContent = `${item.label} · ${item.token_count} tokens · final layer ${item.final_layer}`;
+        details.innerHTML = `
+          <h3>${escapeHtml(item.label)}</h3>
+          <dl>
+            <dt>Question</dt><dd>${escapeHtml(item.question)}</dd>
+            <dt>Answer preview</dt><dd>${escapeHtml(item.answer_preview)}</dd>
+            <dt>Failure tag</dt><dd>${escapeHtml(item.qwen08_primary_failure_tag || "n/a")}</dd>
+            <dt>Repetition</dt><dd>${item.repeated_4gram_count} repeated 4-grams; onset token ${item.repetition_onset_token ?? "none"}</dd>
+            <dt>Entropy / top probability</dt><dd>${fmt(item.entropy_mean)} / ${fmt(item.top_prob_mean)}</dd>
+            <dt>Trajectory stats</dt><dd>path ${fmt(item.path_length)}; diameter ${fmt(item.diameter)}; max non-adjacent cosine ${fmt(item.max_nonadjacent_cosine)}</dd>
+          </dl>
+        `;
+      }
+
+      select.addEventListener("change", render);
+      render();
+    })();
+    </script>
+    
+    </div>
+    </article>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-12.</span>
+    </footer>
+  </body>
+</html>

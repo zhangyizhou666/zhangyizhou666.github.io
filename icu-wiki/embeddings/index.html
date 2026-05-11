@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Embedding Map — ICU Wiki Research</title>
+    <meta name="description" content="Interactive 3D PCA visualization of the ICU Wiki passage embedding database." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        
+      </nav>
+    </header>
+    <main>
+    <section class="page-title compact-title">
+      <p class="eyebrow">Embedding space</p>
+      <h1>ICU Wiki 3D Embedding Map</h1>
+      <p>This page visualizes the latest structural-fallback retrieval index. Each point is one real passage chunk from <code>embeddings.jsonl</code>, projected from 1024 dimensions to three PCA components.</p>
+    </section>
+
+    <section class="section no-top">
+      <div class="note-grid" id="embedding-stats">
+        <article><span>Loading</span><strong>embedding artifact</strong><p>Reading PCA coordinates and metadata.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive visualization</p>
+        <h2>3D PCA projection of the current database</h2>
+      </div>
+      <p>The map is a diagnostic projection, not the original high-dimensional space. Distances are approximate because PCA compresses 1024-dimensional BGE-M3 vectors into three dimensions.</p>
+      <p><strong>Embedding source:</strong> <code>data/indexes/runs/20260501T_bge_m3_structural_fallback/structural_fallback_v1/baai_bge_m3/embeddings.jsonl</code></p>
+      <p><strong>Chunk metadata source:</strong> <code>data/chunks/runs/20260430T212507/structural_fallback_v1/passages.jsonl</code></p>
+      <div class="embedding-map-shell" id="embedding-map" data-source="/icu-wiki/artifacts/2026-05-04/embedding-map/embedding_pca_3d.json">
+        <div class="embedding-toolbar">
+          <label>
+            <span>Color by</span>
+            <select id="embedding-color-field"></select>
+          </label>
+          <label>
+            <span>Source system</span>
+            <select id="embedding-source-filter"></select>
+          </label>
+          <label>
+            <span>Source type</span>
+            <select id="embedding-type-filter"></select>
+          </label>
+          <label>
+            <span>Search chunks</span>
+            <input id="embedding-search" type="search" placeholder="title, section, chunk type, text..." />
+          </label>
+        </div>
+        <div class="embedding-status" id="embedding-status">Loading points...</div>
+        <div class="embedding-layout">
+          <div class="embedding-plot" id="embedding-plot"></div>
+          <aside class="embedding-details" id="embedding-details"></aside>
+        </div>
+      </div>
+    </section>
+    
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script>
+    (async () => {
+      const root = document.getElementById("embedding-map");
+      const plot = document.getElementById("embedding-plot");
+      const status = document.getElementById("embedding-status");
+      const statsTarget = document.getElementById("embedding-stats");
+      const detailsTarget = document.getElementById("embedding-details");
+      const colorSelect = document.getElementById("embedding-color-field");
+      const searchInput = document.getElementById("embedding-search");
+      const sourceSelect = document.getElementById("embedding-source-filter");
+      const typeSelect = document.getElementById("embedding-type-filter");
+      if (!root || !plot) return;
+
+      const dataSource = root.dataset.source;
+      const response = await fetch(dataSource);
+      const payload = await response.json();
+      const manifest = payload.manifest || {};
+      const points = payload.points || [];
+      const colorFields = manifest.color_fields || ["source_type", "source_system", "chunk_type", "language", "access_scope"];
+
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[char]));
+
+      const shortText = (value, maxLength = 280) => {
+        const text = String(value || "");
+        return text.length <= maxLength ? text : `${text.slice(0, maxLength - 1)}…`;
+      };
+
+      const uniqueValues = (key, rows = points) => [...new Set(rows.map((row) => row[key] || "unknown"))].sort();
+
+      colorSelect.innerHTML = colorFields
+        .map((field) => `<option value="${escapeHtml(field)}">${escapeHtml(field)}</option>`)
+        .join("");
+
+      sourceSelect.innerHTML = `<option value="">All source systems</option>` +
+        uniqueValues("source_system").map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("");
+      typeSelect.innerHTML = `<option value="">All source types</option>` +
+        uniqueValues("source_type").map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("");
+
+      function renderStats() {
+        const explained = (manifest.explained_variance_ratio_3d || []).map((value) => `${(Number(value) * 100).toFixed(1)}%`);
+        statsTarget.innerHTML = `
+          <article><span>Points</span><strong>${Number(manifest.point_count || points.length).toLocaleString()}</strong><p>One point per passage chunk.</p></article>
+          <article><span>Source vector</span><strong>${escapeHtml(manifest.source_embedding_dimensions || "n/a")}D</strong><p>${escapeHtml(manifest.embedding_model || "unknown model")}</p></article>
+          <article><span>PCA variance</span><strong>${escapeHtml(explained.join(" / "))}</strong><p>PCA-1, PCA-2, and PCA-3 explained variance.</p></article>
+        `;
+      }
+
+      function filteredPoints() {
+        const query = searchInput.value.trim().toLowerCase();
+        const source = sourceSelect.value;
+        const type = typeSelect.value;
+        return points.filter((row) => {
+          if (source && row.source_system !== source) return false;
+          if (type && row.source_type !== type) return false;
+          if (!query) return true;
+          const haystack = [
+            row.title,
+            row.section_title,
+            row.chunk_type,
+            row.source_system,
+            row.source_type,
+            row.passage_id,
+            row.text_preview,
+          ].join(" ").toLowerCase();
+          return haystack.includes(query);
+        });
+      }
+
+      function traceFor(rows, colorField, value) {
+        const selected = rows.filter((row) => (row[colorField] || "unknown") === value);
+        return {
+          type: "scatter3d",
+          mode: "markers",
+          name: value,
+          x: selected.map((row) => row.x),
+          y: selected.map((row) => row.y),
+          z: selected.map((row) => row.z),
+          text: selected.map((row) =>
+            `<b>${escapeHtml(row.title || "Untitled")}</b>` +
+            `<br>${escapeHtml(row.source_system)} / ${escapeHtml(row.source_type)}` +
+            `<br>${escapeHtml(row.chunk_type)} · ${escapeHtml(row.language)}` +
+            `<br>${escapeHtml(row.passage_id)}` +
+            `<br>${escapeHtml(shortText(row.text_preview, 320))}`
+          ),
+          customdata: selected,
+          hovertemplate: "%{text}<extra></extra>",
+          marker: {
+            size: 2.8,
+            opacity: 0.68,
+            line: { width: 0.1, color: "#ffffff" }
+          }
+        };
+      }
+
+      function renderDetails(row) {
+        if (!row) {
+          detailsTarget.innerHTML = `
+            <h3>Selected chunk</h3>
+            <p>Click one point in the 3D map to inspect its passage text and metadata.</p>
+          `;
+          return;
+        }
+        const sourceLink = row.source_url
+          ? `<p><a href="${escapeHtml(row.source_url)}">Open source URL</a></p>`
+          : "";
+        detailsTarget.innerHTML = `
+          <h3>${escapeHtml(row.title || "Untitled passage")}</h3>
+          <div class="answer-meta">
+            <code>${escapeHtml(row.passage_id)}</code>
+            <span>${escapeHtml(row.source_system)}</span>
+            <span>${escapeHtml(row.source_type)}</span>
+            <span>${escapeHtml(row.chunk_type)}</span>
+            <span>${escapeHtml(row.language)}</span>
+          </div>
+          <dl>
+            <dt>Section</dt><dd>${escapeHtml(row.section_path || row.section_title || "n/a")}</dd>
+            <dt>Chunk strategy</dt><dd>${escapeHtml(row.chunk_strategy || "n/a")}</dd>
+            <dt>Token count</dt><dd>${escapeHtml(row.token_count || "n/a")}</dd>
+          </dl>
+          <div class="answer-reference model-answer">
+            <strong>Chunk text preview</strong>
+            <p>${escapeHtml(row.text_preview || "").replace(/\n/g, "<br>")}</p>
+          </div>
+          ${sourceLink}
+        `;
+      }
+
+      function renderPlot() {
+        const rows = filteredPoints();
+        const colorField = colorSelect.value || "source_type";
+        const values = uniqueValues(colorField, rows);
+        const traces = values.map((value) => traceFor(rows, colorField, value));
+        status.textContent = `${rows.length.toLocaleString()} / ${points.length.toLocaleString()} chunks shown`;
+        const layout = {
+          margin: { l: 0, r: 0, t: 0, b: 0 },
+          paper_bgcolor: "#ffffff",
+          plot_bgcolor: "#ffffff",
+          hovermode: "closest",
+          legend: {
+            orientation: "h",
+            y: -0.08,
+            font: { size: 11 }
+          },
+          scene: {
+            xaxis: { title: "PCA-1", gridcolor: "#e7edf3", zeroline: false },
+            yaxis: { title: "PCA-2", gridcolor: "#e7edf3", zeroline: false },
+            zaxis: { title: "PCA-3", gridcolor: "#e7edf3", zeroline: false },
+            camera: { eye: { x: 1.55, y: 1.55, z: 1.25 } }
+          }
+        };
+        Plotly.react(plot, traces, layout, { responsive: true, displaylogo: false });
+        plot.on("plotly_click", (event) => {
+          const row = event.points?.[0]?.customdata;
+          renderDetails(row);
+        });
+      }
+
+      let debounceTimer = null;
+      function scheduleRender() {
+        window.clearTimeout(debounceTimer);
+        debounceTimer = window.setTimeout(renderPlot, 120);
+      }
+
+      renderStats();
+      renderDetails(null);
+      renderPlot();
+      [colorSelect, sourceSelect, typeSelect].forEach((control) => control.addEventListener("change", renderPlot));
+      searchInput.addEventListener("input", scheduleRender);
+    })().catch((error) => {
+      const status = document.getElementById("embedding-status");
+      if (status) status.textContent = `Failed to load embedding map: ${error}`;
+      console.error(error);
+    });
+    </script>
+    
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-12.</span>
+    </footer>
+  </body>
+</html>

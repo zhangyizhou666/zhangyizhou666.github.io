@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hard Realistic 20 — ICU Wiki Research</title>
+    <meta name="description" content="Hard realistic benchmark for ICU Wiki model evaluation." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        
+      </nav>
+    </header>
+    <main>
+    <section class="page-title compact-title">
+      <p class="eyebrow">Benchmark</p>
+      <h1>Hard realistic 20-question benchmark</h1>
+      <p>This benchmark was added because the <a href="/icu-wiki/benchmark/initial-50/">earlier 50-question benchmark</a> was too simple and often too broad. The hard-20 set is designed to look more like real student questions, including ambiguity, mixed languages, answerability limits, and policy-sensitive cases.</p>
+    </section>
+
+    <section class="section no-top">
+      <div class="note-grid">
+        <article><span>Questions</span><strong>20</strong><p>Student-style questions across registration, JLP, housing, student support, calendar, office contact, and policy conflict scenarios.</p></article>
+        <article><span>Retrieval</span><strong>Top-5 hybrid evidence</strong><p>Fixed <code>local-hybrid-rrf</code> retrieval cache using lexical + dense retrieval.</p></article>
+        <article><span>Gold answers</span><strong>GPT-5 mini</strong><p>Reference answers and answerability labels were generated from the fixed top evidence.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Question examples</p>
+        <h2>Hard-question design</h2>
+      </div>
+      <p>These examples include practical constraints that a real ICU chatbot must handle: missing deadlines, personal planning, unsupported future facts, Japanese queries, and cases where the correct answer should be cautious.</p>
+      <div class="table-wrap"><table class="data-table question-table"><thead><tr><th>ID</th><th>Category</th><th>Answerable</th><th>Question</th></tr></thead><tbody><tr><td><code>hr_001</code></td><td>language</td><td>yes</td><td>I&#x27;m a new student and I plan to take JLP, but I don&#x27;t know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?</td></tr><tr><td><code>hr_002</code></td><td>registration</td><td>no / insufficient evidence</td><td>I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?</td></tr><tr><td><code>hr_003</code></td><td>registration</td><td>no / insufficient evidence</td><td>If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?</td></tr><tr><td><code>hr_004</code></td><td>major</td><td>no / insufficient evidence</td><td>I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?</td></tr><tr><td><code>hr_005</code></td><td>graduation</td><td>no / insufficient evidence</td><td>I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?</td></tr><tr><td><code>hr_006</code></td><td>student_status</td><td>yes</td><td>If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?</td></tr><tr><td><code>hr_007</code></td><td>housing</td><td>yes</td><td>I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?</td></tr><tr><td><code>hr_008</code></td><td>student_support</td><td>yes</td><td>I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?</td></tr></tbody></table></div>
+      <p><a class="text-link" href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_questions.json">Download all 20 questions as JSON</a></p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Generated answers</p>
+        <h2>Five saved answers per model</h2>
+      </div>
+      <p>These examples come directly from the saved hard-20 model-output JSONL files. They are included because metric tables alone hide language consistency, usefulness, verbosity, and citation clarity.</p>
+      <div class="answer-samples">
+            <details class="answer-group">
+              <summary>
+                <strong>Qwen3.5 0.8B (HF)</strong>
+                <span>5 saved answers</span>
+              </summary>
+              <div class="answer-list">
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_001</code>
+                    <span>language</span>
+                    <span>answerable</span>
+                    
+                    
+                  </div>
+                  <h4>I&#x27;m a new student and I plan to take JLP, but I don&#x27;t know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, the placement into the Japanese Language Program (JLP) is determined by the student&#x27;s level of Japanese proficiency, as measured by a placement test. * **Placement Test:** All students admitted through the English Language Based Admissions must take a placement test to be placed into the most appropriate courses by their proficiency levels [1]. * **Special Track:** Students who regard Japanese as their first or heritage language are placed in the &quot;Special Japanese Track&quot; to improve skills they are lacking [1]. * **Non-Degree Students:** The JLP is also open to non-degree students, specifically one-year exchange students and Kenkyusei (Special Students) [4]. * **Official Source:** The official information is available on the ICU website under the &quot;Frequently Asked Questions&quot; section for admissions and the &quot;Major Information Site&quot; for general student details [1], [2]. **Note:** Evidence [2] describes the curriculum structure of the Information Science major and does not contain information regarding the JLP placement process.</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-001633::P014</code>, <code>DOC-001393::P004</code>, <code>DOC-001611::P000</code>, <code>DOC-001633::P015</code>, <code>DOC-001612::P000</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_002</code>
+                    <span>registration</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>You can register or change your courses, but the procedure is strict and requires specific attention. **1. Registration Day vs. Change Period** You cannot register on the normal Registration Day if you are sick. Instead, you must complete the registration during the designated **Registration Change Period**. After this period ends, registration is no longer acceptable for any reason. **2. Requirements for Late Registration** If you miss the Registration Day, you must apply for **Late Registration** during the Change Period. * **Fee:** You must pay a Late Registration fee of **3,000 yen**. * **Advisor Interview:** Before applying for Late Registration, you must visit the Educational Affairs Group to make the payment, as advisors cannot approve online registration until payment is made. **3. Consequences of Missing the Deadline** If you fail to complete the registration procedure by the deadline: * The system will see the registration as **non-registered**. * You will be required to apply for a **leave of absence** or **withdrawal from the university**. **Summary** * **Action:** Complete registration during the Change Period. * **Payment:** Pay the 3,000 yen Late Registration fee. * **Warning:** Do not register on the Registration Day if you are sick; you must wait for the Change Period.</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000039::P007</code>, <code>DOC-000108::P013</code>, <code>DOC-000039::P008</code>, <code>DOC-000108::P012</code>, <code>DOC-000098::P002</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_003</code>
+                    <span>registration</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, here are the key rules and deadlines to check before withdrawing from a course: * **Registration Change Period:** You must complete the registration change procedure during the designated period. If you do not, you must take a leave of absence or withdraw from the university. [2] * **Deadline for Late Registration:** If it is not possible to register on the day of the course, you should complete the Late Registration during the registration change period. After the registration change period ends, no registrations will be accepted for any reason. [4] * **Submission of Senior Thesis:** If you are considering a Senior Thesis, you must submit an electronic data (PDF) between **January 9 (Tuesday) and February 1 (Thursday), 2024**. No thesis will be accepted after 16:00 on the deadline date under any circumstances. [1] * **Registration Withdrawal Application:** If you wish to withdraw from the course, you must submit an application to the Educational Affairs Group together with documents explaining the reasonable reasons (such as a medical certificate). The application must be submitted by a month prior to the last day of the classes. [3] *Note: Evidence [1] and [4] reinforce the importance of checking graduation requirements and the specific timeline for thesis submission, while [2] and [3] provide the procedural steps for registration changes and withdrawals.*</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000108::P004</code>, <code>DOC-000108::P013</code>, <code>DOC-000040::P000</code>, <code>DOC-000098::P002</code>, <code>DOC-000097::P013</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_004</code>
+                    <span>major</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>To confirm whether courses or credits will count toward your ICU requirements, you must verify the specific requirements of your study abroad destination. [1] The Health Checkup is often required for study abroad destinations, and if you are unsure, please contact the university where you will be studying abroad. [2] You should submit the rest of the necessary documents for your application by the designated deadline, including the School Report and a list of courses progressing or to be taken in the final semester/year. Once admitted, you must submit the original or certified true copies of such a diploma or completion certificate to confirm your admission to ICU. [3] Currently, more than 450 ICU students study abroad a year and earn credits through its various overseas study programs with different locations and terms. [4] Foreign language courses may be transferred as Electives, with a maximum of 21 credits per one foreign language. (Note: The total transfer credits may not exceed 60 credits when added together with transferred credits from ICU&#x27;s Exchange Program, RYUGAKU, credit auditors, and study abroad (Summer Abroad Programs).)</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-001381::P010</code>, <code>DOC-001586::P002</code>, <code>DOC-001609::P000</code>, <code>DOC-000060::P002</code>, <code>DOC-000061::P001</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_005</code>
+                    <span>graduation</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>You can find the official schedule and expected deadlines on the **ICU Academic Portal** (specifically the &quot;Senior Thesis&quot; section of the eHANDBOOK). According to the evidence: * **Submission Deadline:** Senior thesis submissions must be submitted before the prescribed deadline, which is **4:00 p.m. on the deadline date** under any circumstances [1]. * **Expected Deadlines:** * **Application Deadline:** The application for Senior Thesis Advisor and Candidacy for Senior Thesis Research is due **October 20, 2025** [4]. * **Registration Deadline:** Results of the application are announced on the Registration Website on **December 3, 2025** [3]. * **Graduation Deadline:** If you cannot meet the submission deadline, you will not be able to graduate as expected [1]. To avoid missing these dates, you should try to submit your senior thesis before the deadline [1].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000033::P000</code>, <code>DOC-000033::P001</code>, <code>DOC-000026::P002</code>, <code>DOC-000026::P001</code>, <code>DOC-000030::P000</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                </div>
+            </details>
+            
+            <details class="answer-group">
+              <summary>
+                <strong>Qwen3.5 2B (HF)</strong>
+                <span>5 saved answers</span>
+              </summary>
+              <div class="answer-list">
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_001</code>
+                    <span>language</span>
+                    <span>answerable</span>
+                    
+                    
+                  </div>
+                  <h4>I&#x27;m a new student and I plan to take JLP, but I don&#x27;t know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, the placement level for the Japanese Language Program (JLP) is determined by a placement test that assesses your proficiency in Japanese. * **Placement Test:** All students admitted through the English Language Based Admissions must take a placement test to place them into the most appropriate courses by their levels of Japanese proficiency [1]. * **Official Information:** For detailed information on the JLP, including eligibility for non-degree students and specific tracks, you should check the official ICU website under the &quot;Frequently Asked Questions&quot; section regarding the JLP [3]. * **Note on Language:** While the JLP is primarily for those entering through Japanese-based admissions, some elective courses are available to those accepted via English-based admissions [1].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-001633::P014</code>, <code>DOC-001393::P004</code>, <code>DOC-001611::P000</code>, <code>DOC-001633::P015</code>, <code>DOC-001612::P000</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_002</code>
+                    <span>registration</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>You can still register or change your courses, but you must do so during the designated **Late Registration/Registration Change Period** rather than on the original Registration Day. Key points to pay attention to: - **Deadline**: You must complete the registration change before the deadline; otherwise, the registration is considered non-registered and you must apply for a leave of absence or withdraw [1], [4]. - **Procedure**: You must visit the Educational Affairs Group to make the payment (Late Registration Fee of 3,000 yen) before the advisor can approve the registration [3]. - **Confirmation**: Even if you input data, the procedure is not completed until you click the **&quot;SAVE&quot;** button [2]. - **Pre-Registration**: If you are registering for courses assigned by lottery or Senior Thesis, you are still required to complete the regular registration procedures on the Registration Day, including an advisor interview and online approval [2], [4]. Please note that the schedule of assigned courses (e.g., ELA, Senior Thesis) cannot be changed [1].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000039::P007</code>, <code>DOC-000108::P013</code>, <code>DOC-000039::P008</code>, <code>DOC-000108::P012</code>, <code>DOC-000098::P002</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_003</code>
+                    <span>registration</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>To withdraw from a course after seeing your workload, you must adhere to the following rules and deadlines based on the provided evidence: * **Withdrawal Timing**: You must complete the withdrawal during the designated **registration change period**. Withdrawal is not possible after this period ends [2]. * **Application Deadline**: You must submit your application for **Registration Withdrawal** at least **one month prior** to the last day of the classes [3]. * **Consequences**: If you do not complete the withdrawal during the designated period, you must take a leave of absence or withdraw from the university [2]. * **Critical Warning**: Cancelling registration for a course might endanger your satisfaction of graduation requirements. You are responsible for ensuring your withdrawal does not result in serious consequences for your graduation requirements [1]. * **Process Requirement**: When making the registration change, you must click the **&quot;SAVE&quot;** button to complete the procedure. Even if you input the data, the process is not completed unless this button is clicked [2]. **Note**: If you cannot complete the withdrawal during the designated period, you must complete a **Late Registration** during the registration change period [4].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000108::P004</code>, <code>DOC-000108::P013</code>, <code>DOC-000040::P000</code>, <code>DOC-000098::P002</code>, <code>DOC-000097::P013</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_004</code>
+                    <span>major</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>To confirm whether courses or credits will count toward your ICU requirements while studying abroad, you should follow these steps based on the provided evidence: 1. **Check the Destination&#x27;s Official Website**: The primary source for verifying course equivalency is the website of your specific study abroad destination [1]. 2. **Contact the Destination&#x27;s Health Office**: If you are unsure about specific requirements, you must contact the university where you will be studying abroad [1]. 3. **Verify Course Progress**: Submit a list of courses you are progressing or plan to take in the final semester/year to verify that you will meet the course requirements [2]. 4. **Submit Original Certificates**: Once admitted, you must submit the original or certified true copies of the diploma or completion certificate to confirm your admission to ICU [2]. 5. **Follow ICU&#x27;s Transfer Policy**: If you are transferring credits from other universities, you must complete the prescribed application form and submit it to the Educational Affairs Group by the end of your first term at ICU [4]. *Note: Requirements may change without prior notice due to educational reform in the country/region/educational system [2].*</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-001381::P010</code>, <code>DOC-001586::P002</code>, <code>DOC-001609::P000</code>, <code>DOC-000060::P002</code>, <code>DOC-000061::P001</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_005</code>
+                    <span>graduation</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, here is the information regarding senior thesis deadlines: **Official Schedule** The official schedule is available on the ICU Portal via the &quot;Senior Thesis&quot; section of the ehandbook [1]. **Expected Deadlines** * **Submission Deadline:** The submission deadline is **4:00 p.m.** on the designated date [1]. * **Consequence:** No thesis will be accepted after this time, and graduation may become impossible if the deadline is missed [1]. * **Application Timeline:** * **Candidacy Application:** The application period for Senior Thesis Advisor and Candidacy is **October 2, 2025 – October 20, 2025** [4]. * **Results Announcement:** Application results are announced on **December 3, 2025** [3], [4]. * **Note:** Specific submission deadlines are updated on the ICU Portal and may vary by expected graduate year and month [1].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000033::P000</code>, <code>DOC-000033::P001</code>, <code>DOC-000026::P002</code>, <code>DOC-000026::P001</code>, <code>DOC-000030::P000</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                </div>
+            </details>
+            
+            <details class="answer-group">
+              <summary>
+                <strong>Qwen3.5 4B (HF)</strong>
+                <span>5 saved answers</span>
+              </summary>
+              <div class="answer-list">
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_001</code>
+                    <span>language</span>
+                    <span>answerable</span>
+                    
+                    
+                  </div>
+                  <h4>I&#x27;m a new student and I plan to take JLP, but I don&#x27;t know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, the Japanese Language Program (JLP) level is determined by a **placement test** that assesses a student&#x27;s Japanese proficiency to assign them to the most appropriate course level [1]. **Official Information Source:** You should check the **Frequently Asked Questions (FAQ)** page on the ICU admissions website for specific details regarding the placement process [1]. **Key Details:** * **Requirement:** All students admitted through English Language Based Admissions must take this test [1]. * **Purpose:** The test places students into courses matching their current proficiency levels [1]. * **Special Cases:** Returnee students (those with Japanese as a first or heritage language) may be placed in a &quot;Special Japanese Track&quot; to address specific skill gaps [1].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-001633::P014</code>, <code>DOC-001393::P004</code>, <code>DOC-001611::P000</code>, <code>DOC-001633::P015</code>, <code>DOC-001612::P000</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>Your JLP level is decided by a placement test that assigns students to the most appropriate course based on their Japanese proficiency. For official details and placement procedures, see ICU’s Japanese Language Program page and the Admissions FAQ on the ICU website [1][3].</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_002</code>
+                    <span>registration</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Yes, you can still register or change your courses, but you must do so during the **Late Registration/Registration Change Period**. * **Procedure**: Complete the registration or change via the ICU Portal. Ensure you click the **&quot;SAVE&quot;** button to finalize the process [2]. * **Fee**: You must pay a **Late Registration Fee of 3,000 yen**. Before your advisor interview, visit the Educational Affairs Group to make this payment, as advisors cannot approve online registration until the fee is paid [3]. * **Deadlines**: Registration is only accepted during the designated Late Registration period. Missing this deadline results in being considered non-registered, requiring a leave of absence or withdrawal [2]. * **Important Note**: Even if you only need to register for lottery-assigned or Senior Thesis courses, you must still complete the full regular registration procedure (including advisor interviews) on the Registration Day or during the change period [2].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000039::P007</code>, <code>DOC-000108::P013</code>, <code>DOC-000039::P008</code>, <code>DOC-000108::P012</code>, <code>DOC-000098::P002</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_003</code>
+                    <span>registration</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, here are the rules and deadlines regarding course withdrawal at ICU: * **Scope of Withdrawal**: Registration withdrawal applies to **all** courses for the ongoing term; partial withdrawal is not possible [3]. * **Deadline**: The application must be submitted to the Educational Affairs Group **one month prior** to the last day of classes [3]. * **Required Documentation**: You must submit documents explaining reasonable reasons (e.g., a medical certificate) along with the application [3]. * **Approval Authority**: Permission is granted by the CLA Dean or GS Dean if the university recognizes the reason as illness or unavoidable [3]. * **Important Warning**: Canceling a course might endanger graduation requirements; you should check the Graduation Requirements Checklist before canceling [1]. *Note: The provided evidence does not specify a deadline for withdrawing solely due to &quot;workload&quot; as a standalone reason, though it allows withdrawal for &quot;unavoidable reasons&quot; with proper documentation [3].*</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000108::P004</code>, <code>DOC-000108::P013</code>, <code>DOC-000040::P000</code>, <code>DOC-000098::P002</code>, <code>DOC-000097::P013</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_004</code>
+                    <span>major</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>To confirm whether courses or credits from a study abroad program will count toward your ICU requirements, you should check the specific requirements on the website of your study abroad destination and contact the university where you will be studying abroad if you are unsure [1]. Additionally, you must submit a list of courses progressing or to be taken in the final semester/year to verify that you will meet the course requirements upon admission [2]. For students transferring credits from other universities, foreign language courses may be transferred as Electives (up to 21 credits), and the total transfer credits may not exceed 60 credits when combined with other transfer sources [4].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-001381::P010</code>, <code>DOC-001586::P002</code>, <code>DOC-001609::P000</code>, <code>DOC-000060::P002</code>, <code>DOC-000061::P001</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                
+                <article class="answer-sample">
+                  <div class="answer-meta">
+                    <code>hr_005</code>
+                    <span>graduation</span>
+                    <span>insufficient evidence</span>
+                    
+                    
+                  </div>
+                  <h4>I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?</h4>
+                  <div class="answer-reference model-answer">
+                    <strong>Generated answer</strong>
+                    <p>Based on the provided evidence, here is the information regarding senior thesis deadlines and schedules at ICU: **Official Schedule and Resources** * **Portal:** Detailed instructions and the specific deadline are updated on the **ICU Portal**. * **Guidelines:** Refer to the **Senior Thesis Guidelines** on the eHANDBOOK for compilation stipulations. Ensure you check the guidelines for your specific expected graduate year and month [1][2]. * **Application Period:** For students starting research in April/September 2026, the application for a Senior Thesis Advisor and Certification of Research Candidacy is open from **10:00 on October 2 to 16:00 on October 20, 2025** [4]. * **Results:** Application results are announced on the Registration Website by **December 3, 2025** [3][4]. **Key Deadlines to Check** * **Submission Deadline:** Submit a PDF of your senior thesis to the designated place before the prescribed deadline. No submissions are accepted after **4:00 p.m.** on the deadline date under any circumstances [1]. * **Consequence:** Failure to meet the submission deadline makes it impossible to graduate as expected [1]. * **Registration Deadline:** The application for Senior Thesis Advisor and Research Candidacy must be completed within the October 2025 window mentioned above [4].</p>
+                  </div>
+                  
+                <div class="answer-evidence-ref">
+                  <strong>Shared retrieved evidence</strong>
+                  <p><code>DOC-000033::P000</code>, <code>DOC-000033::P001</code>, <code>DOC-000026::P002</code>, <code>DOC-000026::P001</code>, <code>DOC-000030::P000</code></p>
+                </div>
+                
+                  
+                <div class="answer-reference">
+                  <strong>Gold answer</strong>
+                  <p>The retrieved evidence is insufficient to answer this question.</p>
+                </div>
+                
+                </article>
+                </div>
+            </details>
+            </div>
+      <p><a class="text-link" href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_sample_answers.json">Download hard-20 sample answers as JSON</a></p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Retrieved evidence</p>
+        <h2>Shared Top-5 evidence per question</h2>
+      </div>
+      <p>The retrieved evidence is shared across all models for the same benchmark question. We therefore store it once per question set instead of duplicating it inside every model answer.</p>
+      <div class="evidence-preview">
+            <details class="evidence-card">
+              <summary>
+                <strong><code>hr_001</code> I&#x27;m a new student and I plan to take JLP, but I don&#x27;t know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?</strong>
+                <span>5 passages</span>
+              </summary>
+              <ol>
+                <li>
+                  <div class="evidence-title">
+                    <code>[1] DOC-001633::P014</code>
+                    <strong><a href="https://www.icu.ac.jp/en/admissions/undergraduate/faq">Frequently Asked Questions｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY</a></strong>
+                  </div>
+                  <p>ELA? No. The English for Liberal Arts Program (ELA) is mainly for those who enter through the Japanese-based admissions. However, some elective courses are available to those accepted via the English Language Based Admissions, such as &quot;English College Composi…</p>
+                  <span>lexical, dense · score 0.029</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[2] DOC-001393::P004</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/major-information/isc">Major Information Site / メジャーインフォメーションサイト - Information Science 情報科学</a></strong>
+                  </div>
+                  <p>tion science covers mathematical concepts of computation as well as the knowledge of computer architecture and software. Firstly,students will take introductory （100-level）courses, including “Foundation of Computers”, “Foundation of Programming”, “Information…</p>
+                  <span>lexical · score 0.016</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[3] DOC-001611::P000</code>
+                    <strong><a href="https://www.icu.ac.jp/en/academics/undergraduate/jlp/index.html">Japanese Language Program (JLP)｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY</a></strong>
+                  </div>
+                  <p>Japanese Language Program (JLP) The Right Course for Each and Every One of You Master Japanese Language and Broaden your World From its founding days, Japanese Language Program (JLP) have been providing Japanese language courses to ICU students as part of the…</p>
+                  <span>dense · score 0.016</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[4] DOC-001633::P015</code>
+                    <strong><a href="https://www.icu.ac.jp/en/admissions/undergraduate/faq">Frequently Asked Questions｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY</a></strong>
+                  </div>
+                  <p>uage Program (JLP). The test is to place them into the most appropriate courses by their levels of Japanese proficiency. Many returnee students who regard Japanese as their first or heritage language are placed in the &quot;Special Japanese Track&quot; (see Japanese La…</p>
+                  <span>lexical · score 0.016</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[5] DOC-001612::P000</code>
+                    <strong><a href="https://www.icu.ac.jp/en/academics/undergraduate/jlp">Japanese Language Program (JLP)｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY</a></strong>
+                  </div>
+                  <p>Japanese Language Program (JLP) The Right Course for Each and Every One of You Master Japanese Language and Broaden your World From its founding days, Japanese Language Program (JLP) have been providing Japanese language courses to ICU students as part of the…</p>
+                  <span>dense · score 0.016</span>
+                </li>
+                </ol>
+            </details>
+            
+            <details class="evidence-card">
+              <summary>
+                <strong><code>hr_002</code> I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?</strong>
+                <span>5 passages</span>
+              </summary>
+              <ol>
+                <li>
+                  <div class="evidence-title">
+                    <code>[1] DOC-000039::P007</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/guide-to-academic-matters/course-registration/course-registration">ehandbook - Course Registration</a></strong>
+                  </div>
+                  <p>el courses assigned to them, such as ELA and Senior Thesis. The schedule of the courses also can&#x27;t be changed. (d)PE Ex. courses can be added if there are vacancies. However, in principle, students must enter pre-registration lottery for PE Ex. courses, and h…</p>
+                  <span>lexical, dense · score 0.031</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[2] DOC-000108::P013</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group">ehandbook - November 28, 2023 Important Information from Educational Affairs Group</a></strong>
+                  </div>
+                  <p>on on registration day is not possible, students should complete the registration during the registration change period. After the registration change period, the registration is not acceptable for any reason. Those who do not complete the registration during…</p>
+                  <span>lexical, dense · score 0.030</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[3] DOC-000039::P008</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/guide-to-academic-matters/course-registration/course-registration">ehandbook - Course Registration</a></strong>
+                  </div>
+                  <p>er on the Registration Day. Late Registration will be accepted during Late Registration/Registration Change Period only. In case registration procedure is not completed by the deadline, it&#x27;s seen as non-registered and necessary to apply for leave of absence o…</p>
+                  <span>lexical, dense · score 0.030</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[4] DOC-000108::P012</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group">ehandbook - November 28, 2023 Important Information from Educational Affairs Group</a></strong>
+                  </div>
+                  <p>post later on ICU Portal. ○At the beginning of each term, all students must register for courses (at least ONE course). Even if registering only for courses needing Pre-Registration or Senior Thesis course in the current term, it is still necessary to registe…</p>
+                  <span>lexical, dense · score 0.030</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[5] DOC-000098::P002</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/news/august-26-2025-important-information-from-educational-affairs-group">ehandbook - August 26, 2025 Important Information from Educational Affairs Group</a></strong>
+                  </div>
+                  <p>ation day. ○If it is not possible, students should complete the Late Registration during the registration change period. After the registration change period ended, no registrations will be accepted for any reason. Those who do not complete the registration d…</p>
+                  <span>lexical, dense · score 0.028</span>
+                </li>
+                </ol>
+            </details>
+            
+            <details class="evidence-card">
+              <summary>
+                <strong><code>hr_003</code> If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?</strong>
+                <span>5 passages</span>
+              </summary>
+              <ol>
+                <li>
+                  <div class="evidence-title">
+                    <code>[1] DOC-000108::P004</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group">ehandbook - November 28, 2023 Important Information from Educational Affairs Group</a></strong>
+                  </div>
+                  <p>t be able to change your registration. 3. Registration Change Please take utmost care when you change your registration. Cancelling registration for a course might endanger satisfaction of graduation requirements. You should check the Graduation Requirements…</p>
+                  <span>lexical, dense · score 0.027</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[2] DOC-000108::P013</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/news/november-28-2023-important-information-from-educational-affairs-group">ehandbook - November 28, 2023 Important Information from Educational Affairs Group</a></strong>
+                  </div>
+                  <p>on on registration day is not possible, students should complete the registration during the registration change period. After the registration change period, the registration is not acceptable for any reason. Those who do not complete the registration during…</p>
+                  <span>lexical · score 0.016</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[3] DOC-000040::P000</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/guide-to-academic-matters/course-registration/registration-withdrawal">ehandbook - Registration Withdrawal</a></strong>
+                  </div>
+                  <p>10. Auditing Courses » Schedule for Course Registration Registration Withdrawal Registration Withdrawal is to withdraw ALL course registration for ongoing term. It is not possible to withdraw the course registration partly. If a student cannot continue his/he…</p>
+                  <span>dense · score 0.016</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[4] DOC-000098::P002</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/news/august-26-2025-important-information-from-educational-affairs-group">ehandbook - August 26, 2025 Important Information from Educational Affairs Group</a></strong>
+                  </div>
+                  <p>ation day. ○If it is not possible, students should complete the Late Registration during the registration change period. After the registration change period ended, no registrations will be accepted for any reason. Those who do not complete the registration d…</p>
+                  <span>lexical · score 0.016</span>
+                </li>
+                
+                <li>
+                  <div class="evidence-title">
+                    <code>[5] DOC-000097::P013</code>
+                    <strong><a href="https://sites.google.com/icu.ac.jp/icu-ehandbook/home_english/faq/faq">ehandbook - FAQ</a></strong>
+                  </div>
+                  <p>airs Group. Q: My plans have changed and I would like to extend my leave of absence. Do I need to follow any procedures? A: Leave of absence is approved for the terms indicated on the Leave of Absence form, so if you wish to extend your leave of absence, you…</p>
+                  <span>dense · score 0.016</span>
+                </li>
+                </ol>
+            </details>
+            </div>
+      <p><a class="text-link" href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_retrieved_evidence.json">Download hard-20 retrieved evidence as JSON</a></p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Model results</p>
+        <h2>Qwen3.5 baseline scores</h2>
+      </div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th><th>Size</th><th>Faithfulness</th><th>Answer relevancy</th><th>Correctness</th><th>Semantic similarity</th></tr></thead><tbody><tr><td>Qwen3.5 0.8B (HF)</td><td>0.8</td><td>0.724</td><td>0.671</td><td>0.361</td><td>0.598</td></tr><tr><td>Qwen3.5 2B (HF)</td><td>2.0</td><td>0.692</td><td>0.525</td><td>0.389</td><td>0.602</td></tr><tr><td>Qwen3.5 4B (HF)</td><td>4.0</td><td>0.804</td><td>0.597</td><td>0.512</td><td>0.642</td></tr></tbody></table></div>
+      <figure>
+        <img src="/icu-wiki/artifacts/2026-04-30/plots/qwen35_hard_realistic_20_ragas_metric_bars.png" alt="Qwen3.5 hard realistic benchmark RAGAS metric bars" />
+        <figcaption>The metric-level view is the primary automated result because faithfulness, answer relevancy, correctness, and semantic similarity measure different failure modes.</figcaption>
+      </figure>
+    </section>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-12.</span>
+    </footer>
+  </body>
+</html>

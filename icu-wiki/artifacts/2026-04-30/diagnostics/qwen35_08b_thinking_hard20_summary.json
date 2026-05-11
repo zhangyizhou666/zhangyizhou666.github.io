@@ -1,0 +1,9 @@
+{
+  "step_count": 355,
+  "answer_count": 20,
+  "n_clusters": 8,
+  "trajectory_group_step_counts": {
+    "unscored_answer": 190,
+    "unsupported_answer": 165
+  }
+}

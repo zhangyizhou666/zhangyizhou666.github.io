@@ -1,0 +1,242 @@
+[
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 0,
+    "reasoning_step_text": "Thinking Process:",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 1,
+    "reasoning_step_text": "Analyze the Request:**",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 2,
+    "reasoning_step_text": "Task:** Answer an ICU institutional question using *only* the provided evidence.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 3,
+    "reasoning_step_text": "Constraint 1:** Keep the final answer concise.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 4,
+    "reasoning_step_text": "Constraint 2:** Cite evidence using [1], [2], etc.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 5,
+    "reasoning_step_text": "Constraint 3:** If evidence is incomplete, say what is missing.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 6,
+    "reasoning_step_text": "Constraint 4:** Do not restate the evidence or the instructions in the final answer.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_001",
+    "question": "I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unscored_answer",
+    "reasoning_step_index": 7,
+    "reasoning_step_text": "Question:** A new student plans to take JLP (Japanese Language Program), but doesn't know the level. How is the level decided, and where should I check official information?",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 0,
+    "reasoning_step_text": "Thinking Process:",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 1,
+    "reasoning_step_text": "Analyze the Request:**",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 2,
+    "reasoning_step_text": "Task: Answer an ICU institutional question using *only the evidence*.",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 3,
+    "reasoning_step_text": "Constraint 1: Keep the final answer concise.",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 4,
+    "reasoning_step_text": "Constraint 2: Cite evidence using [1], [2], etc.",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 5,
+    "reasoning_step_text": "Constraint 3: If the evidence is incomplete, say what is missing.",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 6,
+    "reasoning_step_text": "Constraint 4: Do not restate the evidence or the instructions in the final answer.",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_002",
+    "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 7,
+    "reasoning_step_text": "Input Question: \"I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?\"",
+    "total_steps_for_question": 18
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 0,
+    "reasoning_step_text": "Thinking Process:",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 1,
+    "reasoning_step_text": "Analyze the Request:**",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 2,
+    "reasoning_step_text": "Task: Answer an ICU institutional question using *only* the provided evidence.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 3,
+    "reasoning_step_text": "Constraint 1: Keep the final answer concise.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 4,
+    "reasoning_step_text": "Constraint 2: Cite evidence using [1], [2], etc.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 5,
+    "reasoning_step_text": "Constraint 3: If the evidence is incomplete, say what is missing.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 6,
+    "reasoning_step_text": "Constraint 4: Do not restate the evidence or the instructions in the final answer.",
+    "total_steps_for_question": 14
+  },
+  {
+    "id": "hr_003",
+    "question": "If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "answer_model": "Qwen/Qwen3.5-0.8B",
+    "answer_mode": "local_transformers_thinking",
+    "trajectory_group": "unsupported_answer",
+    "reasoning_step_index": 7,
+    "reasoning_step_text": "Question: If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",
+    "total_steps_for_question": 14
+  }
+]

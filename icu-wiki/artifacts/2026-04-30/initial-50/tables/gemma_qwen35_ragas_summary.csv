@@ -1,0 +1,7 @@
+label,slug,family,size_b,row_count,faithfulness,faithfulness_missing,answer_relevancy,answer_relevancy_missing,overall_score,generated_rows,empty_answers,fallback_answers,avg_latency_seconds,judge_model,embedding_model
+Qwen3.5 0.8B (HF),Qwen_Qwen3.5-0.8B,Qwen3.5,0.8,50,0.7830012357783255,0,0.7428668813323046,0,0.762934058555315,50,0,0,6.95504,openai/gpt-4.1-mini,Qwen/Qwen3-Embedding-0.6B
+Qwen3.5 2B (HF),Qwen_Qwen3.5-2B,Qwen3.5,2.0,50,0.8474023044379082,0,0.7572344867898059,0,0.8023183956138571,50,0,0,6.28462,openai/gpt-4.1-mini,Qwen/Qwen3-Embedding-0.6B
+Gemma 3 4B,google_gemma-3-4b-it,Gemma 3,4.0,50,0.8761611721611722,0,0.7647949136476481,0,0.8204780429044101,50,0,0,30.085340000000002,openai/gpt-4.1-mini,Qwen/Qwen3-Embedding-0.6B
+Qwen3.5 4B (HF),Qwen_Qwen3.5-4B,Qwen3.5,4.0,50,0.8706704436774096,0,0.6714036113372743,0,0.7710370275073419,50,0,0,9.07906,openai/gpt-4.1-mini,Qwen/Qwen3-Embedding-0.6B
+Gemma 3 12B,google_gemma-3-12b-it,Gemma 3,12.0,50,0.9038463203463203,0,0.7011683332819458,0,0.8025073268141331,50,0,0,3.32294,openai/gpt-4.1-mini,Qwen/Qwen3-Embedding-0.6B
+Gemma 3 27B,google_gemma-3-27b-it,Gemma 3,27.0,50,0.8931883671883672,0,0.5098473859185277,0,0.7015178765534476,50,0,0,4.56498,openai/gpt-4.1-mini,Qwen/Qwen3-Embedding-0.6B

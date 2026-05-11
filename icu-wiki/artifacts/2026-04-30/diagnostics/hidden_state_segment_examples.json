@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hr_001",
+    "segment_index": 0,
+    "token_start_in_answer": 0,
+    "token_end_in_answer": 35,
+    "segment_token_count": 35,
+    "trajectory_group": "wrong_refusal",
+    "segment_text": "Based on the provided evidence, the placement into the Japanese Language Program (JLP) is determined by the student's level of Japanese proficiency, as measured by a placement test."
+  },
+  {
+    "id": "hr_001",
+    "segment_index": 1,
+    "token_start_in_answer": 35,
+    "token_end_in_answer": 70,
+    "segment_token_count": 35,
+    "trajectory_group": "wrong_refusal",
+    "segment_text": "* **Placement Test:** All students admitted through the English Language Based Admissions must take a placement test to be placed into the most appropriate courses by their proficiency levels [1]."
+  },
+  {
+    "id": "hr_001",
+    "segment_index": 2,
+    "token_start_in_answer": 70,
+    "token_end_in_answer": 103,
+    "segment_token_count": 33,
+    "trajectory_group": "wrong_refusal",
+    "segment_text": "* **Special Track:** Students who regard Japanese as their first or heritage language are placed in the \"Special Japanese Track\" to improve skills they are lacking [1]."
+  },
+  {
+    "id": "hr_001",
+    "segment_index": 3,
+    "token_start_in_answer": 103,
+    "token_end_in_answer": 138,
+    "segment_token_count": 35,
+    "trajectory_group": "wrong_refusal",
+    "segment_text": "* **Non-Degree Students:** The JLP is also open to non-degree students, specifically one-year exchange students and Kenkyusei (Special Students) [4]."
+  },
+  {
+    "id": "hr_001",
+    "segment_index": 4,
+    "token_start_in_answer": 138,
+    "token_end_in_answer": 180,
+    "segment_token_count": 42,
+    "trajectory_group": "wrong_refusal",
+    "segment_text": "* **Official Source:** The official information is available on the ICU website under the \"Frequently Asked Questions\" section for admissions and the \"Major Information Site\" for general student details [1], [2]."
+  },
+  {
+    "id": "hr_001",
+    "segment_index": 5,
+    "token_start_in_answer": 180,
+    "token_end_in_answer": 208,
+    "segment_token_count": 28,
+    "trajectory_group": "wrong_refusal",
+    "segment_text": "**Note:** Evidence [2] describes the curriculum structure of the Information Science major and does not contain information regarding the JLP placement process."
+  },
+  {
+    "id": "hr_002",
+    "segment_index": 0,
+    "token_start_in_answer": 0,
+    "token_end_in_answer": 18,
+    "segment_token_count": 18,
+    "trajectory_group": "unsupported_answer",
+    "segment_text": "You can register or change your courses, but the procedure is strict and requires specific attention."
+  },
+  {
+    "id": "hr_002",
+    "segment_index": 1,
+    "token_start_in_answer": 18,
+    "token_end_in_answer": 21,
+    "segment_token_count": 3,
+    "trajectory_group": "unsupported_answer",
+    "segment_text": "**1."
+  }
+]

@@ -1,0 +1,356 @@
+id,trajectory_group,reasoning_step_index,answer_correctness,faithfulness,answer_relevancy,semantic_similarity,cluster,reasoning_step_text
+hr_001,unscored_answer,0,,,,,2,Thinking Process:
+hr_001,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_001,unscored_answer,2,,,,,6,Task:** Answer an ICU institutional question using *only* the provided evidence.
+hr_001,unscored_answer,3,,,,,1,Constraint 1:** Keep the final answer concise.
+hr_001,unscored_answer,4,,,,,1,"Constraint 2:** Cite evidence using [1], [2], etc."
+hr_001,unscored_answer,5,,,,,1,"Constraint 3:** If evidence is incomplete, say what is missing."
+hr_001,unscored_answer,6,,,,,1,Constraint 4:** Do not restate the evidence or the instructions in the final answer.
+hr_001,unscored_answer,7,,,,,0,"Question:** A new student plans to take JLP (Japanese Language Program), but doesn't know the level. How is the level decided, and where should I check official information?"
+hr_001,unscored_answer,8,,,,,1,"Input:** 4 pieces of evidence (Evidence: [1], [2], [3], [4])."
+hr_001,unscored_answer,9,,,,,1,"Constraint Check:** The user provided 4 evidence blocks, but I need to evaluate the content of each to determine the answer."
+hr_001,unscored_answer,10,,,,,1,Evaluate the Evidence:**
+hr_001,unscored_answer,11,,,,,0,"Evidence [1]:** Mentions JLP placement test. It says ""All students admitted through the English Language Based Admissions must take a placement test for the Japanese Language Program (JLP)."" It also mentions the ELA program (English for Liberal Arts) is for students entering via Japanese-based admissions, and some elective courses are available. It explicitly mentions: ""The test is to place them into the most appropriate courses by their levels of Japanese proficiency."""
+hr_001,unscored_answer,12,,,,,5,"Evidence [2]:** Mentions the Information Science (ISC) major site. It discusses ""Foundation of Computers"", ""Information Ethics"", ""Elements of Discrete Mathematics"" (intro courses) and ""Intermediate"" and ""Advanced"" courses (200, 300-level). It doesn't directly address JLP"
+hr_001,unscored_answer,13,,,,,3,"Considering the limited time, I will answer directly now."
+hr_002,unsupported_answer,0,,,,,2,Thinking Process:
+hr_002,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_002,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using *only the evidence*.
+hr_002,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_002,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_002,unsupported_answer,5,,,,,1,"Constraint 3: If the evidence is incomplete, say what is missing."
+hr_002,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_002,unsupported_answer,7,,,,,7,"Input Question: ""I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?"""
+hr_002,unsupported_answer,8,,,,,1,Input Evidence: 4 evidence items (from the provided text).
+hr_002,unsupported_answer,9,,,,,1,Output Constraint: I need to check the evidence to see if it addresses the question.
+hr_002,unsupported_answer,10,,,,,2,Analyze the Evidence:**
+hr_002,unsupported_answer,11,,,,,7,"[1] Discusses course registration, PE courses, pre-registration lottery, late registration fees (3,000 yen), and that registration change is not a valid reason for absence unless specific conditions are met."
+hr_002,unsupported_answer,12,,,,,7,"[2] Discusses that registration is not possible on the registration day, students must complete during the registration change period, and after that, registration is not acceptable."
+hr_002,unsupported_answer,13,,,,,7,"[3] Discusses Late Registration procedure, payment requirements, and that late registration is accepted during Late Registration/Registration Change Period only."
+hr_002,unsupported_answer,14,,,,,7,[4] Discusses that students must register for courses (at least ONE course) and that applications for registration or change are not acceptable outside the specified period.
+hr_002,unsupported_answer,15,,,,,1,Evaluate Evidence against Question:**
+hr_002,unsupported_answer,16,,,,,7,Question:** Can I still register or change my courses? What part of the procedure should I pay attention to?
+hr_002,unsupported_answer,17,,,,,3,"Considering the limited time, I will answer directly now."
+hr_003,unsupported_answer,0,,,,,2,Thinking Process:
+hr_003,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_003,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_003,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_003,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_003,unsupported_answer,5,,,,,1,"Constraint 3: If the evidence is incomplete, say what is missing."
+hr_003,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_003,unsupported_answer,7,,,,,7,"Question: If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?"
+hr_003,unsupported_answer,8,,,,,1,"Evidence Provided: 4 pieces of evidence (titles, sources, content snippets)."
+hr_003,unsupported_answer,9,,,,,2,Analyze the Evidence:**
+hr_003,unsupported_answer,10,,,,,7,"Evidence [1] (Handbook - November 28, 2023):** Mentions ""Registration Change"" and ""Senior Thesis"". It mentions checking graduation requirements checklist before cancelling. It mentions the deadline for Senior Thesis submission (Jan 9 to Feb 1, 2024) and notes responsibility for registration change leading to serious consequences for graduation requirements."
+hr_003,unsupported_answer,11,,,,,7,"Evidence [2] (Handbook - November 28, 2023):** Mentions ""Registration Day"" not possible, students complete registration during registration change period. After that period, registration is not acceptable. If not registered, they must take a leave of absence or withdraw. Even if they want to register only lottery, they are still required to complete regular registration procedures on Registration Day. When making registration change, click ""SAVE""."
+hr_003,unsupported_answer,12,,,,,7,"Evidence [3] (Handbook - Registration Withdrawal):** Mentions ""Registration Withdrawal"" is for withdrawing ALL course registration for ongoing term. Cannot withdraw partly. If"
+hr_003,unsupported_answer,13,,,,,3,"Considering the limited time, I will answer directly now."
+hr_004,unsupported_answer,0,,,,,2,Thinking Process:
+hr_004,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_004,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_004,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_004,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_004,unsupported_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_004,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_004,unsupported_answer,7,,,,,5,"Question: ""I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?"""
+hr_004,unsupported_answer,8,,,,,2,Analyze the Evidence:**
+hr_004,unsupported_answer,9,,,,,5,"[1] Title: ICU Health Care Office for Students - 留学 Study Abroad. Language: mixed. Content mentions health checkups, vaccinations, tuberculosis screenings are often required. If unsure, contact the university. In the US, completion of required vaccinations may be mandatory. STEP 2: Check requirements for study abroad destination."
+hr_004,unsupported_answer,10,,,,,5,"[2] Title: Admissions Requirements by Country/Region｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Language: en. Content mentions submitting School Report, list of courses progressing or to be taken in the final semester/year, and submitting original or certified true copies of diploma or completion certificate to confirm admission."
+hr_004,unsupported_answer,11,,,,,5,"[3] Title: Study Abroad｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY. Language: en. Content mentions offering study abroad programs, over 450 ICU students, choosing programs by year, objective, and condition."
+hr_004,unsupported_answer,12,,,,,4,"[4] Title: ehandbook - Students Who Have Studied at Other Universities and Entered ICU as Freshmen. Language: en. Content mentions transferring credits from other universities, max 2"
+hr_004,unsupported_answer,13,,,,,3,"Considering the limited time, I will answer directly now."
+hr_005,unsupported_answer,0,,,,,2,Thinking Process:
+hr_005,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_005,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using only the provided evidence.
+hr_005,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_005,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_005,unsupported_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_005,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_005,unsupported_answer,7,,,,,4,"Input: A set of evidence snippets (titles, sources, dates, instructions) related to ""Senior Thesis"" at ICU (ICU.ac.jp)."
+hr_005,unsupported_answer,8,,,,,0,"Question: Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?"
+hr_005,unsupported_answer,9,,,,,2,Analyze the Evidence:**
+hr_005,unsupported_answer,10,,,,,4,[1] Title: ehandbook - Senior Thesis. Source: ICU Portal (ICU.ac.jp).
+hr_005,unsupported_answer,11,,,,,4,[2] Title: ehandbook - Senior Thesis. Source: ICU Portal (ICU.ac.jp).
+hr_005,unsupported_answer,12,,,,,4,[3] Title: ehandbook - Candidacy for Senior Thesis Research. Source: ICU Portal.
+hr_005,unsupported_answer,13,,,,,4,[4] Title: ehandbook - Candidacy for Senior Thesis Research. Source: ICU Portal.
+hr_005,unsupported_answer,14,,,,,1,Key Information from Evidence:
+hr_005,unsupported_answer,15,,,,,0,"[1] and [2] mention ""Submission Deadline"" and ""Submission Place""."
+hr_005,unsupported_answer,16,,,,,4,"[1] states: ""Submit a PDF file of your senior thesis to the designated submission place before the prescribed deadline together... No thesis will be accepted after that time."""
+hr_005,unsupported_answer,17,,,,,4,"[1] states: ""Submission of the thesis by another person is not permitted."""
+hr_005,unsupported_answer,18,,,,,0,"[1] states: ""Detailed instructions and the deadline will be updated"
+hr_005,unsupported_answer,19,,,,,3,"Considering the limited time, I will answer directly now."
+hr_006,unscored_answer,0,,,,,2,Thinking Process:
+hr_006,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_006,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_006,unscored_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_006,unscored_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_006,unscored_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_006,unscored_answer,6,,,,,1,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_006,unscored_answer,7,,,,,6,"Question: ""If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?"""
+hr_006,unscored_answer,8,,,,,2,Analyze the Question:**
+hr_006,unscored_answer,9,,,,,6,"Scenario: Student takes a leave of absence, then returns to ICU."
+hr_006,unscored_answer,10,,,,,0,Action: Planning courses again.
+hr_006,unscored_answer,11,,,,,0,Goal: Identify the correct procedure or office information to check.
+hr_006,unscored_answer,12,,,,,2,Analyze the Evidence:**
+hr_006,unscored_answer,13,,,,,7,"[1]: ""Leave of Absence and Reenrolment""."
+hr_006,unscored_answer,14,,,,,7,"Content: B. REENROLLMENT Reenrollment procedures are no longer required beginning with the AY2024 Autumn term. However, if the request for leave of absence is due to medical condition, it is necessary to submit a physician's certificate attesting that the condition will not affect the student's study at ICU after their return. The certificate should be submitted to the Educational Affairs Group (Please note that the medical certificate information may be shared with Health C are Office). Failure to submit this form will result in your inability to participate in course registration."
+hr_006,unscored_answer,15,,,,,0,Key Point: Medical certificate needed if return due to medical condition.
+hr_006,unscored_answer,16,,,,,0,Key Point: Submit to Educational Affairs Group.
+hr_006,unscored_answer,17,,,,,5,"[2]: ""ICU Health Care Office for Students -"
+hr_006,unscored_answer,18,,,,,3,"Considering the limited time, I will answer directly now."
+hr_007,unscored_answer,0,,,,,2,Thinking Process:
+hr_007,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_007,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_007,unscored_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_007,unscored_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_007,unscored_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_007,unscored_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_007,unscored_answer,7,,,,,0,"Question: ""I am comparing dormitory options and also thinking about whether scholarships or fees affect my budget. Where should I check housing and cost-related information?"""
+hr_007,unscored_answer,8,,,,,1,Evidence provided:
+hr_007,unscored_answer,9,,,,,0,"[1] Title: Housing Office, Source: https://office.icu.ac.jp/ho/en. Contains screening results for April 2026, dormitory fees regulations, emergency contact, etc."
+hr_007,unscored_answer,10,,,,,5,"[2] Title: Housing｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY, Source: https://www.icu.ac.jp/en/campuslife/dormitories. Describes dormitories, locations, living conditions, exchange programs, alumni reunions."
+hr_007,unscored_answer,11,,,,,0,"[3] Title: Housing Office, Source: https://office.icu.ac.jp/ho/en. Contains application screening results, ID/password requirements, emails, schedule, location (Dialogue House 1F), email."
+hr_007,unscored_answer,12,,,,,5,"[4] Title: Housing｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY, Source: https://www.icu.ac.jp/en/campuslife/dormitories. Contains student exchange info, dormitory names."
+hr_007,unscored_answer,13,,,,,2,Analyze the Question:**
+hr_007,unscored_answer,14,,,,,0,The user is asking about where to check housing and cost-related information regarding dormitory options and scholarships/fees.
+hr_007,unscored_answer,15,,,,,0,The user wants
+hr_007,unscored_answer,16,,,,,3,"Considering the limited time, I will answer directly now."
+hr_008,unscored_answer,0,,,,,2,Thinking Process:
+hr_008,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_008,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the evidence provided.
+hr_008,unscored_answer,3,,,,,1,Constraints:
+hr_008,unscored_answer,4,,,,,1,Keep the final answer concise.
+hr_008,unscored_answer,5,,,,,1,"Cite evidence using [1], [2], etc."
+hr_008,unscored_answer,6,,,,,1,"If evidence is incomplete, say what is missing."
+hr_008,unscored_answer,7,,,,,1,Do not restate the evidence or the instructions in the final answer.
+hr_008,unscored_answer,8,,,,,5,"Question: ""I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?"""
+hr_008,unscored_answer,9,,,,,5,"Evidence Provided: 4 snippets of website information for ICU (ICU Health Care Office for Students, Counseling, Open Campus, Researchers Information System)."
+hr_008,unscored_answer,10,,,,,2,Analyze the Question:**
+hr_008,unscored_answer,11,,,,,0,Core need: Where to find counseling/support for privacy concerns.
+hr_008,unscored_answer,12,,,,,6,"Context: ICU student support, privacy, official information."
+hr_008,unscored_answer,13,,,,,1,Evaluate the Evidence:**
+hr_008,unscored_answer,14,,,,,5,[1] Title: ICU Health Care Office for Students - 心の健康 Mental Health. Language: mixed.
+hr_008,unscored_answer,15,,,,,6,"Content: Mentions ""ICU Counseling Center"", ""General mental health counseling"", ""Find Consultation Services by topic""."
+hr_008,unscored_answer,16,,,,,0,"Privacy note: ""Please check each website for consultation methods (face-to-face, telephone, chat, social media, etc.)""."
+hr_008,unscored_answer,17,,,,,0,This section explicitly states where to find consultation methods and supports counseling.
+hr_008,unscored_answer,18,,,,,5,"[2] Title: Counseling, Human Rights Consultation and Health Services｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY."
+hr_008,unscored_answer,19,,,,,5,"Content: ""Counseling Center ICU Counseling Center provides psychological support to help ICU students find better solutions to difficulties and challenges encountered during the university life. Some common issues students discuss"
+hr_008,unscored_answer,20,,,,,3,"Considering the limited time, I will answer directly now."
+hr_009,unscored_answer,0,,,,,2,Thinking Process:
+hr_009,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_009,unscored_answer,2,,,,,6,Task:** Answer the ICU question using only the provided evidence.
+hr_009,unscored_answer,3,,,,,0,"Question:** If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?"
+hr_009,unscored_answer,4,,,,,1,Constraints:**
+hr_009,unscored_answer,5,,,,,1,Use only the provided evidence.
+hr_009,unscored_answer,6,,,,,1,Keep the final answer concise.
+hr_009,unscored_answer,7,,,,,1,"Cite evidence using [1], [2], etc."
+hr_009,unscored_answer,8,,,,,1,"If the evidence is incomplete, say what is missing."
+hr_009,unscored_answer,9,,,,,1,Do not restate the evidence or the instructions in the final answer.
+hr_009,unscored_answer,10,,,,,0,Question Context:** The user is asking about exam accommodations for a disability or health condition.
+hr_009,unscored_answer,11,,,,,2,Evidence Analysis:**
+hr_009,unscored_answer,12,,,,,0,"Evidence [1]: Title ""For Students | CTL English"". Source: https://office.icu.ac.jp/ctl/en/snss/for_students.html. Language: en. Content: ""ned by your advisor. A document describing the support, etc., that you have received previously... Develop an accommodation plan with a member of the LAS staff... The LAS office delivers your accommodation requests to your professors... Student newly requiring Academic Accommodations should complete the application procedure by the last day of Week 4 of each term..."". It lists types of academic accommodations (examples) and mentions requesting forms. It mentions ""Home Learning Accessibility Services For Students"" (Evidence [4] is about accessibility services)."
+hr_009,unscored_answer,13,,,,,5,"Evidence [2] & [3]: Title ""ICU Health Care Office for Students - 各自で健康診断を受ける Take a health exam on your own"". Source: https://sites.google.com/icu.ac.jp/hcoforstudents/healthexams/onyourown. Language: mixed. Content: Mentions"
+hr_009,unscored_answer,14,,,,,3,"Considering the limited time, I will answer directly now."
+hr_010,unscored_answer,0,,,,,2,Thinking Process:
+hr_010,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_010,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_010,unscored_answer,3,,,,,1,Constraints:
+hr_010,unscored_answer,4,,,,,1,Keep the final answer concise.
+hr_010,unscored_answer,5,,,,,1,"Cite evidence using [1], [2], etc."
+hr_010,unscored_answer,6,,,,,1,"If evidence is incomplete, say what is missing."
+hr_010,unscored_answer,7,,,,,1,Do not restate the evidence or the instructions in the final answer.
+hr_010,unscored_answer,8,,,,,0,"Question: ""I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?"""
+hr_010,unscored_answer,9,,,,,5,Evidence Provided: 4 snippets from ICU websites (ICU International Christian University).
+hr_010,unscored_answer,10,,,,,2,Analyze the Question:**
+hr_010,unscored_answer,11,,,,,0,Target: IT account or services after graduating from undergraduate school but continuing to ICU Graduate School.
+hr_010,unscored_answer,12,,,,,0,Specifics: What is needed about the IT account/system after graduation?
+hr_010,unscored_answer,13,,,,,2,Analyze the Evidence:**
+hr_010,unscored_answer,14,,,,,5,"[1] ""Paths after Graduation"" (ICU - INTERNATIONAL CHRISTIAN UNIVERSITY). Discusses employment paths, graduation rates (Undergraduate Graduate School), and general career info. Mentions ""Paths after Graduation of International Students"" and employment wide range. It mentions ""AY2024"" and ""AY2023"" data. It mentions ""undergraduate 642 graduates"" and ""graduate school 94 graduates"". It doesn't explicitly mention IT account details."
+hr_010,unscored_answer,15,,,,,5,"[2] ""FAQ｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY"". Discusses transcript verification, sealed envelope, senior thesis requirement, and application documents. Mentions ""If you were not required to complete a thesis for your undergraduate degree..."". It doesn't mention IT account specifics."
+hr_010,unscored_answer,16,,,,,0,"[3] ""IT Center For"
+hr_010,unscored_answer,17,,,,,3,"Considering the limited time, I will answer directly now."
+hr_011,unscored_answer,0,,,,,2,Thinking Process:
+hr_011,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_011,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_011,unscored_answer,3,,,,,1,Constraints:
+hr_011,unscored_answer,4,,,,,6,Answer the ICU question.
+hr_011,unscored_answer,5,,,,,1,Keep the final answer concise.
+hr_011,unscored_answer,6,,,,,1,"Cite evidence using [1], [2], etc."
+hr_011,unscored_answer,7,,,,,1,"If evidence is incomplete, state what is missing."
+hr_011,unscored_answer,8,,,,,1,Do not restate the evidence or instructions in the final answer.
+hr_011,unscored_answer,9,,,,,0,"Question: ""I want to take Japanese language program. What can I find for official information on JLP level classification and how to take it?"""
+hr_011,unscored_answer,10,,,,,1,"Evidence provided: Four items ([1], [2], [3], [4])."
+hr_011,unscored_answer,11,,,,,0,Language: English.
+hr_011,unscored_answer,12,,,,,2,Analyze the Evidence:**
+hr_011,unscored_answer,13,,,,,5,"[1]: Mentions ICU's JLP (Japanese Language Program). Title: ""日本語教育プログラム｜国際基督教大学（ICU）"". Language: mixed. Discusses history, 4-year undergraduates, exchange students, 40+ countries, 300 students. Mentions placement test and 2 tracks (Foreign Language track, 1st Language/Continuation track). Mentions syllabus check on syllabus. Mentions English instruction below. Mentions JLP details link. Mentions student feedback."
+hr_011,unscored_answer,14,,,,,0,"[2]: Q&A section. Mentions JLP eligibility (intro students, Stream 1/2, JLP placement test, EJU, ELA). Mentions English courses (Academic Writing, Upper-level English). Mentions eligibility for specific programs (General Education, EJU). Mentions specific eligibility conditions. Mentions ""JLP 履修対象生"" (JLP Target Students). Mentions ""総合型選抜<4 月"
+hr_011,unscored_answer,15,,,,,3,"Considering the limited time, I will answer directly now."
+hr_012,unscored_answer,0,,,,,2,Thinking Process:
+hr_012,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_012,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_012,unscored_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_012,unscored_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_012,unscored_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_012,unscored_answer,6,,,,,1,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_012,unscored_answer,7,,,,,5,"Question: ""I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?"""
+hr_012,unscored_answer,8,,,,,1,"Evidence Provided: Four sources (1, 2, 3, 4)."
+hr_012,unscored_answer,9,,,,,2,Analyze the Question:**
+hr_012,unscored_answer,10,,,,,5,Topic: Chapel Hour and Christianity Week.
+hr_012,unscored_answer,11,,,,,0,Ambiguity: Are these academic events or campus-life events?
+hr_012,unscored_answer,12,,,,,0,Goal: Determine where to check the schedule.
+hr_012,unscored_answer,13,,,,,1,Evaluate Evidence:**
+hr_012,unscored_answer,14,,,,,4,[1] Title: ehandbook - Class Schedule.
+hr_012,unscored_answer,15,,,,,5,"Content: Mentions ""Chapel Hour"" (13:20-13:50 on Tuesdays), ""Convocation Hour"" (14:00-15:15 on Tuesdays). Mentions ""Saturday of Christianity Week is the same as the regular class schedule."" Mentions ""Super period is set on 4th period on Mondays and Thursdays..."". Mentions ""5th period... 7th period...""."
+hr_012,unscored_answer,16,,,,,0,"Does it tell if it's academic/campus-life? No, it's a schedule."
+hr_012,unscored_answer,17,,,,,4,[2] Title: Religious Center - CHAPEL HOUR.
+hr_012,unscored_answer,18,,,,,1,Content:
+hr_012,unscored_answer,19,,,,,3,"Considering the limited time, I will answer directly now."
+hr_013,unsupported_answer,0,,,,,2,Thinking Process:
+hr_013,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_013,unsupported_answer,2,,,,,6,Task: Answer the ICU institutional question using only the provided evidence.
+hr_013,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_013,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_013,unsupported_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_013,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_013,unsupported_answer,7,,,,,0,"Question: Which dormitory will have the cheapest rent next academic year, including any future fee changes that have not been announced yet?"
+hr_013,unsupported_answer,8,,,,,6,Evidence provided: Four titles/links related to ICU dormitories and university fees.
+hr_013,unsupported_answer,9,,,,,2,Analyze the Evidence:**
+hr_013,unsupported_answer,10,,,,,5,"[1] Discusses dormitories at ICU International Christian University. Mentions that the difference is not just cheaper rent but includes new discoveries, learning experience, natural riches, and family-like friends. It does *not* mention dormitory fees, rent, or comparison to other dorms."
+hr_013,unsupported_answer,11,,,,,7,"[2] Discusses ehandbook content. Mentions pre-registration, registration for PE course, advisor visit, risks, but no specific dormitory rent or fee information."
+hr_013,unsupported_answer,12,,,,,0,[3] Discusses Payment of University Fees. Lists fees for Academic Year 2025. No specific dormitory fee information.
+hr_013,unsupported_answer,13,,,,,7,"[4] Discusses Spring Term in Next Academic Year. Mentions course registration, admission, advisor approval, late registration, no registration after the specified period, but no specific dormitory rent information."
+hr_013,unsupported_answer,14,,,,,1,Evaluate the Question vs. Evidence:**
+hr_013,unsupported_answer,15,,,,,0,The question asks: Which dormitory will have the cheapest rent next academic year?
+hr_013,unsupported_answer,16,,,,,1,Evidence [1] mentions dormitories
+hr_013,unsupported_answer,17,,,,,3,"Considering the limited time, I will answer directly now."
+hr_014,unsupported_answer,0,,,,,2,Thinking Process:
+hr_014,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_014,unsupported_answer,2,,,,,6,Task: Answer an ICU cafeteria question using only the provided evidence.
+hr_014,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_014,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_014,unsupported_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_014,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_014,unsupported_answer,7,,,,,6,"Question: What is today's lunch menu at the ICU cafeteria, and which option is the healthiest for me personally?"
+hr_014,unsupported_answer,8,,,,,1,"Evidence: Four provided sources (1, 2, 3, 4)."
+hr_014,unsupported_answer,9,,,,,2,Analyze the Evidence:**
+hr_014,unsupported_answer,10,,,,,5,Source [1] (ICU Health Care Office for Students - キャンパスでの健康管理):
+hr_014,unsupported_answer,11,,,,,0,Mentions emergency responders/doctors.
+hr_014,unsupported_answer,12,,,,,0,Mentions food allergy situations (university cafeteria unable to tailor meals).
+hr_014,unsupported_answer,13,,,,,0,Mentions emergency procedure flowchart (absent due to illness/injury).
+hr_014,unsupported_answer,14,,,,,0,Missing:* No specific lunch menu details. No specific healthiest option mentioned for the cafeteria itself.
+hr_014,unsupported_answer,15,,,,,5,Source [2] (Alumni｜ICU - INTERNATIONAL CHRISTIAN UNIVERSITY):
+hr_014,unsupported_answer,16,,,,,0,Mentions University Cafeteria is open 11:00-14:30.
+hr_014,unsupported_answer,17,,,,,0,"Mentions faculty, staff, and their families are welcomed."
+hr_014,unsupported_answer,18,,,,,0,Missing:* No specific lunch menu details. No specific healthiest option mentioned for the cafeteria itself.
+hr_014,unsupported_answer,19,,,,,0,Source [3] (University Cafeteria - Latest Info):
+hr_014,unsupported_answer,20,,,,,0,"Mentions operation hours (Mon.-Sat., 11:00-3:00 p.m"
+hr_014,unsupported_answer,21,,,,,3,"Considering the limited time, I will answer directly now."
+hr_015,unsupported_answer,0,,,,,2,Thinking Process:
+hr_015,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_015,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using only the provided evidence.
+hr_015,unsupported_answer,3,,,,,1,Constraint 1: Answer using only the evidence.
+hr_015,unsupported_answer,4,,,,,1,Constraint 2: Keep the final answer concise.
+hr_015,unsupported_answer,5,,,,,1,"Constraint 3: Cite evidence using [1], [2], etc."
+hr_015,unsupported_answer,6,,,,,1,"Constraint 4: If evidence is incomplete, say what is missing."
+hr_015,unsupported_answer,7,,,,,1,Constraint 5: Do not restate the evidence or the instructions in the final answer.
+hr_015,unsupported_answer,8,,,,,0,"Question: ""Can you tell me whether Professor Ishibashi will approve my individual course plan if I ask him next week?"""
+hr_015,unsupported_answer,9,,,,,1,Evidence Provided:
+hr_015,unsupported_answer,10,,,,,0,"[1] SL-InfoCenter - submit_isl (Japanese text, mentions ""SL Advisor"" approval for ""SL Activity Plan"")."
+hr_015,unsupported_answer,11,,,,,7,"[2] ehandbook - 2023.8.25 (Japanese text, mentions ""Registration"", ""Major Declaration"", ""Course Registration"", ""Major Change"")."
+hr_015,unsupported_answer,12,,,,,7,"[3] ehandbook - Schedule for Course Registration Spring Term (English text, mentions ""Course registration will not be complete until advisors approve your course registration online"")."
+hr_015,unsupported_answer,13,,,,,0,"[4] アドヴァイジング面談予約 | CTL (Japanese text, mentions ""Advisor Consultation"", ""ICU Academic Planning Support"", ""Advisor Consultation Form"", ""Schedule"")."
+hr_015,unsupported_answer,14,,,,,1,"Evidence Limitation: There are 4 pieces of evidence, but the question asks about a specific person (Professor Ishibashi) and a specific action (approving an individual course plan)."
+hr_015,unsupported_answer,15,,,,,0,Missing Evidence: The provided evidence focuses on the *submission* of a course plan (SL Activity Plan) and the *consultation* with an advisor (SL
+hr_015,unsupported_answer,16,,,,,3,"Considering the limited time, I will answer directly now."
+hr_016,unscored_answer,0,,,,,2,Thinking Process:
+hr_016,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_016,unscored_answer,2,,,,,5,Task: Answer an ICU (International Christian University) question using *only* the evidence provided.
+hr_016,unscored_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_016,unscored_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_016,unscored_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, state what is missing."
+hr_016,unscored_answer,6,,,,,1,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_016,unscored_answer,7,,,,,6,"Question: ""I heard a rumor that ICU will change the graduation credit requirement next year. Is that true, and should I plan based on the new number?"""
+hr_016,unscored_answer,8,,,,,1,"Evidence List: 4 pieces of evidence (Title, Source, Language, Evidence text)."
+hr_016,unscored_answer,9,,,,,2,Analyze the Question:**
+hr_016,unscored_answer,10,,,,,6,Rumor: ICU will change graduation credit requirement next year.
+hr_016,unscored_answer,11,,,,,0,Inquiry: True? Should I plan based on the new number?
+hr_016,unscored_answer,12,,,,,2,Analyze the Evidence:**
+hr_016,unscored_answer,13,,,,,7,[1]: Mentions Graduation Requirements. States 130 credits for Bachelor of Arts. Mentions independent systematic manner. Mentions variation for Languages/Specialized Courses. Mentions 2025/2024 enrollment status. Mentions need to check ehandbook.
+hr_016,unscored_answer,14,,,,,7,"[2]: Mentions Admissions Requirements. Mentions School Report, Course Progress list, Original/Diploma certificates. Mentions resuscitation if not submitted. Mentions requirements change without notice."
+hr_016,unscored_answer,15,,,,,7,[3]: Mentions Registration Change. Warning about cancellation endangering satisfaction of graduation requirements.
+hr_016,unscored_answer,16,,,,,7,"[4]: Mentions Units, Examinations, Grading. Mentions Standards for Establishment of Universities. Mentions class hours and study time."
+hr_016,unscored_answer,17,,,,,3,"Considering the limited time, I will answer directly now."
+hr_017,unscored_answer,0,,,,,2,Thinking Process:
+hr_017,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_017,unscored_answer,2,,,,,6,Task: Answer an ICU (Intensive Care Unit) institutional question using only the provided evidence.
+hr_017,unscored_answer,3,,,,,1,"Constraints: Keep the final answer concise. Cite evidence using [1], [2], etc. Do not restate the evidence. Do not restate the instructions in the final answer."
+hr_017,unscored_answer,4,,,,,7,"Question: For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?"
+hr_017,unscored_answer,5,,,,,7,"Evidence Provided: 4 links (titles) containing course registration information, but some look like truncated or garbled text (e.g., ""AY202 5 Spring Term"", ""Tentative"", ""Tentative: Subject to change""). The text contains some OCR errors and inconsistencies (e.g., ""Registration Website can be accessed on and off ca"" vs ""on and off campus"", ""late registration period"")."
+hr_017,unscored_answer,6,,,,,7,"Goal: Determine if the evidence covers the ""registration period"" and ""advisor interview timing"" for Spring 2026."
+hr_017,unscored_answer,7,,,,,1,Evaluate the Evidence:**
+hr_017,unscored_answer,8,,,,,7,"Evidence [1]: Mentions ""Schedule for Course Registration Spring Term"", ""Registration Website"", ""Advisor"", ""next day of Registration Day"", ""Late registration period"". It mentions AY2025 Spring Term, AY2026 Spring Term (Tentative). It implies a registration period (likely the ""Registration Day"" and ""Late registration period""). It mentions advisor approval."
+hr_017,unscored_answer,9,,,,,7,"Evidence [2]: Similar to [1], mentions ""Spring Term in Next Academic Year"", ""Registration Website"", ""Advisor""."
+hr_017,unscored_answer,10,,,,,7,"Evidence [3]: Mentions ""Course Registration"", ""Advisor"", ""Late Registration period"". Mentions ""Pre-Registration"
+hr_017,unscored_answer,11,,,,,3,"Considering the limited time, I will answer directly now."
+hr_018,unsupported_answer,0,,,,,2,Thinking Process:
+hr_018,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_018,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using only the provided evidence.
+hr_018,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_018,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_018,unsupported_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_018,unsupported_answer,6,,,,,1,Constraint 4: Do not restate the evidence or the instructions in the final answer.
+hr_018,unsupported_answer,7,,,,,0,Question: Can the system tell me exactly how many more credits I personally need to graduate early? (Context: Transferring credits before entering ICU).
+hr_018,unsupported_answer,8,,,,,1,Evidence: Four provided snippets (titles and sources).
+hr_018,unsupported_answer,9,,,,,2,Analyze the Question:**
+hr_018,unsupported_answer,10,,,,,0,User wants to know the *number* of additional credits needed to graduate early.
+hr_018,unsupported_answer,11,,,,,6,The question implies a specific calculation based on credits transferred before entering ICU.
+hr_018,unsupported_answer,12,,,,,1,"Evidence snippets contain information about transfer rules, eligibility, limits, and requirements."
+hr_018,unsupported_answer,13,,,,,2,Analyze the Evidence:**
+hr_018,unsupported_answer,14,,,,,7,"[1]: Mentions Transfer Students Eligible for Transfer of Credits, grades must be C (70/100) or higher, max 60 credits for transferring from other universities (associate degree, >1 year, etc.)."
+hr_018,unsupported_answer,15,,,,,5,"[2]: Mentions Transfer Student eligibility, grades must be 70 points or higher, credit transfers granted after entering ICU, but note incomplete text."
+hr_018,unsupported_answer,16,,,,,0,"[3]: Mentions application documents, grades not indicated, need official document, transcript needed."
+hr_018,unsupported_answer,17,,,,,7,"[4]: Mentions Reciprocal Credits System, max 40 credits for Transfer, grades D (60) or higher, total transfer credits max 60 for Freshmen."
+hr_018,unsupported_answer,18,,,,,3,"Considering the limited time, I will answer directly now."
+hr_019,unscored_answer,0,,,,,2,Thinking Process:
+hr_019,unscored_answer,1,,,,,2,Analyze the Request:**
+hr_019,unscored_answer,2,,,,,6,Task: Answer an ICU institutional question using *only* the provided evidence.
+hr_019,unscored_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_019,unscored_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_019,unscored_answer,5,,,,,1,"Constraint 3: If evidence is incomplete, say what is missing."
+hr_019,unscored_answer,6,,,,,1,Constraint 4: Do not restate the evidence or instructions in the final answer.
+hr_019,unscored_answer,7,,,,,0,"Input Question: ""履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？"" (I want to confirm about registration for medical school training. Where can I find contact info or related official pages?)"
+hr_019,unscored_answer,8,,,,,6,"Input Evidence: A collection of text snippets (Evidence [1], [2], [3], [4]) from the ICU handbook website."
+hr_019,unscored_answer,9,,,,,2,Analyze the Question:**
+hr_019,unscored_answer,10,,,,,0,"The user wants to know the contact info (phone/email, address, etc.) for the ""Education Affairs Group"" (教育事務グループ) regarding the ""Medical School Training Registration"" (履修登録)."
+hr_019,unscored_answer,11,,,,,0,"Specifically, they want to know the contact details for the Education Affairs Group to confirm registration information."
+hr_019,unscored_answer,12,,,,,2,Analyze the Evidence:**
+hr_019,unscored_answer,13,,,,,1,Evidence [1]:**
+hr_019,unscored_answer,14,,,,,4,Title: ehandbook - よくある質問 (FAQ).
+hr_019,unscored_answer,15,,,,,7,"Content: Discusses medical school training registration changes, attendance during registration, etc."
+hr_019,unscored_answer,16,,,,,0,Content: Does not contain specific contact info for the Education Affairs Group.
+hr_019,unscored_answer,17,,,,,1,Evidence [2]:**
+hr_019,unscored_answer,18,,,,,4,Title: ehandbook - 2023.11.28 2023 年度
+hr_019,unscored_answer,19,,,,,3,"Considering the limited time, I will answer directly now."
+hr_020,unsupported_answer,0,,,,,2,Thinking Process:
+hr_020,unsupported_answer,1,,,,,2,Analyze the Request:**
+hr_020,unsupported_answer,2,,,,,6,Task: Answer an ICU institutional question using only the provided evidence.
+hr_020,unsupported_answer,3,,,,,1,Constraint 1: Keep the final answer concise.
+hr_020,unsupported_answer,4,,,,,1,"Constraint 2: Cite evidence using [1], [2], etc."
+hr_020,unsupported_answer,5,,,,,1,Constraint 3: Do not restate the evidence or instructions in the final answer.
+hr_020,unsupported_answer,6,,,,,6,"Question: If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?"
+hr_020,unsupported_answer,7,,,,,6,"Evidence: Four snippets from the ICU Portal Manuals (titles, sources, language, content)."
+hr_020,unsupported_answer,8,,,,,2,Analyze the Question:**
+hr_020,unsupported_answer,9,,,,,6,Scenario: Chatbot answer vs. ICU Portal announcement differ on a deadline.
+hr_020,unsupported_answer,10,,,,,1,Goal: Determine which source to trust and what to do next.
+hr_020,unsupported_answer,11,,,,,6,"Implicit Knowledge: Based on the evidence, the ICU Portal is the authoritative source. The evidence provided contains specific instructions about the ICU Portal."
+hr_020,unsupported_answer,12,,,,,1,Constraint Checklist & Confidence Score:
+hr_020,unsupported_answer,13,,,,,1,Answer based on evidence? Yes.
+hr_020,unsupported_answer,14,,,,,1,Concise? Yes.
+hr_020,unsupported_answer,15,,,,,1,Cite evidence? Yes.
+hr_020,unsupported_answer,16,,,,,1,Do not restate evidence? Yes.
+hr_020,unsupported_answer,17,,,,,1,Evaluate Evidence:**
+hr_020,unsupported_answer,18,,,,,1,"Evidence [1] and [2] are identical (same title, same source, same content)."
+hr_020,unsupported_answer,19,,,,,1,Evidence [3] and [4] are identical to [1] and [2].
+hr_020,unsupported_answer,20,,,,,6,The text in the evidence is very similar to the content of the ICU Portal Manuals.
+hr_020,unsupported_answer,21,,,,,6,"The evidence states: ""Please check the ICU Portal announcements once a day."" and ""Emails may be sent from the ICU Portal regarding 'Official Announcements' and 'Important"
+hr_020,unsupported_answer,22,,,,,3,"Considering the limited time, I will answer directly now."

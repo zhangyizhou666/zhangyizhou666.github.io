@@ -1,0 +1,20 @@
+{
+  "step_count": 326,
+  "answer_count": 20,
+  "n_clusters": 8,
+  "group_counts": {
+    "high_correctness": 123,
+    "low_correctness": 160,
+    "medium_correctness": 43
+  },
+  "cluster_counts": {
+    "0": 44,
+    "1": 20,
+    "2": 20,
+    "3": 41,
+    "4": 19,
+    "5": 20,
+    "6": 59,
+    "7": 103
+  }
+}

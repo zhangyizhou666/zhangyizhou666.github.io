@@ -1,0 +1,402 @@
+[
+  {
+    "id": "q_001",
+    "question": "How do I register for courses at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "registration",
+    "is_answerable": true
+  },
+  {
+    "id": "q_002",
+    "question": "Where can I find the academic calendar for the current academic year?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "calendar",
+    "is_answerable": true
+  },
+  {
+    "id": "q_003",
+    "question": "How many credits do I need to graduate from ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "graduation",
+    "is_answerable": true
+  },
+  {
+    "id": "q_004",
+    "question": "What is the structure of the general education curriculum?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "curriculum",
+    "is_answerable": true
+  },
+  {
+    "id": "q_005",
+    "question": "How can I declare or change my major?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "major",
+    "is_answerable": true
+  },
+  {
+    "id": "q_006",
+    "question": "What should I do if I want to take a leave of absence?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "student_status",
+    "is_answerable": true
+  },
+  {
+    "id": "q_007",
+    "question": "How can I request an official certificate from ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "certificate",
+    "is_answerable": true
+  },
+  {
+    "id": "q_008",
+    "question": "Where can I check the course schedule?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "registration",
+    "is_answerable": true
+  },
+  {
+    "id": "q_009",
+    "question": "What are the rules for course withdrawal?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "registration",
+    "is_answerable": true
+  },
+  {
+    "id": "q_010",
+    "question": "How does ICU calculate GPA?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "grades",
+    "is_answerable": true
+  },
+  {
+    "id": "q_011",
+    "question": "What grading system does ICU use?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "grades",
+    "is_answerable": true
+  },
+  {
+    "id": "q_012",
+    "question": "What are the language education requirements at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "language",
+    "is_answerable": true
+  },
+  {
+    "id": "q_013",
+    "question": "Where can I find information about ELA courses?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "language",
+    "is_answerable": true
+  },
+  {
+    "id": "q_014",
+    "question": "What is the process for studying abroad from ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "study_abroad",
+    "is_answerable": true
+  },
+  {
+    "id": "q_015",
+    "question": "Where can I find information about exchange programs?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "study_abroad",
+    "is_answerable": true
+  },
+  {
+    "id": "q_016",
+    "question": "How can I apply for scholarships at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "scholarship",
+    "is_answerable": true
+  },
+  {
+    "id": "q_017",
+    "question": "Where can I find tuition and fee information?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "finance",
+    "is_answerable": true
+  },
+  {
+    "id": "q_018",
+    "question": "What housing options are available for ICU students?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "housing",
+    "is_answerable": true
+  },
+  {
+    "id": "q_019",
+    "question": "How can I apply for student dormitories?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "housing",
+    "is_answerable": true
+  },
+  {
+    "id": "q_020",
+    "question": "Where can I find campus access information?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "campus",
+    "is_answerable": true
+  },
+  {
+    "id": "q_021",
+    "question": "Where is the ICU Health Care Office information published?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "health",
+    "is_answerable": true
+  },
+  {
+    "id": "q_022",
+    "question": "What should I do if I need counseling support at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "student_support",
+    "is_answerable": true
+  },
+  {
+    "id": "q_023",
+    "question": "Where can I find information about student services?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "student_support",
+    "is_answerable": true
+  },
+  {
+    "id": "q_024",
+    "question": "How do I contact the Educational Affairs Group?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "office",
+    "is_answerable": true
+  },
+  {
+    "id": "q_025",
+    "question": "Where can I find the ICU campus map?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "campus",
+    "is_answerable": true
+  },
+  {
+    "id": "q_026",
+    "question": "What are the requirements for graduation thesis or senior thesis?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "graduation",
+    "is_answerable": true
+  },
+  {
+    "id": "q_027",
+    "question": "What is the role of foundation courses in the ICU curriculum?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "curriculum",
+    "is_answerable": true
+  },
+  {
+    "id": "q_028",
+    "question": "How can I check information about minors?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "major",
+    "is_answerable": true
+  },
+  {
+    "id": "q_029",
+    "question": "What are the rules for repeating a course?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "registration",
+    "is_answerable": true
+  },
+  {
+    "id": "q_030",
+    "question": "What should I do if I miss an exam?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "grades",
+    "is_answerable": true
+  },
+  {
+    "id": "q_031",
+    "question": "Where can I find information about chapel hour or university events?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "campus_life",
+    "is_answerable": true
+  },
+  {
+    "id": "q_032",
+    "question": "How can students use the ICU library?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "library",
+    "is_answerable": true
+  },
+  {
+    "id": "q_033",
+    "question": "Where can I find information about IT services at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "it",
+    "is_answerable": true
+  },
+  {
+    "id": "q_034",
+    "question": "What is the academic integrity policy at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "policy",
+    "is_answerable": true
+  },
+  {
+    "id": "q_035",
+    "question": "How can I find information about clubs and student activities?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "campus_life",
+    "is_answerable": true
+  },
+  {
+    "id": "q_036",
+    "question": "Where can I find entrance ceremony or graduation ceremony information?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "calendar",
+    "is_answerable": true
+  },
+  {
+    "id": "q_037",
+    "question": "What is the procedure for returning from a leave of absence?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "student_status",
+    "is_answerable": true
+  },
+  {
+    "id": "q_038",
+    "question": "How can I get information about commuting to ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "campus",
+    "is_answerable": true
+  },
+  {
+    "id": "q_039",
+    "question": "What information is available about ICU dining or cafeteria services?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "campus_life",
+    "is_answerable": true
+  },
+  {
+    "id": "q_040",
+    "question": "Where can international students find support information?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "international_students",
+    "is_answerable": true
+  },
+  {
+    "id": "q_041",
+    "question": "What information is available about Japanese language programs?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "language",
+    "is_answerable": true
+  },
+  {
+    "id": "q_042",
+    "question": "How can I find information about graduate school programs at ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "graduate_school",
+    "is_answerable": true
+  },
+  {
+    "id": "q_043",
+    "question": "Where can I find information about admissions for undergraduate students?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "admissions",
+    "is_answerable": true
+  },
+  {
+    "id": "q_044",
+    "question": "What is the policy for transferring credits to ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "credits",
+    "is_answerable": true
+  },
+  {
+    "id": "q_045",
+    "question": "How can I check whether a course counts toward my major requirements?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "major",
+    "is_answerable": true
+  },
+  {
+    "id": "q_046",
+    "question": "Where can I find information about PE or health and physical education requirements?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "curriculum",
+    "is_answerable": true
+  },
+  {
+    "id": "q_047",
+    "question": "How can I find the office hours or contact information for ICU offices?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "office",
+    "is_answerable": true
+  },
+  {
+    "id": "q_048",
+    "question": "What should I do if I need accessibility support or accommodations?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "student_support",
+    "is_answerable": true
+  },
+  {
+    "id": "q_049",
+    "question": "Where can I find public notices from ICU?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "notices",
+    "is_answerable": true
+  },
+  {
+    "id": "q_050",
+    "question": "How can I find important deadlines for registration and academic procedures?",
+    "gold_answer": "",
+    "gold_source_ids": [],
+    "category": "calendar",
+    "is_answerable": true
+  }
+]

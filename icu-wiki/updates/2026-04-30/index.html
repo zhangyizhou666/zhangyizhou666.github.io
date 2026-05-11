@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weekly Update — ICU Wiki Research</title>
+    <meta name="description" content="We compared the initial 50-question Gemma/Qwen benchmark with the harder Qwen3.5 20-question benchmark and clarified the next evaluation step." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        
+      </nav>
+    </header>
+    <main>
+    <article class="post">
+      <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
+      <header>
+        <p class="eyebrow">2026-04-30</p>
+        <h1>Weekly Update</h1>
+        <p>We compared the initial 50-question Gemma/Qwen benchmark with the harder Qwen3.5 20-question benchmark and clarified the next evaluation step.</p>
+        <div class="tags"><span>evaluation</span><span>benchmark</span></div>
+      </header>
+      <div class="post-body"><h2>Summary</h2>
+<p>This week focused on evaluating whether our current RAG benchmark is strong enough to separate small models in a meaningful way.</p>
+<ul><li>We preserved the earlier 50-question Gemma/Qwen evaluation from last week&#x27;s seminar as a historical baseline.</li><li>We found that the initial 50-question benchmark produced similar metric-level RAGAS scores across model sizes, which suggested that the questions were too easy or too generic.</li><li>We evaluated Qwen3.5 0.8B, 2B, and 4B on a harder 20-question benchmark designed to better reflect real student questions.</li><li>We added saved answer examples so the score plots can be interpreted together with real model behavior.</li></ul>
+<h2>Initial 50-question Baseline</h2>
+<p>Before the hard-question benchmark, we evaluated Gemma 3 and Qwen3.5 models on 50 broad ICU questions. The Gemma answers were generated through OpenRouter API calls, while the Qwen3.5 answers were generated locally.</p>
+<p>The useful takeaway was not a strong model-size conclusion. The metric-level RAGAS scores were relatively close, which suggested that the original questions were too easy and too generic to reveal practical chatbot failures.</p>
+<p>Detailed benchmark page: <a href="/icu-wiki/benchmark/initial-50/">Initial 50 Benchmark</a></p>
+<p><img src="/icu-wiki/artifacts/2026-04-30/initial-50/plots/gemma_qwen35_ragas_metric_bars.png" alt="Initial 50 RAGAS metric bars" /></p>
+<p>Data table: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/gemma_qwen35_ragas_summary.csv">gemma_qwen35_ragas_summary.csv</a></p>
+<p>Question set: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_questions.json">initial_50_questions.json</a></p>
+<p>Sample answers: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_sample_answers.json">initial_50_sample_answers.json</a></p>
+<p>Retrieved evidence: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_retrieved_evidence.json">initial_50_retrieved_evidence.json</a></p>
+<h2>Qwen3.5 Hard-question Baseline</h2>
+<p>We evaluated Qwen3.5 0.8B, 2B, and 4B on a 20-question hard realistic benchmark using the same retrieval cache.</p>
+<p>The current result does not show a clean elbow point. The 4B model is stronger on answer correctness, but the smaller models are not separated enough across every metric to claim a simple linear model-size relationship.</p>
+<p>Detailed benchmark page: <a href="/icu-wiki/benchmark/hard-realistic-20/">Hard Realistic 20</a></p>
+<p><img src="/icu-wiki/artifacts/2026-04-30/plots/qwen35_hard_realistic_20_ragas_metric_bars.png" alt="Qwen3.5 RAGAS metric bars" /></p>
+<p>Data table: <a href="/icu-wiki/artifacts/2026-04-30/tables/qwen35_hard_realistic_20_ragas_summary.csv">qwen35_hard_realistic_20_ragas_summary.csv</a></p>
+<p>Question set: <a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_questions.json">hard_realistic_20_questions.json</a></p>
+<p>Sample answers: <a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_sample_answers.json">hard_realistic_20_sample_answers.json</a></p>
+<p>Full model answers: <a href="/icu-wiki/answers/apr30-hard20/">April 30 Hard-20 Model Answers</a></p>
+<p>Retrieved evidence: <a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_retrieved_evidence.json">hard_realistic_20_retrieved_evidence.json</a></p>
+<h2>Interpretation</h2>
+<p>The current evidence supports a cautious thesis direction:</p>
+<ul><li>The hard-question benchmark is more useful than the earlier simple questions because it exposes weaknesses that the original evaluation did not capture clearly.</li><li>RAGAS scores alone are not enough; manual review and human evaluation are still needed.</li><li>Answerability is teacher-generated benchmark metadata, not a native RAGAS metric.</li><li>The strongest next step is to keep the retrieval pipeline fixed, improve question quality, and add a small human-evaluation layer.</li></ul>
+<p>Evaluation logic page: <a href="/icu-wiki/evaluation/">RAGAS metrics and benchmark metadata</a></p>
+<h2>Next Steps</h2>
+<ul><li>Keep the research site updated after weekly lab meetings.</li><li>Add human evaluation criteria for language consistency, usefulness, and citation clarity.</li><li>Decide whether the next optimization should focus on prompt tuning, content-aware chunking, or small-model fine-tuning.</li></ul></div>
+    </article>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-12.</span>
+    </footer>
+  </body>
+</html>

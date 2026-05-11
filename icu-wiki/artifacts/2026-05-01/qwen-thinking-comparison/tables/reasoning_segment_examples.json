@@ -1,0 +1,270 @@
+[
+  {
+    "label": "Qwen3.5 0.8B thinking",
+    "example_count": 16,
+    "examples": [
+      {
+        "id": "hr_001",
+        "step_index": 0,
+        "cluster": 2,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Thinking Process:"
+      },
+      {
+        "id": "hr_001",
+        "step_index": 1,
+        "cluster": 3,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Analyze the Request:**"
+      },
+      {
+        "id": "hr_001",
+        "step_index": 2,
+        "cluster": 7,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Task: Answer an ICU question using only the provided evidence."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 3,
+        "cluster": 4,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Constraint 1: Keep the final answer concise."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 4,
+        "cluster": 6,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Constraint 2: Cite evidence using [1], [2], etc."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 5,
+        "cluster": 6,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Constraint 3: If evidence is incomplete, say what is missing."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 6,
+        "cluster": 1,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Constraint 4: Do not restate the evidence or the instructions in the final answer."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 7,
+        "cluster": 0,
+        "group": "high_correctness",
+        "answer_correctness": 0.5263023435004517,
+        "text": "Input: A set of four evidence snippets (labeled [1], [2], [3], [4]) related to ICU's JLP (Japanese Language Program) courses."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 0,
+        "cluster": 2,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Thinking Process:"
+      },
+      {
+        "id": "hr_005",
+        "step_index": 1,
+        "cluster": 3,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Analyze the Request:**"
+      },
+      {
+        "id": "hr_005",
+        "step_index": 2,
+        "cluster": 7,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Task: Answer the ICU institutional question using *only* the evidence."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 3,
+        "cluster": 4,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Constraint 1: Keep the final answer concise."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 4,
+        "cluster": 6,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Constraint 2: Cite evidence using [1], [2], etc."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 5,
+        "cluster": 6,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Constraint 3: If evidence is incomplete, say what is missing."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 6,
+        "cluster": 1,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Constraint 4: Do not restate the evidence or instructions in the final answer."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 7,
+        "cluster": 0,
+        "group": "low_correctness",
+        "answer_correctness": 0.07419540666666227,
+        "text": "Input: A set of evidence snippets (4 entries) related to ICU Senior Thesis deadlines."
+      }
+    ]
+  },
+  {
+    "label": "Qwen3.5 4B thinking",
+    "example_count": 16,
+    "examples": [
+      {
+        "id": "hr_001",
+        "step_index": 0,
+        "cluster": 6,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Thinking Process:"
+      },
+      {
+        "id": "hr_001",
+        "step_index": 1,
+        "cluster": 1,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Analyze the Request:**"
+      },
+      {
+        "id": "hr_001",
+        "step_index": 2,
+        "cluster": 0,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Task: Answer the ICU institutional question using *only* the provided evidence."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 3,
+        "cluster": 2,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Constraint 1: Keep the final answer concise."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 4,
+        "cluster": 3,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Constraint 2: Cite evidence using [1], [2], etc."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 5,
+        "cluster": 3,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Constraint 3: If evidence is incomplete, say what is missing."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 6,
+        "cluster": 2,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Constraint 4: Do not restate the evidence or the instructions in the final answer."
+      },
+      {
+        "id": "hr_001",
+        "step_index": 7,
+        "cluster": 4,
+        "group": "high_correctness",
+        "answer_correctness": 0.6624777859633311,
+        "text": "Question: How is the level decided, and where should I check the official information?"
+      },
+      {
+        "id": "hr_005",
+        "step_index": 0,
+        "cluster": 6,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Thinking Process:"
+      },
+      {
+        "id": "hr_005",
+        "step_index": 1,
+        "cluster": 1,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Analyze the Request:**"
+      },
+      {
+        "id": "hr_005",
+        "step_index": 2,
+        "cluster": 0,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Task: Answer an ICU institutional question using *only* the provided evidence."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 3,
+        "cluster": 3,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Constraint 1: Cite evidence using [1], [2], etc."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 4,
+        "cluster": 2,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Constraint 2: Keep the final answer concise."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 5,
+        "cluster": 3,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Constraint 3: If evidence is incomplete, state what is missing."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 6,
+        "cluster": 2,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Constraint 4: Do not restate the instructions or evidence in the final answer."
+      },
+      {
+        "id": "hr_005",
+        "step_index": 7,
+        "cluster": 4,
+        "group": "low_correctness",
+        "answer_correctness": 0.06700724403110277,
+        "text": "Question: \"I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?\""
+      }
+    ]
+  }
+]

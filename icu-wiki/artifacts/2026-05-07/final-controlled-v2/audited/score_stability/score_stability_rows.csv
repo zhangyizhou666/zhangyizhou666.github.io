@@ -1,0 +1,101 @@
+question_id,condition_id,mode,model,model_label,score,student_facing_pass,quality_bucket,answer_acceptance,readability,citation_usefulness,over_answering_risk,primary_failure_tag,secondary_failure_tag
+h2_001,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.625,0,partial,1.0,2.0,1.0,1.0,unsupported_claim,missing_key_condition
+h2_002,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.75,0,strong,1.0,2.0,1.0,0.0,missing_key_condition,none
+h2_003,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.5,0,partial,1.0,1.0,1.0,1.0,verbose_low_quality,citation_mismatch
+h2_004,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.5,0,partial,1.0,1.0,1.0,1.0,missing_key_condition,over_answering
+h2_005,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.125,0,low,0.0,1.0,0.0,2.0,over_answering,citation_mismatch
+h2_006,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.25,0,low,0.0,2.0,0.0,2.0,over_answering,evidence_insufficient
+h2_007,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.375,0,low,1.0,1.0,1.0,2.0,over_answering,missing_key_condition
+h2_008,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.625,0,partial,1.0,2.0,1.0,1.0,missing_key_condition,unsupported_claim
+h2_009,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.125,0,low,0.0,1.0,0.0,2.0,over_answering,citation_mismatch
+h2_010,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.5,0,partial,1.0,1.0,1.0,1.0,over_answering,citation_mismatch
+h2_011,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.625,0,partial,1.0,2.0,1.0,1.0,unsupported_claim,missing_key_condition
+h2_012,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.125,0,low,0.0,1.0,0.0,2.0,citation_mismatch,over_answering
+h2_013,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.75,1,strong,2.0,2.0,1.0,1.0,citation_mismatch,none
+h2_014,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.5,0,partial,1.0,1.0,1.0,1.0,missing_key_condition,citation_mismatch
+h2_015,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.125,0,low,0.0,1.0,0.0,2.0,over_answering,citation_mismatch
+h2_016,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.25,0,low,1.0,1.0,0.0,2.0,over_answering,missing_key_condition
+h2_017,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.5,0,partial,1.0,2.0,0.0,1.0,missing_key_condition,citation_mismatch
+h2_018,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.25,0,low,0.0,2.0,0.0,2.0,unsupported_claim,missing_key_condition
+h2_019,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.0,0,low,0.0,0.0,0.0,2.0,verbose_low_quality,citation_mismatch
+h2_020,C01,non_thinking,Qwen_Qwen3.5-0.8B,Qwen3.5 0.8B,0.5,0,partial,1.0,1.0,1.0,1.0,missing_key_condition,over_answering
+h2_001,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.5,0,partial,1.0,1.0,1.0,1.0,missing_key_condition,over_answering
+h2_002,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.75,0,strong,1.0,1.0,2.0,0.0,missing_key_condition,none
+h2_003,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.75,1,strong,2.0,1.0,2.0,1.0,over_answering,none
+h2_004,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.625,0,partial,1.0,2.0,1.0,1.0,citation_mismatch,missing_key_condition
+h2_005,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.875,0,strong,1.0,2.0,2.0,0.0,missing_key_condition,none
+h2_006,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.25,0,low,0.0,1.0,1.0,2.0,over_answering,evidence_insufficient
+h2_007,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.375,0,low,1.0,1.0,1.0,2.0,over_answering,missing_key_condition
+h2_008,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_009,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.5,0,partial,1.0,1.0,1.0,1.0,verbose_low_quality,evidence_insufficient
+h2_010,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.5,0,partial,1.0,1.0,1.0,1.0,unsupported_claim,missing_key_condition
+h2_011,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.625,0,partial,1.0,2.0,1.0,1.0,unsupported_claim,citation_mismatch
+h2_012,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.625,0,partial,1.0,2.0,1.0,1.0,unsupported_claim,missing_key_condition
+h2_013,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_014,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.625,0,partial,1.0,2.0,1.0,1.0,missing_key_condition,citation_mismatch
+h2_015,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.125,0,low,0.0,1.0,0.0,2.0,over_answering,citation_mismatch
+h2_016,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.875,0,strong,1.0,2.0,2.0,0.0,missing_key_condition,none
+h2_017,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_018,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.75,0,strong,1.0,2.0,2.0,1.0,missing_key_condition,over_answering
+h2_019,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.875,1,strong,2.0,2.0,1.0,0.0,citation_mismatch,none
+h2_020,C02,non_thinking,Qwen_Qwen3.5-2B,Qwen3.5 2B,0.375,0,low,1.0,1.0,0.0,1.0,citation_mismatch,over_answering
+h2_001,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.75,1,strong,2.0,1.0,2.0,1.0,over_answering,none
+h2_002,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.875,1,strong,2.0,1.0,2.0,0.0,verbose_low_quality,none
+h2_003,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_004,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.75,0,strong,1.0,2.0,2.0,1.0,over_answering,missing_key_condition
+h2_005,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_006,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_007,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_008,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_009,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_010,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_011,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_012,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_013,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_014,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.5,0,partial,1.0,1.0,1.0,1.0,over_answering,missing_key_condition
+h2_015,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.375,0,low,0.0,2.0,1.0,2.0,over_answering,evidence_insufficient
+h2_016,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.625,0,partial,1.0,2.0,1.0,1.0,missing_key_condition,citation_mismatch
+h2_017,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_018,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.25,0,low,0.0,1.0,1.0,2.0,unsupported_claim,over_answering
+h2_019,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,1.0,1,strong,2.0,2.0,2.0,0.0,none,none
+h2_020,C03,non_thinking,Qwen_Qwen3.5-4B,Qwen3.5 4B,0.75,1,strong,2.0,1.0,2.0,1.0,over_answering,none
+h2_001,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_002,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_003,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_004,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_005,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.75,0,strong,1.0,1.0,2.0,0.0,missing_key_condition,language_or_format_failure
+h2_006,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.25,0,low,0.0,1.0,1.0,2.0,over_answering,evidence_insufficient
+h2_007,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.75,0,strong,1.0,1.0,2.0,0.0,missing_key_condition,language_or_format_failure
+h2_008,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_009,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_010,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_011,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_012,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_013,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_014,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.5,0,partial,1.0,1.0,1.0,1.0,missing_key_condition,language_or_format_failure
+h2_015,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.5,0,partial,1.0,1.0,0.0,0.0,missing_key_condition,citation_mismatch
+h2_016,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.75,0,strong,1.0,1.0,2.0,0.0,missing_key_condition,language_or_format_failure
+h2_017,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_018,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.625,0,partial,1.0,1.0,2.0,1.0,over_answering,missing_key_condition
+h2_019,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_020,C04,non_thinking,google_gemma-4-E2B-it,Gemma 4 E2B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_001,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_002,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.375,0,low,0.0,0.0,1.0,0.0,language_or_format_failure,none
+h2_003,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_004,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.625,0,partial,1.0,1.0,2.0,1.0,over_answering,language_or_format_failure
+h2_005,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_006,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.5,0,partial,1.0,1.0,1.0,1.0,over_answering,language_or_format_failure
+h2_007,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.75,0,strong,1.0,1.0,2.0,0.0,missing_key_condition,language_or_format_failure
+h2_008,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_009,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.625,0,partial,2.0,1.0,0.0,0.0,citation_mismatch,language_or_format_failure
+h2_010,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.75,1,strong,2.0,1.0,2.0,1.0,language_or_format_failure,over_answering
+h2_011,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_012,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_013,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_014,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.5,0,partial,1.0,1.0,1.0,1.0,missing_key_condition,language_or_format_failure
+h2_015,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.5,0,partial,1.0,1.0,0.0,0.0,missing_key_condition,citation_mismatch
+h2_016,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.75,0,strong,1.0,1.0,2.0,0.0,missing_key_condition,language_or_format_failure
+h2_017,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_018,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.375,0,low,0.0,0.0,1.0,0.0,language_or_format_failure,none
+h2_019,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
+h2_020,C05,non_thinking,google_gemma-4-E4B-it,Gemma 4 E4B,0.875,1,strong,2.0,1.0,2.0,0.0,language_or_format_failure,none
