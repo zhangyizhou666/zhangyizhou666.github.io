@@ -1,0 +1,13 @@
+model,mode,count,avg_seconds,median_seconds,max_seconds,evidence_sufficient_rate,avg_search_calls
+Qwen/Qwen3.5-0.8B,agentic,30,5.804,5.235,10.474,0.967,1.167
+Qwen/Qwen3.5-0.8B,single_shot,30,4.135,2.45,49.182,,
+Qwen/Qwen3.5-2B,agentic,30,6.792,5.977,12.422,0.767,1.667
+Qwen/Qwen3.5-2B,single_shot,30,4.744,2.254,77.042,,
+Qwen/Qwen3.5-4B,agentic,30,8.86,8.377,15.346,0.733,1.667
+Qwen/Qwen3.5-4B,single_shot,30,8.327,3.666,148.585,,
+Qwen/Qwen3.5-9B,agentic,30,11.119,10.846,16.845,0.9,1.533
+Qwen/Qwen3.5-9B,single_shot,30,4.109,3.341,19.857,,
+google/gemma-4-E2B-it,agentic,30,8.669,7.711,18.895,0.767,1.733
+google/gemma-4-E2B-it,single_shot,30,7.716,2.957,151.548,,
+google/gemma-4-E4B-it,agentic,30,13.312,12.308,26.206,0.833,1.5
+google/gemma-4-E4B-it,single_shot,30,3.882,3.214,18.342,,

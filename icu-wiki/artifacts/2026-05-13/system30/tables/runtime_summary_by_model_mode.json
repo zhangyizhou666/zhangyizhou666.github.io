@@ -1,0 +1,200 @@
+[
+  {
+    "model": "Qwen/Qwen3.5-0.8B",
+    "mode": "agentic",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "agentic_remote_model": 30
+    },
+    "avg_seconds": 5.804,
+    "median_seconds": 5.235,
+    "max_seconds": 10.474,
+    "evidence_sufficient_rate": 0.967,
+    "avg_search_calls": 1.167
+  },
+  {
+    "model": "Qwen/Qwen3.5-0.8B",
+    "mode": "single_shot",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "remote_model": 28,
+      "conservative_policy_guard": 2
+    },
+    "avg_seconds": 4.135,
+    "median_seconds": 2.45,
+    "max_seconds": 49.182,
+    "evidence_sufficient_rate": null,
+    "avg_search_calls": null
+  },
+  {
+    "model": "Qwen/Qwen3.5-2B",
+    "mode": "agentic",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "agentic_remote_model": 30
+    },
+    "avg_seconds": 6.792,
+    "median_seconds": 5.977,
+    "max_seconds": 12.422,
+    "evidence_sufficient_rate": 0.767,
+    "avg_search_calls": 1.667
+  },
+  {
+    "model": "Qwen/Qwen3.5-2B",
+    "mode": "single_shot",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "remote_model": 28,
+      "conservative_policy_guard": 2
+    },
+    "avg_seconds": 4.744,
+    "median_seconds": 2.254,
+    "max_seconds": 77.042,
+    "evidence_sufficient_rate": null,
+    "avg_search_calls": null
+  },
+  {
+    "model": "Qwen/Qwen3.5-4B",
+    "mode": "agentic",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "agentic_remote_model": 30
+    },
+    "avg_seconds": 8.86,
+    "median_seconds": 8.377,
+    "max_seconds": 15.346,
+    "evidence_sufficient_rate": 0.733,
+    "avg_search_calls": 1.667
+  },
+  {
+    "model": "Qwen/Qwen3.5-4B",
+    "mode": "single_shot",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "remote_model": 28,
+      "conservative_policy_guard": 2
+    },
+    "avg_seconds": 8.327,
+    "median_seconds": 3.666,
+    "max_seconds": 148.585,
+    "evidence_sufficient_rate": null,
+    "avg_search_calls": null
+  },
+  {
+    "model": "Qwen/Qwen3.5-9B",
+    "mode": "agentic",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "agentic_remote_model": 30
+    },
+    "avg_seconds": 11.119,
+    "median_seconds": 10.846,
+    "max_seconds": 16.845,
+    "evidence_sufficient_rate": 0.9,
+    "avg_search_calls": 1.533
+  },
+  {
+    "model": "Qwen/Qwen3.5-9B",
+    "mode": "single_shot",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "remote_model": 28,
+      "conservative_policy_guard": 2
+    },
+    "avg_seconds": 4.109,
+    "median_seconds": 3.341,
+    "max_seconds": 19.857,
+    "evidence_sufficient_rate": null,
+    "avg_search_calls": null
+  },
+  {
+    "model": "google/gemma-4-E2B-it",
+    "mode": "agentic",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "agentic_remote_model": 30
+    },
+    "avg_seconds": 8.669,
+    "median_seconds": 7.711,
+    "max_seconds": 18.895,
+    "evidence_sufficient_rate": 0.767,
+    "avg_search_calls": 1.733
+  },
+  {
+    "model": "google/gemma-4-E2B-it",
+    "mode": "single_shot",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "remote_model": 28,
+      "conservative_policy_guard": 2
+    },
+    "avg_seconds": 7.716,
+    "median_seconds": 2.957,
+    "max_seconds": 151.548,
+    "evidence_sufficient_rate": null,
+    "avg_search_calls": null
+  },
+  {
+    "model": "google/gemma-4-E4B-it",
+    "mode": "agentic",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "agentic_remote_model": 30
+    },
+    "avg_seconds": 13.312,
+    "median_seconds": 12.308,
+    "max_seconds": 26.206,
+    "evidence_sufficient_rate": 0.833,
+    "avg_search_calls": 1.5
+  },
+  {
+    "model": "google/gemma-4-E4B-it",
+    "mode": "single_shot",
+    "count": 30,
+    "http_statuses": {
+      "200": 30
+    },
+    "answer_modes": {
+      "remote_model": 28,
+      "conservative_policy_guard": 2
+    },
+    "avg_seconds": 3.882,
+    "median_seconds": 3.214,
+    "max_seconds": 18.342,
+    "evidence_sufficient_rate": null,
+    "avg_search_calls": null
+  }
+]

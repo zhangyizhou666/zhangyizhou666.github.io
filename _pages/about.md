@@ -162,6 +162,9 @@ redirect_from:
           <dd data-i18n="projects.icu.constraintValue">Useful answers from university text</dd>
         </div>
       </dl>
+      <div class="case-study__links">
+        <a href="/icu-wiki/" data-i18n="projects.icu.website">Research site</a>
+      </div>
     </div>
   </article>
 </section>

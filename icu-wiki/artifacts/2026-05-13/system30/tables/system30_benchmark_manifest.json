@@ -1,0 +1,19 @@
+{
+  "benchmark_id": "icubench_system_30_20260512",
+  "created_on": "2026-05-12",
+  "question_count": 30,
+  "source": "hard20v2 plus recent system regression bad cases",
+  "intended_use": "single-shot and agentic RAG regression testing",
+  "generation_modes": ["single_shot", "agentic"],
+  "thinking_mode": "disabled",
+  "language_counts": {
+    "en": 20,
+    "ja": 7,
+    "zh": 3
+  },
+  "notes": [
+    "This set is not a replacement for human-reviewed gold-answer evaluation.",
+    "The added questions target reusable failure categories, not question-specific production patches.",
+    "The three Chinese questions are included to test cross-lingual retrieval behavior without turning the benchmark into a Chinese-focused dataset."
+  ]
+}

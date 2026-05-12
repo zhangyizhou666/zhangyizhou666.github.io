@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>System30 Model and Mode Sweep — ICU Wiki Research</title>
+    <meta name="description" content="Remote pgvector/BGE runtime was evaluated on 30 regression questions across six small models and two answer modes." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+      </nav>
+    </header>
+    <main>
+    <article class="post">
+      <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
+      <header>
+        <p class="eyebrow">2026-05-13</p>
+        <h1>System30 Model and Mode Sweep</h1>
+        <p>Remote pgvector/BGE runtime was evaluated on 30 regression questions across six small models and two answer modes.</p>
+        <div class="tags"><span>evaluation</span><span>system30</span><span>agentic rag</span><span>model sweep</span></div>
+      </header>
+      <div class="post-body"><h2>Purpose</h2>
+<p>This update records a system-level regression run after moving the runtime to the remote ICU Wiki server. The goal was to test the current retrieval and answer path on questions that are closer to real student use than the earlier benchmark.</p>
+<h2>Evaluation setup</h2>
+<ul><li>The benchmark contains 30 questions: 20 inherited hard cases and 10 new regression cases.</li><li>The new cases focus on English mandatory-course questions, ChatGPT and senior-thesis policy boundaries, teacher-name lookup in Japanese and Chinese, and course-registration completion procedures.</li><li>The runtime used PostgreSQL hybrid retrieval, local BGE-M3 embeddings, local BGE reranking, Janome tokenization, entity-aware retrieval, source-authority scoring, and a reranker candidate limit of 40.</li><li>The sweep tested Qwen3.5 0.8B, 2B, 4B, 9B, Gemma 4 E2B, and Gemma 4 E4B.</li><li>Each model was run in single-shot mode and agentic mode, giving 360 total answers.</li></ul>
+<h2>Main result</h2>
+<ul><li>Qwen3.5 9B was the strongest setting in this run.</li><li>Qwen3.5 9B agentic reached the best average human-quality score and the best clean-pass rate.</li><li>Qwen3.5 9B single-shot was close in quality and much faster on average.</li><li>Gemma 4 E2B and E4B were competitive on readability and citation presentation, but more often missed key conditions.</li><li>Qwen3.5 0.8B was below the current practical threshold for a student-facing answer path.</li></ul>
+<h2>Interpretation</h2>
+<p>Agentic mode is useful when the question needs query planning, evidence judgment, or a second retrieval attempt. The cost is latency. For the current system, the clearest tradeoff is between Qwen3.5 9B single-shot as the faster strong baseline and Qwen3.5 9B agentic as the higher-quality diagnostic path.</p>
+<p>The remaining weak cases are not only model-size problems. Several failures come from policy boundary questions where the retrieved text is partial, old, or too indirect. These cases need stricter abstention and better evidence selection, not just a larger model.</p>
+<h2>Live system</h2>
+<p>The live chatbot is now running on the remote ICU Wiki server, not Render:</p>
+<ul><li><a href="https://blackwell.tail740bf8.ts.net/">Open the live ICU Wiki chatbot</a></li></ul>
+<h2>Next checks</h2>
+<ul><li>Review <code>s30_006</code>, <code>s30_021</code>, <code>s30_022</code>, <code>s30_024</code>, <code>s30_025</code>, <code>s30_026</code>, and <code>s30_029</code> by hand.</li><li>Compare agentic sufficiency decisions against human review failures.</li><li>Tighten answer rules for policy and deadline questions where the evidence is incomplete.</li><li>Keep Render out of the evaluation and demo path.</li></ul>
+
+    <section class="section no-top">
+      <div class="note-grid">
+        <article><span>Benchmark</span><strong>30 questions</strong><p>Twenty inherited hard cases plus ten regression questions for curriculum, policy, teacher lookup, and registration flows.</p></article>
+        <article><span>Run matrix</span><strong>360 answers</strong><p>Six models, two modes, and thirty questions. Every row returned HTTP 200.</p></article>
+        <article><span>Live runtime</span><strong>Remote pgvector RAG</strong><p>PostgreSQL hybrid retrieval, local BGE-M3 embedding, local BGE reranker, Janome, and source-authority scoring.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Human-facing review</p>
+        <h2>Model and mode quality</h2>
+      </div>
+      <p>GPT Pro reviewed all 360 outputs with answer acceptance, readability, citation usefulness, over-answering risk, and failure tags. Qwen3.5 9B was strongest in both modes. Agentic mode improved the 9B acceptance and clean-pass rate, but increased average latency.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th><th>Mode</th><th>Human quality</th><th>Acceptance</th><th>Readability</th><th>Citation usefulness</th><th>Over-answering risk</th><th>Clean pass</th><th>Avg sec</th></tr></thead><tbody><tr><td>Qwen/Qwen3.5-9B</td><td>agentic</td><td>0.900</td><td>1.733</td><td>1.933</td><td>1.900</td><td>0.367</td><td>0.667</td><td>11.121</td></tr><tr><td>Qwen/Qwen3.5-9B</td><td>single shot</td><td>0.875</td><td>1.533</td><td>1.933</td><td>1.733</td><td>0.200</td><td>0.533</td><td>4.111</td></tr><tr><td>google/gemma-4-E4B-it</td><td>agentic</td><td>0.858</td><td>1.467</td><td>1.800</td><td>1.833</td><td>0.233</td><td>0.433</td><td>13.314</td></tr><tr><td>google/gemma-4-E2B-it</td><td>agentic</td><td>0.838</td><td>1.367</td><td>1.800</td><td>1.833</td><td>0.300</td><td>0.400</td><td>8.672</td></tr><tr><td>google/gemma-4-E4B-it</td><td>single shot</td><td>0.833</td><td>1.367</td><td>1.767</td><td>1.700</td><td>0.167</td><td>0.333</td><td>3.884</td></tr><tr><td>google/gemma-4-E2B-it</td><td>single shot</td><td>0.808</td><td>1.200</td><td>1.833</td><td>1.667</td><td>0.233</td><td>0.267</td><td>7.718</td></tr><tr><td>Qwen/Qwen3.5-4B</td><td>agentic</td><td>0.787</td><td>1.400</td><td>1.767</td><td>1.733</td><td>0.600</td><td>0.400</td><td>8.862</td></tr><tr><td>Qwen/Qwen3.5-4B</td><td>single shot</td><td>0.779</td><td>1.300</td><td>1.600</td><td>1.733</td><td>0.400</td><td>0.267</td><td>8.329</td></tr><tr><td>Qwen/Qwen3.5-2B</td><td>single shot</td><td>0.713</td><td>1.067</td><td>1.667</td><td>1.467</td><td>0.500</td><td>0.100</td><td>4.746</td></tr><tr><td>Qwen/Qwen3.5-2B</td><td>agentic</td><td>0.696</td><td>1.100</td><td>1.633</td><td>1.433</td><td>0.600</td><td>0.133</td><td>6.795</td></tr><tr><td>Qwen/Qwen3.5-0.8B</td><td>single shot</td><td>0.575</td><td>0.967</td><td>1.367</td><td>1.100</td><td>0.833</td><td>0.067</td><td>4.137</td></tr><tr><td>Qwen/Qwen3.5-0.8B</td><td>agentic</td><td>0.546</td><td>1.000</td><td>1.100</td><td>1.200</td><td>0.933</td><td>0.100</td><td>5.806</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Runtime sweep</p>
+        <h2>Latency and agent evidence decisions</h2>
+      </div>
+      <p>Single-shot latency includes some first-load outliers. The agentic rows include the planner and evidence sufficiency steps, so they are slower but expose useful diagnostics.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th><th>Mode</th><th>n</th><th>Avg sec</th><th>Median sec</th><th>Max sec</th><th>Evidence sufficient</th><th>Search calls</th></tr></thead><tbody><tr><td>Qwen/Qwen3.5-0.8B</td><td>agentic</td><td>30</td><td>5.804</td><td>5.235</td><td>10.474</td><td>0.967</td><td>1.167</td></tr><tr><td>Qwen/Qwen3.5-0.8B</td><td>single shot</td><td>30</td><td>4.135</td><td>2.450</td><td>49.182</td><td>n/a</td><td>n/a</td></tr><tr><td>Qwen/Qwen3.5-2B</td><td>agentic</td><td>30</td><td>6.792</td><td>5.977</td><td>12.422</td><td>0.767</td><td>1.667</td></tr><tr><td>Qwen/Qwen3.5-2B</td><td>single shot</td><td>30</td><td>4.744</td><td>2.254</td><td>77.042</td><td>n/a</td><td>n/a</td></tr><tr><td>Qwen/Qwen3.5-4B</td><td>agentic</td><td>30</td><td>8.860</td><td>8.377</td><td>15.346</td><td>0.733</td><td>1.667</td></tr><tr><td>Qwen/Qwen3.5-4B</td><td>single shot</td><td>30</td><td>8.327</td><td>3.666</td><td>148.585</td><td>n/a</td><td>n/a</td></tr><tr><td>Qwen/Qwen3.5-9B</td><td>agentic</td><td>30</td><td>11.119</td><td>10.846</td><td>16.845</td><td>0.900</td><td>1.533</td></tr><tr><td>Qwen/Qwen3.5-9B</td><td>single shot</td><td>30</td><td>4.109</td><td>3.341</td><td>19.857</td><td>n/a</td><td>n/a</td></tr><tr><td>google/gemma-4-E2B-it</td><td>agentic</td><td>30</td><td>8.669</td><td>7.711</td><td>18.895</td><td>0.767</td><td>1.733</td></tr><tr><td>google/gemma-4-E2B-it</td><td>single shot</td><td>30</td><td>7.716</td><td>2.957</td><td>151.548</td><td>n/a</td><td>n/a</td></tr><tr><td>google/gemma-4-E4B-it</td><td>agentic</td><td>30</td><td>13.312</td><td>12.308</td><td>26.206</td><td>0.833</td><td>1.500</td></tr><tr><td>google/gemma-4-E4B-it</td><td>single shot</td><td>30</td><td>3.882</td><td>3.214</td><td>18.342</td><td>n/a</td><td>n/a</td></tr></tbody></table></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Failure analysis</p>
+        <h2>Hardest questions</h2>
+      </div>
+      <p>The weakest cases are still leave and reenrolment, Chinese mandatory-course wording, counseling and privacy boundaries, required-course planning, and JLP placement details.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Question</th><th>Category</th><th>Language</th><th>Human quality</th><th>Accepted count</th><th>Main failure tags</th></tr></thead><tbody><tr><td><code>s30_006</code></td><td>student_status</td><td>en</td><td>0.542</td><td>0</td><td>missing_key_condition:6; unsupported_claim:5; evidence_insufficient:1</td></tr><tr><td><code>s30_024</code></td><td>curriculum</td><td>zh</td><td>0.552</td><td>0</td><td>language_or_format_failure:6; missing_key_condition:4; unsupported_claim:2</td></tr><tr><td><code>s30_007</code></td><td>student_support</td><td>en</td><td>0.594</td><td>0</td><td>over_answering:6; missing_key_condition:4; unsupported_claim:1; language_or_format_failure:1</td></tr><tr><td><code>s30_022</code></td><td>curriculum</td><td>en</td><td>0.625</td><td>2</td><td>missing_key_condition:7; unsupported_claim:3; none:2</td></tr><tr><td><code>s30_010</code></td><td>language</td><td>ja</td><td>0.635</td><td>0</td><td>unsupported_claim:5; missing_key_condition:5; over_answering:1; citation_mismatch:1</td></tr><tr><td><code>s30_025</code></td><td>policy</td><td>ja</td><td>0.719</td><td>4</td><td>missing_key_condition:6; none:4; unsupported_claim:1; verbose_low_quality:1</td></tr><tr><td><code>s30_021</code></td><td>curriculum</td><td>en</td><td>0.729</td><td>1</td><td>evidence_insufficient:5; unsupported_claim:2; missing_key_condition:2; over_answering:2; language_or_format_failure:1</td></tr><tr><td><code>s30_029</code></td><td>course</td><td>zh</td><td>0.729</td><td>2</td><td>language_or_format_failure:8; unsupported_claim:2; none:2</td></tr></tbody></table></div>
+    </section>
+    <h2>Artifacts</h2>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/runtime_summary_by_model_mode.json">Runtime summary JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/runtime_summary_by_model_mode.csv">Runtime summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_summary_by_model_mode.csv">Human review summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_summary_by_question.csv">Human review by question CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_failure_tags_by_model_mode.csv">Failure tags CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/system30_questions.jsonl">System30 questions JSONL</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/reports/human_judge_report.md">Human review report</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/reports/api_mode_sweep_report.md">API mode sweep report</a></li></ul></div>
+    </article>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-13.</span>
+    </footer>
+  </body>
+</html>
