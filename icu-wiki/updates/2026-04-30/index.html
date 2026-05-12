@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weekly Update — ICU Wiki Research</title>
-    <meta name="description" content="We compared the initial 50-question Gemma/Qwen benchmark with the harder Qwen3.5 20-question benchmark and clarified the next evaluation step." />
+    <title>Harder Benchmark Questions — ICU Wiki Research</title>
+    <meta name="description" content="The initial 50-question benchmark was kept as a baseline, and a harder 20-question benchmark was added to expose more realistic RAG failures." />
     <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
   </head>
   <body>
@@ -34,38 +34,32 @@
       <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
       <header>
         <p class="eyebrow">2026-04-30</p>
-        <h1>Weekly Update</h1>
-        <p>We compared the initial 50-question Gemma/Qwen benchmark with the harder Qwen3.5 20-question benchmark and clarified the next evaluation step.</p>
-        <div class="tags"><span>evaluation</span><span>benchmark</span></div>
+        <h1>Harder Benchmark Questions</h1>
+        <p>The initial 50-question benchmark was kept as a baseline, and a harder 20-question benchmark was added to expose more realistic RAG failures.</p>
+        <div class="tags"><span>evaluation</span><span>benchmark</span><span>questions</span></div>
       </header>
-      <div class="post-body"><h2>Summary</h2>
-<p>This week focused on evaluating whether our current RAG benchmark is strong enough to separate small models in a meaningful way.</p>
-<ul><li>We preserved the earlier 50-question Gemma/Qwen evaluation from last week&#x27;s seminar as a historical baseline.</li><li>We found that the initial 50-question benchmark produced similar metric-level RAGAS scores across model sizes, which suggested that the questions were too easy or too generic.</li><li>We evaluated Qwen3.5 0.8B, 2B, and 4B on a harder 20-question benchmark designed to better reflect real student questions.</li><li>We added saved answer examples so the score plots can be interpreted together with real model behavior.</li></ul>
-<h2>Initial 50-question Baseline</h2>
-<p>Before the hard-question benchmark, we evaluated Gemma 3 and Qwen3.5 models on 50 broad ICU questions. The Gemma answers were generated through OpenRouter API calls, while the Qwen3.5 answers were generated locally.</p>
-<p>The useful takeaway was not a strong model-size conclusion. The metric-level RAGAS scores were relatively close, which suggested that the original questions were too easy and too generic to reveal practical chatbot failures.</p>
-<p>Detailed benchmark page: <a href="/icu-wiki/benchmark/initial-50/">Initial 50 Benchmark</a></p>
+      <div class="post-body"><h2>At a glance</h2>
+<ul><li><strong>Research question:</strong> Are the current benchmark questions strong enough to show practical differences between small answer models?</li><li><strong>What changed:</strong> We kept the earlier 50-question Gemma/Qwen run and added a harder 20-question benchmark with more realistic student questions.</li><li><strong>Main result:</strong> The harder benchmark is more useful for finding failure modes. The initial 50-question set produced scores that were too close to support a clear model-size claim.</li><li><strong>Current limitation:</strong> The evidence still needs manual review. RAGAS scores alone are not enough for the thesis claim.</li></ul>
+<h2>Method</h2>
+<p>Two benchmark sets were used.</p>
+<ul><li>The initial 50-question set tested broad ICU questions with Gemma 3 and Qwen3.5 answers.</li><li>The hard realistic 20-question set tested Qwen3.5 0.8B, 2B, and 4B on questions closer to actual student information needs.</li><li>Each run was interpreted with both plots and saved answer examples, so the scores could be checked against real model behavior.</li></ul>
+<p>Detailed benchmark pages:</p>
+<ul><li><a href="/icu-wiki/benchmark/initial-50/">Initial 50 Benchmark</a></li><li><a href="/icu-wiki/benchmark/hard-realistic-20/">Hard Realistic 20</a></li></ul>
+<h2>Results</h2>
+<p>The initial 50-question run is useful as a historical baseline, but it does not separate the tested models clearly enough.</p>
 <p><img src="/icu-wiki/artifacts/2026-04-30/initial-50/plots/gemma_qwen35_ragas_metric_bars.png" alt="Initial 50 RAGAS metric bars" /></p>
-<p>Data table: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/gemma_qwen35_ragas_summary.csv">gemma_qwen35_ragas_summary.csv</a></p>
-<p>Question set: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_questions.json">initial_50_questions.json</a></p>
-<p>Sample answers: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_sample_answers.json">initial_50_sample_answers.json</a></p>
-<p>Retrieved evidence: <a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_retrieved_evidence.json">initial_50_retrieved_evidence.json</a></p>
-<h2>Qwen3.5 Hard-question Baseline</h2>
-<p>We evaluated Qwen3.5 0.8B, 2B, and 4B on a 20-question hard realistic benchmark using the same retrieval cache.</p>
-<p>The current result does not show a clean elbow point. The 4B model is stronger on answer correctness, but the smaller models are not separated enough across every metric to claim a simple linear model-size relationship.</p>
-<p>Detailed benchmark page: <a href="/icu-wiki/benchmark/hard-realistic-20/">Hard Realistic 20</a></p>
+<p>The harder 20-question run gives a better test of practical behavior. The 4B model is stronger on answer correctness, but the result does not support a simple claim that every metric improves linearly with model size.</p>
 <p><img src="/icu-wiki/artifacts/2026-04-30/plots/qwen35_hard_realistic_20_ragas_metric_bars.png" alt="Qwen3.5 RAGAS metric bars" /></p>
-<p>Data table: <a href="/icu-wiki/artifacts/2026-04-30/tables/qwen35_hard_realistic_20_ragas_summary.csv">qwen35_hard_realistic_20_ragas_summary.csv</a></p>
-<p>Question set: <a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_questions.json">hard_realistic_20_questions.json</a></p>
-<p>Sample answers: <a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_sample_answers.json">hard_realistic_20_sample_answers.json</a></p>
-<p>Full model answers: <a href="/icu-wiki/answers/apr30-hard20/">April 30 Hard-20 Model Answers</a></p>
-<p>Retrieved evidence: <a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_retrieved_evidence.json">hard_realistic_20_retrieved_evidence.json</a></p>
 <h2>Interpretation</h2>
-<p>The current evidence supports a cautious thesis direction:</p>
-<ul><li>The hard-question benchmark is more useful than the earlier simple questions because it exposes weaknesses that the original evaluation did not capture clearly.</li><li>RAGAS scores alone are not enough; manual review and human evaluation are still needed.</li><li>Answerability is teacher-generated benchmark metadata, not a native RAGAS metric.</li><li>The strongest next step is to keep the retrieval pipeline fixed, improve question quality, and add a small human-evaluation layer.</li></ul>
-<p>Evaluation logic page: <a href="/icu-wiki/evaluation/">RAGAS metrics and benchmark metadata</a></p>
-<h2>Next Steps</h2>
-<ul><li>Keep the research site updated after weekly lab meetings.</li><li>Add human evaluation criteria for language consistency, usefulness, and citation clarity.</li><li>Decide whether the next optimization should focus on prompt tuning, content-aware chunking, or small-model fine-tuning.</li></ul></div>
+<p>The main conclusion is about benchmark quality. The first question set was too broad for the current research goal. The harder question set is a better basis for later controlled comparisons because it creates more visible failures.</p>
+<p>This supports a cautious direction: keep retrieval fixed, improve question quality, and add human-facing review before making a strong model comparison claim.</p>
+<h2>Next step</h2>
+<ul><li>Add human evaluation criteria for usefulness, citation clarity, and language consistency.</li><li>Keep the harder benchmark as the main public evaluation track.</li><li>Decide whether the next system change should target prompting, chunking, or model adaptation.</li></ul>
+<h2>Artifacts</h2>
+<p>Initial 50-question run:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/gemma_qwen35_ragas_summary.csv">RAGAS summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_questions.json">Question set JSON</a></li><li><a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_sample_answers.json">Sample answers JSON</a></li><li><a href="/icu-wiki/artifacts/2026-04-30/initial-50/tables/initial_50_retrieved_evidence.json">Retrieved evidence JSON</a></li></ul>
+<p>Hard realistic 20-question run:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-04-30/tables/qwen35_hard_realistic_20_ragas_summary.csv">RAGAS summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_questions.json">Question set JSON</a></li><li><a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_sample_answers.json">Sample answers JSON</a></li><li><a href="/icu-wiki/artifacts/2026-04-30/tables/hard_realistic_20_retrieved_evidence.json">Retrieved evidence JSON</a></li><li><a href="/icu-wiki/answers/apr30-hard20/">Full model answers</a></li><li><a href="/icu-wiki/evaluation/">Evaluation logic page</a></li></ul></div>
     </article>
     </main>
     <footer class="site-footer">

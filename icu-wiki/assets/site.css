@@ -382,6 +382,32 @@ figure {
   padding-bottom: 4rem;
 }
 
+.updates-list {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+.update-row {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.32fr) 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.update-meta {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.update-copy h3 {
+  margin-top: 0;
+}
+
+.update-copy p {
+  margin-bottom: 0;
+}
+
 .update-card h3 {
   margin-top: 0.65rem;
 }
@@ -460,6 +486,50 @@ figcaption {
 
 .post-body {
   padding-top: 1.2rem;
+}
+
+.post-body h2:first-child {
+  margin-top: 0;
+}
+
+.post-body h2:first-child + ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  padding: 0;
+  margin: 1.1rem 0 2.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  list-style: none;
+  overflow: hidden;
+}
+
+.post-body h2:first-child + ul li {
+  min-height: 6.2rem;
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.post-body h2:first-child + ul li:nth-child(2n) {
+  border-right: 0;
+}
+
+.post-body h2:first-child + ul li:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.post-body h2:first-child + ul strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--blue);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .post-body h2,
@@ -590,6 +660,20 @@ figcaption {
   padding: 0.9rem 1rem;
   cursor: pointer;
   color: var(--ink);
+}
+
+.answer-group,
+.answer-group summary > *,
+.answer-list,
+.answer-sample,
+.answer-sample h4,
+.answer-reference,
+.answer-evidence-ref,
+.answer-meta code,
+.answer-meta span {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .answer-group summary span {
@@ -1292,6 +1376,15 @@ figcaption {
   cursor: pointer;
 }
 
+.evidence-card summary > *,
+.evidence-card li,
+.evidence-title,
+.evidence-title strong,
+.evidence-card li > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .evidence-card summary span {
   color: var(--muted);
   font-family: "JetBrains Mono", monospace;
@@ -1386,20 +1479,33 @@ code {
   .status-grid,
   .cards,
   .updates-grid,
-    .updates-grid.wide,
-    .pipeline,
-    .architecture,
-    .note-grid,
-    .example-grid,
-    .compare-controls,
-    .compare-grid,
-    .embedding-toolbar,
-    .embedding-layout,
-    .topology-toolbar,
-    .topology-layout,
-    .retriever-shell,
-    .site-chat-form {
+  .update-row,
+  .updates-grid.wide,
+  .post-body h2:first-child + ul,
+  .pipeline,
+  .architecture,
+  .note-grid,
+  .example-grid,
+  .compare-controls,
+  .compare-grid,
+  .embedding-toolbar,
+  .embedding-layout,
+  .topology-toolbar,
+  .topology-layout,
+  .retriever-shell,
+  .site-chat-form {
     grid-template-columns: 1fr;
+  }
+
+  .post-body h2:first-child + ul li,
+  .post-body h2:first-child + ul li:nth-child(2n),
+  .post-body h2:first-child + ul li:nth-last-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .post-body h2:first-child + ul li:last-child {
+    border-bottom: 0;
   }
 
   .retriever-graph {

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weekly Update — ICU Wiki Research</title>
-    <meta name="description" content="We reran the hard-20 benchmark with Qwen embeddings, compared Qwen3.5 non-thinking and thinking modes, and generated reasoning-trajectory diagnostics for 0.8B and 4B." />
+    <title>Thinking Mode Under Fixed Retrieval — ICU Wiki Research</title>
+    <meta name="description" content="The hard-20 benchmark was rerun with fixed Qwen embeddings to compare Qwen3.5 model size and thinking mode under the same retrieved evidence." />
     <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
   </head>
   <body>
@@ -34,48 +34,33 @@
       <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
       <header>
         <p class="eyebrow">2026-05-01</p>
-        <h1>Weekly Update</h1>
-        <p>We reran the hard-20 benchmark with Qwen embeddings, compared Qwen3.5 non-thinking and thinking modes, and generated reasoning-trajectory diagnostics for 0.8B and 4B.</p>
-        <div class="tags"><span>evaluation</span><span>qwen</span><span>thinking</span><span>diagnostics</span></div>
+        <h1>Thinking Mode Under Fixed Retrieval</h1>
+        <p>The hard-20 benchmark was rerun with fixed Qwen embeddings to compare Qwen3.5 model size and thinking mode under the same retrieved evidence.</p>
+        <div class="tags"><span>evaluation</span><span>qwen</span><span>thinking</span></div>
       </header>
-      <div class="post-body"><h2>Summary</h2>
-<p>This update reruns the hard realistic 20-question benchmark under a cleaner fixed-retrieval setting.</p>
-<ul><li>Retrieval used the <code>structural_fallback_v1</code> passage index with <code>Qwen/Qwen3-Embedding-0.6B</code>.</li><li>Generation used <code>Qwen/Qwen3.5-0.8B</code>, <code>Qwen/Qwen3.5-2B</code>, and <code>Qwen/Qwen3.5-4B</code>.</li><li>Each model was evaluated in both non-thinking and thinking mode.</li><li>Gold answers and answerability labels were regenerated from the new fixed Top-5 evidence with <code>openai/gpt-5-mini</code>.</li><li>RAGAS scoring used <code>openai/gpt-5-mini</code> as judge and <code>Qwen/Qwen3-Embedding-0.6B</code> as evaluator embedding model.</li><li>Reasoning trajectory diagnostics were generated for Qwen3.5 0.8B thinking and Qwen3.5 4B thinking by splitting reasoning text on newline boundaries.</li></ul>
-<h2>Evaluation Result</h2>
-<p>The result does not show that thinking mode consistently improves this RAG task.</p>
-<ul><li>Qwen3.5 0.8B non-thinking: faithfulness 0.601, answer relevancy 0.643, correctness 0.268, semantic similarity 0.545.</li><li>Qwen3.5 0.8B thinking: faithfulness 0.585, answer relevancy 0.580, correctness 0.358, semantic similarity 0.563.</li><li>Qwen3.5 2B non-thinking: faithfulness 0.734, answer relevancy 0.617, correctness 0.383, semantic similarity 0.559.</li><li>Qwen3.5 2B thinking: faithfulness 0.699, answer relevancy 0.435, correctness 0.360, semantic similarity 0.580.</li><li>Qwen3.5 4B non-thinking: faithfulness 0.823, answer relevancy 0.641, correctness 0.420, semantic similarity 0.563.</li><li>Qwen3.5 4B thinking: faithfulness 0.817, answer relevancy 0.560, correctness 0.387, semantic similarity 0.590.</li></ul>
-<p>The 4B model remains strongest on faithfulness and answer correctness. Thinking mode slightly improves semantic similarity, but it lowers answer relevancy in this run.</p>
+      <div class="post-body"><h2>At a glance</h2>
+<ul><li><strong>Research question:</strong> Does thinking mode improve answer quality when retrieval evidence is fixed?</li><li><strong>What changed:</strong> We rebuilt the hard-20 run with <code>Qwen/Qwen3-Embedding-0.6B</code>, regenerated gold answers from the fixed Top-5 evidence, and tested Qwen3.5 0.8B, 2B, and 4B in non-thinking and thinking modes.</li><li><strong>Main result:</strong> Thinking mode did not consistently improve this RAG task. The 4B non-thinking run remained the strongest Qwen setting on faithfulness and answer correctness.</li><li><strong>Current limitation:</strong> Only 8 of 20 questions were marked answerable under the fixed Top-5 evidence, so the gold labels still need manual audit.</li></ul>
+<h2>Method</h2>
+<p>This run used one retrieval cache for all answer models.</p>
+<ul><li>Retrieval index: <code>structural_fallback_v1</code>.</li><li>Embedding model: <code>Qwen/Qwen3-Embedding-0.6B</code>.</li><li>Answer models: <code>Qwen/Qwen3.5-0.8B</code>, <code>Qwen/Qwen3.5-2B</code>, and <code>Qwen/Qwen3.5-4B</code>.</li><li>Modes: non-thinking and thinking.</li><li>Gold answers: regenerated from the fixed Top-5 evidence with <code>openai/gpt-5-mini</code>.</li><li>RAGAS judge: <code>openai/gpt-5-mini</code>.</li><li>Evaluator embedding model: <code>Qwen/Qwen3-Embedding-0.6B</code>.</li></ul>
+<p>Reasoning diagnostics were also generated for the 0.8B thinking and 4B thinking runs. The diagnostic splits saved reasoning text by newline, embeds each step, projects the vectors with PCA, and clusters them.</p>
+<h2>Results</h2>
+<p>The model-level result does not show a general benefit from thinking mode.</p>
+<ul><li>Qwen3.5 0.8B non-thinking: faithfulness 0.601, relevancy 0.643, correctness 0.268, semantic similarity 0.545.</li><li>Qwen3.5 0.8B thinking: faithfulness 0.585, relevancy 0.580, correctness 0.358, semantic similarity 0.563.</li><li>Qwen3.5 2B non-thinking: faithfulness 0.734, relevancy 0.617, correctness 0.383, semantic similarity 0.559.</li><li>Qwen3.5 2B thinking: faithfulness 0.699, relevancy 0.435, correctness 0.360, semantic similarity 0.580.</li><li>Qwen3.5 4B non-thinking: faithfulness 0.823, relevancy 0.641, correctness 0.420, semantic similarity 0.563.</li><li>Qwen3.5 4B thinking: faithfulness 0.817, relevancy 0.560, correctness 0.387, semantic similarity 0.590.</li></ul>
 <p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/plots/qwen35_qwenembed_hard20_thinking_vs_non_thinking.png" alt="Thinking vs non-thinking comparison" /></p>
-<p>Detailed tables:</p>
-<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/qwen35_qwenembed_hard20_thinking_comparison_summary.csv">Thinking comparison summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/qwen35_qwenembed_hard20_non_thinking_ragas_summary.csv">Non-thinking RAGAS summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/qwen35_qwenembed_hard20_thinking_ragas_summary.csv">Thinking RAGAS summary CSV</a></li></ul>
-<h2>Score Plots</h2>
-<p>The metric bars and heatmaps are saved separately for non-thinking and thinking mode.</p>
+<p>The 4B model is stronger than 0.8B on faithfulness and answer correctness. Thinking mode slightly improves semantic similarity in this run, but it lowers answer relevancy.</p>
+<h2>Score plots</h2>
+<p>These plots keep the score views separate so the reader can compare model size and thinking mode without relying on one aggregate number.</p>
 <p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/plots/qwen35_qwenembed_hard20_non_thinking_ragas_metric_bars.png" alt="Non-thinking metric bars" /></p>
 <p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/plots/qwen35_qwenembed_hard20_thinking_ragas_metric_bars.png" alt="Thinking metric bars" /></p>
 <p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/plots/qwen35_qwenembed_hard20_non_thinking_ragas_score_heatmap.png" alt="Non-thinking heatmap" /></p>
 <p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/plots/qwen35_qwenembed_hard20_thinking_ragas_score_heatmap.png" alt="Thinking heatmap" /></p>
-<h2>Data Artifacts</h2>
-<p>The public site includes inspectable artifacts for this run. The full raw JSONL run remains in the repository under <code>data/eval/runs/20260501_qwen_embed_hard20_thinking_comparison/</code>.</p>
-<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/questions_with_gold.json">Questions with regenerated gold answers</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/retrieved_evidence.json">Retrieved evidence for the 20 questions</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/sample_answers.json">Sample model answers</a></li><li><a href="/icu-wiki/answers/may01-hard20/">All May 1 model answers</a></li></ul>
-<p>The sections below render these files as readable tables and collapsed cards, so visitors do not need to inspect raw JSON first.</p>
-<p>Important limitation: the teacher model marked only 8 of 20 questions as answerable under the current Top-5 evidence. This label is useful for RAGAS reference-based scoring, but it should still be audited manually before we make a strong thesis claim.</p>
-<h2>Reasoning Trajectory Diagnostics</h2>
-<p>For the topology-style diagnostic, we used only the thinking-mode outputs from 0.8B and 4B.</p>
-<ul><li>The initial data is the saved <code>reasoning_text</code> field from each generated answer.</li><li>We split the reasoning text by newline boundaries.</li><li>Each newline segment became one reasoning step.</li><li>Each step was embedded with <code>Qwen/Qwen3-Embedding-0.6B</code>.</li><li>The vectors were projected with PCA and clustered with KMeans into 8 clusters.</li></ul>
-<p>Qwen3.5 0.8B produced 326 reasoning segments. Qwen3.5 4B produced 332 reasoning segments.</p>
-<p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_08b_trajectory.png" alt="0.8B reasoning trajectory" /></p>
-<p><img src="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_4b_trajectory.png" alt="4B reasoning trajectory" /></p>
-<p>🟠 Low correctness: <code>answer_correctness &lt;= 0.34</code>; 🟣 Medium correctness: <code>0.34 &lt; answer_correctness &lt; 0.50</code>; 🟢 High correctness: <code>answer_correctness &gt;= 0.50</code>.</p>
-<p>3D plots:</p>
-<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_08b_trajectory_3d.png">0.8B 3D trajectory</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_4b_trajectory_3d.png">4B 3D trajectory</a></li></ul>
-<p>Segment artifacts:</p>
-<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_08b_steps.csv">0.8B reasoning segment CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_4b_steps.csv">4B reasoning segment CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/reasoning_segment_examples.json">Reasoning segment examples JSON</a></li><li><a href="/icu-wiki/answers/may01-reasoning-steps/">All May 1 thinking-mode reasoning steps</a></li></ul>
 <h2>Interpretation</h2>
-<p>The main finding is that thinking mode is not automatically better for this retrieval-grounded student Q&amp;A task. It may produce more internal text and slightly higher semantic similarity, but it can also reduce answer relevancy and increase evaluation instability.</p>
-<p>The 4B model is stronger than 0.8B on faithfulness and answer correctness, especially in the non-thinking setting. However, the trajectory plots do not show a simple &quot;larger model means larger reasoning diameter&quot; pattern. In this run, the 4B trajectory has a similar or slightly smaller diameter, while more of its steps are associated with high-correctness answers.</p>
-<p>For the thesis, this supports a conservative claim: for cost-aware RAG, model size and thinking mode should be evaluated under fixed retrieval rather than assumed to improve quality.</p>
-<h2>Next Steps</h2>
-<ul><li>Manually audit the 20 regenerated gold labels, especially the 12 questions marked insufficient evidence.</li><li>Compare non-thinking 4B against prompt-tuned smaller models before trying fine-tuning.</li><li>Use the reasoning trajectory plots as exploratory diagnostics, not as primary evidence of answer quality.</li></ul>
+<p>The useful claim is limited. Thinking mode is not automatically better for retrieval-grounded student Q&amp;A. It can produce more internal text and slightly higher semantic similarity, but it can also reduce answer relevancy.</p>
+<p>For the thesis, this supports a fixed-retrieval evaluation design. Model size and thinking mode should be measured under the same evidence rather than assumed to improve quality.</p>
+<h2>Next step</h2>
+<ul><li>Manually audit the regenerated gold labels, especially the questions marked insufficient evidence.</li><li>Compare Qwen3.5 4B non-thinking against smaller prompt-tuned settings before trying fine-tuning.</li><li>Treat the reasoning trajectory plots as exploratory diagnostics, not as primary answer-quality evidence.</li></ul>
+
     <section class="section">
       <div class="section-heading">
         <p class="eyebrow">Inline data</p>
@@ -266,7 +251,6 @@
         <h2>Saved Model Answers</h2>
       </div>
       <p>These are direct saved outputs from the run, grouped by model and thinking mode. They are shown inline so the score table can be checked against actual answer behavior.</p>
-      <p><a class="text-link" href="/icu-wiki/answers/may01-hard20/">Open all 120 May 1 model answers</a></p>
       <div class="answer-samples">
             <details class="answer-group">
               <summary>
@@ -2221,7 +2205,6 @@
         <h2>Step-by-step reasoning segments</h2>
       </div>
       <p>Each row is one newline-split thinking step before PCA projection. The displayed examples are enough to understand what one trajectory point represents without opening the raw JSONL files.</p>
-      <p><a class="text-link" href="/icu-wiki/answers/may01-reasoning-steps/">Open all May 1 thinking-mode reasoning steps</a></p>
       <div class="answer-samples">
     <details class="answer-group">
       <summary>
@@ -2256,7 +2239,13 @@
     </details>
     </div>
     </section>
-    </div>
+    <h2>Artifacts</h2>
+<p>Score tables:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/qwen35_qwenembed_hard20_thinking_comparison_summary.csv">Thinking comparison summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/qwen35_qwenembed_hard20_non_thinking_ragas_summary.csv">Non-thinking RAGAS summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/qwen35_qwenembed_hard20_thinking_ragas_summary.csv">Thinking RAGAS summary CSV</a></li></ul>
+<p>Run data:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/questions_with_gold.json">Questions with regenerated gold answers</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/retrieved_evidence.json">Retrieved evidence for the 20 questions</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/sample_answers.json">Sample model answers</a></li><li><a href="/icu-wiki/answers/may01-hard20/">All May 1 model answers</a></li></ul>
+<p>Reasoning diagnostics:</p>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_08b_trajectory_3d.png">0.8B 3D trajectory</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_4b_trajectory_3d.png">4B 3D trajectory</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_08b_steps.csv">0.8B reasoning segment CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/diagnostics/qwen35_4b_steps.csv">4B reasoning segment CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-01/qwen-thinking-comparison/tables/reasoning_segment_examples.json">Reasoning segment examples JSON</a></li><li><a href="/icu-wiki/answers/may01-reasoning-steps/">All May 1 thinking-mode reasoning steps</a></li></ul></div>
     </article>
     </main>
     <footer class="site-footer">

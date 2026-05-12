@@ -33,30 +33,42 @@
     <section class="page-title">
       <p class="eyebrow">Lab log</p>
       <h1>Weekly Updates</h1>
-      <p>Short public progress notes for lab meetings, implementation milestones, evaluation results, and next steps.</p>
+      <p>Short research notes on benchmark design, retrieval changes, model evaluation, and current limitations.</p>
     </section>
-    <section class="updates-grid wide">
-    <article class="update-card">
-      <div class="update-date">2026-05-07</div>
-      <h3><a href="/icu-wiki/updates/2026-05-07/">Weekly Update</a></h3>
-      <p>Final controlled evaluation updated with GPT Pro gold answers and GPT Pro human-facing evaluation scores.</p>
-      <div class="tags"><span>final run</span><span>evaluation</span><span>answerability</span><span>gpt pro gold</span></div>
+    <section class="updates-list">
+    <article class="update-card update-row">
+      <div class="update-meta">
+        <time class="update-date" datetime="2026-05-07">2026-05-07</time>
+        <div class="tags"><span>final run</span><span>evaluation</span><span>answerability</span></div>
+      </div>
+      <div class="update-copy">
+        <h3><a href="/icu-wiki/updates/2026-05-07/">Final Controlled Evaluation</a></h3>
+        <p>The active final baseline uses GPT Pro gold answers and GPT Pro human-facing judge scores over one frozen retrieval setup.</p>
+      </div>
     </article>
     
 
-    <article class="update-card">
-      <div class="update-date">2026-05-01</div>
-      <h3><a href="/icu-wiki/updates/2026-05-01/">Weekly Update</a></h3>
-      <p>We reran the hard-20 benchmark with Qwen embeddings, compared Qwen3.5 non-thinking and thinking modes, and generated reasoning-trajectory diagnostics for 0.8B and 4B.</p>
-      <div class="tags"><span>evaluation</span><span>qwen</span><span>thinking</span><span>diagnostics</span></div>
+    <article class="update-card update-row">
+      <div class="update-meta">
+        <time class="update-date" datetime="2026-05-01">2026-05-01</time>
+        <div class="tags"><span>evaluation</span><span>qwen</span><span>thinking</span></div>
+      </div>
+      <div class="update-copy">
+        <h3><a href="/icu-wiki/updates/2026-05-01/">Thinking Mode Under Fixed Retrieval</a></h3>
+        <p>The hard-20 benchmark was rerun with fixed Qwen embeddings to compare Qwen3.5 model size and thinking mode under the same retrieved evidence.</p>
+      </div>
     </article>
     
 
-    <article class="update-card">
-      <div class="update-date">2026-04-30</div>
-      <h3><a href="/icu-wiki/updates/2026-04-30/">Weekly Update</a></h3>
-      <p>We compared the initial 50-question Gemma/Qwen benchmark with the harder Qwen3.5 20-question benchmark and clarified the next evaluation step.</p>
-      <div class="tags"><span>evaluation</span><span>benchmark</span></div>
+    <article class="update-card update-row">
+      <div class="update-meta">
+        <time class="update-date" datetime="2026-04-30">2026-04-30</time>
+        <div class="tags"><span>evaluation</span><span>benchmark</span><span>questions</span></div>
+      </div>
+      <div class="update-copy">
+        <h3><a href="/icu-wiki/updates/2026-04-30/">Harder Benchmark Questions</a></h3>
+        <p>The initial 50-question benchmark was kept as a baseline, and a harder 20-question benchmark was added to expose more realistic RAG failures.</p>
+      </div>
     </article>
     </section>
     </main>
