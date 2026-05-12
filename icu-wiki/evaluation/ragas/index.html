@@ -119,7 +119,7 @@
         <h2>How <code>is_answerable</code> is created</h2>
       </div>
       <p>The label is produced before RAGAS scoring. We pass the question and fixed Top-5 retrieved evidence to <code>GPT-5 mini</code>. The model must decide whether the evidence is sufficient to write a grounded reference answer.</p>
-      
+
     <div class="example-grid">
       <article>
         <h3>Prompt rule given to GPT-5 mini</h3>
@@ -154,7 +154,7 @@ def build_prompt(entry: dict[str, Any], *, max_chars: int) -&gt; str:
 }</code></pre>
       </article>
     </div>
-    
+
     </section>
 
     <section class="section">

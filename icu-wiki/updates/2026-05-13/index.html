@@ -63,6 +63,206 @@
 
     <section class="section">
       <div class="section-heading">
+        <p class="eyebrow">Interactive comparison</p>
+        <h2>Answer Comparator</h2>
+      </div>
+      <p>Select one System30 question and compare any two model/mode outputs. The selector also includes <strong>GPT Pro Gold Reference</strong>, so a model answer can be compared directly with the reference answer and the human review notes.</p>
+
+    <div class="compare-panel" id="may13-answer-compare" data-source="/icu-wiki/artifacts/2026-05-13/system30/tables/all_answers.json">
+      <div class="compare-controls">
+        <label>
+          <span>Question</span>
+          <select data-role="question"></select>
+        </label>
+        <label>
+          <span>Left output</span>
+          <select data-role="left"></select>
+        </label>
+        <label>
+          <span>Right output</span>
+          <select data-role="right"></select>
+        </label>
+      </div>
+      <div class="compare-question" data-role="questionText"></div>
+      <div class="compare-metrics" data-role="metrics"></div>
+      <div class="compare-grid" data-role="answers"></div>
+    </div>
+    <script>
+    (async () => {
+      const root = document.getElementById("may13-answer-compare");
+      if (!root) return;
+
+      const questionSelect = root.querySelector('[data-role="question"]');
+      const leftSelect = root.querySelector('[data-role="left"]');
+      const rightSelect = root.querySelector('[data-role="right"]');
+      const questionTarget = root.querySelector('[data-role="questionText"]');
+      const metricTarget = root.querySelector('[data-role="metrics"]');
+      const answerTarget = root.querySelector('[data-role="answers"]');
+      const response = await fetch(root.dataset.source);
+      const groups = await response.json();
+      if (!groups.length) return;
+      const questions = groups[0].samples.map((sample) => ({
+        id: sample.id,
+        label: `${sample.id} · ${sample.category || "uncategorized"}`,
+        question: sample.question,
+      }));
+      const metricDefs = [
+        ["faithfulness", "Faithfulness"],
+        ["answer_relevancy", "Answer relevancy"],
+        ["answer_correctness", "Correctness"],
+        ["semantic_similarity", "Semantic similarity"],
+        ["human_quality_score", "Human quality"],
+        ["answer_acceptance", "Acceptance"],
+        ["readability", "Readability"],
+        ["citation_usefulness", "Citation usefulness"],
+        ["over_answering_risk", "Over-answering risk"],
+      ];
+      const availableMetricDefs = metricDefs.filter(([key]) =>
+        groups.some((group) => group.samples.some((sample) =>
+          sample[key] !== undefined && sample[key] !== null && sample[key] !== ""
+        ))
+      );
+
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[char]));
+      const metric = (value) => Number.isFinite(Number(value)) ? Number(value).toFixed(3) : "n/a";
+      const answerFor = (groupIndex, questionId) => groups[groupIndex].samples.find((sample) => sample.id === questionId) || {};
+      const optionHtml = (items, labeler) => items.map((item, index) => `<option value="${index}">${escapeHtml(labeler(item, index))}</option>`).join("");
+
+      questionSelect.innerHTML = optionHtml(questions, (item) => item.label);
+      leftSelect.innerHTML = optionHtml(groups, (item) => item.label);
+      rightSelect.innerHTML = optionHtml(groups, (item) => item.label);
+      leftSelect.value = "0";
+      const referenceIndex = groups.findIndex((group) => group.is_reference);
+      if (referenceIndex >= 0) {
+        rightSelect.value = referenceIndex.toString();
+      } else {
+        rightSelect.value = groups.findIndex((group) => group.mode === "thinking" && group.label.includes("0.8B")).toString();
+        if (rightSelect.value === "-1") rightSelect.value = Math.min(1, groups.length - 1).toString();
+      }
+
+      function renderMetricRows(left, right) {
+        return availableMetricDefs.map(([key, label]) => {
+          const leftValue = Number(left[key]);
+          const rightValue = Number(right[key]);
+          const delta = Number.isFinite(leftValue) && Number.isFinite(rightValue) ? rightValue - leftValue : null;
+          const deltaText = delta === null ? "n/a" : `${delta >= 0 ? "+" : ""}${delta.toFixed(3)}`;
+          return `
+            <tr>
+              <th>${escapeHtml(label)}</th>
+              <td>${metric(left[key])}</td>
+              <td>${metric(right[key])}</td>
+              <td>${escapeHtml(deltaText)}</td>
+            </tr>
+          `;
+        }).join("");
+      }
+
+      function renderAnswerCard(group, sample) {
+        const reasoning = String(sample.reasoning_text || "").trim();
+        const answerLabel = group.is_reference || sample.is_reference ? "Reference answer" : "Generated answer";
+        return `
+          <article class="compare-answer-card">
+            <div class="answer-meta">
+              <code>${escapeHtml(sample.id)}</code>
+              <span>${escapeHtml(sample.category || "uncategorized")}</span>
+              <span>${escapeHtml(sample.answerability_label || (sample.is_answerable ? "answerable" : "insufficient evidence"))}</span>
+              <span>${escapeHtml(sample.answer_mode || group.mode || "")}</span>
+              ${sample.primary_failure_tag ? `<span>${escapeHtml(sample.primary_failure_tag)}</span>` : ""}
+            </div>
+            <h3>${escapeHtml(group.label)}</h3>
+            <div class="answer-reference model-answer">
+              <strong>${answerLabel}</strong>
+              <p>${escapeHtml(sample.answer_text || "").replace(/\n/g, "<br>")}</p>
+            </div>
+            ${sample.teacher_notes ? `
+              <div class="answer-reference">
+                <strong>Reference notes</strong>
+                <p>${escapeHtml(sample.teacher_notes).replace(/\n/g, "<br>")}</p>
+              </div>
+            ` : ""}
+            ${sample.human_judge_notes ? `
+              <div class="answer-reference">
+                <strong>Human review notes</strong>
+                <p>${escapeHtml(sample.human_judge_notes).replace(/\n/g, "<br>")}</p>
+              </div>
+            ` : ""}
+            ${reasoning ? `
+              <details class="compare-reasoning">
+                <summary>Thinking text</summary>
+                <p>${escapeHtml(reasoning).replace(/\n/g, "<br>")}</p>
+              </details>
+            ` : ""}
+          </article>
+        `;
+      }
+
+      function render() {
+        const question = questions[Number(questionSelect.value)] || questions[0];
+        const leftIndex = Number(leftSelect.value);
+        const rightIndex = Number(rightSelect.value);
+        const left = answerFor(leftIndex, question.id);
+        const right = answerFor(rightIndex, question.id);
+        questionTarget.innerHTML = `
+          <code>${escapeHtml(question.id)}</code>
+          <strong>${escapeHtml(question.question)}</strong>
+          <p>Gold answer: ${escapeHtml(left.gold_answer || right.gold_answer || "").replace(/\n/g, "<br>")}</p>
+        `;
+        metricTarget.innerHTML = `
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Metric</th><th>Left</th><th>Right</th><th>Right − left</th></tr></thead>
+              <tbody>${renderMetricRows(left, right)}</tbody>
+            </table>
+          </div>
+        `;
+        answerTarget.innerHTML = renderAnswerCard(groups[leftIndex], left) + renderAnswerCard(groups[rightIndex], right);
+      }
+
+      [questionSelect, leftSelect, rightSelect].forEach((select) => select.addEventListener("change", render));
+      render();
+    })();
+    </script>
+
+    </section>
+
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Score plots</p>
+        <h2>Model quality, latency, and failure shape</h2>
+      </div>
+      <p>These plots use the same human-facing review rows as the tables below. They are meant to make the model tradeoff easier to inspect before opening the raw CSV files.</p>
+      <figure>
+        <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_human_quality_by_model_mode.png" alt="System30 human quality by model and mode" />
+        <figcaption>Average human quality score by model and mode. Qwen3.5 9B leads in both answer paths.</figcaption>
+      </figure>
+      <figure>
+        <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_quality_latency_tradeoff.png" alt="System30 quality and latency tradeoff" />
+        <figcaption>Average wall time against average human quality. The agentic path improves Qwen3.5 9B quality, but it is slower.</figcaption>
+      </figure>
+      <figure>
+        <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_clean_pass_overanswering.png" alt="System30 clean pass and over-answering risk" />
+        <figcaption>Clean-pass rate compared with over-answering risk. The negative red bars are scaled risk values, so lower risk appears closer to zero.</figcaption>
+      </figure>
+      <figure>
+        <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_hardest_questions.png" alt="Hardest System30 questions" />
+        <figcaption>Lowest average human-quality questions. These are the best candidates for the next error-analysis pass.</figcaption>
+      </figure>
+      <figure>
+        <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_failure_tags_by_model_mode.png" alt="System30 failure tags by model and mode" />
+        <figcaption>Primary failure tags by condition. Missing key conditions and unsupported claims remain the most common useful failure signals.</figcaption>
+      </figure>
+    </section>
+
+
+    <section class="section">
+      <div class="section-heading">
         <p class="eyebrow">Human-facing review</p>
         <h2>Model and mode quality</h2>
       </div>
@@ -88,7 +288,7 @@
       <div class="table-wrap"><table class="data-table"><thead><tr><th>Question</th><th>Category</th><th>Language</th><th>Human quality</th><th>Accepted count</th><th>Main failure tags</th></tr></thead><tbody><tr><td><code>s30_006</code></td><td>student_status</td><td>en</td><td>0.542</td><td>0</td><td>missing_key_condition:6; unsupported_claim:5; evidence_insufficient:1</td></tr><tr><td><code>s30_024</code></td><td>curriculum</td><td>zh</td><td>0.552</td><td>0</td><td>language_or_format_failure:6; missing_key_condition:4; unsupported_claim:2</td></tr><tr><td><code>s30_007</code></td><td>student_support</td><td>en</td><td>0.594</td><td>0</td><td>over_answering:6; missing_key_condition:4; unsupported_claim:1; language_or_format_failure:1</td></tr><tr><td><code>s30_022</code></td><td>curriculum</td><td>en</td><td>0.625</td><td>2</td><td>missing_key_condition:7; unsupported_claim:3; none:2</td></tr><tr><td><code>s30_010</code></td><td>language</td><td>ja</td><td>0.635</td><td>0</td><td>unsupported_claim:5; missing_key_condition:5; over_answering:1; citation_mismatch:1</td></tr><tr><td><code>s30_025</code></td><td>policy</td><td>ja</td><td>0.719</td><td>4</td><td>missing_key_condition:6; none:4; unsupported_claim:1; verbose_low_quality:1</td></tr><tr><td><code>s30_021</code></td><td>curriculum</td><td>en</td><td>0.729</td><td>1</td><td>evidence_insufficient:5; unsupported_claim:2; missing_key_condition:2; over_answering:2; language_or_format_failure:1</td></tr><tr><td><code>s30_029</code></td><td>course</td><td>zh</td><td>0.729</td><td>2</td><td>language_or_format_failure:8; unsupported_claim:2; none:2</td></tr></tbody></table></div>
     </section>
     <h2>Artifacts</h2>
-<ul><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/runtime_summary_by_model_mode.json">Runtime summary JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/runtime_summary_by_model_mode.csv">Runtime summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_summary_by_model_mode.csv">Human review summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_summary_by_question.csv">Human review by question CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_failure_tags_by_model_mode.csv">Failure tags CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/system30_questions.jsonl">System30 questions JSONL</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/reports/human_judge_report.md">Human review report</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/reports/api_mode_sweep_report.md">API mode sweep report</a></li></ul></div>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/all_answers.json">Answer comparator JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/runtime_summary_by_model_mode.json">Runtime summary JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/runtime_summary_by_model_mode.csv">Runtime summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_summary_by_model_mode.csv">Human review summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_summary_by_question.csv">Human review by question CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/human_judge_failure_tags_by_model_mode.csv">Failure tags CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/tables/system30_questions.jsonl">System30 questions JSONL</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_human_quality_by_model_mode.png">Human quality plot</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_quality_latency_tradeoff.png">Quality-latency plot</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_clean_pass_overanswering.png">Clean-pass and over-answering plot</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_hardest_questions.png">Hardest questions plot</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_failure_tags_by_model_mode.png">Failure tags plot</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/reports/human_judge_report.md">Human review report</a></li><li><a href="/icu-wiki/artifacts/2026-05-13/system30/reports/api_mode_sweep_report.md">API mode sweep report</a></li></ul></div>
     </article>
     </main>
     <footer class="site-footer">
