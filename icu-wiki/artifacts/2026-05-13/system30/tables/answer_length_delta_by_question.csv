@@ -1,0 +1,181 @@
+base_model_label,short_label,family,params_b,question_id,single_shot_chars,agentic_chars,delta_chars,agentic_human_quality_score,agentic_answer_acceptance,agentic_primary_failure_tag,agentic_secondary_failure_tag,agentic_human_judge_notes,agentic_blocking_bad_case,agentic_blocking_reasons,agentic_repetitive_or_truncated
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_001,1119,679,-440,0.875,2.0,verbose_low_quality,none,Accurate but framed as evidence commentary rather than a concise student answer.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_002,1174,1134,-40,0.375,0.0,unsupported_claim,missing_key_condition,"Misstates consequences and omits SAVE, results, and fee details.",yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_003,1186,1509,323,0.75,2.0,over_answering,verbose_low_quality,Mostly correct but includes irrelevant readmission and registration notes.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_004,588,843,255,0.5,1.0,unsupported_claim,verbose_low_quality,Includes typos and imprecise limits while omitting the major-counting limitation.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_005,1126,465,-661,0.75,1.0,missing_key_condition,none,"Only covers final submission and Portal, missing other schedule sources and deadlines.",no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_006,1129,631,-498,0.125,0.0,unsupported_claim,retrieval_miss,Focuses on Healthcare Office sick-leave proof instead of leave and return procedures.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_007,1169,1372,203,0.375,1.0,unsupported_claim,citation_mismatch,Claims 24-hour free hotline support and mismatches several citations.,yes,quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_008,908,972,64,0.875,1.0,missing_key_condition,none,Gives accommodations but omits the official support page and document/form process.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_009,804,1442,638,0.75,2.0,verbose_low_quality,over_answering,Accurate core but overlong with app-password instructions.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_010,619,630,11,0.625,1.0,over_answering,missing_key_condition,Over-focuses specific PT dates and omits office/reassessment guidance.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_011,963,870,-93,0.5,1.0,missing_key_condition,over_answering,Only addresses Chapel Hour and infers scheduling from weak evidence.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_012,1032,469,-563,1.0,2.0,none,none,Identifies official portal notices and the correct schedule.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_013,995,1157,162,0.875,2.0,verbose_low_quality,none,Correct but awkwardly framed.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_014,793,536,-257,0.75,1.0,missing_key_condition,verbose_low_quality,Lists notices but omits the contact email and core eHANDBOOK page.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_015,851,884,33,0.75,1.0,over_answering,missing_key_condition,Over-focuses a loan notice and does not state the limitation clearly.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_016,727,283,-444,0.625,1.0,citation_mismatch,missing_key_condition,Lacks citations and omits the exact schedule.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_017,903,997,94,0.375,1.0,language_or_format_failure,missing_key_condition,Includes internal agent text and omits Autumn grading.,yes,quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_018,148,719,571,0.625,1.0,verbose_low_quality,missing_key_condition,Repeats course records and omits useful level explanation.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_019,1049,1008,-41,0.25,1.0,verbose_low_quality,citation_mismatch,Contains the key answer but is an unusably long evidence dump with invalid citation numbers.,yes,quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_020,1080,726,-354,0.625,2.0,citation_mismatch,over_answering,Useful but lacks citations and adds a generic website not supported.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_021,474,317,-157,0.625,1.0,unsupported_claim,missing_key_condition,Mentions PE but adds unsupported doctoral and major framing.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_022,434,483,49,0.5,1.0,missing_key_condition,unsupported_claim,Covers PE only and adds incorrect graduate or major framing.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_023,159,1393,1234,0.0,0.0,unsupported_claim,verbose_low_quality,Misidentifies ELA as the mandatory course and is a copied evidence dump.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_024,1154,915,-239,0.0,0.0,unsupported_claim,verbose_low_quality,"Misstates credits, lists irrelevant pages, and ends with repetitive admissions advice.",yes,acceptance_0; quality_below_0.50; repetitive_or_truncated,yes
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_025,279,603,324,0.375,1.0,unsupported_claim,over_answering,Starts with an unsupported yes and adds irrelevant Q&A material despite correct warnings.,yes,quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_026,252,1024,772,0.625,1.0,verbose_low_quality,over_answering,"Contradictory and repetitive, though it includes the senior-thesis AI rule.",yes,repetitive_or_truncated,yes
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_027,516,922,406,0.125,0.0,unsupported_claim,language_or_format_failure,"Contradicts itself, mixes languages, and adds irrelevant Net ID and accommodation claims.",yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_028,29,102,73,0.25,0.0,unsupported_claim,citation_mismatch,Names a course taught by another instructor and contradicts itself.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_029,437,272,-165,0.625,1.0,unsupported_claim,citation_mismatch,Incorrectly includes Japanese Archaeology despite naming a different instructor.,no,,no
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_030,504,446,-58,0.875,1.0,missing_key_condition,none,Omits the Registration Result section and advisor-approval check.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_001,480,188,-292,0.75,1.0,missing_key_condition,citation_mismatch,Omits the in-class reassessment and JLP Office while citing only partial support.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_002,598,696,98,0.875,1.0,missing_key_condition,none,Omits advisor approval and the late-registration fee.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_003,1168,1000,-168,0.75,1.0,missing_key_condition,over_answering,"Misses registration-change, F-risk, and W/GPA points while mixing in withdrawal deadlines.",no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_004,1103,1329,226,1.0,2.0,none,none,Explains review procedures and that transferability is not confirmed until official procedures.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_005,477,340,-137,0.625,1.0,missing_key_condition,over_answering,Vague and only mentions March graduates plus a September posting claim.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_006,384,348,-36,0.875,1.0,missing_key_condition,none,Only covers illness-return certificate and course-registration blocking.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_007,688,242,-446,0.75,1.0,language_or_format_failure,missing_key_condition,Answers in Japanese to an English question and omits the privacy limitation.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_008,529,905,376,1.0,2.0,none,none,Covers the process and LAS contact.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_009,743,809,66,1.0,2.0,none,none,Covers the key account expiration and backup guidance.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_010,446,433,-13,0.75,1.0,missing_key_condition,over_answering,Omits first-class reassessment and adds broad requirement details.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_011,869,560,-309,0.875,1.0,missing_key_condition,none,Does not classify events or tell where to check schedules.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_012,807,438,-369,0.75,1.0,missing_key_condition,unsupported_claim,Omits the second day and gives incomplete timings.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_013,290,914,624,1.0,2.0,none,none,Explains transfer limits and lack of exact calculation.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_014,390,286,-104,0.875,1.0,missing_key_condition,none,Omits the EAG contact email.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_015,287,263,-24,0.75,1.0,missing_key_condition,none,Underanswers and omits daily-check and search guidance.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_016,319,214,-105,1.0,2.0,none,none,Concise and correct.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_017,870,780,-90,1.0,2.0,none,none,Complete grading and workload summary.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_018,296,331,35,1.0,2.0,none,none,Gives J2 level/prereq and another Miura-taught Japanese course.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_019,129,390,261,1.0,2.0,none,none,Covers Registration Result and advisor approval.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_020,837,781,-56,0.75,1.0,over_answering,missing_key_condition,Mislabels known purchase details as things the chatbot should not know.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_021,339,230,-109,0.625,1.0,language_or_format_failure,over_answering,Wrong language and incomplete or over-specific requirements.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_022,85,405,320,0.375,0.0,unsupported_claim,missing_key_condition,Focuses on wrong or reversed language-program claims.,yes,acceptance_0; quality_below_0.50,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_023,294,330,36,0.875,1.0,missing_key_condition,none,Covers PE/Health but omits language requirements and the insufficiency caveat.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_024,414,389,-25,0.625,1.0,language_or_format_failure,missing_key_condition,Answers in Japanese to a Chinese question and omits the evidence limitation.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_025,279,723,444,1.0,2.0,none,none,Covers the key ICU academic-integrity limits for generative AI use.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_026,252,392,140,1.0,2.0,none,none,States the unauthorized/unspecified generative-AI rule and E-grade consequence.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_027,338,390,52,0.875,2.0,verbose_low_quality,none,Correct but lengthy and broader than needed.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_028,777,215,-562,1.0,2.0,none,none,Lists all Kaburagi courses present in that retrieved set.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_029,87,241,154,0.625,1.0,language_or_format_failure,unsupported_claim,Answers in Japanese and includes an unsupported N2 course.,no,,no
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_030,363,174,-189,0.75,1.0,language_or_format_failure,none,Correct content but answers in Japanese to an English question.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_001,721,325,-396,0.75,1.0,missing_key_condition,none,Omits in-class reassessment and specific JLP sources.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_002,800,751,-49,0.875,1.0,missing_key_condition,none,Omits advisor approval and the fee.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_003,1170,1391,221,0.5,1.0,over_answering,unsupported_claim,Adds irrelevant readmission and SAVE material and has imprecise deadline wording.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_004,960,1065,105,0.75,1.0,missing_key_condition,over_answering,Omits the major-counting limitation and adds a less relevant Kenkyusei note.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_005,917,1808,891,0.625,1.0,unsupported_claim,verbose_low_quality,Very verbose and asserts an unsupported general rule for final deadlines.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_006,1007,592,-415,0.625,0.0,evidence_insufficient,missing_key_condition,States no information and gives no usable return guidance.,yes,acceptance_0,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_007,451,1142,691,0.5,1.0,over_answering,citation_mismatch,Mixes in irrelevant career and hiring content and misses the privacy limitation.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_008,721,606,-115,1.0,2.0,none,none,"Covers LAS start, documents/form, professor requests, and CTL page.",no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_009,1140,920,-220,0.75,2.0,over_answering,verbose_low_quality,Accurate core but adds irrelevant app-password and helpdesk details.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_010,776,781,5,0.375,1.0,unsupported_claim,citation_mismatch,Hallucinates program levels or links and has weak end-loaded citations.,yes,quality_below_0.50,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_011,648,1066,418,0.375,0.0,unsupported_claim,over_answering,Incorrectly says both are academic events.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_012,1157,1057,-100,0.5,1.0,unsupported_claim,citation_mismatch,Swaps or incorrects advisor timing and late-registration times.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_013,744,800,56,1.0,2.0,none,none,Properly says evidence is insufficient for a personal number.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_014,394,449,55,0.75,1.0,missing_key_condition,citation_mismatch,Points to Portal and Registration Website but does not clearly give the contact.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_015,1095,1397,302,0.5,1.0,over_answering,unsupported_claim,"Goes off-topic into accounts, backups, and alumni email.",no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_016,347,296,-51,0.75,1.0,missing_key_condition,citation_mismatch,Omits schedule and leaves the syllabus link incomplete.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_017,677,511,-166,0.875,1.0,missing_key_condition,none,Mixes Spring grading with Autumn assignments and omits term-specific breakdown.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_018,51,484,433,0.875,2.0,over_answering,none,Mostly complete but overstates which courses are the main ones.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_019,679,316,-363,1.0,2.0,none,none,"Covers results, advisor approval, and late-registration fallback.",no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_020,1196,1022,-174,0.875,2.0,citation_mismatch,none,Good answer but with only a single end citation.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_021,787,721,-66,0.875,1.0,missing_key_condition,none,Covers PE only and omits language and Christianity requirements.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_022,427,539,112,0.375,0.0,unsupported_claim,missing_key_condition,Gives incorrect entry-year language requirements instead of the required course.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_023,326,167,-159,0.875,1.0,missing_key_condition,none,Covers PE and Health only.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_024,1006,471,-535,0.625,1.0,missing_key_condition,citation_mismatch,Gives PE requirements but no incomplete-evidence caveat and cites weak official-page guidance.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_025,279,1281,1002,0.5,1.0,verbose_low_quality,missing_key_condition,"Mentions citation duties but is repetitive, truncated, and misses key AI-policy details.",yes,repetitive_or_truncated,yes
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_026,252,1215,963,0.75,1.0,evidence_insufficient,none,Cautiously says the evidence lacks specific ChatGPT rules but misses the expected policy answer.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_027,624,911,287,0.625,1.0,language_or_format_failure,evidence_insufficient,Answers in English and says evidence is insufficient despite related thesis evidence.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_028,165,113,-52,0.375,0.0,unsupported_claim,missing_key_condition,Names an irrelevant course instead of the Kaburagi courses in the evidence.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_029,565,390,-175,0.625,1.0,language_or_format_failure,evidence_insufficient,Answers in English and says no Kaburagi course is in the retrieved set.,no,,no
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_030,554,868,314,1.0,2.0,none,none,"Covers result checking, advisor approval, timing, and add/drop rechecking.",no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_001,421,391,-30,1.0,2.0,none,none,"Covers placement, in-class reassessment, and official sources.",no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_002,657,659,2,0.75,1.0,missing_key_condition,citation_mismatch,Omits advisor approval and fee while using vague citation formatting.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_003,831,1243,412,0.375,1.0,over_answering,unsupported_claim,Focuses on university withdrawal and gives confusing term dates.,yes,quality_below_0.50,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_004,943,1288,345,1.0,2.0,none,none,Cautiously explains credit-transfer limits and when confirmation occurs.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_005,469,340,-129,0.875,1.0,missing_key_condition,none,Gives sources but omits the range of deadlines to check.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_006,350,1319,969,0.75,1.0,missing_key_condition,unsupported_claim,Includes key CoE and medical-certificate points but still presents reenrolment deadlines as required.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_007,598,1238,640,0.75,1.0,missing_key_condition,citation_mismatch,Lists services but does not address the privacy limitation.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_008,366,693,327,1.0,2.0,none,none,"Covers LAS meeting, documents, intermediary role, and exam examples.",no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_009,572,772,200,1.0,2.0,none,none,"Covers expiration, backup, email forwarding, and new account.",no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_010,490,563,73,0.75,1.0,missing_key_condition,over_answering,Good sources but omits first-class reassessment and adds extra requirements.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_011,210,541,331,0.875,1.0,missing_key_condition,none,Describes events but misses Portal and Religious Center schedule guidance.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_012,566,543,-23,0.875,1.0,missing_key_condition,none,Gives dates but not the official pages to check.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_013,250,391,141,0.75,2.0,verbose_low_quality,citation_mismatch,Correct answer but includes internal Agent reason text.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_014,202,276,74,0.75,1.0,language_or_format_failure,missing_key_condition,Answers in English and omits related registration pages.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_015,340,274,-66,0.875,1.0,missing_key_condition,none,Notes no policy and daily Portal checks but does not advise verifying the Portal deadline.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_016,279,246,-33,0.75,1.0,missing_key_condition,citation_mismatch,Omits the official syllabus or course-record source.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_017,764,811,47,1.0,2.0,none,none,Complete and term-specific.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_018,204,226,22,1.0,2.0,none,none,Lists Miura's Japanese courses and J2 level.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_019,320,350,30,1.0,2.0,none,none,Covers advisor approval and result checking.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_020,396,406,10,0.875,1.0,missing_key_condition,none,Gives basic purchase info but misses guidance on chatbot limitations.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_021,153,938,785,0.875,1.0,missing_key_condition,none,Identifies Introduction to Christianity but misses PE and language requirements.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_022,114,969,855,1.0,2.0,none,none,Identifies Introduction to Christianity and notes variable language requirements.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_023,586,520,-66,0.625,1.0,language_or_format_failure,unsupported_claim,Answers in English and gives imprecise PE credit information while omitting language requirements.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_024,576,646,70,0.625,1.0,language_or_format_failure,missing_key_condition,Answers in English and omits the evidence limitation.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_025,279,430,151,1.0,2.0,none,none,Covers that AI use is not wholly denied but AI output cannot be submitted as one's own.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_026,252,342,90,1.0,2.0,none,none,States the unauthorized/unspecified generative-AI rule and E-grade consequence.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_027,726,128,-598,1.0,2.0,none,none,Concise and correct on the senior-thesis generative-AI rule.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_028,136,95,-41,1.0,2.0,none,none,Lists the Kaburagi courses found in the retrieved course records.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_029,74,192,118,0.625,1.0,unsupported_claim,language_or_format_failure,Includes an unsupported Advanced Studies course and answers in Japanese to a Chinese question.,no,,no
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_030,509,378,-131,1.0,2.0,none,none,"Covers Registration Result, advisor approval, timing, and rechecking.",no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_001,906,339,-567,1.0,2.0,none,none,Covers JLP placement and official sources.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_002,1078,1056,-22,0.875,1.0,missing_key_condition,none,Mostly useful but omits the late-registration fee.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_003,1160,1622,462,0.5,1.0,over_answering,verbose_low_quality,Mixes university withdrawal and readmission details with course withdrawal.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_004,1103,934,-169,0.75,1.0,missing_key_condition,over_answering,Omits the limitation about specific major requirements.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_005,1052,600,-452,0.875,1.0,missing_key_condition,none,Covers final deadline and guidelines but not candidacy or first-draft schedule.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_006,1189,1355,166,0.5,1.0,unsupported_claim,missing_key_condition,Describes outdated or readmission-like steps and misses the AY2024 no-reenrolment rule.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_007,1122,750,-372,0.375,1.0,over_answering,citation_mismatch,Claims explicit anonymous or privacy support without citations.,yes,quality_below_0.50,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_008,562,1071,509,1.0,2.0,none,none,"Covers LAS, CTL page, documents, plan, and examples.",no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_009,1167,1133,-34,0.5,1.0,unsupported_claim,none,Falsely says the current account stays active through graduate study.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_010,696,997,301,0.375,1.0,citation_mismatch,missing_key_condition,Useful but lacks evidence citations and omits first-class reassessment.,yes,quality_below_0.50,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_011,1131,767,-364,0.5,0.0,unsupported_claim,over_answering,Incorrectly says both are academic events.,yes,acceptance_0,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_012,1175,897,-278,1.0,2.0,none,none,Gives correct dates and official procedure notice.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_013,1011,969,-42,1.0,2.0,none,none,Properly explains limits and lack of personalized calculation.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_014,538,185,-353,0.875,1.0,missing_key_condition,none,Gives contact but not official registration pages.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_015,1043,1048,5,1.0,2.0,none,none,Cautiously notes no formal hierarchy and points to Portal announcements.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_016,464,477,13,1.0,2.0,none,none,"Covers instructor, schedule, and official course record.",no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_017,1093,954,-139,1.0,2.0,none,none,Complete grading with reasonable syllabus work summary.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_018,210,511,301,0.75,2.0,verbose_low_quality,over_answering,Mostly complete but has an awkward or unsupported descriptor.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_019,425,368,-57,1.0,2.0,none,none,Covers advisor approval and Registration Results.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_020,1145,977,-168,0.875,2.0,over_answering,none,Solid answer with minor extrapolation about cost calculation and course specifics.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_021,770,2057,1287,0.625,1.0,over_answering,missing_key_condition,Too broad and overstates major/final-year requirements as mandatory courses.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_022,780,617,-163,0.75,1.0,missing_key_condition,unsupported_claim,Focuses on language programs and misses the all-student course.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_023,493,693,200,1.0,2.0,none,none,"Covers PE, language route, and official pages.",no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_024,856,336,-520,0.75,1.0,missing_key_condition,over_answering,Gives PE requirements but suggests social media and teacher-certification details without the key limitation.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_025,279,493,214,1.0,2.0,none,none,"Covers the AI policy, originality, citation, and plagiarism cautions.",no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_026,252,625,373,0.75,1.0,over_answering,none,Overstates the answer as a blanket no instead of allowed only when authorized.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_027,389,497,108,1.0,2.0,none,none,Gives the policy-based answer and advises prior instructor confirmation for any permitted use.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_028,312,333,21,0.375,0.0,unsupported_claim,language_or_format_failure,Misreads the name and incorrectly says no course can be identified.,yes,acceptance_0; quality_below_0.50,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_029,307,626,319,0.625,1.0,language_or_format_failure,evidence_insufficient,Answers in English and says no Kaburagi course is in the retrieved set.,no,,no
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_030,557,571,14,1.0,2.0,none,none,"Covers Registration Result, advisor approval, changes, and student responsibility.",no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_001,594,356,-238,0.75,1.0,missing_key_condition,none,Omits the possible in-class reassessment.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_002,856,984,128,1.0,2.0,none,none,"Covers late registration, SAVE/results, advisor approval, and the fee.",no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_003,971,1491,520,1.0,2.0,none,none,Covers the key rules and consequences.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_004,1124,1030,-94,1.0,2.0,none,none,Cautiously explains approval review and limits.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_005,756,1290,534,0.75,2.0,verbose_low_quality,over_answering,Useful but includes irrelevant major-declaration and graduation details.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_006,815,1498,683,0.625,1.0,unsupported_claim,missing_key_condition,"Contains useful EAG, medical, and CoE information but adds obsolete or irrelevant procedures.",no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_007,1192,794,-398,0.5,1.0,over_answering,unsupported_claim,Claims privacy or anonymous consultation not established by the retrieved evidence.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_008,603,823,220,0.625,1.0,unsupported_claim,missing_key_condition,Misidentifies the official page as syllabus sections.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_009,746,1001,255,1.0,2.0,none,none,"Covers expiration, forwarding, backup, and new account.",no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_010,487,792,305,0.75,1.0,missing_key_condition,over_answering,Clear but omits first-class reassessment and contact guidance.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_011,993,510,-483,1.0,2.0,none,none,Gives campus-life classification and relevant schedule places.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_012,1159,1280,121,1.0,2.0,none,none,Covers timing and late-registration fee/procedure.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_013,633,1085,452,0.625,1.0,over_answering,unsupported_claim,Gives an unsupported 130-minus-transfer-credits calculation.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_014,349,153,-196,1.0,2.0,none,none,Concise contact and e-handbook guidance.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_015,831,534,-297,1.0,2.0,none,none,Cautious and identifies Portal notices as the deadline source.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_016,492,355,-137,0.75,1.0,unsupported_claim,none,Incorrectly directs to Moodle rather than the course or syllabus record.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_017,774,1337,563,1.0,2.0,none,none,Complete and clearly split by term.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_018,292,242,-50,1.0,2.0,none,none,Lists courses and gives J2 and Special Kanji context.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_019,606,550,-56,1.0,2.0,none,none,"Covers selection not enough, approval, Registration Result, and SAVE.",no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_020,995,959,-36,1.0,2.0,none,none,Complete and clearly directs to the official guide.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_021,371,1050,679,0.875,2.0,over_answering,none,Covers key requirements but also adds broader thesis and GE claims.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_022,400,213,-187,1.0,2.0,none,none,Correctly identifies Introduction to Christianity.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_023,467,352,-115,1.0,2.0,none,none,Covers PE and language requirements.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_024,372,295,-77,0.75,1.0,missing_key_condition,over_answering,Lists PE requirements without the evidence limitation and adds teacher-certification detail.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_025,279,363,84,1.0,2.0,none,none,Covers the key AI-use limits and states that individual judgment may be needed.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_026,252,411,159,1.0,2.0,none,none,Correctly limits use to authorized policy-compliant use and notes the E-grade consequence.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_027,294,173,-121,1.0,2.0,none,none,Correctly states unauthorized AI use and AI-as-own-work are violations with an E grade.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_028,259,345,86,1.0,2.0,none,none,Lists the retrieved Kaburagi courses and excludes an irrelevant course.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_029,134,152,18,1.0,2.0,none,none,Correctly lists the Kaburagi courses found in that retrieved set.,no,,no
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_030,576,635,59,1.0,2.0,none,none,Covers the complete check procedure and student responsibility.,no,,no

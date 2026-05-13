@@ -1,0 +1,13 @@
+condition_id,label,base_model_label,short_label,family,mode,mode_label,params_b,n,avg_human_quality_score,quality_per_billion_params,mean_answer_chars,median_answer_chars,blocking_bad_case_count,blocking_bad_case_ids,repetitive_or_truncated_count,repetitive_or_truncated_ids,passes_quality_threshold,passes_viability_screen
+Qwen/Qwen3.5-0.8B|single_shot,Qwen3.5 0.8B (single-shot),Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,single_shot,single-shot,0.8,30,0.575,0.7187499999999999,753.3666666666667,827.5,10,s30_001; s30_003; s30_006; s30_010; s30_014; s30_017; s30_019; s30_021; s30_022; s30_024,2,s30_014; s30_019,no,no
+Qwen/Qwen3.5-0.8B|agentic,Qwen3.5 0.8B (agentic),Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,agentic,agentic,0.8,30,0.5458333333333333,0.6822916666666665,793.4333333333333,784.5,11,s30_002; s30_006; s30_007; s30_017; s30_019; s30_023; s30_024; s30_025; s30_026; s30_027; s30_028,2,s30_024; s30_026,no,no
+google/gemma-4-E2B-it|single_shot,Gemma 4 E2B (single-shot),Gemma 4 E2B,Gemma E2B,Gemma 4,single_shot,single-shot,2.0,30,0.8083333333333333,0.4041666666666667,497.93333333333334,402.0,2,s30_006; s30_022,0,,yes,no
+Qwen/Qwen3.5-2B|single_shot,Qwen3.5 2B (single-shot),Qwen3.5 2B,Qwen 2B,Qwen3.5,single_shot,single-shot,2.0,30,0.7125,0.35625,687.8666666666667,700.0,3,s30_007; s30_012; s30_022,0,,no,no
+google/gemma-4-E2B-it|agentic,Gemma 4 E2B (agentic),Gemma 4 E2B,Gemma E2B,Gemma 4,agentic,agentic,2.0,30,0.8375,0.41875,491.2,390.0,1,s30_022,0,,yes,no
+Qwen/Qwen3.5-2B|agentic,Qwen3.5 2B (agentic),Qwen3.5 2B,Qwen 2B,Qwen3.5,agentic,agentic,2.0,30,0.6958333333333333,0.34791666666666665,781.8333333333334,766.0,6,s30_006; s30_010; s30_011; s30_022; s30_025; s30_028,1,s30_025,no,no
+google/gemma-4-E4B-it|single_shot,Gemma 4 E4B (single-shot),Gemma 4 E4B,Gemma E4B,Gemma 4,single_shot,single-shot,4.0,30,0.8333333333333334,0.20833333333333334,421.1,381.0,0,,0,,yes,yes
+Qwen/Qwen3.5-4B|single_shot,Qwen3.5 4B (single-shot),Qwen3.5 4B,Qwen 4B,Qwen3.5,single_shot,single-shot,4.0,30,0.7791666666666667,0.19479166666666667,775.5,818.0,1,s30_020,1,s30_020,no,no
+google/gemma-4-E4B-it|agentic,Gemma 4 E4B (agentic),Gemma 4 E4B,Gemma E4B,Gemma 4,agentic,agentic,4.0,30,0.8583333333333333,0.21458333333333332,573.6,475.0,1,s30_003,0,,yes,no
+Qwen/Qwen3.5-4B|agentic,Qwen3.5 4B (agentic),Qwen3.5 4B,Qwen 4B,Qwen3.5,agentic,agentic,4.0,30,0.7875,0.196875,795.2666666666667,721.5,4,s30_007; s30_010; s30_011; s30_028,0,,no,no
+Qwen/Qwen3.5-9B|single_shot,Qwen3.5 9B (single-shot),Qwen3.5 9B,Qwen 9B,Qwen3.5,single_shot,single-shot,9.0,30,0.875,0.09722222222222222,622.4,598.5,1,s30_022,0,,yes,no
+Qwen/Qwen3.5-9B|agentic,Qwen3.5 9B (agentic),Qwen3.5 9B,Qwen 9B,Qwen3.5,agentic,agentic,9.0,30,0.9,0.1,701.7666666666667,592.5,0,,0,,yes,yes

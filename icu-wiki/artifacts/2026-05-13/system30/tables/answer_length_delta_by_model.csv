@@ -1,0 +1,7 @@
+base_model_label,short_label,family,params_b,n,mean_delta_chars,median_delta_chars,agentic_shorter_count,agentic_longer_count,same_length_count,agentic_blocking_bad_case_count,agentic_blocking_bad_case_ids,agentic_repetitive_or_truncated_count,agentic_repetitive_or_truncated_ids
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,30,40.06666666666667,22.0,14,16,0,11,s30_002; s30_006; s30_007; s30_017; s30_019; s30_023; s30_024; s30_025; s30_026; s30_027; s30_028,2,s30_024; s30_026
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,30,-6.733333333333333,-24.5,17,13,0,1,s30_022,0,
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,30,93.96666666666667,-22.0,15,15,0,6,s30_006; s30_010; s30_011; s30_022; s30_025; s30_028,1,s30_025
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,30,152.5,71.5,9,21,0,1,s30_003,0,
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,30,19.766666666666666,-8.5,15,15,0,4,s30_007; s30_010; s30_011; s30_028,0,
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,30,79.36666666666666,38.5,14,16,0,0,,0,
