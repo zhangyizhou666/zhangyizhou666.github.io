@@ -1,0 +1,49 @@
+base_model_label,short_label,family,params_b,question_id,single_shot_quality,agentic_quality,quality_delta,single_shot_blocking_bad_case,agentic_blocking_bad_case,blocking_delta
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_006,0.125,0.125,0.0,yes,yes,0
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_024,0.25,0.0,-0.25,yes,yes,0
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_007,0.625,0.375,-0.25,no,yes,1
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_022,0.375,0.5,0.125,yes,no,-1
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_010,0.375,0.625,0.25,yes,no,-1
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_025,0.625,0.375,-0.25,no,yes,1
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_021,0.5,0.625,0.125,yes,no,-1
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,s30_029,0.75,0.625,-0.125,no,no,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_006,0.375,0.875,0.5,yes,no,-1
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_024,0.5,0.625,0.125,no,no,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_007,0.75,0.75,0.0,no,no,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_022,0.5,0.375,-0.125,yes,yes,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_010,0.75,0.75,0.0,no,no,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_025,0.625,1.0,0.375,no,no,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_021,0.875,0.625,-0.25,no,no,0
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,s30_029,0.75,0.625,-0.125,no,no,0
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_006,0.625,0.625,0.0,no,yes,1
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_024,0.5,0.625,0.125,no,no,0
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_007,0.5,0.5,0.0,yes,no,-1
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_022,0.625,0.375,-0.25,yes,yes,0
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_010,0.625,0.375,-0.25,no,yes,1
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_025,0.625,0.5,-0.125,no,yes,1
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_021,0.625,0.875,0.25,no,no,0
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,s30_029,0.625,0.625,0.0,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_006,0.75,0.75,0.0,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_024,0.625,0.625,0.0,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_007,0.75,0.75,0.0,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_022,0.75,1.0,0.25,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_010,0.75,0.75,0.0,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_025,0.625,1.0,0.375,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_021,0.75,0.875,0.125,no,no,0
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,s30_029,0.75,0.625,-0.125,no,no,0
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_006,0.5,0.5,0.0,no,no,0
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_024,0.625,0.75,0.125,no,no,0
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_007,0.625,0.375,-0.25,no,yes,1
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_022,0.75,0.75,0.0,no,no,0
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_010,0.75,0.375,-0.375,no,yes,1
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_025,0.625,1.0,0.375,no,no,0
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_021,0.875,0.625,-0.25,no,no,0
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,s30_029,0.75,0.625,-0.125,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_006,0.625,0.625,0.0,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_024,0.75,0.75,0.0,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_007,0.625,0.5,-0.125,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_022,0.5,1.0,0.5,yes,no,-1
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_010,0.75,0.75,0.0,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_025,0.625,1.0,0.375,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_021,0.625,0.875,0.25,no,no,0
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,s30_029,1.0,1.0,0.0,no,no,0

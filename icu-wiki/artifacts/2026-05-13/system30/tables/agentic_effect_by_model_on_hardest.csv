@@ -1,0 +1,7 @@
+base_model_label,short_label,family,params_b,hardest_question_count,hardest_single_mean_quality,hardest_agentic_mean_quality,hardest_mean_quality_delta,hardest_median_quality_delta,hardest_improved_count,hardest_worsened_count,hardest_unchanged_count,hardest_single_blocking_count,hardest_agentic_blocking_count,hardest_blocking_delta,all_question_count,all_mean_quality_delta,all_median_quality_delta,all_improved_count,all_worsened_count,all_unchanged_count,all_single_blocking_count,all_agentic_blocking_count,all_blocking_delta
+Qwen3.5 0.8B,Qwen 0.8B,Qwen3.5,0.8,8,0.453125,0.40625,-0.046875,-0.0625,3,4,1,5,4,-1,30,-0.029166666666666667,0.0,13,13,4,10,11,1
+Gemma 4 E2B,Gemma E2B,Gemma 4,2.0,8,0.640625,0.703125,0.0625,0.0,3,3,2,2,1,-1,30,0.029166666666666667,0.0,11,9,10,2,1,-1
+Qwen3.5 2B,Qwen 2B,Qwen3.5,2.0,8,0.59375,0.5625,-0.03125,0.0,2,3,3,2,4,2,30,-0.016666666666666666,0.0,9,9,12,3,6,3
+Gemma 4 E4B,Gemma E4B,Gemma 4,4.0,8,0.71875,0.796875,0.078125,0.0,3,1,4,0,0,0,30,0.025,0.0,11,7,12,0,1,1
+Qwen3.5 4B,Qwen 4B,Qwen3.5,4.0,8,0.6875,0.625,-0.0625,-0.0625,2,4,2,0,2,2,30,0.008333333333333333,0.0,10,8,12,1,4,3
+Qwen3.5 9B,Qwen 9B,Qwen3.5,9.0,8,0.6875,0.8125,0.125,0.0,3,1,4,1,0,-1,30,0.025,0.0,8,6,16,1,0,-1
