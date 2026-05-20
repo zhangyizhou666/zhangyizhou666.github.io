@@ -1,0 +1,6 @@
+metric,exact_agreement_rate,mean_absolute_difference,gpt_mean,deepseek_mean,deepseek_minus_gpt
+answer_acceptance,0.7139,0.2917,1.2917,1.2111,-0.0806
+readability,0.7556,0.2472,1.6833,1.6917,0.0083
+citation_usefulness,0.5556,0.4639,1.6111,1.2806,-0.3306
+over_answering_risk,0.75,0.275,0.4472,0.3222,-0.125
+human_quality_score,,0.1222,0.7674,0.7326,-0.0347

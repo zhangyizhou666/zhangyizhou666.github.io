@@ -1,0 +1,17 @@
+{
+  "source_run_dir": "/Users/zhangyizhou/Library/Developer/ICU_wiki/data/diagnostics/runs/retriever_pipeline_ablation_20260520",
+  "output_root": "/Users/zhangyizhou/Library/Developer/ICU_wiki/apps/research_site/public/artifacts/2026-05-20/retriever-ablation",
+  "case_count": 30,
+  "record_count": 150,
+  "warnings": [
+    "No selected cases contain gold_source_ids; gold-source recall will be null.",
+    "No selected cases contain expected_terms; term-hit metrics will be null."
+  ],
+  "plots": [
+    "retriever_ablation_adjacent_changes.png",
+    "retriever_ablation_aggregate_metrics.png",
+    "retriever_ablation_case_source_fit_heatmap.png",
+    "retriever_ablation_critical_cases_top_source.png",
+    "retriever_ablation_source_type_composition.png"
+  ]
+}

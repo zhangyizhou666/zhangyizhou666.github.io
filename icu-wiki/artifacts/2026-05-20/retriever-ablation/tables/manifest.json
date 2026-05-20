@@ -1,0 +1,123 @@
+{
+  "run_id": "retriever_pipeline_ablation_20260520",
+  "created_at": "2026-05-20T12:26:16.514729+00:00",
+  "benchmark": "/home/yizhou/projects/ICU_Wiki/runtime_repo/data/eval/benchmarks/icubench_system_30_20260512/questions.jsonl",
+  "expectations": null,
+  "limit": 5,
+  "candidate_limit": 40,
+  "reranker_provider_for_reranker_variants": "local_bge",
+  "embedding_provider": "local_bge",
+  "local_embedding_model": "BAAI/bge-m3",
+  "current_reranker_provider_after_run": "local_bge",
+  "janome_available": true,
+  "warnings": [
+    "No selected cases contain gold_source_ids; gold-source recall will be null.",
+    "No selected cases contain expected_terms; term-hit metrics will be null."
+  ],
+  "case_ids": [
+    "s30_001",
+    "s30_002",
+    "s30_003",
+    "s30_004",
+    "s30_005",
+    "s30_006",
+    "s30_007",
+    "s30_008",
+    "s30_009",
+    "s30_010",
+    "s30_011",
+    "s30_012",
+    "s30_013",
+    "s30_014",
+    "s30_015",
+    "s30_016",
+    "s30_017",
+    "s30_018",
+    "s30_019",
+    "s30_020",
+    "s30_021",
+    "s30_022",
+    "s30_023",
+    "s30_024",
+    "s30_025",
+    "s30_026",
+    "s30_027",
+    "s30_028",
+    "s30_029",
+    "s30_030"
+  ],
+  "variants": [
+    {
+      "id": "R0_basic_hybrid",
+      "label": "R0 Basic hybrid",
+      "description": "PostgreSQL lexical FTS plus dense BGE-M3/pgvector retrieval only.",
+      "env": {
+        "ICU_RERANKER_PROVIDER": "off",
+        "ICU_SOURCE_AUTHORITY_SCORING_ENABLED": "false",
+        "ICU_RERANKER_FAIL_OPEN": "false",
+        "ICU_TITLE_RETRIEVAL_ENABLED": "false",
+        "ICU_ENTITY_RETRIEVAL_ENABLED": "false",
+        "ICU_JAPANESE_FTS_ENABLED": "false",
+        "ICU_JAPANESE_TOKENIZER": "lightweight"
+      }
+    },
+    {
+      "id": "R1_japanese_fts",
+      "label": "R1 + Japanese FTS",
+      "description": "R0 plus Japanese-tokenized FTS using the configured Japanese tokenizer.",
+      "env": {
+        "ICU_RERANKER_PROVIDER": "off",
+        "ICU_SOURCE_AUTHORITY_SCORING_ENABLED": "false",
+        "ICU_RERANKER_FAIL_OPEN": "false",
+        "ICU_TITLE_RETRIEVAL_ENABLED": "false",
+        "ICU_ENTITY_RETRIEVAL_ENABLED": "false",
+        "ICU_JAPANESE_FTS_ENABLED": "true",
+        "ICU_JAPANESE_TOKENIZER": "janome"
+      }
+    },
+    {
+      "id": "R2_metadata_exact",
+      "label": "R2 + metadata exact channels",
+      "description": "R1 plus entity-aware alias lookup and title/heading matching.",
+      "env": {
+        "ICU_RERANKER_PROVIDER": "off",
+        "ICU_SOURCE_AUTHORITY_SCORING_ENABLED": "false",
+        "ICU_RERANKER_FAIL_OPEN": "false",
+        "ICU_TITLE_RETRIEVAL_ENABLED": "true",
+        "ICU_ENTITY_RETRIEVAL_ENABLED": "true",
+        "ICU_JAPANESE_FTS_ENABLED": "true",
+        "ICU_JAPANESE_TOKENIZER": "janome"
+      }
+    },
+    {
+      "id": "R3_reranker",
+      "label": "R3 + BGE reranker",
+      "description": "R2 plus a larger candidate pool and cross-encoder reranking.",
+      "env": {
+        "ICU_RERANKER_PROVIDER": "local_bge",
+        "ICU_SOURCE_AUTHORITY_SCORING_ENABLED": "false",
+        "ICU_RERANKER_FAIL_OPEN": "false",
+        "ICU_TITLE_RETRIEVAL_ENABLED": "true",
+        "ICU_ENTITY_RETRIEVAL_ENABLED": "true",
+        "ICU_JAPANESE_FTS_ENABLED": "true",
+        "ICU_JAPANESE_TOKENIZER": "janome",
+        "ICU_RERANKER_CANDIDATE_LIMIT": "40"
+      }
+    },
+    {
+      "id": "R4_full_current",
+      "label": "R4 full current",
+      "description": "R3 plus source-authority scoring.",
+      "env": {
+        "ICU_RERANKER_PROVIDER": "local_bge",
+        "ICU_SOURCE_AUTHORITY_SCORING_ENABLED": "true",
+        "ICU_RERANKER_FAIL_OPEN": "false",
+        "ICU_TITLE_RETRIEVAL_ENABLED": "true",
+        "ICU_ENTITY_RETRIEVAL_ENABLED": "true",
+        "ICU_JAPANESE_FTS_ENABLED": "true",
+        "ICU_JAPANESE_TOKENIZER": "janome",
+        "ICU_RERANKER_CANDIDATE_LIMIT": "40"
+      }
+    }
+  ]
+}

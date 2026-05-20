@@ -1,0 +1,5 @@
+transition,gains,losses,unchanged_good,unchanged_bad,gain_cases,loss_cases
+R0_basic_hybrid->R1_japanese_fts,2,0,24,4,"s30_023, s30_027",
+R1_japanese_fts->R2_metadata_exact,0,2,24,4,,"s30_005, s30_007"
+R2_metadata_exact->R3_reranker,1,2,22,5,s30_007,"s30_008, s30_027"
+R3_reranker->R4_full_current,2,0,23,5,"s30_005, s30_025",

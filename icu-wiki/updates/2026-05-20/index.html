@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retriever Pipeline Ablation — ICU Wiki Research</title>
+    <meta name="description" content="ICU Bench 30 was rerun through five cumulative PostgreSQL retriever variants to inspect where each retrieval module helps or hurts." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+      </nav>
+    </header>
+    <main>
+    <article class="post">
+      <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
+      <header>
+        <p class="eyebrow">2026-05-20</p>
+        <h1>Retriever Pipeline Ablation</h1>
+        <p>ICU Bench 30 was rerun through five cumulative PostgreSQL retriever variants to inspect where each retrieval module helps or hurts.</p>
+        <div class="tags"><span>retriever</span><span>ablation</span><span>system30</span><span>diagnostics</span></div>
+      </header>
+      <div class="post-body"><h2>Purpose</h2>
+<p>This update isolates the retriever from the answer generator. The goal is to check whether each major retriever module improves the retrieved evidence before we use the generator or agentic mode.</p>
+<p>The tested ladder is:</p>
+<ul><li><code>R0_basic_hybrid</code>: lexical FTS + dense BGE-M3/pgvector retrieval.</li><li><code>R1_japanese_fts</code>: R0 + Japanese-tokenized FTS.</li><li><code>R2_metadata_exact</code>: R1 + entity alias lookup and title/heading matching.</li><li><code>R3_reranker</code>: R2 + BGE reranker over a larger candidate pool.</li><li><code>R4_full_current</code>: R3 + source-authority scoring.</li></ul>
+<p>This run used 30 ICU Bench 30 questions and produced 150 retrieval records.</p>
+<h2>Aggregate result</h2>
+<p><img src="/icu-wiki/artifacts/2026-05-20/retriever-ablation/plots/retriever_ablation_aggregate_metrics.png" alt="Aggregate retriever ablation metrics" /></p>
+<p>Japanese FTS improves the broad authority-source rate from <code>0.633</code> to <code>0.800</code>, but the later modules do not monotonically improve every aggregate signal. Reranking also increases retrieval latency, from about <code>0.153s</code> in R0 to about <code>0.515s</code> in R3.</p>
+<p>The result should be read as a diagnostic source-fit check, not as final retrieval accuracy. The current benchmark file does not yet contain <code>gold_source_ids</code> or <code>expected_terms</code>, so gold-source recall and term-hit metrics are not available in this run.</p>
+<h2>Source composition</h2>
+<p><img src="/icu-wiki/artifacts/2026-05-20/retriever-ablation/plots/retriever_ablation_source_type_composition.png" alt="Retriever source type composition" /></p>
+<p>The source mix changes as modules are added. R0 retrieves many course records for queries that should not be course lookup questions. R4 increases the share of <code>ehandbook_page</code> and <code>web_page</code> chunks compared with R0, but it still does not solve every policy or curriculum case.</p>
+<h2>Regressions and gains</h2>
+<p><img src="/icu-wiki/artifacts/2026-05-20/retriever-ablation/plots/retriever_ablation_adjacent_changes.png" alt="Adjacent retriever gains and regressions" /></p>
+<p>There are regressions while adding modules:</p>
+<ul><li>R0 to R1 has two broad source-fit gains and no broad source-fit losses.</li><li>R1 to R2 has two losses: <code>s30_005</code> and <code>s30_007</code>.</li><li>R2 to R3 has one gain, <code>s30_007</code>, but two losses: <code>s30_008</code> and <code>s30_027</code>.</li><li>R3 to R4 has two gains, <code>s30_005</code> and <code>s30_025</code>, and no broad source-fit losses under this heuristic.</li></ul>
+<p>From R0 to R4 overall, the broad source-fit gains are <code>s30_023</code> and <code>s30_025</code>, while the broad source-fit loss is <code>s30_008</code>. The unchanged hard failures are <code>s30_021</code>, <code>s30_022</code>, <code>s30_026</code>, and <code>s30_027</code>.</p>
+<h2>Case-level view</h2>
+<p><img src="/icu-wiki/artifacts/2026-05-20/retriever-ablation/plots/retriever_ablation_case_source_fit_heatmap.png" alt="Case-level source fit heatmap" /></p>
+<p>The heatmap shows that the current retriever is not simply better at every step. Some cases improve after a specific module, while others temporarily or permanently regress.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-20/retriever-ablation/plots/retriever_ablation_critical_cases_top_source.png" alt="Critical cases top source type" /></p>
+<p>The mandatory-course English questions, <code>s30_021</code> and <code>s30_022</code>, still retrieve course-record chunks across all variants. This suggests that the remaining problem is not only Japanese tokenization, entity lookup, or reranking. It likely needs better curriculum-requirement routing or better source-authority signals for requirement-style questions.</p>
+<p>For teacher lookup, <code>s30_028</code> and <code>s30_029</code> improve after metadata/entity channels are enabled. This supports keeping the entity alias table as a general system-level component rather than a case-specific patch.</p>
+<p>For the Japanese ChatGPT thesis-policy case, <code>s30_025</code>, R4 moves the top result away from newsletter/PDF-only evidence and brings in web/portal-style sources. This supports the direction of source-authority scoring, though the result still needs gold-source validation.</p>
+<h2>Interpretation</h2>
+<p>The useful conclusion is not that every added module is always better. The cleaner conclusion is:</p>
+<ul><li>Japanese FTS helps multilingual source matching.</li><li>Entity and title channels help person/course lookup, but can over-prioritize course records in non-course questions.</li><li>Reranking can improve semantic ordering, but it can also move away from the source type we want.</li><li>Source-authority scoring repairs some policy/source-type failures, but it does not solve mandatory-course routing by itself.</li></ul>
+<p>The next controlled step is to merge the curated <code>gold_source_ids</code> into ICU Bench 30 and rerun this same ablation with gold-source recall and MRR.</p>
+<h2>Artifacts</h2>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/tables/retriever_ablation_summary_by_variant.csv">Summary by variant CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/tables/retriever_ablation_case_source_fit.csv">Case source-fit CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/tables/retriever_ablation_adjacent_changes.csv">Adjacent changes CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/tables/summary.json">Raw summary JSON</a></li><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/tables/records.jsonl">Raw retrieval records JSONL</a></li><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/reports/retrieved_contexts.md">Retrieved contexts report</a></li><li><a href="/icu-wiki/artifacts/2026-05-20/retriever-ablation/reports/analysis.md">Diagnostic analysis report</a></li></ul></div>
+    </article>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-20.</span>
+    </footer>
+  </body>
+</html>

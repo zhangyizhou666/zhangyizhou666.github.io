@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>System30 Multi-Judge Evaluation — ICU Wiki Research</title>
+    <meta name="description" content="GPT Pro scores were cross-checked with DeepSeek V4 Pro, and the main System30 conclusions were updated with a two-judge average." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+      </nav>
+    </header>
+    <main>
+    <article class="post">
+      <a class="back-link" href="/icu-wiki/updates/">Back to updates</a>
+      <header>
+        <p class="eyebrow">2026-05-16</p>
+        <h1>System30 Multi-Judge Evaluation</h1>
+        <p>GPT Pro scores were cross-checked with DeepSeek V4 Pro, and the main System30 conclusions were updated with a two-judge average.</p>
+        <div class="tags"><span>evaluation</span><span>multi-judge</span><span>system30</span><span>deepseek</span></div>
+      </header>
+      <div class="post-body"><h2>Purpose</h2>
+<p>The previous System30 result used GPT Pro as the only human-facing evaluator. To check single-judge bias, we reran the same blinded review rubric with <code>deepseek/deepseek-v4-pro</code> through OpenRouter.</p>
+<p>The answer set was unchanged: 30 ICU Bench questions, six models, two answer modes, and 360 generated answers. The only change was the evaluator model.</p>
+<h2>Main result</h2>
+<ul><li>DeepSeek V4 Pro is stricter than GPT Pro overall.</li><li>The largest judge difference is citation usefulness: DeepSeek scores citation usefulness lower by 0.331 on average.</li><li>The average human-quality score drops from 0.767 with GPT Pro to 0.733 with DeepSeek.</li><li>The mean absolute difference between the two judges&#x27; human-quality scores is 0.122.</li><li>Under the two-judge average, Qwen3.5 9B agentic remains the strongest condition.</li><li>Under the stricter two-judge screen, Gemma 4 E4B agentic and Qwen3.5 9B agentic pass with zero blocking bad cases.</li><li>Gemma 4 E4B single-shot remains strong, but it no longer clears the zero-blocking screen under the two-judge rule.</li></ul>
+<h2>Interpretation</h2>
+<p>The main high-level conclusion survives: very small models remain unreliable, and Qwen3.5 9B agentic is still the strongest answer path. However, the smallest passing condition changes when the evaluator is made stricter.</p>
+<p>This strengthens the thesis argument that model selection should not depend on a single average score from one judge. For student-facing QA, we should report judge disagreement, blocking bad cases, and the screen rule used to decide whether a model is a release candidate.</p>
+<h2>Figures</h2>
+<p><img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_by_model_mode.png" alt="Two-judge quality by model and mode" /></p>
+<p><img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_gpt_vs_deepseek_quality_scatter.png" alt="GPT Pro versus DeepSeek quality scatter" /></p>
+<p><img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Two-judge quality versus model size" /></p>
+<p><img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_deepseek_minus_gpt_quality_delta.png" alt="DeepSeek minus GPT quality delta" /></p>
+<h2>Artifacts</h2>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-16/system30-multijudge/tables/multi_judge_summary_by_model_mode.csv">Multi-judge summary CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-16/system30-multijudge/tables/judge_agreement_summary.csv">Judge agreement CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-16/system30-multijudge/tables/multi_judge_model_selection_summary.csv">Two-judge model-selection CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-16/system30-multijudge/reports/multi_judge_report.md">Multi-judge report</a></li></ul></div>
+    </article>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-20.</span>
+    </footer>
+  </body>
+</html>

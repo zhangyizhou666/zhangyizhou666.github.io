@@ -1,0 +1,721 @@
+{
+  "variants": {
+    "R0_basic_hybrid": {
+      "label": "R0 Basic hybrid",
+      "description": "PostgreSQL lexical FTS plus dense BGE-M3/pgvector retrieval only.",
+      "cases": 30,
+      "mean_elapsed_seconds": 0.1531,
+      "authority_source_present_rate": 0.6333,
+      "course_record_present_rate": 0.4667,
+      "mean_term_hit_rate": null,
+      "term_evaluated_cases": 0,
+      "mean_gold_source_recall": null,
+      "gold_evaluated_cases": 0,
+      "mean_mrr": null,
+      "source_type_counts": {
+        "pdf_document": 17,
+        "portal_notice": 19,
+        "ehandbook_page": 23,
+        "course_record": 61,
+        "web_page": 29,
+        "portal_calendar_event": 1
+      }
+    },
+    "R1_japanese_fts": {
+      "label": "R1 + Japanese FTS",
+      "description": "R0 plus Japanese-tokenized FTS using the configured Japanese tokenizer.",
+      "cases": 30,
+      "mean_elapsed_seconds": 0.3067,
+      "authority_source_present_rate": 0.8,
+      "course_record_present_rate": 0.4,
+      "mean_term_hit_rate": null,
+      "term_evaluated_cases": 0,
+      "mean_gold_source_recall": null,
+      "gold_evaluated_cases": 0,
+      "mean_mrr": null,
+      "source_type_counts": {
+        "pdf_document": 28,
+        "portal_notice": 17,
+        "ehandbook_page": 20,
+        "course_record": 46,
+        "web_page": 38,
+        "portal_calendar_event": 1
+      }
+    },
+    "R2_metadata_exact": {
+      "label": "R2 + metadata exact channels",
+      "description": "R1 plus entity-aware alias lookup and title/heading matching.",
+      "cases": 30,
+      "mean_elapsed_seconds": 0.3161,
+      "authority_source_present_rate": 0.7333,
+      "course_record_present_rate": 0.5333,
+      "mean_term_hit_rate": null,
+      "term_evaluated_cases": 0,
+      "mean_gold_source_recall": null,
+      "gold_evaluated_cases": 0,
+      "mean_mrr": null,
+      "source_type_counts": {
+        "pdf_document": 27,
+        "portal_notice": 13,
+        "course_record": 62,
+        "ehandbook_page": 17,
+        "web_page": 30,
+        "portal_calendar_event": 1
+      }
+    },
+    "R3_reranker": {
+      "label": "R3 + BGE reranker",
+      "description": "R2 plus a larger candidate pool and cross-encoder reranking.",
+      "cases": 30,
+      "mean_elapsed_seconds": 0.5151,
+      "authority_source_present_rate": 0.6667,
+      "course_record_present_rate": 0.5333,
+      "mean_term_hit_rate": null,
+      "term_evaluated_cases": 0,
+      "mean_gold_source_recall": null,
+      "gold_evaluated_cases": 0,
+      "mean_mrr": null,
+      "source_type_counts": {
+        "pdf_document": 19,
+        "portal_notice": 15,
+        "course_record": 57,
+        "ehandbook_page": 29,
+        "web_page": 29,
+        "portal_calendar_event": 1
+      }
+    },
+    "R4_full_current": {
+      "label": "R4 full current",
+      "description": "R3 plus source-authority scoring.",
+      "cases": 30,
+      "mean_elapsed_seconds": 0.4705,
+      "authority_source_present_rate": 0.6667,
+      "course_record_present_rate": 0.5,
+      "mean_term_hit_rate": null,
+      "term_evaluated_cases": 0,
+      "mean_gold_source_recall": null,
+      "gold_evaluated_cases": 0,
+      "mean_mrr": null,
+      "source_type_counts": {
+        "pdf_document": 14,
+        "portal_notice": 14,
+        "course_record": 58,
+        "ehandbook_page": 31,
+        "web_page": 32,
+        "portal_calendar_event": 1
+      }
+    }
+  },
+  "by_category": {
+    "R0_basic_hybrid": {
+      "calendar": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0197,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "campus_life": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0199,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course": {
+        "cases": 5,
+        "mean_elapsed_seconds": 0.0196,
+        "authority_source_present_rate": 0.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course_materials": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0191,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "credits": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0204,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "curriculum": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.0195,
+        "authority_source_present_rate": 0.25,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "graduation": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0182,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "it": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0282,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "language": {
+        "cases": 2,
+        "mean_elapsed_seconds": 1.9791,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "major": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0205,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "office": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0188,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "policy": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.027,
+        "authority_source_present_rate": 0.25,
+        "course_record_present_rate": 0.75,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "registration": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.0204,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.25,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_status": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0197,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_support": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.043,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      }
+    },
+    "R1_japanese_fts": {
+      "calendar": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0198,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "campus_life": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0206,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course": {
+        "cases": 5,
+        "mean_elapsed_seconds": 0.4631,
+        "authority_source_present_rate": 0.6,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course_materials": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0198,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "credits": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0215,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "curriculum": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.7581,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.75,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "graduation": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0191,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "it": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0265,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "language": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.5089,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "major": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0216,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "office": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.34,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "policy": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.4625,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "registration": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.0975,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.25,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_status": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0196,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_support": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.0436,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      }
+    },
+    "R2_metadata_exact": {
+      "calendar": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0306,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "campus_life": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0761,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course": {
+        "cases": 5,
+        "mean_elapsed_seconds": 0.4922,
+        "authority_source_present_rate": 0.6,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course_materials": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0479,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "credits": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0326,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "curriculum": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.7704,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.75,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "graduation": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0826,
+        "authority_source_present_rate": 0.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "it": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0734,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "language": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.3034,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "major": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.032,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "office": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.3502,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "policy": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.4844,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "registration": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.1104,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_status": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.0427,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_support": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.0932,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      }
+    },
+    "R3_reranker": {
+      "calendar": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.183,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "campus_life": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2306,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course": {
+        "cases": 5,
+        "mean_elapsed_seconds": 0.6397,
+        "authority_source_present_rate": 0.4,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course_materials": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2017,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "credits": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.1852,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "curriculum": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.9212,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "graduation": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2009,
+        "authority_source_present_rate": 0.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "it": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2311,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "language": {
+        "cases": 2,
+        "mean_elapsed_seconds": 1.1844,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "major": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.185,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "office": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.5075,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "policy": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.6396,
+        "authority_source_present_rate": 0.25,
+        "course_record_present_rate": 0.75,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "registration": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.2566,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.25,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_status": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.1978,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_support": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.2466,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      }
+    },
+    "R4_full_current": {
+      "calendar": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.187,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "campus_life": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2411,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course": {
+        "cases": 5,
+        "mean_elapsed_seconds": 0.622,
+        "authority_source_present_rate": 0.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "course_materials": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2007,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "credits": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.1871,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "curriculum": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.9208,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "graduation": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2134,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "it": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2419,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "language": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.4623,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "major": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.1938,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "office": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.5172,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "policy": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.6492,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 0.5,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "registration": {
+        "cases": 4,
+        "mean_elapsed_seconds": 0.2707,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 0.25,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_status": {
+        "cases": 1,
+        "mean_elapsed_seconds": 0.2098,
+        "authority_source_present_rate": 1.0,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      },
+      "student_support": {
+        "cases": 2,
+        "mean_elapsed_seconds": 0.2633,
+        "authority_source_present_rate": 0.5,
+        "course_record_present_rate": 1.0,
+        "mean_term_hit_rate": null,
+        "mean_gold_source_recall": null
+      }
+    }
+  }
+}

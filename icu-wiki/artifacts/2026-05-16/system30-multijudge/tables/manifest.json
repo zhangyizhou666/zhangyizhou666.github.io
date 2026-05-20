@@ -1,0 +1,8 @@
+{
+  "source_gpt_dir": "/Users/zhangyizhou/Library/Developer/ICU_wiki/docs/research/gpt_pro_human_judge_packet_system30_2026_05_13",
+  "source_deepseek_dir": "/Users/zhangyizhou/Library/Developer/ICU_wiki/docs/research/deepseek_human_judge_packet_system30_2026_05_16",
+  "n": 360,
+  "quality_formula": "(answer_acceptance + readability + citation_usefulness + (2 - over_answering_risk)) / 8",
+  "quality_threshold": 0.8,
+  "blocking_rule": "gpt_acceptance_0 OR deepseek_acceptance_0 OR ensemble_quality < 0.50 OR repetitive/truncated note"
+}

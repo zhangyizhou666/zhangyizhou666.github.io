@@ -1,0 +1,6 @@
+variant_id,label,cases,mean_elapsed_seconds,authority_source_present_rate,course_record_present_rate,mean_term_hit_rate,term_evaluated_cases,mean_gold_source_recall,gold_evaluated_cases,mean_mrr
+R0_basic_hybrid,R0 Basic hybrid,30,0.1531,0.6333,0.4667,,0,,0,
+R1_japanese_fts,R1 + Japanese FTS,30,0.3067,0.8,0.4,,0,,0,
+R2_metadata_exact,R2 + metadata exact channels,30,0.3161,0.7333,0.5333,,0,,0,
+R3_reranker,R3 + BGE reranker,30,0.5151,0.6667,0.5333,,0,,0,
+R4_full_current,R4 full current,30,0.4705,0.6667,0.5,,0,,0,
