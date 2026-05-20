@@ -58,6 +58,17 @@
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_04_s30_021_single_shot_feature_comparison.png" alt="Case 04 feature comparison" /></p>
 <h2>How To Read The Trajectory Plots</h2>
 <p>The PCA plots are local to each answer trajectory. They show how the cumulative mean of generated-token hidden states moves over the generated answer. The recurrence matrices show cosine similarity among cumulative hidden states; blocky high-similarity regions can indicate repeated or loop-like generation states.</p>
+<h2>Representative 3D Trajectories</h2>
+<p>These 3D plots use local PCA for each model&#x27;s cumulative hidden-state trajectory. They are useful for visual inspection, but the quantitative comparison should still use the metrics table because the axes are not shared across model sizes.</p>
+<p>The <code>s30_023</code> case is the most severe evidence-dump example. The 0.8B answer has quality 0.000 and 269 repeated 4-grams, while the larger references are much more usable.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_01_s30_023_agentic_trajectory3d_static.png" alt="Case 01 3D trajectory" /></p>
+<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_01_s30_023_agentic_trajectory3d.html">Open draggable 3D viewer for case 01</a></p>
+<p>The <code>s30_014</code> case shows the clearest repetition/recurrence pattern in this first run. The 0.8B trajectory has higher recurrence and much higher repeated 4-grams than the 4B reference.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_trajectory3d_static.png" alt="Case 02 3D trajectory" /></p>
+<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_02_s30_014_agentic_trajectory3d.html">Open draggable 3D viewer for case 02</a></p>
+<p>The <code>s30_021</code> case is the cleanest single-shot same-context comparison. The 0.8B answer treats retrieved course records as mandatory-course evidence, while the 4B answer more safely recognizes evidence insufficiency.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_04_s30_021_single_shot_trajectory3d_static.png" alt="Case 04 3D trajectory" /></p>
+<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_04_s30_021_single_shot_trajectory3d.html">Open draggable 3D viewer for case 04</a></p>
 <p>Example recurrence plots for <code>s30_014</code>:</p>
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_Qwen_Qwen3.5-0.8B_recurrence.png" alt="Qwen 0.8B recurrence" /></p>
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_Qwen_Qwen3.5-4B_recurrence.png" alt="Qwen 4B recurrence" /></p>
@@ -65,7 +76,7 @@
 <p>This first run supports a cautious claim: small-model bad answers can be organized into a hidden-state trajectory diagnostic, but the most reliable signal in this pass is still repetition in the output text. Hidden recurrence and path-length features are promising supporting signals, not a finished classifier.</p>
 <p>For the thesis, this is best used as a small case study rather than a main quantitative result. It motivates a future question: whether repetition, copy-dump behavior, or over-answering can be detected before the answer is complete.</p>
 <h2>Artifacts</h2>
-<ul><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/reports/analysis.md">Analysis report</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/trajectory_features.csv">Trajectory features CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/selected_cases.csv">Selected cases CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/candidate_bad_cases.csv">Candidate bad cases CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/summary.json">Summary JSON</a></li></ul></div>
+<ul><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/reports/analysis.md">Analysis report</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/">All interactive 3D viewers</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/trajectory_features.csv">Trajectory features CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/selected_cases.csv">Selected cases CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/candidate_bad_cases.csv">Candidate bad cases CSV</a></li><li><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/tables/summary.json">Summary JSON</a></li></ul></div>
     </article>
     </main>
     <footer class="site-footer">
