@@ -1,0 +1,29 @@
+{
+  "run_id": "system30_hidden_trajectory_20260521",
+  "case_groups": 6,
+  "records": 15,
+  "models": [
+    "Qwen/Qwen3.5-0.8B",
+    "Qwen/Qwen3.5-2B",
+    "Qwen/Qwen3.5-4B"
+  ],
+  "method": "teacher_forced_saved_system30_answers",
+  "selected_layers": "50%, 75%, 90%, final",
+  "max_answer_tokens": 384,
+  "qwen08_bad": {
+    "n": 6,
+    "mean_human_quality": 0.2916666666666667,
+    "mean_repeated_4gram": 82.5,
+    "mean_cumulative_recurrence_095": 0.01864567302754837,
+    "mean_path_length_per_token": 4.032329839446626,
+    "mean_entropy": 0.8995696274614593
+  },
+  "larger_reference": {
+    "n": 9,
+    "mean_human_quality": 0.875,
+    "mean_repeated_4gram": 18.555555555555557,
+    "mean_cumulative_recurrence_095": 0.004808829452472481,
+    "mean_path_length_per_token": 8.233053975922926,
+    "mean_entropy": 0.844059034811857
+  }
+}

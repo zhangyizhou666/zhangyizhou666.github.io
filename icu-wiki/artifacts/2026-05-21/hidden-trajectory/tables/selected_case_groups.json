@@ -1,0 +1,286 @@
+{
+  "case_groups": [
+    {
+      "case_group_id": "case_01_s30_023_agentic",
+      "question_id": "s30_023",
+      "mode": "agentic",
+      "question": "ICUに入学した後、必ず履修しなければならない科目は何ですか？どの公式ページを見るべきですか？",
+      "category": "curriculum",
+      "language": "ja",
+      "selection_reason": "Qwen3.5 0.8B has low judge score, repetition/copy-dump heuristics, or blocking-failure signals.",
+      "badness_score": 98.52,
+      "cases": [
+        {
+          "role": "qwen08_bad",
+          "model": "Qwen/Qwen3.5-0.8B",
+          "mode": "agentic",
+          "question_id": "s30_023",
+          "human_quality": 0.0,
+          "answer_acceptance": 0.0,
+          "readability": 0.0,
+          "citation_usefulness": 0.0,
+          "over_answering_risk": 2.0,
+          "primary_failure_tag": "unsupported_claim",
+          "secondary_failure_tag": "verbose_low_quality",
+          "answer_preview": "ICUの入学後、必ず履修しなければならない必修科目は「リベラルアーツ英語プログラム（ELA）」です。 [1] Title: ICUの入試について｜国際基督教大学（ICU） Source: https://www.icu.ac.jp/admissions/undergraduate/exam Evidence: 一般選抜、総合型選抜<4月入学>、総合型選抜<4月/9月入学>、EJU（日本留学試験）利用、学校推薦型選抜<4月入学専願>を受ける場合、卒業要件上の必修語学科目は「リベラルアーツ英語プログラム」（ELA: English for Liberal Arts Program）となります。 [2] Title: ICUの入学について｜国際基督教大学（ICU） Source: https://www.icu.ac.jp/admissions/undergraduate/undergraduate Evidence: 入学者選抜に関"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-4B",
+          "mode": "agentic",
+          "question_id": "s30_023",
+          "human_quality": 1.0,
+          "answer_acceptance": 2.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "none",
+          "secondary_failure_tag": "none",
+          "answer_preview": "ICU に入学した後、必ず履修しなければならない科目は以下の通りです。 **1. 保健体育科目** すべての学生が卒業要件として履修する必要があります。 * **健康科学（Health Science）**: 1 科目・1 単位 [1] * **PE エクササイズⅠ・Ⅱ・Ⅲ**: 3 種目・1 単位（各種目は 1/3 単位）[1] **2. 語学科目** 入学時の選抜方法によって必修語学科目が異なります。 * **リベラルアーツ英語プログラム（ELA）**: 一般選抜、総合型選抜（4 月入学専願）、EJU 利用などの場合、原則として必修です。ただし、英語力によって JLP を選択できる場合があります [2]。 * **日本語教育プログラム（JLP）**: 総合型選抜（4 月/9 月入学）の English Language Based Admissions を受けた場合、必修です [2]。 公式ページを見るべきは以下の 2 つで"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-2B",
+          "mode": "agentic",
+          "question_id": "s30_023",
+          "human_quality": 0.875,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "none",
+          "answer_preview": "ICUに入学した後、必ず履修しなければならない科目は「保健体育」です。これは卒業要件上の必修科目として、保健体育プログラムの講義科目である「健康科学（Health Science）」と実技科目である「PEエクササイズⅠ・Ⅱ・Ⅲ」を履修することから明かされています [1]。 この公式ページは「保健体育｜国際基督教大学（ICU）」です。"
+        }
+      ]
+    },
+    {
+      "case_group_id": "case_02_s30_014_agentic",
+      "question_id": "s30_014",
+      "mode": "agentic",
+      "question": "履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？",
+      "category": "office",
+      "language": "ja",
+      "selection_reason": "Qwen3.5 0.8B has low judge score, repetition/copy-dump heuristics, or blocking-failure signals.",
+      "badness_score": 57.0,
+      "cases": [
+        {
+          "role": "qwen08_bad",
+          "model": "Qwen/Qwen3.5-0.8B",
+          "mode": "agentic",
+          "question_id": "s30_014",
+          "human_quality": 0.75,
+          "answer_acceptance": 1.0,
+          "readability": 1.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "verbose_low_quality",
+          "answer_preview": "履修登録の手続き、日程、申請方法、および連絡先（教務グループ）は、以下のページで直接記載されています。 [1] https://sites.google.com/icu.ac.jp/icu-ehandbook/お知らせ更新情報/2024-3-29-教務グループからの重要なお知らせ春学期登録版 [2] https://sites.google.com/icu.ac.jp/icu-ehandbook/お知らせ更新情報/2025-4-1-教務グループからの重要なお知らせ春学期登録版 [3] https://sites.google.com/icu.ac.jp/icu-ehandbook/お知らせ更新情報/2024-11-27-2024年度第3学期-教務グループからの重要なお知らせ冬学期登録版 [4] https://sites.google.com/icu.ac.jp/icu-ehandbook/お知らせ更新情報/2025-4-1-教"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-4B",
+          "mode": "agentic",
+          "question_id": "s30_014",
+          "human_quality": 0.875,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "none",
+          "answer_preview": "履修登録に関する問い合わせは、**教育事務グループ**（Educational Affairs Group）に連絡してください。 * **連絡先**: ea-group@icu.ac.jp * **担当部署**: 教育事務グループ（履修・成績・卒業要件に関する問い合わせを担当）[1] また、登録変更や卒業要件の確認については、同グループが対応しています [1][3]。"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-2B",
+          "mode": "agentic",
+          "question_id": "s30_014",
+          "human_quality": 0.75,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 1.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "citation_mismatch",
+          "answer_preview": "教育事務グループへの連絡先は、以下の公式ページで確認できます。 * **ICU Portal**：詳細な手順や連絡先情報（例：ea-group@icu.ac.jp）が掲載されています。 [2] * **Registration Website**：履修登録の結果確認や、登録変更後の確認画面（Confirm画面）が利用可能です。 [3] * **ICU Portal**：履修登録の日程や、登録変更期間終了後の登録変更の制限事項が記載されています。 [4] * **ICU Portal**：2025年度秋学期の科目登録に関する諸注意（登録日、Late Registration、登録変更の制限など）が掲載されています。 [5] **結論：** 履修登録の連絡先や詳細情報は、**ICU Portal**および**Registration Website**で確認できます。特に登録変更後の確認方法や、登録変更期間終了後の登録変更の制限につ"
+        }
+      ]
+    },
+    {
+      "case_group_id": "case_03_s30_024_agentic",
+      "question_id": "s30_024",
+      "mode": "agentic",
+      "question": "进入ICU以后必须修哪些课程？我应该看哪个官方页面？",
+      "category": "curriculum",
+      "language": "zh",
+      "selection_reason": "Qwen3.5 0.8B has low judge score, repetition/copy-dump heuristics, or blocking-failure signals.",
+      "badness_score": 54.39,
+      "cases": [
+        {
+          "role": "qwen08_bad",
+          "model": "Qwen/Qwen3.5-0.8B",
+          "mode": "agentic",
+          "question_id": "s30_024",
+          "human_quality": 0.0,
+          "answer_acceptance": 0.0,
+          "readability": 0.0,
+          "citation_usefulness": 0.0,
+          "over_answering_risk": 2.0,
+          "primary_failure_tag": "unsupported_claim",
+          "secondary_failure_tag": "verbose_low_quality",
+          "answer_preview": "进入 ICU 后，必须修以下课程： 1. **Health Science（健康科学）**：作为毕业必修科目，共 1 个学分（1 个单位）。内容包括健康与体育教育讲座，以及 PE 运动课 I、II、III（共 3 个学分，每个 1/3 个单位）。这些课程旨在让学生了解大学生活中的健康与安全，并提升终身的生活质量。 2. **Physical Education Exercise I, II, and III（PE 运动课 I、II、III）**：作为毕业必修科目，共 3 个学分（各 1/3 个单位）。这些课程包含实际运动练习，让学生学习健康与安全知识，并提升沟通、领导力、团队合作等能力。 3. **Teacher's Certificate in Physical Education（体育理论）**：如果学生有志于将来成为中学或高校教师，则需修习此科目。 **关于官方页面**： * 学生应前往 **ICU 官方网站** 查看。 "
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-4B",
+          "mode": "agentic",
+          "question_id": "s30_024",
+          "human_quality": 0.75,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 1.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "over_answering",
+          "answer_preview": "进入 ICU 后，作为毕业必修要求，学生必须修读以下课程： 1. **健康科学 (Health Science)**：1 门课，1 学分，包含健康与体育教育讲座 [1][2]。 2. **体育实技课程 (Physical Education Exercise)**：必须修读 **I、II、III** 三门课，共 1 学分（每门课 1/3 学分），包含实践练习 [1][2]。 关于官方页面，建议查看 ICU 官方网站的学术部分获取详细信息，或关注 ICU 的官方社交媒体账号以获取最新信息 [1][2][4]。 *注：若学生志在取得教师执照并未来从事中学或高中教学工作，还需额外修读“体育理论 (Physical Education)\"作为教职课程的必修科目 [2]。*"
+        }
+      ]
+    },
+    {
+      "case_group_id": "case_04_s30_021_single_shot",
+      "question_id": "s30_021",
+      "mode": "single_shot",
+      "question": "What are the mandatory courses I need to take after coming to ICU?",
+      "category": "curriculum",
+      "language": "en",
+      "selection_reason": "Qwen3.5 0.8B has low judge score, repetition/copy-dump heuristics, or blocking-failure signals.",
+      "badness_score": 46.4,
+      "cases": [
+        {
+          "role": "qwen08_bad",
+          "model": "Qwen/Qwen3.5-0.8B",
+          "mode": "single_shot",
+          "question_id": "s30_021",
+          "human_quality": 0.5,
+          "answer_acceptance": 0.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 2.0,
+          "primary_failure_tag": "unsupported_claim",
+          "secondary_failure_tag": "over_answering",
+          "answer_preview": "Based on the provided evidence, the mandatory courses you need to take after coming to ICU are: 1. **Global Governance** (Course No: GLS101) * **Evidence:** [1] 2. **Introduction to Business Administration** (Course No: BUS102) * **Evidence:** [2] 3. **Introduction to Capital Markets** (Course No: BUS206) * **Evidence:** [3] 4. **X: Introduction to Christianity** (Course No: GEX001) * **Evidence:** [4] 5. **English C"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-4B",
+          "mode": "single_shot",
+          "question_id": "s30_021",
+          "human_quality": 0.875,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "evidence_insufficient",
+          "secondary_failure_tag": "none",
+          "answer_preview": "The retrieved ICU evidence is not sufficient to answer your question. While the provided documents list specific courses such as *Global Governance* [1], *Introduction to Business Administration* [2], *Introduction to Capital Markets* [3], *X: Introduction to Christianity* [4], and *English Communication* [5], they do not explicitly state whether these are mandatory, required for all incoming students, or part of a s"
+        }
+      ]
+    },
+    {
+      "case_group_id": "case_05_s30_027_agentic",
+      "question_id": "s30_027",
+      "mode": "agentic",
+      "question": "我可以在ICU的毕业论文里使用ChatGPT吗？如果资料不够，请明确告诉我。",
+      "category": "policy",
+      "language": "zh",
+      "selection_reason": "Qwen3.5 0.8B has low judge score, repetition/copy-dump heuristics, or blocking-failure signals.",
+      "badness_score": 42.99,
+      "cases": [
+        {
+          "role": "qwen08_bad",
+          "model": "Qwen/Qwen3.5-0.8B",
+          "mode": "agentic",
+          "question_id": "s30_027",
+          "human_quality": 0.125,
+          "answer_acceptance": 0.0,
+          "readability": 0.0,
+          "citation_usefulness": 1.0,
+          "over_answering_risk": 2.0,
+          "primary_failure_tag": "unsupported_claim",
+          "secondary_failure_tag": "language_or_format_failure",
+          "answer_preview": "はい、ICU の毕业论文（Senior Thesis）において ChatGPT を使用することは可能です。ただし、以下の条件を満たす必要があります。 1. **ICU Net ID を取得する**： 学内のシステム（Portal, E-mail, Microsoft 365, Moodle, ICU MAP など）にログインし、ICU Net ID を取得する必要があります。 [1] 2. **Generative AI の使用が禁止されている**： 論文の作成や提出において、Generative AI の使用は禁止されており、その使用が論文の品質を低下させる行為となります。 [2] 3. **ICU Policy の遵守**： 論文の作成において、Generative AI の使用が禁止されているため、その使用が論文の品質を低下させる行為となります。 [2] 4. **合理的配慮の適用**： 若き研究者や研究員など、障がいや慢"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-4B",
+          "mode": "agentic",
+          "question_id": "s30_027",
+          "human_quality": 1.0,
+          "answer_acceptance": 2.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "none",
+          "secondary_failure_tag": "none",
+          "answer_preview": "根据 ICU 的学术诚信政策，**您不能在 ICU 的毕业论文中直接使用 ChatGPT 来撰写或生成论文内容**。 具体规定如下： 1. **禁止作为个人作业使用**：ICU 强调批判性思维，要求学生用自己的思想、研究和反思来完成任务。生成式 AI 创建的文字，即使经过修改，也不被视为学生自己的作品，且被视为违反学术诚信政策 [1]。 2. **禁止用于成绩评估的提交物**：将生成式 AI 创建的内容作为成绩评估的提交物（如论文），等同于剽窃（将他人的作品或研究成果伪称为自己的作品）[3]。 3. **禁止由 AI 完成独立任务**：必须由学生自己完成的任务（如毕业论文）不应由生成式 AI 执行 [2]。 4. **例外情况**：除非您的课程导师**特别指示**学生可以使用 AI，否则上述政策适用 [2]。 **结论**： 目前的政策明确禁止将 AI 生成的内容作为毕业论文提交。如果您需要利用 AI 进行辅助（例如查找资料或构"
+        }
+      ]
+    },
+    {
+      "case_group_id": "case_06_s30_002_agentic",
+      "question_id": "s30_002",
+      "mode": "agentic",
+      "question": "I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",
+      "category": "registration",
+      "language": "en",
+      "selection_reason": "Qwen3.5 0.8B has low judge score, repetition/copy-dump heuristics, or blocking-failure signals.",
+      "badness_score": 41.7,
+      "cases": [
+        {
+          "role": "qwen08_bad",
+          "model": "Qwen/Qwen3.5-0.8B",
+          "mode": "agentic",
+          "question_id": "s30_002",
+          "human_quality": 0.375,
+          "answer_acceptance": 0.0,
+          "readability": 1.0,
+          "citation_usefulness": 1.0,
+          "over_answering_risk": 1.0,
+          "primary_failure_tag": "unsupported_claim",
+          "secondary_failure_tag": "missing_key_condition",
+          "answer_preview": "You can still register or change your courses, but you must complete the registration during the designated change period. If you miss the registration day, you must take a leave of absence or withdraw from the university. [1] The course record indicates that registration is not possible on the registration day. [2] The handbook explicitly states that registration is not acceptable after the registration change perio"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-2B",
+          "mode": "agentic",
+          "question_id": "s30_002",
+          "human_quality": 0.875,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "none",
+          "answer_preview": "You can still register or change your courses, but you must complete the procedure during the \"registration change period\" (Late Registration). If you miss the normal registration day, you cannot register after this period [2], [3], [4], [5]. To complete the procedure, you must click the \"SAVE\" button to finalize the registration [2], [3], [4], [5]. Even if you input the data, the process is not completed unless this"
+        },
+        {
+          "role": "larger_reference",
+          "model": "Qwen/Qwen3.5-4B",
+          "mode": "agentic",
+          "question_id": "s30_002",
+          "human_quality": 0.875,
+          "answer_acceptance": 1.0,
+          "readability": 2.0,
+          "citation_usefulness": 2.0,
+          "over_answering_risk": 0.0,
+          "primary_failure_tag": "missing_key_condition",
+          "secondary_failure_tag": "none",
+          "answer_preview": "Yes, you can still register or change your courses, but you must do so during the **registration change period**. If you miss the normal registration day due to illness, you are required to complete the \"Late Registration\" during this specific window [1][2][3]. **Important procedural steps to pay attention to:** * **Click \"SAVE\":** Simply inputting data is not enough; you must click the \"SAVE\" button to complete the "
+        }
+      ]
+    }
+  ]
+}
