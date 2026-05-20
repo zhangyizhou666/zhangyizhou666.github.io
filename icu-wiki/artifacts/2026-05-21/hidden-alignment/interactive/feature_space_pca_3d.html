@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model-agnostic feature-space PCA</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 28px; color: #0f172a; background: #f8fafc; }
+    .note { color: #475569; max-width: 1040px; line-height: 1.55; }
+    .plot { height: 620px; background: white; border: 1px solid #dbe4ef; border-radius: 16px; box-shadow: 0 12px 36px rgba(15, 23, 42, 0.07); }
+    table { border-collapse: collapse; background: white; margin: 20px 0; width: 100%; box-shadow: 0 12px 36px rgba(15, 23, 42, 0.05); }
+    th, td { border: 1px solid #dbe4ef; padding: 8px 10px; text-align: left; font-size: 14px; }
+    th { background: #e2e8f0; }
+  </style>
+</head>
+<body>
+  <h1>Model-agnostic feature-space PCA</h1>
+  <p class="note">This plot uses scalar features shared across all model sizes, so it does not require hidden-state alignment.</p>
+  
+<div id="plot" class="plot"></div>
+<script>
+const points = [{"x": -4.304243564605713, "y": -3.396010637283325, "z": 3.0336837768554688, "label": "case_01_s30_023_agentic Qwen 0.8B", "role": "qwen08_bad", "quality": 0.0, "rep4": 269}, {"x": -5.2107648849487305, "y": 4.491759777069092, "z": 0.5159968137741089, "label": "case_02_s30_014_agentic Qwen 0.8B", "role": "qwen08_bad", "quality": 0.75, "rep4": 92}, {"x": -3.5260608196258545, "y": -0.14901603758335114, "z": -1.8219653367996216, "label": "case_03_s30_024_agentic Qwen 0.8B", "role": "qwen08_bad", "quality": 0.0, "rep4": 36}, {"x": -1.7345552444458008, "y": 0.7507244944572449, "z": 0.5862737894058228, "label": "case_04_s30_021_single_shot Qwen 0.8B", "role": "qwen08_bad", "quality": 0.5, "rep4": 38}, {"x": -1.1238787174224854, "y": -2.5685548782348633, "z": -1.7770980596542358, "label": "case_05_s30_027_agentic Qwen 0.8B", "role": "qwen08_bad", "quality": 0.125, "rep4": 16}, {"x": -0.49225059151649475, "y": -0.5794986486434937, "z": -0.907253623008728, "label": "case_06_s30_002_agentic Qwen 0.8B", "role": "qwen08_bad", "quality": 0.375, "rep4": 44}, {"x": -0.5922346115112305, "y": 0.20413929224014282, "z": 0.06972689181566238, "label": "case_01_s30_023_agentic Qwen 4B", "role": "larger_reference", "quality": 1.0, "rep4": 49}, {"x": 4.957530498504639, "y": 0.9887633919715881, "z": 1.4468247890472412, "label": "case_02_s30_014_agentic Qwen 4B", "role": "larger_reference", "quality": 0.875, "rep4": 0}, {"x": 1.2562273740768433, "y": 0.17487700283527374, "z": -0.38712993264198303, "label": "case_03_s30_024_agentic Qwen 4B", "role": "larger_reference", "quality": 0.75, "rep4": 9}, {"x": 2.6533164978027344, "y": 0.02351773902773857, "z": 0.09501871466636658, "label": "case_04_s30_021_single_shot Qwen 4B", "role": "larger_reference", "quality": 0.875, "rep4": 3}, {"x": 1.0502511262893677, "y": -0.3902977406978607, "z": -0.7532622814178467, "label": "case_05_s30_027_agentic Qwen 4B", "role": "larger_reference", "quality": 1.0, "rep4": 2}, {"x": 1.0812315940856934, "y": -0.14278317987918854, "z": -0.3372964859008789, "label": "case_06_s30_002_agentic Qwen 4B", "role": "larger_reference", "quality": 0.875, "rep4": 33}, {"x": 3.792239189147949, "y": 0.5543116927146912, "z": 0.7263780832290649, "label": "case_01_s30_023_agentic Qwen 2B", "role": "larger_reference", "quality": 0.875, "rep4": 0}, {"x": 1.4383372068405151, "y": -0.346089243888855, "z": -0.33796367049217224, "label": "case_02_s30_014_agentic Qwen 2B", "role": "larger_reference", "quality": 0.75, "rep4": 19}, {"x": 0.7548547387123108, "y": 0.384156733751297, "z": -0.15193411707878113, "label": "case_06_s30_002_agentic Qwen 2B", "role": "larger_reference", "quality": 0.875, "rep4": 52}];
+const trace = {
+  type: 'scatter3d',
+  mode: 'markers+text',
+  x: points.map(p => p.x),
+  y: points.map(p => p.y),
+  z: points.map(p => p.z),
+  text: points.map(p => p.label),
+  hovertext: points.map(p => `quality=${p.quality.toFixed(3)} rep4=${p.rep4} role=${p.role}`),
+  marker: { size: 6, color: points.map(p => p.role === 'qwen08_bad' ? '#dc2626' : '#2563eb') }
+};
+Plotly.newPlot('plot', [trace], {
+  margin: { l: 0, r: 0, b: 0, t: 24 },
+  scene: { xaxis: { title: 'PC1' }, yaxis: { title: 'PC2' }, zaxis: { title: 'PC3' } }
+}, { responsive: true });
+</script>
+
+</body>
+</html>

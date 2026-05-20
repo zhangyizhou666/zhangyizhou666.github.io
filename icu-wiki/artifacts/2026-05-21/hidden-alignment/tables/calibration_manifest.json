@@ -1,0 +1,14 @@
+{
+  "sample_count": 240,
+  "excluded_heldout_question_ids": [
+    "s30_002",
+    "s30_014",
+    "s30_021",
+    "s30_023",
+    "s30_024",
+    "s30_027"
+  ],
+  "max_samples": 240,
+  "max_answer_segments": 70,
+  "max_passages_per_source": 30
+}

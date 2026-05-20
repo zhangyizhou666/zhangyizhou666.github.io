@@ -1,0 +1,15 @@
+{
+  "models": [
+    "Qwen/Qwen3.5-0.8B",
+    "Qwen/Qwen3.5-2B",
+    "Qwen/Qwen3.5-4B"
+  ],
+  "anchor_model": "Qwen/Qwen3.5-4B",
+  "common_calibration_samples": 240,
+  "train_samples": 199,
+  "test_samples": 41,
+  "layer": "f090",
+  "pca_dim_requested": 64,
+  "ridge_alpha": 10.0,
+  "caveat": "Aligned PCA is exploratory; use validation and scalar features as primary evidence."
+}
