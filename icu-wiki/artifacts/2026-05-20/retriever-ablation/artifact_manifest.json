@@ -1,17 +1,24 @@
 {
-  "source_run_dir": "/Users/zhangyizhou/Library/Developer/ICU_wiki/data/diagnostics/runs/retriever_pipeline_ablation_20260520",
+  "source_run_dir": "/Users/zhangyizhou/Library/Developer/ICU_wiki/data/diagnostics/runs/retriever_answer_ablation_gemma4e4b_raw_20260520",
   "output_root": "/Users/zhangyizhou/Library/Developer/ICU_wiki/apps/research_site/public/artifacts/2026-05-20/retriever-ablation",
-  "case_count": 30,
-  "record_count": 150,
-  "warnings": [
-    "No selected cases contain gold_source_ids; gold-source recall will be null.",
-    "No selected cases contain expected_terms; term-hit metrics will be null."
-  ],
+  "answer_count": 150,
+  "variant_count": 5,
+  "judge": "deepseek/deepseek-v4-pro",
+  "generator": "google/gemma-4-E4B-it",
+  "conservative_policy_guard": "bypassed for diagnostic only",
   "plots": [
-    "retriever_ablation_adjacent_changes.png",
-    "retriever_ablation_aggregate_metrics.png",
-    "retriever_ablation_case_source_fit_heatmap.png",
-    "retriever_ablation_critical_cases_top_source.png",
-    "retriever_ablation_source_type_composition.png"
+    "retriever_answer_failure_tags.png",
+    "retriever_answer_gold_recall_mrr.png",
+    "retriever_answer_latency.png",
+    "retriever_answer_quality_blocking.png",
+    "retriever_answer_question_heatmap.png"
+  ],
+  "tables": [
+    "manifest.json",
+    "retriever_answer_ablation_failure_tags.csv",
+    "retriever_answer_ablation_summary_by_question.csv",
+    "retriever_answer_ablation_summary_by_variant.csv",
+    "scored_answers_public.jsonl",
+    "summary.json"
   ]
 }

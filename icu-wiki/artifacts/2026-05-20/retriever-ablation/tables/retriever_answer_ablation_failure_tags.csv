@@ -1,0 +1,6 @@
+variant_id,evidence_insufficient,language_or_format_failure,missing_key_condition,retrieval_miss,verbose_low_quality
+R0_basic_hybrid,8,1,3,8,1
+R1_japanese_fts,9,1,3,10,1
+R2_metadata_exact,10,0,2,10,1
+R3_reranker,10,0,5,4,0
+R4_full_current,8,0,8,3,0

@@ -1,0 +1,31 @@
+question_id,category,language,question,answers,mean_human_quality,clean_pass_rate,blocking_cases,source_fit_rate,mean_gold_source_recall,mean_mrr,top_failure_tags
+s30_001,language,en,"I'm a new student and I plan to take JLP, but I don't know which Japanese level I will be placed into. How is the level decided, and where should I check the official information?",5,1.0,1.0,0,1.0,0.6667,1.0,
+s30_002,registration,en,"I missed the normal course registration day because I was sick. Can I still register or change my courses, and what part of the procedure should I pay attention to?",5,0.95,0.8,0,1.0,0.4667,0.6,missing_key_condition:1
+s30_003,registration,en,"If I want to withdraw from a course after seeing my workload, what rules or deadlines should I check before I make the decision?",5,0.85,0.0,0,1.0,1.0,1.0,missing_key_condition:5
+s30_004,major,en,I am trying to plan my major requirements and study abroad at the same time. Where should I look to confirm whether courses or credits will count toward my ICU requirements?,5,0.675,0.0,0,1.0,0.2667,0.4,evidence_insufficient:3; missing_key_condition:2
+s30_005,graduation,en,"I am worried about senior thesis deadlines. Where can I find the official schedule, and what kind of thesis-related deadlines should I expect to check?",5,0.8,0.2,0,0.6,0.12,0.4667,evidence_insufficient:3; retrieval_miss:1
+s30_006,student_status,en,"If I take a leave of absence and later return to ICU, what procedure or office information should I check before planning my courses again?",5,0.45,0.0,5,1.0,0.1333,0.1,retrieval_miss:5; evidence_insufficient:1
+s30_007,student_support,en,"I feel overwhelmed and want to talk to someone, but I am worried about privacy. Where can I find official information about counseling or student support at ICU?",5,0.775,0.0,1,0.8,0.1333,0.0667,evidence_insufficient:2; missing_key_condition:2; retrieval_miss:1
+s30_008,student_support,en,"If I need exam accommodations because of a disability or health condition, where should I start, and what kind of official support page should I look for?",5,1.0,1.0,0,0.6,0.5,0.7333,
+s30_009,it,en,I am graduating from undergraduate school but continuing to ICU graduate school. What should I know about my IT account or services after graduation?,5,0.65,0.4,3,1.0,0.3,0.4,retrieval_miss:3
+s30_010,language,ja,日本語プログラムを履修したいのですが、JLPのレベル分けや履修方法について、どこで公式情報を確認できますか？,5,0.725,0.0,0,1.0,0.45,0.8667,evidence_insufficient:3; missing_key_condition:2; language_or_format_failure:1
+s30_011,campus_life,en,"I saw something about Chapel Hour and Christianity Week, but I am not sure whether these are academic events or campus-life events. Where should I check the schedule?",5,0.8,0.2,0,1.0,0.36,0.7,evidence_insufficient:3; missing_key_condition:1
+s30_012,calendar,en,"For Spring 2026, I need to know both the registration period and the advisor interview timing. Which official calendar or registration pages should I check?",5,1.0,1.0,0,1.0,0.85,1.0,
+s30_013,credits,en,I transferred credits before entering ICU. Can the system tell me exactly how many more credits I personally need to graduate early?,5,1.0,1.0,0,1.0,0.6667,1.0,
+s30_014,office,ja,履修登録について教育事務グループに確認したいです。連絡先や関連する公式ページはどこで確認できますか？,5,0.575,0.2,4,1.0,0.2,0.1833,retrieval_miss:4; evidence_insufficient:2
+s30_015,policy,en,"If the chatbot answer and the ICU Portal announcement seem different about a deadline, which source should I trust and what should I do next?",5,0.675,0.0,0,1.0,0.7,0.2533,evidence_insufficient:5
+s30_016,course,en,"I want to take Logic Programming in Autumn 2026. Who teaches it, when is it scheduled, and where should I check the official course information?",5,1.0,1.0,0,1.0,0.6667,0.6,
+s30_017,course,en,"I remember there is a class called Statistical Information Literacy. How is the grade evaluated, and what kind of work does the syllabus seem to require?",5,1.0,1.0,0,1.0,0.8,1.0,
+s30_018,course,ja,MIURA先生って、どの日本語の授業を担当していますか？レベルも少し知りたいです。,5,0.8,0.4,1,1.0,0.28,0.1733,retrieval_miss:2; evidence_insufficient:1
+s30_019,registration,ja,履修登録サイトで科目を選択したのに登録が完了したか不安です。どの操作や確認をすればよいですか？,5,1.0,1.0,0,1.0,0.3333,0.4,
+s30_020,course_materials,en,"I need to buy textbooks for Spring 2026 courses. Where should I check the official textbook purchase information, and what details should I not expect the chatbot to know?",5,0.75,0.0,0,1.0,1.0,0.6333,missing_key_condition:5
+s30_021,curriculum,en,What are the mandatory courses I need to take after coming to ICU?,5,0.425,0.0,5,0.0,0.0,0.0,retrieval_miss:5
+s30_022,curriculum,en,What is the mandatory course I need to take after entering ICU?,5,0.475,0.0,5,0.0,0.08,0.1,retrieval_miss:5
+s30_023,curriculum,ja,ICUに入学した後、必ず履修しなければならない科目は何ですか？どの公式ページを見るべきですか？,5,0.65,0.0,1,0.8,0.08,0.2,evidence_insufficient:5; retrieval_miss:1; missing_key_condition:1
+s30_024,curriculum,zh,进入ICU以后必须修哪些课程？我应该看哪个官方页面？,5,0.75,0.0,0,1.0,0.3333,0.4,evidence_insufficient:5
+s30_025,policy,ja,大学の卒論にチャットGPTを使っても大丈夫ですか？,5,0.625,0.0,2,0.2,0.1,0.04,evidence_insufficient:3; retrieval_miss:2; language_or_format_failure:1; missing_key_condition:1
+s30_026,policy,en,Can I use ChatGPT for my senior thesis at ICU?,5,1.0,1.0,0,0.0,0.7333,0.68,
+s30_027,policy,zh,我可以在ICU的毕业论文里使用ChatGPT吗？如果资料不够，请明确告诉我。,5,0.625,0.0,2,0.4,0.2,0.2,evidence_insufficient:5; retrieval_miss:2
+s30_028,course,ja,鏑木先生が担当している授業は何ですか？,5,0.725,0.4,2,1.0,0.28,0.6,retrieval_miss:2; evidence_insufficient:2
+s30_029,course,zh,鏑木先生教哪些课？请只根据检索到的ICU课程资料回答。,5,0.7,0.0,1,1.0,0.3,0.6,retrieval_miss:2; evidence_insufficient:2; missing_key_condition:1
+s30_030,registration,en,"After I select courses on the registration website, how can I check whether my registration is actually complete?",5,0.9,0.8,3,1.0,1.0,0.7333,verbose_low_quality:3
