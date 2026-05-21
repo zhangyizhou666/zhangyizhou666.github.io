@@ -1,0 +1,4 @@
+anchor_model,heldout_rmse,layer,matched_cosine_mean,model,paired_retrieval_at_1,pca_dim,shuffle_matched_cosine_mean,shuffle_paired_retrieval_at_1,shuffle_rmse,test_samples,train_samples
+Qwen/Qwen3.5-4B,0.0,f090,,Qwen/Qwen3.5-4B,1.0,64,,0.0,,41,199
+Qwen/Qwen3.5-4B,1.8383617401123047,f090,0.9212573170661926,Qwen/Qwen3.5-0.8B,1.0,64,0.0494079515337944,0.07317073170731707,5.456287860870361,41,199
+Qwen/Qwen3.5-4B,1.4929494857788086,f090,0.9489351511001587,Qwen/Qwen3.5-2B,1.0,64,-0.02151319943368435,0.024390243902439025,5.5280327796936035,41,199

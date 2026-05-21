@@ -1,0 +1,18 @@
+{
+  "case_group_id": "case_01_s30_023_agentic",
+  "bad_model": "Qwen/Qwen3.5-0.8B",
+  "reference_models": [
+    "Qwen/Qwen3.5-2B",
+    "Qwen/Qwen3.5-4B"
+  ],
+  "anchor_model": "Qwen/Qwen3.5-4B",
+  "layer_label": "f090",
+  "layer_numbers": {
+    "Qwen/Qwen3.5-0.8B": 22,
+    "Qwen/Qwen3.5-2B": 22,
+    "Qwen/Qwen3.5-4B": 29
+  },
+  "calibration_dir": "data/diagnostics/runs/system30_cross_model_alignment_20260521/calibration",
+  "trajectory_dir": "data/diagnostics/runs/system30_hidden_trajectory_20260521_controlled",
+  "method_caveat": "Surface-text matching is an approximate alignment signal. It does not prove that matched segments are identical internal reasoning steps."
+}
