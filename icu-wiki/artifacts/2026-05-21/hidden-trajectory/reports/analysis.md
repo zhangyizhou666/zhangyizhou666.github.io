@@ -14,13 +14,12 @@ Important limitation: cross-model hidden dimensions differ, so this report does 
 
 Observation: the 0.8B answer has quality 0.000 versus the strongest reference 1.000. Its repeated 4-gram count is 269, compared with 49 for the strongest reference.
 
-### case_02_s30_014_agentic
+### case_02_s30_014_single_shot
 
-- qwen08_bad / Qwen/Qwen3.5-0.8B: quality=0.750, acceptance=1, repeated_4gram=92, recurrence95=0.045, entropy=0.201, failure=missing_key_condition/verbose_low_quality
-- larger_reference / Qwen/Qwen3.5-2B: quality=0.750, acceptance=1, repeated_4gram=19, recurrence95=0.004, entropy=1.663, failure=missing_key_condition/citation_mismatch
-- larger_reference / Qwen/Qwen3.5-4B: quality=0.875, acceptance=1, repeated_4gram=0, recurrence95=0.000, entropy=1.129, failure=missing_key_condition/none
+- qwen08_bad / Qwen/Qwen3.5-0.8B: quality=0.500, acceptance=1, repeated_4gram=24, recurrence95=0.009, entropy=0.641, failure=verbose_low_quality/missing_key_condition
+- larger_reference / Qwen/Qwen3.5-4B: quality=0.875, acceptance=1, repeated_4gram=22, recurrence95=0.007, entropy=0.994, failure=unsupported_claim/none
 
-Observation: the 0.8B answer has quality 0.750 versus the strongest reference 0.875. Its repeated 4-gram count is 92, compared with 0 for the strongest reference.
+Observation: the 0.8B answer has quality 0.500 versus the strongest reference 0.875. Its repeated 4-gram count is 24, compared with 22 for the strongest reference.
 
 ### case_03_s30_024_agentic
 
@@ -29,12 +28,13 @@ Observation: the 0.8B answer has quality 0.750 versus the strongest reference 0.
 
 Observation: the 0.8B answer has quality 0.000 versus the strongest reference 0.750. Its repeated 4-gram count is 36, compared with 9 for the strongest reference.
 
-### case_04_s30_021_single_shot
+### case_04_s30_017_single_shot
 
-- qwen08_bad / Qwen/Qwen3.5-0.8B: quality=0.500, acceptance=0, repeated_4gram=38, recurrence95=0.021, entropy=0.341, failure=unsupported_claim/over_answering
-- larger_reference / Qwen/Qwen3.5-4B: quality=0.875, acceptance=1, repeated_4gram=3, recurrence95=0.001, entropy=0.664, failure=evidence_insufficient/none
+- qwen08_bad / Qwen/Qwen3.5-0.8B: quality=0.375, acceptance=1, repeated_4gram=38, recurrence95=0.007, entropy=1.203, failure=unsupported_claim/citation_mismatch
+- larger_reference / Qwen/Qwen3.5-2B: quality=1.000, acceptance=2, repeated_4gram=4, recurrence95=0.006, entropy=0.551, failure=none/none
+- larger_reference / Qwen/Qwen3.5-4B: quality=1.000, acceptance=2, repeated_4gram=23, recurrence95=0.008, entropy=0.503, failure=none/none
 
-Observation: the 0.8B answer has quality 0.500 versus the strongest reference 0.875. Its repeated 4-gram count is 38, compared with 3 for the strongest reference.
+Observation: the 0.8B answer has quality 0.375 versus the strongest reference 1.000. Its repeated 4-gram count is 38, compared with 4 for the strongest reference.
 
 ### case_05_s30_027_agentic
 

@@ -27,10 +27,10 @@ Method summary:
 ## Held-Out Case Signals
 
 - Selected layer for alignment: `f090`.
-- Mean 0.8B bad-case quality: 0.292.
-- Mean larger-reference quality: 0.875.
-- Mean 0.8B repeated 4-grams: 82.5.
-- Mean larger-reference repeated 4-grams: 18.6.
+- Mean 0.8B bad-case quality: 0.229.
+- Mean larger-reference quality: 0.917.
+- Mean 0.8B repeated 4-grams: 71.2.
+- Mean larger-reference repeated 4-grams: 21.6.
 
 ## Artifacts
 

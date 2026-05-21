@@ -47,15 +47,15 @@
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/hidden_trajectory_feature_summary.png" alt="Hidden trajectory feature summary" /></p>
 <h2>Main Diagnostic Result</h2>
 <p>The clearest signal is text-level repetition. Across the selected groups, Qwen3.5 0.8B bad cases have much higher repeated 4-gram counts than the larger references.</p>
-<ul><li>Qwen3.5 0.8B bad cases: mean human quality 0.292, mean repeated 4-grams 82.5, mean cumulative recurrence over .95 is 0.0186.</li><li>Larger Qwen references: mean human quality 0.875, mean repeated 4-grams 18.6, mean cumulative recurrence over .95 is 0.0048.</li></ul>
+<ul><li>Qwen3.5 0.8B bad cases: mean human quality 0.229, mean repeated 4-grams 71.2, mean cumulative recurrence over .95 is 0.0101.</li><li>Larger Qwen references: mean human quality 0.917, mean repeated 4-grams 21.6, mean cumulative recurrence over .95 is 0.0064.</li></ul>
 <p>The hidden-state signal is suggestive but not yet a final detector. Cumulative recurrence is higher on average for 0.8B bad cases, but not uniformly higher in every matched group. Entropy is also mixed, so it should not be used alone.</p>
 <h2>Case Examples</h2>
 <p>The strongest failure is <code>s30_023</code> in agentic mode. Qwen3.5 0.8B copied evidence-like text into the answer and produced 269 repeated 4-grams, while the 2B and 4B references were much more usable.</p>
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_01_s30_023_agentic_feature_comparison.png" alt="Case 01 feature comparison" /></p>
-<p>The <code>s30_014</code> case shows a lower-grade but still useful repetition pattern. The 0.8B answer contains 92 repeated 4-grams and a higher cumulative recurrence signal, while the 4B reference has no repeated 4-grams in this diagnostic.</p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_feature_comparison.png" alt="Case 02 feature comparison" /></p>
-<p>The <code>s30_021</code> case is the cleanest same-context single-shot comparison. The 0.8B answer incorrectly treats retrieved course records as mandatory courses, while the 4B answer more correctly says the evidence is insufficient for a full mandatory-course list.</p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_04_s30_021_single_shot_feature_comparison.png" alt="Case 04 feature comparison" /></p>
+<p>The <code>s30_014</code> case was changed to single-shot mode so the selected models use the same retrieved context. The 0.8B answer is repetitive and truncated, while the 4B reference is more usable under the same evidence.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_single_shot_feature_comparison.png" alt="Case 02 feature comparison" /></p>
+<p>The <code>s30_017</code> case replaces the earlier course-list example, which mostly reflected similar course-record formatting rather than a clear generation collapse. In <code>s30_017</code>, 0.8B misreads grading evidence under the same single-shot context, while both 2B and 4B produce strong answers.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_04_s30_017_single_shot_feature_comparison.png" alt="Case 04 feature comparison" /></p>
 <h2>How To Read The Trajectory Plots</h2>
 <p>The PCA plots are local to each answer trajectory. They show how the cumulative mean of generated-token hidden states moves over the generated answer. The recurrence matrices show cosine similarity among cumulative hidden states; blocky high-similarity regions can indicate repeated or loop-like generation states.</p>
 <h2>Representative 3D Trajectories</h2>
@@ -63,12 +63,12 @@
 <p>The <code>s30_023</code> case is the most severe evidence-dump example. The 0.8B answer has quality 0.000 and 269 repeated 4-grams, while the larger references are much more usable.</p>
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_01_s30_023_agentic_trajectory3d_static.png" alt="Case 01 3D trajectory" /></p>
 <p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_01_s30_023_agentic_trajectory3d.html">Open draggable 3D viewer for case 01</a></p>
-<p>The <code>s30_014</code> case shows the clearest repetition/recurrence pattern in this first run. The 0.8B trajectory has higher recurrence and much higher repeated 4-grams than the 4B reference.</p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_trajectory3d_static.png" alt="Case 02 3D trajectory" /></p>
-<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_02_s30_014_agentic_trajectory3d.html">Open draggable 3D viewer for case 02</a></p>
-<p>The <code>s30_021</code> case is the cleanest single-shot same-context comparison. The 0.8B answer treats retrieved course records as mandatory-course evidence, while the 4B answer more safely recognizes evidence insufficiency.</p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_04_s30_021_single_shot_trajectory3d_static.png" alt="Case 04 3D trajectory" /></p>
-<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_04_s30_021_single_shot_trajectory3d.html">Open draggable 3D viewer for case 04</a></p>
+<p>The <code>s30_014</code> case is now the controlled single-shot example. This avoids mixing generation behavior with different agentic retrieval paths.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_single_shot_trajectory3d_static.png" alt="Case 02 3D trajectory" /></p>
+<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_02_s30_014_single_shot_trajectory3d.html">Open draggable 3D viewer for case 02</a></p>
+<p>The <code>s30_017</code> case is the other single-shot same-context comparison. The 0.8B answer incorrectly states the grading structure, while the 2B and 4B references distinguish the Spring and Autumn grading policies.</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_04_s30_017_single_shot_trajectory3d_static.png" alt="Case 04 3D trajectory" /></p>
+<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/interactive/case_04_s30_017_single_shot_trajectory3d.html">Open draggable 3D viewer for case 04</a></p>
 <h2>Aligned Cross-Model 3D Trajectories</h2>
 <p>The first 3D viewers above are local PCA plots, so their axes are not shared across model sizes. To test whether a more direct visual comparison is possible, this follow-up experiment learns a supervised linear alignment into the Qwen3.5 4B anchor space.</p>
 <p>The alignment uses 240 teacher-forced calibration samples from ICU-related passages and high-quality System30 answers. The held-out 0.8B bad cases are not used for training the mapping. Validation is done with paired retrieval on held-out calibration samples and a shuffled-pair baseline.</p>
@@ -80,13 +80,13 @@
 <p>The aligned shared-space plots below place 0.8B, 2B, and 4B trajectories into one visual coordinate system after alignment. These plots are most useful as case-study figures; the scalar feature PCA remains the safer cross-model summary.</p>
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-alignment/plots/case_01_s30_023_agentic_aligned_shared_pca3.png" alt="Aligned case 01 shared PCA" /></p>
 <p><a href="/icu-wiki/artifacts/2026-05-21/hidden-alignment/interactive/case_01_s30_023_agentic_aligned_shared_pca3.html">Open aligned draggable 3D viewer for case 01</a></p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-alignment/plots/case_02_s30_014_agentic_aligned_shared_pca3.png" alt="Aligned case 02 shared PCA" /></p>
-<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-alignment/interactive/case_02_s30_014_agentic_aligned_shared_pca3.html">Open aligned draggable 3D viewer for case 02</a></p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-alignment/plots/case_02_s30_014_single_shot_aligned_shared_pca3.png" alt="Aligned case 02 shared PCA" /></p>
+<p><a href="/icu-wiki/artifacts/2026-05-21/hidden-alignment/interactive/case_02_s30_014_single_shot_aligned_shared_pca3.html">Open aligned draggable 3D viewer for case 02</a></p>
 <p><img src="/icu-wiki/artifacts/2026-05-21/hidden-alignment/plots/feature_space_pca_3d.png" alt="Model-agnostic feature PCA" /></p>
 <p><a href="/icu-wiki/artifacts/2026-05-21/hidden-alignment/interactive/feature_space_pca_3d.html">Open model-agnostic feature-space 3D viewer</a></p>
-<p>Example recurrence plots for <code>s30_014</code>:</p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_Qwen_Qwen3.5-0.8B_recurrence.png" alt="Qwen 0.8B recurrence" /></p>
-<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_agentic_Qwen_Qwen3.5-4B_recurrence.png" alt="Qwen 4B recurrence" /></p>
+<p>Example recurrence plots for the controlled <code>s30_014</code> single-shot case:</p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_single_shot_Qwen_Qwen3.5-0.8B_recurrence.png" alt="Qwen 0.8B recurrence" /></p>
+<p><img src="/icu-wiki/artifacts/2026-05-21/hidden-trajectory/plots/case_02_s30_014_single_shot_Qwen_Qwen3.5-4B_recurrence.png" alt="Qwen 4B recurrence" /></p>
 <h2>Interpretation</h2>
 <p>This first run supports a cautious claim: small-model bad answers can be organized into a hidden-state trajectory diagnostic, but the most reliable signal in this pass is still repetition in the output text. Hidden recurrence and path-length features are promising supporting signals, not a finished classifier.</p>
 <p>For the thesis, this is best used as a small case study rather than a main quantitative result. It motivates a future question: whether repetition, copy-dump behavior, or over-answering can be detected before the answer is complete.</p>
