@@ -56,3 +56,7 @@ Observation: the 0.8B answer has quality 0.375 versus the strongest reference 0.
 - `*_feature_comparison.png` compares answer quality, repeated n-grams, recurrence, path length, and entropy within one matched question group.
 - `*_cumulative_pca.png` is a local PCA projection of cumulative generated-token mean states for one answer. Coordinates are not shared across different models.
 - `*_recurrence.png` shows cosine similarity among cumulative hidden states. Strong blocky high-similarity patterns can indicate repeated or loop-like generation states.
+- `*_raw_token_recurrence.png` compares final-layer generated-token hidden states directly, without cumulative averaging.
+- `*_window_recurrence.png` compares local sliding-window hidden-state means, reducing the smoothing effect of cumulative prefixes.
+- `*_text_4gram_recurrence.png` marks exact repeated word 4-grams in the decoded answer text.
+- `*_repeated_spans_trajectory.png` overlays repeated token 4-gram spans on the local PCA trajectory.
