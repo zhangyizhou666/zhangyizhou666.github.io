@@ -1,0 +1,53 @@
+[
+  {
+    "id": "v1",
+    "label": "V1 - first professor comments",
+    "date": "2026-05-25",
+    "file": "thesis_v1_professor_comments.pdf",
+    "status": "Local PDF snapshot. Overleaf comments are summarized here as review notes; the PDF itself is not comment-flattened yet.",
+    "comments": [
+      "Bridge the gap between the problem paragraph and the chatbot design requirement.",
+      "Specify what small means: parameter size, GPU memory, and hardware constraint.",
+      "Reframe smallest as small enough.",
+      "Present corpus sources as a table with explanations for each source group.",
+      "Explain how ICU Bench 30 is constructed and why it answers the first research question."
+    ],
+    "changes": []
+  },
+  {
+    "id": "v2",
+    "label": "V2 - second professor comments",
+    "date": "2026-05-28",
+    "file": "thesis_v2_professor_comments.pdf",
+    "status": "Local PDF snapshot after the first revision pass. Second-round comments are summarized here as review notes.",
+    "comments": [
+      "Clarify that RAGAS is limited for ICU Wiki-specific reliability criteria, not simply unusable because scores are close.",
+      "Keep Section 2 as background and related work; move own system design choices to Section 4.",
+      "Explain technical terms such as RRF and reranker with citations.",
+      "Rewrite retriever design as problem-solution rather than trial-and-error history.",
+      "Move the Japanese tokenizer example after the process explanation.",
+      "Explain source-authority scoring more technically, including how scoring affects candidate selection."
+    ],
+    "changes": [
+      "Added a bridge from university information access problems to the need for a RAG-based chatbot.",
+      "Specified the sub-10B local model scope and the FP16 memory estimate.",
+      "Reframed the goal from the smallest model to a model that is small but reliable enough.",
+      "Added corpus source examples and ICU Bench 30 composition figures."
+    ]
+  },
+  {
+    "id": "v3",
+    "label": "V3 - current fixed version",
+    "date": "2026-05-29",
+    "file": "thesis_v3_current.pdf",
+    "status": "Current local package after the latest revision pass.",
+    "comments": [],
+    "changes": [
+      "Updated Section 2 to read more like background and related work.",
+      "Added technical explanations and citations for RAG, LLM-as-a-judge, RAGAS, G-Eval, RRF, reranker, and small language models.",
+      "Restructured Retriever Design into smaller problem-oriented subsections.",
+      "Updated the source-authority scoring figure and removed misleading merge wording.",
+      "Added an agentic retrieval mode figure based on the current query-planner and candidate-pool behavior."
+    ]
+  }
+]

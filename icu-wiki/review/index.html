@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thesis Version Review — ICU Wiki Research</title>
+    <meta name="description" content="Side-by-side PDF version comparison for ICU Wiki thesis review." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>Yizhou's 卒論研究</strong>
+          <small>ICU Wiki cost-aware RAG</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/updates/">Updates</a>
+        <a href="/icu-wiki/#evaluation">Evaluation</a>
+        <a href="/icu-wiki/evaluation/ragas/">RAGAS</a>
+        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/review/">Review</a>
+        <a href="/icu-wiki/benchmark/hard-realistic-20/">Benchmark</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+      </nav>
+    </header>
+    <main>
+    <section class="hero review-hero">
+      <p class="eyebrow">Thesis review</p>
+      <h1>Side-by-side PDF version viewer</h1>
+      <p class="hero-copy">
+        Compare professor-commented thesis snapshots and the current fixed version without replacing the Overleaf project history.
+      </p>
+    </section>
+
+    <section class="section review-workspace" data-review-root data-source="/icu-wiki/papers/paperVersions.json">
+      <div class="section-heading row">
+        <div>
+          <p class="eyebrow">Phase 1</p>
+          <h2>PDF comparison</h2>
+        </div>
+        <div class="review-global-toolbar" aria-label="PDF viewer controls">
+          <label class="review-check">
+            <input type="checkbox" data-sync-page checked />
+            Sync page
+          </label>
+          <button type="button" data-zoom-out>−</button>
+          <span data-zoom-label>100%</span>
+          <button type="button" data-zoom-in>+</button>
+          <button type="button" data-zoom-reset>Reset</button>
+        </div>
+      </div>
+
+      <div class="review-grid">
+        <article class="pdf-review-panel" data-side="left">
+          <header class="review-panel-header">
+            <label>
+              <span>Left version</span>
+              <select data-version-select></select>
+            </label>
+          </header>
+          <div class="review-version-meta" data-version-meta></div>
+          <div class="review-page-toolbar">
+            <button type="button" data-page-prev>Previous</button>
+            <label>
+              <span>Page</span>
+              <input type="number" min="1" value="1" data-page-input />
+            </label>
+            <span data-page-count>/ −</span>
+            <button type="button" data-page-next>Next</button>
+          </div>
+          <div class="pdf-canvas-wrap">
+            <canvas data-pdf-canvas></canvas>
+          </div>
+          <p class="pdf-status" data-pdf-status>Loading versions...</p>
+        </article>
+
+        <article class="pdf-review-panel" data-side="right">
+          <header class="review-panel-header">
+            <label>
+              <span>Right version</span>
+              <select data-version-select></select>
+            </label>
+          </header>
+          <div class="review-version-meta" data-version-meta></div>
+          <div class="review-page-toolbar">
+            <button type="button" data-page-prev>Previous</button>
+            <label>
+              <span>Page</span>
+              <input type="number" min="1" value="1" data-page-input />
+            </label>
+            <span data-page-count>/ −</span>
+            <button type="button" data-page-next>Next</button>
+          </div>
+          <div class="pdf-canvas-wrap">
+            <canvas data-pdf-canvas></canvas>
+          </div>
+          <p class="pdf-status" data-pdf-status>Loading versions...</p>
+        </article>
+      </div>
+
+      <p class="review-note">
+        Current note: the old Overleaf comments are represented as review notes below each selected version. If a flattened-comment PDF is exported later, replace the same PDF filename under <code>public/papers/</code> and the viewer will use it automatically.
+      </p>
+    </section>
+
+    <script type="module" src="/icu-wiki/assets/review.js"></script>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-29.</span>
+    </footer>
+  </body>
+</html>
