@@ -162,6 +162,23 @@ li {
   font-size: 0.98rem;
 }
 
+.home-hero {
+  min-height: 28rem;
+  display: grid;
+  align-content: center;
+}
+
+.home-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3rem, 7.5vw, 5.8rem);
+  letter-spacing: -0.055em;
+}
+
+.home-hero .hero-copy {
+  max-width: 720px;
+  font-size: 1.04rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -332,6 +349,69 @@ figure {
   border-radius: 0.8rem;
   background: var(--panel);
   box-shadow: var(--shadow);
+}
+
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.home-card-grid article {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  min-height: 13rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.home-card-grid span {
+  color: var(--blue);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.home-card-grid strong {
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.home-card-grid p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.thesis-figures {
+  padding-top: 3rem;
+}
+
+.showcase-figure {
+  overflow: hidden;
+}
+
+.showcase-figure img {
+  padding: 1rem;
+  background: #fff;
+}
+
+.thesis-excerpt {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--blue);
+  background: #fff;
+}
+
+.thesis-excerpt p {
+  margin: 0;
+  font-size: 0.92rem;
 }
 
 .no-top {
@@ -1485,6 +1565,7 @@ code {
   .pipeline,
   .architecture,
   .note-grid,
+  .home-card-grid,
   .example-grid,
   .compare-controls,
   .compare-grid,
