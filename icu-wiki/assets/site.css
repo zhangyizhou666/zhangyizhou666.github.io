@@ -1189,30 +1189,8 @@ figcaption {
 }
 
 .retriever-graph {
-  display: grid;
-  grid-template-columns: repeat(7, minmax(7.5rem, 1fr));
-  grid-template-rows:
-    auto 1.6rem auto 1.6rem auto 1.6rem auto 1.6rem auto
-    1.6rem auto 1.6rem auto 1.6rem auto;
-  grid-template-areas:
-    ". . q q q . ."
-    ". . q-n q-n q-n . ."
-    ". . n n n . ."
-    ". n-l n-l n-c n-e n-e ."
-    "l l . c . e e"
-    "l-lq . . c-ct c-cn e-ea ."
-    "lq lq . ct cn ea ea"
-    "lq-ls . . ct-cs . ea-es ."
-    "ls ls . cs . es es"
-    "ls-lc . . cs-cc . es-dc ."
-    "lc lc . cc . dc dc"
-    "lc-r . . cc-r cn-r dc-r ."
-    ". . rrf rrf rrf . ."
-    ". . rrf-t5 rrf-t5 rrf-t5 . ."
-    ". . t5 t5 t5-g g g";
-  gap: 0.25rem 0.65rem;
-  min-width: 980px;
-  padding: 1rem;
+  min-width: 60rem;
+  padding: 0.85rem;
   border: 1px solid var(--line);
   border-radius: 0.85rem;
   background: var(--panel);
@@ -1220,66 +1198,36 @@ figcaption {
   overflow-x: auto;
 }
 
-.retriever-node {
-  min-height: 4.15rem;
-  padding: 0.65rem 0.75rem;
-  border: 1px solid var(--line);
-  border-radius: 0.7rem;
-  background: #fff;
-  color: var(--ink);
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
-  cursor: pointer;
-  font: inherit;
+.retriever-instruction {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
   font-size: 0.9rem;
-  font-weight: 700;
-  line-height: 1.28;
-  text-align: center;
 }
 
-.retriever-node small {
+.retriever-figure-canvas {
+  position: relative;
+  min-width: 58rem;
+}
+
+.retriever-figure-canvas img {
   display: block;
-  margin-top: 0.2rem;
-  color: var(--muted);
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.66rem;
-  font-weight: 500;
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
 }
 
-.retriever-node:hover,
-.retriever-node.active {
-  border-color: var(--blue);
-  background: var(--blue-soft);
+.retriever-hotspot {
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 0.7rem;
+  background: transparent;
+  cursor: pointer;
 }
 
-.retriever-node.decision {
-  border-style: dashed;
-}
-
-.retriever-node.emphasis {
-  border-color: #94a3b8;
-  background: #f8fafc;
-}
-
-.retriever-node.muted-node {
-  color: var(--muted);
-  background: #fbfdff;
-}
-
-.retriever-arrow {
-  display: grid;
-  place-items: center;
-  color: #64748b;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.retriever-arrow.yes,
-.retriever-arrow.no {
-  color: var(--blue);
-  font-size: 0.78rem;
-  text-transform: uppercase;
+.retriever-hotspot:hover,
+.retriever-hotspot.active {
+  border-color: rgba(37, 99, 235, 0.85);
+  background: rgba(37, 99, 235, 0.08);
 }
 
 .retriever-detail {
@@ -1590,6 +1538,10 @@ code {
   }
 
   .retriever-graph {
+    min-width: 100%;
+  }
+
+  .retriever-figure-canvas {
     min-width: 52rem;
   }
 
