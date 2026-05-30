@@ -387,6 +387,221 @@ figure {
   font-size: 0.9rem;
 }
 
+.paper-home-hero {
+  display: grid;
+  gap: 1.2rem;
+  padding: 3.8rem 0 3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.paper-home-hero h1 {
+  max-width: 720px;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  letter-spacing: -0.06em;
+}
+
+.paper-home-abstract {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 980px;
+}
+
+.paper-home-abstract p,
+.paper-copy p {
+  margin: 0;
+  color: #344256;
+  line-height: 1.75;
+}
+
+.paper-map-section,
+.paper-visual-section {
+  padding-top: 3rem;
+}
+
+.paper-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+  margin-top: 1.2rem;
+}
+
+.paper-card,
+.legacy-card {
+  display: grid;
+  gap: 0.65rem;
+  min-height: 15rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.paper-card:hover,
+.legacy-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-1px);
+}
+
+.paper-card span {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+}
+
+.paper-card strong {
+  font-size: 1.05rem;
+}
+
+.paper-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.paper-card small,
+.legacy-card span {
+  align-self: end;
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.paper-section-hero {
+  display: grid;
+  gap: 0.95rem;
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.paper-section-hero h1 {
+  max-width: 980px;
+}
+
+.paper-section-hero > p:not(.eyebrow) {
+  max-width: 860px;
+  margin: 0;
+  color: #344256;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.paper-subsection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 980px;
+}
+
+.paper-subsection-list span {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.paper-section-body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  gap: 1.2rem;
+  padding: 2rem 0 4rem;
+}
+
+.paper-copy {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.paper-copy p {
+  padding: 1rem;
+  border-left: 3px solid var(--blue);
+  border-radius: 0 0.7rem 0.7rem 0;
+  background: #fff;
+  box-shadow: var(--shadow);
+  font-size: 0.92rem;
+}
+
+.paper-formula {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: #0f172a;
+  color: #fff;
+}
+
+.paper-formula span {
+  color: #93c5fd;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.paper-formula code {
+  color: #fff;
+  white-space: normal;
+}
+
+.paper-figure-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.paper-figure-card {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.paper-figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.9rem;
+  background: #fff;
+}
+
+.paper-figure-card figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.8rem 0.95rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.legacy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+.legacy-card {
+  min-height: 7.8rem;
+}
+
 .thesis-figures {
   padding-top: 3rem;
 }
@@ -1519,10 +1734,14 @@ code {
   .compare-grid,
   .embedding-toolbar,
   .embedding-layout,
-  .topology-toolbar,
-  .topology-layout,
-  .retriever-shell,
-  .site-chat-form {
+    .topology-toolbar,
+    .topology-layout,
+    .retriever-shell,
+    .paper-home-abstract,
+    .paper-card-grid,
+    .paper-section-body,
+    .legacy-grid,
+    .site-chat-form {
     grid-template-columns: 1fr;
   }
 
@@ -1543,6 +1762,10 @@ code {
 
   .retriever-figure-canvas {
     min-width: 52rem;
+  }
+
+  .paper-copy {
+    position: static;
   }
 
   .site-chat-form button {

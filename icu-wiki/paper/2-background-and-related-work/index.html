@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2. Background and Related Work — ICU Wiki</title>
+    <meta name="description" content="Thesis section 2: Background and Related Work." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>ICU Wiki</strong>
+          <small>Reliable local RAG for university QA</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/paper/1-introduction/">1 Introduction</a>
+        <a href="/icu-wiki/paper/2-background-and-related-work/">2 Background</a>
+        <a href="/icu-wiki/paper/3-task-and-university-corpus/">3 Corpus</a>
+        <a href="/icu-wiki/paper/4-system-design/">4 System</a>
+        <a href="/icu-wiki/paper/5-evaluation-methodology/">5 Evaluation</a>
+        <a href="/icu-wiki/paper/6-experiments-and-results/">6 Results</a>
+        <a href="/icu-wiki/paper/7-bad-case-analysis-and-discussion/">7 Discussion</a>
+        <a href="/icu-wiki/paper/8-conclusion/">8 Conclusion</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+      </nav>
+    </header>
+    <main>
+    <section class="paper-section-hero">
+      <p class="eyebrow">Section 2</p>
+      <h1>2. Background and Related Work</h1>
+      <p>Retrieval-augmented generation has become a common approach when building an evidence-based chatbot system, as it can provide external evidence by retrieving from an external database with semantic matching and then generate the final answer based on the retrieved evidence.</p>
+      <div class="paper-subsection-list"><span>Retrieval-Augmented Generation</span><span>LLM-as-a-Judge</span><span>Small Language Models</span><span>Retrieval Ranking and Authority Scoring</span><span>Agentic Frameworks</span></div>
+    </section>
+
+    <section class="paper-section-body">
+      <div class="paper-copy">
+        <p>LLM-as-a-judge refers to using a strong language model as an evaluator inside an evaluation framework.</p><p>Reciprocal Rank Fusion (RRF) is a method for merging and combining the results from multiple retrievers or ranking systems into one final ranking.</p><p>Agentic frameworks tend to refer to systems where the language model participates not only in final answer generation, but also as a controller or orchestrator that can decide or use tools during intermediate work.</p>
+        <div class="paper-formula"><span>Formula</span><code>RRF(d) = Σ 1 / (k + rank(d))</code></div>
+      </div>
+      <div class="paper-figure-grid">
+
+      </div>
+    </section>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-31.</span>
+    </footer>
+  </body>
+</html>

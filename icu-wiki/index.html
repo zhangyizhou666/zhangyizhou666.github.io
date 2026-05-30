@@ -20,93 +20,143 @@
       </a>
       <nav>
         <a href="/icu-wiki/">Home</a>
-        <a href="/icu-wiki/#corpus">Corpus</a>
-        <a href="/icu-wiki/#benchmark">Benchmark</a>
-        <a href="/icu-wiki/#evaluation">Evaluation</a>
-        <a href="/icu-wiki/retriever/">Retriever</a>
+        <a href="/icu-wiki/paper/1-introduction/">1 Introduction</a>
+        <a href="/icu-wiki/paper/2-background-and-related-work/">2 Background</a>
+        <a href="/icu-wiki/paper/3-task-and-university-corpus/">3 Corpus</a>
+        <a href="/icu-wiki/paper/4-system-design/">4 System</a>
+        <a href="/icu-wiki/paper/5-evaluation-methodology/">5 Evaluation</a>
+        <a href="/icu-wiki/paper/6-experiments-and-results/">6 Results</a>
+        <a href="/icu-wiki/paper/7-bad-case-analysis-and-discussion/">7 Discussion</a>
+        <a href="/icu-wiki/paper/8-conclusion/">8 Conclusion</a>
         <a href="/icu-wiki/embeddings/">Embeddings</a>
         <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
       </nav>
     </header>
     <main>
-    <section class="hero home-hero">
-      <p class="eyebrow">Reliable local RAG for university question answering</p>
+    <section class="paper-home-hero">
+      <p class="eyebrow">Senior thesis research site</p>
       <h1>ICU Wiki</h1>
       <p class="hero-copy">
-        ICU Wiki is a locally hostable RAG chatbot built from ICU source materials. This site collects the thesis figures, benchmark artifacts, retrieval design notes, and live system entry points behind the senior thesis.
+        ICU Wiki: A Case Study in Reliable Local RAG for University QA
       </p>
+      <div class="paper-home-abstract">
+        <p>University information is often fragmented across multiple websites and hidden behind layers of menus, making it difficult for students to find expected answers efficiently.</p>
+        <p>This thesis uses ICU Wiki, a locally hostable RAG-based chatbot for university question answering, as a case study to find out how we should define and identify a local configuration that is small enough but reliable for similar tasks, including both the language model and the retrieval-and-orchestration layer around it.</p>
+      </div>
       <div class="hero-actions">
-        <a class="button primary" href="#corpus">View thesis figures</a>
+        <a class="button primary" href="#paper-structure">Open paper structure</a>
         <a class="button" href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Open live chatbot</a>
         <a class="button" href="/icu-wiki/embeddings/">Open embeddings</a>
       </div>
     </section>
 
-    <section id="corpus" class="section thesis-figures">
+    <section id="paper-structure" class="section paper-map-section">
       <div class="section-heading">
-        <p class="eyebrow">Thesis figure 1</p>
-        <h2>ICU corpus composition</h2>
+        <p class="eyebrow">Paper structure</p>
+        <h2>Read the thesis as a website</h2>
       </div>
-      <figure class="showcase-figure">
-        <img src="/icu-wiki/thesis/figures/icu_corpus_composition_bubbles.png" alt="ICU corpus composition by source category and chunk count" />
-        <figcaption>Corpus composition from the thesis. Circle area represents generated chunk counts from each source group.</figcaption>
-      </figure>
-      <div class="thesis-excerpt">
-        <p>As mentioned above, the ICU corpus is fragmented, multilingual, and multi-format. It contains ICU-related institutional knowledge spread across multiple domains and represented in different formats. We mainly prepare the data from five source groups: course records, ICU e-handbook pages, public web pages under ICU-related domains, portal-derived items, and PDF documents discovered from those pages or links. We treat PDF documents as a separate source group because many policy or guide materials are not written directly inside HTML pages but are attached as downloadable files.</p>
-        <p>Our goal is to include as much data from ICU-related official or linked sources as possible, so that the system can cover a wider range of student questions.</p>
-      </div>
+      <div class="paper-card-grid">
+    <a class="paper-card" href="/icu-wiki/paper/1-introduction/">
+      <span>1</span>
+      <strong>Introduction</strong>
+      <p>How can we build and evaluate a local RAG system for student-facing university question answering, and identify a local model configuration that is small but reliable enough for this task?</p>
+      <small>University QA as an Evidence-Based Problem / Local deployment constraints / Research questions</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/2-background-and-related-work/">
+      <span>2</span>
+      <strong>Background and Related Work</strong>
+      <p>Retrieval-augmented generation has become a common approach when building an evidence-based chatbot system, as it can provide external evidence by retrieving from an external database with semantic matching and then generate the final answer based on the retrieved evidence.</p>
+      <small>Retrieval-Augmented Generation / LLM-as-a-Judge / Small Language Models</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/3-task-and-university-corpus/">
+      <span>3</span>
+      <strong>Task and University Corpus</strong>
+      <p>As mentioned above, the ICU corpus is fragmented, multilingual, and multi-format. It contains ICU-related institutional knowledge spread across multiple domains and represented in different formats.</p>
+      <small>ICU university corpus / Corpus construction / ICU Bench 30</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/4-system-design/">
+      <span>4</span>
+      <strong>System Design</strong>
+      <p>ICU Wiki is built as a local RAG system with three main parts: a cleaned ICU corpus, a retriever that selects top evidence chunks, and an answer generator based on a local language model.</p>
+      <small>System overview / Retriever design / Answer orchestration modes</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/5-evaluation-methodology/">
+      <span>5</span>
+      <strong>Evaluation Methodology</strong>
+      <p>Under the university QA situation, defining what should count as a reliable answer is important.</p>
+      <small>What counts as a reliable answer? / Limits of standard RAG evaluation / G-Eval-inspired answer-quality evaluation</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/6-experiments-and-results/">
+      <span>6</span>
+      <strong>Experiments and Results</strong>
+      <p>For the model comparison experiment, we provided each ICU Bench 30 question and its retrieved chunks to six models, including the Qwen3.5 family from 0.8B to 9B and the Gemma 4 2B and 4B models.</p>
+      <small>Model and mode comparison / Smallest reliable configuration / Effects of agentic mode</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/7-bad-case-analysis-and-discussion/">
+      <span>7</span>
+      <strong>Bad Case Analysis and Discussion</strong>
+      <p>From the observed small-model outputs, the main failure patterns are uncontrolled self-repetition near the end of the answer, direct copying from retrieved context, and difficulty summarizing across multiple easily confused sources.</p>
+      <small>Observed failure patterns in small models / Why average scores hide deployment risk / Output-control risk in retrieval-and-orchestration layers</small>
+    </a>
+
+    <a class="paper-card" href="/icu-wiki/paper/8-conclusion/">
+      <span>8</span>
+      <strong>Conclusion</strong>
+      <p>RAGAS, as our first tested evaluation framework, was not enough to cover all the constraints that are important to our testing criteria.</p>
+      <small>Main findings / Limitations / Future work</small>
+    </a>
+    </div>
     </section>
 
-    <section id="benchmark" class="section thesis-figures">
+    <section class="section paper-visual-section">
       <div class="section-heading">
-        <p class="eyebrow">Thesis figure 2</p>
-        <h2>ICU Bench 30 composition</h2>
+        <p class="eyebrow">Core thesis figures</p>
+        <h2>System and model-selection view</h2>
       </div>
-      <figure class="showcase-figure">
-        <img src="/icu-wiki/thesis/figures/icubench30_composition_pies.png" alt="ICU Bench 30 question category, answerability, and language composition" />
-        <figcaption>The benchmark question set covers source categories, answerability conditions, and English/Japanese/Chinese inputs.</figcaption>
-      </figure>
-      <div class="thesis-excerpt">
-        <p>ICU Bench 30 is a benchmark question set that contains 30 questions designed to evaluate student-facing university QA over the ICU corpus. We designed this question set so that it covers major categories inside the ICU corpus data and student question types. The major question categories include course (5), registration (4), policy (4), and curriculum (4). The question set covers three languages: English (20), Japanese (7), and Chinese (3), based on the multilingual student composition at ICU. The goal is not only to mirror the real-life needs of ICU students, but also to test whether the model can handle different complex question situations. We also included non-answerable questions (Q13, Q15, Q25, Q26, and Q27) on purpose to test whether the model can answer from evidence, use good citations, and avoid over-answering.</p>
-      </div>
+      <div class="paper-figure-grid">
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/thesis/figures/retriever_iteration_colored_flow.png" alt="Retriever iteration." />
+      <figcaption>Retriever iteration. <a class="text-link" href="/icu-wiki/paper/4-system-design/">Open Section 4</a></figcaption>
+    </figure>
+
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen." />
+      <figcaption>Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen. <a class="text-link" href="/icu-wiki/paper/6-experiments-and-results/">Open Section 6</a></figcaption>
+    </figure>
+    </div>
     </section>
 
-    <section id="evaluation" class="section">
+    <section class="section paper-visual-section">
       <div class="section-heading">
-        <p class="eyebrow">Thesis structure</p>
-        <h2>Research entry points</h2>
+        <p class="eyebrow">Preserved tools</p>
+        <h2>Interactive artifacts</h2>
       </div>
       <div class="home-card-grid">
         <article>
           <span>System</span>
-          <strong>Retriever design</strong>
-          <p>Hybrid retrieval, Japanese language handling, entity protection, reranking, and source-authority scoring.</p>
-          <a class="text-link" href="/icu-wiki/retriever/">Open retriever page</a>
+          <strong>Interactive retriever</strong>
+          <p>Click the thesis retriever figure to inspect the corresponding implementation.</p>
+          <a class="text-link" href="/icu-wiki/retriever/">Open interactive retriever</a>
         </article>
         <article>
-          <span>Evaluation</span>
-          <strong>Model and mode selection</strong>
-          <p>RAGAS diagnostics, G-Eval-inspired judging, blocking-case detection, and latency/quality tradeoff.</p>
-          <a class="text-link" href="/icu-wiki/evaluation/">Open evaluation page</a>
-        </article>
-        <article>
-          <span>Corpus diagnostic</span>
+          <span>Corpus</span>
           <strong>Embeddings</strong>
           <p>Interactive 3D map of real passage embeddings from the retrieval index.</p>
           <a class="text-link" href="/icu-wiki/embeddings/">Open embedding map</a>
         </article>
+        <article>
+          <span>Archive</span>
+          <strong>Legacy pages</strong>
+          <p>Older benchmark pages and weekly updates are preserved outside the main paper navigation.</p>
+          <a class="text-link" href="/icu-wiki/legacy/">Open legacy index</a>
+        </article>
       </div>
-    </section>
-
-    <section class="section figure-section">
-      <div class="section-heading">
-        <p class="eyebrow">Result snapshot</p>
-        <h2>Reliability-aware model selection</h2>
-      </div>
-      <figure>
-        <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average answer quality by model size with threshold and blocking cases" />
-        <figcaption>Average answer quality with the working threshold and blocking cases marked. This is the thesis-level model-selection view.</figcaption>
-      </figure>
     </section>
     </main>
     <footer class="site-footer">

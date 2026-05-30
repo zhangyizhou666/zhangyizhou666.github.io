@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>8. Conclusion — ICU Wiki</title>
+    <meta name="description" content="Thesis section 8: Conclusion." />
+    <link rel="stylesheet" href="/icu-wiki/assets/site.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>ICU Wiki</strong>
+          <small>Reliable local RAG for university QA</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/paper/1-introduction/">1 Introduction</a>
+        <a href="/icu-wiki/paper/2-background-and-related-work/">2 Background</a>
+        <a href="/icu-wiki/paper/3-task-and-university-corpus/">3 Corpus</a>
+        <a href="/icu-wiki/paper/4-system-design/">4 System</a>
+        <a href="/icu-wiki/paper/5-evaluation-methodology/">5 Evaluation</a>
+        <a href="/icu-wiki/paper/6-experiments-and-results/">6 Results</a>
+        <a href="/icu-wiki/paper/7-bad-case-analysis-and-discussion/">7 Discussion</a>
+        <a href="/icu-wiki/paper/8-conclusion/">8 Conclusion</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+      </nav>
+    </header>
+    <main>
+    <section class="paper-section-hero">
+      <p class="eyebrow">Section 8</p>
+      <h1>8. Conclusion</h1>
+      <p>RAGAS, as our first tested evaluation framework, was not enough to cover all the constraints that are important to our testing criteria.</p>
+      <div class="paper-subsection-list"><span>Main findings</span><span>Limitations</span><span>Future work</span></div>
+    </section>
+
+    <section class="paper-section-body">
+      <div class="paper-copy">
+        <p>Gemma 4 E4B in agentic mode was the smallest observed reliable candidate that did not show any blocking cases under our evaluation method, while Qwen3.5 9B was a stronger but larger alternative.</p><p>For the design of the retriever on a bilingual corpus like ICU&#x27;s, Japanese tokenizer contributes to better Japanese-language handling. Source-authority scoring made it possible to select evidence from the correct source category, and the implementation of the reranker reduced the most blocking cases compared to all the other major updates under our testing criteria.</p><p>In future work, we could ask ICU students to use ICU Wiki and evaluate model outputs using the same prompts or rubrics given to our LLM judges.</p>
+
+      </div>
+      <div class="paper-figure-grid">
+
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen." />
+      <figcaption>Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen. </figcaption>
+    </figure>
+
+      </div>
+    </section>
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-05-31.</span>
+    </footer>
+  </body>
+</html>
