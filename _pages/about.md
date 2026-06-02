@@ -155,7 +155,7 @@ redirect_from:
   <article class="case-study case-study--quiet">
     <div class="case-study__body">
       <p class="case-study__eyebrow" data-i18n="projects.icu.meta">LLM Retrieval / Campus Information / 2026</p>
-      <h3 data-i18n="projects.icu.title">ICU Wiki</h3>
+      <h3><a href="/icu-wiki/" data-i18n="projects.icu.title">ICU Wiki</a></h3>
       <p class="case-study__summary" data-i18n="projects.icu.summary">
         A RAG-based chatbot that answers student questions using content from ICU websites, portals, and related university resources.
       </p>
