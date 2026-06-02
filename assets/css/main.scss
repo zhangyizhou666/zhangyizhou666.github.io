@@ -367,6 +367,30 @@ body {
   font-weight: 600;
 }
 
+.timeline-item__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 0.65rem;
+}
+
+.timeline-item__logo {
+  display: block;
+  width: min(7.2rem, 30vw);
+  max-height: 2rem;
+  object-fit: contain;
+  object-position: right center;
+}
+
+.timeline-item__logo--tiktok {
+  width: min(5.4rem, 24vw);
+}
+
+.timeline-item__logo--sony-csl {
+  width: min(8rem, 34vw);
+}
+
 .timeline-item__content h3,
 .quiet-record h3,
 .case-study h3,
@@ -379,7 +403,7 @@ body {
 }
 
 .timeline-item__org {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0;
   color: var(--portfolio-muted);
   font-size: 0.9rem;
 }

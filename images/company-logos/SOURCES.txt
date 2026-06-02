@@ -1,0 +1,8 @@
+Company logo assets used on the homepage.
+
+- tiktok-logo.svg: downloaded from Wikimedia Commons, File:Tiktok logo text.svg:
+  https://commons.wikimedia.org/wiki/File:Tiktok_logo_text.svg
+- sony-csl-logo.svg: extracted from the public Sony CSL website header SVG:
+  https://www.sonycsl.co.jp/en/worldviews/corporate-identity/
+
+These marks are used only to identify prior experience entries.

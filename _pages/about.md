@@ -26,7 +26,7 @@ redirect_from:
         I build small, reliable systems for messy workflows - from student-facing products to data pipelines and LLM-assisted research tools.
       </p>
       <p class="intro-panel__note" data-i18n="intro.note">
-        Currently a Business Analyst Intern at ByteDance / TikTok Japan. Previously a Research Assistant at Sony CSL. Studying Information Science at ICU Tokyo, with an exchange year at UC Davis.
+        Recent Business Analyst Intern at TikTok Japan and Research Assistant at Sony CSL. Studying Information Science at ICU Tokyo, with an exchange year at UC Davis.
       </p>
       <div class="intro-panel__actions" aria-label="Primary links">
         <a class="text-link text-link--strong" href="/files/cv_yizhou.pdf" data-i18n="nav.cv">CV</a>
@@ -41,16 +41,16 @@ redirect_from:
     </div>
     <aside class="signal-rail" aria-label="Selected signals">
       <div class="signal-rail__item">
-        <span class="signal-rail__value">800+</span>
-        <span class="signal-rail__label" data-i18n="signals.users">students used my UC Davis scheduling extension</span>
+        <span class="signal-rail__value">48+ hrs</span>
+        <span class="signal-rail__label" data-i18n="signals.tiktok">saved per week through AI workflow automation at TikTok</span>
       </div>
       <div class="signal-rail__item">
         <span class="signal-rail__value">+35pp</span>
         <span class="signal-rail__label" data-i18n="signals.scraper">scraper success-rate improvement at Sony CSL</span>
       </div>
       <div class="signal-rail__item">
-        <span class="signal-rail__value">EN / JP / ZH</span>
-        <span class="signal-rail__label" data-i18n="signals.trilingual">Trilingual in English, Japanese, and Mandarin</span>
+        <span class="signal-rail__value">800+</span>
+        <span class="signal-rail__label" data-i18n="signals.users">students used my UC Davis scheduling extension</span>
       </div>
     </aside>
   </div>
@@ -63,13 +63,19 @@ redirect_from:
 
   <div class="timeline">
     <article class="timeline-item">
-      <div class="timeline-item__date" data-i18n="experience.bytedance.date">Nov 2025 - Present</div>
+      <div class="timeline-item__date" data-i18n="experience.bytedance.date">Nov 2025 - May 2026</div>
       <div class="timeline-item__content">
-        <h3 data-i18n="experience.bytedance.title">Business Analyst Intern, Global Business Solutions</h3>
-        <p class="timeline-item__org" data-i18n="experience.bytedance.org">ByteDance / TikTok Japan - Tokyo</p>
+        <div class="timeline-item__heading">
+          <div>
+            <h3 data-i18n="experience.bytedance.title">Business Analyst Intern</h3>
+            <p class="timeline-item__org" data-i18n="experience.bytedance.org">TikTok - Global Business Solutions &amp; AI Initiative Team - Tokyo</p>
+          </div>
+          <img class="timeline-item__logo timeline-item__logo--tiktok" src="/images/company-logos/tiktok-logo.svg" alt="TikTok logo">
+        </div>
         <ul>
-          <li data-i18n="experience.bytedance.point1">Support client solution teams with advertiser performance analysis, optimization diagnosis, and data-backed sales proposals.</li>
-          <li data-i18n="experience.bytedance.point2">Work across business questions, reporting workflows, and campaign-level performance signals.</li>
+          <li data-i18n="experience.bytedance.point1">Built an end-to-end AI workflow pipeline with Lark CLI, agentic AI tools, and TT4B APIs to automate data extraction, cleaning, and dashboard building, saving 48+ team hours per week.</li>
+          <li data-i18n="experience.bytedance.point2">Tracked China- and US-based engineering progress and identified ways to adapt emerging AI capabilities to Japan sales and operations workflows.</li>
+          <li data-i18n="experience.bytedance.point3">Analyzed ad campaign performance data and identified patterns to support the sales process.</li>
         </ul>
       </div>
     </article>
@@ -77,11 +83,16 @@ redirect_from:
     <article class="timeline-item">
       <div class="timeline-item__date" data-i18n="experience.sony.date">Aug 2025 - Oct 2025</div>
       <div class="timeline-item__content">
-        <h3 data-i18n="experience.sony.title">Research Assistant, LLM & Finance</h3>
-        <p class="timeline-item__org" data-i18n="experience.sony.org">Sony Computer Science Laboratories - Tokyo</p>
+        <div class="timeline-item__heading">
+          <div>
+            <h3 data-i18n="experience.sony.title">Research Assistant / 非常勤研究員</h3>
+            <p class="timeline-item__org" data-i18n="experience.sony.org">Sony Computer Science Laboratories - Tokyo</p>
+          </div>
+          <img class="timeline-item__logo timeline-item__logo--sony-csl" src="/images/company-logos/sony-csl-logo.svg" alt="Sony CSL logo">
+        </div>
         <ul>
-          <li data-i18n="experience.sony.point1">Assisted with prompt fine-tuning for a customer-service LLM chatbot and data-pipeline optimization for a finance-related project.</li>
-          <li data-i18n="experience.sony.point2">Re-engineered Selenium scraping logic and raised success rate from 45% to 80%.</li>
+          <li data-i18n="experience.sony.point1">Prompt-tuned a RAG-based customer-service LLM chatbot for Sony Bank.</li>
+          <li data-i18n="experience.sony.point2">Improved a Selenium-based web scraper for collecting prospectuses (目論見書) in an ESG fraud-detection project, raising success rate from 45% to 80% by re-engineering the scoring logic.</li>
         </ul>
       </div>
     </article>
