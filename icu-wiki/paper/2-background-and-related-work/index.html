@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>2. Background and Related Work — ICU Wiki</title>
     <meta name="description" content="Thesis section 2: Background and Related Work." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260531-retriever-trace" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260607" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -45,19 +45,29 @@
       <div class="paper-subsection-list"><span>Retrieval-Augmented Generation</span><span>LLM-as-a-Judge</span><span>Small Language Models</span><span>Retrieval Ranking and Authority Scoring</span><span>Agentic Frameworks</span></div>
     </section>
 
-    <section class="paper-section-body">
-      <div class="paper-copy">
-        <p>LLM-as-a-judge refers to using a strong language model as an evaluator inside an evaluation framework.</p><p>Reciprocal Rank Fusion (RRF) is a method for merging and combining the results from multiple retrievers or ranking systems into one final ranking.</p><p>Agentic frameworks tend to refer to systems where the language model participates not only in final answer generation, but also as a controller or orchestrator that can decide or use tools during intermediate work.</p>
-        <div class="paper-formula"><span>Formula</span><code>RRF(d) = Σ 1 / (k + rank(d))</code></div>
-      </div>
-      <div class="paper-figure-grid">
+    <section class="paper-section-body magazine-layout">
 
-      </div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>LLM-as-a-judge refers to using a strong language model as an evaluator inside an evaluation framework.</p></div></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>Reciprocal Rank Fusion (RRF) is a method for merging and combining the results from multiple retrievers or ranking systems into one final ranking.</p></div></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>Agentic frameworks tend to refer to systems where the language model participates not only in final answer generation, but also as a controller or orchestrator that can decide or use tools during intermediate work.</p></div></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-formula"><span>Formula</span><code>RRF(d) = Σ 1 / (k + rank(d))</code></div></div>
+        </article>
+
     </section>
     </main>
     <footer class="site-footer">
       <span>ICU Wiki senior thesis research site.</span>
-      <span>Last built 2026-05-31.</span>
+      <span>Last built 2026-06-07.</span>
     </footer>
   </body>
 </html>

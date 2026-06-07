@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>6. Experiments and Results — ICU Wiki</title>
     <meta name="description" content="Thesis section 6: Experiments and Results." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260531-retriever-trace" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260607" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -45,49 +45,70 @@
       <div class="paper-subsection-list"><span>Model and mode comparison</span><span>Smallest reliable configuration</span><span>Effects of agentic mode</span><span>Language-following diagnostic</span><span>Retriever ablation</span></div>
     </section>
 
-    <section class="paper-section-body">
-      <div class="paper-copy">
-        <p>After marking blocking cases across these model/mode conditions, we find that Gemma 4 E4B agentic mode and Qwen3.5 9B agentic mode are the only two conditions that are above the quality threshold while also having zero blocking cases.</p><p>This suggests that agentic retrieval may help stronger or more stable models, but it is not automatically helpful for every small model.</p><p>We found that the effects of the retriever updates were not always positive for the whole system.</p>
+    <section class="paper-section-body magazine-layout">
 
-      </div>
-      <div class="paper-figure-grid">
-
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>After marking blocking cases across these model/mode conditions, we find that Gemma 4 E4B agentic mode and Qwen3.5 9B agentic mode are the only two conditions that are above the quality threshold while also having zero blocking cases.</p></div></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_by_model_mode.png" alt="ICU Bench 30 judge comparison by model and answer mode." />
       <figcaption>ICU Bench 30 judge comparison by model and answer mode. </figcaption>
     </figure>
+    </div>
+        </article>
 
+        <article class="paper-layout-band reverse">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>This suggests that agentic retrieval may help stronger or more stable models, but it is not automatically helpful for every small model.</p></div></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen." />
       <figcaption>Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen. </figcaption>
     </figure>
+    </div>
+        </article>
 
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>We found that the effects of the retriever updates were not always positive for the whole system.</p></div></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_quality_latency_tradeoff.png" alt="ICU Bench 30 quality-latency tradeoff by model and answer mode." />
       <figcaption>ICU Bench 30 quality-latency tradeoff by model and answer mode. </figcaption>
     </figure>
+    </div>
+        </article>
 
+    <article class="paper-layout-band visual-only">
+      <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_agentic_help_vs_bad_cases.png" alt="Agentic effects by model on blocking-case changes under ICU Bench 30." />
       <figcaption>Agentic effects by model on blocking-case changes under ICU Bench 30. </figcaption>
     </figure>
+    </div>
+    </article>
 
+    <article class="paper-layout-band visual-only">
+      <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/system30_language_compliance_by_model_mode.png" alt="Input and output language match rate by question language, model, and answer mode." />
       <figcaption>Input and output language match rate by question language, model, and answer mode. </figcaption>
     </figure>
+    </div>
+    </article>
 
+    <article class="paper-layout-band visual-only">
+      <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/retriever_blocking_cases_drop.png" alt="Blocking cases across retriever versions." />
       <figcaption>Blocking cases across retriever versions. </figcaption>
     </figure>
+    </div>
+    </article>
 
-      </div>
     </section>
     </main>
     <footer class="site-footer">
       <span>ICU Wiki senior thesis research site.</span>
-      <span>Last built 2026-05-31.</span>
+      <span>Last built 2026-06-07.</span>
     </footer>
   </body>
 </html>

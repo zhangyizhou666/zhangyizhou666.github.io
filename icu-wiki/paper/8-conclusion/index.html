@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>8. Conclusion — ICU Wiki</title>
     <meta name="description" content="Thesis section 8: Conclusion." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260531-retriever-trace" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260607" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -45,24 +45,31 @@
       <div class="paper-subsection-list"><span>Main findings</span><span>Limitations</span><span>Future work</span></div>
     </section>
 
-    <section class="paper-section-body">
-      <div class="paper-copy">
-        <p>Gemma 4 E4B in agentic mode was the smallest observed reliable candidate that did not show any blocking cases under our evaluation method, while Qwen3.5 9B was a stronger but larger alternative.</p><p>For the design of the retriever on a bilingual corpus like ICU&#x27;s, Japanese tokenizer contributes to better Japanese-language handling. Source-authority scoring made it possible to select evidence from the correct source category, and the implementation of the reranker reduced the most blocking cases compared to all the other major updates under our testing criteria.</p><p>In future work, we could ask ICU students to use ICU Wiki and evaluate model outputs using the same prompts or rubrics given to our LLM judges.</p>
+    <section class="paper-section-body magazine-layout">
 
-      </div>
-      <div class="paper-figure-grid">
-
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>Gemma 4 E4B in agentic mode was the smallest observed reliable candidate that did not show any blocking cases under our evaluation method, while Qwen3.5 9B was a stronger but larger alternative.</p></div></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen." />
       <figcaption>Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen. </figcaption>
     </figure>
+    </div>
+        </article>
 
-      </div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>For the design of the retriever on a bilingual corpus like ICU&#x27;s, Japanese tokenizer contributes to better Japanese-language handling. Source-authority scoring made it possible to select evidence from the correct source category, and the implementation of the reranker reduced the most blocking cases compared to all the other major updates under our testing criteria.</p></div></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>In future work, we could ask ICU students to use ICU Wiki and evaluate model outputs using the same prompts or rubrics given to our LLM judges.</p></div></div>
+        </article>
+
     </section>
     </main>
     <footer class="site-footer">
       <span>ICU Wiki senior thesis research site.</span>
-      <span>Last built 2026-05-31.</span>
+      <span>Last built 2026-06-07.</span>
     </footer>
   </body>
 </html>

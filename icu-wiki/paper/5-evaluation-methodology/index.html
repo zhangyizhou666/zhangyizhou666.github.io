@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>5. Evaluation Methodology — ICU Wiki</title>
     <meta name="description" content="Thesis section 5: Evaluation Methodology." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260531-retriever-trace" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260607" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -45,29 +45,41 @@
       <div class="paper-subsection-list"><span>What counts as a reliable answer?</span><span>Limits of standard RAG evaluation</span><span>G-Eval-inspired answer-quality evaluation</span><span>Working reliability requirement</span><span>Blocking cases</span></div>
     </section>
 
-    <section class="paper-section-body">
-      <div class="paper-copy">
-        <p>We propose four criteria that both the model and the retriever need to meet: Evidence-based, Summarize instead of copied, Citation useful, and No blocking case.</p><p>At first, we used RAGAS as a mainstream evaluation method to evaluate the whole-system RAG performance.</p><p>We then fed all answers to our judges and let them blindly evaluate the answers. The judges gave scores from 0 to 2 on four dimensions: answer acceptance, readability, citation usefulness, and over-answering risk.</p><p>Therefore, in our definition, a workable model condition needs to meet the 0.8 quality threshold and also have zero blocking cases.</p>
+    <section class="paper-section-body magazine-layout">
 
-      </div>
-      <div class="paper-figure-grid">
-
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>We propose four criteria that both the model and the retriever need to meet: Evidence-based, Summarize instead of copied, Citation useful, and No blocking case.</p></div></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-04-30/initial-50/plots/gemma_qwen35_ragas_overall_vs_size.png" alt="Early mean scores under the RAGAS evaluation framework." />
       <figcaption>Early mean scores under the RAGAS evaluation framework. </figcaption>
     </figure>
+    </div>
+        </article>
 
+        <article class="paper-layout-band reverse">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>At first, we used RAGAS as a mainstream evaluation method to evaluate the whole-system RAG performance.</p></div></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_four_dimensions_by_model_mode.png" alt="ICU Bench 30 average scores under two judges across four evaluation dimensions." />
       <figcaption>ICU Bench 30 average scores under two judges across four evaluation dimensions. </figcaption>
     </figure>
+    </div>
+        </article>
 
-      </div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>We then fed all answers to our judges and let them blindly evaluate the answers. The judges gave scores from 0 to 2 on four dimensions: answer acceptance, readability, citation usefulness, and over-answering risk.</p></div></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><div class="paper-text-card"><p>Therefore, in our definition, a workable model condition needs to meet the 0.8 quality threshold and also have zero blocking cases.</p></div></div>
+        </article>
+
     </section>
     </main>
     <footer class="site-footer">
       <span>ICU Wiki senior thesis research site.</span>
-      <span>Last built 2026-05-31.</span>
+      <span>Last built 2026-06-07.</span>
     </footer>
   </body>
 </html>
