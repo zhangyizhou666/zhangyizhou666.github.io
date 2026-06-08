@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>6. Experiments and Results — ICU Wiki</title>
     <meta name="description" content="Thesis section 6: Experiments and Results." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -48,7 +48,7 @@
     <section class="paper-section-body magazine-layout">
 
         <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">After marking blocking cases across these model/mode conditions, we find that Gemma 4 E4B agentic mode and Qwen3.5 9B agentic mode are the only two conditions that are above the quality threshold while also having zero blocking cases.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Model and mode comparison</h2><p class="paper-section-paragraph">For the model comparison experiment, we provided each ICU Bench 30 question and its retrieved chunks to six models, including the Qwen3.5 family from 0.8B to 9B and the Gemma 4 2B and 4B models.</p><p class="paper-section-paragraph">Each model generated answers in two modes: single-shot and agentic. As a result, we received 360 answer pairs.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_by_model_mode.png" alt="ICU Bench 30 judge comparison by model and answer mode." />
@@ -58,51 +58,59 @@
         </article>
 
         <article class="paper-layout-band reverse">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">This suggests that agentic retrieval may help stronger or more stable models, but it is not automatically helpful for every small model.</p></div>
-          <div class="paper-layout-visual">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Smallest reliable configuration</h2><p class="paper-section-paragraph">The previous score-only comparison is not enough to clarify whether the model is reliable and consistent enough.</p><p class="paper-section-paragraph">After marking blocking cases across these model/mode conditions, we find that Gemma 4 E4B agentic mode and Qwen3.5 9B agentic mode are the only two conditions that are above the quality threshold while also having zero blocking cases.</p><p class="paper-section-paragraph">With Gemma 4 E4B and Qwen3.5 9B under agentic mode passing our reliability requirement, we then consider latency and hardware constraints.</p></div>
+          <div class="paper-layout-visual"><div class="paper-figure-stack">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen." />
       <figcaption>Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen. </figcaption>
     </figure>
-    </div>
-        </article>
 
-        <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">We found that the effects of the retriever updates were not always positive for the whole system.</p></div>
-          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_quality_latency_tradeoff.png" alt="ICU Bench 30 quality-latency tradeoff by model and answer mode." />
       <figcaption>ICU Bench 30 quality-latency tradeoff by model and answer mode. </figcaption>
     </figure>
-    </div>
+    </div></div>
         </article>
 
-    <article class="paper-layout-band visual-only">
-      <div class="paper-layout-visual">
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Effects of agentic mode</h2><p class="paper-section-paragraph">We want to compare whether agentic mode improves answer quality generally across models and whether it changes the number of blocking cases.</p><p class="paper-section-paragraph">Although we initially thought that more model calls under agentic mode could potentially help the model perform better on harder questions or complex tasks, the result does not suggest a universal pattern that agentic mode is always better.</p></div>
+          <div class="paper-layout-visual"><div class="paper-figure-stack">
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_hardest_questions.png" alt="ICU Bench 30 lowest-average-quality questions." />
+      <figcaption>ICU Bench 30 lowest-average-quality questions. </figcaption>
+    </figure>
+
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-13/system30/plots/system30_agentic_help_vs_bad_cases.png" alt="Agentic effects by model on blocking-case changes under ICU Bench 30." />
       <figcaption>Agentic effects by model on blocking-case changes under ICU Bench 30. </figcaption>
     </figure>
-    </div>
-    </article>
+    </div></div>
+        </article>
 
-    <article class="paper-layout-band visual-only">
-      <div class="paper-layout-visual">
+        <article class="paper-layout-band reverse">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Language-following diagnostic</h2><p class="paper-section-paragraph">Language following means that the input language and the output language should be aligned.</p><p class="paper-section-paragraph">Among these three language groups, Chinese questions appear to be the hardest case. Only the 9B model consistently followed the input language for Chinese questions, while smaller models often changed the answer language.</p></div>
+          <div class="paper-layout-visual"><div class="paper-figure-stack">
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/thesis/figures/language_following_diagnostic_concept.png" alt="Concept of the language-following diagnostic." />
+      <figcaption>Concept of the language-following diagnostic. </figcaption>
+    </figure>
+
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/system30_language_compliance_by_model_mode.png" alt="Input and output language match rate by question language, model, and answer mode." />
       <figcaption>Input and output language match rate by question language, model, and answer mode. </figcaption>
     </figure>
-    </div>
-    </article>
+    </div></div>
+        </article>
 
-    <article class="paper-layout-band visual-only">
-      <div class="paper-layout-visual">
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Retriever ablation</h2><p class="paper-section-paragraph">We performed a retriever ablation study on each main-stage version of the retriever.</p><p class="paper-section-paragraph">In our test, the reranker and source-authority scoring only reduced blocking cases, while Japanese FTS and metadata/entity matching removed some existing blocking cases but also introduced new ones.</p></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/retriever_blocking_cases_drop.png" alt="Blocking cases across retriever versions." />
       <figcaption>Blocking cases across retriever versions. </figcaption>
     </figure>
     </div>
-    </article>
+        </article>
 
     </section>
     </main>

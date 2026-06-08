@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>8. Conclusion — ICU Wiki</title>
     <meta name="description" content="Thesis section 8: Conclusion." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -47,22 +47,16 @@
 
     <section class="paper-section-body magazine-layout">
 
-        <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Gemma 4 E4B in agentic mode was the smallest observed reliable candidate that did not show any blocking cases under our evaluation method, while Qwen3.5 9B was a stronger but larger alternative.</p></div>
-          <div class="paper-layout-visual">
-    <figure class="paper-figure-card">
-      <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_quality_vs_model_size_threshold.png" alt="Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen." />
-      <figcaption>Average quality with blocking cases marked under two judges across model sizes and answer modes for the working-threshold screen. </figcaption>
-    </figure>
-    </div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Main findings</h2><p class="paper-section-paragraph">RAGAS, as our first tested evaluation framework, was not enough to cover all the constraints that are important to our testing criteria.</p><p class="paper-section-paragraph">For the design of the retriever on a bilingual corpus like ICU&#x27;s, Japanese tokenizer contributes to better Japanese-language handling. Source-authority scoring made it possible to select evidence from the correct source category, and the implementation of the reranker reduced the most blocking cases compared to all the other major updates under our testing criteria.</p><p class="paper-section-paragraph">On the model selection side, Gemma 4 E4B in agentic mode was the smallest observed reliable candidate that did not show any blocking cases within the sub-10B scope under our evaluation method, while Qwen3.5 9B was a stronger but larger alternative.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">For the design of the retriever on a bilingual corpus like ICU&#x27;s, Japanese tokenizer contributes to better Japanese-language handling. Source-authority scoring made it possible to select evidence from the correct source category, and the implementation of the reranker reduced the most blocking cases compared to all the other major updates under our testing criteria.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Limitations</h2><p class="paper-section-paragraph">Although we used two SOTA-level LLM judges to evaluate generated answers, these metrics are not based on real human validation.</p><p class="paper-section-paragraph">Even if we raised the difficulty and testing variability compared to the previous legacy question set, ICU Bench 30 is still moderately friendly to the models.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">In future work, we could ask ICU students to use ICU Wiki and evaluate model outputs using the same prompts or rubrics given to our LLM judges.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Future work</h2><p class="paper-section-paragraph">In future work, we could ask ICU students to use ICU Wiki and evaluate model outputs using the same prompts or rubrics given to our LLM judges.</p><p class="paper-section-paragraph">We could construct a harder version of our test question set with more questions that include stronger typos, acronyms, multi-intent questions, questions with mixed languages, and so on.</p></div>
         </article>
 
     </section>

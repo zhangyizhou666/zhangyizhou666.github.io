@@ -725,6 +725,16 @@ figure {
   gap: clamp(1rem, 1.6vw, 1.35rem);
 }
 
+.paper-block-title {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.65rem, 2.1vw, 2.7rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
 .paper-section-paragraph,
 .paper-text-card {
   margin: 0;
@@ -787,6 +797,11 @@ figure {
 .paper-figure-grid {
   display: grid;
   gap: 1rem;
+}
+
+.paper-figure-stack {
+  display: grid;
+  gap: clamp(1rem, 1.6vw, 1.5rem);
 }
 
 .paper-figure-card {

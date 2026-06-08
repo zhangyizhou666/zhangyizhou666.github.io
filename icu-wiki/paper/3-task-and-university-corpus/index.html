@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>3. Task and University Corpus — ICU Wiki</title>
     <meta name="description" content="Thesis section 3: Task and University Corpus." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -48,7 +48,7 @@
     <section class="paper-section-body magazine-layout">
 
         <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Our goal is to include as much data from ICU-related official or linked sources as possible, so that the system can cover a wider range of student questions.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">ICU university corpus</h2><p class="paper-section-paragraph">The ICU corpus is fragmented, multilingual, and multi-format. It contains ICU-related institutional knowledge spread across multiple domains and represented in different formats.</p><p class="paper-section-paragraph">Our goal is to include as much data from ICU-related official or linked sources as possible, so that the system can cover a wider range of student questions.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/icu_corpus_composition_bubbles.png" alt="ICU corpus composition by generated chunk count." />
@@ -57,8 +57,12 @@
     </div>
         </article>
 
-        <article class="paper-layout-band reverse">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">ICU Bench 30 is a benchmark question set that contains 30 questions designed to evaluate student-facing university QA over the ICU corpus.</p></div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Corpus construction</h2><p class="paper-section-paragraph">We collect raw data from the sources mentioned above. However, raw web data contains many headers, boilerplate sections, navigation texts, and repetitive text blocks that appear across web pages because of the HTML structure.</p><p class="paper-section-paragraph">We then apply source-aware chunking. Instead of using one fixed chunking strategy for every source, we use different chunking strategies for different source types.</p></div>
+        </article>
+
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">ICU Bench 30</h2><p class="paper-section-paragraph">ICU Bench 30 is a benchmark question set that contains 30 questions designed to evaluate student-facing university QA over the ICU corpus.</p><p class="paper-section-paragraph">The question set covers three languages: English (20), Japanese (7), and Chinese (3). We also included non-answerable questions on purpose to test whether the model can answer from evidence, use good citations, and avoid over-answering.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/icubench30_composition_pies.png" alt="ICU Bench 30 composition by question category, answerability, and language." />

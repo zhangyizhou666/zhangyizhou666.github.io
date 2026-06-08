@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>4. System Design — ICU Wiki</title>
     <meta name="description" content="Thesis section 4: System Design." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -48,7 +48,7 @@
     <section class="paper-section-body magazine-layout">
 
         <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">The retriever went through four major updates after the basic hybrid retrieval baseline: Japanese FTS, metadata/entity matching, reranking, and source-authority scoring.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">System overview</h2><p class="paper-section-paragraph">ICU Wiki is built as a local RAG system with three main parts: a cleaned ICU corpus, a retriever that selects top evidence chunks, and an answer generator based on a local language model.</p><p class="paper-section-paragraph">The retriever went through four major updates after the basic hybrid retrieval baseline: Japanese FTS, metadata/entity matching, reranking, and source-authority scoring.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/retriever_iteration_colored_flow.png" alt="Retriever iteration." />
@@ -57,8 +57,16 @@
     </div>
         </article>
 
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Basic hybrid retrieval</h2><p class="paper-section-paragraph">Implementing the retriever on the ICU corpus was challenging because the corpus contains multiple categories, document types, and two languages.</p><p class="paper-section-paragraph">First, we tried the simplest hybrid retrieval method, which combines keyword retrieval and dense retrieval based on the BGE-M3 embedding model.</p></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Japanese tokenizer</h2><p class="paper-section-paragraph">From our bad case analysis, we found that the simple text-search configuration from PostgreSQL worked well for English sentences because English words are naturally separated by spaces.</p><p class="paper-section-paragraph">We therefore upgraded the lexical side with an additional Janome Japanese tokenizer, so that the system could split Japanese question sentences into more proper word units and produce better keyword-matching results.</p></div>
+        </article>
+
         <article class="paper-layout-band reverse">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Under single-shot mode, each question passes through one fixed retriever and one fixed retrieval action, and the top-five evidence chunks are sent directly to the answer generator.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Entity aliases and title protection</h2><p class="paper-section-paragraph">For queries that contain certain terminology matched with our passage chunks, specific terms can already provide a strong hint during retrieval. However, a simple keyword and semantic matching pipeline could still bury those results in the candidate pool.</p><p class="paper-section-paragraph">Therefore, we built an alias table from course and person metadata to give this situation a separate retrieval pipeline.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/entity_alias_lookup_flow.png" alt="Entity-alias lookup for a real course-record query." />
@@ -67,24 +75,39 @@
     </div>
         </article>
 
-        <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Agentic mode can rewrite the input question into both English and Japanese variants, and it can perform multiple rounds of search if it thinks the retrieved evidence is not enough to generate the final answer.</p></div>
-          <div class="paper-layout-visual">
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Reranker</h2><p class="paper-section-paragraph">A reranker was not initially planned in the system. However, as a general solution often used in retrieval systems, we included it inside our ablation test and found that it could significantly reduce blocking cases in our system.</p><p class="paper-section-paragraph">The reranker provides a final precision check before evidence selection, helping make sure that the final retrieved chunks are useful for answer generation.</p></div>
+        </article>
+
+        <article class="paper-layout-band reverse">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Source-authority scoring</h2><p class="paper-section-paragraph">After that, we found another type of bad case. For questions such as whether it is okay to use ChatGPT for a senior thesis, the retriever tended to retrieve chunks from newsletters or event-like pages.</p><p class="paper-section-paragraph">Therefore, we added source-authority scoring. Instead of only asking whether a chunk is relevant to the query, this scoring also considers the source type and the broad query category.</p></div>
+          <div class="paper-layout-visual"><div class="paper-figure-stack">
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/thesis/figures/bad_case_chatgpt_japanese_query_pre_authority_annotated.png" alt="Japanese query bad case before source-authority scoring." />
+      <figcaption>Japanese query bad case before source-authority scoring. </figcaption>
+    </figure>
+
+    <figure class="paper-figure-card">
+      <img src="/icu-wiki/thesis/figures/bad_case_chatgpt_english_query_pre_authority.png" alt="English query comparison before source-authority scoring." />
+      <figcaption>English query comparison before source-authority scoring. </figcaption>
+    </figure>
+
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/source_authority_single_shot_flow.png" alt="Source-authority scoring inside the backend retriever." />
       <figcaption>Source-authority scoring inside the backend retriever. </figcaption>
     </figure>
-    </div>
+    </div></div>
         </article>
 
-    <article class="paper-layout-band visual-only">
-      <div class="paper-layout-visual">
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Answer orchestration modes</h2><p class="paper-section-paragraph">In our system design, we use single-shot mode as the baseline. Under single-shot mode, each question passes through one fixed retriever and one fixed retrieval action, and the top-five evidence chunks are sent directly to the answer generator.</p><p class="paper-section-paragraph">Agentic mode can rewrite the input question into both English and Japanese variants, and it can perform multiple rounds of search if it thinks the retrieved evidence is not enough to generate the final answer.</p></div>
+          <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/agentic_framework_flow.png" alt="Agentic retrieval framework using a real ICU Bench 30 trace." />
       <figcaption>Agentic retrieval framework using a real ICU Bench 30 trace. </figcaption>
     </figure>
     </div>
-    </article>
+        </article>
 
     </section>
     </main>

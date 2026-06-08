@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>2. Background and Related Work — ICU Wiki</title>
     <meta name="description" content="Thesis section 2: Background and Related Work." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -48,19 +48,27 @@
     <section class="paper-section-body magazine-layout">
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">LLM-as-a-judge refers to using a strong language model as an evaluator inside an evaluation framework.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Retrieval-Augmented Generation</h2><p class="paper-section-paragraph">Retrieval-augmented generation has become a common approach when building an evidence-based chatbot system, as it can provide external evidence by retrieving from an external database with semantic matching and then generate the final answer based on the retrieved evidence.</p><p class="paper-section-paragraph">However, a very simple RAG pipeline itself is not convincing enough, as the retriever could fetch the wrong evidence or the small language model might fail to decide evidence sufficiency, summarize the retrieved passages, or answer the question.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Reciprocal Rank Fusion (RRF) is a method for merging and combining the results from multiple retrievers or ranking systems into one final ranking.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">LLM-as-a-Judge</h2><p class="paper-section-paragraph">LLM-as-a-judge refers to using a strong language model as an evaluator inside an evaluation framework.</p><p class="paper-section-paragraph">With the recent improvement of SOTA-level language models, we believe LLM-as-a-judge provides a relatively consistent and scalable solution to evaluate a large number of generated answers under the same rubric.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Agentic frameworks tend to refer to systems where the language model participates not only in final answer generation, but also as a controller or orchestrator that can decide or use tools during intermediate work.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">RAGAS and G-Eval</h2><p class="paper-section-paragraph">RAGAS is an open-source evaluation framework that has been widely used for testing RAG systems.</p><p class="paper-section-paragraph">G-Eval lets us define our own evaluation criteria and scoring logic, send them to a strong LLM, and ask it to score the output using a structured form and a numerical score range.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><div class="paper-formula"><span>Formula</span><code>RRF(d) = Σ 1 / (k + rank(d))</code></div></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Small Language Models</h2><p class="paper-section-paragraph">Small Language Models (SLMs) refer to language models that are much smaller than frontier LLMs. There is no strict size boundary, but in our case, we use SLMs smaller than 10B as our testing scope.</p></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Retrieval Ranking and Authority Scoring</h2><p class="paper-section-paragraph">Reciprocal Rank Fusion (RRF) is a method for merging and combining the results from multiple retrievers or ranking systems into one final ranking.</p><p class="paper-section-paragraph">The concept of authority-aware scoring has existed for a long time in information retrieval. The idea is that ranking should not only ask whether a document is textually relevant, but also whether the source that the document belongs to is important or authoritative for the user&#x27;s need.</p><div class="paper-formula"><span>Formula</span><code>RRF(d) = Σ 1 / (k + rank(d))</code></div></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Agentic Frameworks</h2><p class="paper-section-paragraph">Agentic frameworks tend to refer to systems where the language model participates not only in final answer generation, but also as a controller or orchestrator that can decide or use tools during intermediate work.</p></div>
         </article>
 
     </section>

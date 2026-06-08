@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>5. Evaluation Methodology — ICU Wiki</title>
     <meta name="description" content="Thesis section 5: Evaluation Methodology." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -47,8 +47,12 @@
 
     <section class="paper-section-body magazine-layout">
 
-        <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">We propose four criteria that both the model and the retriever need to meet: Evidence-based, Summarize instead of copied, Citation useful, and No blocking case.</p></div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">What counts as a reliable answer?</h2><p class="paper-section-paragraph">Under the university QA situation, defining what should count as a reliable answer is important.</p><p class="paper-section-paragraph">We propose four criteria that both the model and the retriever need to meet: Evidence-based, Summarize instead of copied, Citation useful, and No blocking case.</p></div>
+        </article>
+
+        <article class="paper-layout-band reverse">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Limits of standard RAG evaluation</h2><p class="paper-section-paragraph">At first, we used RAGAS as a mainstream evaluation method to evaluate the whole-system RAG performance. However, after running it across our six models, we found that the score differences were very small.</p><p class="paper-section-paragraph">Therefore, our conclusion was that the current RAGAS evaluation framework has certain constraints and does not properly cover the dimensions that we care about, especially readability, model generation consistency, and blocking-case detection.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-04-30/initial-50/plots/gemma_qwen35_ragas_overall_vs_size.png" alt="Early mean scores under the RAGAS evaluation framework." />
@@ -57,8 +61,8 @@
     </div>
         </article>
 
-        <article class="paper-layout-band reverse">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">At first, we used RAGAS as a mainstream evaluation method to evaluate the whole-system RAG performance.</p></div>
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">G-Eval-inspired answer-quality evaluation</h2><p class="paper-section-paragraph">Because we wanted to expand our evaluation metrics into dimensions that we care about for the university QA use case, we customized G-Eval&#x27;s evaluation framework into dimensions that fit our own needs.</p><p class="paper-section-paragraph">The judges gave scores from 0 to 2 on four dimensions: answer acceptance, readability, citation usefulness, and over-answering risk.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_four_dimensions_by_model_mode.png" alt="ICU Bench 30 average scores under two judges across four evaluation dimensions." />
@@ -68,11 +72,11 @@
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">We then fed all answers to our judges and let them blindly evaluate the answers. The judges gave scores from 0 to 2 on four dimensions: answer acceptance, readability, citation usefulness, and over-answering risk.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Working reliability requirement</h2><p class="paper-section-paragraph">As we evaluate model output by assigning scores from 0 to 2 on each evaluation dimension and then normalize the final quality score, we use 0.8 as a practical bottom line to filter out models that are obviously not capable enough for this task.</p><p class="paper-section-paragraph">Therefore, in our definition, a workable model condition needs to meet the 0.8 quality threshold and also have zero blocking cases.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Therefore, in our definition, a workable model condition needs to meet the 0.8 quality threshold and also have zero blocking cases.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Blocking cases</h2><p class="paper-section-paragraph">In this thesis, we define a blocking case as an answer where answer acceptance is zero from any of the two judges, or the average human quality score is below 0.50, or the judge notes/tags indicate repetitive or truncated output.</p><p class="paper-section-paragraph">Such blocking cases can significantly affect the user&#x27;s decision and experience. Therefore, they should be carefully examined inside the output and avoided when building the system.</p></div>
         </article>
 
     </section>

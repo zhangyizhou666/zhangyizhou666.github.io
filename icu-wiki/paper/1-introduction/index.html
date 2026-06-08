@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>1. Introduction — ICU Wiki</title>
     <meta name="description" content="Thesis section 1: Introduction." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -42,25 +42,29 @@
         <strong>Section question</strong>
         <p>How can we build and evaluate a local RAG system for student-facing university question answering, and identify a local model configuration that is small but reliable enough for this task?</p>
       </aside>
-      <div class="paper-subsection-list"><span>University QA as an Evidence-Based Problem</span><span>Local deployment constraints</span><span>Research questions</span><span>Contributions</span></div>
+      <div class="paper-subsection-list"><span>University QA as an Evidence-Based Problem</span><span>Local deployment constraints</span><span>Retrieval and Orchestration Layer</span><span>Research questions</span><span>Contributions</span></div>
     </section>
 
     <section class="paper-section-body magazine-layout">
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">University information is often fragmented across multiple websites and hidden behind layers of menus, making it difficult for students to find expected answers efficiently.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">University QA as an Evidence-Based Problem</h2><p class="paper-section-paragraph">University information is often fragmented across multiple systems and hidden behind layers of menus, and International Christian University (ICU) is one example of this.</p><p class="paper-section-paragraph">Therefore, the system cannot only pursue fluency; it also needs to be evidence-based and needs to refuse to answer when the evidence is not sufficient.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Students&#x27; questions, and the answers they receive, can affect real decision-making, for example, course registration, graduation requirements, senior thesis policy, and so on.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Local deployment constraints</h2><p class="paper-section-paragraph">In terms of deployment, an external API-based service could create excessive long-term costs and potential data-governance risks, especially when the imported data contains internal school information that is meant to be accessible only to ICU students.</p><p class="paper-section-paragraph">A 10B-parameter model requires about 20 GB of GPU memory under FP16, which makes deployment under a single general consumer-facing GPU possible, though extra memory for KV cache and runtime overhead might be needed under the real situation.</p><div class="paper-formula"><span>Formula</span><code>10^{10} parameters × 2 bytes/parameter ≈ 20 GB</code></div></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">A 10B-parameter model requires about 20 GB of GPU memory under FP16, which makes deployment under a single general consumer-facing GPU possible, though extra memory for KV cache and runtime overhead might be needed under the real situation.</p></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Retrieval and Orchestration Layer</h2><p class="paper-section-paragraph">The retrieval and orchestration layer corresponds to the system around the language model, which decides how the user question is going to be processed and searched, how retrieved chunks are fetched and ranked, and how evidence is then passed to the answer generator.</p></div>
         </article>
 
         <article class="paper-layout-band text-only">
-          <div class="paper-layout-copy"><div class="paper-formula"><span>Formula</span><code>10^{10} parameters × 2 bytes/parameter ≈ 20 GB</code></div></div>
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Research questions</h2><p class="paper-section-paragraph">This thesis develops ICU Wiki as a case study to examine how reliable a locally hosted RAG system can be for student-facing university question answering, how reliability should be defined, and how a local configuration that is small but reliable enough can be identified.</p></div>
+        </article>
+
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Contributions</h2><p class="paper-section-paragraph">This thesis mainly makes three contributions: ICU Wiki as a case-study reference, a retrieval-and-orchestration layer for this setting, and an evaluation logic for small language models in local RAG-based systems.</p></div>
         </article>
 
     </section>

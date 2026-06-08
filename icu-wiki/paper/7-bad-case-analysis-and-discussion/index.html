@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>7. Bad Case Analysis and Discussion — ICU Wiki</title>
     <meta name="description" content="Thesis section 7: Bad Case Analysis and Discussion." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608191700" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -47,8 +47,12 @@
 
     <section class="paper-section-body magazine-layout">
 
-        <article class="paper-layout-band">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Average scores capture only average-case usefulness, while answer consistency and blocking cases strongly affect user experience and can cause potential risk by providing unusable answers.</p></div>
+        <article class="paper-layout-band text-only">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Observed failure patterns in small models</h2><p class="paper-section-paragraph">From the observed small-model outputs, the main failure patterns are uncontrolled self-repetition near the end of the answer, direct copying from retrieved context, and difficulty summarizing across multiple easily confused sources.</p></div>
+        </article>
+
+        <article class="paper-layout-band reverse">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Why average scores hide deployment risk</h2><p class="paper-section-paragraph">Small models&#x27; average scores can get close to larger models&#x27; scores. However, this does not necessarily suggest that they are capable enough to be deployed in a real situation.</p><p class="paper-section-paragraph">Average scores capture only average-case usefulness, while answer consistency and blocking cases strongly affect user experience and can cause potential risk by providing unusable answers.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/artifacts/2026-05-16/system30-multijudge/plots/system30_multijudge_blocking_cases_by_model_mode.png" alt="ICU Bench 30 blocking cases by model and answer mode." />
@@ -57,8 +61,8 @@
     </div>
         </article>
 
-        <article class="paper-layout-band reverse">
-          <div class="paper-layout-copy"><p class="paper-section-paragraph">Our live testing outside the benchmark question set also triggered a format-control failure while in agentic mode.</p></div>
+        <article class="paper-layout-band">
+          <div class="paper-layout-copy"><h2 class="paper-block-title">Output-control risk in retrieval-and-orchestration layers</h2><p class="paper-section-paragraph">Our live testing outside the benchmark question set also triggered a format-control failure while in agentic mode.</p><p class="paper-section-paragraph">It shows a potential risk of the retrieval-and-orchestration layer: while in agentic mode, it could possibly introduce an output-control failure that leads to a blocking case and affects answer quality.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/agentic_output_leakage_answer_annotated.png" alt="Failure example where agentic mode exposes the in-between process text in a final answer." />
