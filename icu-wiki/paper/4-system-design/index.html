@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>4. System Design — ICU Wiki</title>
     <meta name="description" content="Thesis section 4: System Design." />
-      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260607-layout2" />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260608181902" />
   </head>
   <body>
     <div class="ambient ambient-a"></div>
@@ -48,7 +48,7 @@
     <section class="paper-section-body magazine-layout">
 
         <article class="paper-layout-band">
-          <div class="paper-layout-copy"><div class="paper-text-card"><p>The retriever went through four major updates after the basic hybrid retrieval baseline: Japanese FTS, metadata/entity matching, reranking, and source-authority scoring.</p></div></div>
+          <div class="paper-layout-copy"><p class="paper-section-paragraph">The retriever went through four major updates after the basic hybrid retrieval baseline: Japanese FTS, metadata/entity matching, reranking, and source-authority scoring.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/retriever_iteration_colored_flow.png" alt="Retriever iteration." />
@@ -58,7 +58,7 @@
         </article>
 
         <article class="paper-layout-band reverse">
-          <div class="paper-layout-copy"><div class="paper-text-card"><p>Under single-shot mode, each question passes through one fixed retriever and one fixed retrieval action, and the top-five evidence chunks are sent directly to the answer generator.</p></div></div>
+          <div class="paper-layout-copy"><p class="paper-section-paragraph">Under single-shot mode, each question passes through one fixed retriever and one fixed retrieval action, and the top-five evidence chunks are sent directly to the answer generator.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/entity_alias_lookup_flow.png" alt="Entity-alias lookup for a real course-record query." />
@@ -68,7 +68,7 @@
         </article>
 
         <article class="paper-layout-band">
-          <div class="paper-layout-copy"><div class="paper-text-card"><p>Agentic mode can rewrite the input question into both English and Japanese variants, and it can perform multiple rounds of search if it thinks the retrieved evidence is not enough to generate the final answer.</p></div></div>
+          <div class="paper-layout-copy"><p class="paper-section-paragraph">Agentic mode can rewrite the input question into both English and Japanese variants, and it can perform multiple rounds of search if it thinks the retrieved evidence is not enough to generate the final answer.</p></div>
           <div class="paper-layout-visual">
     <figure class="paper-figure-card">
       <img src="/icu-wiki/thesis/figures/source_authority_single_shot_flow.png" alt="Source-authority scoring inside the backend retriever." />
@@ -90,7 +90,7 @@
     </main>
     <footer class="site-footer">
       <span>ICU Wiki senior thesis research site.</span>
-      <span>Last built 2026-06-07.</span>
+      <span>Last built 2026-06-08.</span>
     </footer>
   </body>
 </html>
