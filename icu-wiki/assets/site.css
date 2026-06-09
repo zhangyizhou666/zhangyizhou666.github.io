@@ -1983,6 +1983,95 @@ figcaption {
   gap: 0.75rem;
 }
 
+.voice-console {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.voice-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.voice-controls label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.voice-controls select {
+  min-width: 11rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.voice-controls button,
+.voice-secondary {
+  border: 1px solid var(--blue);
+  border-radius: 0.65rem;
+  background: var(--blue);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.voice-controls button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.voice-output {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: #fbfdff;
+}
+
+.voice-output:empty,
+.voice-audio:empty {
+  display: none;
+}
+
+.voice-output strong {
+  color: var(--ink);
+}
+
+.voice-output p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.voice-audio {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.voice-audio audio {
+  width: 100%;
+}
+
 .chat-contexts h3 {
   margin-top: 0.5rem;
 }
@@ -2204,8 +2293,18 @@ code {
     .paper-section-hero,
     .story-panel,
     .legacy-grid,
-    .site-chat-form {
+    .site-chat-form,
+    .voice-controls {
     grid-template-columns: 1fr;
+  }
+
+  .voice-controls {
+    display: grid;
+  }
+
+  .voice-controls select,
+  .voice-controls button {
+    width: 100%;
   }
 
   .paper-home-hero {

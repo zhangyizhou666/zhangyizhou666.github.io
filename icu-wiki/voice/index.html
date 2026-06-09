@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voice Mode — ICU Wiki Research</title>
+    <meta name="description" content="Voice-mode ICU Wiki chatbot window for the senior thesis research website." />
+      <link rel="stylesheet" href="/icu-wiki/assets/site.css?v=20260609221237" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="site-header">
+      <a class="brand" href="/icu-wiki/">
+        <span class="brand-mark">ICU</span>
+        <span>
+          <strong>ICU Wiki</strong>
+          <small>Reliable local RAG for university QA</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/icu-wiki/">Home</a>
+        <a href="/icu-wiki/paper/1-introduction/">1 Introduction</a>
+        <a href="/icu-wiki/paper/2-background-and-related-work/">2 Background</a>
+        <a href="/icu-wiki/paper/3-task-and-university-corpus/">3 Corpus</a>
+        <a href="/icu-wiki/paper/4-system-design/">4 System</a>
+        <a href="/icu-wiki/paper/5-evaluation-methodology/">5 Evaluation</a>
+        <a href="/icu-wiki/paper/6-experiments-and-results/">6 Results</a>
+        <a href="/icu-wiki/paper/7-bad-case-analysis-and-discussion/">7 Discussion</a>
+        <a href="/icu-wiki/paper/8-conclusion/">8 Conclusion</a>
+        <a href="/icu-wiki/embeddings/">Embeddings</a>
+        <a href="https://blackwell.tail740bf8.ts.net" target="_blank" rel="noreferrer">Live Chatbot</a>
+        <a href="/icu-wiki/voice/">Voice Mode</a>
+      </nav>
+    </header>
+    <main>
+    <section class="page-title compact-title">
+      <p class="eyebrow">Live demo</p>
+      <h1>ICU Wiki Voice Mode</h1>
+      <p>Ask the same ICU Wiki RAG system by voice. The backend transcribes a short question, retrieves ICU evidence, generates a grounded answer, and returns an audio reply when server-side TTS is available.</p>
+    </section>
+
+    <section class="section no-top">
+      <div class="note-grid">
+        <article><span>ASR</span><strong>Whisper Large V3 Turbo</strong><p>Falls back through the configured backend model if the server cannot load it.</p></article>
+        <article><span>RAG</span><strong>Same ICU Wiki backend</strong><p>Voice mode does not bypass retrieval, source ranking, or answer grounding.</p></article>
+        <article><span>TTS</span><strong>Kokoro voice output</strong><p>Server TTS is used when available; browser speech is used as a visible fallback.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Voice window</p>
+        <h2>Ask by microphone</h2>
+      </div>
+      <div class="voice-console" id="voice-console" data-api-url="https://blackwell.tail740bf8.ts.net/api/voice/ask" data-status-url="https://blackwell.tail740bf8.ts.net/api/voice/status">
+        <div class="voice-controls">
+          <label>
+            <span>Answer mode</span>
+            <select data-role="mode">
+              <option value="single">Single-shot</option>
+              <option value="agentic">Agentic</option>
+            </select>
+          </label>
+          <button type="button" data-role="record">Start recording</button>
+          <button type="button" data-role="stop" disabled>Stop and ask</button>
+        </div>
+        <p class="chat-status" data-role="status">Ready. Voice query limit: short one-question audio.</p>
+        <div class="voice-output" data-role="transcript"></div>
+        <div class="voice-output" data-role="answer"></div>
+        <div class="voice-audio" data-role="audio"></div>
+        <div class="chat-contexts" data-role="contexts"></div>
+      </div>
+    </section>
+
+    <script>
+    (() => {
+      const root = document.getElementById("voice-console");
+      if (!root) return;
+
+      const recordButton = root.querySelector("[data-role='record']");
+      const stopButton = root.querySelector("[data-role='stop']");
+      const modeInput = root.querySelector("[data-role='mode']");
+      const status = root.querySelector("[data-role='status']");
+      const transcript = root.querySelector("[data-role='transcript']");
+      const answer = root.querySelector("[data-role='answer']");
+      const audioSlot = root.querySelector("[data-role='audio']");
+      const contexts = root.querySelector("[data-role='contexts']");
+      const apiUrl = root.dataset.apiUrl;
+      const statusUrl = root.dataset.statusUrl;
+
+      let audioContext = null;
+      let source = null;
+      let processor = null;
+      let stream = null;
+      let chunks = [];
+      let recording = false;
+
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[char]));
+
+      function setStatus(message, isError = false) {
+        status.textContent = message;
+        status.classList.toggle("error", isError);
+      }
+
+      function requestJson(url, options = {}) {
+        if (typeof fetch === "function") {
+          return fetch(url, options);
+        }
+        return new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open(options.method || "GET", url);
+          Object.entries(options.headers || {}).forEach(([key, value]) => xhr.setRequestHeader(key, value));
+          xhr.onload = () => {
+            let parsed = {};
+            try {
+              parsed = xhr.responseText ? JSON.parse(xhr.responseText) : {};
+            } catch (error) {
+              reject(error);
+              return;
+            }
+            resolve({
+              ok: xhr.status >= 200 && xhr.status < 300,
+              status: xhr.status,
+              json: () => Promise.resolve(parsed),
+            });
+          };
+          xhr.onerror = () => reject(new Error("Network request failed."));
+          xhr.send(options.body || null);
+        });
+      }
+
+      function flattenChunks() {
+        const totalLength = chunks.reduce((sum, chunk) => sum + chunk.length, 0);
+        const merged = new Float32Array(totalLength);
+        let offset = 0;
+        chunks.forEach((chunk) => {
+          merged.set(chunk, offset);
+          offset += chunk.length;
+        });
+        return merged;
+      }
+
+      function resampleLinear(input, sourceRate, targetRate) {
+        if (sourceRate === targetRate) return input;
+        const ratio = sourceRate / targetRate;
+        const outputLength = Math.max(1, Math.round(input.length / ratio));
+        const output = new Float32Array(outputLength);
+        for (let i = 0; i < outputLength; i += 1) {
+          const sourceIndex = i * ratio;
+          const left = Math.floor(sourceIndex);
+          const right = Math.min(left + 1, input.length - 1);
+          const weight = sourceIndex - left;
+          output[i] = input[left] * (1 - weight) + input[right] * weight;
+        }
+        return output;
+      }
+
+      function encodeWav(samples, sampleRate) {
+        const buffer = new ArrayBuffer(44 + samples.length * 2);
+        const view = new DataView(buffer);
+        const writeString = (offset, value) => {
+          for (let i = 0; i < value.length; i += 1) view.setUint8(offset + i, value.charCodeAt(i));
+        };
+        writeString(0, "RIFF");
+        view.setUint32(4, 36 + samples.length * 2, true);
+        writeString(8, "WAVE");
+        writeString(12, "fmt ");
+        view.setUint32(16, 16, true);
+        view.setUint16(20, 1, true);
+        view.setUint16(22, 1, true);
+        view.setUint32(24, sampleRate, true);
+        view.setUint32(28, sampleRate * 2, true);
+        view.setUint16(32, 2, true);
+        view.setUint16(34, 16, true);
+        writeString(36, "data");
+        view.setUint32(40, samples.length * 2, true);
+        let offset = 44;
+        for (let i = 0; i < samples.length; i += 1, offset += 2) {
+          const clipped = Math.max(-1, Math.min(1, samples[i]));
+          view.setInt16(offset, clipped < 0 ? clipped * 0x8000 : clipped * 0x7fff, true);
+        }
+        return new Blob([view], { type: "audio/wav" });
+      }
+
+      async function blobToBase64(blob) {
+        const buffer = await blob.arrayBuffer();
+        const bytes = new Uint8Array(buffer);
+        let binary = "";
+        for (let i = 0; i < bytes.length; i += 0x8000) {
+          binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+        }
+        return btoa(binary);
+      }
+
+      function renderContexts(rows) {
+        if (!Array.isArray(rows) || !rows.length) {
+          contexts.innerHTML = "";
+          return;
+        }
+        contexts.innerHTML = `
+          <h3>Retrieved contexts</h3>
+          <div class="chat-context-list">
+            ${rows.map((row) => `
+              <details class="chat-context-card">
+                <summary>
+                  <strong>[${escapeHtml(row.rank)}] ${escapeHtml(row.title || "Untitled source")}</strong>
+                  <span>${escapeHtml(row.source_system)} / ${escapeHtml(row.source_type)} · score ${Number(row.score || 0).toFixed(4)}</span>
+                </summary>
+                <p>${escapeHtml(row.text_preview || row.text || "").replace(/\n/g, "<br>")}</p>
+                ${row.url ? `<a class="text-link" href="${escapeHtml(row.url)}" target="_blank" rel="noreferrer">Open source</a>` : ""}
+              </details>
+            `).join("")}
+          </div>
+        `;
+      }
+
+      function browserSpeak(text) {
+        if (!("speechSynthesis" in window) || !text) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text.replace(/\[[0-9,\s]+\]/g, ""));
+        utterance.rate = 0.95;
+        window.speechSynthesis.speak(utterance);
+      }
+
+      function renderPayload(payload) {
+        transcript.innerHTML = `<strong>Transcript</strong><p>${escapeHtml(payload.transcription?.text || payload.query || "").replace(/\n/g, "<br>")}</p>`;
+        answer.innerHTML = `
+          <strong>Answer</strong>
+          <p>${escapeHtml(payload.answer || "").replace(/\n/g, "<br>")}</p>
+          <div class="answer-meta">
+            <span>${escapeHtml(payload.retrieval_backend || "unknown retrieval")}</span>
+            <span>${escapeHtml(payload.answer_mode || "unknown answer mode")}</span>
+            <span>ASR ${escapeHtml(payload.transcription?.model || "unknown")}</span>
+          </div>
+        `;
+
+        const audio = payload.audio || {};
+        if (audio.base64 && audio.mime_type) {
+          audioSlot.innerHTML = `
+            <audio controls autoplay src="data:${escapeHtml(audio.mime_type)};base64,${audio.base64}"></audio>
+            <p class="chat-status">TTS: ${escapeHtml(audio.provider)} / ${escapeHtml(audio.voice || audio.model || "unknown")}</p>
+          `;
+        } else {
+          audioSlot.innerHTML = `
+            <button type="button" class="voice-secondary" data-role="browser-speak">Play with browser voice</button>
+            <p class="chat-status">${escapeHtml(audio.error || "Server-side TTS did not return audio.")}</p>
+          `;
+          audioSlot.querySelector("[data-role='browser-speak']")?.addEventListener("click", () => browserSpeak(payload.answer || ""));
+        }
+        renderContexts(payload.contexts || []);
+      }
+
+      async function submitRecording() {
+        if (!apiUrl) {
+          setStatus("Voice API URL is not configured.", true);
+          return;
+        }
+        const sampleRate = audioContext?.sampleRate || 48000;
+        const samples = flattenChunks();
+        if (!samples.length) {
+          setStatus("No audio was recorded.", true);
+          return;
+        }
+        const resampled = resampleLinear(samples, sampleRate, 16000);
+        const wavBlob = encodeWav(resampled, 16000);
+        const audioBase64 = await blobToBase64(wavBlob);
+
+        transcript.innerHTML = "";
+        answer.innerHTML = "";
+        audioSlot.innerHTML = "";
+        contexts.innerHTML = "";
+        setStatus("Transcribing speech, retrieving ICU evidence, and generating voice answer...");
+        const response = await requestJson(apiUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            audio_base64: audioBase64,
+            mime_type: "audio/wav",
+            mode: modeInput.value,
+            limit: 5,
+          }),
+        });
+        const payload = await response.json();
+        if (!response.ok) {
+          throw new Error(payload.error || `Voice request failed with HTTP ${response.status}`);
+        }
+        renderPayload(payload);
+        setStatus("Voice answer generated.");
+      }
+
+      async function startRecording() {
+        chunks = [];
+        stream = await navigator.mediaDevices.getUserMedia({
+          audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
+        });
+        audioContext = new AudioContext();
+        source = audioContext.createMediaStreamSource(stream);
+        processor = audioContext.createScriptProcessor(4096, 1, 1);
+        processor.onaudioprocess = (event) => {
+          if (!recording) return;
+          chunks.push(new Float32Array(event.inputBuffer.getChannelData(0)));
+        };
+        source.connect(processor);
+        processor.connect(audioContext.destination);
+        recording = true;
+        recordButton.disabled = true;
+        stopButton.disabled = false;
+        setStatus("Recording... Speak one short ICU question, then stop.");
+      }
+
+      async function stopRecording() {
+        recording = false;
+        recordButton.disabled = false;
+        stopButton.disabled = true;
+        processor?.disconnect();
+        source?.disconnect();
+        stream?.getTracks().forEach((track) => track.stop());
+        try {
+          await submitRecording();
+        } catch (error) {
+          setStatus(`Voice request failed: ${error.message}`, true);
+        } finally {
+          audioContext?.close();
+          audioContext = null;
+        }
+      }
+
+      recordButton.addEventListener("click", () => {
+        startRecording().catch((error) => setStatus(`Microphone failed: ${error.message}`, true));
+      });
+      stopButton.addEventListener("click", () => {
+        stopRecording().catch((error) => setStatus(`Stop failed: ${error.message}`, true));
+      });
+
+      if (statusUrl) {
+        requestJson(statusUrl)
+          .then((response) => response.json())
+          .then((payload) => {
+            if (!payload.enabled) {
+              setStatus("Voice mode is disabled on the backend.", true);
+              return;
+            }
+            setStatus(`Ready. ASR: ${payload.asr_model}. TTS: ${payload.tts_provider}.`);
+          })
+          .catch(() => setStatus("Ready. Voice backend status could not be checked."));
+      }
+    })();
+    </script>
+
+    </main>
+    <footer class="site-footer">
+      <span>ICU Wiki senior thesis research site.</span>
+      <span>Last built 2026-06-09.</span>
+    </footer>
+  </body>
+</html>
